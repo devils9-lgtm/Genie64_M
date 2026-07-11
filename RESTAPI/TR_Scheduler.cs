@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -203,6 +204,195 @@ namespace 지니64
                 return _trHistory[trCode].Count;
             }
             return 0;
+        }
+    }
+
+
+    public class 한국투자_TR_스케줄러
+    {
+        // 요청 처리를 위한 스레드 안전한 큐 (우선순위 큐와 일반 큐)
+        private readonly ConcurrentQueue<Func<Task>> _우선_요청_큐 = new ConcurrentQueue<Func<Task>>();
+        private readonly ConcurrentQueue<Func<Task>> _일반_요청_큐 = new ConcurrentQueue<Func<Task>>();
+
+        private readonly SemaphoreSlim _신호_세마포어 = new SemaphoreSlim(0);
+        private readonly CancellationTokenSource _취소_토큰_소스 = new CancellationTokenSource();
+        private Task _작업_스레드;
+
+        // 한국투자증권 초당 제한 안전 마진 (초당 3회 수준 = 약 330ms 마다 1회 실행)
+        private readonly int _실행_간격_밀리초 = 330;
+
+        public 한국투자_TR_스케줄러()
+        {
+            _작업_스레드 = Task.Run(() => 스케줄러_루프_시작(_취소_토큰_소스.Token));
+        }
+
+        /// <summary>
+        /// 일반적인 조회나 데이터 요청을 큐에 추가합니다.
+        /// </summary>
+        public void 요청_추가(Func<Task> 한국투자_API_작업)
+        {
+            _일반_요청_큐.Enqueue(한국투자_API_작업);
+            _신호_세마포어.Release();
+        }
+
+        /// <summary>
+        /// 잔고 확인이나 실시간 판단에 필요한 긴급 TR을 우선순위 큐에 추가합니다.
+        /// </summary>
+        public void 우선_요청_추가(Func<Task> 한국투자_우선_API_작업)
+        {
+            _우선_요청_큐.Enqueue(한국투자_우선_API_작업);
+            _신호_세마포어.Release();
+        }
+
+        /// <summary>
+        /// 한국투자증권의 유량 제한 규정을 준수하며 큐를 소비하는 핵심 루프입니다.
+        /// </summary>
+        private async Task 스케줄러_루프_시작(CancellationToken 취소_토큰)
+        {
+            while (!취소_토큰.IsCancellationRequested)
+            {
+                await _신호_세마포어.WaitAsync(취소_토큰);
+
+                Func<Task> 실행할_작업 = null;
+
+                // 1. 우선순위 높은 큐부터 먼저 확인하여 꺼냄
+                if (_우선_요청_큐.TryDequeue(out 실행할_작업))
+                {
+                    // 우선 큐에서 작업을 꺼냄
+                }
+                // 2. 우선 큐가 비어있다면 일반 큐에서 꺼냄
+                else if (_일반_요청_큐.TryDequeue(out 실행할_작업))
+                {
+                    // 일반 큐에서 작업을 꺼냄
+                }
+
+                if (실행할_작업 != null)
+                {
+                    try
+                    {
+                        // 실제 API 비동기 메서드 호출
+                        await 실행할_작업();
+                    }
+                    catch (Exception 예외)
+                    {
+                        // 텔레그램이나 로그 시스템에 에러 출력 가능
+                        Console.WriteLine($"[한국투자 스케줄러 에러] {예외.Message}");
+                    }
+
+                    // 한국투자증권 서버 유량 초과(과부하) 방지를 위한 강제 대기 시간
+                    await Task.Delay(_실행_간격_밀리초, 취소_토큰);
+                }
+            }
+        }
+
+        /// <summary>
+        /// 프로그램 종료 시 스케줄러를 안전하게 정지시킵니다.
+        /// </summary>
+        public void 스케줄러_종료()
+        {
+            _취소_토큰_소스.Cancel();
+            try
+            {
+                _작업_스레드.Wait();
+            }
+            catch (AggregateException) { }
+
+            _신호_세마포어.Dispose();
+            _취소_토큰_소스.Dispose();
+        }
+    }
+
+
+    public class LS_TR_스케줄러
+    {
+        // LS증권 전용 비동기 요청 관리 큐
+        private readonly ConcurrentQueue<Func<Task>> _긴급_요청_큐 = new ConcurrentQueue<Func<Task>>();
+        private readonly ConcurrentQueue<Func<Task>> _일반_요청_큐 = new ConcurrentQueue<Func<Task>>();
+
+        private readonly SemaphoreSlim _신호_세마포어 = new SemaphoreSlim(0);
+        private readonly CancellationTokenSource _중단_토큰_소스 = new CancellationTokenSource();
+        private Task _소비_프로세스;
+
+        // LS증권 안전 마진 설정 (초당 2회 수준 제한 대응 = 500ms 마다 1회 실행)
+        private readonly int _정지_지연_밀리초 = 500;
+
+        public LS_TR_스케줄러()
+        {
+            _소비_프로세스 = Task.Run(() => 큐_모니터링_루프(_중단_토큰_소스.Token));
+        }
+
+        /// <summary>
+        /// LS증권 일반 시세조회 및 TR 요청을 큐에 등록합니다.
+        /// </summary>
+        public void TR_등록(Func<Task> LS_API_메서드)
+        {
+            _일반_요청_큐.Enqueue(LS_API_메서드);
+            _신호_세마포어.Release();
+        }
+
+        /// <summary>
+        /// 잔고조회, 주문체결 확인 등 즉시 처리되어야 하는 TR을 최우선 처리 큐에 등록합니다.
+        /// </summary>
+        public void 긴급_TR_등록(Func<Task> LS_우선_API_메서드)
+        {
+            _긴급_요청_큐.Enqueue(LS_우선_API_메서드);
+            _신호_세마포어.Release();
+        }
+
+        /// <summary>
+        /// LS증권 제한 제한 규정을 회피하기 위한 모니터링 반복 제어문입니다.
+        /// </summary>
+        private async Task 큐_모니터링_루프(CancellationToken 중단_토큰)
+        {
+            while (!중단_토큰.IsCancellationRequested)
+            {
+                await _신호_세마포어.WaitAsync(중단_토큰);
+
+                Func<Task> 처리할_작업 = null;
+
+                // 긴급 처리 큐 우선 추출
+                if (_긴급_요청_큐.TryDequeue(out 처리할_작업))
+                {
+                    // 긴급 큐 처리 성공
+                }
+                // 일반 처리 큐 추출
+                else if (_일반_요청_큐.TryDequeue(out 처리할_작업))
+                {
+                    // 일반 큐 처리 성공
+                }
+
+                if (처리할_작업 != null)
+                {
+                    try
+                    {
+                        // LS증권 API 실제 전송 및 대기
+                        await 처리할_작업();
+                    }
+                    catch (Exception 에러)
+                    {
+                        Console.WriteLine($"[LS증권 스케줄러 에러] {에러.Message}");
+                    }
+
+                    // LS증권 초당 조회 제한(유량 에러)을 회피하기 위한 딜레이 타임 적용
+                    await Task.Delay(_정지_지연_밀리초, 중단_토큰);
+                }
+            }
+        }
+
+        /// <summary>
+        /// 애플리케이션 종료 시 안전하게 백그라운드 태스크를 해제합니다.
+        /// </summary>
+        public void 스케줄러_정지()
+        {
+            _중단_토큰_소스.Cancel();
+            try
+            {
+                _소비_프로세스.Wait();
+            }
+            catch (AggregateException) { }
+
+            _신호_세마포어.Dispose();
+            _중단_토큰_소스.Dispose();
         }
     }
 }

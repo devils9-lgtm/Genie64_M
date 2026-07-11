@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -209,6 +210,124 @@ namespace 지니64
             return 0;
         }
     }
+
+
+
+    public class 한국투자_주문_스케줄러
+    {
+        // 주문 전용 큐 (매수/매도/정정/취소 등)
+        private readonly ConcurrentQueue<Func<Task>> _주문_대기_큐 = new ConcurrentQueue<Func<Task>>();
+
+        private readonly SemaphoreSlim _신호_세마포어 = new SemaphoreSlim(0);
+        private readonly CancellationTokenSource _취소_토큰_소스 = new CancellationTokenSource();
+        private Task _주문_처리_스레드;
+
+        // 한투 주문 유량 제한 고려 (안전 마진 300ms)
+        private readonly int _주문_실행_간격_밀리초 = 300;
+
+        public 한국투자_주문_스케줄러()
+        {
+            _주문_처리_스레드 = Task.Run(() => 주문_처리_루프(_취소_토큰_소스.Token));
+        }
+
+        /// <summary>
+        /// 신규 매수, 매도, 정정, 취소 주문을 큐에 등록합니다.
+        /// </summary>
+        public void 주문_요청_추가(Func<Task> 한국투자_주문_작업)
+        {
+            _주문_대기_큐.Enqueue(한국투자_주문_작업);
+            _신호_세마포어.Release();
+        }
+
+        private async Task 주문_처리_루프(CancellationToken 취소_토큰)
+        {
+            while (!취소_토큰.IsCancellationRequested)
+            {
+                // 주문이 들어올 때까지 대기
+                await _신호_세마포어.WaitAsync(취소_토큰);
+
+                if (_주문_대기_큐.TryDequeue(out Func<Task> 실행할_주문))
+                {
+                    try
+                    {
+                        // 실제 주문 API 전송
+                        await 실행할_주문();
+                    }
+                    catch (Exception 예외)
+                    {
+                        Console.WriteLine($"[한투 주문 에러] {예외.Message}");
+                    }
+
+                    // 연속 주문 시 증권사 서버 차단 방지용 딜레이
+                    await Task.Delay(_주문_실행_간격_밀리초, 취소_토큰);
+                }
+            }
+        }
+
+        public void 스케줄러_종료()
+        {
+            _취소_토큰_소스.Cancel();
+            try { _주문_처리_스레드.Wait(); } catch { }
+            _신호_세마포어.Dispose();
+            _취소_토큰_소스.Dispose();
+        }
+    }
+
+
+    public class LS_주문_스케줄러
+    {
+        private readonly ConcurrentQueue<Func<Task>> _주문_대기_큐 = new ConcurrentQueue<Func<Task>>();
+        private readonly SemaphoreSlim _신호_세마포어 = new SemaphoreSlim(0);
+        private readonly CancellationTokenSource _중단_토큰_소스 = new CancellationTokenSource();
+        private Task _주문_처리_스레드;
+
+        // LS증권 주문 유량 제한 고려 (안전 마진 400ms)
+        private readonly int _주문_실행_간격_밀리초 = 400;
+
+        public LS_주문_스케줄러()
+        {
+            _주문_처리_스레드 = Task.Run(() => 주문_모니터링_루프(_중단_토큰_소스.Token));
+        }
+
+        public void 주문_등록(Func<Task> LS_주문_메서드)
+        {
+            _주문_대기_큐.Enqueue(LS_주문_메서드);
+            _신호_세마포어.Release();
+        }
+
+        private async Task 주문_모니터링_루프(CancellationToken 중단_토큰)
+        {
+            while (!중단_토큰.IsCancellationRequested)
+            {
+                await _신호_세마포어.WaitAsync(중단_토큰);
+
+                if (_주문_대기_큐.TryDequeue(out Func<Task> 처리할_주문))
+                {
+                    try
+                    {
+                        // LS증권 API 실제 주문 전송
+                        await 처리할_주문();
+                    }
+                    catch (Exception 에러)
+                    {
+                        Console.WriteLine($"[LS증권 주문 에러] {에러.Message}");
+                    }
+
+                    // LS증권 연속 주문 차단 방지 대기
+                    await Task.Delay(_주문_실행_간격_밀리초, 중단_토큰);
+                }
+            }
+        }
+
+        public void 스케줄러_정지()
+        {
+            _중단_토큰_소스.Cancel();
+            try { _주문_처리_스레드.Wait(); } catch { }
+            _신호_세마포어.Dispose();
+            _중단_토큰_소스.Dispose();
+        }
+    }
+
 }
 
 

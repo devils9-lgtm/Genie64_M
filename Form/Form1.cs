@@ -26,6 +26,14 @@ namespace 지니64
         public static TR_Scheduler tr_scheduler = new TR_Scheduler();
         public static Order_Scheduler order_scheduler = new Order_Scheduler();
 
+        // 처음에는 null로 비워두어 스레드가 백그라운드에서 돌지 않도록 합니다.
+        public static 한국투자_TR_스케줄러 한투_스케줄러 = null;
+        public static LS_TR_스케줄러 ls_스케줄러 = null;
+
+        // 새롭게 추가되는 한투/LS 전용 주문 스케줄러 (null로 초기화)
+        public static 한국투자_주문_스케줄러 한투_주문스케줄러 = null;
+        public static LS_주문_스케줄러 ls_주문스케줄러 = null;
+
         public static string serverIp = "";
 
         public static string 프로그램명 = GET.이름_자동설정();
