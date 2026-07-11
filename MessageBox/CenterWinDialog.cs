@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
 
-namespace 지니_64
+namespace 지니64
 {
     class CenterWinDialog : IDisposable
     {

@@ -1,5 +1,6 @@
-﻿using System.Collections.Concurrent;
-using System.Linq;
+﻿using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -15,483 +16,146 @@ using System.Threading.Tasks;
  *<-- 여기까지
  */
 
-namespace 지니_64
+namespace 지니64
 {
-    public class JOSTRequestTrDataManager
+    
+    public class UnifiedDataManager
     {
-        private static JOSTRequestTrDataManager jostRequestTrDataManager;
+        // 1. 싱글톤 인스턴스 (Lazy 사용으로 스레드 안전성 보장)
+        private static readonly Lazy<UnifiedDataManager> _instance =
+            new Lazy<UnifiedDataManager>(() => new UnifiedDataManager());
 
-        ConcurrentQueue<Task> requestTaskQueue = new ConcurrentQueue<Task>(); //TR요청 Task Queue
+        public static UnifiedDataManager Instance => _instance.Value;
 
-        Thread taskWorker; // Task Queue에 쌓인 TR요청을 순차적으로 처리하는 쓰레드
+        // 2. 업무별 전담 작업자(Worker) 정의
+        // --------------------------------------------------------------------------
+        // [Condition]: 조건검색. 딜레이 없음.
+        public readonly Worker Condition = new Worker("Condition_Manager");
+        
+        // [Writing]: 파일/DB 저장. 딜레이 없음.
+        public readonly Worker Writing = new Worker("Writing_Manager");
+        
+        // [Real]: 실시간 데이터 3형제 (가장 빠름, 딜레이 없음).
+        public readonly Worker RealData = new Worker("Real_Data");
+        public readonly Worker RealPrice = new Worker("Real_Price");
+        public readonly Worker RealHoga = new Worker("Real_Hoga");
+        // --------------------------------------------------------------------------
 
-        bool Stop_ = false;
-        bool Dequeue_Run = true;
+        private List<Worker> _allWorkers;
 
-        private JOSTRequestTrDataManager()
+        private UnifiedDataManager()
         {
-            taskWorker = new Thread(delegate ()
+            // 관리 편의를 위해 리스트에 담음
+            _allWorkers = new List<Worker> { Condition, Writing, RealData, RealPrice, RealHoga };
+        }
+
+        // 전체 시작 (Form_Load)
+        public void StartAll()
+        {
+            _allWorkers.ForEach(w => w.Run());
+        }
+
+        // 전체 종료 (Form_Closing)
+        public void StopAll()
+        {
+            _allWorkers.ForEach(w => w.Stop());
+        }
+
+        // =========================================================
+        // [핵심] 만능 작업자 클래스 (Producer-Consumer 패턴 + 기능 확장)
+        // =========================================================
+        public class Worker
+        {
+            private BlockingCollection<Action> _queue;
+            private Task _workerTask;
+            private readonly string _name;
+
+            // 기능 1: 일시정지 제어용 이벤트 (CPU 사용 없이 대기 가능)
+            // true = 실행 중, false = 일시정지
+            private ManualResetEventSlim _pauseHandle = new ManualResetEventSlim(true);
+
+            // 기능 2: 작업 간 속도 조절 (ms 단위)
+            private int _interval = 0;
+
+            public Worker(string name)
             {
-                while (true)
+                _name = name;
+                _queue = new BlockingCollection<Action>();
+            }
+
+            // 설정: 작업 간 딜레이 시간 (API 제한 속도 맞춤)
+            public void SetInterval(int ms)
+            {
+                _interval = ms;
+            }
+
+            // 동작: 일시정지 (DequeueStop 대체)
+            public void Pause()
+            {
+                _pauseHandle.Reset();
+            }
+
+            // 동작: 재개 (DequeueRun 대체)
+            public void Resume()
+            {
+                _pauseHandle.Set();
+            }
+
+            public void Run()
+            {
+                if (_workerTask != null && !_workerTask.IsCompleted) return;
+                if (_queue.IsAddingCompleted) _queue = new BlockingCollection<Action>();
+
+                // 스레드 풀에서 '오래 걸리는 작업'용 스레드를 할당받아 실행
+                _workerTask = Task.Factory.StartNew(ProcessQueue, TaskCreationOptions.LongRunning);
+            }
+
+            private void ProcessQueue()
+            {
+                // 큐에 데이터가 없으면 여기서 스레드가 대기 상태(Sleep)가 됩니다. (CPU 0%)
+                foreach (var job in _queue.GetConsumingEnumerable())
                 {
                     try
                     {
-                        if (Stop_) break;
+                        // 1. 일시정지 상태 체크 (Paused 상태면 여기서 멈춤)
+                        _pauseHandle.Wait();
 
-                        while (requestTaskQueue.Count > 0)
+                        // 2. 작업 실행
+                        job.Invoke();
+
+                        // 3. 속도 제한이 걸려있다면 대기 (JOST, Condition 등)
+                        if (_interval > 0)
                         {
-                            if (Dequeue_Run)
-                            {
-                                bool ok = requestTaskQueue.TryDequeue(out Task result);
-                                if (ok)
-                                {
-                                    result.RunSynchronously();
-
-                                    Thread.Sleep(300);
-                                }
-                            }
+                            Thread.Sleep(_interval);
                         }
-                        Thread.Sleep(200);
                     }
-                    catch
+                    catch (Exception ex)
                     {
-                        Form1.Error_Log("[에러내역] JOSTRequestTrDataManager 의 심각한 에러발생");
+                        // 에러 로그 (프로그램 중단 방지)
+                        System.Diagnostics.Debug.WriteLine($"[{_name} Error] {ex.Message}");
                     }
                 }
-            });
-        }
+            }
 
-        public static JOSTRequestTrDataManager GetInstance()
-        {
-            if (jostRequestTrDataManager == null)
-                jostRequestTrDataManager = new JOSTRequestTrDataManager();
-
-            return jostRequestTrDataManager;
-        }
-
-        public void Run()
-        {
-            taskWorker.Start();
-        }
-
-        public void Stop()
-        {
-            Stop_ = true;
-        }
-
-        public void DequeueRun()
-        {
-            Dequeue_Run = true;
-        }
-        public void DequeueStop()
-        {
-            Dequeue_Run = false;
-        }
-        public int count()
-        {
-            return requestTaskQueue.Count;
-        }
-
-        public void RequestTrData(Task task) // Task 형식으로 TR Data Request를 전달받는다.
-        {
-            requestTaskQueue.Enqueue(task);
-        }
-    }
-
-    public class CondotionManager
-    {
-        private static CondotionManager condotionManager;
-
-        ConcurrentQueue<Task> CondotionTaskQueue = new ConcurrentQueue<Task>(); //TR요청 Task Queue
-
-        Thread taskWorker; // Task Queue에 쌓인 TR요청을 순차적으로 처리하는 쓰레드
-
-        bool Stop_ = false;
-        bool Dequeue_Run = false;
-
-        private CondotionManager()
-        {
-            taskWorker = new Thread(delegate ()
+            public void Stop()
             {
-                while (true)
-                {
-                    try
-                    {
-                        if (Stop_) break;
+                _queue.CompleteAdding(); // 더 이상 작업 안 받음
+                _pauseHandle.Set();      // 멈춰있다면 깨워서 종료시킴
+            }
 
-                        while (CondotionTaskQueue.Count > 0)
-                        {
-                            if (Dequeue_Run)
-                            {
-                                bool ok = CondotionTaskQueue.TryDequeue(out Task result);
-                                if (ok)
-                                {
-                                    result.RunSynchronously();
-                                    Thread.Sleep(250);
-                                }
-                            }
-                        }
-                        Thread.Sleep(300);
-                    }
-                    catch
-                    {
-                        Form1.Error_Log("[에러내역] CondotionManager 의 심각한 에러발생");
-                    }
-                }
-            });
-        }
-
-        public static CondotionManager GetInstance()
-        {
-            if (condotionManager == null)
-                condotionManager = new CondotionManager();
-
-            return condotionManager;
-        }
-
-        public void Run()
-        {
-            taskWorker.Start();
-        }
-        public void Stop()
-        {
-            Stop_ = true;
-        }
-
-        public void DequeueRun()
-        {
-            Dequeue_Run = true;
-        }
-
-        public int Condotion_count()
-        {
-            return CondotionTaskQueue.Count();
-        }
-
-        public void RequestTrData(Task task) // Task 형식으로 TR Data Request를 전달받는다.
-        {
-            CondotionTaskQueue.Enqueue(task);
-        }
-    }
-
-
-    public class Writing_Manager
-    {
-        private static Writing_Manager writing_Manager;
-
-        ConcurrentQueue<Task> writingQueue = new ConcurrentQueue<Task>(); //TR요청 Task Queue
-
-        Thread taskWorker; // Task Queue에 쌓인 TR요청을 순차적으로 처리하는 쓰레드
-
-        bool Stop_ = false;
-
-        private Writing_Manager()
-        {
-            taskWorker = new Thread(delegate ()
+            // 작업 요청 넣기 (Task 대신 Action 사용)
+            public void Enqueue(Action job)
             {
-                while (true)
+                if (!_queue.IsAddingCompleted)
                 {
-                    try
-                    {
-                        while (writingQueue.Count > 0)
-                        {
-                            bool ok = writingQueue.TryDequeue(out Task result);
-                            if (ok)
-                            {
-                                result.RunSynchronously();
-                            }
-                        }
-
-                        if (Stop_) break;
-
-                        Thread.Sleep(10);
-                    }
-                    catch
-                    {
-                        Form1.Error_Log("[에러내역] Writing_Manager 의 심각한 에러발생");
-                    }
+                    _queue.Add(job);
                 }
-            });
-        }
+            }
 
-        public static Writing_Manager GetInstance()
-        {
-            if (writing_Manager == null)
-                writing_Manager = new Writing_Manager();
-
-            return writing_Manager;
-        }
-
-        public void Run()
-        {
-            taskWorker.Start();
-        }
-
-        public void Stop()
-        {
-            Stop_ = true;
-        }
-
-        public void RequestTrData(Task task) // Task 형식으로 TR Data Request를 전달받는다.
-        {
-            writingQueue.Enqueue(task);
+            // 대기 중인 작업 수
+            public int Count => _queue.Count;
         }
     }
-
-    public class Today_condition_data
-    {
-        private static Today_condition_data condition_data_Manager;
-
-        ConcurrentQueue<Task> condition_data_Queue = new ConcurrentQueue<Task>(); //TR요청 Task Queue
-
-        Thread taskWorker; // Task Queue에 쌓인 TR요청을 순차적으로 처리하는 쓰레드
-
-        bool Stop_ = false;
-
-        private Today_condition_data()
-        {
-            taskWorker = new Thread(delegate ()
-            {
-                while (true)
-                {
-                    try
-                    {
-                        if (Stop_) break;
-
-                        while (condition_data_Queue.Count > 0)
-                        {
-                            bool ok = condition_data_Queue.TryDequeue(out Task result);
-                            if (ok)
-                            {
-                                result.RunSynchronously();
-                            }
-                        }
-
-                        Thread.Sleep(10);
-                    }
-                    catch
-                    {
-                        Form1.Error_Log("[에러내역] Real_data_Manager 의 심각한 에러발생");
-                    }
-                }
-            });
-        }
-
-        public static Today_condition_data GetInstance()
-        {
-            if (condition_data_Manager == null)
-                condition_data_Manager = new Today_condition_data();
-
-            return condition_data_Manager;
-        }
-
-        public void Run()
-        {
-            taskWorker.Start();
-        }
-
-        public void Stop()
-        {
-            Stop_ = true;
-        }
-
-        public void RequestTrData(Task task) // Task 형식으로 TR Data Request를 전달받는다.
-        {
-            condition_data_Queue.Enqueue(task);
-        }
-    }
-
-    public class Real_data
-    {
-        private static Real_data Real_data_Manager;
-
-        ConcurrentQueue<Task> Real_data_Queue = new ConcurrentQueue<Task>(); //TR요청 Task Queue
-
-        Thread taskWorker; // Task Queue에 쌓인 TR요청을 순차적으로 처리하는 쓰레드
-
-        bool Stop_ = false;
-
-        private Real_data()
-        {
-            taskWorker = new Thread(delegate ()
-            {
-                while (true)
-                {
-                    try
-                    {
-                        if (Stop_) break;
-
-                        while (Real_data_Queue.Count > 0)
-                        {
-                            bool ok = Real_data_Queue.TryDequeue(out Task result);
-                            if (ok)
-                            {
-                                result.RunSynchronously();
-                            }
-                        }
-
-                        Thread.Sleep(10);
-                    }
-                    catch
-                    {
-                        Form1.Error_Log("[에러내역] Real_price_Manager 의 심각한 에러발생");
-                    }
-                }
-            });
-        }
-
-        public static Real_data GetInstance()
-        {
-            if (Real_data_Manager == null)
-                Real_data_Manager = new Real_data();
-
-            return Real_data_Manager;
-        }
-
-        public void Run()
-        {
-            taskWorker.Start();
-        }
-
-        public void Stop()
-        {
-            Stop_ = true;
-        }
-
-        public void RequestTrData(Task task) // Task 형식으로 TR Data Request를 전달받는다.
-        {
-            Real_data_Queue.Enqueue(task);
-        }
-    }
-
-    public class Real_price
-    {
-        private static Real_price Real_price_Manager;
-
-        ConcurrentQueue<Task> Real_price_Queue = new ConcurrentQueue<Task>(); //TR요청 Task Queue
-
-        Thread taskWorker; // Task Queue에 쌓인 TR요청을 순차적으로 처리하는 쓰레드
-
-        bool Stop_ = false;
-
-        private Real_price()
-        {
-            taskWorker = new Thread(delegate ()
-            {
-                while (true)
-                {
-                    try
-                    {
-                        if (Stop_) break;
-
-                        while (Real_price_Queue.Count > 0)
-                        {
-                            bool ok = Real_price_Queue.TryDequeue(out Task result);
-                            if (ok)
-                            {
-                                result.RunSynchronously();
-                            }
-                        }
-
-                        Thread.Sleep(10);
-                    }
-                    catch
-                    {
-                        Form1.Error_Log("[에러내역] Real_price_Manager 의 심각한 에러발생");
-                    }
-                }
-            });
-        }
-
-        public static Real_price GetInstance()
-        {
-            if (Real_price_Manager == null)
-                Real_price_Manager = new Real_price();
-
-            return Real_price_Manager;
-        }
-
-        public void Run()
-        {
-            taskWorker.Start();
-        }
-
-        public void Stop()
-        {
-            Stop_ = true;
-        }
-
-        public void RequestTrData(Task task) // Task 형식으로 TR Data Request를 전달받는다.
-        {
-            Real_price_Queue.Enqueue(task);
-        }
-    }
-
-    public class Real_Hoga
-    {
-        private static Real_Hoga Real_Hoga_Manager;
-
-        ConcurrentQueue<Task> Real_Hoga_Queue = new ConcurrentQueue<Task>(); //TR요청 Task Queue
-
-        Thread taskWorker; // Task Queue에 쌓인 TR요청을 순차적으로 처리하는 쓰레드
-
-        bool Stop_ = false;
-
-        private Real_Hoga()
-        {
-            taskWorker = new Thread(delegate ()
-            {
-                while (true)
-                {
-                    try
-                    {
-                        if (Stop_) break;
-
-                        while (Real_Hoga_Queue.Count > 0)
-                        {
-                            bool ok = Real_Hoga_Queue.TryDequeue(out Task result);
-                            if (ok)
-                            {
-                                result.RunSynchronously();
-                            }
-                        }
-
-                        Thread.Sleep(10);
-                    }
-                    catch
-                    {
-                        Form1.Error_Log("[에러내역] Real_Hoga_Manager 의 심각한 에러발생");
-                    }
-                }
-            });
-        }
-
-        public static Real_Hoga GetInstance()
-        {
-            if (Real_Hoga_Manager == null)
-                Real_Hoga_Manager = new Real_Hoga();
-
-            return Real_Hoga_Manager;
-        }
-
-        public void Run()
-        {
-            taskWorker.Start();
-        }
-
-        public void Stop()
-        {
-            Stop_ = true;
-        }
-
-        public void RequestTrData(Task task) // Task 형식으로 TR Data Request를 전달받는다.
-        {
-            Real_Hoga_Queue.Enqueue(task);
-        }
-    }
-
-
-
 }
 
 

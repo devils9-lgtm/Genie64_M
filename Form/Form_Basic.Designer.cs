@@ -1,5 +1,5 @@
 ﻿
-namespace 지니_64
+namespace 지니64
 {
     partial class Form_Basic
     {
@@ -386,6 +386,10 @@ namespace 지니_64
             this.P_진입조건 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.MTB_추가매수딜레이 = new System.Windows.Forms.MaskedTextBox();
+            this.CB_신용주문_신규_C = new System.Windows.Forms.CheckBox();
+            this.CB_신용주문_신규_B = new System.Windows.Forms.CheckBox();
+            this.CB_신용주문_신규_A = new System.Windows.Forms.CheckBox();
+            this.label21 = new System.Windows.Forms.Label();
             this.label_추가매수딜레이 = new System.Windows.Forms.Label();
             this.TB_잔고개수_신규C = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -430,61 +434,37 @@ namespace 지니_64
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.P_트레일링스탑 = new System.Windows.Forms.Panel();
-            this.TB_TS_Jumun_I = new System.Windows.Forms.TextBox();
-            this.TB_TS_Jumun_B = new System.Windows.Forms.TextBox();
-            this.TB_TS_Jumun_F = new System.Windows.Forms.TextBox();
-            this.TB_TS_Jumun_G = new System.Windows.Forms.TextBox();
-            this.TB_TS_Jumun_C = new System.Windows.Forms.TextBox();
-            this.TB_TS_Jumun_D = new System.Windows.Forms.TextBox();
-            this.TB_TS_Jumun_E = new System.Windows.Forms.TextBox();
-            this.TB_TS_Jumun_A = new System.Windows.Forms.TextBox();
-            this.TB_TS_Jumun_H = new System.Windows.Forms.TextBox();
-            this.TB_TS_ratio_G = new System.Windows.Forms.TextBox();
-            this.TB_TS_ratio_B = new System.Windows.Forms.TextBox();
-            this.label351 = new System.Windows.Forms.Label();
-            this.TB_TS_ratio_F = new System.Windows.Forms.TextBox();
-            this.label349 = new System.Windows.Forms.Label();
-            this.label340 = new System.Windows.Forms.Label();
-            this.label348 = new System.Windows.Forms.Label();
-            this.TB_TS_ratio_D = new System.Windows.Forms.TextBox();
-            this.label347 = new System.Windows.Forms.Label();
-            this.label336 = new System.Windows.Forms.Label();
-            this.TB_TS_ratio_C = new System.Windows.Forms.TextBox();
-            this.label339 = new System.Windows.Forms.Label();
-            this.label346 = new System.Windows.Forms.Label();
-            this.TB_TS_ratio_H = new System.Windows.Forms.TextBox();
-            this.TB_TS_ratio_I = new System.Windows.Forms.TextBox();
-            this.label334 = new System.Windows.Forms.Label();
-            this.TB_TS_ratio_E = new System.Windows.Forms.TextBox();
-            this.label344 = new System.Windows.Forms.Label();
-            this.label335 = new System.Windows.Forms.Label();
-            this.label343 = new System.Windows.Forms.Label();
-            this.label341 = new System.Windows.Forms.Label();
-            this.label342 = new System.Windows.Forms.Label();
-            this.label350 = new System.Windows.Forms.Label();
-            this.label337 = new System.Windows.Forms.Label();
-            this.label338 = new System.Windows.Forms.Label();
-            this.label345 = new System.Windows.Forms.Label();
-            this.CBB_TS_Jumun_I = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_Jumun_C = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_Jumun_E = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_Jumun_G = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_Jumun_B = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_Jumun_F = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_Jumun_D = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_Jumun_H = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_ratio_A = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_ratio_E = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_ratio_C = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_ratio_B = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_ratio_G = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_ratio_F = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_ratio_D = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_ratio_H = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_ratio_I = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_cancel_sell = new System.Windows.Forms.ComboBox();
-            this.CBB_TS_Jumun_A = new System.Windows.Forms.ComboBox();
+            this.P_체결즉시 = new System.Windows.Forms.Panel();
+            this.CB_scalping_A = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_B_7 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_B_9 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_A_1 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_B_2 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_A_9 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_B = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_B_6 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_A_3 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_A_7 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_C_8 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_B_1 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_C_9 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_C_2 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_B_8 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_C = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_C_3 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_A_2 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_A_8 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_B_4 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_A_6 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_C_5 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_C_1 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_A_4 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_A_5 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_C_7 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_B_3 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_C_6 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_B_5 = new System.Windows.Forms.CheckBox();
+            this.CB_scalping_C_4 = new System.Windows.Forms.CheckBox();
             this.P_익절매도 = new System.Windows.Forms.Panel();
             this.CB_ik_down_I = new System.Windows.Forms.CheckBox();
             this.CB_ik_down_H = new System.Windows.Forms.CheckBox();
@@ -551,41 +531,66 @@ namespace 지니_64
             this.combo_ik_down_ratio_B = new System.Windows.Forms.ComboBox();
             this.CB_ik_B = new System.Windows.Forms.CheckBox();
             this.combo_ik_jumun_D = new System.Windows.Forms.ComboBox();
-            this.P_체결즉시 = new System.Windows.Forms.Panel();
-            this.CB_scalping_A = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_B_7 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_B_9 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_A_1 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_B_2 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_A_9 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_B = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_B_6 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_A_3 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_A_7 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_C_8 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_B_1 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_C_9 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_C_2 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_B_8 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_C = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_C_3 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_A_2 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_A_8 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_B_4 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_A_6 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_C_5 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_C_1 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_A_4 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_A_5 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_C_7 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_B_3 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_C_6 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_B_5 = new System.Windows.Forms.CheckBox();
-            this.CB_scalping_C_4 = new System.Windows.Forms.CheckBox();
+            this.lb_TS = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.TB_신규횟수제한 = new System.Windows.Forms.TextBox();
             this.LB_신규매수횟수 = new System.Windows.Forms.Label();
+            this.P_트레일링스탑 = new System.Windows.Forms.Panel();
+            this.TB_TS_Jumun_I = new System.Windows.Forms.TextBox();
+            this.TB_TS_Jumun_B = new System.Windows.Forms.TextBox();
+            this.TB_TS_Jumun_F = new System.Windows.Forms.TextBox();
+            this.TB_TS_Jumun_G = new System.Windows.Forms.TextBox();
+            this.TB_TS_Jumun_C = new System.Windows.Forms.TextBox();
+            this.TB_TS_Jumun_D = new System.Windows.Forms.TextBox();
+            this.TB_TS_Jumun_E = new System.Windows.Forms.TextBox();
+            this.TB_TS_Jumun_A = new System.Windows.Forms.TextBox();
+            this.TB_TS_Jumun_H = new System.Windows.Forms.TextBox();
+            this.TB_TS_ratio_G = new System.Windows.Forms.TextBox();
+            this.TB_TS_ratio_B = new System.Windows.Forms.TextBox();
+            this.label351 = new System.Windows.Forms.Label();
+            this.TB_TS_ratio_F = new System.Windows.Forms.TextBox();
+            this.label349 = new System.Windows.Forms.Label();
+            this.label340 = new System.Windows.Forms.Label();
+            this.label348 = new System.Windows.Forms.Label();
+            this.TB_TS_ratio_D = new System.Windows.Forms.TextBox();
+            this.label347 = new System.Windows.Forms.Label();
+            this.label336 = new System.Windows.Forms.Label();
+            this.TB_TS_ratio_C = new System.Windows.Forms.TextBox();
+            this.label339 = new System.Windows.Forms.Label();
+            this.label346 = new System.Windows.Forms.Label();
+            this.TB_TS_ratio_H = new System.Windows.Forms.TextBox();
+            this.TB_TS_ratio_I = new System.Windows.Forms.TextBox();
+            this.label334 = new System.Windows.Forms.Label();
+            this.TB_TS_ratio_E = new System.Windows.Forms.TextBox();
+            this.label344 = new System.Windows.Forms.Label();
+            this.label335 = new System.Windows.Forms.Label();
+            this.label343 = new System.Windows.Forms.Label();
+            this.label341 = new System.Windows.Forms.Label();
+            this.label342 = new System.Windows.Forms.Label();
+            this.label350 = new System.Windows.Forms.Label();
+            this.label337 = new System.Windows.Forms.Label();
+            this.label338 = new System.Windows.Forms.Label();
+            this.label345 = new System.Windows.Forms.Label();
+            this.CBB_TS_Jumun_I = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_Jumun_C = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_Jumun_E = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_Jumun_G = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_Jumun_B = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_Jumun_F = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_Jumun_D = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_Jumun_H = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_ratio_A = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_ratio_E = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_ratio_C = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_ratio_B = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_ratio_G = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_ratio_F = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_ratio_D = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_ratio_H = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_ratio_I = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_cancel_sell = new System.Windows.Forms.ComboBox();
+            this.CBB_TS_Jumun_A = new System.Windows.Forms.ComboBox();
             this.CB_신규횟수제한 = new System.Windows.Forms.CheckBox();
             this.CB_기본매매_시작위치저장 = new System.Windows.Forms.CheckBox();
             this.P_신규매수 = new System.Windows.Forms.Panel();
@@ -598,11 +603,12 @@ namespace 지니_64
             this.TB_new_value_A = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.combo_new_cancel_buy_A = new System.Windows.Forms.ComboBox();
-            this.combo_new_condition_C = new System.Windows.Forms.ComboBox();
-            this.combo_new_condition_B = new System.Windows.Forms.ComboBox();
-            this.combo_new_condition_A = new System.Windows.Forms.ComboBox();
+            this.신규_C = new System.Windows.Forms.ComboBox();
+            this.신규_B = new System.Windows.Forms.ComboBox();
+            this.신규_A = new System.Windows.Forms.ComboBox();
             this.P_계좌매매 = new System.Windows.Forms.Panel();
             this.label85 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.TB_예상수익TS_하락값 = new System.Windows.Forms.TextBox();
             this.TB_예상수익TS_상승값 = new System.Windows.Forms.TextBox();
             this.LB_예상수익반복 = new System.Windows.Forms.Label();
@@ -676,15 +682,13 @@ namespace 지니_64
             this.label162 = new System.Windows.Forms.Label();
             this.label220 = new System.Windows.Forms.Label();
             this.combo_sell_cancel_sell = new System.Windows.Forms.ComboBox();
-            this.lb_TS = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.기본매매_P.SuspendLayout();
             this.P_진입조건.SuspendLayout();
             this.P_잔고시간청산.SuspendLayout();
-            this.P_트레일링스탑.SuspendLayout();
-            this.P_익절매도.SuspendLayout();
             this.P_체결즉시.SuspendLayout();
+            this.P_익절매도.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.P_트레일링스탑.SuspendLayout();
             this.P_신규매수.SuspendLayout();
             this.panel3.SuspendLayout();
             this.P_계좌매매.SuspendLayout();
@@ -720,7 +724,7 @@ namespace 지니_64
             this.label427.Cursor = System.Windows.Forms.Cursors.Default;
             this.label427.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label427.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label427.Location = new System.Drawing.Point(156, 62);
+            this.label427.Location = new System.Drawing.Point(156, 84);
             this.label427.Name = "label427";
             this.label427.Size = new System.Drawing.Size(119, 21);
             this.label427.TabIndex = 121;
@@ -968,7 +972,7 @@ namespace 지니_64
             this.MT_new_ratio_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.MT_new_ratio_C, "매입비중");
             this.MT_new_ratio_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.MT_new_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.MT_new_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // MT_new_start_C
             // 
@@ -1118,7 +1122,7 @@ namespace 지니_64
             this.MT_new_ratio_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.MT_new_ratio_B, "매입비중");
             this.MT_new_ratio_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.MT_new_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.MT_new_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // combo_new_jumun_B
             // 
@@ -1263,7 +1267,7 @@ namespace 지니_64
             this.MT_new_ratio_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.MT_new_ratio_A, "매입비중");
             this.MT_new_ratio_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.MT_new_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.MT_new_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_new_A
             // 
@@ -1359,7 +1363,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_ratio_B, "0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주문가능수 대비" +
         " %\r\n");
             this.TB_ik_down_ratio_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_down_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_ik_one_A
             // 
@@ -1424,7 +1428,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_ratio_G, "0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주문가능수 대비" +
         " %\r\n");
             this.TB_ik_down_ratio_G.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_down_ratio_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_ratio_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_ik_one_H
             // 
@@ -1466,7 +1470,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_ratio_I, "0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주문가능수 대비" +
         " %\r\n");
             this.TB_ik_down_ratio_I.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_down_ratio_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_ratio_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_down_ratio_F
             // 
@@ -1485,7 +1489,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_ratio_F, "0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주문가능수 대비" +
         " %\r\n");
             this.TB_ik_down_ratio_F.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_down_ratio_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_ratio_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_ik_one_G
             // 
@@ -1550,7 +1554,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_ratio_H, "0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주문가능수 대비" +
         " %\r\n");
             this.TB_ik_down_ratio_H.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_down_ratio_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_ratio_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_ik_one_E
             // 
@@ -1592,7 +1596,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_ratio_E, "0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주문가능수 대비" +
         " %\r\n");
             this.TB_ik_down_ratio_E.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_down_ratio_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_ratio_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_ik_one_D
             // 
@@ -1657,7 +1661,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_ratio_B, "# 익절비중\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  " +
         "주문가능수 대비 %\r\n");
             this.TB_ik_son_ratio_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_son_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_down_ratio_A
             // 
@@ -1676,7 +1680,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_ratio_A, "0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주문가능수 대비" +
         " %\r\n");
             this.TB_ik_down_ratio_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_down_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_down_ratio_D
             // 
@@ -1695,7 +1699,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_ratio_D, "0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주문가능수 대비" +
         " %\r\n");
             this.TB_ik_down_ratio_D.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_down_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // MTB_new_delay_C
             // 
@@ -1732,7 +1736,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_ratio_I, "# 익절비중\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  " +
         "주문가능수 대비 %\r\n");
             this.TB_ik_son_ratio_I.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_son_ratio_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_ratio_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_son_ratio_A
             // 
@@ -1751,7 +1755,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_ratio_A, "# 익절비중\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  " +
         "주문가능수 대비 %\r\n");
             this.TB_ik_son_ratio_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_son_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label_신규취소_A
             // 
@@ -1783,7 +1787,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_ratio_C, "0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주문가능수 대비" +
         " %\r\n");
             this.TB_ik_down_ratio_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_down_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_son_ratio_H
             // 
@@ -1802,7 +1806,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_ratio_H, "# 익절비중\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  " +
         "주문가능수 대비 %\r\n");
             this.TB_ik_son_ratio_H.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_son_ratio_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_ratio_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // MTB_new_repeat_A
             // 
@@ -1876,7 +1880,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_ratio_G, "# 익절비중\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  " +
         "주문가능수 대비 %\r\n");
             this.TB_ik_son_ratio_G.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_son_ratio_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_ratio_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_son_ratio_C
             // 
@@ -1895,7 +1899,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_ratio_C, "# 익절비중\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  " +
         "주문가능수 대비 %\r\n");
             this.TB_ik_son_ratio_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_son_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_son_ratio_F
             // 
@@ -1914,7 +1918,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_ratio_F, "# 익절비중\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  " +
         "주문가능수 대비 %\r\n");
             this.TB_ik_son_ratio_F.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_son_ratio_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_ratio_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_son_ratio_D
             // 
@@ -1933,7 +1937,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_ratio_D, "# 익절비중\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  " +
         "주문가능수 대비 %\r\n");
             this.TB_ik_son_ratio_D.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_son_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_son_ratio_E
             // 
@@ -1952,7 +1956,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_ratio_E, "# 익절비중\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  " +
         "주문가능수 대비 %\r\n");
             this.TB_ik_son_ratio_E.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_ik_son_ratio_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_ratio_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // MTB_ik_repeat
             // 
@@ -2071,7 +2075,7 @@ namespace 지니_64
             this.combo_new_or_A.TabIndex = 1;
             this.toolTip1.SetToolTip(this.combo_new_or_A, "조합방법 \r\n#  I : 진입시동작  D: 진입후 이탈시동작\r\nA 단독\r\nB 단독\r\nC 단독\r\nA or B\r\nA or B or C \r\nB or C" +
         " \r\nA or C \r\nA and B\r\nA and B and C \r\nA and B or C\r\n");
-            this.combo_new_or_A.SelectedIndexChanged += new System.EventHandler(this.combo_new_or_SelectedIndexChanged);
+            this.combo_new_or_A.SelectedIndexChanged += new System.EventHandler(this.Combo_new_or_SelectedIndexChanged);
             this.combo_new_or_A.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
             // 
             // combo_new_or_C
@@ -2093,7 +2097,7 @@ namespace 지니_64
             this.combo_new_or_C.TabIndex = 1;
             this.toolTip1.SetToolTip(this.combo_new_or_C, "아래 형식으로 조합가능 합니다.\r\n#  I : 진입시동작  D: 진입후 이탈시동작\r\nA 단독\r\nB 단독\r\nC 단독\r\nA or B\r\nA or B o" +
         "r C \r\nB or C \r\nA or C \r\nA and B\r\nA and B and C \r\nA and B or C\r\n");
-            this.combo_new_or_C.SelectedIndexChanged += new System.EventHandler(this.combo_new_or_SelectedIndexChanged);
+            this.combo_new_or_C.SelectedIndexChanged += new System.EventHandler(this.Combo_new_or_SelectedIndexChanged);
             this.combo_new_or_C.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
             // 
             // combo_new_or_B
@@ -2115,7 +2119,7 @@ namespace 지니_64
             this.combo_new_or_B.TabIndex = 1;
             this.toolTip1.SetToolTip(this.combo_new_or_B, "아래 형식으로 조합가능 합니다.\r\n#  I : 진입시동작  D: 진입후 이탈시동작\r\nA 단독\r\nB 단독\r\nC 단독\r\nA or B\r\nA or B o" +
         "r C \r\nB or C \r\nA or C \r\nA and B\r\nA and B and C \r\nA and B or C\r\n");
-            this.combo_new_or_B.SelectedIndexChanged += new System.EventHandler(this.combo_new_or_SelectedIndexChanged);
+            this.combo_new_or_B.SelectedIndexChanged += new System.EventHandler(this.Combo_new_or_SelectedIndexChanged);
             this.combo_new_or_B.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
             // 
             // label429
@@ -2125,7 +2129,7 @@ namespace 지니_64
             this.label429.Cursor = System.Windows.Forms.Cursors.Default;
             this.label429.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label429.ForeColor = System.Drawing.Color.Black;
-            this.label429.Location = new System.Drawing.Point(156, 102);
+            this.label429.Location = new System.Drawing.Point(156, 124);
             this.label429.Name = "label429";
             this.label429.Size = new System.Drawing.Size(73, 21);
             this.label429.TabIndex = 118;
@@ -2159,7 +2163,7 @@ namespace 지니_64
             this.label430.Cursor = System.Windows.Forms.Cursors.Default;
             this.label430.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label430.ForeColor = System.Drawing.Color.Black;
-            this.label430.Location = new System.Drawing.Point(156, 122);
+            this.label430.Location = new System.Drawing.Point(156, 144);
             this.label430.Name = "label430";
             this.label430.Size = new System.Drawing.Size(73, 21);
             this.label430.TabIndex = 117;
@@ -2204,7 +2208,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_silson_ratio_W, "# 매도비중 #\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :" +
         "  주문가능수 대비 %\r\n");
             this.TB_silson_ratio_W.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_silson_ratio_W.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_silson_ratio_W.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_예상수익TS
             // 
@@ -2242,7 +2246,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_예상손실_ratio, "# 매도비중 #\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :" +
         "  주문가능수 대비 %\r\n");
             this.TB_예상손실_ratio.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_예상손실_ratio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_예상손실_ratio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_예상수익_overlap
             // 
@@ -2507,7 +2511,7 @@ namespace 지니_64
             this.TB_예상수익_매입금.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_예상수익_매입금, "총매입금액\r\n # 매수기준금액 대비 % 입니다");
             this.TB_예상수익_매입금.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_예상수익_매입금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_예상수익_매입금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_예상손실_청산기준
             // 
@@ -2548,7 +2552,7 @@ namespace 지니_64
             this.TB_예상수익_trade_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_예상수익_trade_2, "# 개별잔고 매매범위\r\n잔고 매도가 시작되는 시점이 100% 입니다.\r\n");
             this.TB_예상수익_trade_2.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_예상수익_trade_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_예상수익_trade_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // MT_예상수익_repeat
             // 
@@ -2600,7 +2604,7 @@ namespace 지니_64
             this.TB_예상수익_trade_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_예상수익_trade_1, "# 개별잔고 매매범위\r\n잔고 매도가 시작되는 시점이 100% 입니다.\r\n");
             this.TB_예상수익_trade_1.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_예상수익_trade_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_예상수익_trade_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // CB_silson_잔량취소
             // 
@@ -2639,7 +2643,7 @@ namespace 지니_64
             this.TB_예상손실_trade_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_예상손실_trade_2, "# 개별잔고 매매범위\r\n잔고 매도가 시작되는 시점이 100% 입니다.\r\n");
             this.TB_예상손실_trade_2.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_예상손실_trade_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_예상손실_trade_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_silson_trade_W_1
             // 
@@ -2657,7 +2661,7 @@ namespace 지니_64
             this.TB_silson_trade_W_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_silson_trade_W_1, "# 개별잔고 매매범위\r\n잔고 매도가 시작되는 시점이 100% 입니다.\r\n");
             this.TB_silson_trade_W_1.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_silson_trade_W_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_silson_trade_W_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // MT_예상손실_repeat
             // 
@@ -2695,7 +2699,7 @@ namespace 지니_64
             this.TB_silson_trade_W_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_silson_trade_W_2, "# 개별잔고 매매범위\r\n잔고 매도가 시작되는 시점이 100% 입니다.\r\n");
             this.TB_silson_trade_W_2.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_silson_trade_W_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_silson_trade_W_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_예상손실_trade_1
             // 
@@ -2713,7 +2717,7 @@ namespace 지니_64
             this.TB_예상손실_trade_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_예상손실_trade_1, "# 개별잔고 매매범위\r\n잔고 매도가 시작되는 시점이 100% 입니다.\r\n");
             this.TB_예상손실_trade_1.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_예상손실_trade_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_예상손실_trade_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_예상손실_매입
             // 
@@ -2730,7 +2734,7 @@ namespace 지니_64
             this.TB_예상손실_매입.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_예상손실_매입, "총매입금액\r\n # 매수기준금액 대비 % 입니다\r\n");
             this.TB_예상손실_매입.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_예상손실_매입.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_예상손실_매입.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_silson_청산기준
             // 
@@ -2770,7 +2774,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_sell_time_ratio, "# 매도비중 #\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :" +
         "  주문가능수 대비 %\r\n");
             this.TB_sell_time_ratio.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_sell_time_ratio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_sell_time_ratio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label214
             // 
@@ -2891,7 +2895,7 @@ namespace 지니_64
             this.TB_silson_매입금_W.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_silson_매입금_W, "총매입금액\r\n # 매수기준금액 대비 % 입니다\r\n");
             this.TB_silson_매입금_W.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_silson_매입금_W.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_silson_매입금_W.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label182
             // 
@@ -2944,7 +2948,7 @@ namespace 지니_64
             this.TB_sell_time_trade_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_sell_time_trade_1, "# 개별잔고 매매범위\r\n잔고 매도가 시작되는 시점이 100% 입니다.\r\n");
             this.TB_sell_time_trade_1.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_sell_time_trade_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_sell_time_trade_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_sell_time_trade_2
             // 
@@ -2962,7 +2966,7 @@ namespace 지니_64
             this.TB_sell_time_trade_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_sell_time_trade_2, "# 개별잔고 매매범위\r\n잔고 매도가 시작되는 시점이 100% 입니다.\r\n");
             this.TB_sell_time_trade_2.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_sell_time_trade_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_sell_time_trade_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label44
             // 
@@ -3014,7 +3018,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_예상수익_ratio, "# 매도비중 #\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :" +
         "  주문가능수 대비 %\r\n");
             this.TB_예상수익_ratio.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_예상수익_ratio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_예상수익_ratio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_지수연동이상
             // 
@@ -3089,7 +3093,7 @@ namespace 지니_64
             this.label431.Cursor = System.Windows.Forms.Cursors.Default;
             this.label431.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label431.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label431.Location = new System.Drawing.Point(274, 62);
+            this.label431.Location = new System.Drawing.Point(274, 84);
             this.label431.Name = "label431";
             this.label431.Size = new System.Drawing.Size(112, 21);
             this.label431.TabIndex = 120;
@@ -3113,7 +3117,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_sell_ratio_C, "#손절비중\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주" +
         "문가능수 대비 %\r\n");
             this.TB_sell_ratio_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_sell_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_sell_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_sell_ratio_D
             // 
@@ -3131,7 +3135,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_sell_ratio_D, "#손절비중\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주" +
         "문가능수 대비 %\r\n");
             this.TB_sell_ratio_D.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_sell_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_sell_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // MTB_sell_cancel_repeat
             // 
@@ -3333,7 +3337,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_sell_ratio_F, "#손절비중\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주" +
         "문가능수 대비 %\r\n");
             this.TB_sell_ratio_F.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_sell_ratio_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_sell_ratio_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // combo_sell_ratio_F
             // 
@@ -3393,7 +3397,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_sell_ratio_E, "#손절비중\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주" +
         "문가능수 대비 %\r\n");
             this.TB_sell_ratio_E.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_sell_ratio_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_sell_ratio_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_sell_CancelOrder
             // 
@@ -3532,7 +3536,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_sell_ratio_B, "#손절비중\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주" +
         "문가능수 대비 %\r\n");
             this.TB_sell_ratio_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_sell_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_sell_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // combo_sell_ratio_B
             // 
@@ -3571,7 +3575,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_sell_ratio_A, "#손절비중\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주" +
         "문가능수 대비 %\r\n");
             this.TB_sell_ratio_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_sell_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_sell_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // combo_sell_son_A
             // 
@@ -3662,7 +3666,7 @@ namespace 지니_64
             this.label428.Cursor = System.Windows.Forms.Cursors.Default;
             this.label428.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label428.ForeColor = System.Drawing.Color.Black;
-            this.label428.Location = new System.Drawing.Point(156, 82);
+            this.label428.Location = new System.Drawing.Point(156, 104);
             this.label428.Name = "label428";
             this.label428.Size = new System.Drawing.Size(73, 21);
             this.label428.TabIndex = 119;
@@ -3680,7 +3684,7 @@ namespace 지니_64
             this.CB_new_rebuy.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.CB_new_rebuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_new_rebuy.Font = new System.Drawing.Font("굴림체", 9F);
-            this.CB_new_rebuy.Location = new System.Drawing.Point(183, 40);
+            this.CB_new_rebuy.Location = new System.Drawing.Point(183, 60);
             this.CB_new_rebuy.Margin = new System.Windows.Forms.Padding(0);
             this.CB_new_rebuy.Name = "CB_new_rebuy";
             this.CB_new_rebuy.Size = new System.Drawing.Size(165, 21);
@@ -3708,7 +3712,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_TS_ratio_A, "만원 :: 평가 금액 대비 매도 금액\r\n%주 :: 매입수량 대비  매도%\r\n* 비중 0.001 :: 이면 1주 매도 합니다.\r\n* 비중 0  ::" +
         " 이면 매도 없이 차수 + 1 됩니다. \r\n");
             this.TB_TS_ratio_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TS_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label436
             // 
@@ -3734,13 +3738,12 @@ namespace 지니_64
             this.MTB_new_rebuytime.HidePromptOnLeave = true;
             this.MTB_new_rebuytime.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.MTB_new_rebuytime.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
-            this.MTB_new_rebuytime.Location = new System.Drawing.Point(347, 40);
+            this.MTB_new_rebuytime.Location = new System.Drawing.Point(347, 60);
             this.MTB_new_rebuytime.Mask = "00000";
             this.MTB_new_rebuytime.Name = "MTB_new_rebuytime";
             this.MTB_new_rebuytime.RejectInputOnFirstFailure = true;
             this.MTB_new_rebuytime.Size = new System.Drawing.Size(39, 21);
             this.MTB_new_rebuytime.TabIndex = 129;
-            this.MTB_new_rebuytime.Text = "12345";
             this.MTB_new_rebuytime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MTB_new_rebuytime.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.toolTip1.SetToolTip(this.MTB_new_rebuytime, "재매수용 :: \r\n잔고 전량 청산이 된 후 설정 시간이 지난 후 신규 매수 합니다.");
@@ -3779,7 +3782,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_TimeSell_매도비중_A, "# 매도비중 #\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :" +
         "  주문가능수 대비 %\r\n");
             this.TB_TimeSell_매도비중_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TimeSell_매도비중_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TimeSell_매도비중_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CBB_TimeSell_수익구분_A
             // 
@@ -3916,7 +3919,7 @@ namespace 지니_64
             this.TB_TimeSell_매매범위_2_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_TimeSell_매매범위_2_A, "# 개별잔고 매매범위\r\n잔고 매도가 시작되는 시점이 100% 입니다.");
             this.TB_TimeSell_매매범위_2_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TimeSell_매매범위_2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_TimeSell_매매범위_2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_TimeSell_매매범위_1_A
             // 
@@ -3934,7 +3937,7 @@ namespace 지니_64
             this.TB_TimeSell_매매범위_1_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_TimeSell_매매범위_1_A, "# 매매 범위\r\n주문가능 수량의 대한 비율\r\n");
             this.TB_TimeSell_매매범위_1_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TimeSell_매매범위_1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_TimeSell_매매범위_1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_TimeSell_매입금1_C
             // 
@@ -3948,12 +3951,11 @@ namespace 지니_64
             this.TB_TimeSell_매입금1_C.Name = "TB_TimeSell_매입금1_C";
             this.TB_TimeSell_매입금1_C.Size = new System.Drawing.Size(35, 14);
             this.TB_TimeSell_매입금1_C.TabIndex = 29;
-            this.TB_TimeSell_매입금1_C.Text = "0.00";
             this.TB_TimeSell_매입금1_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_TimeSell_매입금1_C, "# 잔고 매입금 #\r\n기준금 체크 X    - 만원 단위\r\n기준금 체크 O   - 매수기준금액 대비 잔고 매입금  \r\n        ex) 매수기" +
         "준금 10,000,000 일때 매입금 20 이면  \r\n       잔고의 총 매입금액 이 200만원 이상일때 동작한다.\r\n");
             this.TB_TimeSell_매입금1_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TimeSell_매입금1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TimeSell_매입금1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_TimeSell_매입금1_B
             // 
@@ -3967,12 +3969,11 @@ namespace 지니_64
             this.TB_TimeSell_매입금1_B.Name = "TB_TimeSell_매입금1_B";
             this.TB_TimeSell_매입금1_B.Size = new System.Drawing.Size(35, 14);
             this.TB_TimeSell_매입금1_B.TabIndex = 29;
-            this.TB_TimeSell_매입금1_B.Text = "0.00";
             this.TB_TimeSell_매입금1_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_TimeSell_매입금1_B, "# 잔고 매입금 #\r\n기준금 체크 X    - 만원 단위\r\n기준금 체크 O   - 매수기준금액 대비 잔고 매입금  \r\n        ex) 매수기" +
         "준금 10,000,000 일때 매입금 20 이면  \r\n       잔고의 총 매입금액 이 200만원 이상일때 동작한다.\r\n");
             this.TB_TimeSell_매입금1_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TimeSell_매입금1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TimeSell_매입금1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_TimeSell_매입금1_A
             // 
@@ -3986,12 +3987,11 @@ namespace 지니_64
             this.TB_TimeSell_매입금1_A.Name = "TB_TimeSell_매입금1_A";
             this.TB_TimeSell_매입금1_A.Size = new System.Drawing.Size(35, 14);
             this.TB_TimeSell_매입금1_A.TabIndex = 29;
-            this.TB_TimeSell_매입금1_A.Text = "12345";
             this.TB_TimeSell_매입금1_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_TimeSell_매입금1_A, "# 잔고 매입금 #\r\n기준금 체크 X    - 만원 단위\r\n기준금 체크 O   - 매수기준금액 대비 잔고 매입금  \r\n        ex) 매수기" +
         "준금 10,000,000 일때 매입금 20 이면  \r\n       잔고의 총 매입금액 이 200만원 이상일때 동작한다.\r\n");
             this.TB_TimeSell_매입금1_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TimeSell_매입금1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TimeSell_매입금1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_TimeSell_C
             // 
@@ -4067,11 +4067,10 @@ namespace 지니_64
             this.TB_TimeSell_start_A.Name = "TB_TimeSell_start_A";
             this.TB_TimeSell_start_A.Size = new System.Drawing.Size(45, 21);
             this.TB_TimeSell_start_A.TabIndex = 29;
-            this.TB_TimeSell_start_A.Text = "123456";
             this.TB_TimeSell_start_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_TimeSell_start_A, "동작시간 : 시간입력 ex) 103000\r\n경과시간/초 : 초입력 ex) 600 - 거래일 0 일만 가능합니다.\r\n");
             this.TB_TimeSell_start_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_TimeSell_start_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_TimeSell_start_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_TimeSell_start_B
             // 
@@ -4087,7 +4086,7 @@ namespace 지니_64
             this.TB_TimeSell_start_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_TimeSell_start_B, "동작시간 : 시간입력 ex) 103000\r\n경과시간/초 : 초입력 ex) 600 - 거래일 0 일만 가능합니다.\r\n");
             this.TB_TimeSell_start_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_TimeSell_start_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_TimeSell_start_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_TimeSell_start_C
             // 
@@ -4103,7 +4102,7 @@ namespace 지니_64
             this.TB_TimeSell_start_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_TimeSell_start_C, "동작시간 : 시간입력 ex) 103000\r\n경과시간/초 : 초입력 ex) 600 - 거래일 0 일만 가능합니다.\r\n");
             this.TB_TimeSell_start_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_TimeSell_start_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_TimeSell_start_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_TimeSell_수익범위_2_C
             // 
@@ -4119,7 +4118,7 @@ namespace 지니_64
             this.TB_TimeSell_수익범위_2_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TimeSell_수익범위_2_C, resources.GetString("TB_TimeSell_수익범위_2_C.ToolTip"));
             this.TB_TimeSell_수익범위_2_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TimeSell_수익범위_2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TimeSell_수익범위_2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_TimeSell_수익범위_2_B
             // 
@@ -4135,7 +4134,7 @@ namespace 지니_64
             this.TB_TimeSell_수익범위_2_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TimeSell_수익범위_2_B, resources.GetString("TB_TimeSell_수익범위_2_B.ToolTip"));
             this.TB_TimeSell_수익범위_2_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TimeSell_수익범위_2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TimeSell_수익범위_2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_TimeSell_수익범위_2_A
             // 
@@ -4152,7 +4151,7 @@ namespace 지니_64
             this.TB_TimeSell_수익범위_2_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TimeSell_수익범위_2_A, resources.GetString("TB_TimeSell_수익범위_2_A.ToolTip"));
             this.TB_TimeSell_수익범위_2_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TimeSell_수익범위_2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TimeSell_수익범위_2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // combo_sell_time_gubun
             // 
@@ -4251,7 +4250,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_TimeSell_매도비중_C, "# 매도비중 #\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :" +
         "  주문가능수 대비 %\r\n");
             this.TB_TimeSell_매도비중_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TimeSell_매도비중_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TimeSell_매도비중_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_TimeSell_매도비중_B
             // 
@@ -4269,7 +4268,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_TimeSell_매도비중_B, "# 매도비중 #\r\n0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :" +
         "  주문가능수 대비 %\r\n");
             this.TB_TimeSell_매도비중_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TimeSell_매도비중_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TimeSell_매도비중_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CBB_TimeSell_수익구분_B
             // 
@@ -4334,7 +4333,7 @@ namespace 지니_64
             this.TB_TimeSell_수익범위_1_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TimeSell_수익범위_1_A, resources.GetString("TB_TimeSell_수익범위_1_A.ToolTip"));
             this.TB_TimeSell_수익범위_1_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TimeSell_수익범위_1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TimeSell_수익범위_1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_TimeSell_수익범위_1_B
             // 
@@ -4350,7 +4349,7 @@ namespace 지니_64
             this.TB_TimeSell_수익범위_1_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TimeSell_수익범위_1_B, resources.GetString("TB_TimeSell_수익범위_1_B.ToolTip"));
             this.TB_TimeSell_수익범위_1_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TimeSell_수익범위_1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TimeSell_수익범위_1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_TimeSell_수익범위_1_C
             // 
@@ -4366,7 +4365,7 @@ namespace 지니_64
             this.TB_TimeSell_수익범위_1_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TimeSell_수익범위_1_C, resources.GetString("TB_TimeSell_수익범위_1_C.ToolTip"));
             this.TB_TimeSell_수익범위_1_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TimeSell_수익범위_1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TimeSell_수익범위_1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_TimeSell_매매범위_1_C
             // 
@@ -4384,7 +4383,7 @@ namespace 지니_64
             this.TB_TimeSell_매매범위_1_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_TimeSell_매매범위_1_C, "# 매매 범위\r\n주문가능 수량의 대한 비율\r\n");
             this.TB_TimeSell_매매범위_1_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TimeSell_매매범위_1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_TimeSell_매매범위_1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_TimeSell_매매범위_1_B
             // 
@@ -4402,7 +4401,7 @@ namespace 지니_64
             this.TB_TimeSell_매매범위_1_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_TimeSell_매매범위_1_B, "# 매매 범위\r\n주문가능 수량의 대한 비율\r\n");
             this.TB_TimeSell_매매범위_1_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TimeSell_매매범위_1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_TimeSell_매매범위_1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_TimeSell_매매범위_2_C
             // 
@@ -4420,7 +4419,7 @@ namespace 지니_64
             this.TB_TimeSell_매매범위_2_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_TimeSell_매매범위_2_C, "# 매매 범위\r\n주문가능 수량의 대한 비율\r\n");
             this.TB_TimeSell_매매범위_2_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TimeSell_매매범위_2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_TimeSell_매매범위_2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_TimeSell_매매범위_2_B
             // 
@@ -4438,7 +4437,7 @@ namespace 지니_64
             this.TB_TimeSell_매매범위_2_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_TimeSell_매매범위_2_B, "# 매매 범위\r\n주문가능 수량의 대한 비율\r\n");
             this.TB_TimeSell_매매범위_2_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TimeSell_매매범위_2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_TimeSell_매매범위_2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // CBB_TimeSell_매도비중_B
             // 
@@ -4557,7 +4556,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_value_B, "#주문 가격");
             this.TB_ik_value_B.TabIndexChanged += new System.EventHandler(this.Text_Zero);
             this.TB_ik_value_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_ik_value_A
             // 
@@ -4574,7 +4573,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_value_A, "#주문 가격");
             this.TB_ik_value_A.TabIndexChanged += new System.EventHandler(this.Text_Zero);
             this.TB_ik_value_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_ik_son_B
             // 
@@ -4593,7 +4592,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_B, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익 - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_son_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_son_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_value_I
             // 
@@ -4610,7 +4609,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_value_I, "#주문 가격");
             this.TB_ik_value_I.TabIndexChanged += new System.EventHandler(this.Text_Zero);
             this.TB_ik_value_I.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_value_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_value_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // combo_ik_ratio_B
             // 
@@ -4648,7 +4647,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_value_H, "#주문 가격");
             this.TB_ik_value_H.TabIndexChanged += new System.EventHandler(this.Text_Zero);
             this.TB_ik_value_H.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_value_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_value_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_ik_son_I
             // 
@@ -4667,7 +4666,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_I, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익 - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_son_I.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_son_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // combo_ik_B
             // 
@@ -4707,7 +4706,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_A, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익(%) - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_son_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_son_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // combo_ik_I
             // 
@@ -4745,7 +4744,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_value_G, "#주문 가격");
             this.TB_ik_value_G.TabIndexChanged += new System.EventHandler(this.Text_Zero);
             this.TB_ik_value_G.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_value_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_value_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // combo_ik_A
             // 
@@ -4827,7 +4826,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_H, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익 - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_son_H.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_son_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // combo_ik_H
             // 
@@ -4865,7 +4864,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_value_F, "#주문 가격");
             this.TB_ik_value_F.TabIndexChanged += new System.EventHandler(this.Text_Zero);
             this.TB_ik_value_F.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_value_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_value_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_ik_son_D
             // 
@@ -4884,7 +4883,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_D, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익 - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_son_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_son_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_son_G
             // 
@@ -4903,7 +4902,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_G, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익 - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_son_G.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_son_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // combo_ik_ratio_H
             // 
@@ -4941,7 +4940,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_value_C, "#주문 가격");
             this.TB_ik_value_C.TabIndexChanged += new System.EventHandler(this.Text_Zero);
             this.TB_ik_value_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_ik_son_C
             // 
@@ -4960,7 +4959,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_C, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익 - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_son_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_son_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // combo_ik_G
             // 
@@ -5021,7 +5020,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_E, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익 - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_son_E.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_son_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_value_D
             // 
@@ -5038,7 +5037,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_value_D, "#주문 가격");
             this.TB_ik_value_D.TabIndexChanged += new System.EventHandler(this.Text_Zero);
             this.TB_ik_value_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_value_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_value_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_ik_value_E
             // 
@@ -5055,7 +5054,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_value_E, "#주문 가격");
             this.TB_ik_value_E.TabIndexChanged += new System.EventHandler(this.Text_Zero);
             this.TB_ik_value_E.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_value_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_value_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_ik_son_F
             // 
@@ -5074,7 +5073,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_son_F, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익 - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_son_F.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_son_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_son_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // combo_ik_ratio_G
             // 
@@ -5884,7 +5883,7 @@ namespace 지니_64
             this.CB_익절재매수B.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.CB_익절재매수B.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_익절재매수B.ForeColor = System.Drawing.Color.Black;
-            this.CB_익절재매수B.Location = new System.Drawing.Point(274, 102);
+            this.CB_익절재매수B.Location = new System.Drawing.Point(274, 124);
             this.CB_익절재매수B.Name = "CB_익절재매수B";
             this.CB_익절재매수B.Size = new System.Drawing.Size(112, 21);
             this.CB_익절재매수B.TabIndex = 116;
@@ -5905,7 +5904,7 @@ namespace 지니_64
             this.CB_익절재매수A.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.CB_익절재매수A.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_익절재매수A.ForeColor = System.Drawing.Color.Black;
-            this.CB_익절재매수A.Location = new System.Drawing.Point(274, 82);
+            this.CB_익절재매수A.Location = new System.Drawing.Point(274, 104);
             this.CB_익절재매수A.Name = "CB_익절재매수A";
             this.CB_익절재매수A.Size = new System.Drawing.Size(112, 21);
             this.CB_익절재매수A.TabIndex = 115;
@@ -5926,7 +5925,7 @@ namespace 지니_64
             this.CB_익절재매수C.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.CB_익절재매수C.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_익절재매수C.ForeColor = System.Drawing.Color.Black;
-            this.CB_익절재매수C.Location = new System.Drawing.Point(274, 122);
+            this.CB_익절재매수C.Location = new System.Drawing.Point(274, 144);
             this.CB_익절재매수C.Name = "CB_익절재매수C";
             this.CB_익절재매수C.Size = new System.Drawing.Size(112, 21);
             this.CB_익절재매수C.TabIndex = 114;
@@ -5942,7 +5941,7 @@ namespace 지니_64
             this.TB_Limit_New_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_Limit_New_B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_Limit_New_B.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_Limit_New_B.Location = new System.Drawing.Point(228, 102);
+            this.TB_Limit_New_B.Location = new System.Drawing.Point(228, 124);
             this.TB_Limit_New_B.MaxLength = 5;
             this.TB_Limit_New_B.Name = "TB_Limit_New_B";
             this.TB_Limit_New_B.Size = new System.Drawing.Size(47, 21);
@@ -5950,7 +5949,7 @@ namespace 지니_64
             this.TB_Limit_New_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_Limit_New_B, "신규 매수식에 첫 진입후  \r\n제한시간이 이내에 재검색 되면\r\n잔고에 없을때 매수 진행 합니다.\r\n");
             this.TB_Limit_New_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Limit_New_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Limit_New_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_Limit_New_A
             // 
@@ -5958,16 +5957,15 @@ namespace 지니_64
             this.TB_Limit_New_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_Limit_New_A.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_Limit_New_A.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_Limit_New_A.Location = new System.Drawing.Point(228, 82);
+            this.TB_Limit_New_A.Location = new System.Drawing.Point(228, 104);
             this.TB_Limit_New_A.MaxLength = 5;
             this.TB_Limit_New_A.Name = "TB_Limit_New_A";
             this.TB_Limit_New_A.Size = new System.Drawing.Size(47, 21);
             this.TB_Limit_New_A.TabIndex = 124;
-            this.TB_Limit_New_A.Text = "12345";
             this.TB_Limit_New_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_Limit_New_A, "신규 매수식에 첫 진입후  \r\n제한시간이 이내에 재검색 되면\r\n잔고에 없을때 매수 진행 합니다.\r\n");
             this.TB_Limit_New_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Limit_New_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Limit_New_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_Limit_New_C
             // 
@@ -5975,7 +5973,7 @@ namespace 지니_64
             this.TB_Limit_New_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_Limit_New_C.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_Limit_New_C.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_Limit_New_C.Location = new System.Drawing.Point(228, 122);
+            this.TB_Limit_New_C.Location = new System.Drawing.Point(228, 144);
             this.TB_Limit_New_C.MaxLength = 5;
             this.TB_Limit_New_C.Name = "TB_Limit_New_C";
             this.TB_Limit_New_C.Size = new System.Drawing.Size(47, 21);
@@ -5983,7 +5981,7 @@ namespace 지니_64
             this.TB_Limit_New_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_Limit_New_C, "신규 매수식에 첫 진입후  \r\n제한시간이 이내에 재검색 되면\r\n잔고에 없을때 매수 진행 합니다.\r\n");
             this.TB_Limit_New_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Limit_New_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Limit_New_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label5
             // 
@@ -6014,7 +6012,7 @@ namespace 지니_64
             this.TB_TimeSell_거래일_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_TimeSell_거래일_C, "# 거래일 이하 동작\r\nex) 7 => 신규매수후 7일 이하의 종목만 동작 됩니다.(공휴일 포함)");
             this.TB_TimeSell_거래일_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_TimeSell_거래일_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_TimeSell_거래일_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_TimeSell_거래일_B
             // 
@@ -6031,7 +6029,7 @@ namespace 지니_64
             this.TB_TimeSell_거래일_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_TimeSell_거래일_B, "# 거래일 이하 동작\r\nex) 7 => 신규매수후 7일 이하의 종목만 동작 됩니다.(공휴일 포함)");
             this.TB_TimeSell_거래일_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_TimeSell_거래일_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_TimeSell_거래일_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_TimeSell_거래일_A
             // 
@@ -6045,11 +6043,10 @@ namespace 지니_64
             this.TB_TimeSell_거래일_A.Name = "TB_TimeSell_거래일_A";
             this.TB_TimeSell_거래일_A.Size = new System.Drawing.Size(43, 21);
             this.TB_TimeSell_거래일_A.TabIndex = 29;
-            this.TB_TimeSell_거래일_A.Text = "0";
             this.TB_TimeSell_거래일_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_TimeSell_거래일_A, "# 거래일 이하 동작\r\nex) 7 => 신규매수후 7일 이하의 종목만 동작 됩니다.(공휴일 포함)");
             this.TB_TimeSell_거래일_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_TimeSell_거래일_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_TimeSell_거래일_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_TS_upper_B
             // 
@@ -6067,7 +6064,7 @@ namespace 지니_64
             this.TB_TS_upper_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_upper_B, "#트레일링 값");
             this.TB_TS_upper_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_upper_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TS_upper_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_TS_upper_G
             // 
@@ -6085,7 +6082,7 @@ namespace 지니_64
             this.TB_TS_upper_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_upper_G, "#트레일링 값");
             this.TB_TS_upper_G.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_upper_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TS_upper_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_TS_upper_C
             // 
@@ -6103,7 +6100,7 @@ namespace 지니_64
             this.TB_TS_upper_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_upper_C, "#트레일링 값");
             this.TB_TS_upper_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_upper_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TS_upper_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_TS_upper_F
             // 
@@ -6121,7 +6118,7 @@ namespace 지니_64
             this.TB_TS_upper_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_upper_F, "#트레일링 값");
             this.TB_TS_upper_F.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_upper_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TS_upper_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_TS_upper_E
             // 
@@ -6139,7 +6136,7 @@ namespace 지니_64
             this.TB_TS_upper_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_upper_E, "#트레일링 값");
             this.TB_TS_upper_E.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_upper_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TS_upper_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_TS_upper_A
             // 
@@ -6157,7 +6154,7 @@ namespace 지니_64
             this.TB_TS_upper_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_upper_A, "#트레일링 값");
             this.TB_TS_upper_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_upper_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TS_upper_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_TS_upper_D
             // 
@@ -6175,7 +6172,7 @@ namespace 지니_64
             this.TB_TS_upper_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_upper_D, "#트레일링 값");
             this.TB_TS_upper_D.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_upper_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TS_upper_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_TS_upper_H
             // 
@@ -6193,7 +6190,7 @@ namespace 지니_64
             this.TB_TS_upper_H.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_upper_H, "#트레일링 값");
             this.TB_TS_upper_H.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_upper_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TS_upper_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_TS_upper_I
             // 
@@ -6211,7 +6208,7 @@ namespace 지니_64
             this.TB_TS_upper_I.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_upper_I, "#트레일링 값");
             this.TB_TS_upper_I.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_upper_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TS_upper_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_TS_down_H
             // 
@@ -6229,7 +6226,7 @@ namespace 지니_64
             this.TB_TS_down_H.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_down_H, "#스탑 값");
             this.TB_TS_down_H.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_TS_down_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TS_down_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_TS_down_E
             // 
@@ -6247,7 +6244,7 @@ namespace 지니_64
             this.TB_TS_down_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_down_E, "#스탑 값");
             this.TB_TS_down_E.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_TS_down_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TS_down_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_TS_down_C
             // 
@@ -6265,7 +6262,7 @@ namespace 지니_64
             this.TB_TS_down_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_down_C, "#스탑 값");
             this.TB_TS_down_C.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_TS_down_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TS_down_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_TS_down_A
             // 
@@ -6283,7 +6280,7 @@ namespace 지니_64
             this.TB_TS_down_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_down_A, "#스탑 값");
             this.TB_TS_down_A.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_TS_down_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TS_down_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_TS_down_I
             // 
@@ -6301,7 +6298,7 @@ namespace 지니_64
             this.TB_TS_down_I.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_down_I, "#스탑 값");
             this.TB_TS_down_I.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_TS_down_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TS_down_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_TS_down_G
             // 
@@ -6319,7 +6316,7 @@ namespace 지니_64
             this.TB_TS_down_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_down_G, "#스탑 값");
             this.TB_TS_down_G.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_TS_down_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TS_down_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_TS_down_D
             // 
@@ -6337,7 +6334,7 @@ namespace 지니_64
             this.TB_TS_down_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_down_D, "#스탑 값");
             this.TB_TS_down_D.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_TS_down_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TS_down_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_TS_down_B
             // 
@@ -6355,7 +6352,7 @@ namespace 지니_64
             this.TB_TS_down_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_down_B, "#스탑 값");
             this.TB_TS_down_B.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_TS_down_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TS_down_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_TS_down_F
             // 
@@ -6373,7 +6370,7 @@ namespace 지니_64
             this.TB_TS_down_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_TS_down_F, "#스탑 값");
             this.TB_TS_down_F.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_TS_down_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TS_down_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CBB_TS_upper_I
             // 
@@ -6750,7 +6747,7 @@ namespace 지니_64
             this.TB_sell_son_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_sell_son_C, "# 손절 기준\r\n1. 수익률(%)\r\n2. 평가손익금\r\n3. 예상손익금\r\n4. 기준수익(%)\r\n");
             this.TB_sell_son_C.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_sell_son_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_sell_son_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_sell_son_D
             // 
@@ -6767,7 +6764,7 @@ namespace 지니_64
             this.TB_sell_son_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_sell_son_D, "# 손절 기준\r\n1. 수익률(%)\r\n2. 평가손익금\r\n3. 예상손익금\r\n4. 기준수익(%)\r\n");
             this.TB_sell_son_D.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_sell_son_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_sell_son_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_sell_son_F
             // 
@@ -6784,7 +6781,7 @@ namespace 지니_64
             this.TB_sell_son_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_sell_son_F, "# 손절 기준\r\n1. 수익률(%)\r\n2. 평가손익금\r\n3. 예상손익금\r\n4. 기준수익(%)\r\n");
             this.TB_sell_son_F.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_sell_son_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_sell_son_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_sell_son_B
             // 
@@ -6801,7 +6798,7 @@ namespace 지니_64
             this.TB_sell_son_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_sell_son_B, "# 손절 기준\r\n1. 수익률(%)\r\n2. 평가손익금\r\n3. 예상손익금\r\n4. 기준수익(%)\r\n");
             this.TB_sell_son_B.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_sell_son_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_sell_son_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_sell_son_E
             // 
@@ -6818,7 +6815,7 @@ namespace 지니_64
             this.TB_sell_son_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_sell_son_E, "# 손절 기준\r\n1. 수익률(%)\r\n2. 평가손익금\r\n3. 예상손익금\r\n4. 기준수익(%)\r\n");
             this.TB_sell_son_E.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_sell_son_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_sell_son_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_sell_son_A
             // 
@@ -6835,7 +6832,7 @@ namespace 지니_64
             this.TB_sell_son_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_sell_son_A, "# 손절 기준\r\n1. 수익률(%)\r\n2. 평가손익금\r\n3. 예상손익금\r\n4. 기준수익(%)\r\n");
             this.TB_sell_son_A.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_sell_son_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_sell_son_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CB_TS_손실제한
             // 
@@ -6892,7 +6889,7 @@ namespace 지니_64
             this.TB_sell_value_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_sell_value_D, "#손절 주문가격");
             this.TB_sell_value_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_sell_value_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_sell_value_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_sell_value_C
             // 
@@ -6908,7 +6905,7 @@ namespace 지니_64
             this.TB_sell_value_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_sell_value_C, "#손절 주문가격");
             this.TB_sell_value_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_sell_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_sell_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_sell_value_F
             // 
@@ -6924,7 +6921,7 @@ namespace 지니_64
             this.TB_sell_value_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_sell_value_F, "#손절 주문가격");
             this.TB_sell_value_F.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_sell_value_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_sell_value_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_sell_value_B
             // 
@@ -6940,7 +6937,7 @@ namespace 지니_64
             this.TB_sell_value_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_sell_value_B, "#손절 주문가격");
             this.TB_sell_value_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_sell_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_sell_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_sell_value_E
             // 
@@ -6956,7 +6953,7 @@ namespace 지니_64
             this.TB_sell_value_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_sell_value_E, "#손절 주문가격");
             this.TB_sell_value_E.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_sell_value_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_sell_value_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_sell_value_A
             // 
@@ -6972,7 +6969,7 @@ namespace 지니_64
             this.TB_sell_value_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_sell_value_A, "#손절 주문가격");
             this.TB_sell_value_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_sell_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_sell_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_ik_down_A
             // 
@@ -6990,7 +6987,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_A, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익 - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_down_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_down_I
             // 
@@ -7008,7 +7005,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_I, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익 - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_down_I.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_down_C
             // 
@@ -7026,7 +7023,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_C, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익 - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_down_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_down_H
             // 
@@ -7044,7 +7041,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_H, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익 - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_down_H.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_down_D
             // 
@@ -7062,7 +7059,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_D, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익 - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_down_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_down_E
             // 
@@ -7080,7 +7077,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_E, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익 - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_down_E.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_down_B
             // 
@@ -7098,7 +7095,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_B, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익 - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_down_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_down_G
             // 
@@ -7116,7 +7113,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_G, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익 - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_down_G.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_ik_down_F
             // 
@@ -7134,7 +7131,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_ik_down_F, "# 익절조건\r\n1. 수익률(%)\r\n2. 평가손익금 \r\n3. 예상손익금 - 예상손익금 이상 and 수익률 과 예상손익금 0 이상일때만 동작\r\n4. " +
         "기준수익 - 최초 매수가격 (잔고표 에서 변경가능)\r\n");
             this.TB_ik_down_F.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_ik_down_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // combo_ik_down_C
             // 
@@ -7366,7 +7363,11 @@ namespace 지니_64
             this.P_진입조건.Controls.Add(this.label4);
             this.P_진입조건.Controls.Add(this.MTB_추가매수딜레이);
             this.P_진입조건.Controls.Add(this.MTB_new_rebuytime);
+            this.P_진입조건.Controls.Add(this.CB_신용주문_신규_C);
+            this.P_진입조건.Controls.Add(this.CB_신용주문_신규_B);
+            this.P_진입조건.Controls.Add(this.CB_신용주문_신규_A);
             this.P_진입조건.Controls.Add(this.CB_new_rebuy);
+            this.P_진입조건.Controls.Add(this.label21);
             this.P_진입조건.Controls.Add(this.label_추가매수딜레이);
             this.P_진입조건.Controls.Add(this.TB_Limit_New_C);
             this.P_진입조건.Controls.Add(this.TB_잔고개수_신규C);
@@ -7402,9 +7403,9 @@ namespace 지니_64
             this.P_진입조건.Controls.Add(this.label15);
             this.P_진입조건.Controls.Add(this.CB_익절재매수B);
             this.P_진입조건.Controls.Add(this.LB_잔고개수_신규B);
-            this.P_진입조건.Location = new System.Drawing.Point(946, 27);
+            this.P_진입조건.Location = new System.Drawing.Point(946, 5);
             this.P_진입조건.Name = "P_진입조건";
-            this.P_진입조건.Size = new System.Drawing.Size(386, 143);
+            this.P_진입조건.Size = new System.Drawing.Size(386, 165);
             this.P_진입조건.TabIndex = 137;
             // 
             // label4
@@ -7430,7 +7431,7 @@ namespace 지니_64
             this.MTB_추가매수딜레이.HidePromptOnLeave = true;
             this.MTB_추가매수딜레이.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.MTB_추가매수딜레이.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
-            this.MTB_추가매수딜레이.Location = new System.Drawing.Point(134, 40);
+            this.MTB_추가매수딜레이.Location = new System.Drawing.Point(134, 60);
             this.MTB_추가매수딜레이.Mask = "00000";
             this.MTB_추가매수딜레이.Name = "MTB_추가매수딜레이";
             this.MTB_추가매수딜레이.RejectInputOnFirstFailure = true;
@@ -7439,13 +7440,86 @@ namespace 지니_64
             this.MTB_추가매수딜레이.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MTB_추가매수딜레이.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
+            // CB_신용주문_신규_C
+            // 
+            this.CB_신용주문_신규_C.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_신용주문_신규_C.BackColor = System.Drawing.Color.OldLace;
+            this.CB_신용주문_신규_C.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_신용주문_신규_C.FlatAppearance.CheckedBackColor = System.Drawing.Color.OldLace;
+            this.CB_신용주문_신규_C.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CB_신용주문_신규_C.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_신용주문_신규_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_신용주문_신규_C.Font = new System.Drawing.Font("굴림체", 9F);
+            this.CB_신용주문_신규_C.Location = new System.Drawing.Point(317, 40);
+            this.CB_신용주문_신규_C.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_신용주문_신규_C.Name = "CB_신용주문_신규_C";
+            this.CB_신용주문_신규_C.Size = new System.Drawing.Size(69, 21);
+            this.CB_신용주문_신규_C.TabIndex = 126;
+            this.CB_신용주문_신규_C.Text = "□ 신규C";
+            this.CB_신용주문_신규_C.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CB_신용주문_신규_C.UseVisualStyleBackColor = false;
+            this.CB_신용주문_신규_C.CheckedChanged += new System.EventHandler(this.CB_new_rebuy_CheckedChanged);
+            // 
+            // CB_신용주문_신규_B
+            // 
+            this.CB_신용주문_신규_B.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_신용주문_신규_B.BackColor = System.Drawing.Color.OldLace;
+            this.CB_신용주문_신규_B.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_신용주문_신규_B.FlatAppearance.CheckedBackColor = System.Drawing.Color.OldLace;
+            this.CB_신용주문_신규_B.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CB_신용주문_신규_B.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_신용주문_신규_B.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_신용주문_신규_B.Font = new System.Drawing.Font("굴림체", 9F);
+            this.CB_신용주문_신규_B.Location = new System.Drawing.Point(249, 40);
+            this.CB_신용주문_신규_B.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_신용주문_신규_B.Name = "CB_신용주문_신규_B";
+            this.CB_신용주문_신규_B.Size = new System.Drawing.Size(69, 21);
+            this.CB_신용주문_신규_B.TabIndex = 126;
+            this.CB_신용주문_신규_B.Text = "□ 신규B";
+            this.CB_신용주문_신규_B.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CB_신용주문_신규_B.UseVisualStyleBackColor = false;
+            this.CB_신용주문_신규_B.CheckedChanged += new System.EventHandler(this.CB_new_rebuy_CheckedChanged);
+            // 
+            // CB_신용주문_신규_A
+            // 
+            this.CB_신용주문_신규_A.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_신용주문_신규_A.BackColor = System.Drawing.Color.OldLace;
+            this.CB_신용주문_신규_A.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_신용주문_신규_A.FlatAppearance.CheckedBackColor = System.Drawing.Color.OldLace;
+            this.CB_신용주문_신규_A.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CB_신용주문_신규_A.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_신용주문_신규_A.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_신용주문_신규_A.Font = new System.Drawing.Font("굴림체", 9F);
+            this.CB_신용주문_신규_A.Location = new System.Drawing.Point(183, 40);
+            this.CB_신용주문_신규_A.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_신용주문_신규_A.Name = "CB_신용주문_신규_A";
+            this.CB_신용주문_신규_A.Size = new System.Drawing.Size(67, 21);
+            this.CB_신용주문_신규_A.TabIndex = 126;
+            this.CB_신용주문_신규_A.Text = "□ 신규A";
+            this.CB_신용주문_신규_A.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CB_신용주문_신규_A.UseVisualStyleBackColor = false;
+            this.CB_신용주문_신규_A.CheckedChanged += new System.EventHandler(this.CB_new_rebuy_CheckedChanged);
+            // 
+            // label21
+            // 
+            this.label21.BackColor = System.Drawing.Color.Wheat;
+            this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label21.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label21.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label21.Location = new System.Drawing.Point(0, 40);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(184, 21);
+            this.label21.TabIndex = 127;
+            this.label21.Text = "          조건  -  신용주문";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // label_추가매수딜레이
             // 
             this.label_추가매수딜레이.BackColor = System.Drawing.Color.Wheat;
             this.label_추가매수딜레이.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_추가매수딜레이.Cursor = System.Windows.Forms.Cursors.Default;
             this.label_추가매수딜레이.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label_추가매수딜레이.Location = new System.Drawing.Point(0, 40);
+            this.label_추가매수딜레이.Location = new System.Drawing.Point(0, 60);
             this.label_추가매수딜레이.Name = "label_추가매수딜레이";
             this.label_추가매수딜레이.Size = new System.Drawing.Size(135, 21);
             this.label_추가매수딜레이.TabIndex = 127;
@@ -7458,14 +7532,14 @@ namespace 지니_64
             this.TB_잔고개수_신규C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_잔고개수_신규C.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_잔고개수_신규C.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_잔고개수_신규C.Location = new System.Drawing.Point(127, 122);
+            this.TB_잔고개수_신규C.Location = new System.Drawing.Point(127, 144);
             this.TB_잔고개수_신규C.MaxLength = 3;
             this.TB_잔고개수_신규C.Name = "TB_잔고개수_신규C";
             this.TB_잔고개수_신규C.Size = new System.Drawing.Size(30, 21);
             this.TB_잔고개수_신규C.TabIndex = 122;
             this.TB_잔고개수_신규C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_잔고개수_신규C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_잔고개수_신규C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_잔고개수_신규C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label10
             // 
@@ -7474,7 +7548,7 @@ namespace 지니_64
             this.label10.Cursor = System.Windows.Forms.Cursors.Default;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.Sienna;
-            this.label10.Location = new System.Drawing.Point(0, 122);
+            this.label10.Location = new System.Drawing.Point(0, 144);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(36, 21);
             this.label10.TabIndex = 121;
@@ -7488,7 +7562,7 @@ namespace 지니_64
             this.label12.Cursor = System.Windows.Forms.Cursors.Default;
             this.label12.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(35, 82);
+            this.label12.Location = new System.Drawing.Point(35, 104);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(63, 21);
             this.label12.TabIndex = 119;
@@ -7502,7 +7576,7 @@ namespace 지니_64
             this.label9.Cursor = System.Windows.Forms.Cursors.Default;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.Sienna;
-            this.label9.Location = new System.Drawing.Point(0, 102);
+            this.label9.Location = new System.Drawing.Point(0, 124);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(36, 21);
             this.label9.TabIndex = 121;
@@ -7516,7 +7590,7 @@ namespace 지니_64
             this.LB_잔고개수_신규A.Cursor = System.Windows.Forms.Cursors.Default;
             this.LB_잔고개수_신규A.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_잔고개수_신규A.ForeColor = System.Drawing.Color.Crimson;
-            this.LB_잔고개수_신규A.Location = new System.Drawing.Point(97, 82);
+            this.LB_잔고개수_신규A.Location = new System.Drawing.Point(97, 104);
             this.LB_잔고개수_신규A.Name = "LB_잔고개수_신규A";
             this.LB_잔고개수_신규A.Size = new System.Drawing.Size(31, 21);
             this.LB_잔고개수_신규A.TabIndex = 119;
@@ -7530,7 +7604,7 @@ namespace 지니_64
             this.label8.Cursor = System.Windows.Forms.Cursors.Default;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Sienna;
-            this.label8.Location = new System.Drawing.Point(0, 82);
+            this.label8.Location = new System.Drawing.Point(0, 104);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(36, 21);
             this.label8.TabIndex = 121;
@@ -7544,7 +7618,7 @@ namespace 지니_64
             this.label7.Cursor = System.Windows.Forms.Cursors.Default;
             this.label7.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label7.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label7.Location = new System.Drawing.Point(0, 62);
+            this.label7.Location = new System.Drawing.Point(0, 84);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(36, 21);
             this.label7.TabIndex = 121;
@@ -7558,7 +7632,7 @@ namespace 지니_64
             this.label11.Cursor = System.Windows.Forms.Cursors.Default;
             this.label11.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label11.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label11.Location = new System.Drawing.Point(35, 62);
+            this.label11.Location = new System.Drawing.Point(35, 84);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(122, 21);
             this.label11.TabIndex = 120;
@@ -7571,15 +7645,14 @@ namespace 지니_64
             this.TB_잔고개수_신규A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_잔고개수_신규A.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_잔고개수_신규A.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_잔고개수_신규A.Location = new System.Drawing.Point(127, 82);
+            this.TB_잔고개수_신규A.Location = new System.Drawing.Point(127, 104);
             this.TB_잔고개수_신규A.MaxLength = 3;
             this.TB_잔고개수_신규A.Name = "TB_잔고개수_신규A";
             this.TB_잔고개수_신규A.Size = new System.Drawing.Size(30, 21);
             this.TB_잔고개수_신규A.TabIndex = 124;
-            this.TB_잔고개수_신규A.Text = "123";
             this.TB_잔고개수_신규A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_잔고개수_신규A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_잔고개수_신규A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_잔고개수_신규A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label381
             // 
@@ -7615,14 +7688,14 @@ namespace 지니_64
             this.TB_잔고개수_신규B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_잔고개수_신규B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_잔고개수_신규B.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_잔고개수_신규B.Location = new System.Drawing.Point(127, 102);
+            this.TB_잔고개수_신규B.Location = new System.Drawing.Point(127, 124);
             this.TB_잔고개수_신규B.MaxLength = 3;
             this.TB_잔고개수_신규B.Name = "TB_잔고개수_신규B";
             this.TB_잔고개수_신규B.Size = new System.Drawing.Size(30, 21);
             this.TB_잔고개수_신규B.TabIndex = 123;
             this.TB_잔고개수_신규B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_잔고개수_신규B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_잔고개수_신규B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_잔고개수_신규B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label2
             // 
@@ -7673,7 +7746,7 @@ namespace 지니_64
             this.label13.Cursor = System.Windows.Forms.Cursors.Default;
             this.label13.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(35, 122);
+            this.label13.Location = new System.Drawing.Point(35, 144);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(63, 21);
             this.label13.TabIndex = 117;
@@ -7691,10 +7764,9 @@ namespace 지니_64
             this.TB_신규주가이상.Name = "TB_신규주가이상";
             this.TB_신규주가이상.Size = new System.Drawing.Size(67, 21);
             this.TB_신규주가이상.TabIndex = 2;
-            this.TB_신규주가이상.Text = "1000";
             this.TB_신규주가이상.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_신규주가이상.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_신규주가이상.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_신규주가이상.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // LB_잔고개수_신규C
             // 
@@ -7703,7 +7775,7 @@ namespace 지니_64
             this.LB_잔고개수_신규C.Cursor = System.Windows.Forms.Cursors.Default;
             this.LB_잔고개수_신규C.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_잔고개수_신규C.ForeColor = System.Drawing.Color.Crimson;
-            this.LB_잔고개수_신규C.Location = new System.Drawing.Point(97, 122);
+            this.LB_잔고개수_신규C.Location = new System.Drawing.Point(97, 144);
             this.LB_잔고개수_신규C.Name = "LB_잔고개수_신규C";
             this.LB_잔고개수_신규C.Size = new System.Drawing.Size(31, 21);
             this.LB_잔고개수_신규C.TabIndex = 117;
@@ -7721,10 +7793,9 @@ namespace 지니_64
             this.TB_신규주가이하.Name = "TB_신규주가이하";
             this.TB_신규주가이하.Size = new System.Drawing.Size(65, 21);
             this.TB_신규주가이하.TabIndex = 2;
-            this.TB_신규주가이하.Text = "1,000,000";
             this.TB_신규주가이하.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_신규주가이하.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_신규주가이하.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_신규주가이하.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_신규등락률이상
             // 
@@ -7737,10 +7808,9 @@ namespace 지니_64
             this.TB_신규등락률이상.Name = "TB_신규등락률이상";
             this.TB_신규등락률이상.Size = new System.Drawing.Size(67, 21);
             this.TB_신규등락률이상.TabIndex = 2;
-            this.TB_신규등락률이상.Text = "-120.99";
             this.TB_신규등락률이상.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_신규등락률이상.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_신규등락률이상.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_신규등락률이상.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_신규등락률이하
             // 
@@ -7753,10 +7823,9 @@ namespace 지니_64
             this.TB_신규등락률이하.Name = "TB_신규등락률이하";
             this.TB_신규등락률이하.Size = new System.Drawing.Size(65, 21);
             this.TB_신규등락률이하.TabIndex = 2;
-            this.TB_신규등락률이하.Text = "20.99";
             this.TB_신규등락률이하.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_신규등락률이하.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_신규등락률이하.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_신규등락률이하.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label15
             // 
@@ -7765,7 +7834,7 @@ namespace 지니_64
             this.label15.Cursor = System.Windows.Forms.Cursors.Default;
             this.label15.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(35, 102);
+            this.label15.Location = new System.Drawing.Point(35, 124);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(63, 21);
             this.label15.TabIndex = 118;
@@ -7779,7 +7848,7 @@ namespace 지니_64
             this.LB_잔고개수_신규B.Cursor = System.Windows.Forms.Cursors.Default;
             this.LB_잔고개수_신규B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_잔고개수_신규B.ForeColor = System.Drawing.Color.Crimson;
-            this.LB_잔고개수_신규B.Location = new System.Drawing.Point(97, 102);
+            this.LB_잔고개수_신규B.Location = new System.Drawing.Point(97, 124);
             this.LB_잔고개수_신규B.Name = "LB_잔고개수_신규B";
             this.LB_잔고개수_신규B.Size = new System.Drawing.Size(31, 21);
             this.LB_잔고개수_신규B.TabIndex = 118;
@@ -7877,7 +7946,7 @@ namespace 지니_64
             this.TB_TimeSell_주문가격_C.TabIndex = 53;
             this.TB_TimeSell_주문가격_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_TimeSell_주문가격_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TimeSell_주문가격_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TimeSell_주문가격_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_TimeSell_주문가격_B
             // 
@@ -7892,7 +7961,7 @@ namespace 지니_64
             this.TB_TimeSell_주문가격_B.TabIndex = 53;
             this.TB_TimeSell_주문가격_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_TimeSell_주문가격_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TimeSell_주문가격_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TimeSell_주문가격_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_TimeSell_주문가격_A
             // 
@@ -7908,7 +7977,7 @@ namespace 지니_64
             this.TB_TimeSell_주문가격_A.Text = "1234567";
             this.TB_TimeSell_주문가격_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_TimeSell_주문가격_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TimeSell_주문가격_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_TimeSell_주문가격_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label449
             // 
@@ -8079,10 +8148,9 @@ namespace 지니_64
             this.TB_TimeSell_매입금2_A.Name = "TB_TimeSell_매입금2_A";
             this.TB_TimeSell_매입금2_A.Size = new System.Drawing.Size(35, 14);
             this.TB_TimeSell_매입금2_A.TabIndex = 29;
-            this.TB_TimeSell_매입금2_A.Text = "12345";
             this.TB_TimeSell_매입금2_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_TimeSell_매입금2_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TimeSell_매입금2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TimeSell_매입금2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label454
             // 
@@ -8109,10 +8177,9 @@ namespace 지니_64
             this.TB_TimeSell_매입금2_B.Name = "TB_TimeSell_매입금2_B";
             this.TB_TimeSell_매입금2_B.Size = new System.Drawing.Size(35, 14);
             this.TB_TimeSell_매입금2_B.TabIndex = 29;
-            this.TB_TimeSell_매입금2_B.Text = "0.00";
             this.TB_TimeSell_매입금2_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_TimeSell_매입금2_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TimeSell_매입금2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TimeSell_매입금2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_TimeSell_매입금2_C
             // 
@@ -8126,10 +8193,9 @@ namespace 지니_64
             this.TB_TimeSell_매입금2_C.Name = "TB_TimeSell_매입금2_C";
             this.TB_TimeSell_매입금2_C.Size = new System.Drawing.Size(35, 14);
             this.TB_TimeSell_매입금2_C.TabIndex = 29;
-            this.TB_TimeSell_매입금2_C.Text = "0.00";
             this.TB_TimeSell_매입금2_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_TimeSell_매입금2_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TimeSell_매입금2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TimeSell_매입금2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label18
             // 
@@ -8170,1004 +8236,583 @@ namespace 지니_64
             this.label16.Text = "→";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // P_트레일링스탑
-            // 
-            this.P_트레일링스탑.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.P_트레일링스탑.Controls.Add(this.CB_TS_취소후);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_B);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_G);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_C);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_F);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_E);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_A);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_D);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_H);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_I);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_I);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_B);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_F);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_G);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_C);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_D);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_E);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_A);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_H);
-            this.P_트레일링스탑.Controls.Add(this.MTB_TS_repeat);
-            this.P_트레일링스탑.Controls.Add(this.MTB_TS_canceltime);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_G);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_B);
-            this.P_트레일링스탑.Controls.Add(this.label351);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_F);
-            this.P_트레일링스탑.Controls.Add(this.label349);
-            this.P_트레일링스탑.Controls.Add(this.label340);
-            this.P_트레일링스탑.Controls.Add(this.label348);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_D);
-            this.P_트레일링스탑.Controls.Add(this.label347);
-            this.P_트레일링스탑.Controls.Add(this.label336);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_C);
-            this.P_트레일링스탑.Controls.Add(this.label339);
-            this.P_트레일링스탑.Controls.Add(this.label346);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_H);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_A);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_I);
-            this.P_트레일링스탑.Controls.Add(this.label334);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_E);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_H);
-            this.P_트레일링스탑.Controls.Add(this.label344);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_E);
-            this.P_트레일링스탑.Controls.Add(this.label335);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_C);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_A);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_I);
-            this.P_트레일링스탑.Controls.Add(this.label343);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_G);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_D);
-            this.P_트레일링스탑.Controls.Add(this.label341);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_B);
-            this.P_트레일링스탑.Controls.Add(this.label342);
-            this.P_트레일링스탑.Controls.Add(this.label350);
-            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_F);
-            this.P_트레일링스탑.Controls.Add(this.label337);
-            this.P_트레일링스탑.Controls.Add(this.label338);
-            this.P_트레일링스탑.Controls.Add(this.label345);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_I);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_H);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_D);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_F);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_G);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_B);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_C);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_E);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_A);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_I);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_H);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_D);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_F);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_B);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_G);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_C);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_E);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_I);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_A);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_C);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_E);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_G);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_B);
-            this.P_트레일링스탑.Controls.Add(this.CB_TS_손실제한);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_F);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_D);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_H);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_A);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_E);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_C);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_B);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_G);
-            this.P_트레일링스탑.Controls.Add(this.CB_TS_B);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_F);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_D);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_H);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_I);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_cancel_sell);
-            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_A);
-            this.P_트레일링스탑.Controls.Add(this.CB_TS_A);
-            this.P_트레일링스탑.Controls.Add(this.CB_TS_기준금);
-            this.P_트레일링스탑.Controls.Add(this.CB_TS_I);
-            this.P_트레일링스탑.Controls.Add(this.CB_TS_H);
-            this.P_트레일링스탑.Controls.Add(this.CB_TS_G);
-            this.P_트레일링스탑.Controls.Add(this.CB_TS_E);
-            this.P_트레일링스탑.Controls.Add(this.CB_TS_D);
-            this.P_트레일링스탑.Controls.Add(this.CB_TS_F);
-            this.P_트레일링스탑.Controls.Add(this.CB_TS_C);
-            this.P_트레일링스탑.Location = new System.Drawing.Point(515, 48);
-            this.P_트레일링스탑.Name = "P_트레일링스탑";
-            this.P_트레일링스탑.Size = new System.Drawing.Size(429, 201);
-            this.P_트레일링스탑.TabIndex = 139;
-            // 
-            // TB_TS_Jumun_I
-            // 
-            this.TB_TS_Jumun_I.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TB_TS_Jumun_I.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_TS_Jumun_I.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TS_Jumun_I.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TB_TS_Jumun_I.Location = new System.Drawing.Point(342, 179);
-            this.TB_TS_Jumun_I.MaxLength = 7;
-            this.TB_TS_Jumun_I.Name = "TB_TS_Jumun_I";
-            this.TB_TS_Jumun_I.Size = new System.Drawing.Size(54, 21);
-            this.TB_TS_Jumun_I.TabIndex = 69;
-            this.TB_TS_Jumun_I.Text = "-100.55";
-            this.TB_TS_Jumun_I.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TS_Jumun_I.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TS_Jumun_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
-            // 
-            // TB_TS_Jumun_B
-            // 
-            this.TB_TS_Jumun_B.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.TB_TS_Jumun_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_TS_Jumun_B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TS_Jumun_B.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TB_TS_Jumun_B.Location = new System.Drawing.Point(342, 39);
-            this.TB_TS_Jumun_B.MaxLength = 7;
-            this.TB_TS_Jumun_B.Name = "TB_TS_Jumun_B";
-            this.TB_TS_Jumun_B.Size = new System.Drawing.Size(54, 21);
-            this.TB_TS_Jumun_B.TabIndex = 69;
-            this.TB_TS_Jumun_B.Text = "-100.55";
-            this.TB_TS_Jumun_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TS_Jumun_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TS_Jumun_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
-            // 
-            // TB_TS_Jumun_F
-            // 
-            this.TB_TS_Jumun_F.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.TB_TS_Jumun_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_TS_Jumun_F.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TS_Jumun_F.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TB_TS_Jumun_F.Location = new System.Drawing.Point(342, 119);
-            this.TB_TS_Jumun_F.MaxLength = 7;
-            this.TB_TS_Jumun_F.Name = "TB_TS_Jumun_F";
-            this.TB_TS_Jumun_F.Size = new System.Drawing.Size(54, 21);
-            this.TB_TS_Jumun_F.TabIndex = 69;
-            this.TB_TS_Jumun_F.Text = "-100.55";
-            this.TB_TS_Jumun_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TS_Jumun_F.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TS_Jumun_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
-            // 
-            // TB_TS_Jumun_G
-            // 
-            this.TB_TS_Jumun_G.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TB_TS_Jumun_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_TS_Jumun_G.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TS_Jumun_G.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TB_TS_Jumun_G.Location = new System.Drawing.Point(342, 139);
-            this.TB_TS_Jumun_G.MaxLength = 7;
-            this.TB_TS_Jumun_G.Name = "TB_TS_Jumun_G";
-            this.TB_TS_Jumun_G.Size = new System.Drawing.Size(54, 21);
-            this.TB_TS_Jumun_G.TabIndex = 69;
-            this.TB_TS_Jumun_G.Text = "-100.55";
-            this.TB_TS_Jumun_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TS_Jumun_G.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TS_Jumun_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
-            // 
-            // TB_TS_Jumun_C
-            // 
-            this.TB_TS_Jumun_C.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TB_TS_Jumun_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_TS_Jumun_C.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TS_Jumun_C.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TB_TS_Jumun_C.Location = new System.Drawing.Point(342, 59);
-            this.TB_TS_Jumun_C.MaxLength = 7;
-            this.TB_TS_Jumun_C.Name = "TB_TS_Jumun_C";
-            this.TB_TS_Jumun_C.Size = new System.Drawing.Size(54, 21);
-            this.TB_TS_Jumun_C.TabIndex = 69;
-            this.TB_TS_Jumun_C.Text = "-100.55";
-            this.TB_TS_Jumun_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TS_Jumun_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TS_Jumun_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
-            // 
-            // TB_TS_Jumun_D
-            // 
-            this.TB_TS_Jumun_D.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.TB_TS_Jumun_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_TS_Jumun_D.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TS_Jumun_D.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TB_TS_Jumun_D.Location = new System.Drawing.Point(342, 79);
-            this.TB_TS_Jumun_D.MaxLength = 7;
-            this.TB_TS_Jumun_D.Name = "TB_TS_Jumun_D";
-            this.TB_TS_Jumun_D.Size = new System.Drawing.Size(54, 21);
-            this.TB_TS_Jumun_D.TabIndex = 69;
-            this.TB_TS_Jumun_D.Text = "-100.55";
-            this.TB_TS_Jumun_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TS_Jumun_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TS_Jumun_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
-            // 
-            // TB_TS_Jumun_E
-            // 
-            this.TB_TS_Jumun_E.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TB_TS_Jumun_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_TS_Jumun_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TS_Jumun_E.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TB_TS_Jumun_E.Location = new System.Drawing.Point(342, 99);
-            this.TB_TS_Jumun_E.MaxLength = 7;
-            this.TB_TS_Jumun_E.Name = "TB_TS_Jumun_E";
-            this.TB_TS_Jumun_E.Size = new System.Drawing.Size(54, 21);
-            this.TB_TS_Jumun_E.TabIndex = 69;
-            this.TB_TS_Jumun_E.Text = "-100.55";
-            this.TB_TS_Jumun_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TS_Jumun_E.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TS_Jumun_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
-            // 
-            // TB_TS_Jumun_A
-            // 
-            this.TB_TS_Jumun_A.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TB_TS_Jumun_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_TS_Jumun_A.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TS_Jumun_A.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TB_TS_Jumun_A.Location = new System.Drawing.Point(342, 19);
-            this.TB_TS_Jumun_A.MaxLength = 7;
-            this.TB_TS_Jumun_A.Name = "TB_TS_Jumun_A";
-            this.TB_TS_Jumun_A.Size = new System.Drawing.Size(54, 21);
-            this.TB_TS_Jumun_A.TabIndex = 69;
-            this.TB_TS_Jumun_A.Text = "-100.55";
-            this.TB_TS_Jumun_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TS_Jumun_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TS_Jumun_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
-            // 
-            // TB_TS_Jumun_H
-            // 
-            this.TB_TS_Jumun_H.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.TB_TS_Jumun_H.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_TS_Jumun_H.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TS_Jumun_H.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TB_TS_Jumun_H.Location = new System.Drawing.Point(342, 159);
-            this.TB_TS_Jumun_H.MaxLength = 7;
-            this.TB_TS_Jumun_H.Name = "TB_TS_Jumun_H";
-            this.TB_TS_Jumun_H.Size = new System.Drawing.Size(54, 21);
-            this.TB_TS_Jumun_H.TabIndex = 69;
-            this.TB_TS_Jumun_H.Text = "-100.55";
-            this.TB_TS_Jumun_H.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TS_Jumun_H.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_TS_Jumun_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
-            // 
-            // TB_TS_ratio_G
-            // 
-            this.TB_TS_ratio_G.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TB_TS_ratio_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_TS_ratio_G.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TS_ratio_G.ForeColor = System.Drawing.Color.Green;
-            this.TB_TS_ratio_G.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_TS_ratio_G.Location = new System.Drawing.Point(270, 139);
-            this.TB_TS_ratio_G.MaxLength = 7;
-            this.TB_TS_ratio_G.Name = "TB_TS_ratio_G";
-            this.TB_TS_ratio_G.Size = new System.Drawing.Size(54, 21);
-            this.TB_TS_ratio_G.TabIndex = 67;
-            this.TB_TS_ratio_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TS_ratio_G.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_ratio_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
-            // 
-            // TB_TS_ratio_B
-            // 
-            this.TB_TS_ratio_B.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.TB_TS_ratio_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_TS_ratio_B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TS_ratio_B.ForeColor = System.Drawing.Color.Green;
-            this.TB_TS_ratio_B.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_TS_ratio_B.Location = new System.Drawing.Point(270, 39);
-            this.TB_TS_ratio_B.MaxLength = 7;
-            this.TB_TS_ratio_B.Name = "TB_TS_ratio_B";
-            this.TB_TS_ratio_B.Size = new System.Drawing.Size(54, 21);
-            this.TB_TS_ratio_B.TabIndex = 67;
-            this.TB_TS_ratio_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TS_ratio_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
-            // 
-            // label351
-            // 
-            this.label351.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label351.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label351.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label351.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label351.Location = new System.Drawing.Point(240, 179);
-            this.label351.Name = "label351";
-            this.label351.Size = new System.Drawing.Size(31, 21);
-            this.label351.TabIndex = 0;
-            this.label351.Text = "하락";
-            this.label351.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TB_TS_ratio_F
-            // 
-            this.TB_TS_ratio_F.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.TB_TS_ratio_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_TS_ratio_F.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TS_ratio_F.ForeColor = System.Drawing.Color.Green;
-            this.TB_TS_ratio_F.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_TS_ratio_F.Location = new System.Drawing.Point(270, 119);
-            this.TB_TS_ratio_F.MaxLength = 7;
-            this.TB_TS_ratio_F.Name = "TB_TS_ratio_F";
-            this.TB_TS_ratio_F.Size = new System.Drawing.Size(54, 21);
-            this.TB_TS_ratio_F.TabIndex = 67;
-            this.TB_TS_ratio_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TS_ratio_F.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_ratio_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
-            // 
-            // label349
-            // 
-            this.label349.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label349.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label349.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label349.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label349.Location = new System.Drawing.Point(240, 159);
-            this.label349.Name = "label349";
-            this.label349.Size = new System.Drawing.Size(31, 21);
-            this.label349.TabIndex = 0;
-            this.label349.Text = "하락";
-            this.label349.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label340
-            // 
-            this.label340.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label340.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label340.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label340.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label340.Location = new System.Drawing.Point(240, 79);
-            this.label340.Name = "label340";
-            this.label340.Size = new System.Drawing.Size(31, 21);
-            this.label340.TabIndex = 0;
-            this.label340.Text = "하락";
-            this.label340.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label348
-            // 
-            this.label348.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label348.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label348.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label348.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label348.Location = new System.Drawing.Point(240, 119);
-            this.label348.Name = "label348";
-            this.label348.Size = new System.Drawing.Size(31, 21);
-            this.label348.TabIndex = 0;
-            this.label348.Text = "하락";
-            this.label348.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TB_TS_ratio_D
-            // 
-            this.TB_TS_ratio_D.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.TB_TS_ratio_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_TS_ratio_D.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TS_ratio_D.ForeColor = System.Drawing.Color.Green;
-            this.TB_TS_ratio_D.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_TS_ratio_D.Location = new System.Drawing.Point(270, 79);
-            this.TB_TS_ratio_D.MaxLength = 7;
-            this.TB_TS_ratio_D.Name = "TB_TS_ratio_D";
-            this.TB_TS_ratio_D.Size = new System.Drawing.Size(54, 21);
-            this.TB_TS_ratio_D.TabIndex = 67;
-            this.TB_TS_ratio_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TS_ratio_D.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
-            // 
-            // label347
-            // 
-            this.label347.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label347.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label347.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label347.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label347.Location = new System.Drawing.Point(240, 139);
-            this.label347.Name = "label347";
-            this.label347.Size = new System.Drawing.Size(31, 21);
-            this.label347.TabIndex = 0;
-            this.label347.Text = "하락";
-            this.label347.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label336
-            // 
-            this.label336.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label336.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label336.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label336.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label336.Location = new System.Drawing.Point(240, 39);
-            this.label336.Name = "label336";
-            this.label336.Size = new System.Drawing.Size(31, 21);
-            this.label336.TabIndex = 0;
-            this.label336.Text = "하락";
-            this.label336.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TB_TS_ratio_C
-            // 
-            this.TB_TS_ratio_C.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TB_TS_ratio_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_TS_ratio_C.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TS_ratio_C.ForeColor = System.Drawing.Color.Green;
-            this.TB_TS_ratio_C.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_TS_ratio_C.Location = new System.Drawing.Point(270, 59);
-            this.TB_TS_ratio_C.MaxLength = 7;
-            this.TB_TS_ratio_C.Name = "TB_TS_ratio_C";
-            this.TB_TS_ratio_C.Size = new System.Drawing.Size(54, 21);
-            this.TB_TS_ratio_C.TabIndex = 67;
-            this.TB_TS_ratio_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TS_ratio_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
-            // 
-            // label339
-            // 
-            this.label339.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label339.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label339.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label339.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label339.Location = new System.Drawing.Point(240, 59);
-            this.label339.Name = "label339";
-            this.label339.Size = new System.Drawing.Size(31, 21);
-            this.label339.TabIndex = 0;
-            this.label339.Text = "하락";
-            this.label339.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label346
-            // 
-            this.label346.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label346.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label346.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label346.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label346.Location = new System.Drawing.Point(240, 99);
-            this.label346.Name = "label346";
-            this.label346.Size = new System.Drawing.Size(31, 21);
-            this.label346.TabIndex = 0;
-            this.label346.Text = "하락";
-            this.label346.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TB_TS_ratio_H
-            // 
-            this.TB_TS_ratio_H.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.TB_TS_ratio_H.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_TS_ratio_H.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TS_ratio_H.ForeColor = System.Drawing.Color.Green;
-            this.TB_TS_ratio_H.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_TS_ratio_H.Location = new System.Drawing.Point(270, 159);
-            this.TB_TS_ratio_H.MaxLength = 7;
-            this.TB_TS_ratio_H.Name = "TB_TS_ratio_H";
-            this.TB_TS_ratio_H.Size = new System.Drawing.Size(54, 21);
-            this.TB_TS_ratio_H.TabIndex = 67;
-            this.TB_TS_ratio_H.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TS_ratio_H.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_ratio_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
-            // 
-            // TB_TS_ratio_I
-            // 
-            this.TB_TS_ratio_I.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TB_TS_ratio_I.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_TS_ratio_I.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TS_ratio_I.ForeColor = System.Drawing.Color.Green;
-            this.TB_TS_ratio_I.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_TS_ratio_I.Location = new System.Drawing.Point(270, 179);
-            this.TB_TS_ratio_I.MaxLength = 7;
-            this.TB_TS_ratio_I.Name = "TB_TS_ratio_I";
-            this.TB_TS_ratio_I.Size = new System.Drawing.Size(54, 21);
-            this.TB_TS_ratio_I.TabIndex = 67;
-            this.TB_TS_ratio_I.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TS_ratio_I.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_ratio_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
-            // 
-            // label334
-            // 
-            this.label334.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label334.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label334.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label334.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label334.Location = new System.Drawing.Point(240, 19);
-            this.label334.Name = "label334";
-            this.label334.Size = new System.Drawing.Size(31, 21);
-            this.label334.TabIndex = 0;
-            this.label334.Text = "하락";
-            this.label334.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TB_TS_ratio_E
-            // 
-            this.TB_TS_ratio_E.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TB_TS_ratio_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_TS_ratio_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_TS_ratio_E.ForeColor = System.Drawing.Color.Green;
-            this.TB_TS_ratio_E.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_TS_ratio_E.Location = new System.Drawing.Point(270, 99);
-            this.TB_TS_ratio_E.MaxLength = 7;
-            this.TB_TS_ratio_E.Name = "TB_TS_ratio_E";
-            this.TB_TS_ratio_E.Size = new System.Drawing.Size(54, 21);
-            this.TB_TS_ratio_E.TabIndex = 67;
-            this.TB_TS_ratio_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TS_ratio_E.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_TS_ratio_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
-            // 
-            // label344
-            // 
-            this.label344.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label344.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label344.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label344.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label344.Location = new System.Drawing.Point(126, 19);
-            this.label344.Name = "label344";
-            this.label344.Size = new System.Drawing.Size(31, 21);
-            this.label344.TabIndex = 0;
-            this.label344.Text = "상승";
-            this.label344.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label335
-            // 
-            this.label335.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label335.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label335.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label335.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label335.Location = new System.Drawing.Point(126, 39);
-            this.label335.Name = "label335";
-            this.label335.Size = new System.Drawing.Size(31, 21);
-            this.label335.TabIndex = 0;
-            this.label335.Text = "상승";
-            this.label335.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label343
-            // 
-            this.label343.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label343.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label343.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label343.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label343.Location = new System.Drawing.Point(126, 119);
-            this.label343.Name = "label343";
-            this.label343.Size = new System.Drawing.Size(31, 21);
-            this.label343.TabIndex = 0;
-            this.label343.Text = "상승";
-            this.label343.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label341
-            // 
-            this.label341.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label341.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label341.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label341.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label341.Location = new System.Drawing.Point(126, 99);
-            this.label341.Name = "label341";
-            this.label341.Size = new System.Drawing.Size(31, 21);
-            this.label341.TabIndex = 0;
-            this.label341.Text = "상승";
-            this.label341.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label342
-            // 
-            this.label342.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label342.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label342.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label342.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label342.Location = new System.Drawing.Point(126, 139);
-            this.label342.Name = "label342";
-            this.label342.Size = new System.Drawing.Size(31, 21);
-            this.label342.TabIndex = 0;
-            this.label342.Text = "상승";
-            this.label342.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label350
-            // 
-            this.label350.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label350.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label350.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label350.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label350.Location = new System.Drawing.Point(126, 179);
-            this.label350.Name = "label350";
-            this.label350.Size = new System.Drawing.Size(31, 21);
-            this.label350.TabIndex = 0;
-            this.label350.Text = "상승";
-            this.label350.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label337
-            // 
-            this.label337.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label337.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label337.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label337.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label337.Location = new System.Drawing.Point(126, 59);
-            this.label337.Name = "label337";
-            this.label337.Size = new System.Drawing.Size(31, 21);
-            this.label337.TabIndex = 0;
-            this.label337.Text = "상승";
-            this.label337.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label338
-            // 
-            this.label338.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label338.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label338.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label338.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label338.Location = new System.Drawing.Point(126, 79);
-            this.label338.Name = "label338";
-            this.label338.Size = new System.Drawing.Size(31, 21);
-            this.label338.TabIndex = 0;
-            this.label338.Text = "상승";
-            this.label338.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label345
-            // 
-            this.label345.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label345.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label345.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label345.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label345.Location = new System.Drawing.Point(126, 159);
-            this.label345.Name = "label345";
-            this.label345.Size = new System.Drawing.Size(31, 21);
-            this.label345.TabIndex = 0;
-            this.label345.Text = "상승";
-            this.label345.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CBB_TS_Jumun_I
-            // 
-            this.CBB_TS_Jumun_I.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CBB_TS_Jumun_I.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_Jumun_I.DropDownWidth = 65;
-            this.CBB_TS_Jumun_I.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_Jumun_I.FormattingEnabled = true;
-            this.CBB_TS_Jumun_I.Items.AddRange(new object[] {
-            "시장가",
-            "현재가",
-            "호가",
-            "%"});
-            this.CBB_TS_Jumun_I.Location = new System.Drawing.Point(395, 179);
-            this.CBB_TS_Jumun_I.Name = "CBB_TS_Jumun_I";
-            this.CBB_TS_Jumun_I.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CBB_TS_Jumun_I.Size = new System.Drawing.Size(60, 21);
-            this.CBB_TS_Jumun_I.TabIndex = 68;
-            this.CBB_TS_Jumun_I.TabStop = false;
-            this.CBB_TS_Jumun_I.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
-            this.CBB_TS_Jumun_I.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_Jumun_C
-            // 
-            this.CBB_TS_Jumun_C.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CBB_TS_Jumun_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_Jumun_C.DropDownWidth = 65;
-            this.CBB_TS_Jumun_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_Jumun_C.FormattingEnabled = true;
-            this.CBB_TS_Jumun_C.Items.AddRange(new object[] {
-            "시장가",
-            "현재가",
-            "호가",
-            "%"});
-            this.CBB_TS_Jumun_C.Location = new System.Drawing.Point(395, 59);
-            this.CBB_TS_Jumun_C.Name = "CBB_TS_Jumun_C";
-            this.CBB_TS_Jumun_C.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CBB_TS_Jumun_C.Size = new System.Drawing.Size(60, 21);
-            this.CBB_TS_Jumun_C.TabIndex = 68;
-            this.CBB_TS_Jumun_C.TabStop = false;
-            this.CBB_TS_Jumun_C.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
-            this.CBB_TS_Jumun_C.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_Jumun_E
-            // 
-            this.CBB_TS_Jumun_E.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CBB_TS_Jumun_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_Jumun_E.DropDownWidth = 65;
-            this.CBB_TS_Jumun_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_Jumun_E.FormattingEnabled = true;
-            this.CBB_TS_Jumun_E.Items.AddRange(new object[] {
-            "시장가",
-            "현재가",
-            "호가",
-            "%"});
-            this.CBB_TS_Jumun_E.Location = new System.Drawing.Point(395, 99);
-            this.CBB_TS_Jumun_E.Name = "CBB_TS_Jumun_E";
-            this.CBB_TS_Jumun_E.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CBB_TS_Jumun_E.Size = new System.Drawing.Size(60, 21);
-            this.CBB_TS_Jumun_E.TabIndex = 68;
-            this.CBB_TS_Jumun_E.TabStop = false;
-            this.CBB_TS_Jumun_E.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
-            this.CBB_TS_Jumun_E.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_Jumun_G
-            // 
-            this.CBB_TS_Jumun_G.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CBB_TS_Jumun_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_Jumun_G.DropDownWidth = 65;
-            this.CBB_TS_Jumun_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_Jumun_G.FormattingEnabled = true;
-            this.CBB_TS_Jumun_G.Items.AddRange(new object[] {
-            "시장가",
-            "현재가",
-            "호가",
-            "%"});
-            this.CBB_TS_Jumun_G.Location = new System.Drawing.Point(395, 139);
-            this.CBB_TS_Jumun_G.Name = "CBB_TS_Jumun_G";
-            this.CBB_TS_Jumun_G.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CBB_TS_Jumun_G.Size = new System.Drawing.Size(60, 21);
-            this.CBB_TS_Jumun_G.TabIndex = 68;
-            this.CBB_TS_Jumun_G.TabStop = false;
-            this.CBB_TS_Jumun_G.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
-            this.CBB_TS_Jumun_G.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_Jumun_B
-            // 
-            this.CBB_TS_Jumun_B.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CBB_TS_Jumun_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_Jumun_B.DropDownWidth = 65;
-            this.CBB_TS_Jumun_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_Jumun_B.FormattingEnabled = true;
-            this.CBB_TS_Jumun_B.Items.AddRange(new object[] {
-            "시장가",
-            "현재가",
-            "호가",
-            "%"});
-            this.CBB_TS_Jumun_B.Location = new System.Drawing.Point(395, 39);
-            this.CBB_TS_Jumun_B.Name = "CBB_TS_Jumun_B";
-            this.CBB_TS_Jumun_B.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CBB_TS_Jumun_B.Size = new System.Drawing.Size(60, 21);
-            this.CBB_TS_Jumun_B.TabIndex = 68;
-            this.CBB_TS_Jumun_B.TabStop = false;
-            this.CBB_TS_Jumun_B.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
-            this.CBB_TS_Jumun_B.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_Jumun_F
-            // 
-            this.CBB_TS_Jumun_F.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CBB_TS_Jumun_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_Jumun_F.DropDownWidth = 65;
-            this.CBB_TS_Jumun_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_Jumun_F.FormattingEnabled = true;
-            this.CBB_TS_Jumun_F.Items.AddRange(new object[] {
-            "시장가",
-            "현재가",
-            "호가",
-            "%"});
-            this.CBB_TS_Jumun_F.Location = new System.Drawing.Point(395, 119);
-            this.CBB_TS_Jumun_F.Name = "CBB_TS_Jumun_F";
-            this.CBB_TS_Jumun_F.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CBB_TS_Jumun_F.Size = new System.Drawing.Size(60, 21);
-            this.CBB_TS_Jumun_F.TabIndex = 68;
-            this.CBB_TS_Jumun_F.TabStop = false;
-            this.CBB_TS_Jumun_F.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
-            this.CBB_TS_Jumun_F.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_Jumun_D
-            // 
-            this.CBB_TS_Jumun_D.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CBB_TS_Jumun_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_Jumun_D.DropDownWidth = 65;
-            this.CBB_TS_Jumun_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_Jumun_D.FormattingEnabled = true;
-            this.CBB_TS_Jumun_D.Items.AddRange(new object[] {
-            "시장가",
-            "현재가",
-            "호가",
-            "%"});
-            this.CBB_TS_Jumun_D.Location = new System.Drawing.Point(395, 79);
-            this.CBB_TS_Jumun_D.Name = "CBB_TS_Jumun_D";
-            this.CBB_TS_Jumun_D.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CBB_TS_Jumun_D.Size = new System.Drawing.Size(60, 21);
-            this.CBB_TS_Jumun_D.TabIndex = 68;
-            this.CBB_TS_Jumun_D.TabStop = false;
-            this.CBB_TS_Jumun_D.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
-            this.CBB_TS_Jumun_D.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_Jumun_H
-            // 
-            this.CBB_TS_Jumun_H.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CBB_TS_Jumun_H.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_Jumun_H.DropDownWidth = 65;
-            this.CBB_TS_Jumun_H.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_Jumun_H.FormattingEnabled = true;
-            this.CBB_TS_Jumun_H.Items.AddRange(new object[] {
-            "시장가",
-            "현재가",
-            "호가",
-            "%"});
-            this.CBB_TS_Jumun_H.Location = new System.Drawing.Point(395, 159);
-            this.CBB_TS_Jumun_H.Name = "CBB_TS_Jumun_H";
-            this.CBB_TS_Jumun_H.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CBB_TS_Jumun_H.Size = new System.Drawing.Size(60, 21);
-            this.CBB_TS_Jumun_H.TabIndex = 68;
-            this.CBB_TS_Jumun_H.TabStop = false;
-            this.CBB_TS_Jumun_H.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
-            this.CBB_TS_Jumun_H.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_ratio_A
-            // 
-            this.CBB_TS_ratio_A.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CBB_TS_ratio_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_ratio_A.DropDownWidth = 65;
-            this.CBB_TS_ratio_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_ratio_A.FormattingEnabled = true;
-            this.CBB_TS_ratio_A.Items.AddRange(new object[] {
-            "주",
-            "만원",
-            "기준금(%)",
-            "보유주(%)"});
-            this.CBB_TS_ratio_A.Location = new System.Drawing.Point(323, 19);
-            this.CBB_TS_ratio_A.Name = "CBB_TS_ratio_A";
-            this.CBB_TS_ratio_A.Size = new System.Drawing.Size(40, 21);
-            this.CBB_TS_ratio_A.TabIndex = 66;
-            this.CBB_TS_ratio_A.TabStop = false;
-            this.CBB_TS_ratio_A.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_ratio_E
-            // 
-            this.CBB_TS_ratio_E.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CBB_TS_ratio_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_ratio_E.DropDownWidth = 65;
-            this.CBB_TS_ratio_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_ratio_E.FormattingEnabled = true;
-            this.CBB_TS_ratio_E.Items.AddRange(new object[] {
-            "주",
-            "만원",
-            "기준금(%)",
-            "보유주(%)"});
-            this.CBB_TS_ratio_E.Location = new System.Drawing.Point(323, 99);
-            this.CBB_TS_ratio_E.Name = "CBB_TS_ratio_E";
-            this.CBB_TS_ratio_E.Size = new System.Drawing.Size(40, 21);
-            this.CBB_TS_ratio_E.TabIndex = 66;
-            this.CBB_TS_ratio_E.TabStop = false;
-            this.CBB_TS_ratio_E.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_ratio_C
-            // 
-            this.CBB_TS_ratio_C.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CBB_TS_ratio_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_ratio_C.DropDownWidth = 65;
-            this.CBB_TS_ratio_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_ratio_C.FormattingEnabled = true;
-            this.CBB_TS_ratio_C.Items.AddRange(new object[] {
-            "주",
-            "만원",
-            "기준금(%)",
-            "보유주(%)"});
-            this.CBB_TS_ratio_C.Location = new System.Drawing.Point(323, 59);
-            this.CBB_TS_ratio_C.Name = "CBB_TS_ratio_C";
-            this.CBB_TS_ratio_C.Size = new System.Drawing.Size(40, 21);
-            this.CBB_TS_ratio_C.TabIndex = 66;
-            this.CBB_TS_ratio_C.TabStop = false;
-            this.CBB_TS_ratio_C.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_ratio_B
-            // 
-            this.CBB_TS_ratio_B.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CBB_TS_ratio_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_ratio_B.DropDownWidth = 65;
-            this.CBB_TS_ratio_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_ratio_B.FormattingEnabled = true;
-            this.CBB_TS_ratio_B.Items.AddRange(new object[] {
-            "주",
-            "만원",
-            "기준금(%)",
-            "보유주(%)"});
-            this.CBB_TS_ratio_B.Location = new System.Drawing.Point(323, 39);
-            this.CBB_TS_ratio_B.Name = "CBB_TS_ratio_B";
-            this.CBB_TS_ratio_B.Size = new System.Drawing.Size(40, 21);
-            this.CBB_TS_ratio_B.TabIndex = 66;
-            this.CBB_TS_ratio_B.TabStop = false;
-            this.CBB_TS_ratio_B.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_ratio_G
-            // 
-            this.CBB_TS_ratio_G.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CBB_TS_ratio_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_ratio_G.DropDownWidth = 65;
-            this.CBB_TS_ratio_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_ratio_G.FormattingEnabled = true;
-            this.CBB_TS_ratio_G.Items.AddRange(new object[] {
-            "주",
-            "만원",
-            "기준금(%)",
-            "보유주(%)"});
-            this.CBB_TS_ratio_G.Location = new System.Drawing.Point(323, 139);
-            this.CBB_TS_ratio_G.Name = "CBB_TS_ratio_G";
-            this.CBB_TS_ratio_G.Size = new System.Drawing.Size(40, 21);
-            this.CBB_TS_ratio_G.TabIndex = 66;
-            this.CBB_TS_ratio_G.TabStop = false;
-            this.CBB_TS_ratio_G.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_ratio_F
-            // 
-            this.CBB_TS_ratio_F.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CBB_TS_ratio_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_ratio_F.DropDownWidth = 65;
-            this.CBB_TS_ratio_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_ratio_F.FormattingEnabled = true;
-            this.CBB_TS_ratio_F.Items.AddRange(new object[] {
-            "주",
-            "만원",
-            "기준금(%)",
-            "보유주(%)"});
-            this.CBB_TS_ratio_F.Location = new System.Drawing.Point(323, 119);
-            this.CBB_TS_ratio_F.Name = "CBB_TS_ratio_F";
-            this.CBB_TS_ratio_F.Size = new System.Drawing.Size(40, 21);
-            this.CBB_TS_ratio_F.TabIndex = 66;
-            this.CBB_TS_ratio_F.TabStop = false;
-            this.CBB_TS_ratio_F.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_ratio_D
-            // 
-            this.CBB_TS_ratio_D.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CBB_TS_ratio_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_ratio_D.DropDownWidth = 65;
-            this.CBB_TS_ratio_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_ratio_D.FormattingEnabled = true;
-            this.CBB_TS_ratio_D.Items.AddRange(new object[] {
-            "주",
-            "만원",
-            "기준금(%)",
-            "보유주(%)"});
-            this.CBB_TS_ratio_D.Location = new System.Drawing.Point(323, 79);
-            this.CBB_TS_ratio_D.Name = "CBB_TS_ratio_D";
-            this.CBB_TS_ratio_D.Size = new System.Drawing.Size(40, 21);
-            this.CBB_TS_ratio_D.TabIndex = 66;
-            this.CBB_TS_ratio_D.TabStop = false;
-            this.CBB_TS_ratio_D.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_ratio_H
-            // 
-            this.CBB_TS_ratio_H.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CBB_TS_ratio_H.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_ratio_H.DropDownWidth = 65;
-            this.CBB_TS_ratio_H.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_ratio_H.FormattingEnabled = true;
-            this.CBB_TS_ratio_H.Items.AddRange(new object[] {
-            "주",
-            "만원",
-            "기준금(%)",
-            "보유주(%)"});
-            this.CBB_TS_ratio_H.Location = new System.Drawing.Point(323, 159);
-            this.CBB_TS_ratio_H.Name = "CBB_TS_ratio_H";
-            this.CBB_TS_ratio_H.Size = new System.Drawing.Size(40, 21);
-            this.CBB_TS_ratio_H.TabIndex = 66;
-            this.CBB_TS_ratio_H.TabStop = false;
-            this.CBB_TS_ratio_H.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_ratio_I
-            // 
-            this.CBB_TS_ratio_I.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CBB_TS_ratio_I.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_ratio_I.DropDownWidth = 65;
-            this.CBB_TS_ratio_I.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_ratio_I.FormattingEnabled = true;
-            this.CBB_TS_ratio_I.Items.AddRange(new object[] {
-            "주",
-            "만원",
-            "기준금(%)",
-            "보유주(%)"});
-            this.CBB_TS_ratio_I.Location = new System.Drawing.Point(323, 179);
-            this.CBB_TS_ratio_I.Name = "CBB_TS_ratio_I";
-            this.CBB_TS_ratio_I.Size = new System.Drawing.Size(40, 21);
-            this.CBB_TS_ratio_I.TabIndex = 66;
-            this.CBB_TS_ratio_I.TabStop = false;
-            this.CBB_TS_ratio_I.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_cancel_sell
-            // 
-            this.CBB_TS_cancel_sell.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CBB_TS_cancel_sell.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_cancel_sell.DropDownWidth = 100;
-            this.CBB_TS_cancel_sell.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_cancel_sell.FormattingEnabled = true;
-            this.CBB_TS_cancel_sell.Items.AddRange(new object[] {
-            "후 취소",
-            "후 시장가",
-            "후 현재가",
-            "후 재주문"});
-            this.CBB_TS_cancel_sell.Location = new System.Drawing.Point(270, -1);
-            this.CBB_TS_cancel_sell.Name = "CBB_TS_cancel_sell";
-            this.CBB_TS_cancel_sell.Size = new System.Drawing.Size(126, 21);
-            this.CBB_TS_cancel_sell.TabIndex = 63;
-            this.CBB_TS_cancel_sell.TabStop = false;
-            this.CBB_TS_cancel_sell.SelectedIndexChanged += new System.EventHandler(this.combo_cancel_SelectedIndexChanged);
-            this.CBB_TS_cancel_sell.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // CBB_TS_Jumun_A
-            // 
-            this.CBB_TS_Jumun_A.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CBB_TS_Jumun_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_TS_Jumun_A.DropDownWidth = 65;
-            this.CBB_TS_Jumun_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_TS_Jumun_A.FormattingEnabled = true;
-            this.CBB_TS_Jumun_A.Items.AddRange(new object[] {
-            "시장가",
-            "현재가",
-            "호가",
-            "%"});
-            this.CBB_TS_Jumun_A.Location = new System.Drawing.Point(395, 19);
-            this.CBB_TS_Jumun_A.Name = "CBB_TS_Jumun_A";
-            this.CBB_TS_Jumun_A.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.CBB_TS_Jumun_A.Size = new System.Drawing.Size(60, 21);
-            this.CBB_TS_Jumun_A.TabIndex = 68;
-            this.CBB_TS_Jumun_A.TabStop = false;
-            this.CBB_TS_Jumun_A.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
-            this.CBB_TS_Jumun_A.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // P_체결즉시
+            // 
+            this.P_체결즉시.Controls.Add(this.CB_scalping_A);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_B_7);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_B_9);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_A_1);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_B_2);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_A_9);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_B);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_B_6);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_A_3);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_A_7);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_C_8);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_B_1);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_C_9);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_C_2);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_B_8);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_C);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_C_3);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_A_2);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_A_8);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_B_4);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_A_6);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_C_5);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_C_1);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_A_4);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_A_5);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_C_7);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_B_3);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_C_6);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_B_5);
+            this.P_체결즉시.Controls.Add(this.CB_scalping_C_4);
+            this.P_체결즉시.Controls.Add(this.CB_scalping);
+            this.P_체결즉시.Location = new System.Drawing.Point(946, 169);
+            this.P_체결즉시.Name = "P_체결즉시";
+            this.P_체결즉시.Size = new System.Drawing.Size(386, 80);
+            this.P_체결즉시.TabIndex = 137;
+            // 
+            // CB_scalping_A
+            // 
+            this.CB_scalping_A.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_A.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_A.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_A.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_A.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_A.Location = new System.Drawing.Point(0, 19);
+            this.CB_scalping_A.Name = "CB_scalping_A";
+            this.CB_scalping_A.Size = new System.Drawing.Size(71, 21);
+            this.CB_scalping_A.TabIndex = 28;
+            this.CB_scalping_A.TabStop = false;
+            this.CB_scalping_A.Text = "□ 신규 A";
+            this.CB_scalping_A.UseVisualStyleBackColor = false;
+            this.CB_scalping_A.CheckedChanged += new System.EventHandler(this.CB_scalping_Run_CheckedChanged);
+            // 
+            // CB_scalping_B_7
+            // 
+            this.CB_scalping_B_7.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_B_7.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_7.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_B_7.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_7.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_B_7.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_B_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_B_7.Location = new System.Drawing.Point(283, 39);
+            this.CB_scalping_B_7.Name = "CB_scalping_B_7";
+            this.CB_scalping_B_7.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_B_7.TabIndex = 32;
+            this.CB_scalping_B_7.TabStop = false;
+            this.CB_scalping_B_7.Text = "G차";
+            this.CB_scalping_B_7.UseVisualStyleBackColor = false;
+            this.CB_scalping_B_7.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_B_9
+            // 
+            this.CB_scalping_B_9.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_B_9.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_9.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_B_9.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_9.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_B_9.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_B_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_B_9.Location = new System.Drawing.Point(353, 39);
+            this.CB_scalping_B_9.Name = "CB_scalping_B_9";
+            this.CB_scalping_B_9.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_B_9.TabIndex = 27;
+            this.CB_scalping_B_9.TabStop = false;
+            this.CB_scalping_B_9.Text = "I차";
+            this.CB_scalping_B_9.UseVisualStyleBackColor = false;
+            this.CB_scalping_B_9.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_A_1
+            // 
+            this.CB_scalping_A_1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_A_1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_A_1.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_A_1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_A_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_A_1.Location = new System.Drawing.Point(73, 19);
+            this.CB_scalping_A_1.Name = "CB_scalping_A_1";
+            this.CB_scalping_A_1.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_A_1.TabIndex = 26;
+            this.CB_scalping_A_1.TabStop = false;
+            this.CB_scalping_A_1.Text = "A차";
+            this.CB_scalping_A_1.UseVisualStyleBackColor = false;
+            this.CB_scalping_A_1.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_B_2
+            // 
+            this.CB_scalping_B_2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_B_2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_B_2.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_B_2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_B_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_B_2.Location = new System.Drawing.Point(108, 39);
+            this.CB_scalping_B_2.Name = "CB_scalping_B_2";
+            this.CB_scalping_B_2.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_B_2.TabIndex = 31;
+            this.CB_scalping_B_2.TabStop = false;
+            this.CB_scalping_B_2.Text = "B차";
+            this.CB_scalping_B_2.UseVisualStyleBackColor = false;
+            this.CB_scalping_B_2.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_A_9
+            // 
+            this.CB_scalping_A_9.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_A_9.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_9.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_A_9.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_9.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_A_9.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_A_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_A_9.Location = new System.Drawing.Point(353, 19);
+            this.CB_scalping_A_9.Name = "CB_scalping_A_9";
+            this.CB_scalping_A_9.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_A_9.TabIndex = 25;
+            this.CB_scalping_A_9.TabStop = false;
+            this.CB_scalping_A_9.Text = "I차";
+            this.CB_scalping_A_9.UseVisualStyleBackColor = false;
+            this.CB_scalping_A_9.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_B
+            // 
+            this.CB_scalping_B.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_B.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_B.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_B.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_B.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_B.Location = new System.Drawing.Point(0, 39);
+            this.CB_scalping_B.Name = "CB_scalping_B";
+            this.CB_scalping_B.Size = new System.Drawing.Size(71, 21);
+            this.CB_scalping_B.TabIndex = 24;
+            this.CB_scalping_B.TabStop = false;
+            this.CB_scalping_B.Text = "□ 신규 B";
+            this.CB_scalping_B.UseVisualStyleBackColor = false;
+            this.CB_scalping_B.CheckedChanged += new System.EventHandler(this.CB_scalping_Run_CheckedChanged);
+            // 
+            // CB_scalping_B_6
+            // 
+            this.CB_scalping_B_6.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_B_6.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_6.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_B_6.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_6.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_B_6.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_B_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_B_6.Location = new System.Drawing.Point(248, 39);
+            this.CB_scalping_B_6.Name = "CB_scalping_B_6";
+            this.CB_scalping_B_6.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_B_6.TabIndex = 9;
+            this.CB_scalping_B_6.TabStop = false;
+            this.CB_scalping_B_6.Text = "F차";
+            this.CB_scalping_B_6.UseVisualStyleBackColor = false;
+            this.CB_scalping_B_6.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_A_3
+            // 
+            this.CB_scalping_A_3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_A_3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_A_3.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_A_3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_A_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_A_3.Location = new System.Drawing.Point(143, 19);
+            this.CB_scalping_A_3.Name = "CB_scalping_A_3";
+            this.CB_scalping_A_3.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_A_3.TabIndex = 10;
+            this.CB_scalping_A_3.TabStop = false;
+            this.CB_scalping_A_3.Text = "C차";
+            this.CB_scalping_A_3.UseVisualStyleBackColor = false;
+            this.CB_scalping_A_3.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_A_7
+            // 
+            this.CB_scalping_A_7.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_A_7.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_7.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_A_7.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_7.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_A_7.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_A_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_A_7.Location = new System.Drawing.Point(283, 19);
+            this.CB_scalping_A_7.Name = "CB_scalping_A_7";
+            this.CB_scalping_A_7.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_A_7.TabIndex = 4;
+            this.CB_scalping_A_7.TabStop = false;
+            this.CB_scalping_A_7.Text = "G차";
+            this.CB_scalping_A_7.UseVisualStyleBackColor = false;
+            this.CB_scalping_A_7.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_C_8
+            // 
+            this.CB_scalping_C_8.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_C_8.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_8.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_C_8.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_8.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_C_8.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_C_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_C_8.Location = new System.Drawing.Point(318, 59);
+            this.CB_scalping_C_8.Name = "CB_scalping_C_8";
+            this.CB_scalping_C_8.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_C_8.TabIndex = 23;
+            this.CB_scalping_C_8.TabStop = false;
+            this.CB_scalping_C_8.Text = "H차";
+            this.CB_scalping_C_8.UseVisualStyleBackColor = false;
+            this.CB_scalping_C_8.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_B_1
+            // 
+            this.CB_scalping_B_1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_B_1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_B_1.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_B_1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_B_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_B_1.Location = new System.Drawing.Point(73, 39);
+            this.CB_scalping_B_1.Name = "CB_scalping_B_1";
+            this.CB_scalping_B_1.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_B_1.TabIndex = 22;
+            this.CB_scalping_B_1.TabStop = false;
+            this.CB_scalping_B_1.Text = "A차";
+            this.CB_scalping_B_1.UseVisualStyleBackColor = false;
+            this.CB_scalping_B_1.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_C_9
+            // 
+            this.CB_scalping_C_9.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_C_9.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_9.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_C_9.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_9.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_C_9.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_C_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_C_9.Location = new System.Drawing.Point(353, 59);
+            this.CB_scalping_C_9.Name = "CB_scalping_C_9";
+            this.CB_scalping_C_9.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_C_9.TabIndex = 29;
+            this.CB_scalping_C_9.TabStop = false;
+            this.CB_scalping_C_9.Text = "I차";
+            this.CB_scalping_C_9.UseVisualStyleBackColor = false;
+            this.CB_scalping_C_9.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_C_2
+            // 
+            this.CB_scalping_C_2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_C_2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_C_2.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_C_2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_C_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_C_2.Location = new System.Drawing.Point(108, 59);
+            this.CB_scalping_C_2.Name = "CB_scalping_C_2";
+            this.CB_scalping_C_2.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_C_2.TabIndex = 5;
+            this.CB_scalping_C_2.TabStop = false;
+            this.CB_scalping_C_2.Text = "B차";
+            this.CB_scalping_C_2.UseVisualStyleBackColor = false;
+            this.CB_scalping_C_2.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_B_8
+            // 
+            this.CB_scalping_B_8.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_B_8.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_8.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_B_8.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_8.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_B_8.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_B_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_B_8.Location = new System.Drawing.Point(318, 39);
+            this.CB_scalping_B_8.Name = "CB_scalping_B_8";
+            this.CB_scalping_B_8.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_B_8.TabIndex = 21;
+            this.CB_scalping_B_8.TabStop = false;
+            this.CB_scalping_B_8.Text = "H차";
+            this.CB_scalping_B_8.UseVisualStyleBackColor = false;
+            this.CB_scalping_B_8.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_C
+            // 
+            this.CB_scalping_C.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_C.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_C.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_C.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_C.Location = new System.Drawing.Point(0, 59);
+            this.CB_scalping_C.Name = "CB_scalping_C";
+            this.CB_scalping_C.Size = new System.Drawing.Size(71, 21);
+            this.CB_scalping_C.TabIndex = 20;
+            this.CB_scalping_C.TabStop = false;
+            this.CB_scalping_C.Text = "□ 신규 C";
+            this.CB_scalping_C.UseVisualStyleBackColor = false;
+            this.CB_scalping_C.CheckedChanged += new System.EventHandler(this.CB_scalping_Run_CheckedChanged);
+            // 
+            // CB_scalping_C_3
+            // 
+            this.CB_scalping_C_3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_C_3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_C_3.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_C_3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_C_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_C_3.Location = new System.Drawing.Point(143, 59);
+            this.CB_scalping_C_3.Name = "CB_scalping_C_3";
+            this.CB_scalping_C_3.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_C_3.TabIndex = 6;
+            this.CB_scalping_C_3.TabStop = false;
+            this.CB_scalping_C_3.Text = "C차";
+            this.CB_scalping_C_3.UseVisualStyleBackColor = false;
+            this.CB_scalping_C_3.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_A_2
+            // 
+            this.CB_scalping_A_2.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_A_2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_A_2.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_A_2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_A_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_A_2.Location = new System.Drawing.Point(108, 19);
+            this.CB_scalping_A_2.Name = "CB_scalping_A_2";
+            this.CB_scalping_A_2.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_A_2.TabIndex = 30;
+            this.CB_scalping_A_2.TabStop = false;
+            this.CB_scalping_A_2.Text = "B차";
+            this.CB_scalping_A_2.UseVisualStyleBackColor = false;
+            this.CB_scalping_A_2.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_A_8
+            // 
+            this.CB_scalping_A_8.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_A_8.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_8.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_A_8.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_8.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_A_8.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_A_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_A_8.Location = new System.Drawing.Point(318, 19);
+            this.CB_scalping_A_8.Name = "CB_scalping_A_8";
+            this.CB_scalping_A_8.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_A_8.TabIndex = 19;
+            this.CB_scalping_A_8.TabStop = false;
+            this.CB_scalping_A_8.Text = "H차";
+            this.CB_scalping_A_8.UseVisualStyleBackColor = false;
+            this.CB_scalping_A_8.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_B_4
+            // 
+            this.CB_scalping_B_4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_B_4.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_4.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_B_4.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_4.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_B_4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_B_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_B_4.Location = new System.Drawing.Point(178, 39);
+            this.CB_scalping_B_4.Name = "CB_scalping_B_4";
+            this.CB_scalping_B_4.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_B_4.TabIndex = 3;
+            this.CB_scalping_B_4.TabStop = false;
+            this.CB_scalping_B_4.Text = "D차";
+            this.CB_scalping_B_4.UseVisualStyleBackColor = false;
+            this.CB_scalping_B_4.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_A_6
+            // 
+            this.CB_scalping_A_6.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_A_6.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_6.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_A_6.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_6.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_A_6.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_A_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_A_6.Location = new System.Drawing.Point(248, 19);
+            this.CB_scalping_A_6.Name = "CB_scalping_A_6";
+            this.CB_scalping_A_6.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_A_6.TabIndex = 7;
+            this.CB_scalping_A_6.TabStop = false;
+            this.CB_scalping_A_6.Text = "F차";
+            this.CB_scalping_A_6.UseVisualStyleBackColor = false;
+            this.CB_scalping_A_6.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_C_5
+            // 
+            this.CB_scalping_C_5.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_C_5.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_5.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_C_5.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_5.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_C_5.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_C_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_C_5.Location = new System.Drawing.Point(213, 59);
+            this.CB_scalping_C_5.Name = "CB_scalping_C_5";
+            this.CB_scalping_C_5.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_C_5.TabIndex = 12;
+            this.CB_scalping_C_5.TabStop = false;
+            this.CB_scalping_C_5.Text = "E차";
+            this.CB_scalping_C_5.UseVisualStyleBackColor = false;
+            this.CB_scalping_C_5.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_C_1
+            // 
+            this.CB_scalping_C_1.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_C_1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_C_1.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_C_1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_C_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_C_1.Location = new System.Drawing.Point(73, 59);
+            this.CB_scalping_C_1.Name = "CB_scalping_C_1";
+            this.CB_scalping_C_1.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_C_1.TabIndex = 18;
+            this.CB_scalping_C_1.TabStop = false;
+            this.CB_scalping_C_1.Text = "A차";
+            this.CB_scalping_C_1.UseVisualStyleBackColor = false;
+            this.CB_scalping_C_1.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_A_4
+            // 
+            this.CB_scalping_A_4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_A_4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_4.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_A_4.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_4.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_A_4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_A_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_A_4.Location = new System.Drawing.Point(178, 19);
+            this.CB_scalping_A_4.Name = "CB_scalping_A_4";
+            this.CB_scalping_A_4.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_A_4.TabIndex = 13;
+            this.CB_scalping_A_4.TabStop = false;
+            this.CB_scalping_A_4.Text = "D차";
+            this.CB_scalping_A_4.UseVisualStyleBackColor = false;
+            this.CB_scalping_A_4.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_A_5
+            // 
+            this.CB_scalping_A_5.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_A_5.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_5.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_A_5.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_A_5.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_A_5.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_A_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_A_5.Location = new System.Drawing.Point(213, 19);
+            this.CB_scalping_A_5.Name = "CB_scalping_A_5";
+            this.CB_scalping_A_5.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_A_5.TabIndex = 16;
+            this.CB_scalping_A_5.TabStop = false;
+            this.CB_scalping_A_5.Text = "E차";
+            this.CB_scalping_A_5.UseVisualStyleBackColor = false;
+            this.CB_scalping_A_5.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_C_7
+            // 
+            this.CB_scalping_C_7.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_C_7.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_7.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_C_7.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_7.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_C_7.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_C_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_C_7.Location = new System.Drawing.Point(283, 59);
+            this.CB_scalping_C_7.Name = "CB_scalping_C_7";
+            this.CB_scalping_C_7.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_C_7.TabIndex = 15;
+            this.CB_scalping_C_7.TabStop = false;
+            this.CB_scalping_C_7.Text = "G차";
+            this.CB_scalping_C_7.UseVisualStyleBackColor = false;
+            this.CB_scalping_C_7.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_B_3
+            // 
+            this.CB_scalping_B_3.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_B_3.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_B_3.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_B_3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_B_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_B_3.Location = new System.Drawing.Point(143, 39);
+            this.CB_scalping_B_3.Name = "CB_scalping_B_3";
+            this.CB_scalping_B_3.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_B_3.TabIndex = 8;
+            this.CB_scalping_B_3.TabStop = false;
+            this.CB_scalping_B_3.Text = "C차";
+            this.CB_scalping_B_3.UseVisualStyleBackColor = false;
+            this.CB_scalping_B_3.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_C_6
+            // 
+            this.CB_scalping_C_6.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_C_6.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_6.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_C_6.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_6.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_C_6.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_C_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_C_6.Location = new System.Drawing.Point(248, 59);
+            this.CB_scalping_C_6.Name = "CB_scalping_C_6";
+            this.CB_scalping_C_6.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_C_6.TabIndex = 11;
+            this.CB_scalping_C_6.TabStop = false;
+            this.CB_scalping_C_6.Text = "F차";
+            this.CB_scalping_C_6.UseVisualStyleBackColor = false;
+            this.CB_scalping_C_6.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_B_5
+            // 
+            this.CB_scalping_B_5.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_B_5.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_5.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_B_5.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_scalping_B_5.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_B_5.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_B_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_B_5.Location = new System.Drawing.Point(213, 39);
+            this.CB_scalping_B_5.Name = "CB_scalping_B_5";
+            this.CB_scalping_B_5.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_B_5.TabIndex = 14;
+            this.CB_scalping_B_5.TabStop = false;
+            this.CB_scalping_B_5.Text = "E차";
+            this.CB_scalping_B_5.UseVisualStyleBackColor = false;
+            this.CB_scalping_B_5.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            // 
+            // CB_scalping_C_4
+            // 
+            this.CB_scalping_C_4.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_scalping_C_4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_4.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_scalping_C_4.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_scalping_C_4.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_scalping_C_4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_scalping_C_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_scalping_C_4.Location = new System.Drawing.Point(178, 59);
+            this.CB_scalping_C_4.Name = "CB_scalping_C_4";
+            this.CB_scalping_C_4.Size = new System.Drawing.Size(33, 21);
+            this.CB_scalping_C_4.TabIndex = 17;
+            this.CB_scalping_C_4.TabStop = false;
+            this.CB_scalping_C_4.Text = "D차";
+            this.CB_scalping_C_4.UseVisualStyleBackColor = false;
+            this.CB_scalping_C_4.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
             // 
             // P_익절매도
             // 
@@ -9592,7 +9237,7 @@ namespace 지니_64
             this.TB_ik_down_value_A.TabIndex = 53;
             this.TB_ik_down_value_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_ik_down_value_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_down_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_ik_down_value_I
             // 
@@ -9607,7 +9252,7 @@ namespace 지니_64
             this.TB_ik_down_value_I.TabIndex = 53;
             this.TB_ik_down_value_I.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_ik_down_value_I.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_value_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_down_value_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_ik_down_value_B
             // 
@@ -9622,7 +9267,7 @@ namespace 지니_64
             this.TB_ik_down_value_B.TabIndex = 53;
             this.TB_ik_down_value_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_ik_down_value_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_down_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_ik_down_value_H
             // 
@@ -9637,7 +9282,7 @@ namespace 지니_64
             this.TB_ik_down_value_H.TabIndex = 53;
             this.TB_ik_down_value_H.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_ik_down_value_H.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_value_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_down_value_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_ik_down_value_G
             // 
@@ -9652,7 +9297,7 @@ namespace 지니_64
             this.TB_ik_down_value_G.TabIndex = 53;
             this.TB_ik_down_value_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_ik_down_value_G.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_value_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_down_value_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_ik_down_value_F
             // 
@@ -9667,7 +9312,7 @@ namespace 지니_64
             this.TB_ik_down_value_F.TabIndex = 53;
             this.TB_ik_down_value_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_ik_down_value_F.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_value_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_down_value_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_ik_down_value_C
             // 
@@ -9682,7 +9327,7 @@ namespace 지니_64
             this.TB_ik_down_value_C.TabIndex = 53;
             this.TB_ik_down_value_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_ik_down_value_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_down_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_ik_down_value_D
             // 
@@ -9697,7 +9342,7 @@ namespace 지니_64
             this.TB_ik_down_value_D.TabIndex = 53;
             this.TB_ik_down_value_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_ik_down_value_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_value_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_down_value_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_ik_down_value_E
             // 
@@ -9712,7 +9357,7 @@ namespace 지니_64
             this.TB_ik_down_value_E.TabIndex = 53;
             this.TB_ik_down_value_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_ik_down_value_E.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_ik_down_value_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_ik_down_value_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label147
             // 
@@ -9757,7 +9402,7 @@ namespace 지니_64
             this.combo_ik_cancel_sell.Name = "combo_ik_cancel_sell";
             this.combo_ik_cancel_sell.Size = new System.Drawing.Size(85, 20);
             this.combo_ik_cancel_sell.TabIndex = 29;
-            this.combo_ik_cancel_sell.SelectedIndexChanged += new System.EventHandler(this.combo_cancel_SelectedIndexChanged);
+            this.combo_ik_cancel_sell.SelectedIndexChanged += new System.EventHandler(this.Combo_cancel_SelectedIndexChanged);
             this.combo_ik_cancel_sell.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
             // 
             // combo_ik_down_cancel_sell
@@ -9777,7 +9422,7 @@ namespace 지니_64
             this.combo_ik_down_cancel_sell.Name = "combo_ik_down_cancel_sell";
             this.combo_ik_down_cancel_sell.Size = new System.Drawing.Size(84, 20);
             this.combo_ik_down_cancel_sell.TabIndex = 29;
-            this.combo_ik_down_cancel_sell.SelectedIndexChanged += new System.EventHandler(this.combo_cancel_SelectedIndexChanged);
+            this.combo_ik_down_cancel_sell.SelectedIndexChanged += new System.EventHandler(this.Combo_cancel_SelectedIndexChanged);
             this.combo_ik_down_cancel_sell.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
             // 
             // CBB_ik_CancelOrder
@@ -10490,583 +10135,18 @@ namespace 지니_64
             this.combo_ik_jumun_D.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
             this.combo_ik_jumun_D.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
             // 
-            // P_체결즉시
+            // lb_TS
             // 
-            this.P_체결즉시.Controls.Add(this.CB_scalping_A);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_B_7);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_B_9);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_A_1);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_B_2);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_A_9);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_B);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_B_6);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_A_3);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_A_7);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_C_8);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_B_1);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_C_9);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_C_2);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_B_8);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_C);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_C_3);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_A_2);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_A_8);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_B_4);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_A_6);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_C_5);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_C_1);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_A_4);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_A_5);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_C_7);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_B_3);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_C_6);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_B_5);
-            this.P_체결즉시.Controls.Add(this.CB_scalping_C_4);
-            this.P_체결즉시.Controls.Add(this.CB_scalping);
-            this.P_체결즉시.Location = new System.Drawing.Point(946, 169);
-            this.P_체결즉시.Name = "P_체결즉시";
-            this.P_체결즉시.Size = new System.Drawing.Size(386, 80);
-            this.P_체결즉시.TabIndex = 137;
-            // 
-            // CB_scalping_A
-            // 
-            this.CB_scalping_A.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_A.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_A.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_A.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_A.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_A.Location = new System.Drawing.Point(0, 19);
-            this.CB_scalping_A.Name = "CB_scalping_A";
-            this.CB_scalping_A.Size = new System.Drawing.Size(71, 21);
-            this.CB_scalping_A.TabIndex = 28;
-            this.CB_scalping_A.TabStop = false;
-            this.CB_scalping_A.Text = "□ 신규 A";
-            this.CB_scalping_A.UseVisualStyleBackColor = false;
-            this.CB_scalping_A.CheckedChanged += new System.EventHandler(this.CB_scalping_Run_CheckedChanged);
-            // 
-            // CB_scalping_B_7
-            // 
-            this.CB_scalping_B_7.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_B_7.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_7.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_B_7.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_7.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_B_7.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_B_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_B_7.Location = new System.Drawing.Point(283, 39);
-            this.CB_scalping_B_7.Name = "CB_scalping_B_7";
-            this.CB_scalping_B_7.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_B_7.TabIndex = 32;
-            this.CB_scalping_B_7.TabStop = false;
-            this.CB_scalping_B_7.Text = "G차";
-            this.CB_scalping_B_7.UseVisualStyleBackColor = false;
-            this.CB_scalping_B_7.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_B_9
-            // 
-            this.CB_scalping_B_9.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_B_9.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_9.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_B_9.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_9.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_B_9.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_B_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_B_9.Location = new System.Drawing.Point(353, 39);
-            this.CB_scalping_B_9.Name = "CB_scalping_B_9";
-            this.CB_scalping_B_9.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_B_9.TabIndex = 27;
-            this.CB_scalping_B_9.TabStop = false;
-            this.CB_scalping_B_9.Text = "I차";
-            this.CB_scalping_B_9.UseVisualStyleBackColor = false;
-            this.CB_scalping_B_9.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_A_1
-            // 
-            this.CB_scalping_A_1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_A_1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_A_1.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_A_1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_A_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_A_1.Location = new System.Drawing.Point(73, 19);
-            this.CB_scalping_A_1.Name = "CB_scalping_A_1";
-            this.CB_scalping_A_1.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_A_1.TabIndex = 26;
-            this.CB_scalping_A_1.TabStop = false;
-            this.CB_scalping_A_1.Text = "A차";
-            this.CB_scalping_A_1.UseVisualStyleBackColor = false;
-            this.CB_scalping_A_1.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_B_2
-            // 
-            this.CB_scalping_B_2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_B_2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_B_2.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_B_2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_B_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_B_2.Location = new System.Drawing.Point(108, 39);
-            this.CB_scalping_B_2.Name = "CB_scalping_B_2";
-            this.CB_scalping_B_2.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_B_2.TabIndex = 31;
-            this.CB_scalping_B_2.TabStop = false;
-            this.CB_scalping_B_2.Text = "B차";
-            this.CB_scalping_B_2.UseVisualStyleBackColor = false;
-            this.CB_scalping_B_2.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_A_9
-            // 
-            this.CB_scalping_A_9.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_A_9.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_9.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_A_9.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_9.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_A_9.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_A_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_A_9.Location = new System.Drawing.Point(353, 19);
-            this.CB_scalping_A_9.Name = "CB_scalping_A_9";
-            this.CB_scalping_A_9.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_A_9.TabIndex = 25;
-            this.CB_scalping_A_9.TabStop = false;
-            this.CB_scalping_A_9.Text = "I차";
-            this.CB_scalping_A_9.UseVisualStyleBackColor = false;
-            this.CB_scalping_A_9.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_B
-            // 
-            this.CB_scalping_B.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_B.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_B.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_B.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_B.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_B.Location = new System.Drawing.Point(0, 39);
-            this.CB_scalping_B.Name = "CB_scalping_B";
-            this.CB_scalping_B.Size = new System.Drawing.Size(71, 21);
-            this.CB_scalping_B.TabIndex = 24;
-            this.CB_scalping_B.TabStop = false;
-            this.CB_scalping_B.Text = "□ 신규 B";
-            this.CB_scalping_B.UseVisualStyleBackColor = false;
-            this.CB_scalping_B.CheckedChanged += new System.EventHandler(this.CB_scalping_Run_CheckedChanged);
-            // 
-            // CB_scalping_B_6
-            // 
-            this.CB_scalping_B_6.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_B_6.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_6.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_B_6.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_6.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_B_6.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_B_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_B_6.Location = new System.Drawing.Point(248, 39);
-            this.CB_scalping_B_6.Name = "CB_scalping_B_6";
-            this.CB_scalping_B_6.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_B_6.TabIndex = 9;
-            this.CB_scalping_B_6.TabStop = false;
-            this.CB_scalping_B_6.Text = "F차";
-            this.CB_scalping_B_6.UseVisualStyleBackColor = false;
-            this.CB_scalping_B_6.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_A_3
-            // 
-            this.CB_scalping_A_3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_A_3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_A_3.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_A_3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_A_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_A_3.Location = new System.Drawing.Point(143, 19);
-            this.CB_scalping_A_3.Name = "CB_scalping_A_3";
-            this.CB_scalping_A_3.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_A_3.TabIndex = 10;
-            this.CB_scalping_A_3.TabStop = false;
-            this.CB_scalping_A_3.Text = "C차";
-            this.CB_scalping_A_3.UseVisualStyleBackColor = false;
-            this.CB_scalping_A_3.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_A_7
-            // 
-            this.CB_scalping_A_7.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_A_7.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_7.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_A_7.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_7.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_A_7.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_A_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_A_7.Location = new System.Drawing.Point(283, 19);
-            this.CB_scalping_A_7.Name = "CB_scalping_A_7";
-            this.CB_scalping_A_7.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_A_7.TabIndex = 4;
-            this.CB_scalping_A_7.TabStop = false;
-            this.CB_scalping_A_7.Text = "G차";
-            this.CB_scalping_A_7.UseVisualStyleBackColor = false;
-            this.CB_scalping_A_7.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_C_8
-            // 
-            this.CB_scalping_C_8.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_C_8.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_8.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_C_8.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_8.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_C_8.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_C_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_C_8.Location = new System.Drawing.Point(318, 59);
-            this.CB_scalping_C_8.Name = "CB_scalping_C_8";
-            this.CB_scalping_C_8.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_C_8.TabIndex = 23;
-            this.CB_scalping_C_8.TabStop = false;
-            this.CB_scalping_C_8.Text = "H차";
-            this.CB_scalping_C_8.UseVisualStyleBackColor = false;
-            this.CB_scalping_C_8.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_B_1
-            // 
-            this.CB_scalping_B_1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_B_1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_B_1.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_B_1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_B_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_B_1.Location = new System.Drawing.Point(73, 39);
-            this.CB_scalping_B_1.Name = "CB_scalping_B_1";
-            this.CB_scalping_B_1.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_B_1.TabIndex = 22;
-            this.CB_scalping_B_1.TabStop = false;
-            this.CB_scalping_B_1.Text = "A차";
-            this.CB_scalping_B_1.UseVisualStyleBackColor = false;
-            this.CB_scalping_B_1.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_C_9
-            // 
-            this.CB_scalping_C_9.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_C_9.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_9.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_C_9.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_9.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_C_9.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_C_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_C_9.Location = new System.Drawing.Point(353, 59);
-            this.CB_scalping_C_9.Name = "CB_scalping_C_9";
-            this.CB_scalping_C_9.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_C_9.TabIndex = 29;
-            this.CB_scalping_C_9.TabStop = false;
-            this.CB_scalping_C_9.Text = "I차";
-            this.CB_scalping_C_9.UseVisualStyleBackColor = false;
-            this.CB_scalping_C_9.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_C_2
-            // 
-            this.CB_scalping_C_2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_C_2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_C_2.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_C_2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_C_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_C_2.Location = new System.Drawing.Point(108, 59);
-            this.CB_scalping_C_2.Name = "CB_scalping_C_2";
-            this.CB_scalping_C_2.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_C_2.TabIndex = 5;
-            this.CB_scalping_C_2.TabStop = false;
-            this.CB_scalping_C_2.Text = "B차";
-            this.CB_scalping_C_2.UseVisualStyleBackColor = false;
-            this.CB_scalping_C_2.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_B_8
-            // 
-            this.CB_scalping_B_8.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_B_8.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_8.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_B_8.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_8.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_B_8.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_B_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_B_8.Location = new System.Drawing.Point(318, 39);
-            this.CB_scalping_B_8.Name = "CB_scalping_B_8";
-            this.CB_scalping_B_8.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_B_8.TabIndex = 21;
-            this.CB_scalping_B_8.TabStop = false;
-            this.CB_scalping_B_8.Text = "H차";
-            this.CB_scalping_B_8.UseVisualStyleBackColor = false;
-            this.CB_scalping_B_8.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_C
-            // 
-            this.CB_scalping_C.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_C.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_C.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_C.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_C.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_C.Location = new System.Drawing.Point(0, 59);
-            this.CB_scalping_C.Name = "CB_scalping_C";
-            this.CB_scalping_C.Size = new System.Drawing.Size(71, 21);
-            this.CB_scalping_C.TabIndex = 20;
-            this.CB_scalping_C.TabStop = false;
-            this.CB_scalping_C.Text = "□ 신규 C";
-            this.CB_scalping_C.UseVisualStyleBackColor = false;
-            this.CB_scalping_C.CheckedChanged += new System.EventHandler(this.CB_scalping_Run_CheckedChanged);
-            // 
-            // CB_scalping_C_3
-            // 
-            this.CB_scalping_C_3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_C_3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_C_3.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_C_3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_C_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_C_3.Location = new System.Drawing.Point(143, 59);
-            this.CB_scalping_C_3.Name = "CB_scalping_C_3";
-            this.CB_scalping_C_3.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_C_3.TabIndex = 6;
-            this.CB_scalping_C_3.TabStop = false;
-            this.CB_scalping_C_3.Text = "C차";
-            this.CB_scalping_C_3.UseVisualStyleBackColor = false;
-            this.CB_scalping_C_3.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_A_2
-            // 
-            this.CB_scalping_A_2.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_A_2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_A_2.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_A_2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_A_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_A_2.Location = new System.Drawing.Point(108, 19);
-            this.CB_scalping_A_2.Name = "CB_scalping_A_2";
-            this.CB_scalping_A_2.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_A_2.TabIndex = 30;
-            this.CB_scalping_A_2.TabStop = false;
-            this.CB_scalping_A_2.Text = "B차";
-            this.CB_scalping_A_2.UseVisualStyleBackColor = false;
-            this.CB_scalping_A_2.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_A_8
-            // 
-            this.CB_scalping_A_8.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_A_8.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_8.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_A_8.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_8.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_A_8.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_A_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_A_8.Location = new System.Drawing.Point(318, 19);
-            this.CB_scalping_A_8.Name = "CB_scalping_A_8";
-            this.CB_scalping_A_8.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_A_8.TabIndex = 19;
-            this.CB_scalping_A_8.TabStop = false;
-            this.CB_scalping_A_8.Text = "H차";
-            this.CB_scalping_A_8.UseVisualStyleBackColor = false;
-            this.CB_scalping_A_8.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_B_4
-            // 
-            this.CB_scalping_B_4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_B_4.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_4.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_B_4.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_4.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_B_4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_B_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_B_4.Location = new System.Drawing.Point(178, 39);
-            this.CB_scalping_B_4.Name = "CB_scalping_B_4";
-            this.CB_scalping_B_4.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_B_4.TabIndex = 3;
-            this.CB_scalping_B_4.TabStop = false;
-            this.CB_scalping_B_4.Text = "D차";
-            this.CB_scalping_B_4.UseVisualStyleBackColor = false;
-            this.CB_scalping_B_4.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_A_6
-            // 
-            this.CB_scalping_A_6.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_A_6.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_6.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_A_6.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_6.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_A_6.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_A_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_A_6.Location = new System.Drawing.Point(248, 19);
-            this.CB_scalping_A_6.Name = "CB_scalping_A_6";
-            this.CB_scalping_A_6.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_A_6.TabIndex = 7;
-            this.CB_scalping_A_6.TabStop = false;
-            this.CB_scalping_A_6.Text = "F차";
-            this.CB_scalping_A_6.UseVisualStyleBackColor = false;
-            this.CB_scalping_A_6.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_C_5
-            // 
-            this.CB_scalping_C_5.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_C_5.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_5.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_C_5.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_5.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_C_5.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_C_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_C_5.Location = new System.Drawing.Point(213, 59);
-            this.CB_scalping_C_5.Name = "CB_scalping_C_5";
-            this.CB_scalping_C_5.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_C_5.TabIndex = 12;
-            this.CB_scalping_C_5.TabStop = false;
-            this.CB_scalping_C_5.Text = "E차";
-            this.CB_scalping_C_5.UseVisualStyleBackColor = false;
-            this.CB_scalping_C_5.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_C_1
-            // 
-            this.CB_scalping_C_1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_C_1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_C_1.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_C_1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_C_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_C_1.Location = new System.Drawing.Point(73, 59);
-            this.CB_scalping_C_1.Name = "CB_scalping_C_1";
-            this.CB_scalping_C_1.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_C_1.TabIndex = 18;
-            this.CB_scalping_C_1.TabStop = false;
-            this.CB_scalping_C_1.Text = "A차";
-            this.CB_scalping_C_1.UseVisualStyleBackColor = false;
-            this.CB_scalping_C_1.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_A_4
-            // 
-            this.CB_scalping_A_4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_A_4.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_4.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_A_4.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_4.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_A_4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_A_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_A_4.Location = new System.Drawing.Point(178, 19);
-            this.CB_scalping_A_4.Name = "CB_scalping_A_4";
-            this.CB_scalping_A_4.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_A_4.TabIndex = 13;
-            this.CB_scalping_A_4.TabStop = false;
-            this.CB_scalping_A_4.Text = "D차";
-            this.CB_scalping_A_4.UseVisualStyleBackColor = false;
-            this.CB_scalping_A_4.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_A_5
-            // 
-            this.CB_scalping_A_5.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_A_5.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_5.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_A_5.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_A_5.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_A_5.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_A_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_A_5.Location = new System.Drawing.Point(213, 19);
-            this.CB_scalping_A_5.Name = "CB_scalping_A_5";
-            this.CB_scalping_A_5.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_A_5.TabIndex = 16;
-            this.CB_scalping_A_5.TabStop = false;
-            this.CB_scalping_A_5.Text = "E차";
-            this.CB_scalping_A_5.UseVisualStyleBackColor = false;
-            this.CB_scalping_A_5.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_C_7
-            // 
-            this.CB_scalping_C_7.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_C_7.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_7.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_C_7.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_7.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_C_7.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_C_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_C_7.Location = new System.Drawing.Point(283, 59);
-            this.CB_scalping_C_7.Name = "CB_scalping_C_7";
-            this.CB_scalping_C_7.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_C_7.TabIndex = 15;
-            this.CB_scalping_C_7.TabStop = false;
-            this.CB_scalping_C_7.Text = "G차";
-            this.CB_scalping_C_7.UseVisualStyleBackColor = false;
-            this.CB_scalping_C_7.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_B_3
-            // 
-            this.CB_scalping_B_3.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_B_3.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_3.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_B_3.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_3.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_B_3.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_B_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_B_3.Location = new System.Drawing.Point(143, 39);
-            this.CB_scalping_B_3.Name = "CB_scalping_B_3";
-            this.CB_scalping_B_3.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_B_3.TabIndex = 8;
-            this.CB_scalping_B_3.TabStop = false;
-            this.CB_scalping_B_3.Text = "C차";
-            this.CB_scalping_B_3.UseVisualStyleBackColor = false;
-            this.CB_scalping_B_3.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_C_6
-            // 
-            this.CB_scalping_C_6.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_C_6.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_6.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_C_6.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_6.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_C_6.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_C_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_C_6.Location = new System.Drawing.Point(248, 59);
-            this.CB_scalping_C_6.Name = "CB_scalping_C_6";
-            this.CB_scalping_C_6.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_C_6.TabIndex = 11;
-            this.CB_scalping_C_6.TabStop = false;
-            this.CB_scalping_C_6.Text = "F차";
-            this.CB_scalping_C_6.UseVisualStyleBackColor = false;
-            this.CB_scalping_C_6.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_B_5
-            // 
-            this.CB_scalping_B_5.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_B_5.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_5.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_B_5.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_scalping_B_5.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_B_5.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_B_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_B_5.Location = new System.Drawing.Point(213, 39);
-            this.CB_scalping_B_5.Name = "CB_scalping_B_5";
-            this.CB_scalping_B_5.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_B_5.TabIndex = 14;
-            this.CB_scalping_B_5.TabStop = false;
-            this.CB_scalping_B_5.Text = "E차";
-            this.CB_scalping_B_5.UseVisualStyleBackColor = false;
-            this.CB_scalping_B_5.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
-            // 
-            // CB_scalping_C_4
-            // 
-            this.CB_scalping_C_4.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_scalping_C_4.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_4.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_scalping_C_4.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_scalping_C_4.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_scalping_C_4.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_scalping_C_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_scalping_C_4.Location = new System.Drawing.Point(178, 59);
-            this.CB_scalping_C_4.Name = "CB_scalping_C_4";
-            this.CB_scalping_C_4.Size = new System.Drawing.Size(33, 21);
-            this.CB_scalping_C_4.TabIndex = 17;
-            this.CB_scalping_C_4.TabStop = false;
-            this.CB_scalping_C_4.Text = "D차";
-            this.CB_scalping_C_4.UseVisualStyleBackColor = false;
-            this.CB_scalping_C_4.CheckedChanged += new System.EventHandler(this.CB_scalping_CheckedChanged);
+            this.lb_TS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lb_TS.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lb_TS.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lb_TS.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.lb_TS.Location = new System.Drawing.Point(515, 27);
+            this.lb_TS.Name = "lb_TS";
+            this.lb_TS.Size = new System.Drawing.Size(212, 22);
+            this.lb_TS.TabIndex = 34;
+            this.lb_TS.Text = "트레일링 스탑";
+            this.lb_TS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -11106,7 +10186,7 @@ namespace 지니_64
             this.TB_신규횟수제한.Text = "1";
             this.TB_신규횟수제한.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_신규횟수제한.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_신규횟수제한.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_신규횟수제한.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // LB_신규매수횟수
             // 
@@ -11119,6 +10199,1005 @@ namespace 지니_64
             this.LB_신규매수횟수.TabIndex = 34;
             this.LB_신규매수횟수.Text = "1";
             this.LB_신규매수횟수.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // P_트레일링스탑
+            // 
+            this.P_트레일링스탑.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.P_트레일링스탑.Controls.Add(this.CB_TS_취소후);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_B);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_G);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_C);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_F);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_E);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_A);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_D);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_H);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_upper_I);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_I);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_B);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_F);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_G);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_C);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_D);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_E);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_A);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_Jumun_H);
+            this.P_트레일링스탑.Controls.Add(this.MTB_TS_repeat);
+            this.P_트레일링스탑.Controls.Add(this.MTB_TS_canceltime);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_G);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_B);
+            this.P_트레일링스탑.Controls.Add(this.label351);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_F);
+            this.P_트레일링스탑.Controls.Add(this.label349);
+            this.P_트레일링스탑.Controls.Add(this.label340);
+            this.P_트레일링스탑.Controls.Add(this.label348);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_D);
+            this.P_트레일링스탑.Controls.Add(this.label347);
+            this.P_트레일링스탑.Controls.Add(this.label336);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_C);
+            this.P_트레일링스탑.Controls.Add(this.label339);
+            this.P_트레일링스탑.Controls.Add(this.label346);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_H);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_A);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_I);
+            this.P_트레일링스탑.Controls.Add(this.label334);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_ratio_E);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_H);
+            this.P_트레일링스탑.Controls.Add(this.label344);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_E);
+            this.P_트레일링스탑.Controls.Add(this.label335);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_C);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_A);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_I);
+            this.P_트레일링스탑.Controls.Add(this.label343);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_G);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_D);
+            this.P_트레일링스탑.Controls.Add(this.label341);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_B);
+            this.P_트레일링스탑.Controls.Add(this.label342);
+            this.P_트레일링스탑.Controls.Add(this.label350);
+            this.P_트레일링스탑.Controls.Add(this.TB_TS_down_F);
+            this.P_트레일링스탑.Controls.Add(this.label337);
+            this.P_트레일링스탑.Controls.Add(this.label338);
+            this.P_트레일링스탑.Controls.Add(this.label345);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_I);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_H);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_D);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_F);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_G);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_B);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_C);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_E);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_upper_A);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_I);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_H);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_D);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_F);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_B);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_G);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_C);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_E);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_I);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_down_A);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_C);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_E);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_G);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_B);
+            this.P_트레일링스탑.Controls.Add(this.CB_TS_손실제한);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_F);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_D);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_H);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_A);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_E);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_C);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_B);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_G);
+            this.P_트레일링스탑.Controls.Add(this.CB_TS_B);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_F);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_D);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_H);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_ratio_I);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_cancel_sell);
+            this.P_트레일링스탑.Controls.Add(this.CBB_TS_Jumun_A);
+            this.P_트레일링스탑.Controls.Add(this.CB_TS_A);
+            this.P_트레일링스탑.Controls.Add(this.CB_TS_기준금);
+            this.P_트레일링스탑.Controls.Add(this.CB_TS_I);
+            this.P_트레일링스탑.Controls.Add(this.CB_TS_H);
+            this.P_트레일링스탑.Controls.Add(this.CB_TS_G);
+            this.P_트레일링스탑.Controls.Add(this.CB_TS_E);
+            this.P_트레일링스탑.Controls.Add(this.CB_TS_D);
+            this.P_트레일링스탑.Controls.Add(this.CB_TS_F);
+            this.P_트레일링스탑.Controls.Add(this.CB_TS_C);
+            this.P_트레일링스탑.Location = new System.Drawing.Point(515, 48);
+            this.P_트레일링스탑.Name = "P_트레일링스탑";
+            this.P_트레일링스탑.Size = new System.Drawing.Size(429, 201);
+            this.P_트레일링스탑.TabIndex = 139;
+            // 
+            // TB_TS_Jumun_I
+            // 
+            this.TB_TS_Jumun_I.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_TS_Jumun_I.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_TS_Jumun_I.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TS_Jumun_I.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.TB_TS_Jumun_I.Location = new System.Drawing.Point(342, 179);
+            this.TB_TS_Jumun_I.MaxLength = 7;
+            this.TB_TS_Jumun_I.Name = "TB_TS_Jumun_I";
+            this.TB_TS_Jumun_I.Size = new System.Drawing.Size(54, 21);
+            this.TB_TS_Jumun_I.TabIndex = 69;
+            this.TB_TS_Jumun_I.Text = "-100.55";
+            this.TB_TS_Jumun_I.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_TS_Jumun_I.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
+            this.TB_TS_Jumun_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
+            // 
+            // TB_TS_Jumun_B
+            // 
+            this.TB_TS_Jumun_B.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.TB_TS_Jumun_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_TS_Jumun_B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TS_Jumun_B.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.TB_TS_Jumun_B.Location = new System.Drawing.Point(342, 39);
+            this.TB_TS_Jumun_B.MaxLength = 7;
+            this.TB_TS_Jumun_B.Name = "TB_TS_Jumun_B";
+            this.TB_TS_Jumun_B.Size = new System.Drawing.Size(54, 21);
+            this.TB_TS_Jumun_B.TabIndex = 69;
+            this.TB_TS_Jumun_B.Text = "-100.55";
+            this.TB_TS_Jumun_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_TS_Jumun_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
+            this.TB_TS_Jumun_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
+            // 
+            // TB_TS_Jumun_F
+            // 
+            this.TB_TS_Jumun_F.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.TB_TS_Jumun_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_TS_Jumun_F.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TS_Jumun_F.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.TB_TS_Jumun_F.Location = new System.Drawing.Point(342, 119);
+            this.TB_TS_Jumun_F.MaxLength = 7;
+            this.TB_TS_Jumun_F.Name = "TB_TS_Jumun_F";
+            this.TB_TS_Jumun_F.Size = new System.Drawing.Size(54, 21);
+            this.TB_TS_Jumun_F.TabIndex = 69;
+            this.TB_TS_Jumun_F.Text = "-100.55";
+            this.TB_TS_Jumun_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_TS_Jumun_F.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
+            this.TB_TS_Jumun_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
+            // 
+            // TB_TS_Jumun_G
+            // 
+            this.TB_TS_Jumun_G.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_TS_Jumun_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_TS_Jumun_G.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TS_Jumun_G.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.TB_TS_Jumun_G.Location = new System.Drawing.Point(342, 139);
+            this.TB_TS_Jumun_G.MaxLength = 7;
+            this.TB_TS_Jumun_G.Name = "TB_TS_Jumun_G";
+            this.TB_TS_Jumun_G.Size = new System.Drawing.Size(54, 21);
+            this.TB_TS_Jumun_G.TabIndex = 69;
+            this.TB_TS_Jumun_G.Text = "-100.55";
+            this.TB_TS_Jumun_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_TS_Jumun_G.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
+            this.TB_TS_Jumun_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
+            // 
+            // TB_TS_Jumun_C
+            // 
+            this.TB_TS_Jumun_C.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_TS_Jumun_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_TS_Jumun_C.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TS_Jumun_C.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.TB_TS_Jumun_C.Location = new System.Drawing.Point(342, 59);
+            this.TB_TS_Jumun_C.MaxLength = 7;
+            this.TB_TS_Jumun_C.Name = "TB_TS_Jumun_C";
+            this.TB_TS_Jumun_C.Size = new System.Drawing.Size(54, 21);
+            this.TB_TS_Jumun_C.TabIndex = 69;
+            this.TB_TS_Jumun_C.Text = "-100.55";
+            this.TB_TS_Jumun_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_TS_Jumun_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
+            this.TB_TS_Jumun_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
+            // 
+            // TB_TS_Jumun_D
+            // 
+            this.TB_TS_Jumun_D.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.TB_TS_Jumun_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_TS_Jumun_D.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TS_Jumun_D.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.TB_TS_Jumun_D.Location = new System.Drawing.Point(342, 79);
+            this.TB_TS_Jumun_D.MaxLength = 7;
+            this.TB_TS_Jumun_D.Name = "TB_TS_Jumun_D";
+            this.TB_TS_Jumun_D.Size = new System.Drawing.Size(54, 21);
+            this.TB_TS_Jumun_D.TabIndex = 69;
+            this.TB_TS_Jumun_D.Text = "-100.55";
+            this.TB_TS_Jumun_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_TS_Jumun_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
+            this.TB_TS_Jumun_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
+            // 
+            // TB_TS_Jumun_E
+            // 
+            this.TB_TS_Jumun_E.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_TS_Jumun_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_TS_Jumun_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TS_Jumun_E.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.TB_TS_Jumun_E.Location = new System.Drawing.Point(342, 99);
+            this.TB_TS_Jumun_E.MaxLength = 7;
+            this.TB_TS_Jumun_E.Name = "TB_TS_Jumun_E";
+            this.TB_TS_Jumun_E.Size = new System.Drawing.Size(54, 21);
+            this.TB_TS_Jumun_E.TabIndex = 69;
+            this.TB_TS_Jumun_E.Text = "-100.55";
+            this.TB_TS_Jumun_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_TS_Jumun_E.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
+            this.TB_TS_Jumun_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
+            // 
+            // TB_TS_Jumun_A
+            // 
+            this.TB_TS_Jumun_A.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_TS_Jumun_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_TS_Jumun_A.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TS_Jumun_A.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.TB_TS_Jumun_A.Location = new System.Drawing.Point(342, 19);
+            this.TB_TS_Jumun_A.MaxLength = 7;
+            this.TB_TS_Jumun_A.Name = "TB_TS_Jumun_A";
+            this.TB_TS_Jumun_A.Size = new System.Drawing.Size(54, 21);
+            this.TB_TS_Jumun_A.TabIndex = 69;
+            this.TB_TS_Jumun_A.Text = "-100.55";
+            this.TB_TS_Jumun_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_TS_Jumun_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
+            this.TB_TS_Jumun_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
+            // 
+            // TB_TS_Jumun_H
+            // 
+            this.TB_TS_Jumun_H.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.TB_TS_Jumun_H.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_TS_Jumun_H.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TS_Jumun_H.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.TB_TS_Jumun_H.Location = new System.Drawing.Point(342, 159);
+            this.TB_TS_Jumun_H.MaxLength = 7;
+            this.TB_TS_Jumun_H.Name = "TB_TS_Jumun_H";
+            this.TB_TS_Jumun_H.Size = new System.Drawing.Size(54, 21);
+            this.TB_TS_Jumun_H.TabIndex = 69;
+            this.TB_TS_Jumun_H.Text = "-100.55";
+            this.TB_TS_Jumun_H.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_TS_Jumun_H.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
+            this.TB_TS_Jumun_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
+            // 
+            // TB_TS_ratio_G
+            // 
+            this.TB_TS_ratio_G.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_TS_ratio_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_TS_ratio_G.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TS_ratio_G.ForeColor = System.Drawing.Color.Green;
+            this.TB_TS_ratio_G.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_TS_ratio_G.Location = new System.Drawing.Point(270, 139);
+            this.TB_TS_ratio_G.MaxLength = 7;
+            this.TB_TS_ratio_G.Name = "TB_TS_ratio_G";
+            this.TB_TS_ratio_G.Size = new System.Drawing.Size(54, 21);
+            this.TB_TS_ratio_G.TabIndex = 67;
+            this.TB_TS_ratio_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_TS_ratio_G.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
+            this.TB_TS_ratio_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
+            // 
+            // TB_TS_ratio_B
+            // 
+            this.TB_TS_ratio_B.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.TB_TS_ratio_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_TS_ratio_B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TS_ratio_B.ForeColor = System.Drawing.Color.Green;
+            this.TB_TS_ratio_B.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_TS_ratio_B.Location = new System.Drawing.Point(270, 39);
+            this.TB_TS_ratio_B.MaxLength = 7;
+            this.TB_TS_ratio_B.Name = "TB_TS_ratio_B";
+            this.TB_TS_ratio_B.Size = new System.Drawing.Size(54, 21);
+            this.TB_TS_ratio_B.TabIndex = 67;
+            this.TB_TS_ratio_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_TS_ratio_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
+            this.TB_TS_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
+            // 
+            // label351
+            // 
+            this.label351.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label351.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label351.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label351.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label351.Location = new System.Drawing.Point(240, 179);
+            this.label351.Name = "label351";
+            this.label351.Size = new System.Drawing.Size(31, 21);
+            this.label351.TabIndex = 0;
+            this.label351.Text = "하락";
+            this.label351.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TB_TS_ratio_F
+            // 
+            this.TB_TS_ratio_F.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.TB_TS_ratio_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_TS_ratio_F.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TS_ratio_F.ForeColor = System.Drawing.Color.Green;
+            this.TB_TS_ratio_F.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_TS_ratio_F.Location = new System.Drawing.Point(270, 119);
+            this.TB_TS_ratio_F.MaxLength = 7;
+            this.TB_TS_ratio_F.Name = "TB_TS_ratio_F";
+            this.TB_TS_ratio_F.Size = new System.Drawing.Size(54, 21);
+            this.TB_TS_ratio_F.TabIndex = 67;
+            this.TB_TS_ratio_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_TS_ratio_F.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
+            this.TB_TS_ratio_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
+            // 
+            // label349
+            // 
+            this.label349.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label349.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label349.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label349.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label349.Location = new System.Drawing.Point(240, 159);
+            this.label349.Name = "label349";
+            this.label349.Size = new System.Drawing.Size(31, 21);
+            this.label349.TabIndex = 0;
+            this.label349.Text = "하락";
+            this.label349.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label340
+            // 
+            this.label340.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label340.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label340.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label340.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label340.Location = new System.Drawing.Point(240, 79);
+            this.label340.Name = "label340";
+            this.label340.Size = new System.Drawing.Size(31, 21);
+            this.label340.TabIndex = 0;
+            this.label340.Text = "하락";
+            this.label340.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label348
+            // 
+            this.label348.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label348.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label348.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label348.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label348.Location = new System.Drawing.Point(240, 119);
+            this.label348.Name = "label348";
+            this.label348.Size = new System.Drawing.Size(31, 21);
+            this.label348.TabIndex = 0;
+            this.label348.Text = "하락";
+            this.label348.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TB_TS_ratio_D
+            // 
+            this.TB_TS_ratio_D.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.TB_TS_ratio_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_TS_ratio_D.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TS_ratio_D.ForeColor = System.Drawing.Color.Green;
+            this.TB_TS_ratio_D.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_TS_ratio_D.Location = new System.Drawing.Point(270, 79);
+            this.TB_TS_ratio_D.MaxLength = 7;
+            this.TB_TS_ratio_D.Name = "TB_TS_ratio_D";
+            this.TB_TS_ratio_D.Size = new System.Drawing.Size(54, 21);
+            this.TB_TS_ratio_D.TabIndex = 67;
+            this.TB_TS_ratio_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_TS_ratio_D.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
+            this.TB_TS_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
+            // 
+            // label347
+            // 
+            this.label347.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label347.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label347.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label347.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label347.Location = new System.Drawing.Point(240, 139);
+            this.label347.Name = "label347";
+            this.label347.Size = new System.Drawing.Size(31, 21);
+            this.label347.TabIndex = 0;
+            this.label347.Text = "하락";
+            this.label347.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label336
+            // 
+            this.label336.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label336.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label336.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label336.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label336.Location = new System.Drawing.Point(240, 39);
+            this.label336.Name = "label336";
+            this.label336.Size = new System.Drawing.Size(31, 21);
+            this.label336.TabIndex = 0;
+            this.label336.Text = "하락";
+            this.label336.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TB_TS_ratio_C
+            // 
+            this.TB_TS_ratio_C.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_TS_ratio_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_TS_ratio_C.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TS_ratio_C.ForeColor = System.Drawing.Color.Green;
+            this.TB_TS_ratio_C.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_TS_ratio_C.Location = new System.Drawing.Point(270, 59);
+            this.TB_TS_ratio_C.MaxLength = 7;
+            this.TB_TS_ratio_C.Name = "TB_TS_ratio_C";
+            this.TB_TS_ratio_C.Size = new System.Drawing.Size(54, 21);
+            this.TB_TS_ratio_C.TabIndex = 67;
+            this.TB_TS_ratio_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_TS_ratio_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
+            this.TB_TS_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
+            // 
+            // label339
+            // 
+            this.label339.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label339.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label339.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label339.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label339.Location = new System.Drawing.Point(240, 59);
+            this.label339.Name = "label339";
+            this.label339.Size = new System.Drawing.Size(31, 21);
+            this.label339.TabIndex = 0;
+            this.label339.Text = "하락";
+            this.label339.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label346
+            // 
+            this.label346.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label346.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label346.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label346.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label346.Location = new System.Drawing.Point(240, 99);
+            this.label346.Name = "label346";
+            this.label346.Size = new System.Drawing.Size(31, 21);
+            this.label346.TabIndex = 0;
+            this.label346.Text = "하락";
+            this.label346.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TB_TS_ratio_H
+            // 
+            this.TB_TS_ratio_H.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.TB_TS_ratio_H.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_TS_ratio_H.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TS_ratio_H.ForeColor = System.Drawing.Color.Green;
+            this.TB_TS_ratio_H.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_TS_ratio_H.Location = new System.Drawing.Point(270, 159);
+            this.TB_TS_ratio_H.MaxLength = 7;
+            this.TB_TS_ratio_H.Name = "TB_TS_ratio_H";
+            this.TB_TS_ratio_H.Size = new System.Drawing.Size(54, 21);
+            this.TB_TS_ratio_H.TabIndex = 67;
+            this.TB_TS_ratio_H.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_TS_ratio_H.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
+            this.TB_TS_ratio_H.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
+            // 
+            // TB_TS_ratio_I
+            // 
+            this.TB_TS_ratio_I.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_TS_ratio_I.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_TS_ratio_I.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TS_ratio_I.ForeColor = System.Drawing.Color.Green;
+            this.TB_TS_ratio_I.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_TS_ratio_I.Location = new System.Drawing.Point(270, 179);
+            this.TB_TS_ratio_I.MaxLength = 7;
+            this.TB_TS_ratio_I.Name = "TB_TS_ratio_I";
+            this.TB_TS_ratio_I.Size = new System.Drawing.Size(54, 21);
+            this.TB_TS_ratio_I.TabIndex = 67;
+            this.TB_TS_ratio_I.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_TS_ratio_I.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
+            this.TB_TS_ratio_I.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
+            // 
+            // label334
+            // 
+            this.label334.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label334.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label334.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label334.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label334.Location = new System.Drawing.Point(240, 19);
+            this.label334.Name = "label334";
+            this.label334.Size = new System.Drawing.Size(31, 21);
+            this.label334.TabIndex = 0;
+            this.label334.Text = "하락";
+            this.label334.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TB_TS_ratio_E
+            // 
+            this.TB_TS_ratio_E.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_TS_ratio_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_TS_ratio_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_TS_ratio_E.ForeColor = System.Drawing.Color.Green;
+            this.TB_TS_ratio_E.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_TS_ratio_E.Location = new System.Drawing.Point(270, 99);
+            this.TB_TS_ratio_E.MaxLength = 7;
+            this.TB_TS_ratio_E.Name = "TB_TS_ratio_E";
+            this.TB_TS_ratio_E.Size = new System.Drawing.Size(54, 21);
+            this.TB_TS_ratio_E.TabIndex = 67;
+            this.TB_TS_ratio_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_TS_ratio_E.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
+            this.TB_TS_ratio_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
+            // 
+            // label344
+            // 
+            this.label344.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label344.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label344.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label344.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label344.Location = new System.Drawing.Point(126, 19);
+            this.label344.Name = "label344";
+            this.label344.Size = new System.Drawing.Size(31, 21);
+            this.label344.TabIndex = 0;
+            this.label344.Text = "상승";
+            this.label344.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label335
+            // 
+            this.label335.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label335.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label335.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label335.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label335.Location = new System.Drawing.Point(126, 39);
+            this.label335.Name = "label335";
+            this.label335.Size = new System.Drawing.Size(31, 21);
+            this.label335.TabIndex = 0;
+            this.label335.Text = "상승";
+            this.label335.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label343
+            // 
+            this.label343.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label343.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label343.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label343.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label343.Location = new System.Drawing.Point(126, 119);
+            this.label343.Name = "label343";
+            this.label343.Size = new System.Drawing.Size(31, 21);
+            this.label343.TabIndex = 0;
+            this.label343.Text = "상승";
+            this.label343.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label341
+            // 
+            this.label341.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label341.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label341.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label341.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label341.Location = new System.Drawing.Point(126, 99);
+            this.label341.Name = "label341";
+            this.label341.Size = new System.Drawing.Size(31, 21);
+            this.label341.TabIndex = 0;
+            this.label341.Text = "상승";
+            this.label341.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label342
+            // 
+            this.label342.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label342.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label342.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label342.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label342.Location = new System.Drawing.Point(126, 139);
+            this.label342.Name = "label342";
+            this.label342.Size = new System.Drawing.Size(31, 21);
+            this.label342.TabIndex = 0;
+            this.label342.Text = "상승";
+            this.label342.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label350
+            // 
+            this.label350.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label350.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label350.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label350.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label350.Location = new System.Drawing.Point(126, 179);
+            this.label350.Name = "label350";
+            this.label350.Size = new System.Drawing.Size(31, 21);
+            this.label350.TabIndex = 0;
+            this.label350.Text = "상승";
+            this.label350.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label337
+            // 
+            this.label337.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label337.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label337.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label337.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label337.Location = new System.Drawing.Point(126, 59);
+            this.label337.Name = "label337";
+            this.label337.Size = new System.Drawing.Size(31, 21);
+            this.label337.TabIndex = 0;
+            this.label337.Text = "상승";
+            this.label337.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label338
+            // 
+            this.label338.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label338.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label338.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label338.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label338.Location = new System.Drawing.Point(126, 79);
+            this.label338.Name = "label338";
+            this.label338.Size = new System.Drawing.Size(31, 21);
+            this.label338.TabIndex = 0;
+            this.label338.Text = "상승";
+            this.label338.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label345
+            // 
+            this.label345.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label345.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label345.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label345.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label345.Location = new System.Drawing.Point(126, 159);
+            this.label345.Name = "label345";
+            this.label345.Size = new System.Drawing.Size(31, 21);
+            this.label345.TabIndex = 0;
+            this.label345.Text = "상승";
+            this.label345.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CBB_TS_Jumun_I
+            // 
+            this.CBB_TS_Jumun_I.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CBB_TS_Jumun_I.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_Jumun_I.DropDownWidth = 65;
+            this.CBB_TS_Jumun_I.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_Jumun_I.FormattingEnabled = true;
+            this.CBB_TS_Jumun_I.Items.AddRange(new object[] {
+            "시장가",
+            "현재가",
+            "호가",
+            "%"});
+            this.CBB_TS_Jumun_I.Location = new System.Drawing.Point(395, 179);
+            this.CBB_TS_Jumun_I.Name = "CBB_TS_Jumun_I";
+            this.CBB_TS_Jumun_I.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CBB_TS_Jumun_I.Size = new System.Drawing.Size(60, 21);
+            this.CBB_TS_Jumun_I.TabIndex = 68;
+            this.CBB_TS_Jumun_I.TabStop = false;
+            this.CBB_TS_Jumun_I.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
+            this.CBB_TS_Jumun_I.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_Jumun_C
+            // 
+            this.CBB_TS_Jumun_C.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CBB_TS_Jumun_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_Jumun_C.DropDownWidth = 65;
+            this.CBB_TS_Jumun_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_Jumun_C.FormattingEnabled = true;
+            this.CBB_TS_Jumun_C.Items.AddRange(new object[] {
+            "시장가",
+            "현재가",
+            "호가",
+            "%"});
+            this.CBB_TS_Jumun_C.Location = new System.Drawing.Point(395, 59);
+            this.CBB_TS_Jumun_C.Name = "CBB_TS_Jumun_C";
+            this.CBB_TS_Jumun_C.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CBB_TS_Jumun_C.Size = new System.Drawing.Size(60, 21);
+            this.CBB_TS_Jumun_C.TabIndex = 68;
+            this.CBB_TS_Jumun_C.TabStop = false;
+            this.CBB_TS_Jumun_C.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
+            this.CBB_TS_Jumun_C.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_Jumun_E
+            // 
+            this.CBB_TS_Jumun_E.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CBB_TS_Jumun_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_Jumun_E.DropDownWidth = 65;
+            this.CBB_TS_Jumun_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_Jumun_E.FormattingEnabled = true;
+            this.CBB_TS_Jumun_E.Items.AddRange(new object[] {
+            "시장가",
+            "현재가",
+            "호가",
+            "%"});
+            this.CBB_TS_Jumun_E.Location = new System.Drawing.Point(395, 99);
+            this.CBB_TS_Jumun_E.Name = "CBB_TS_Jumun_E";
+            this.CBB_TS_Jumun_E.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CBB_TS_Jumun_E.Size = new System.Drawing.Size(60, 21);
+            this.CBB_TS_Jumun_E.TabIndex = 68;
+            this.CBB_TS_Jumun_E.TabStop = false;
+            this.CBB_TS_Jumun_E.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
+            this.CBB_TS_Jumun_E.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_Jumun_G
+            // 
+            this.CBB_TS_Jumun_G.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CBB_TS_Jumun_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_Jumun_G.DropDownWidth = 65;
+            this.CBB_TS_Jumun_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_Jumun_G.FormattingEnabled = true;
+            this.CBB_TS_Jumun_G.Items.AddRange(new object[] {
+            "시장가",
+            "현재가",
+            "호가",
+            "%"});
+            this.CBB_TS_Jumun_G.Location = new System.Drawing.Point(395, 139);
+            this.CBB_TS_Jumun_G.Name = "CBB_TS_Jumun_G";
+            this.CBB_TS_Jumun_G.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CBB_TS_Jumun_G.Size = new System.Drawing.Size(60, 21);
+            this.CBB_TS_Jumun_G.TabIndex = 68;
+            this.CBB_TS_Jumun_G.TabStop = false;
+            this.CBB_TS_Jumun_G.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
+            this.CBB_TS_Jumun_G.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_Jumun_B
+            // 
+            this.CBB_TS_Jumun_B.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CBB_TS_Jumun_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_Jumun_B.DropDownWidth = 65;
+            this.CBB_TS_Jumun_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_Jumun_B.FormattingEnabled = true;
+            this.CBB_TS_Jumun_B.Items.AddRange(new object[] {
+            "시장가",
+            "현재가",
+            "호가",
+            "%"});
+            this.CBB_TS_Jumun_B.Location = new System.Drawing.Point(395, 39);
+            this.CBB_TS_Jumun_B.Name = "CBB_TS_Jumun_B";
+            this.CBB_TS_Jumun_B.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CBB_TS_Jumun_B.Size = new System.Drawing.Size(60, 21);
+            this.CBB_TS_Jumun_B.TabIndex = 68;
+            this.CBB_TS_Jumun_B.TabStop = false;
+            this.CBB_TS_Jumun_B.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
+            this.CBB_TS_Jumun_B.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_Jumun_F
+            // 
+            this.CBB_TS_Jumun_F.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CBB_TS_Jumun_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_Jumun_F.DropDownWidth = 65;
+            this.CBB_TS_Jumun_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_Jumun_F.FormattingEnabled = true;
+            this.CBB_TS_Jumun_F.Items.AddRange(new object[] {
+            "시장가",
+            "현재가",
+            "호가",
+            "%"});
+            this.CBB_TS_Jumun_F.Location = new System.Drawing.Point(395, 119);
+            this.CBB_TS_Jumun_F.Name = "CBB_TS_Jumun_F";
+            this.CBB_TS_Jumun_F.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CBB_TS_Jumun_F.Size = new System.Drawing.Size(60, 21);
+            this.CBB_TS_Jumun_F.TabIndex = 68;
+            this.CBB_TS_Jumun_F.TabStop = false;
+            this.CBB_TS_Jumun_F.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
+            this.CBB_TS_Jumun_F.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_Jumun_D
+            // 
+            this.CBB_TS_Jumun_D.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CBB_TS_Jumun_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_Jumun_D.DropDownWidth = 65;
+            this.CBB_TS_Jumun_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_Jumun_D.FormattingEnabled = true;
+            this.CBB_TS_Jumun_D.Items.AddRange(new object[] {
+            "시장가",
+            "현재가",
+            "호가",
+            "%"});
+            this.CBB_TS_Jumun_D.Location = new System.Drawing.Point(395, 79);
+            this.CBB_TS_Jumun_D.Name = "CBB_TS_Jumun_D";
+            this.CBB_TS_Jumun_D.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CBB_TS_Jumun_D.Size = new System.Drawing.Size(60, 21);
+            this.CBB_TS_Jumun_D.TabIndex = 68;
+            this.CBB_TS_Jumun_D.TabStop = false;
+            this.CBB_TS_Jumun_D.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
+            this.CBB_TS_Jumun_D.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_Jumun_H
+            // 
+            this.CBB_TS_Jumun_H.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CBB_TS_Jumun_H.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_Jumun_H.DropDownWidth = 65;
+            this.CBB_TS_Jumun_H.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_Jumun_H.FormattingEnabled = true;
+            this.CBB_TS_Jumun_H.Items.AddRange(new object[] {
+            "시장가",
+            "현재가",
+            "호가",
+            "%"});
+            this.CBB_TS_Jumun_H.Location = new System.Drawing.Point(395, 159);
+            this.CBB_TS_Jumun_H.Name = "CBB_TS_Jumun_H";
+            this.CBB_TS_Jumun_H.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CBB_TS_Jumun_H.Size = new System.Drawing.Size(60, 21);
+            this.CBB_TS_Jumun_H.TabIndex = 68;
+            this.CBB_TS_Jumun_H.TabStop = false;
+            this.CBB_TS_Jumun_H.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
+            this.CBB_TS_Jumun_H.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_ratio_A
+            // 
+            this.CBB_TS_ratio_A.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CBB_TS_ratio_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_ratio_A.DropDownWidth = 65;
+            this.CBB_TS_ratio_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_ratio_A.FormattingEnabled = true;
+            this.CBB_TS_ratio_A.Items.AddRange(new object[] {
+            "주",
+            "만원",
+            "기준금(%)",
+            "보유주(%)"});
+            this.CBB_TS_ratio_A.Location = new System.Drawing.Point(323, 19);
+            this.CBB_TS_ratio_A.Name = "CBB_TS_ratio_A";
+            this.CBB_TS_ratio_A.Size = new System.Drawing.Size(40, 21);
+            this.CBB_TS_ratio_A.TabIndex = 66;
+            this.CBB_TS_ratio_A.TabStop = false;
+            this.CBB_TS_ratio_A.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_ratio_E
+            // 
+            this.CBB_TS_ratio_E.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CBB_TS_ratio_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_ratio_E.DropDownWidth = 65;
+            this.CBB_TS_ratio_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_ratio_E.FormattingEnabled = true;
+            this.CBB_TS_ratio_E.Items.AddRange(new object[] {
+            "주",
+            "만원",
+            "기준금(%)",
+            "보유주(%)"});
+            this.CBB_TS_ratio_E.Location = new System.Drawing.Point(323, 99);
+            this.CBB_TS_ratio_E.Name = "CBB_TS_ratio_E";
+            this.CBB_TS_ratio_E.Size = new System.Drawing.Size(40, 21);
+            this.CBB_TS_ratio_E.TabIndex = 66;
+            this.CBB_TS_ratio_E.TabStop = false;
+            this.CBB_TS_ratio_E.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_ratio_C
+            // 
+            this.CBB_TS_ratio_C.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CBB_TS_ratio_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_ratio_C.DropDownWidth = 65;
+            this.CBB_TS_ratio_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_ratio_C.FormattingEnabled = true;
+            this.CBB_TS_ratio_C.Items.AddRange(new object[] {
+            "주",
+            "만원",
+            "기준금(%)",
+            "보유주(%)"});
+            this.CBB_TS_ratio_C.Location = new System.Drawing.Point(323, 59);
+            this.CBB_TS_ratio_C.Name = "CBB_TS_ratio_C";
+            this.CBB_TS_ratio_C.Size = new System.Drawing.Size(40, 21);
+            this.CBB_TS_ratio_C.TabIndex = 66;
+            this.CBB_TS_ratio_C.TabStop = false;
+            this.CBB_TS_ratio_C.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_ratio_B
+            // 
+            this.CBB_TS_ratio_B.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CBB_TS_ratio_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_ratio_B.DropDownWidth = 65;
+            this.CBB_TS_ratio_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_ratio_B.FormattingEnabled = true;
+            this.CBB_TS_ratio_B.Items.AddRange(new object[] {
+            "주",
+            "만원",
+            "기준금(%)",
+            "보유주(%)"});
+            this.CBB_TS_ratio_B.Location = new System.Drawing.Point(323, 39);
+            this.CBB_TS_ratio_B.Name = "CBB_TS_ratio_B";
+            this.CBB_TS_ratio_B.Size = new System.Drawing.Size(40, 21);
+            this.CBB_TS_ratio_B.TabIndex = 66;
+            this.CBB_TS_ratio_B.TabStop = false;
+            this.CBB_TS_ratio_B.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_ratio_G
+            // 
+            this.CBB_TS_ratio_G.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CBB_TS_ratio_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_ratio_G.DropDownWidth = 65;
+            this.CBB_TS_ratio_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_ratio_G.FormattingEnabled = true;
+            this.CBB_TS_ratio_G.Items.AddRange(new object[] {
+            "주",
+            "만원",
+            "기준금(%)",
+            "보유주(%)"});
+            this.CBB_TS_ratio_G.Location = new System.Drawing.Point(323, 139);
+            this.CBB_TS_ratio_G.Name = "CBB_TS_ratio_G";
+            this.CBB_TS_ratio_G.Size = new System.Drawing.Size(40, 21);
+            this.CBB_TS_ratio_G.TabIndex = 66;
+            this.CBB_TS_ratio_G.TabStop = false;
+            this.CBB_TS_ratio_G.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_ratio_F
+            // 
+            this.CBB_TS_ratio_F.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CBB_TS_ratio_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_ratio_F.DropDownWidth = 65;
+            this.CBB_TS_ratio_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_ratio_F.FormattingEnabled = true;
+            this.CBB_TS_ratio_F.Items.AddRange(new object[] {
+            "주",
+            "만원",
+            "기준금(%)",
+            "보유주(%)"});
+            this.CBB_TS_ratio_F.Location = new System.Drawing.Point(323, 119);
+            this.CBB_TS_ratio_F.Name = "CBB_TS_ratio_F";
+            this.CBB_TS_ratio_F.Size = new System.Drawing.Size(40, 21);
+            this.CBB_TS_ratio_F.TabIndex = 66;
+            this.CBB_TS_ratio_F.TabStop = false;
+            this.CBB_TS_ratio_F.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_ratio_D
+            // 
+            this.CBB_TS_ratio_D.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CBB_TS_ratio_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_ratio_D.DropDownWidth = 65;
+            this.CBB_TS_ratio_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_ratio_D.FormattingEnabled = true;
+            this.CBB_TS_ratio_D.Items.AddRange(new object[] {
+            "주",
+            "만원",
+            "기준금(%)",
+            "보유주(%)"});
+            this.CBB_TS_ratio_D.Location = new System.Drawing.Point(323, 79);
+            this.CBB_TS_ratio_D.Name = "CBB_TS_ratio_D";
+            this.CBB_TS_ratio_D.Size = new System.Drawing.Size(40, 21);
+            this.CBB_TS_ratio_D.TabIndex = 66;
+            this.CBB_TS_ratio_D.TabStop = false;
+            this.CBB_TS_ratio_D.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_ratio_H
+            // 
+            this.CBB_TS_ratio_H.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CBB_TS_ratio_H.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_ratio_H.DropDownWidth = 65;
+            this.CBB_TS_ratio_H.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_ratio_H.FormattingEnabled = true;
+            this.CBB_TS_ratio_H.Items.AddRange(new object[] {
+            "주",
+            "만원",
+            "기준금(%)",
+            "보유주(%)"});
+            this.CBB_TS_ratio_H.Location = new System.Drawing.Point(323, 159);
+            this.CBB_TS_ratio_H.Name = "CBB_TS_ratio_H";
+            this.CBB_TS_ratio_H.Size = new System.Drawing.Size(40, 21);
+            this.CBB_TS_ratio_H.TabIndex = 66;
+            this.CBB_TS_ratio_H.TabStop = false;
+            this.CBB_TS_ratio_H.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_ratio_I
+            // 
+            this.CBB_TS_ratio_I.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CBB_TS_ratio_I.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_ratio_I.DropDownWidth = 65;
+            this.CBB_TS_ratio_I.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_ratio_I.FormattingEnabled = true;
+            this.CBB_TS_ratio_I.Items.AddRange(new object[] {
+            "주",
+            "만원",
+            "기준금(%)",
+            "보유주(%)"});
+            this.CBB_TS_ratio_I.Location = new System.Drawing.Point(323, 179);
+            this.CBB_TS_ratio_I.Name = "CBB_TS_ratio_I";
+            this.CBB_TS_ratio_I.Size = new System.Drawing.Size(40, 21);
+            this.CBB_TS_ratio_I.TabIndex = 66;
+            this.CBB_TS_ratio_I.TabStop = false;
+            this.CBB_TS_ratio_I.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_cancel_sell
+            // 
+            this.CBB_TS_cancel_sell.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CBB_TS_cancel_sell.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_cancel_sell.DropDownWidth = 100;
+            this.CBB_TS_cancel_sell.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_cancel_sell.FormattingEnabled = true;
+            this.CBB_TS_cancel_sell.Items.AddRange(new object[] {
+            "후 취소",
+            "후 시장가",
+            "후 현재가",
+            "후 재주문"});
+            this.CBB_TS_cancel_sell.Location = new System.Drawing.Point(270, -1);
+            this.CBB_TS_cancel_sell.Name = "CBB_TS_cancel_sell";
+            this.CBB_TS_cancel_sell.Size = new System.Drawing.Size(126, 21);
+            this.CBB_TS_cancel_sell.TabIndex = 63;
+            this.CBB_TS_cancel_sell.TabStop = false;
+            this.CBB_TS_cancel_sell.SelectedIndexChanged += new System.EventHandler(this.Combo_cancel_SelectedIndexChanged);
+            this.CBB_TS_cancel_sell.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CBB_TS_Jumun_A
+            // 
+            this.CBB_TS_Jumun_A.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CBB_TS_Jumun_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_TS_Jumun_A.DropDownWidth = 65;
+            this.CBB_TS_Jumun_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_TS_Jumun_A.FormattingEnabled = true;
+            this.CBB_TS_Jumun_A.Items.AddRange(new object[] {
+            "시장가",
+            "현재가",
+            "호가",
+            "%"});
+            this.CBB_TS_Jumun_A.Location = new System.Drawing.Point(395, 19);
+            this.CBB_TS_Jumun_A.Name = "CBB_TS_Jumun_A";
+            this.CBB_TS_Jumun_A.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.CBB_TS_Jumun_A.Size = new System.Drawing.Size(60, 21);
+            this.CBB_TS_Jumun_A.TabIndex = 68;
+            this.CBB_TS_Jumun_A.TabStop = false;
+            this.CBB_TS_Jumun_A.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
+            this.CBB_TS_Jumun_A.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
             // 
             // CB_신규횟수제한
             // 
@@ -11192,9 +11271,9 @@ namespace 지니_64
             this.P_신규매수.Controls.Add(this.combo_new_jumun_C);
             this.P_신규매수.Controls.Add(this.CB_new_recatch_A);
             this.P_신규매수.Controls.Add(this.MTB_new_canceltime_C);
-            this.P_신규매수.Controls.Add(this.combo_new_condition_C);
-            this.P_신규매수.Controls.Add(this.combo_new_condition_B);
-            this.P_신규매수.Controls.Add(this.combo_new_condition_A);
+            this.P_신규매수.Controls.Add(this.신규_C);
+            this.P_신규매수.Controls.Add(this.신규_B);
+            this.P_신규매수.Controls.Add(this.신규_A);
             this.P_신규매수.Controls.Add(this.combo_new_or_A);
             this.P_신규매수.Controls.Add(this.combo_new_or_C);
             this.P_신규매수.Controls.Add(this.combo_new_or_B);
@@ -11239,7 +11318,7 @@ namespace 지니_64
             this.combo_new_cancel_buy_C.Name = "combo_new_cancel_buy_C";
             this.combo_new_cancel_buy_C.Size = new System.Drawing.Size(85, 19);
             this.combo_new_cancel_buy_C.TabIndex = 37;
-            this.combo_new_cancel_buy_C.SelectedIndexChanged += new System.EventHandler(this.combo_cancel_SelectedIndexChanged);
+            this.combo_new_cancel_buy_C.SelectedIndexChanged += new System.EventHandler(this.Combo_cancel_SelectedIndexChanged);
             this.combo_new_cancel_buy_C.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
             // 
             // label_신규취소_B
@@ -11271,7 +11350,7 @@ namespace 지니_64
             this.combo_new_cancel_buy_B.Name = "combo_new_cancel_buy_B";
             this.combo_new_cancel_buy_B.Size = new System.Drawing.Size(90, 19);
             this.combo_new_cancel_buy_B.TabIndex = 29;
-            this.combo_new_cancel_buy_B.SelectedIndexChanged += new System.EventHandler(this.combo_cancel_SelectedIndexChanged);
+            this.combo_new_cancel_buy_B.SelectedIndexChanged += new System.EventHandler(this.Combo_cancel_SelectedIndexChanged);
             this.combo_new_cancel_buy_B.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
             // 
             // TB_new_value_C
@@ -11287,7 +11366,7 @@ namespace 지니_64
             this.TB_new_value_C.TabIndex = 53;
             this.TB_new_value_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_new_value_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_new_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_new_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_new_value_B
             // 
@@ -11302,7 +11381,7 @@ namespace 지니_64
             this.TB_new_value_B.TabIndex = 53;
             this.TB_new_value_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_new_value_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_new_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_new_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_new_value_A
             // 
@@ -11318,7 +11397,7 @@ namespace 지니_64
             this.TB_new_value_A.Text = "1234567";
             this.TB_new_value_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_new_value_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_new_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_new_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label43
             // 
@@ -11350,65 +11429,65 @@ namespace 지니_64
             this.combo_new_cancel_buy_A.Name = "combo_new_cancel_buy_A";
             this.combo_new_cancel_buy_A.Size = new System.Drawing.Size(90, 19);
             this.combo_new_cancel_buy_A.TabIndex = 29;
-            this.combo_new_cancel_buy_A.SelectedIndexChanged += new System.EventHandler(this.combo_cancel_SelectedIndexChanged);
+            this.combo_new_cancel_buy_A.SelectedIndexChanged += new System.EventHandler(this.Combo_cancel_SelectedIndexChanged);
             this.combo_new_cancel_buy_A.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
             // 
-            // combo_new_condition_C
+            // 신규_C
             // 
-            this.combo_new_condition_C.DropDownHeight = 600;
-            this.combo_new_condition_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_new_condition_C.DropDownWidth = 200;
-            this.combo_new_condition_C.Enabled = false;
-            this.combo_new_condition_C.Font = new System.Drawing.Font("굴림체", 9.75F);
-            this.combo_new_condition_C.FormattingEnabled = true;
-            this.combo_new_condition_C.IntegralHeight = false;
-            this.combo_new_condition_C.Location = new System.Drawing.Point(69, 73);
-            this.combo_new_condition_C.Name = "combo_new_condition_C";
-            this.combo_new_condition_C.Size = new System.Drawing.Size(150, 21);
-            this.combo_new_condition_C.TabIndex = 54;
-            this.combo_new_condition_C.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.combo_new_condition_C.SelectedIndexChanged += new System.EventHandler(this.combo_condition_SelectedIndexChanged);
-            this.combo_new_condition_C.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.combo_new_condition_C.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
-            this.combo_new_condition_C.MouseHover += new System.EventHandler(this.combo_condition_MouseHover);
+            this.신규_C.DropDownHeight = 600;
+            this.신규_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.신규_C.DropDownWidth = 200;
+            this.신규_C.Enabled = false;
+            this.신규_C.Font = new System.Drawing.Font("굴림체", 9.75F);
+            this.신규_C.FormattingEnabled = true;
+            this.신규_C.IntegralHeight = false;
+            this.신규_C.Location = new System.Drawing.Point(69, 73);
+            this.신규_C.Name = "신규_C";
+            this.신규_C.Size = new System.Drawing.Size(150, 21);
+            this.신규_C.TabIndex = 54;
+            this.신규_C.DropDown += new System.EventHandler(this.Combo_Condition_DropDown);
+            this.신규_C.SelectedIndexChanged += new System.EventHandler(this.Combo_condition_SelectedIndexChanged);
+            this.신규_C.DropDownClosed += new System.EventHandler(this.Combo_Condition_DropDownClosed);
+            this.신규_C.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
+            this.신규_C.MouseHover += new System.EventHandler(this.Combo_condition_MouseHover);
             // 
-            // combo_new_condition_B
+            // 신규_B
             // 
-            this.combo_new_condition_B.DropDownHeight = 600;
-            this.combo_new_condition_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_new_condition_B.DropDownWidth = 200;
-            this.combo_new_condition_B.Enabled = false;
-            this.combo_new_condition_B.Font = new System.Drawing.Font("굴림체", 9.75F);
-            this.combo_new_condition_B.FormattingEnabled = true;
-            this.combo_new_condition_B.IntegralHeight = false;
-            this.combo_new_condition_B.Location = new System.Drawing.Point(69, 53);
-            this.combo_new_condition_B.Name = "combo_new_condition_B";
-            this.combo_new_condition_B.Size = new System.Drawing.Size(150, 21);
-            this.combo_new_condition_B.TabIndex = 54;
-            this.combo_new_condition_B.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.combo_new_condition_B.SelectedIndexChanged += new System.EventHandler(this.combo_condition_SelectedIndexChanged);
-            this.combo_new_condition_B.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.combo_new_condition_B.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
-            this.combo_new_condition_B.MouseHover += new System.EventHandler(this.combo_condition_MouseHover);
+            this.신규_B.DropDownHeight = 600;
+            this.신규_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.신규_B.DropDownWidth = 200;
+            this.신규_B.Enabled = false;
+            this.신규_B.Font = new System.Drawing.Font("굴림체", 9.75F);
+            this.신규_B.FormattingEnabled = true;
+            this.신규_B.IntegralHeight = false;
+            this.신규_B.Location = new System.Drawing.Point(69, 53);
+            this.신규_B.Name = "신규_B";
+            this.신규_B.Size = new System.Drawing.Size(150, 21);
+            this.신규_B.TabIndex = 54;
+            this.신규_B.DropDown += new System.EventHandler(this.Combo_Condition_DropDown);
+            this.신규_B.SelectedIndexChanged += new System.EventHandler(this.Combo_condition_SelectedIndexChanged);
+            this.신규_B.DropDownClosed += new System.EventHandler(this.Combo_Condition_DropDownClosed);
+            this.신규_B.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
+            this.신규_B.MouseHover += new System.EventHandler(this.Combo_condition_MouseHover);
             // 
-            // combo_new_condition_A
+            // 신규_A
             // 
-            this.combo_new_condition_A.DropDownHeight = 600;
-            this.combo_new_condition_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_new_condition_A.DropDownWidth = 200;
-            this.combo_new_condition_A.Enabled = false;
-            this.combo_new_condition_A.Font = new System.Drawing.Font("굴림체", 9.75F);
-            this.combo_new_condition_A.FormattingEnabled = true;
-            this.combo_new_condition_A.IntegralHeight = false;
-            this.combo_new_condition_A.Location = new System.Drawing.Point(69, 33);
-            this.combo_new_condition_A.Name = "combo_new_condition_A";
-            this.combo_new_condition_A.Size = new System.Drawing.Size(150, 21);
-            this.combo_new_condition_A.TabIndex = 54;
-            this.combo_new_condition_A.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.combo_new_condition_A.SelectedIndexChanged += new System.EventHandler(this.combo_condition_SelectedIndexChanged);
-            this.combo_new_condition_A.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.combo_new_condition_A.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
-            this.combo_new_condition_A.MouseHover += new System.EventHandler(this.combo_condition_MouseHover);
+            this.신규_A.DropDownHeight = 600;
+            this.신규_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.신규_A.DropDownWidth = 200;
+            this.신규_A.Enabled = false;
+            this.신규_A.Font = new System.Drawing.Font("굴림체", 9.75F);
+            this.신규_A.FormattingEnabled = true;
+            this.신규_A.IntegralHeight = false;
+            this.신규_A.Location = new System.Drawing.Point(69, 33);
+            this.신규_A.Name = "신규_A";
+            this.신규_A.Size = new System.Drawing.Size(150, 21);
+            this.신규_A.TabIndex = 54;
+            this.신규_A.DropDown += new System.EventHandler(this.Combo_Condition_DropDown);
+            this.신규_A.SelectedIndexChanged += new System.EventHandler(this.Combo_condition_SelectedIndexChanged);
+            this.신규_A.DropDownClosed += new System.EventHandler(this.Combo_Condition_DropDownClosed);
+            this.신규_A.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
+            this.신규_A.MouseHover += new System.EventHandler(this.Combo_condition_MouseHover);
             // 
             // P_계좌매매
             // 
@@ -11549,6 +11628,19 @@ namespace 지니_64
             this.label85.Text = "취소";
             this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label20
+            // 
+            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label20.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label20.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label20.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.label20.Location = new System.Drawing.Point(-1, -1);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(91, 21);
+            this.label20.TabIndex = 34;
+            this.label20.Text = "계좌청산";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // TB_예상수익TS_하락값
             // 
             this.TB_예상수익TS_하락값.BackColor = System.Drawing.SystemColors.AppWorkspace;
@@ -11564,7 +11656,7 @@ namespace 지니_64
             this.TB_예상수익TS_하락값.Text = "9999.99";
             this.TB_예상수익TS_하락값.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_예상수익TS_하락값.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_예상수익TS_하락값.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_예상수익TS_하락값.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_예상수익TS_상승값
             // 
@@ -11581,7 +11673,7 @@ namespace 지니_64
             this.TB_예상수익TS_상승값.Text = "9999999";
             this.TB_예상수익TS_상승값.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_예상수익TS_상승값.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_예상수익TS_상승값.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_예상수익TS_상승값.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // LB_예상수익반복
             // 
@@ -11630,7 +11722,7 @@ namespace 지니_64
             this.TB_예상수익_value.TabIndex = 53;
             this.TB_예상수익_value.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_예상수익_value.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_예상수익_value.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_예상수익_value.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // MT_예상수익_start
             // 
@@ -11665,7 +11757,7 @@ namespace 지니_64
             this.TB_sell_time_매입금.TabIndex = 29;
             this.TB_sell_time_매입금.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_sell_time_매입금.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_sell_time_매입금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_sell_time_매입금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // MT_예상수익_end
             // 
@@ -11767,7 +11859,7 @@ namespace 지니_64
             this.TB_예상손실_value.TabIndex = 53;
             this.TB_예상손실_value.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_예상손실_value.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_예상손실_value.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_예상손실_value.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CB_예상수익_choice
             // 
@@ -11876,7 +11968,7 @@ namespace 지니_64
             this.TB_예상수익_ik_1.TabIndex = 29;
             this.TB_예상수익_ik_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_예상수익_ik_1.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_예상수익_ik_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_예상수익_ik_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_예상수익_ik_2
             // 
@@ -11891,7 +11983,7 @@ namespace 지니_64
             this.TB_예상수익_ik_2.TabIndex = 29;
             this.TB_예상수익_ik_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_예상수익_ik_2.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_예상수익_ik_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_예상수익_ik_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label53
             // 
@@ -11984,7 +12076,7 @@ namespace 지니_64
             this.TB_silson_value_W.TabIndex = 53;
             this.TB_silson_value_W.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_silson_value_W.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_silson_value_W.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_silson_value_W.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_예상손실_ik_2
             // 
@@ -11999,7 +12091,7 @@ namespace 지니_64
             this.TB_예상손실_ik_2.TabIndex = 29;
             this.TB_예상손실_ik_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_예상손실_ik_2.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_예상손실_ik_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_예상손실_ik_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_예상손실_ik_1
             // 
@@ -12015,7 +12107,7 @@ namespace 지니_64
             this.TB_예상손실_ik_1.TabIndex = 29;
             this.TB_예상손실_ik_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_예상손실_ik_1.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_예상손실_ik_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_예상손실_ik_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label89
             // 
@@ -12173,7 +12265,7 @@ namespace 지니_64
             this.TB_silson_ik_W_1.TabIndex = 29;
             this.TB_silson_ik_W_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_silson_ik_W_1.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_silson_ik_W_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_silson_ik_W_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // LB_특정시간반복
             // 
@@ -12202,7 +12294,7 @@ namespace 지니_64
             this.TB_silson_ik_W_2.TabIndex = 29;
             this.TB_silson_ik_W_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_silson_ik_W_2.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_silson_ik_W_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_silson_ik_W_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label79
             // 
@@ -12302,7 +12394,7 @@ namespace 지니_64
             this.TB_sell_time_ik_2.TabIndex = 29;
             this.TB_sell_time_ik_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_sell_time_ik_2.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_sell_time_ik_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_sell_time_ik_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_sell_time_value
             // 
@@ -12317,7 +12409,7 @@ namespace 지니_64
             this.TB_sell_time_value.TabIndex = 53;
             this.TB_sell_time_value.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_sell_time_value.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_sell_time_value.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_sell_time_value.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label66
             // 
@@ -12345,7 +12437,7 @@ namespace 지니_64
             this.TB_sell_time_ik_1.TabIndex = 29;
             this.TB_sell_time_ik_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_sell_time_ik_1.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_sell_time_ik_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_sell_time_ik_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label215
             // 
@@ -12786,34 +12878,8 @@ namespace 지니_64
             this.combo_sell_cancel_sell.Name = "combo_sell_cancel_sell";
             this.combo_sell_cancel_sell.Size = new System.Drawing.Size(90, 21);
             this.combo_sell_cancel_sell.TabIndex = 29;
-            this.combo_sell_cancel_sell.SelectedIndexChanged += new System.EventHandler(this.combo_cancel_SelectedIndexChanged);
+            this.combo_sell_cancel_sell.SelectedIndexChanged += new System.EventHandler(this.Combo_cancel_SelectedIndexChanged);
             this.combo_sell_cancel_sell.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // lb_TS
-            // 
-            this.lb_TS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lb_TS.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lb_TS.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lb_TS.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.lb_TS.Location = new System.Drawing.Point(515, 27);
-            this.lb_TS.Name = "lb_TS";
-            this.lb_TS.Size = new System.Drawing.Size(212, 22);
-            this.lb_TS.TabIndex = 34;
-            this.lb_TS.Text = "트레일링 스탑";
-            this.lb_TS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label20
-            // 
-            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label20.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label20.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label20.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label20.Location = new System.Drawing.Point(-1, -1);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(91, 21);
-            this.label20.TabIndex = 34;
-            this.label20.Text = "계좌청산";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form_Basic
             // 
@@ -12836,13 +12902,13 @@ namespace 지니_64
             this.P_진입조건.PerformLayout();
             this.P_잔고시간청산.ResumeLayout(false);
             this.P_잔고시간청산.PerformLayout();
-            this.P_트레일링스탑.ResumeLayout(false);
-            this.P_트레일링스탑.PerformLayout();
+            this.P_체결즉시.ResumeLayout(false);
             this.P_익절매도.ResumeLayout(false);
             this.P_익절매도.PerformLayout();
-            this.P_체결즉시.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.P_트레일링스탑.ResumeLayout(false);
+            this.P_트레일링스탑.PerformLayout();
             this.P_신규매수.ResumeLayout(false);
             this.P_신규매수.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -13095,9 +13161,9 @@ namespace 지니_64
         public System.Windows.Forms.ComboBox combo_ik_down_cancel_sell;
         public System.Windows.Forms.ComboBox combo_ik_cancel_sell;
         public System.Windows.Forms.MaskedTextBox MTB_new_canceltime_C;
-        public System.Windows.Forms.ComboBox combo_new_condition_C;
-        public System.Windows.Forms.ComboBox combo_new_condition_B;
-        public System.Windows.Forms.ComboBox combo_new_condition_A;
+        public System.Windows.Forms.ComboBox 신규_C;
+        public System.Windows.Forms.ComboBox 신규_B;
+        public System.Windows.Forms.ComboBox 신규_A;
         public System.Windows.Forms.ComboBox combo_new_or_A;
         public System.Windows.Forms.ComboBox combo_new_or_C;
         public System.Windows.Forms.ComboBox combo_new_or_B;
@@ -13504,5 +13570,9 @@ namespace 지니_64
         public System.Windows.Forms.Label label19;
         public System.Windows.Forms.Label lb_TS;
         public System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        public System.Windows.Forms.CheckBox CB_신용주문_신규_C;
+        public System.Windows.Forms.CheckBox CB_신용주문_신규_B;
+        public System.Windows.Forms.CheckBox CB_신용주문_신규_A;
     }
 }

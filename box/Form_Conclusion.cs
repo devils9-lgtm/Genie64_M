@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace 지니_64.box
+namespace 지니64.box
 {
     public partial class Form_Conclusion : UserControl
     {
@@ -31,11 +31,11 @@ namespace 지니_64.box
                         DataGridViewCell cell_구분 = view["주문유형_체결", e.RowIndex];
                         string text_구분 = cell_구분.FormattedValue.ToString();
 
-                        if (text_구분 == "매수")
+                        if (text_구분.Contains("매수"))
                         {
                             cell_구분.Style.ForeColor = Color.Red;
                         }
-                        else if (text_구분 == "매도")
+                        else if (text_구분.Contains("매도"))
                         {
                             cell_구분.Style.ForeColor = Color.Blue;
                         }
@@ -52,7 +52,7 @@ namespace 지니_64.box
                     }
                     catch
                     {
-                        Form1.Error_Log("Conclusion_DataGridView  에러:: 메세지 _Grid_CellValueChanged 에러");
+                        Log.에러기록("Conclusion_DataGridView  에러:: 메세지 _Grid_CellValueChanged 에러");
                     }
                 }
             }
@@ -78,14 +78,22 @@ namespace 지니_64.box
             }
         }
 
-
-
-        private void dataGridView_CurrentCellDirtyStateChanged(object sender, EventArgs e) // 데이터그리드뷰 동작 속도 올리기
+        private void DataGridView_CurrentCellDirtyStateChanged(object sender, EventArgs e) // 데이터그리드뷰 동작 속도 올리기
         {
             if (Conclusion_DataGridView.CurrentCell is DataGridViewCheckBoxCell)
             {
                 Conclusion_DataGridView.CommitEdit(DataGridViewDataErrorContexts.Commit);
             }
+        }
+
+        private void Conclusion_DataGridView_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            Front_End.DataGridView_CellPainting(sender, e);
+        }
+
+        private void Conclusion_DataGridView_MouseDown(object sender, MouseEventArgs e)
+        {
+            Front_End.DataGridView_MouseDown_(sender, e);
         }
     }
 }

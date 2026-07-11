@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace 지니_64.messgebox
+namespace 지니64.messgebox
 {
     public partial class boxEX : UserControl
     {
@@ -13,14 +13,14 @@ namespace 지니_64.messgebox
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            close();
+          //  close();
         }
 
         void close()
         {
-            Form1.form1.Invoke((MethodInvoker)delegate ()
+             Helper.안전한_UI_업데이트(Form1.form1, () =>
             {
                 if (Form1.form1.Contains(box))
                 {
@@ -31,12 +31,12 @@ namespace 지니_64.messgebox
 
         private void boxEX_Click(object sender, EventArgs e)
         {
-            box.BringToFront();
+    //        box.BringToFront();
         }
 
         private void LB_text_Click(object sender, EventArgs e)
         {
-            box.BringToFront();
+        //    box.BringToFront();
         }
     }
 }

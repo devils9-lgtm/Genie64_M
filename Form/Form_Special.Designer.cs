@@ -1,5 +1,5 @@
 ﻿
-namespace 지니_64
+namespace 지니64
 {
     partial class Form_Special
     {
@@ -221,8 +221,15 @@ namespace 지니_64
             this.CB_매매기간_TS_D = new System.Windows.Forms.CheckBox();
             this.CB_매매기간_TS_F = new System.Windows.Forms.CheckBox();
             this.CB_매매기간_TS_C = new System.Windows.Forms.CheckBox();
+            this.CB_자금관리 = new System.Windows.Forms.CheckBox();
             this.CB_레이아웃고정_특수매매 = new System.Windows.Forms.CheckBox();
             this.특수매매_P = new System.Windows.Forms.Panel();
+            this.panel_자금관리 = new System.Windows.Forms.Panel();
+            this.label_관리종목코드 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.TB_자금관리_유지현금 = new System.Windows.Forms.TextBox();
+            this.TB_자금관리종목 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.P_예약주문 = new System.Windows.Forms.Panel();
             this.CBB_예약주문_예약종류 = new System.Windows.Forms.ComboBox();
             this.TB_예약주문_장전매도호가 = new System.Windows.Forms.TextBox();
@@ -322,6 +329,8 @@ namespace 지니_64
             this.combo_수동주문_choice = new System.Windows.Forms.ComboBox();
             this.RB_매도 = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
+            this.CB_수동주문_중간가 = new System.Windows.Forms.CheckBox();
+            this.CB_수동신용 = new System.Windows.Forms.CheckBox();
             this.P_매매기간주문 = new System.Windows.Forms.Panel();
             this.panel_매매기간_TS = new System.Windows.Forms.Panel();
             this.label49 = new System.Windows.Forms.Label();
@@ -330,18 +339,18 @@ namespace 지니_64
             this.label33 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.TB_매매기간_TS_dma_E = new System.Windows.Forms.TextBox();
-            this.TB_매매기간_TS_mma_E = new System.Windows.Forms.TextBox();
-            this.TB_매매기간_TS_dma_B = new System.Windows.Forms.TextBox();
-            this.TB_매매기간_TS_mma_B = new System.Windows.Forms.TextBox();
-            this.TB_매매기간_TS_dma_F = new System.Windows.Forms.TextBox();
-            this.TB_매매기간_TS_mma_F = new System.Windows.Forms.TextBox();
-            this.TB_매매기간_TS_dma_D = new System.Windows.Forms.TextBox();
-            this.TB_매매기간_TS_mma_D = new System.Windows.Forms.TextBox();
-            this.TB_매매기간_TS_dma_C = new System.Windows.Forms.TextBox();
-            this.TB_매매기간_TS_mma_C = new System.Windows.Forms.TextBox();
-            this.TB_매매기간_TS_dma_A = new System.Windows.Forms.TextBox();
-            this.TB_매매기간_TS_mma_A = new System.Windows.Forms.TextBox();
+            this.TB_매매기간_TS_DayMAPeriod_E = new System.Windows.Forms.TextBox();
+            this.TB_매매기간_TS_MinMAPeriod_E = new System.Windows.Forms.TextBox();
+            this.TB_매매기간_TS_DayMAPeriod_B = new System.Windows.Forms.TextBox();
+            this.TB_매매기간_TS_MinMAPeriod_B = new System.Windows.Forms.TextBox();
+            this.TB_매매기간_TS_DayMAPeriod_F = new System.Windows.Forms.TextBox();
+            this.TB_매매기간_TS_MinMAPeriod_F = new System.Windows.Forms.TextBox();
+            this.TB_매매기간_TS_DayMAPeriod_D = new System.Windows.Forms.TextBox();
+            this.TB_매매기간_TS_MinMAPeriod_D = new System.Windows.Forms.TextBox();
+            this.TB_매매기간_TS_DayMAPeriod_C = new System.Windows.Forms.TextBox();
+            this.TB_매매기간_TS_MinMAPeriod_C = new System.Windows.Forms.TextBox();
+            this.TB_매매기간_TS_DayMAPeriod_A = new System.Windows.Forms.TextBox();
+            this.TB_매매기간_TS_MinMAPeriod_A = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -359,19 +368,19 @@ namespace 지니_64
             this.label30 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.CBB_매매기간_TS_dma_C = new System.Windows.Forms.ComboBox();
+            this.CBB_매매기간_TS_DayMAPeriod_C = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.CBB_매매기간_TS_dma_F = new System.Windows.Forms.ComboBox();
-            this.CBB_매매기간_TS_mma_C = new System.Windows.Forms.ComboBox();
-            this.CBB_매매기간_TS_dma_B = new System.Windows.Forms.ComboBox();
-            this.CBB_매매기간_TS_mma_F = new System.Windows.Forms.ComboBox();
-            this.CBB_매매기간_TS_dma_E = new System.Windows.Forms.ComboBox();
-            this.CBB_매매기간_TS_mma_B = new System.Windows.Forms.ComboBox();
-            this.CBB_매매기간_TS_dma_D = new System.Windows.Forms.ComboBox();
-            this.CBB_매매기간_TS_mma_E = new System.Windows.Forms.ComboBox();
-            this.CBB_매매기간_TS_dma_A = new System.Windows.Forms.ComboBox();
-            this.CBB_매매기간_TS_mma_D = new System.Windows.Forms.ComboBox();
-            this.CBB_매매기간_TS_mma_A = new System.Windows.Forms.ComboBox();
+            this.CBB_매매기간_TS_DayMAPeriod_F = new System.Windows.Forms.ComboBox();
+            this.CBB_매매기간_TS_MinMAPeriod_C = new System.Windows.Forms.ComboBox();
+            this.CBB_매매기간_TS_DayMAPeriod_B = new System.Windows.Forms.ComboBox();
+            this.CBB_매매기간_TS_MinMAPeriod_F = new System.Windows.Forms.ComboBox();
+            this.CBB_매매기간_TS_DayMAPeriod_E = new System.Windows.Forms.ComboBox();
+            this.CBB_매매기간_TS_MinMAPeriod_B = new System.Windows.Forms.ComboBox();
+            this.CBB_매매기간_TS_DayMAPeriod_D = new System.Windows.Forms.ComboBox();
+            this.CBB_매매기간_TS_MinMAPeriod_E = new System.Windows.Forms.ComboBox();
+            this.CBB_매매기간_TS_DayMAPeriod_A = new System.Windows.Forms.ComboBox();
+            this.CBB_매매기간_TS_MinMAPeriod_D = new System.Windows.Forms.ComboBox();
+            this.CBB_매매기간_TS_MinMAPeriod_A = new System.Windows.Forms.ComboBox();
             this.CB_매매기간_TS = new System.Windows.Forms.CheckBox();
             this.TB_매매기간_오후주문시간 = new System.Windows.Forms.TextBox();
             this.TB_매매기간_오전주문시간 = new System.Windows.Forms.TextBox();
@@ -385,6 +394,7 @@ namespace 지니_64
             this.CB_매매기간_오후 = new System.Windows.Forms.CheckBox();
             this.CB_매매기간_오전 = new System.Windows.Forms.CheckBox();
             this.특수매매_P.SuspendLayout();
+            this.panel_자금관리.SuspendLayout();
             this.P_예약주문.SuspendLayout();
             this.P_조건별매매그룹지정.SuspendLayout();
             this.panel104.SuspendLayout();
@@ -527,7 +537,7 @@ namespace 지니_64
             this.TB_In_group_ratio_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_In_group_ratio_D, "기준금대비 비율(%)");
             this.TB_In_group_ratio_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_In_group_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_In_group_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_group_In_won_D
             // 
@@ -543,7 +553,7 @@ namespace 지니_64
             this.TB_group_In_won_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_group_In_won_D, "# 기준금 일때 기준금의 퍼센트\r\n   기준금이 아닐때 매입금(만원)");
             this.TB_group_In_won_D.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_group_In_won_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_group_In_won_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // MTB_group_In_CanselTime_D
             // 
@@ -578,7 +588,7 @@ namespace 지니_64
             this.TB_Out_group_ratio_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Out_group_ratio_D, "기준금대비 비율(%)");
             this.TB_Out_group_ratio_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_Out_group_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Out_group_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // MTB_group_In_repeat_D
             // 
@@ -614,7 +624,7 @@ namespace 지니_64
             this.TB_group_In_ratio_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_group_In_ratio_D, resources.GetString("TB_group_In_ratio_D.ToolTip"));
             this.TB_group_In_ratio_D.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_group_In_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_group_In_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // MTB_group_out_CanselTime_D
             // 
@@ -670,7 +680,7 @@ namespace 지니_64
             this.TB_group_out_ratio_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_group_out_ratio_D, resources.GetString("TB_group_out_ratio_D.ToolTip"));
             this.TB_group_out_ratio_D.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_group_out_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_group_out_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CBB_group_In_jumun_D
             // 
@@ -812,7 +822,7 @@ namespace 지니_64
             this.TB_group_In_ratio_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_group_In_ratio_A, resources.GetString("TB_group_In_ratio_A.ToolTip"));
             this.TB_group_In_ratio_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_group_In_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_group_In_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_Group_Out_trading_A
             // 
@@ -852,7 +862,7 @@ namespace 지니_64
             this.TB_group_In_won_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_group_In_won_A, "# 기준금 일때 기준금의 퍼센트\r\n   기준금이 아닐때 매입금(만원)");
             this.TB_group_In_won_A.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_group_In_won_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_group_In_won_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_Group_In_trading_A
             // 
@@ -1020,7 +1030,7 @@ namespace 지니_64
             this.TB_group_out_ratio_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_group_out_ratio_A, resources.GetString("TB_group_out_ratio_A.ToolTip"));
             this.TB_group_out_ratio_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_group_out_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_group_out_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CBB_group_out_jumun_A
             // 
@@ -1171,7 +1181,7 @@ namespace 지니_64
             this.TB_group_In_won_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_group_In_won_C, "# 기준금 일때 기준금의 퍼센트\r\n   기준금이 아닐때 매입금(만원)");
             this.TB_group_In_won_C.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_group_In_won_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_group_In_won_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // MTB_group_In_CanselTime_C
             // 
@@ -1227,7 +1237,7 @@ namespace 지니_64
             this.TB_group_In_ratio_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_group_In_ratio_C, resources.GetString("TB_group_In_ratio_C.ToolTip"));
             this.TB_group_In_ratio_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_group_In_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_group_In_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // MTB_group_out_CanselTime_C
             // 
@@ -1283,7 +1293,7 @@ namespace 지니_64
             this.TB_group_out_ratio_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_group_out_ratio_C, resources.GetString("TB_group_out_ratio_C.ToolTip"));
             this.TB_group_out_ratio_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_group_out_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_group_out_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CBB_group_In_jumun_C
             // 
@@ -1409,7 +1419,7 @@ namespace 지니_64
             this.TB_group_In_won_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_group_In_won_B, "# 기준금 일때 기준금의 퍼센트\r\n   기준금이 아닐때 매입금(만원)");
             this.TB_group_In_won_B.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_group_In_won_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_group_In_won_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_Group_Out_trading_B
             // 
@@ -1514,7 +1524,7 @@ namespace 지니_64
             this.TB_group_In_ratio_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_group_In_ratio_B, resources.GetString("TB_group_In_ratio_B.ToolTip"));
             this.TB_group_In_ratio_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_group_In_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_group_In_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // MTB_group_In_repeat_B
             // 
@@ -1590,7 +1600,7 @@ namespace 지니_64
             this.TB_group_out_ratio_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_group_out_ratio_B, resources.GetString("TB_group_out_ratio_B.ToolTip"));
             this.TB_group_out_ratio_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_group_out_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_group_out_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CBB_group_In_jumun_B
             // 
@@ -1732,7 +1742,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_예약주문_종가매도호가, "현재가 기준 으로 계산 됩니다.");
             this.TB_예약주문_종가매도호가.TextChanged += new System.EventHandler(this.TextBox_빨파검);
             this.TB_예약주문_종가매도호가.KeyDown += new System.Windows.Forms.KeyEventHandler(this.예약주문호가계산Enter_KeyDown);
-            this.TB_예약주문_종가매도호가.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수실수_키프레스);
+            this.TB_예약주문_종가매도호가.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수실수_키프레스_);
             // 
             // TB_예약주문_종가매수호가
             // 
@@ -1751,7 +1761,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_예약주문_종가매수호가, "현재가 기준 으로 계산 됩니다.");
             this.TB_예약주문_종가매수호가.TextChanged += new System.EventHandler(this.TextBox_빨파검);
             this.TB_예약주문_종가매수호가.KeyDown += new System.Windows.Forms.KeyEventHandler(this.예약주문호가계산Enter_KeyDown);
-            this.TB_예약주문_종가매수호가.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수실수_키프레스);
+            this.TB_예약주문_종가매수호가.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수실수_키프레스_);
             // 
             // TB_예약주문_주문비계산값
             // 
@@ -1814,7 +1824,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_예약주문_주문비, "주문가격 (%)");
             this.TB_예약주문_주문비.TextChanged += new System.EventHandler(this.TB_주문비_예약_TextChanged);
             this.TB_예약주문_주문비.KeyDown += new System.Windows.Forms.KeyEventHandler(this.주문비계산Enter_KeyDown);
-            this.TB_예약주문_주문비.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_예약주문_주문비.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_예약주문_종목명
             // 
@@ -1849,7 +1859,7 @@ namespace 지니_64
             this.TB_예약주문_종가매도비중.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_예약주문_종가매도비중, resources.GetString("TB_예약주문_종가매도비중.ToolTip"));
             this.TB_예약주문_종가매도비중.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_예약주문_종가매도비중.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_예약주문_종가매도비중.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_예약주문_장전매도비중
             // 
@@ -1867,7 +1877,7 @@ namespace 지니_64
             this.TB_예약주문_장전매도비중.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_예약주문_장전매도비중, resources.GetString("TB_예약주문_장전매도비중.ToolTip"));
             this.TB_예약주문_장전매도비중.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_예약주문_장전매도비중.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_예약주문_장전매도비중.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label241
             // 
@@ -1943,7 +1953,7 @@ namespace 지니_64
             this.TB_예약주문_종가매수비중.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_예약주문_종가매수비중, resources.GetString("TB_예약주문_종가매수비중.ToolTip"));
             this.TB_예약주문_종가매수비중.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_예약주문_종가매수비중.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_예약주문_종가매수비중.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_예약주문_장전매수비중
             // 
@@ -1961,7 +1971,7 @@ namespace 지니_64
             this.TB_예약주문_장전매수비중.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_예약주문_장전매수비중, resources.GetString("TB_예약주문_장전매수비중.ToolTip"));
             this.TB_예약주문_장전매수비중.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_예약주문_장전매수비중.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_예약주문_장전매수비중.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_예약주문_장전전량매도삭제
             // 
@@ -2067,11 +2077,11 @@ namespace 지니_64
             // CB_수동주문_주문가고정
             // 
             this.CB_수동주문_주문가고정.AutoSize = true;
-            this.CB_수동주문_주문가고정.Location = new System.Drawing.Point(126, 4);
+            this.CB_수동주문_주문가고정.Location = new System.Drawing.Point(244, 4);
             this.CB_수동주문_주문가고정.Name = "CB_수동주문_주문가고정";
-            this.CB_수동주문_주문가고정.Size = new System.Drawing.Size(90, 16);
+            this.CB_수동주문_주문가고정.Size = new System.Drawing.Size(72, 16);
             this.CB_수동주문_주문가고정.TabIndex = 52;
-            this.CB_수동주문_주문가고정.Text = "주문가 고정";
+            this.CB_수동주문_주문가고정.Text = "주문고정";
             this.toolTip1.SetToolTip(this.CB_수동주문_주문가고정, "#주문가 고정");
             this.CB_수동주문_주문가고정.UseVisualStyleBackColor = true;
             // 
@@ -2091,7 +2101,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_수동주문_tick, "현재가 기준 으로 계산 됩니다.");
             this.TB_수동주문_tick.TextChanged += new System.EventHandler(this.TextBox_빨파검);
             this.TB_수동주문_tick.KeyDown += new System.Windows.Forms.KeyEventHandler(this.수동주문틱계산Enter_KeyDown);
-            this.TB_수동주문_tick.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수실수_키프레스);
+            this.TB_수동주문_tick.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수실수_키프레스_);
             // 
             // TB_수동주문_주문비계산값
             // 
@@ -2155,7 +2165,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_수동주문_주문비, "주문가격 (%)");
             this.TB_수동주문_주문비.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
             this.TB_수동주문_주문비.KeyDown += new System.Windows.Forms.KeyEventHandler(this.주문비계산Enter_KeyDown);
-            this.TB_수동주문_주문비.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_수동주문_주문비.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_수동주문_ratio
             // 
@@ -2173,7 +2183,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_수동주문_ratio, "0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주문가능수 대비" +
         " %\r\n");
             this.TB_수동주문_ratio.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_수동주문_ratio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_수동주문_ratio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label110
             // 
@@ -2339,7 +2349,7 @@ namespace 지니_64
             this.TB_매매기간_ratio_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_ratio_F, resources.GetString("TB_매매기간_ratio_F.ToolTip"));
             this.TB_매매기간_ratio_F.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_매매기간_ratio_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_매매기간_ratio_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_매매기간_ratio_E
             // 
@@ -2355,7 +2365,7 @@ namespace 지니_64
             this.TB_매매기간_ratio_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_ratio_E, resources.GetString("TB_매매기간_ratio_E.ToolTip"));
             this.TB_매매기간_ratio_E.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_매매기간_ratio_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_매매기간_ratio_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_매매기간_ratio_D
             // 
@@ -2371,7 +2381,7 @@ namespace 지니_64
             this.TB_매매기간_ratio_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_ratio_D, resources.GetString("TB_매매기간_ratio_D.ToolTip"));
             this.TB_매매기간_ratio_D.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_매매기간_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_매매기간_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CBB_매매기간_choice_F
             // 
@@ -2482,7 +2492,7 @@ namespace 지니_64
             this.TB_매매기간_ratio_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_ratio_B, resources.GetString("TB_매매기간_ratio_B.ToolTip"));
             this.TB_매매기간_ratio_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_매매기간_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_매매기간_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CBB_매매기간_기준_F
             // 
@@ -2546,7 +2556,7 @@ namespace 지니_64
             this.TB_매매기간_ratio_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_ratio_C, resources.GetString("TB_매매기간_ratio_C.ToolTip"));
             this.TB_매매기간_ratio_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_매매기간_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_매매기간_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CBB_매매기간_choice_B
             // 
@@ -2586,7 +2596,7 @@ namespace 지니_64
             this.TB_매매기간_ratio_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_ratio_A, resources.GetString("TB_매매기간_ratio_A.ToolTip"));
             this.TB_매매기간_ratio_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_매매기간_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_매매기간_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CBB_매매기간_choice_C
             // 
@@ -3159,7 +3169,7 @@ namespace 지니_64
             this.TB_매매기간_value_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_value_F, "주문가격");
             this.TB_매매기간_value_F.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_매매기간_value_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_매매기간_value_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_매매기간_value_E
             // 
@@ -3175,7 +3185,7 @@ namespace 지니_64
             this.TB_매매기간_value_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_value_E, "주문가격");
             this.TB_매매기간_value_E.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_매매기간_value_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_매매기간_value_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_매매기간_value_D
             // 
@@ -3191,7 +3201,7 @@ namespace 지니_64
             this.TB_매매기간_value_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_value_D, "주문가격");
             this.TB_매매기간_value_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_매매기간_value_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_매매기간_value_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_매매기간_value_C
             // 
@@ -3207,7 +3217,7 @@ namespace 지니_64
             this.TB_매매기간_value_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_value_C, "주문가격");
             this.TB_매매기간_value_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_매매기간_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_매매기간_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_매매기간_value_B
             // 
@@ -3223,7 +3233,7 @@ namespace 지니_64
             this.TB_매매기간_value_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_value_B, "주문가격");
             this.TB_매매기간_value_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_매매기간_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_매매기간_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_매매기간_취소시간_F
             // 
@@ -3240,7 +3250,7 @@ namespace 지니_64
             this.TB_매매기간_취소시간_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_취소시간_F, "# F 취소시간(초) ");
             this.TB_매매기간_취소시간_F.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_매매기간_취소시간_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_매매기간_취소시간_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_매매기간_취소시간_E
             // 
@@ -3257,7 +3267,7 @@ namespace 지니_64
             this.TB_매매기간_취소시간_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_취소시간_E, "# E 취소시간(초) ");
             this.TB_매매기간_취소시간_E.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_매매기간_취소시간_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_매매기간_취소시간_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_매매기간_취소시간_B
             // 
@@ -3274,7 +3284,7 @@ namespace 지니_64
             this.TB_매매기간_취소시간_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_취소시간_B, "# B 취소시간(초) ");
             this.TB_매매기간_취소시간_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_매매기간_취소시간_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_매매기간_취소시간_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_매매기간_취소시간_D
             // 
@@ -3291,7 +3301,7 @@ namespace 지니_64
             this.TB_매매기간_취소시간_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_취소시간_D, "# D 취소시간(초) ");
             this.TB_매매기간_취소시간_D.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_매매기간_취소시간_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_매매기간_취소시간_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_매매기간_취소시간_C
             // 
@@ -3308,7 +3318,7 @@ namespace 지니_64
             this.TB_매매기간_취소시간_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_취소시간_C, "# C 취소시간(초) ");
             this.TB_매매기간_취소시간_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_매매기간_취소시간_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_매매기간_취소시간_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_매매기간_취소시간_A
             // 
@@ -3325,7 +3335,7 @@ namespace 지니_64
             this.TB_매매기간_취소시간_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_취소시간_A, "# A 취소시간(초) ");
             this.TB_매매기간_취소시간_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_매매기간_취소시간_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_매매기간_취소시간_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_매매기간_value_A
             // 
@@ -3341,7 +3351,7 @@ namespace 지니_64
             this.TB_매매기간_value_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_value_A, "주문가격");
             this.TB_매매기간_value_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_매매기간_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_매매기간_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_매매기간_기준_A
             // 
@@ -3357,7 +3367,7 @@ namespace 지니_64
             this.TB_매매기간_기준_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_기준_A, "매매 기준\r\n");
             this.TB_매매기간_기준_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_매매기간_기준_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_매매기간_기준_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_매매기간_기준_F
             // 
@@ -3373,7 +3383,7 @@ namespace 지니_64
             this.TB_매매기간_기준_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_기준_F, "매매 기준\r\n");
             this.TB_매매기간_기준_F.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_매매기간_기준_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_매매기간_기준_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_매매기간_기준_E
             // 
@@ -3389,7 +3399,7 @@ namespace 지니_64
             this.TB_매매기간_기준_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_기준_E, "매매 기준\r\n");
             this.TB_매매기간_기준_E.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_매매기간_기준_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_매매기간_기준_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_매매기간_기준_D
             // 
@@ -3405,7 +3415,7 @@ namespace 지니_64
             this.TB_매매기간_기준_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_기준_D, "매매 기준\r\n");
             this.TB_매매기간_기준_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_매매기간_기준_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_매매기간_기준_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_매매기간_기준_C
             // 
@@ -3421,7 +3431,7 @@ namespace 지니_64
             this.TB_매매기간_기준_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_기준_C, "매매 기준\r\n");
             this.TB_매매기간_기준_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_매매기간_기준_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_매매기간_기준_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_매매기간_기준_B
             // 
@@ -3437,7 +3447,7 @@ namespace 지니_64
             this.TB_매매기간_기준_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_매매기간_기준_B, "매매 기준\r\n");
             this.TB_매매기간_기준_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_매매기간_기준_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_매매기간_기준_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CBB_매매기간_주문시간_A
             // 
@@ -4040,6 +4050,25 @@ namespace 지니_64
             this.CB_매매기간_TS_C.UseVisualStyleBackColor = false;
             this.CB_매매기간_TS_C.CheckedChanged += new System.EventHandler(this.CB_매매기간_TS_CheckedChanged);
             // 
+            // CB_자금관리
+            // 
+            this.CB_자금관리.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_자금관리.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_자금관리.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CB_자금관리.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_자금관리.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_자금관리.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.CB_자금관리.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CB_자금관리.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_자금관리.Location = new System.Drawing.Point(-1, -1);
+            this.CB_자금관리.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_자금관리.Name = "CB_자금관리";
+            this.CB_자금관리.Size = new System.Drawing.Size(85, 22);
+            this.CB_자금관리.TabIndex = 115;
+            this.CB_자금관리.Text = "□ 자금관리";
+            this.CB_자금관리.UseVisualStyleBackColor = false;
+            this.CB_자금관리.CheckedChanged += new System.EventHandler(this.CB_자금관리_CheckedChanged);
+            // 
             // CB_레이아웃고정_특수매매
             // 
             this.CB_레이아웃고정_특수매매.AutoSize = true;
@@ -4057,6 +4086,7 @@ namespace 지니_64
             // 
             this.특수매매_P.BackColor = System.Drawing.SystemColors.ControlLight;
             this.특수매매_P.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.특수매매_P.Controls.Add(this.panel_자금관리);
             this.특수매매_P.Controls.Add(this.BT_특수매매저장);
             this.특수매매_P.Controls.Add(this.P_예약주문);
             this.특수매매_P.Controls.Add(this.CB_특수매매_시작위치저장);
@@ -4071,6 +4101,87 @@ namespace 지니_64
             this.특수매매_P.Name = "특수매매_P";
             this.특수매매_P.Size = new System.Drawing.Size(1922, 350);
             this.특수매매_P.TabIndex = 136;
+            // 
+            // panel_자금관리
+            // 
+            this.panel_자금관리.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_자금관리.Controls.Add(this.label_관리종목코드);
+            this.panel_자금관리.Controls.Add(this.CB_자금관리);
+            this.panel_자금관리.Controls.Add(this.label17);
+            this.panel_자금관리.Controls.Add(this.TB_자금관리_유지현금);
+            this.panel_자금관리.Controls.Add(this.TB_자금관리종목);
+            this.panel_자금관리.Controls.Add(this.label18);
+            this.panel_자금관리.Location = new System.Drawing.Point(1, 324);
+            this.panel_자금관리.Name = "panel_자금관리";
+            this.panel_자금관리.Size = new System.Drawing.Size(628, 22);
+            this.panel_자금관리.TabIndex = 115;
+            // 
+            // label_관리종목코드
+            // 
+            this.label_관리종목코드.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label_관리종목코드.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_관리종목코드.Location = new System.Drawing.Point(339, -1);
+            this.label_관리종목코드.Margin = new System.Windows.Forms.Padding(0);
+            this.label_관리종목코드.Name = "label_관리종목코드";
+            this.label_관리종목코드.Size = new System.Drawing.Size(84, 22);
+            this.label_관리종목코드.TabIndex = 119;
+            this.label_관리종목코드.Text = "0000";
+            this.label_관리종목코드.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            this.label17.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label17.Location = new System.Drawing.Point(421, -1);
+            this.label17.Margin = new System.Windows.Forms.Padding(0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(65, 22);
+            this.label17.TabIndex = 117;
+            this.label17.Text = "유지 현금";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TB_자금관리_유지현금
+            // 
+            this.TB_자금관리_유지현금.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_자금관리_유지현금.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_자금관리_유지현금.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_자금관리_유지현금.Location = new System.Drawing.Point(485, -1);
+            this.TB_자금관리_유지현금.Margin = new System.Windows.Forms.Padding(0);
+            this.TB_자금관리_유지현금.MaxLength = 20;
+            this.TB_자금관리_유지현금.Name = "TB_자금관리_유지현금";
+            this.TB_자금관리_유지현금.Size = new System.Drawing.Size(142, 22);
+            this.TB_자금관리_유지현금.TabIndex = 118;
+            this.TB_자금관리_유지현금.Text = "1,000,000,000";
+            this.TB_자금관리_유지현금.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_자금관리_유지현금.TextChanged += new System.EventHandler(this.TB_자금관리_유지현금_TextChanged);
+            this.TB_자금관리_유지현금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
+            // 
+            // TB_자금관리종목
+            // 
+            this.TB_자금관리종목.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.TB_자금관리종목.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.TB_자금관리종목.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_자금관리종목.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_자금관리종목.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_자금관리종목.Location = new System.Drawing.Point(147, -1);
+            this.TB_자금관리종목.Margin = new System.Windows.Forms.Padding(0);
+            this.TB_자금관리종목.MaxLength = 50;
+            this.TB_자금관리종목.Name = "TB_자금관리종목";
+            this.TB_자금관리종목.Size = new System.Drawing.Size(193, 22);
+            this.TB_자금관리종목.TabIndex = 115;
+            this.TB_자금관리종목.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_자금관리종목_KeyDown);
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label18.Location = new System.Drawing.Point(83, -1);
+            this.label18.Margin = new System.Windows.Forms.Padding(0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(65, 22);
+            this.label18.TabIndex = 116;
+            this.label18.Text = "관리 종목";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // P_예약주문
             // 
@@ -4169,7 +4280,7 @@ namespace 지니_64
             this.TB_예약주문_장전매도호가.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_예약주문_장전매도호가.TextChanged += new System.EventHandler(this.TextBox_빨파검);
             this.TB_예약주문_장전매도호가.KeyDown += new System.Windows.Forms.KeyEventHandler(this.예약주문호가계산Enter_KeyDown);
-            this.TB_예약주문_장전매도호가.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수실수_키프레스);
+            this.TB_예약주문_장전매도호가.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수실수_키프레스_);
             // 
             // TB_예약주문_장전매수호가
             // 
@@ -4187,7 +4298,7 @@ namespace 지니_64
             this.TB_예약주문_장전매수호가.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_예약주문_장전매수호가.TextChanged += new System.EventHandler(this.TextBox_빨파검);
             this.TB_예약주문_장전매수호가.KeyDown += new System.Windows.Forms.KeyEventHandler(this.예약주문호가계산Enter_KeyDown);
-            this.TB_예약주문_장전매수호가.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수실수_키프레스);
+            this.TB_예약주문_장전매수호가.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수실수_키프레스_);
             // 
             // BT_예약주문_장전매수삭제
             // 
@@ -4241,7 +4352,7 @@ namespace 지니_64
             this.TB_예약주문_주문가.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_예약주문_주문가.TextChanged += new System.EventHandler(this.TextBox_양실수만);
             this.TB_예약주문_주문가.KeyDown += new System.Windows.Forms.KeyEventHandler(this.주문가계산Enter_KeyDown);
-            this.TB_예약주문_주문가.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_예약주문_주문가.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // MTB_예약주문_장전주문시간
             // 
@@ -4583,7 +4694,7 @@ namespace 지니_64
             this.TB_group_Out_value_D.TabIndex = 2;
             this.TB_group_Out_value_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_group_Out_value_D.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_group_Out_value_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_group_Out_value_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_group_In_value_D
             // 
@@ -4598,7 +4709,7 @@ namespace 지니_64
             this.TB_group_In_value_D.TabIndex = 2;
             this.TB_group_In_value_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_group_In_value_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_group_In_value_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_group_In_value_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CBB_In_group_D
             // 
@@ -4774,7 +4885,7 @@ namespace 지니_64
             this.TB_group_Out_value_A.TabIndex = 2;
             this.TB_group_Out_value_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_group_Out_value_A.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_group_Out_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_group_Out_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_group_In_value_A
             // 
@@ -4789,7 +4900,7 @@ namespace 지니_64
             this.TB_group_In_value_A.TabIndex = 2;
             this.TB_group_In_value_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_group_In_value_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_group_In_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_group_In_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_In_group_ratio_A
             // 
@@ -4803,7 +4914,7 @@ namespace 지니_64
             this.TB_In_group_ratio_A.TabIndex = 47;
             this.TB_In_group_ratio_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_In_group_ratio_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_In_group_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_In_group_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_Out_group_ratio_A
             // 
@@ -4817,7 +4928,7 @@ namespace 지니_64
             this.TB_Out_group_ratio_A.TabIndex = 47;
             this.TB_Out_group_ratio_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Out_group_ratio_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_Out_group_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Out_group_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CBB_Out_group_A
             // 
@@ -4974,7 +5085,7 @@ namespace 지니_64
             this.TB_group_Out_value_C.TabIndex = 2;
             this.TB_group_Out_value_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_group_Out_value_C.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_group_Out_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_group_Out_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_group_In_value_C
             // 
@@ -4989,7 +5100,7 @@ namespace 지니_64
             this.TB_group_In_value_C.TabIndex = 2;
             this.TB_group_In_value_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_group_In_value_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_group_In_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_group_In_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_In_group_ratio_C
             // 
@@ -5003,7 +5114,7 @@ namespace 지니_64
             this.TB_In_group_ratio_C.TabIndex = 47;
             this.TB_In_group_ratio_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_In_group_ratio_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_In_group_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_In_group_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_Out_group_ratio_C
             // 
@@ -5017,7 +5128,7 @@ namespace 지니_64
             this.TB_Out_group_ratio_C.TabIndex = 47;
             this.TB_Out_group_ratio_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Out_group_ratio_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_Out_group_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Out_group_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CBB_In_group_C
             // 
@@ -5172,7 +5283,7 @@ namespace 지니_64
             this.TB_group_Out_value_B.TabIndex = 2;
             this.TB_group_Out_value_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_group_Out_value_B.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_group_Out_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_group_Out_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_group_In_value_B
             // 
@@ -5187,7 +5298,7 @@ namespace 지니_64
             this.TB_group_In_value_B.TabIndex = 2;
             this.TB_group_In_value_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_group_In_value_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_group_In_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_group_In_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_In_group_ratio_B
             // 
@@ -5201,7 +5312,7 @@ namespace 지니_64
             this.TB_In_group_ratio_B.TabIndex = 47;
             this.TB_In_group_ratio_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_In_group_ratio_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_In_group_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_In_group_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_Out_group_ratio_B
             // 
@@ -5215,7 +5326,7 @@ namespace 지니_64
             this.TB_Out_group_ratio_B.TabIndex = 47;
             this.TB_Out_group_ratio_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Out_group_ratio_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_Out_group_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Out_group_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CBB_In_group_B
             // 
@@ -5455,7 +5566,7 @@ namespace 지니_64
             this.TB_mo_commission.TabIndex = 13;
             this.TB_mo_commission.Text = "0.35";
             this.TB_mo_commission.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_mo_commission.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_mo_commission.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label93
             // 
@@ -5479,7 +5590,7 @@ namespace 지니_64
             this.TB_sil_commission.TabIndex = 13;
             this.TB_sil_commission.Text = "0.015";
             this.TB_sil_commission.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_sil_commission.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_sil_commission.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label88
             // 
@@ -5504,7 +5615,7 @@ namespace 지니_64
             this.TB_TAX.TabIndex = 13;
             this.TB_TAX.Text = "0.15";
             this.TB_TAX.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_TAX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_TAX.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // combo_신규그룹_C
             // 
@@ -5627,6 +5738,8 @@ namespace 지니_64
             this.panel15.Controls.Add(this.label110);
             this.panel15.Controls.Add(this.RB_매도);
             this.panel15.Controls.Add(this.label12);
+            this.panel15.Controls.Add(this.CB_수동주문_중간가);
+            this.panel15.Controls.Add(this.CB_수동신용);
             this.panel15.Cursor = System.Windows.Forms.Cursors.Default;
             this.panel15.Location = new System.Drawing.Point(315, 23);
             this.panel15.Name = "panel15";
@@ -5646,7 +5759,7 @@ namespace 지니_64
             this.TB_수동주문_주문가.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_수동주문_주문가.TextChanged += new System.EventHandler(this.TextBox_양실수만);
             this.TB_수동주문_주문가.KeyDown += new System.Windows.Forms.KeyEventHandler(this.주문가계산Enter_KeyDown);
-            this.TB_수동주문_주문가.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_수동주문_주문가.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_수동주문_price
             // 
@@ -5664,13 +5777,14 @@ namespace 지니_64
             // CB_수동주문_시장가
             // 
             this.CB_수동주문_시장가.AutoSize = true;
-            this.CB_수동주문_시장가.Location = new System.Drawing.Point(61, 4);
+            this.CB_수동주문_시장가.Location = new System.Drawing.Point(186, 4);
             this.CB_수동주문_시장가.Name = "CB_수동주문_시장가";
             this.CB_수동주문_시장가.Size = new System.Drawing.Size(60, 16);
             this.CB_수동주문_시장가.TabIndex = 51;
             this.CB_수동주문_시장가.Text = "시장가";
             this.CB_수동주문_시장가.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_수동주문_시장가.UseVisualStyleBackColor = true;
+            this.CB_수동주문_시장가.CheckedChanged += new System.EventHandler(this.CB_수동주문_시장가_CheckedChanged);
             // 
             // label13
             // 
@@ -5808,7 +5922,7 @@ namespace 지니_64
             this.combo_수동주문_choice.Name = "combo_수동주문_choice";
             this.combo_수동주문_choice.Size = new System.Drawing.Size(72, 22);
             this.combo_수동주문_choice.TabIndex = 1;
-            this.combo_수동주문_choice.DropDownClosed += new System.EventHandler(this.combo_수동주문_choice_DropDownClosed);
+            this.combo_수동주문_choice.DropDownClosed += new System.EventHandler(this.Combo_수동주문_choice_DropDownClosed);
             // 
             // RB_매도
             // 
@@ -5837,6 +5951,29 @@ namespace 지니_64
             this.label12.TabIndex = 46;
             this.label12.Text = "틱";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CB_수동주문_중간가
+            // 
+            this.CB_수동주문_중간가.AutoSize = true;
+            this.CB_수동주문_중간가.Location = new System.Drawing.Point(130, 4);
+            this.CB_수동주문_중간가.Name = "CB_수동주문_중간가";
+            this.CB_수동주문_중간가.Size = new System.Drawing.Size(60, 16);
+            this.CB_수동주문_중간가.TabIndex = 54;
+            this.CB_수동주문_중간가.Text = "중간가";
+            this.CB_수동주문_중간가.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CB_수동주문_중간가.UseVisualStyleBackColor = true;
+            this.CB_수동주문_중간가.CheckedChanged += new System.EventHandler(this.CB_수동주문_중간가_CheckedChanged);
+            // 
+            // CB_수동신용
+            // 
+            this.CB_수동신용.AutoSize = true;
+            this.CB_수동신용.Location = new System.Drawing.Point(61, 4);
+            this.CB_수동신용.Name = "CB_수동신용";
+            this.CB_수동신용.Size = new System.Drawing.Size(72, 16);
+            this.CB_수동신용.TabIndex = 53;
+            this.CB_수동신용.Text = "신용주문";
+            this.CB_수동신용.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CB_수동신용.UseVisualStyleBackColor = true;
             // 
             // P_매매기간주문
             // 
@@ -5936,18 +6073,18 @@ namespace 지니_64
             this.panel_매매기간_TS.Controls.Add(this.label33);
             this.panel_매매기간_TS.Controls.Add(this.label31);
             this.panel_매매기간_TS.Controls.Add(this.label29);
-            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_dma_E);
-            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_mma_E);
-            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_dma_B);
-            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_mma_B);
-            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_dma_F);
-            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_mma_F);
-            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_dma_D);
-            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_mma_D);
-            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_dma_C);
-            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_mma_C);
-            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_dma_A);
-            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_mma_A);
+            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_DayMAPeriod_E);
+            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_MinMAPeriod_E);
+            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_DayMAPeriod_B);
+            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_MinMAPeriod_B);
+            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_DayMAPeriod_F);
+            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_MinMAPeriod_F);
+            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_DayMAPeriod_D);
+            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_MinMAPeriod_D);
+            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_DayMAPeriod_C);
+            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_MinMAPeriod_C);
+            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_DayMAPeriod_A);
+            this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_MinMAPeriod_A);
             this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_down_E);
             this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_down_C);
             this.panel_매매기간_TS.Controls.Add(this.label16);
@@ -5976,19 +6113,19 @@ namespace 지니_64
             this.panel_매매기간_TS.Controls.Add(this.CB_매매기간_TS_C);
             this.panel_매매기간_TS.Controls.Add(this.label9);
             this.panel_매매기간_TS.Controls.Add(this.label2);
-            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_dma_C);
+            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_DayMAPeriod_C);
             this.panel_매매기간_TS.Controls.Add(this.label27);
-            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_dma_F);
-            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_mma_C);
-            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_dma_B);
-            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_mma_F);
-            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_dma_E);
-            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_mma_B);
-            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_dma_D);
-            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_mma_E);
-            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_dma_A);
-            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_mma_D);
-            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_mma_A);
+            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_DayMAPeriod_F);
+            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_MinMAPeriod_C);
+            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_DayMAPeriod_B);
+            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_MinMAPeriod_F);
+            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_DayMAPeriod_E);
+            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_MinMAPeriod_B);
+            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_DayMAPeriod_D);
+            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_MinMAPeriod_E);
+            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_DayMAPeriod_A);
+            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_MinMAPeriod_D);
+            this.panel_매매기간_TS.Controls.Add(this.CBB_매매기간_TS_MinMAPeriod_A);
             this.panel_매매기간_TS.Controls.Add(this.TB_매매기간_TS_down_A);
             this.panel_매매기간_TS.Location = new System.Drawing.Point(120, 23);
             this.panel_매매기간_TS.Name = "panel_매매기간_TS";
@@ -6073,173 +6210,173 @@ namespace 지니_64
             this.label29.Text = "떄";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TB_매매기간_TS_dma_E
+            // TB_매매기간_TS_DayMAPeriod_E
             // 
-            this.TB_매매기간_TS_dma_E.BackColor = System.Drawing.Color.OldLace;
-            this.TB_매매기간_TS_dma_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_매매기간_TS_dma_E.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_매매기간_TS_dma_E.ForeColor = System.Drawing.Color.Black;
-            this.TB_매매기간_TS_dma_E.Location = new System.Drawing.Point(284, 87);
-            this.TB_매매기간_TS_dma_E.MaxLength = 2;
-            this.TB_매매기간_TS_dma_E.Name = "TB_매매기간_TS_dma_E";
-            this.TB_매매기간_TS_dma_E.Size = new System.Drawing.Size(20, 21);
-            this.TB_매매기간_TS_dma_E.TabIndex = 142;
-            this.TB_매매기간_TS_dma_E.Text = "5";
-            this.TB_매매기간_TS_dma_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_매매기간_TS_DayMAPeriod_E.BackColor = System.Drawing.Color.OldLace;
+            this.TB_매매기간_TS_DayMAPeriod_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_매매기간_TS_DayMAPeriod_E.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_매매기간_TS_DayMAPeriod_E.ForeColor = System.Drawing.Color.Black;
+            this.TB_매매기간_TS_DayMAPeriod_E.Location = new System.Drawing.Point(284, 87);
+            this.TB_매매기간_TS_DayMAPeriod_E.MaxLength = 2;
+            this.TB_매매기간_TS_DayMAPeriod_E.Name = "TB_매매기간_TS_DayMAPeriod_E";
+            this.TB_매매기간_TS_DayMAPeriod_E.Size = new System.Drawing.Size(20, 21);
+            this.TB_매매기간_TS_DayMAPeriod_E.TabIndex = 142;
+            this.TB_매매기간_TS_DayMAPeriod_E.Text = "5";
+            this.TB_매매기간_TS_DayMAPeriod_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TB_매매기간_TS_mma_E
+            // TB_매매기간_TS_MinMAPeriod_E
             // 
-            this.TB_매매기간_TS_mma_E.BackColor = System.Drawing.Color.OldLace;
-            this.TB_매매기간_TS_mma_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_매매기간_TS_mma_E.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_매매기간_TS_mma_E.ForeColor = System.Drawing.Color.Black;
-            this.TB_매매기간_TS_mma_E.Location = new System.Drawing.Point(202, 87);
-            this.TB_매매기간_TS_mma_E.MaxLength = 2;
-            this.TB_매매기간_TS_mma_E.Name = "TB_매매기간_TS_mma_E";
-            this.TB_매매기간_TS_mma_E.Size = new System.Drawing.Size(20, 21);
-            this.TB_매매기간_TS_mma_E.TabIndex = 142;
-            this.TB_매매기간_TS_mma_E.Text = "5";
-            this.TB_매매기간_TS_mma_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_매매기간_TS_MinMAPeriod_E.BackColor = System.Drawing.Color.OldLace;
+            this.TB_매매기간_TS_MinMAPeriod_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_매매기간_TS_MinMAPeriod_E.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_매매기간_TS_MinMAPeriod_E.ForeColor = System.Drawing.Color.Black;
+            this.TB_매매기간_TS_MinMAPeriod_E.Location = new System.Drawing.Point(202, 87);
+            this.TB_매매기간_TS_MinMAPeriod_E.MaxLength = 2;
+            this.TB_매매기간_TS_MinMAPeriod_E.Name = "TB_매매기간_TS_MinMAPeriod_E";
+            this.TB_매매기간_TS_MinMAPeriod_E.Size = new System.Drawing.Size(20, 21);
+            this.TB_매매기간_TS_MinMAPeriod_E.TabIndex = 142;
+            this.TB_매매기간_TS_MinMAPeriod_E.Text = "5";
+            this.TB_매매기간_TS_MinMAPeriod_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TB_매매기간_TS_dma_B
+            // TB_매매기간_TS_DayMAPeriod_B
             // 
-            this.TB_매매기간_TS_dma_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_매매기간_TS_dma_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_매매기간_TS_dma_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_매매기간_TS_dma_B.ForeColor = System.Drawing.Color.Black;
-            this.TB_매매기간_TS_dma_B.Location = new System.Drawing.Point(284, 21);
-            this.TB_매매기간_TS_dma_B.MaxLength = 2;
-            this.TB_매매기간_TS_dma_B.Name = "TB_매매기간_TS_dma_B";
-            this.TB_매매기간_TS_dma_B.Size = new System.Drawing.Size(20, 21);
-            this.TB_매매기간_TS_dma_B.TabIndex = 142;
-            this.TB_매매기간_TS_dma_B.Text = "5";
-            this.TB_매매기간_TS_dma_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_매매기간_TS_DayMAPeriod_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_매매기간_TS_DayMAPeriod_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_매매기간_TS_DayMAPeriod_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_매매기간_TS_DayMAPeriod_B.ForeColor = System.Drawing.Color.Black;
+            this.TB_매매기간_TS_DayMAPeriod_B.Location = new System.Drawing.Point(284, 21);
+            this.TB_매매기간_TS_DayMAPeriod_B.MaxLength = 2;
+            this.TB_매매기간_TS_DayMAPeriod_B.Name = "TB_매매기간_TS_DayMAPeriod_B";
+            this.TB_매매기간_TS_DayMAPeriod_B.Size = new System.Drawing.Size(20, 21);
+            this.TB_매매기간_TS_DayMAPeriod_B.TabIndex = 142;
+            this.TB_매매기간_TS_DayMAPeriod_B.Text = "5";
+            this.TB_매매기간_TS_DayMAPeriod_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TB_매매기간_TS_mma_B
+            // TB_매매기간_TS_MinMAPeriod_B
             // 
-            this.TB_매매기간_TS_mma_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_매매기간_TS_mma_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_매매기간_TS_mma_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_매매기간_TS_mma_B.ForeColor = System.Drawing.Color.Black;
-            this.TB_매매기간_TS_mma_B.Location = new System.Drawing.Point(202, 21);
-            this.TB_매매기간_TS_mma_B.MaxLength = 2;
-            this.TB_매매기간_TS_mma_B.Name = "TB_매매기간_TS_mma_B";
-            this.TB_매매기간_TS_mma_B.Size = new System.Drawing.Size(20, 21);
-            this.TB_매매기간_TS_mma_B.TabIndex = 142;
-            this.TB_매매기간_TS_mma_B.Text = "5";
-            this.TB_매매기간_TS_mma_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_매매기간_TS_MinMAPeriod_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_매매기간_TS_MinMAPeriod_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_매매기간_TS_MinMAPeriod_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_매매기간_TS_MinMAPeriod_B.ForeColor = System.Drawing.Color.Black;
+            this.TB_매매기간_TS_MinMAPeriod_B.Location = new System.Drawing.Point(202, 21);
+            this.TB_매매기간_TS_MinMAPeriod_B.MaxLength = 2;
+            this.TB_매매기간_TS_MinMAPeriod_B.Name = "TB_매매기간_TS_MinMAPeriod_B";
+            this.TB_매매기간_TS_MinMAPeriod_B.Size = new System.Drawing.Size(20, 21);
+            this.TB_매매기간_TS_MinMAPeriod_B.TabIndex = 142;
+            this.TB_매매기간_TS_MinMAPeriod_B.Text = "5";
+            this.TB_매매기간_TS_MinMAPeriod_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TB_매매기간_TS_dma_F
+            // TB_매매기간_TS_DayMAPeriod_F
             // 
-            this.TB_매매기간_TS_dma_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_매매기간_TS_dma_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_매매기간_TS_dma_F.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_매매기간_TS_dma_F.ForeColor = System.Drawing.Color.Black;
-            this.TB_매매기간_TS_dma_F.Location = new System.Drawing.Point(284, 109);
-            this.TB_매매기간_TS_dma_F.MaxLength = 2;
-            this.TB_매매기간_TS_dma_F.Name = "TB_매매기간_TS_dma_F";
-            this.TB_매매기간_TS_dma_F.Size = new System.Drawing.Size(20, 21);
-            this.TB_매매기간_TS_dma_F.TabIndex = 143;
-            this.TB_매매기간_TS_dma_F.Text = "5";
-            this.TB_매매기간_TS_dma_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_매매기간_TS_DayMAPeriod_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_매매기간_TS_DayMAPeriod_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_매매기간_TS_DayMAPeriod_F.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_매매기간_TS_DayMAPeriod_F.ForeColor = System.Drawing.Color.Black;
+            this.TB_매매기간_TS_DayMAPeriod_F.Location = new System.Drawing.Point(284, 109);
+            this.TB_매매기간_TS_DayMAPeriod_F.MaxLength = 2;
+            this.TB_매매기간_TS_DayMAPeriod_F.Name = "TB_매매기간_TS_DayMAPeriod_F";
+            this.TB_매매기간_TS_DayMAPeriod_F.Size = new System.Drawing.Size(20, 21);
+            this.TB_매매기간_TS_DayMAPeriod_F.TabIndex = 143;
+            this.TB_매매기간_TS_DayMAPeriod_F.Text = "5";
+            this.TB_매매기간_TS_DayMAPeriod_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TB_매매기간_TS_mma_F
+            // TB_매매기간_TS_MinMAPeriod_F
             // 
-            this.TB_매매기간_TS_mma_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_매매기간_TS_mma_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_매매기간_TS_mma_F.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_매매기간_TS_mma_F.ForeColor = System.Drawing.Color.Black;
-            this.TB_매매기간_TS_mma_F.Location = new System.Drawing.Point(202, 109);
-            this.TB_매매기간_TS_mma_F.MaxLength = 2;
-            this.TB_매매기간_TS_mma_F.Name = "TB_매매기간_TS_mma_F";
-            this.TB_매매기간_TS_mma_F.Size = new System.Drawing.Size(20, 21);
-            this.TB_매매기간_TS_mma_F.TabIndex = 143;
-            this.TB_매매기간_TS_mma_F.Text = "5";
-            this.TB_매매기간_TS_mma_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_매매기간_TS_MinMAPeriod_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_매매기간_TS_MinMAPeriod_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_매매기간_TS_MinMAPeriod_F.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_매매기간_TS_MinMAPeriod_F.ForeColor = System.Drawing.Color.Black;
+            this.TB_매매기간_TS_MinMAPeriod_F.Location = new System.Drawing.Point(202, 109);
+            this.TB_매매기간_TS_MinMAPeriod_F.MaxLength = 2;
+            this.TB_매매기간_TS_MinMAPeriod_F.Name = "TB_매매기간_TS_MinMAPeriod_F";
+            this.TB_매매기간_TS_MinMAPeriod_F.Size = new System.Drawing.Size(20, 21);
+            this.TB_매매기간_TS_MinMAPeriod_F.TabIndex = 143;
+            this.TB_매매기간_TS_MinMAPeriod_F.Text = "5";
+            this.TB_매매기간_TS_MinMAPeriod_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TB_매매기간_TS_dma_D
+            // TB_매매기간_TS_DayMAPeriod_D
             // 
-            this.TB_매매기간_TS_dma_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_매매기간_TS_dma_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_매매기간_TS_dma_D.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_매매기간_TS_dma_D.ForeColor = System.Drawing.Color.Black;
-            this.TB_매매기간_TS_dma_D.Location = new System.Drawing.Point(284, 65);
-            this.TB_매매기간_TS_dma_D.MaxLength = 2;
-            this.TB_매매기간_TS_dma_D.Name = "TB_매매기간_TS_dma_D";
-            this.TB_매매기간_TS_dma_D.Size = new System.Drawing.Size(20, 21);
-            this.TB_매매기간_TS_dma_D.TabIndex = 144;
-            this.TB_매매기간_TS_dma_D.Text = "5";
-            this.TB_매매기간_TS_dma_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_매매기간_TS_DayMAPeriod_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_매매기간_TS_DayMAPeriod_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_매매기간_TS_DayMAPeriod_D.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_매매기간_TS_DayMAPeriod_D.ForeColor = System.Drawing.Color.Black;
+            this.TB_매매기간_TS_DayMAPeriod_D.Location = new System.Drawing.Point(284, 65);
+            this.TB_매매기간_TS_DayMAPeriod_D.MaxLength = 2;
+            this.TB_매매기간_TS_DayMAPeriod_D.Name = "TB_매매기간_TS_DayMAPeriod_D";
+            this.TB_매매기간_TS_DayMAPeriod_D.Size = new System.Drawing.Size(20, 21);
+            this.TB_매매기간_TS_DayMAPeriod_D.TabIndex = 144;
+            this.TB_매매기간_TS_DayMAPeriod_D.Text = "5";
+            this.TB_매매기간_TS_DayMAPeriod_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TB_매매기간_TS_mma_D
+            // TB_매매기간_TS_MinMAPeriod_D
             // 
-            this.TB_매매기간_TS_mma_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_매매기간_TS_mma_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_매매기간_TS_mma_D.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_매매기간_TS_mma_D.ForeColor = System.Drawing.Color.Black;
-            this.TB_매매기간_TS_mma_D.Location = new System.Drawing.Point(202, 65);
-            this.TB_매매기간_TS_mma_D.MaxLength = 2;
-            this.TB_매매기간_TS_mma_D.Name = "TB_매매기간_TS_mma_D";
-            this.TB_매매기간_TS_mma_D.Size = new System.Drawing.Size(20, 21);
-            this.TB_매매기간_TS_mma_D.TabIndex = 144;
-            this.TB_매매기간_TS_mma_D.Text = "5";
-            this.TB_매매기간_TS_mma_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_매매기간_TS_MinMAPeriod_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_매매기간_TS_MinMAPeriod_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_매매기간_TS_MinMAPeriod_D.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_매매기간_TS_MinMAPeriod_D.ForeColor = System.Drawing.Color.Black;
+            this.TB_매매기간_TS_MinMAPeriod_D.Location = new System.Drawing.Point(202, 65);
+            this.TB_매매기간_TS_MinMAPeriod_D.MaxLength = 2;
+            this.TB_매매기간_TS_MinMAPeriod_D.Name = "TB_매매기간_TS_MinMAPeriod_D";
+            this.TB_매매기간_TS_MinMAPeriod_D.Size = new System.Drawing.Size(20, 21);
+            this.TB_매매기간_TS_MinMAPeriod_D.TabIndex = 144;
+            this.TB_매매기간_TS_MinMAPeriod_D.Text = "5";
+            this.TB_매매기간_TS_MinMAPeriod_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TB_매매기간_TS_dma_C
+            // TB_매매기간_TS_DayMAPeriod_C
             // 
-            this.TB_매매기간_TS_dma_C.BackColor = System.Drawing.Color.OldLace;
-            this.TB_매매기간_TS_dma_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_매매기간_TS_dma_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_매매기간_TS_dma_C.ForeColor = System.Drawing.Color.Black;
-            this.TB_매매기간_TS_dma_C.Location = new System.Drawing.Point(284, 43);
-            this.TB_매매기간_TS_dma_C.MaxLength = 2;
-            this.TB_매매기간_TS_dma_C.Name = "TB_매매기간_TS_dma_C";
-            this.TB_매매기간_TS_dma_C.Size = new System.Drawing.Size(20, 21);
-            this.TB_매매기간_TS_dma_C.TabIndex = 143;
-            this.TB_매매기간_TS_dma_C.Text = "5";
-            this.TB_매매기간_TS_dma_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_매매기간_TS_DayMAPeriod_C.BackColor = System.Drawing.Color.OldLace;
+            this.TB_매매기간_TS_DayMAPeriod_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_매매기간_TS_DayMAPeriod_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_매매기간_TS_DayMAPeriod_C.ForeColor = System.Drawing.Color.Black;
+            this.TB_매매기간_TS_DayMAPeriod_C.Location = new System.Drawing.Point(284, 43);
+            this.TB_매매기간_TS_DayMAPeriod_C.MaxLength = 2;
+            this.TB_매매기간_TS_DayMAPeriod_C.Name = "TB_매매기간_TS_DayMAPeriod_C";
+            this.TB_매매기간_TS_DayMAPeriod_C.Size = new System.Drawing.Size(20, 21);
+            this.TB_매매기간_TS_DayMAPeriod_C.TabIndex = 143;
+            this.TB_매매기간_TS_DayMAPeriod_C.Text = "5";
+            this.TB_매매기간_TS_DayMAPeriod_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TB_매매기간_TS_mma_C
+            // TB_매매기간_TS_MinMAPeriod_C
             // 
-            this.TB_매매기간_TS_mma_C.BackColor = System.Drawing.Color.OldLace;
-            this.TB_매매기간_TS_mma_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_매매기간_TS_mma_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_매매기간_TS_mma_C.ForeColor = System.Drawing.Color.Black;
-            this.TB_매매기간_TS_mma_C.Location = new System.Drawing.Point(202, 43);
-            this.TB_매매기간_TS_mma_C.MaxLength = 2;
-            this.TB_매매기간_TS_mma_C.Name = "TB_매매기간_TS_mma_C";
-            this.TB_매매기간_TS_mma_C.Size = new System.Drawing.Size(20, 21);
-            this.TB_매매기간_TS_mma_C.TabIndex = 143;
-            this.TB_매매기간_TS_mma_C.Text = "5";
-            this.TB_매매기간_TS_mma_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_매매기간_TS_MinMAPeriod_C.BackColor = System.Drawing.Color.OldLace;
+            this.TB_매매기간_TS_MinMAPeriod_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_매매기간_TS_MinMAPeriod_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_매매기간_TS_MinMAPeriod_C.ForeColor = System.Drawing.Color.Black;
+            this.TB_매매기간_TS_MinMAPeriod_C.Location = new System.Drawing.Point(202, 43);
+            this.TB_매매기간_TS_MinMAPeriod_C.MaxLength = 2;
+            this.TB_매매기간_TS_MinMAPeriod_C.Name = "TB_매매기간_TS_MinMAPeriod_C";
+            this.TB_매매기간_TS_MinMAPeriod_C.Size = new System.Drawing.Size(20, 21);
+            this.TB_매매기간_TS_MinMAPeriod_C.TabIndex = 143;
+            this.TB_매매기간_TS_MinMAPeriod_C.Text = "5";
+            this.TB_매매기간_TS_MinMAPeriod_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TB_매매기간_TS_dma_A
+            // TB_매매기간_TS_DayMAPeriod_A
             // 
-            this.TB_매매기간_TS_dma_A.BackColor = System.Drawing.Color.OldLace;
-            this.TB_매매기간_TS_dma_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_매매기간_TS_dma_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_매매기간_TS_dma_A.ForeColor = System.Drawing.Color.Black;
-            this.TB_매매기간_TS_dma_A.Location = new System.Drawing.Point(284, -1);
-            this.TB_매매기간_TS_dma_A.MaxLength = 2;
-            this.TB_매매기간_TS_dma_A.Name = "TB_매매기간_TS_dma_A";
-            this.TB_매매기간_TS_dma_A.Size = new System.Drawing.Size(20, 21);
-            this.TB_매매기간_TS_dma_A.TabIndex = 144;
-            this.TB_매매기간_TS_dma_A.Text = "5";
-            this.TB_매매기간_TS_dma_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_매매기간_TS_DayMAPeriod_A.BackColor = System.Drawing.Color.OldLace;
+            this.TB_매매기간_TS_DayMAPeriod_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_매매기간_TS_DayMAPeriod_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_매매기간_TS_DayMAPeriod_A.ForeColor = System.Drawing.Color.Black;
+            this.TB_매매기간_TS_DayMAPeriod_A.Location = new System.Drawing.Point(284, -1);
+            this.TB_매매기간_TS_DayMAPeriod_A.MaxLength = 2;
+            this.TB_매매기간_TS_DayMAPeriod_A.Name = "TB_매매기간_TS_DayMAPeriod_A";
+            this.TB_매매기간_TS_DayMAPeriod_A.Size = new System.Drawing.Size(20, 21);
+            this.TB_매매기간_TS_DayMAPeriod_A.TabIndex = 144;
+            this.TB_매매기간_TS_DayMAPeriod_A.Text = "5";
+            this.TB_매매기간_TS_DayMAPeriod_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TB_매매기간_TS_mma_A
+            // TB_매매기간_TS_MinMAPeriod_A
             // 
-            this.TB_매매기간_TS_mma_A.BackColor = System.Drawing.Color.OldLace;
-            this.TB_매매기간_TS_mma_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_매매기간_TS_mma_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_매매기간_TS_mma_A.ForeColor = System.Drawing.Color.Black;
-            this.TB_매매기간_TS_mma_A.Location = new System.Drawing.Point(202, -1);
-            this.TB_매매기간_TS_mma_A.MaxLength = 2;
-            this.TB_매매기간_TS_mma_A.Name = "TB_매매기간_TS_mma_A";
-            this.TB_매매기간_TS_mma_A.Size = new System.Drawing.Size(20, 21);
-            this.TB_매매기간_TS_mma_A.TabIndex = 144;
-            this.TB_매매기간_TS_mma_A.Text = "5";
-            this.TB_매매기간_TS_mma_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_매매기간_TS_MinMAPeriod_A.BackColor = System.Drawing.Color.OldLace;
+            this.TB_매매기간_TS_MinMAPeriod_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_매매기간_TS_MinMAPeriod_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_매매기간_TS_MinMAPeriod_A.ForeColor = System.Drawing.Color.Black;
+            this.TB_매매기간_TS_MinMAPeriod_A.Location = new System.Drawing.Point(202, -1);
+            this.TB_매매기간_TS_MinMAPeriod_A.MaxLength = 2;
+            this.TB_매매기간_TS_MinMAPeriod_A.Name = "TB_매매기간_TS_MinMAPeriod_A";
+            this.TB_매매기간_TS_MinMAPeriod_A.Size = new System.Drawing.Size(20, 21);
+            this.TB_매매기간_TS_MinMAPeriod_A.TabIndex = 144;
+            this.TB_매매기간_TS_MinMAPeriod_A.Text = "5";
+            this.TB_매매기간_TS_MinMAPeriod_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label16
             // 
@@ -6462,21 +6599,21 @@ namespace 지니_64
             this.label2.Text = "분이평";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CBB_매매기간_TS_dma_C
+            // CBB_매매기간_TS_DayMAPeriod_C
             // 
-            this.CBB_매매기간_TS_dma_C.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_매매기간_TS_dma_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_매매기간_TS_dma_C.DropDownWidth = 55;
-            this.CBB_매매기간_TS_dma_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_매매기간_TS_dma_C.FormattingEnabled = true;
-            this.CBB_매매기간_TS_dma_C.Items.AddRange(new object[] {
+            this.CBB_매매기간_TS_DayMAPeriod_C.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_매매기간_TS_DayMAPeriod_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_매매기간_TS_DayMAPeriod_C.DropDownWidth = 55;
+            this.CBB_매매기간_TS_DayMAPeriod_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_매매기간_TS_DayMAPeriod_C.FormattingEnabled = true;
+            this.CBB_매매기간_TS_DayMAPeriod_C.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_매매기간_TS_dma_C.Location = new System.Drawing.Point(303, 43);
-            this.CBB_매매기간_TS_dma_C.Name = "CBB_매매기간_TS_dma_C";
-            this.CBB_매매기간_TS_dma_C.Size = new System.Drawing.Size(35, 21);
-            this.CBB_매매기간_TS_dma_C.TabIndex = 66;
+            this.CBB_매매기간_TS_DayMAPeriod_C.Location = new System.Drawing.Point(303, 43);
+            this.CBB_매매기간_TS_DayMAPeriod_C.Name = "CBB_매매기간_TS_DayMAPeriod_C";
+            this.CBB_매매기간_TS_DayMAPeriod_C.Size = new System.Drawing.Size(35, 21);
+            this.CBB_매매기간_TS_DayMAPeriod_C.TabIndex = 66;
             // 
             // label27
             // 
@@ -6491,183 +6628,183 @@ namespace 지니_64
             this.label27.Text = "% 하락";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CBB_매매기간_TS_dma_F
+            // CBB_매매기간_TS_DayMAPeriod_F
             // 
-            this.CBB_매매기간_TS_dma_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_매매기간_TS_dma_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_매매기간_TS_dma_F.DropDownWidth = 50;
-            this.CBB_매매기간_TS_dma_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_매매기간_TS_dma_F.FormattingEnabled = true;
-            this.CBB_매매기간_TS_dma_F.Items.AddRange(new object[] {
+            this.CBB_매매기간_TS_DayMAPeriod_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_매매기간_TS_DayMAPeriod_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_매매기간_TS_DayMAPeriod_F.DropDownWidth = 50;
+            this.CBB_매매기간_TS_DayMAPeriod_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_매매기간_TS_DayMAPeriod_F.FormattingEnabled = true;
+            this.CBB_매매기간_TS_DayMAPeriod_F.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_매매기간_TS_dma_F.Location = new System.Drawing.Point(303, 109);
-            this.CBB_매매기간_TS_dma_F.Name = "CBB_매매기간_TS_dma_F";
-            this.CBB_매매기간_TS_dma_F.Size = new System.Drawing.Size(35, 21);
-            this.CBB_매매기간_TS_dma_F.TabIndex = 66;
+            this.CBB_매매기간_TS_DayMAPeriod_F.Location = new System.Drawing.Point(303, 109);
+            this.CBB_매매기간_TS_DayMAPeriod_F.Name = "CBB_매매기간_TS_DayMAPeriod_F";
+            this.CBB_매매기간_TS_DayMAPeriod_F.Size = new System.Drawing.Size(35, 21);
+            this.CBB_매매기간_TS_DayMAPeriod_F.TabIndex = 66;
             // 
-            // CBB_매매기간_TS_mma_C
+            // CBB_매매기간_TS_MinMAPeriod_C
             // 
-            this.CBB_매매기간_TS_mma_C.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_매매기간_TS_mma_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_매매기간_TS_mma_C.DropDownWidth = 55;
-            this.CBB_매매기간_TS_mma_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_매매기간_TS_mma_C.FormattingEnabled = true;
-            this.CBB_매매기간_TS_mma_C.Items.AddRange(new object[] {
+            this.CBB_매매기간_TS_MinMAPeriod_C.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_매매기간_TS_MinMAPeriod_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_매매기간_TS_MinMAPeriod_C.DropDownWidth = 55;
+            this.CBB_매매기간_TS_MinMAPeriod_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_매매기간_TS_MinMAPeriod_C.FormattingEnabled = true;
+            this.CBB_매매기간_TS_MinMAPeriod_C.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_매매기간_TS_mma_C.Location = new System.Drawing.Point(221, 43);
-            this.CBB_매매기간_TS_mma_C.Name = "CBB_매매기간_TS_mma_C";
-            this.CBB_매매기간_TS_mma_C.Size = new System.Drawing.Size(35, 21);
-            this.CBB_매매기간_TS_mma_C.TabIndex = 66;
+            this.CBB_매매기간_TS_MinMAPeriod_C.Location = new System.Drawing.Point(221, 43);
+            this.CBB_매매기간_TS_MinMAPeriod_C.Name = "CBB_매매기간_TS_MinMAPeriod_C";
+            this.CBB_매매기간_TS_MinMAPeriod_C.Size = new System.Drawing.Size(35, 21);
+            this.CBB_매매기간_TS_MinMAPeriod_C.TabIndex = 66;
             // 
-            // CBB_매매기간_TS_dma_B
+            // CBB_매매기간_TS_DayMAPeriod_B
             // 
-            this.CBB_매매기간_TS_dma_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_매매기간_TS_dma_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_매매기간_TS_dma_B.DropDownWidth = 50;
-            this.CBB_매매기간_TS_dma_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_매매기간_TS_dma_B.FormattingEnabled = true;
-            this.CBB_매매기간_TS_dma_B.Items.AddRange(new object[] {
+            this.CBB_매매기간_TS_DayMAPeriod_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_매매기간_TS_DayMAPeriod_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_매매기간_TS_DayMAPeriod_B.DropDownWidth = 50;
+            this.CBB_매매기간_TS_DayMAPeriod_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_매매기간_TS_DayMAPeriod_B.FormattingEnabled = true;
+            this.CBB_매매기간_TS_DayMAPeriod_B.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_매매기간_TS_dma_B.Location = new System.Drawing.Point(303, 21);
-            this.CBB_매매기간_TS_dma_B.Name = "CBB_매매기간_TS_dma_B";
-            this.CBB_매매기간_TS_dma_B.Size = new System.Drawing.Size(35, 21);
-            this.CBB_매매기간_TS_dma_B.TabIndex = 66;
+            this.CBB_매매기간_TS_DayMAPeriod_B.Location = new System.Drawing.Point(303, 21);
+            this.CBB_매매기간_TS_DayMAPeriod_B.Name = "CBB_매매기간_TS_DayMAPeriod_B";
+            this.CBB_매매기간_TS_DayMAPeriod_B.Size = new System.Drawing.Size(35, 21);
+            this.CBB_매매기간_TS_DayMAPeriod_B.TabIndex = 66;
             // 
-            // CBB_매매기간_TS_mma_F
+            // CBB_매매기간_TS_MinMAPeriod_F
             // 
-            this.CBB_매매기간_TS_mma_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_매매기간_TS_mma_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_매매기간_TS_mma_F.DropDownWidth = 50;
-            this.CBB_매매기간_TS_mma_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_매매기간_TS_mma_F.FormattingEnabled = true;
-            this.CBB_매매기간_TS_mma_F.Items.AddRange(new object[] {
+            this.CBB_매매기간_TS_MinMAPeriod_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_매매기간_TS_MinMAPeriod_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_매매기간_TS_MinMAPeriod_F.DropDownWidth = 50;
+            this.CBB_매매기간_TS_MinMAPeriod_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_매매기간_TS_MinMAPeriod_F.FormattingEnabled = true;
+            this.CBB_매매기간_TS_MinMAPeriod_F.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_매매기간_TS_mma_F.Location = new System.Drawing.Point(221, 109);
-            this.CBB_매매기간_TS_mma_F.Name = "CBB_매매기간_TS_mma_F";
-            this.CBB_매매기간_TS_mma_F.Size = new System.Drawing.Size(35, 21);
-            this.CBB_매매기간_TS_mma_F.TabIndex = 66;
+            this.CBB_매매기간_TS_MinMAPeriod_F.Location = new System.Drawing.Point(221, 109);
+            this.CBB_매매기간_TS_MinMAPeriod_F.Name = "CBB_매매기간_TS_MinMAPeriod_F";
+            this.CBB_매매기간_TS_MinMAPeriod_F.Size = new System.Drawing.Size(35, 21);
+            this.CBB_매매기간_TS_MinMAPeriod_F.TabIndex = 66;
             // 
-            // CBB_매매기간_TS_dma_E
+            // CBB_매매기간_TS_DayMAPeriod_E
             // 
-            this.CBB_매매기간_TS_dma_E.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_매매기간_TS_dma_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_매매기간_TS_dma_E.DropDownWidth = 50;
-            this.CBB_매매기간_TS_dma_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_매매기간_TS_dma_E.FormattingEnabled = true;
-            this.CBB_매매기간_TS_dma_E.Items.AddRange(new object[] {
+            this.CBB_매매기간_TS_DayMAPeriod_E.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_매매기간_TS_DayMAPeriod_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_매매기간_TS_DayMAPeriod_E.DropDownWidth = 50;
+            this.CBB_매매기간_TS_DayMAPeriod_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_매매기간_TS_DayMAPeriod_E.FormattingEnabled = true;
+            this.CBB_매매기간_TS_DayMAPeriod_E.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_매매기간_TS_dma_E.Location = new System.Drawing.Point(303, 87);
-            this.CBB_매매기간_TS_dma_E.Name = "CBB_매매기간_TS_dma_E";
-            this.CBB_매매기간_TS_dma_E.Size = new System.Drawing.Size(35, 21);
-            this.CBB_매매기간_TS_dma_E.TabIndex = 66;
+            this.CBB_매매기간_TS_DayMAPeriod_E.Location = new System.Drawing.Point(303, 87);
+            this.CBB_매매기간_TS_DayMAPeriod_E.Name = "CBB_매매기간_TS_DayMAPeriod_E";
+            this.CBB_매매기간_TS_DayMAPeriod_E.Size = new System.Drawing.Size(35, 21);
+            this.CBB_매매기간_TS_DayMAPeriod_E.TabIndex = 66;
             // 
-            // CBB_매매기간_TS_mma_B
+            // CBB_매매기간_TS_MinMAPeriod_B
             // 
-            this.CBB_매매기간_TS_mma_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_매매기간_TS_mma_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_매매기간_TS_mma_B.DropDownWidth = 50;
-            this.CBB_매매기간_TS_mma_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_매매기간_TS_mma_B.FormattingEnabled = true;
-            this.CBB_매매기간_TS_mma_B.Items.AddRange(new object[] {
+            this.CBB_매매기간_TS_MinMAPeriod_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_매매기간_TS_MinMAPeriod_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_매매기간_TS_MinMAPeriod_B.DropDownWidth = 50;
+            this.CBB_매매기간_TS_MinMAPeriod_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_매매기간_TS_MinMAPeriod_B.FormattingEnabled = true;
+            this.CBB_매매기간_TS_MinMAPeriod_B.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_매매기간_TS_mma_B.Location = new System.Drawing.Point(221, 21);
-            this.CBB_매매기간_TS_mma_B.Name = "CBB_매매기간_TS_mma_B";
-            this.CBB_매매기간_TS_mma_B.Size = new System.Drawing.Size(35, 21);
-            this.CBB_매매기간_TS_mma_B.TabIndex = 66;
+            this.CBB_매매기간_TS_MinMAPeriod_B.Location = new System.Drawing.Point(221, 21);
+            this.CBB_매매기간_TS_MinMAPeriod_B.Name = "CBB_매매기간_TS_MinMAPeriod_B";
+            this.CBB_매매기간_TS_MinMAPeriod_B.Size = new System.Drawing.Size(35, 21);
+            this.CBB_매매기간_TS_MinMAPeriod_B.TabIndex = 66;
             // 
-            // CBB_매매기간_TS_dma_D
+            // CBB_매매기간_TS_DayMAPeriod_D
             // 
-            this.CBB_매매기간_TS_dma_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_매매기간_TS_dma_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_매매기간_TS_dma_D.DropDownWidth = 50;
-            this.CBB_매매기간_TS_dma_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_매매기간_TS_dma_D.FormattingEnabled = true;
-            this.CBB_매매기간_TS_dma_D.Items.AddRange(new object[] {
+            this.CBB_매매기간_TS_DayMAPeriod_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_매매기간_TS_DayMAPeriod_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_매매기간_TS_DayMAPeriod_D.DropDownWidth = 50;
+            this.CBB_매매기간_TS_DayMAPeriod_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_매매기간_TS_DayMAPeriod_D.FormattingEnabled = true;
+            this.CBB_매매기간_TS_DayMAPeriod_D.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_매매기간_TS_dma_D.Location = new System.Drawing.Point(303, 65);
-            this.CBB_매매기간_TS_dma_D.Name = "CBB_매매기간_TS_dma_D";
-            this.CBB_매매기간_TS_dma_D.Size = new System.Drawing.Size(35, 21);
-            this.CBB_매매기간_TS_dma_D.TabIndex = 66;
+            this.CBB_매매기간_TS_DayMAPeriod_D.Location = new System.Drawing.Point(303, 65);
+            this.CBB_매매기간_TS_DayMAPeriod_D.Name = "CBB_매매기간_TS_DayMAPeriod_D";
+            this.CBB_매매기간_TS_DayMAPeriod_D.Size = new System.Drawing.Size(35, 21);
+            this.CBB_매매기간_TS_DayMAPeriod_D.TabIndex = 66;
             // 
-            // CBB_매매기간_TS_mma_E
+            // CBB_매매기간_TS_MinMAPeriod_E
             // 
-            this.CBB_매매기간_TS_mma_E.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_매매기간_TS_mma_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_매매기간_TS_mma_E.DropDownWidth = 50;
-            this.CBB_매매기간_TS_mma_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_매매기간_TS_mma_E.FormattingEnabled = true;
-            this.CBB_매매기간_TS_mma_E.Items.AddRange(new object[] {
+            this.CBB_매매기간_TS_MinMAPeriod_E.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_매매기간_TS_MinMAPeriod_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_매매기간_TS_MinMAPeriod_E.DropDownWidth = 50;
+            this.CBB_매매기간_TS_MinMAPeriod_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_매매기간_TS_MinMAPeriod_E.FormattingEnabled = true;
+            this.CBB_매매기간_TS_MinMAPeriod_E.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_매매기간_TS_mma_E.Location = new System.Drawing.Point(221, 87);
-            this.CBB_매매기간_TS_mma_E.Name = "CBB_매매기간_TS_mma_E";
-            this.CBB_매매기간_TS_mma_E.Size = new System.Drawing.Size(35, 21);
-            this.CBB_매매기간_TS_mma_E.TabIndex = 66;
+            this.CBB_매매기간_TS_MinMAPeriod_E.Location = new System.Drawing.Point(221, 87);
+            this.CBB_매매기간_TS_MinMAPeriod_E.Name = "CBB_매매기간_TS_MinMAPeriod_E";
+            this.CBB_매매기간_TS_MinMAPeriod_E.Size = new System.Drawing.Size(35, 21);
+            this.CBB_매매기간_TS_MinMAPeriod_E.TabIndex = 66;
             // 
-            // CBB_매매기간_TS_dma_A
+            // CBB_매매기간_TS_DayMAPeriod_A
             // 
-            this.CBB_매매기간_TS_dma_A.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_매매기간_TS_dma_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_매매기간_TS_dma_A.DropDownWidth = 45;
-            this.CBB_매매기간_TS_dma_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_매매기간_TS_dma_A.FormattingEnabled = true;
-            this.CBB_매매기간_TS_dma_A.Items.AddRange(new object[] {
+            this.CBB_매매기간_TS_DayMAPeriod_A.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_매매기간_TS_DayMAPeriod_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_매매기간_TS_DayMAPeriod_A.DropDownWidth = 45;
+            this.CBB_매매기간_TS_DayMAPeriod_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_매매기간_TS_DayMAPeriod_A.FormattingEnabled = true;
+            this.CBB_매매기간_TS_DayMAPeriod_A.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_매매기간_TS_dma_A.Location = new System.Drawing.Point(303, -1);
-            this.CBB_매매기간_TS_dma_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.CBB_매매기간_TS_dma_A.Name = "CBB_매매기간_TS_dma_A";
-            this.CBB_매매기간_TS_dma_A.Size = new System.Drawing.Size(35, 21);
-            this.CBB_매매기간_TS_dma_A.TabIndex = 66;
+            this.CBB_매매기간_TS_DayMAPeriod_A.Location = new System.Drawing.Point(303, -1);
+            this.CBB_매매기간_TS_DayMAPeriod_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.CBB_매매기간_TS_DayMAPeriod_A.Name = "CBB_매매기간_TS_DayMAPeriod_A";
+            this.CBB_매매기간_TS_DayMAPeriod_A.Size = new System.Drawing.Size(35, 21);
+            this.CBB_매매기간_TS_DayMAPeriod_A.TabIndex = 66;
             // 
-            // CBB_매매기간_TS_mma_D
+            // CBB_매매기간_TS_MinMAPeriod_D
             // 
-            this.CBB_매매기간_TS_mma_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_매매기간_TS_mma_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_매매기간_TS_mma_D.DropDownWidth = 50;
-            this.CBB_매매기간_TS_mma_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_매매기간_TS_mma_D.FormattingEnabled = true;
-            this.CBB_매매기간_TS_mma_D.Items.AddRange(new object[] {
+            this.CBB_매매기간_TS_MinMAPeriod_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_매매기간_TS_MinMAPeriod_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_매매기간_TS_MinMAPeriod_D.DropDownWidth = 50;
+            this.CBB_매매기간_TS_MinMAPeriod_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_매매기간_TS_MinMAPeriod_D.FormattingEnabled = true;
+            this.CBB_매매기간_TS_MinMAPeriod_D.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_매매기간_TS_mma_D.Location = new System.Drawing.Point(221, 65);
-            this.CBB_매매기간_TS_mma_D.Name = "CBB_매매기간_TS_mma_D";
-            this.CBB_매매기간_TS_mma_D.Size = new System.Drawing.Size(35, 21);
-            this.CBB_매매기간_TS_mma_D.TabIndex = 66;
+            this.CBB_매매기간_TS_MinMAPeriod_D.Location = new System.Drawing.Point(221, 65);
+            this.CBB_매매기간_TS_MinMAPeriod_D.Name = "CBB_매매기간_TS_MinMAPeriod_D";
+            this.CBB_매매기간_TS_MinMAPeriod_D.Size = new System.Drawing.Size(35, 21);
+            this.CBB_매매기간_TS_MinMAPeriod_D.TabIndex = 66;
             // 
-            // CBB_매매기간_TS_mma_A
+            // CBB_매매기간_TS_MinMAPeriod_A
             // 
-            this.CBB_매매기간_TS_mma_A.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_매매기간_TS_mma_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_매매기간_TS_mma_A.DropDownWidth = 45;
-            this.CBB_매매기간_TS_mma_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_매매기간_TS_mma_A.FormattingEnabled = true;
-            this.CBB_매매기간_TS_mma_A.Items.AddRange(new object[] {
+            this.CBB_매매기간_TS_MinMAPeriod_A.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_매매기간_TS_MinMAPeriod_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_매매기간_TS_MinMAPeriod_A.DropDownWidth = 45;
+            this.CBB_매매기간_TS_MinMAPeriod_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_매매기간_TS_MinMAPeriod_A.FormattingEnabled = true;
+            this.CBB_매매기간_TS_MinMAPeriod_A.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_매매기간_TS_mma_A.Location = new System.Drawing.Point(221, -1);
-            this.CBB_매매기간_TS_mma_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.CBB_매매기간_TS_mma_A.Name = "CBB_매매기간_TS_mma_A";
-            this.CBB_매매기간_TS_mma_A.Size = new System.Drawing.Size(35, 21);
-            this.CBB_매매기간_TS_mma_A.TabIndex = 66;
+            this.CBB_매매기간_TS_MinMAPeriod_A.Location = new System.Drawing.Point(221, -1);
+            this.CBB_매매기간_TS_MinMAPeriod_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.CBB_매매기간_TS_MinMAPeriod_A.Name = "CBB_매매기간_TS_MinMAPeriod_A";
+            this.CBB_매매기간_TS_MinMAPeriod_A.Size = new System.Drawing.Size(35, 21);
+            this.CBB_매매기간_TS_MinMAPeriod_A.TabIndex = 66;
             // 
             // CB_매매기간_TS
             // 
@@ -6703,7 +6840,7 @@ namespace 지니_64
             this.TB_매매기간_오후주문시간.Text = "153000";
             this.TB_매매기간_오후주문시간.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_매매기간_오후주문시간.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_매매기간_오후주문시간.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_매매기간_오후주문시간.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_매매기간_오전주문시간
             // 
@@ -6719,7 +6856,7 @@ namespace 지니_64
             this.TB_매매기간_오전주문시간.Text = "101010";
             this.TB_매매기간_오전주문시간.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_매매기간_오전주문시간.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_매매기간_오전주문시간.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_매매기간_오전주문시간.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label77
             // 
@@ -6887,6 +7024,8 @@ namespace 지니_64
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Special_FormClosing);
             this.특수매매_P.ResumeLayout(false);
             this.특수매매_P.PerformLayout();
+            this.panel_자금관리.ResumeLayout(false);
+            this.panel_자금관리.PerformLayout();
             this.P_예약주문.ResumeLayout(false);
             this.P_예약주문.PerformLayout();
             this.P_조건별매매그룹지정.ResumeLayout(false);
@@ -7207,12 +7346,12 @@ namespace 지니_64
         public System.Windows.Forms.CheckBox CB_매매기간_수익보전_B;
         private System.Windows.Forms.Panel panel_매매기간_TS;
         public System.Windows.Forms.TextBox TB_매매기간_TS_down_A;
-        public System.Windows.Forms.TextBox TB_매매기간_TS_mma_E;
-        public System.Windows.Forms.TextBox TB_매매기간_TS_mma_B;
-        public System.Windows.Forms.TextBox TB_매매기간_TS_mma_F;
-        public System.Windows.Forms.TextBox TB_매매기간_TS_mma_D;
-        public System.Windows.Forms.TextBox TB_매매기간_TS_mma_C;
-        public System.Windows.Forms.TextBox TB_매매기간_TS_mma_A;
+        public System.Windows.Forms.TextBox TB_매매기간_TS_MinMAPeriod_E;
+        public System.Windows.Forms.TextBox TB_매매기간_TS_MinMAPeriod_B;
+        public System.Windows.Forms.TextBox TB_매매기간_TS_MinMAPeriod_F;
+        public System.Windows.Forms.TextBox TB_매매기간_TS_MinMAPeriod_D;
+        public System.Windows.Forms.TextBox TB_매매기간_TS_MinMAPeriod_C;
+        public System.Windows.Forms.TextBox TB_매매기간_TS_MinMAPeriod_A;
         public System.Windows.Forms.Label label49;
         public System.Windows.Forms.TextBox TB_매매기간_TS_down_E;
         public System.Windows.Forms.Label label48;
@@ -7236,12 +7375,12 @@ namespace 지니_64
         public System.Windows.Forms.CheckBox CB_매매기간_TS_C;
         public System.Windows.Forms.Label label29;
         public System.Windows.Forms.Label label27;
-        public System.Windows.Forms.ComboBox CBB_매매기간_TS_mma_C;
-        public System.Windows.Forms.ComboBox CBB_매매기간_TS_mma_F;
-        public System.Windows.Forms.ComboBox CBB_매매기간_TS_mma_B;
-        public System.Windows.Forms.ComboBox CBB_매매기간_TS_mma_E;
-        public System.Windows.Forms.ComboBox CBB_매매기간_TS_mma_D;
-        public System.Windows.Forms.ComboBox CBB_매매기간_TS_mma_A;
+        public System.Windows.Forms.ComboBox CBB_매매기간_TS_MinMAPeriod_C;
+        public System.Windows.Forms.ComboBox CBB_매매기간_TS_MinMAPeriod_F;
+        public System.Windows.Forms.ComboBox CBB_매매기간_TS_MinMAPeriod_B;
+        public System.Windows.Forms.ComboBox CBB_매매기간_TS_MinMAPeriod_E;
+        public System.Windows.Forms.ComboBox CBB_매매기간_TS_MinMAPeriod_D;
+        public System.Windows.Forms.ComboBox CBB_매매기간_TS_MinMAPeriod_A;
         public System.Windows.Forms.CheckBox CB_매매기간_TS;
         public System.Windows.Forms.Label label8;
         public System.Windows.Forms.Label label7;
@@ -7249,23 +7388,32 @@ namespace 지니_64
         public System.Windows.Forms.Label label5;
         public System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label label2;
-        public System.Windows.Forms.TextBox TB_매매기간_TS_dma_E;
-        public System.Windows.Forms.TextBox TB_매매기간_TS_dma_B;
-        public System.Windows.Forms.TextBox TB_매매기간_TS_dma_F;
-        public System.Windows.Forms.TextBox TB_매매기간_TS_dma_D;
-        public System.Windows.Forms.TextBox TB_매매기간_TS_dma_C;
-        public System.Windows.Forms.TextBox TB_매매기간_TS_dma_A;
+        public System.Windows.Forms.TextBox TB_매매기간_TS_DayMAPeriod_E;
+        public System.Windows.Forms.TextBox TB_매매기간_TS_DayMAPeriod_B;
+        public System.Windows.Forms.TextBox TB_매매기간_TS_DayMAPeriod_F;
+        public System.Windows.Forms.TextBox TB_매매기간_TS_DayMAPeriod_D;
+        public System.Windows.Forms.TextBox TB_매매기간_TS_DayMAPeriod_C;
+        public System.Windows.Forms.TextBox TB_매매기간_TS_DayMAPeriod_A;
         public System.Windows.Forms.Label label16;
         public System.Windows.Forms.Label label15;
         public System.Windows.Forms.Label label14;
         public System.Windows.Forms.Label label11;
         public System.Windows.Forms.Label label10;
         public System.Windows.Forms.Label label9;
-        public System.Windows.Forms.ComboBox CBB_매매기간_TS_dma_C;
-        public System.Windows.Forms.ComboBox CBB_매매기간_TS_dma_F;
-        public System.Windows.Forms.ComboBox CBB_매매기간_TS_dma_B;
-        public System.Windows.Forms.ComboBox CBB_매매기간_TS_dma_E;
-        public System.Windows.Forms.ComboBox CBB_매매기간_TS_dma_D;
-        public System.Windows.Forms.ComboBox CBB_매매기간_TS_dma_A;
+        public System.Windows.Forms.ComboBox CBB_매매기간_TS_DayMAPeriod_C;
+        public System.Windows.Forms.ComboBox CBB_매매기간_TS_DayMAPeriod_F;
+        public System.Windows.Forms.ComboBox CBB_매매기간_TS_DayMAPeriod_B;
+        public System.Windows.Forms.ComboBox CBB_매매기간_TS_DayMAPeriod_E;
+        public System.Windows.Forms.ComboBox CBB_매매기간_TS_DayMAPeriod_D;
+        public System.Windows.Forms.ComboBox CBB_매매기간_TS_DayMAPeriod_A;
+        public System.Windows.Forms.CheckBox CB_수동신용;
+        public System.Windows.Forms.CheckBox CB_수동주문_중간가;
+        public System.Windows.Forms.Panel panel_자금관리;
+        public System.Windows.Forms.CheckBox CB_자금관리;
+        public System.Windows.Forms.Label label17;
+        public System.Windows.Forms.TextBox TB_자금관리_유지현금;
+        public System.Windows.Forms.TextBox TB_자금관리종목;
+        public System.Windows.Forms.Label label18;
+        public System.Windows.Forms.Label label_관리종목코드;
     }
 }

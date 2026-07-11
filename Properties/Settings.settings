@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="지니_64.Properties" GeneratedClassName="Settings">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="지니64.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
     <Setting Name="CB_Auto_tradingstart" Type="System.Boolean" Scope="User">
@@ -668,48 +668,6 @@
     <Setting Name="TB_잔고매입비_추매제한" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="combo_repeat_condition_A" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_repeat_condition_B" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_repeat_condition_C" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_repeat_condition_D" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_repeat_condition_E" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_repeat_condition_F" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_repeat_condition_G" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_repeat_condition_H" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_repeat_condition_I" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_repeat_condition_J" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_repeat_condition_K" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_repeat_condition_L" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_repeat_condition_M" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="account_comboBox" Type="System.String" Scope="User">
-      <Value Profile="(Default)">0</Value>
-    </Setting>
     <Setting Name="CB_repeat_use_A" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
@@ -1178,121 +1136,121 @@
     <Setting Name="combo_repeat_sell_gubun_M" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_1_A" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_1_A" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_1_B" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_1_B" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_1_C" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_1_C" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_1_D" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_1_D" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_1_E" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_1_E" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_1_F" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_1_F" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_1_G" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_1_G" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_1_H" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_1_H" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_1_I" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_1_I" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_1_J" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_1_J" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_1_K" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_1_K" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_1_L" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_1_L" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_1_M" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_1_M" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_2_A" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_2_A" Type="System.Double" Scope="User">
       <Value Profile="(Default)">100</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_2_B" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_2_B" Type="System.Double" Scope="User">
       <Value Profile="(Default)">100</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_2_C" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_2_C" Type="System.Double" Scope="User">
       <Value Profile="(Default)">100</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_2_D" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_2_D" Type="System.Double" Scope="User">
       <Value Profile="(Default)">100</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_2_E" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_2_E" Type="System.Double" Scope="User">
       <Value Profile="(Default)">100</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_2_F" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_2_F" Type="System.Double" Scope="User">
       <Value Profile="(Default)">100</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_2_G" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_2_G" Type="System.Double" Scope="User">
       <Value Profile="(Default)">100</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_2_H" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_2_H" Type="System.Double" Scope="User">
       <Value Profile="(Default)">100</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_2_I" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_2_I" Type="System.Double" Scope="User">
       <Value Profile="(Default)">100</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_2_J" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_2_J" Type="System.Double" Scope="User">
       <Value Profile="(Default)">100</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_2_K" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_2_K" Type="System.Double" Scope="User">
       <Value Profile="(Default)">100</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_2_L" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_2_L" Type="System.Double" Scope="User">
       <Value Profile="(Default)">100</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_2_M" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_2_M" Type="System.Double" Scope="User">
       <Value Profile="(Default)">100</Value>
     </Setting>
-    <Setting Name="combo_repeat_maemae_gubun_A" Type="System.Int32" Scope="User">
+    <Setting Name="combo_Repeat_maemae_gubun_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="combo_repeat_maemae_gubun_B" Type="System.Int32" Scope="User">
+    <Setting Name="combo_Repeat_maemae_gubun_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="combo_repeat_maemae_gubun_C" Type="System.Int32" Scope="User">
+    <Setting Name="combo_Repeat_maemae_gubun_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="combo_repeat_maemae_gubun_D" Type="System.Int32" Scope="User">
+    <Setting Name="combo_Repeat_maemae_gubun_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="combo_repeat_maemae_gubun_E" Type="System.Int32" Scope="User">
+    <Setting Name="combo_Repeat_maemae_gubun_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="combo_repeat_maemae_gubun_F" Type="System.Int32" Scope="User">
+    <Setting Name="combo_Repeat_maemae_gubun_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="combo_repeat_maemae_gubun_G" Type="System.Int32" Scope="User">
+    <Setting Name="combo_Repeat_maemae_gubun_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="combo_repeat_maemae_gubun_H" Type="System.Int32" Scope="User">
+    <Setting Name="combo_Repeat_maemae_gubun_H" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="combo_repeat_maemae_gubun_I" Type="System.Int32" Scope="User">
+    <Setting Name="combo_Repeat_maemae_gubun_I" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="combo_repeat_maemae_gubun_J" Type="System.Int32" Scope="User">
+    <Setting Name="combo_Repeat_maemae_gubun_J" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="combo_repeat_maemae_gubun_K" Type="System.Int32" Scope="User">
+    <Setting Name="combo_Repeat_maemae_gubun_K" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="combo_repeat_maemae_gubun_L" Type="System.Int32" Scope="User">
+    <Setting Name="combo_Repeat_maemae_gubun_L" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="combo_repeat_maemae_gubun_M" Type="System.Int32" Scope="User">
+    <Setting Name="combo_Repeat_maemae_gubun_M" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="CB_watch_use_A" Type="System.Boolean" Scope="User">
@@ -1307,32 +1265,11 @@
     <Setting Name="CB_watch_use_D" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="combo_watch_condition_A" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_watch_condition_B" Type="System.String" Scope="User">
+    <Setting Name="SB" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="combo_watch_condition_C" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_watch_condition_D" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_watch_condition_AA" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_watch_condition_BB" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_watch_condition_CC" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_watch_condition_DD" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="TB_restart" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">60</Value>
     </Setting>
     <Setting Name="combo_ik_jumun_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">1</Value>
@@ -1392,34 +1329,22 @@
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="CB_TR_A" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="CB_TR_B" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="CB_TR_C" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="CB_TR_D" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
-    <Setting Name="select_account" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="CB_ik_CancelOrder" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="MTB_ik_canceltime" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">60</Value>
-    </Setting>
-    <Setting Name="combo_new_condition_C" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_new_condition_B" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_new_condition_A" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="combo_new_cancel_buy_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -2885,9 +2810,6 @@
     <Setting Name="CB_IK_group_M" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="CB_Repeat_M_N" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
     <Setting Name="CB_new_recatch_A" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
@@ -3170,14 +3092,14 @@
     <Setting Name="TB_cut_P_C" Type="System.Double" Scope="User">
       <Value Profile="(Default)">-1</Value>
     </Setting>
-    <Setting Name="TB_cut_won_A" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">500</Value>
+    <Setting Name="TB_cut_won_A" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">50</Value>
     </Setting>
-    <Setting Name="TB_cut_won_B" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">500</Value>
+    <Setting Name="TB_cut_won_B" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">50</Value>
     </Setting>
-    <Setting Name="TB_cut_won_C" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">500</Value>
+    <Setting Name="TB_cut_won_C" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">50</Value>
     </Setting>
     <Setting Name="TB_cut_ratio_A" Type="System.Double" Scope="User">
       <Value Profile="(Default)">1</Value>
@@ -3403,15 +3325,6 @@
     </Setting>
     <Setting Name="combo_rebalance_use_condition_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
-    </Setting>
-    <Setting Name="combo_rebalance_condition_A" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_rebalance_condition_B" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_rebalance_condition_C" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="combo_rebalance_suik_gubun_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -3833,9 +3746,6 @@
     <Setting Name="CBB_Liquidation_use_condition_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_Liquidation_condition_A" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
     <Setting Name="MTB_Liquidation_delay_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
@@ -3889,9 +3799,6 @@
     </Setting>
     <Setting Name="CBB_Liquidation_use_condition_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
-    </Setting>
-    <Setting Name="CBB_Liquidation_condition_B" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="MTB_Liquidation_delay_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -4763,15 +4670,6 @@
     <Setting Name="TB_token" Type="System.String" Scope="User">
       <Value Profile="(Default)">6179707169:AAE56UJ15puMzE8HRhWBndcwkJOjBueq6oE</Value>
     </Setting>
-    <Setting Name="TB_매수탐색A" Type="System.String" Scope="User">
-      <Value Profile="(Default)">대금탐색_A</Value>
-    </Setting>
-    <Setting Name="TB_매수탐색B" Type="System.String" Scope="User">
-      <Value Profile="(Default)">대금탐색_B</Value>
-    </Setting>
-    <Setting Name="TB_매도탐색" Type="System.String" Scope="User">
-      <Value Profile="(Default)">대금탐색</Value>
-    </Setting>
     <Setting Name="TB_월통계기준" Type="System.Int64" Scope="User">
       <Value Profile="(Default)">100000000</Value>
     </Setting>
@@ -4847,13 +4745,13 @@
     <Setting Name="combo_repeat_sell_gubun_N" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_1_N" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_1_N" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_maemae_2_N" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_maemae_2_N" Type="System.Double" Scope="User">
       <Value Profile="(Default)">100</Value>
     </Setting>
-    <Setting Name="combo_repeat_maemae_gubun_N" Type="System.Int32" Scope="User">
+    <Setting Name="combo_Repeat_maemae_gubun_N" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="MTB_repeat_repeat_N" Type="System.Int32" Scope="User">
@@ -4874,9 +4772,6 @@
     <Setting Name="combo_repeat_use_condition_N" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="combo_repeat_condition_N" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
     <Setting Name="CB_일매수제한금" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
@@ -4895,17 +4790,8 @@
     <Setting Name="TB_총매수금" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_지니_64종료" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_지니64종료" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
-    </Setting>
-    <Setting Name="CB_주문엑셀저장" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
-    <Setting Name="CB_체결엑셀저장" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
-    <Setting Name="CB_매매엑셀저장" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="CB_Repeat_N_A" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
@@ -5038,12 +4924,6 @@
     </Setting>
     <Setting Name="MTB_rebalance_delay_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
-    </Setting>
-    <Setting Name="combo_rebalance_condition_D" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_rebalance_condition_E" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="TB_rebalance_sellratio1_D" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -5216,7 +5096,7 @@
     <Setting Name="TB_WatchRow_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">12</Value>
     </Setting>
-    <Setting Name="CB_계좌비공개" Type="System.Boolean" Scope="User">
+    <Setting Name="CB_검색보기" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="CBB_Record" Type="System.Int32" Scope="User">
@@ -5405,18 +5285,6 @@
     <Setting Name="CB_예상수익TS_시작" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="신규검색식" Type="System.String" Scope="User">
-      <Value Profile="(Default)">^^</Value>
-    </Setting>
-    <Setting Name="반복매매검색식" Type="System.String" Scope="User">
-      <Value Profile="(Default)">^^^^^^^^^^^^^</Value>
-    </Setting>
-    <Setting Name="계좌관리검색식" Type="System.String" Scope="User">
-      <Value Profile="(Default)">^^^^^^^^^</Value>
-    </Setting>
-    <Setting Name="와치검색식" Type="System.String" Scope="User">
-      <Value Profile="(Default)">^^^^</Value>
-    </Setting>
     <Setting Name="CBB_layout" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
@@ -5449,12 +5317,6 @@
     </Setting>
     <Setting Name="CBB_rebalance_Selltime_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
-    </Setting>
-    <Setting Name="combo_rebalance_condition_F" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="combo_rebalance_condition_G" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="combo_rebalance_jumun_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -5605,9 +5467,6 @@
     </Setting>
     <Setting Name="CBB_Liquidation_Cancel_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
-    </Setting>
-    <Setting Name="CBB_Liquidation_condition_C" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="CBB_Liquidation_jumun_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
@@ -5951,7 +5810,7 @@
     <Setting Name="CB_레이아웃고정_매매그룹" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="CB_지니_64항상위에" Type="System.Boolean" Scope="User">
+    <Setting Name="CB_지니64항상위에" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="CBB_TimeSell_매도비중_A" Type="System.Int32" Scope="User">
@@ -6008,46 +5867,46 @@
     <Setting Name="TB_잔고청산_매입금1_C" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_매입금_A" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_매입금_A" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_매입금_B" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_매입금_B" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_매입금_C" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_매입금_C" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_매입금_D" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_매입금_D" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_매입금_E" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_매입금_E" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_매입금_F" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_매입금_F" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_매입금_G" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_매입금_G" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_매입금_H" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_매입금_H" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_매입금_I" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_매입금_I" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_매입금_J" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_매입금_J" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_매입금_K" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_매입금_K" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_매입금_L" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_매입금_L" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_매입금_M" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_매입금_M" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_매입금_N" Type="System.Double" Scope="User">
+    <Setting Name="TB_Repeat_매입금_N" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="CB_추매금지_Liquidation_A" Type="System.Boolean" Scope="User">
@@ -6068,7 +5927,7 @@
     <Setting Name="CB_수익보전_Liquidation_C" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="CB_지니_64크기고정" Type="System.Boolean" Scope="User">
+    <Setting Name="CB_지니64크기고정" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="TB_신규횟수제한" Type="System.Int32" Scope="User">
@@ -6083,16 +5942,16 @@
     <Setting Name="신규횟수날짜" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="TB_추매주가이상" Type="System.Int32" Scope="User">
+    <Setting Name="TB_리밸_추매주가이상" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">1000</Value>
     </Setting>
-    <Setting Name="TB_추매주가이하" Type="System.Int32" Scope="User">
+    <Setting Name="TB_리밸_추매주가이하" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">100000</Value>
     </Setting>
-    <Setting Name="TB_추매등락률이상" Type="System.Double" Scope="User">
+    <Setting Name="TB_리밸_추매등락률이상" Type="System.Double" Scope="User">
       <Value Profile="(Default)">-5</Value>
     </Setting>
-    <Setting Name="TB_추매등락률이하" Type="System.Double" Scope="User">
+    <Setting Name="TB_리밸_추매등락률이하" Type="System.Double" Scope="User">
       <Value Profile="(Default)">27</Value>
     </Setting>
     <Setting Name="CB_손익기준" Type="System.Boolean" Scope="User">
@@ -6656,25 +6515,25 @@
     <Setting Name="TB_rebalance_누적거래대금_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_매입금_A" Type="System.Double" Scope="User">
+    <Setting Name="TB_Rebalance_매입금_A" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_매입금_B" Type="System.Double" Scope="User">
+    <Setting Name="TB_Rebalance_매입금_B" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_매입금_C" Type="System.Double" Scope="User">
+    <Setting Name="TB_Rebalance_매입금_C" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_매입금_D" Type="System.Double" Scope="User">
+    <Setting Name="TB_Rebalance_매입금_D" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_매입금_E" Type="System.Double" Scope="User">
+    <Setting Name="TB_Rebalance_매입금_E" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_매입금_F" Type="System.Double" Scope="User">
+    <Setting Name="TB_Rebalance_매입금_F" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_매입금_G" Type="System.Double" Scope="User">
+    <Setting Name="TB_Rebalance_매입금_G" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="CB_rebalance_매도체크_A" Type="System.Boolean" Scope="User">
@@ -6902,67 +6761,67 @@
     <Setting Name="CB_매매기간_수익보전_F" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod1_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod1_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod1_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma_D" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod1_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma_E" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod1_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma_F" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod1_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma_G" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod1_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_D" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_E" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_F" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_G" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_H" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_H" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_I" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_I" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_J" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_J" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_K" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_K" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_L" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_L" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_M" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_M" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_N" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_N" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="반복매매설정" Type="System.String" Scope="User">
@@ -7130,85 +6989,85 @@
     <Setting Name="CB_kosdaq_add_stop" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma_A" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod1_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma_B" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod1_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma_C" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod1_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma_D" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod1_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma_E" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod1_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma_F" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod1_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma_G" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod1_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma_H" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod1_H" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma_I" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod1_I" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma_J" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod1_J" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma_K" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod1_K" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma_L" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod1_L" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma_M" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod1_M" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma_N" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod1_N" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_rebalance_mma_A" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_MinMAPeriod1_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_rebalance_mma_B" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_MinMAPeriod1_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_rebalance_mma_C" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_MinMAPeriod1_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_rebalance_mma_D" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_MinMAPeriod1_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_rebalance_mma_E" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_MinMAPeriod1_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_rebalance_mma_F" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_MinMAPeriod1_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_rebalance_mma_G" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_MinMAPeriod1_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">3</Value>
     </Setting>
-    <Setting Name="TB_Liquidation_mma_A" Type="System.Int32" Scope="User">
+    <Setting Name="TB_Liquidation_MinMAPeriod_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_Liquidation_mma_B" Type="System.Int32" Scope="User">
+    <Setting Name="TB_Liquidation_MinMAPeriod_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_Liquidation_mma_C" Type="System.Int32" Scope="User">
+    <Setting Name="TB_Liquidation_MinMAPeriod_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="CBB_Liquidation_mma_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_Liquidation_MinMAPeriod_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_Liquidation_mma_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_Liquidation_MinMAPeriod_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_Liquidation_mma_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_Liquidation_MinMAPeriod_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="CB_NXT" Type="System.Boolean" Scope="User">
@@ -7298,88 +7157,88 @@
     <Setting Name="TB_rebalance_TS_2차_down_G" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_TS_1차_mma_A" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_TS_1차_MinMAPeriod_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_TS_1차_mma_B" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_TS_1차_MinMAPeriod_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_TS_1차_mma_C" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_TS_1차_MinMAPeriod_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_TS_1차_mma_D" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_TS_1차_MinMAPeriod_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_TS_1차_mma_E" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_TS_1차_MinMAPeriod_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_TS_1차_mma_F" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_TS_1차_MinMAPeriod_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_TS_1차_mma_G" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_TS_1차_MinMAPeriod_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_TS_2차_mma_A" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_TS_2차_MinMAPeriod_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_TS_2차_mma_B" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_TS_2차_MinMAPeriod_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_TS_2차_mma_C" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_TS_2차_MinMAPeriod_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_TS_2차_mma_D" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_TS_2차_MinMAPeriod_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_TS_2차_mma_E" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_TS_2차_MinMAPeriod_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_TS_2차_mma_F" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_TS_2차_MinMAPeriod_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_TS_2차_mma_G" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_TS_2차_MinMAPeriod_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_TS_1차_mma_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_TS_1차_MinMAPeriod_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_TS_1차_mma_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_TS_1차_MinMAPeriod_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_TS_1차_mma_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_TS_1차_MinMAPeriod_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_TS_1차_mma_D" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_TS_1차_MinMAPeriod_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_TS_1차_mma_E" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_TS_1차_MinMAPeriod_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_TS_1차_mma_F" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_TS_1차_MinMAPeriod_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_TS_1차_mma_G" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_TS_1차_MinMAPeriod_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_TS_2차_mma_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_TS_2차_MinMAPeriod_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_TS_2차_mma_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_TS_2차_MinMAPeriod_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_TS_2차_mma_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_TS_2차_MinMAPeriod_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_TS_2차_mma_D" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_TS_2차_MinMAPeriod_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_TS_2차_mma_E" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_TS_2차_MinMAPeriod_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_TS_2차_mma_F" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_TS_2차_MinMAPeriod_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_TS_2차_mma_G" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_TS_2차_MinMAPeriod_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="CB_Liquidation_TS_A" Type="System.Boolean" Scope="User">
@@ -7400,22 +7259,22 @@
     <Setting Name="TB_Liquidation_TS_down_C" Type="System.Double" Scope="User">
       <Value Profile="(Default)">1</Value>
     </Setting>
-    <Setting Name="TB_Liquidation_TS_mma_A" Type="System.Int32" Scope="User">
+    <Setting Name="TB_Liquidation_TS_MinMAPeriod_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_Liquidation_TS_mma_B" Type="System.Int32" Scope="User">
+    <Setting Name="TB_Liquidation_TS_MinMAPeriod_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_Liquidation_TS_mma_C" Type="System.Int32" Scope="User">
+    <Setting Name="TB_Liquidation_TS_MinMAPeriod_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="CBB_Liquidation_TS_mma_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_Liquidation_TS_MinMAPeriod_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="CBB_Liquidation_TS_mma_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_Liquidation_TS_MinMAPeriod_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="CBB_Liquidation_TS_mma_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_Liquidation_TS_MinMAPeriod_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
     <Setting Name="CB_매매기간_TS_A" Type="System.Boolean" Scope="User">
@@ -7454,611 +7313,644 @@
     <Setting Name="TB_매매기간_TS_down_F" Type="System.Double" Scope="User">
       <Value Profile="(Default)">-2</Value>
     </Setting>
-    <Setting Name="TB_매매기간_TS_mma_A" Type="System.Int32" Scope="User">
+    <Setting Name="TB_매매기간_TS_MinMAPeriod_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_매매기간_TS_mma_B" Type="System.Int32" Scope="User">
+    <Setting Name="TB_매매기간_TS_MinMAPeriod_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_매매기간_TS_mma_C" Type="System.Int32" Scope="User">
+    <Setting Name="TB_매매기간_TS_MinMAPeriod_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_매매기간_TS_mma_D" Type="System.Int32" Scope="User">
+    <Setting Name="TB_매매기간_TS_MinMAPeriod_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_매매기간_TS_mma_E" Type="System.Int32" Scope="User">
+    <Setting Name="TB_매매기간_TS_MinMAPeriod_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_매매기간_TS_mma_F" Type="System.Int32" Scope="User">
+    <Setting Name="TB_매매기간_TS_MinMAPeriod_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="CBB_매매기간_TS_mma_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_매매기간_TS_MinMAPeriod_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="CBB_매매기간_TS_mma_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_매매기간_TS_MinMAPeriod_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="CBB_매매기간_TS_mma_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_매매기간_TS_MinMAPeriod_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="CBB_매매기간_TS_mma_D" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_매매기간_TS_MinMAPeriod_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="CBB_매매기간_TS_mma_E" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_매매기간_TS_MinMAPeriod_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="CBB_매매기간_TS_mma_F" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_매매기간_TS_MinMAPeriod_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="TB_Liquidation_TS_dma_A" Type="System.Int32" Scope="User">
+    <Setting Name="TB_Liquidation_TS_DayMAPeriod_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_Liquidation_TS_dma_B" Type="System.Int32" Scope="User">
+    <Setting Name="TB_Liquidation_TS_DayMAPeriod_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_Liquidation_TS_dma_C" Type="System.Int32" Scope="User">
+    <Setting Name="TB_Liquidation_TS_DayMAPeriod_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="CBB_Liquidation_TS_dma_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_Liquidation_TS_DayMAPeriod_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="CBB_Liquidation_TS_dma_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_Liquidation_TS_DayMAPeriod_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="CBB_Liquidation_TS_dma_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_Liquidation_TS_DayMAPeriod_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="TB_매매기간_TS_dma_A" Type="System.Int32" Scope="User">
+    <Setting Name="TB_매매기간_TS_DayMAPeriod_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_매매기간_TS_dma_B" Type="System.Int32" Scope="User">
+    <Setting Name="TB_매매기간_TS_DayMAPeriod_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_매매기간_TS_dma_C" Type="System.Int32" Scope="User">
+    <Setting Name="TB_매매기간_TS_DayMAPeriod_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_매매기간_TS_dma_D" Type="System.Int32" Scope="User">
+    <Setting Name="TB_매매기간_TS_DayMAPeriod_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_매매기간_TS_dma_E" Type="System.Int32" Scope="User">
+    <Setting Name="TB_매매기간_TS_DayMAPeriod_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_매매기간_TS_dma_F" Type="System.Int32" Scope="User">
+    <Setting Name="TB_매매기간_TS_DayMAPeriod_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="CBB_매매기간_TS_dma_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_매매기간_TS_DayMAPeriod_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="CBB_매매기간_TS_dma_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_매매기간_TS_DayMAPeriod_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="CBB_매매기간_TS_dma_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_매매기간_TS_DayMAPeriod_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="CBB_매매기간_TS_dma_D" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_매매기간_TS_DayMAPeriod_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="CBB_매매기간_TS_dma_E" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_매매기간_TS_DayMAPeriod_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="CBB_매매기간_TS_dma_F" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_매매기간_TS_DayMAPeriod_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma2_A" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod2_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma2_B" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod2_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma2_C" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod2_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma2_D" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod2_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma2_E" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod2_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma2_F" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod2_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma2_G" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod2_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma2_H" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod2_H" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma2_I" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod2_I" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma2_J" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod2_J" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma2_K" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod2_K" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma2_L" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod2_L" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma2_M" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod2_M" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_mma2_N" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_MinMAPeriod2_N" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma2_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod2_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma2_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod2_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma2_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod2_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma2_D" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod2_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma2_E" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod2_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma2_F" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod2_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma2_G" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod2_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma2_H" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod2_H" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma2_I" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod2_I" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma2_J" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod2_J" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma2_K" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod2_K" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma2_L" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod2_L" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma2_M" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod2_M" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma2_N" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod2_N" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_배열_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_배열_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_배열_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_배열_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_배열_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_배열_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_배열_D" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_배열_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_배열_E" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_배열_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_배열_F" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_배열_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_배열_G" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_배열_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_배열_H" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_배열_H" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_배열_I" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_배열_I" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_배열_J" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_배열_J" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_배열_K" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_배열_K" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_배열_L" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_배열_L" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_배열_M" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_배열_M" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_mma_배열_N" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_MinMAPeriod1_배열_N" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma1_A" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod1_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma1_B" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod1_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma1_C" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod1_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma1_D" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod1_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma1_E" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod1_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma1_F" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod1_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma1_G" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod1_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma1_H" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod1_H" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma1_I" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod1_I" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma1_J" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod1_J" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma1_K" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod1_K" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma1_L" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod1_L" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma1_M" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod1_M" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma1_N" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod1_N" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma1_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod1_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma1_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod1_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma1_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod1_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma1_D" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod1_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma1_E" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod1_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma1_F" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod1_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma1_G" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod1_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma1_H" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod1_H" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma1_I" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod1_I" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma1_J" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod1_J" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma1_K" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod1_K" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma1_L" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod1_L" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma1_M" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod1_M" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma1_N" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod1_N" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma2_A" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod2_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma2_B" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod2_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma2_C" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod2_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma2_D" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod2_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma2_E" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod2_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma2_F" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod2_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma2_G" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod2_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma2_H" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod2_H" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma2_I" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod2_I" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma2_J" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod2_J" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma2_K" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod2_K" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma2_L" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod2_L" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma2_M" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod2_M" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_repeat_dma2_N" Type="System.Int32" Scope="User">
+    <Setting Name="TB_repeat_DayMAPeriod2_N" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma2_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod2_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma2_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod2_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma2_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod2_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma2_D" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod2_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma2_E" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod2_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma2_F" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod2_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma2_G" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod2_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma2_H" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod2_H" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma2_I" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod2_I" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma2_J" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod2_J" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma2_K" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod2_K" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma2_L" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod2_L" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma2_M" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod2_M" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma2_N" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod2_N" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma_배열_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod_배열_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma_배열_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod_배열_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma_배열_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod_배열_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma_배열_D" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod_배열_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma_배열_E" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod_배열_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma_배열_F" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod_배열_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma_배열_G" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod_배열_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma_배열_H" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod_배열_H" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma_배열_I" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod_배열_I" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma_배열_J" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod_배열_J" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma_배열_K" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod_배열_K" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma_배열_L" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod_배열_L" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma_배열_M" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod_배열_M" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_repeat_dma_배열_N" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_repeat_DayMAPeriod_배열_N" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_mma2_A" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_MinMAPeriod2_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_rebalance_mma2_B" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_MinMAPeriod2_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_rebalance_mma2_C" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_MinMAPeriod2_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_rebalance_mma2_D" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_MinMAPeriod2_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_rebalance_mma2_E" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_MinMAPeriod2_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_rebalance_mma2_F" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_MinMAPeriod2_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_rebalance_mma2_G" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_MinMAPeriod2_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma2_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod2_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma2_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod2_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma2_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod2_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma2_D" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod2_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma2_E" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod2_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma2_F" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod2_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma2_G" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod2_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma_배열_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod1_배열_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma_배열_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod1_배열_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma_배열_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod1_배열_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma_배열_D" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod1_배열_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma_배열_E" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod1_배열_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma_배열_F" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod1_배열_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_mma_배열_G" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_MinMAPeriod1_배열_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_dma1_A" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_DayMAPeriod1_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_rebalance_dma1_B" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_DayMAPeriod1_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_rebalance_dma1_C" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_DayMAPeriod1_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_rebalance_dma1_D" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_DayMAPeriod1_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_rebalance_dma1_E" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_DayMAPeriod1_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_rebalance_dma1_F" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_DayMAPeriod1_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="TB_rebalance_dma1_G" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_DayMAPeriod1_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma1_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod1_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma1_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod1_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma1_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod1_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma1_D" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod1_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma1_E" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod1_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma1_F" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod1_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma1_G" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod1_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="TB_rebalance_dma2_A" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_DayMAPeriod2_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_rebalance_dma2_B" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_DayMAPeriod2_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_rebalance_dma2_C" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_DayMAPeriod2_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_rebalance_dma2_D" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_DayMAPeriod2_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_rebalance_dma2_E" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_DayMAPeriod2_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_rebalance_dma2_F" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_DayMAPeriod2_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="TB_rebalance_dma2_G" Type="System.Int32" Scope="User">
+    <Setting Name="TB_rebalance_DayMAPeriod2_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">20</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma2_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod2_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma2_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod2_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma2_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod2_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma2_D" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod2_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma2_E" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod2_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma2_F" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod2_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma2_G" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod2_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma_배열_A" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod_배열_A" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma_배열_B" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod_배열_B" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma_배열_C" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod_배열_C" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma_배열_D" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod_배열_D" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma_배열_E" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod_배열_E" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma_배열_F" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod_배열_F" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="CBB_rebalance_dma_배열_G" Type="System.Int32" Scope="User">
+    <Setting Name="CBB_rebalance_DayMAPeriod_배열_G" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="CB_ETF매입비제외" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="appKey" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="appsecret" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="checkBox_mockapi" Type="System.Boolean" Scope="User">
+    <Setting Name="CB_신용주문" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="watch_condition_A" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="watch_condition_B" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="watch_condition_C" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="watch_condition_D" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CB_중간가주문" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CB_수동주문_중간가" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TB_반복_추매등락률이상" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">-10</Value>
+    </Setting>
+    <Setting Name="TB_반복_추매등락률이하" Type="System.Double" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="TB_반복_추매주가이상" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="TB_반복_추매주가이하" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1000000</Value>
+    </Setting>
+    <Setting Name="Combo_Buy_A_초회" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Combo_Buy_B_초회" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="combo_Sell_초회" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>
 </SettingsFile>

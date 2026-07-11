@@ -2,96 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace 지니_64
+namespace 지니64
 {
     class MA
     {
-        static Dictionary<string, Stockbalance> stockBalanceList = Form1.stockBalanceList;
-
-        public static void Moving_Average(Stockbalance 잔고)
-        {
-            if (잔고 == null)
-            {
-                foreach (var code in stockBalanceList.ToList())
-                {
-                    잔고 = stockBalanceList[code.Key];
-
-                    if (잔고.분_리스트.Contains(";"))
-                    {
-                        string[] 리스트 = 잔고.분_리스트.Split(';');
-                        if (리스트.Length >= 60)
-                        {
-                            잔고.분_리스트 = "";
-                            for (int i = 0; i < 리스트.Length; i++)
-                            {
-                                if (i == 59) break;
-
-                                if (잔고.분_리스트.Length < 1)
-                                {
-                                    잔고.분_리스트 = 리스트[i];
-                                }
-                                else
-                                {
-                                    잔고.분_리스트 = 잔고.분_리스트 + ";" + 리스트[i];
-                                }
-                            }
-
-                            잔고.분_리스트 = 잔고.현재가.ToString() + ";" + 잔고.분_리스트;
-                        }
-                    }
-                }
-            }
-            else
-            {
-                if (잔고.분_리스트.Contains(";"))
-                {
-                    string[] 리스트 = 잔고.분_리스트.Split(';');
-                    if (리스트.Length >= 60)
-                    {
-                        잔고.분_리스트 = "";
-                        for (int i = 0; i < 리스트.Length; i++)
-                        {
-                            if (i == 0)
-                            {
-                                잔고.분_리스트 = 잔고.현재가.ToString();
-                            }
-                            else
-                            {
-                                잔고.분_리스트 = 잔고.분_리스트 + ";" + 리스트[i];
-                            }
-                        }
-                    }
-                }
-
-                if (잔고.일_리스트.Contains(";"))
-                {
-                    string[] 리스트 = 잔고.일_리스트.Split(';');
-                    if (리스트.Length >= 60)
-                    {
-                        잔고.일_리스트 = "";
-                        for (int i = 0; i < 리스트.Length; i++)
-                        {
-                            if (i == 0)
-                            {
-                                잔고.일_리스트 = 잔고.현재가.ToString();
-                            }
-                            else
-                            {
-                                잔고.일_리스트 = 잔고.일_리스트 + ";" + 리스트[i];
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
+      
 
         public static void Get_MA()
         {
-            change_value();
-            foreach (var code in Form1.stockBalanceList.ToList())
+            foreach (var 잔고 in Form1.stockBalanceList.Values)
             {
-                Stockbalance 잔고 = Form1.stockBalanceList[code.Key];
                 MA.Get_Min_Moving_Average(잔고);
                 MA.Get_Day_Moving_Average(잔고);
             }
@@ -99,541 +19,383 @@ namespace 지니_64
 
         public static void Mma_Record(Stockbalance 잔고)
         {
+            // [Case 1] 1분 주기 실행 (잔고 == null인 경우)
+            // 모든 종목을 순회하며 '새로운 1분 캔들'을 추가하고, 오래된 데이터를 버림
             if (잔고 == null)
             {
-                foreach (var code in stockBalanceList.ToList())
+                foreach (var 잔고_ in Form1.stockBalanceList.Values)
                 {
-                    잔고 = stockBalanceList[code.Key];
+                    if (string.IsNullOrEmpty(잔고_.분_리스트)) continue;
 
-                    if (잔고.분_리스트.Contains(";"))
+                    // 1. 현재 데이터 개수 확인 (세미콜론 개수로 파악)
+                    // (Split 비용을 아끼기 위해 문자열 탐색)
+                    int count = 0;
+                    int cutIndex = -1; // 299번째 세미콜론 위치 (300개 남기기 위함)
+
+                    for (int i = 0; i < 잔고_.분_리스트.Length; i++)
                     {
-                        string[] 리스트 = 잔고.분_리스트.Split(';');
-                        if (리스트.Length >= 300)
+                        if (잔고_.분_리스트[i] == ';')
                         {
-                            잔고.분_리스트 = "";
-                            for (int i = 0; i < 리스트.Length; i++)
+                            count++;
+                            if (count == 299) // 299번째 구분자를 찾음 (앞에 300개 데이터 유지)
                             {
-                                if (i == 300) break;
-
-                                if (잔고.분_리스트.Length < 1)
-                                {
-                                    잔고.분_리스트 = 리스트[i];
-                                }
-                                else
-                                {
-                                    잔고.분_리스트 = 잔고.분_리스트 + ";" + 리스트[i];
-                                }
+                                cutIndex = i;
+                                break;
                             }
-
-                            잔고.분_리스트 = 잔고.현재가.ToString() + ";" + 잔고.분_리스트;
                         }
                     }
+
+                    // 2. 데이터 정리 및 추가
+                    if (count >= 299 && cutIndex != -1)
+                    {
+                        // [최적화] 뒤에 있는 오래된 데이터는 잘라내고(Substring), 앞에 새 데이터를 붙임
+                        // 예: "100;99;...;old" -> "현재가;100;99;..."
+                        잔고_.분_리스트 = $"{잔고_.현재가};{잔고_.분_리스트.Substring(0, cutIndex)}";
+                    }
+                    else
+                    {
+                        // 데이터가 아직 300개 안 찼으면 그냥 앞에 추가
+                        잔고_.분_리스트 = $"{잔고_.현재가};{잔고_.분_리스트}";
+                    }
+
+                    // 3. 이평선 재계산
+                    Get_Min_Moving_Average(잔고_);
                 }
             }
+            // [Case 2] 실시간 현재가 갱신 (잔고 != null)
+            // 맨 앞의 데이터(0번 인덱스)만 현재가로 교체
             else
             {
-                string[] 리스트 = 잔고.분_리스트.Split(';');
+                if (string.IsNullOrEmpty(잔고.분_리스트)) return;
 
-                if (리스트.Length >= 300)
+                // 1. 첫 번째 세미콜론(;) 위치 찾기
+                int firstSemiIndex = 잔고.분_리스트.IndexOf(';');
+
+                // 2. 문자열 조립 (Split, For문 제거됨)
+                if (firstSemiIndex != -1)
                 {
-                    잔고.분_리스트 = "";
-                    for (int i = 0; i < 리스트.Length; i++)
-                    {
-                        if (i == 0)
-                        {
-                            잔고.분_리스트 = 잔고.현재가.ToString();
-                        }
-                        else
-                        {
-                            잔고.분_리스트 = 잔고.분_리스트 + ";" + 리스트[i];
-                        }
-                    }
+                    // [최적화] 앞부분(옛날 현재가)은 버리고, 새 현재가와 뒷부분(과거 데이터)을 붙임
+                    잔고.분_리스트 = $"{잔고.현재가}{잔고.분_리스트.Substring(firstSemiIndex)}";
                 }
-            }
+                else
+                {
+                    // 데이터가 1개뿐일 때
+                    잔고.분_리스트 = 잔고.현재가.ToString();
+                }
 
-            Get_Min_Moving_Average(잔고);
+                // 3. 이평선 재계산
+                Get_Min_Moving_Average(잔고);
+            }
         }
 
         public static void Get_Min_Moving_Average(Stockbalance 잔고)
         {
-            if (잔고.분_리스트.Contains(';'))
+            // 1. 유효성 검사 (데이터 없으면 빠른 종료)
+            if (잔고 == null || string.IsNullOrEmpty(잔고.분_리스트)) return;
+            if (!Form1.Min_ma_list.TryGetValue(잔고.종목코드, out MAPeriod MAD)) return;
+
+            // 2. [최적화 1단계] 문자열 분리 (Split)
+            string[] s_prices = 잔고.분_리스트.Split(';');
+
+            // 3. [최적화 2단계] 미리 double 배열로 변환 (Parsing 비용 제거)
+            // 데이터 개수만큼 double 배열을 만듭니다.
+            double[] d_prices = new double[s_prices.Length];
+
+            // 한 번만 싹 변환해 둡니다. (여기서만 시간 소요됨)
+            for (int i = 0; i < s_prices.Length; i++)
             {
-                ma avg = Form1.Min_ma_list[잔고.종목코드];
+                double.TryParse(s_prices[i], out d_prices[i]);
+            }
 
-                avg.repeat_ma1_A = 값구하기(avg.repeat_ma1_value_A);
-                avg.repeat_ma1_B = 값구하기(avg.repeat_ma1_value_B);
-                avg.repeat_ma1_C = 값구하기(avg.repeat_ma1_value_C);
-                avg.repeat_ma1_D = 값구하기(avg.repeat_ma1_value_D);
-                avg.repeat_ma1_E = 값구하기(avg.repeat_ma1_value_E);
-                avg.repeat_ma1_F = 값구하기(avg.repeat_ma1_value_F);
-                avg.repeat_ma1_G = 값구하기(avg.repeat_ma1_value_G);
-                avg.repeat_ma1_H = 값구하기(avg.repeat_ma1_value_H);
-                avg.repeat_ma1_I = 값구하기(avg.repeat_ma1_value_I);
-                avg.repeat_ma1_J = 값구하기(avg.repeat_ma1_value_J);
-                avg.repeat_ma1_K = 값구하기(avg.repeat_ma1_value_K);
-                avg.repeat_ma1_L = 값구하기(avg.repeat_ma1_value_L);
-                avg.repeat_ma1_M = 값구하기(avg.repeat_ma1_value_M);
-                avg.repeat_ma1_N = 값구하기(avg.repeat_ma1_value_N);
-
-                avg.repeat_ma2_A = 값구하기(avg.repeat_ma2_value_A);
-                avg.repeat_ma2_B = 값구하기(avg.repeat_ma2_value_B);
-                avg.repeat_ma2_C = 값구하기(avg.repeat_ma2_value_C);
-                avg.repeat_ma2_D = 값구하기(avg.repeat_ma2_value_D);
-                avg.repeat_ma2_E = 값구하기(avg.repeat_ma2_value_E);
-                avg.repeat_ma2_F = 값구하기(avg.repeat_ma2_value_F);
-                avg.repeat_ma2_G = 값구하기(avg.repeat_ma2_value_G);
-                avg.repeat_ma2_H = 값구하기(avg.repeat_ma2_value_H);
-                avg.repeat_ma2_I = 값구하기(avg.repeat_ma2_value_I);
-                avg.repeat_ma2_J = 값구하기(avg.repeat_ma2_value_J);
-                avg.repeat_ma2_K = 값구하기(avg.repeat_ma2_value_K);
-                avg.repeat_ma2_L = 값구하기(avg.repeat_ma2_value_L);
-                avg.repeat_ma2_M = 값구하기(avg.repeat_ma2_value_M);
-                avg.repeat_ma2_N = 값구하기(avg.repeat_ma2_value_N);
-
-                avg.Rebal_ma1_A = 값구하기(avg.Rebal_ma1_value_A);
-                avg.Rebal_ma1_B = 값구하기(avg.Rebal_ma1_value_B);
-                avg.Rebal_ma1_C = 값구하기(avg.Rebal_ma1_value_C);
-                avg.Rebal_ma1_D = 값구하기(avg.Rebal_ma1_value_D);
-                avg.Rebal_ma1_E = 값구하기(avg.Rebal_ma1_value_E);
-                avg.Rebal_ma1_F = 값구하기(avg.Rebal_ma1_value_F);
-                avg.Rebal_ma1_G = 값구하기(avg.Rebal_ma1_value_G);
-
-                avg.Rebal_ma2_A = 값구하기(avg.Rebal_ma2_value_A);
-                avg.Rebal_ma2_B = 값구하기(avg.Rebal_ma2_value_B);
-                avg.Rebal_ma2_C = 값구하기(avg.Rebal_ma2_value_C);
-                avg.Rebal_ma2_D = 값구하기(avg.Rebal_ma2_value_D);
-                avg.Rebal_ma2_E = 값구하기(avg.Rebal_ma2_value_E);
-                avg.Rebal_ma2_F = 값구하기(avg.Rebal_ma2_value_F);
-                avg.Rebal_ma2_G = 값구하기(avg.Rebal_ma2_value_G);
-
-
-                avg.Rebal_TS_ma_1차_A = 값구하기(avg.Rebal_TS_ma_1차_value_A);
-                avg.Rebal_TS_ma_1차_B = 값구하기(avg.Rebal_TS_ma_1차_value_B);
-                avg.Rebal_TS_ma_1차_C = 값구하기(avg.Rebal_TS_ma_1차_value_C);
-                avg.Rebal_TS_ma_1차_D = 값구하기(avg.Rebal_TS_ma_1차_value_D);
-                avg.Rebal_TS_ma_1차_E = 값구하기(avg.Rebal_TS_ma_1차_value_E);
-                avg.Rebal_TS_ma_1차_F = 값구하기(avg.Rebal_TS_ma_1차_value_F);
-                avg.Rebal_TS_ma_1차_G = 값구하기(avg.Rebal_TS_ma_1차_value_G);
-
-                avg.Rebal_TS_ma_2차_A = 값구하기(avg.Rebal_TS_ma_2차_value_A);
-                avg.Rebal_TS_ma_2차_B = 값구하기(avg.Rebal_TS_ma_2차_value_B);
-                avg.Rebal_TS_ma_2차_C = 값구하기(avg.Rebal_TS_ma_2차_value_C);
-                avg.Rebal_TS_ma_2차_D = 값구하기(avg.Rebal_TS_ma_2차_value_D);
-                avg.Rebal_TS_ma_2차_E = 값구하기(avg.Rebal_TS_ma_2차_value_E);
-                avg.Rebal_TS_ma_2차_F = 값구하기(avg.Rebal_TS_ma_2차_value_F);
-                avg.Rebal_TS_ma_2차_G = 값구하기(avg.Rebal_TS_ma_2차_value_G);
-
-                avg.Liquidation_ma_A = 값구하기(avg.Liquidation_ma_value_A);
-                avg.Liquidation_ma_B = 값구하기(avg.Liquidation_ma_value_B);
-                avg.Liquidation_ma_C = 값구하기(avg.Liquidation_ma_value_C);
-
-                avg.Liquidation_TS_ma_A = 값구하기(avg.Liquidation_TS_ma_value_A);
-                avg.Liquidation_TS_ma_B = 값구하기(avg.Liquidation_TS_ma_value_B);
-                avg.Liquidation_TS_ma_C = 값구하기(avg.Liquidation_TS_ma_value_C);
-
-                avg.매매기간_TS_ma_A = 값구하기(avg.매매기간_TS_ma_value_A);
-                avg.매매기간_TS_ma_B = 값구하기(avg.매매기간_TS_ma_value_B);
-                avg.매매기간_TS_ma_C = 값구하기(avg.매매기간_TS_ma_value_C);
-                avg.매매기간_TS_ma_D = 값구하기(avg.매매기간_TS_ma_value_D);
-                avg.매매기간_TS_ma_E = 값구하기(avg.매매기간_TS_ma_value_E);
-                avg.매매기간_TS_ma_F = 값구하기(avg.매매기간_TS_ma_value_F);
-
-                double 값구하기(int 주기)
+            // 4. [최적화된 함수] + [로그 출력 기능 추가]
+            // debugName을 추가하여 어떤 이평선인지 확인할 수 있게 했습니다.
+            double CalculateMa(int period, bool use_cb, bool use_combo, bool In_check, string debugName)
+            {
+                if (In_check)
                 {
-                    string[] list = 잔고.분_리스트.Split(';');
-                    double 평균합 = 0;
-
-                    for (int i = 0; i < list.Length; i++)
+                    if (!Form1.감시주문_List.Values.Any(o => o.종목코드 == 잔고.종목코드 && o.TS))
                     {
-                        if (i == 주기) break;
-                        double.TryParse(list[i], out double result);
-                        평균합 = 평균합 + result;
-                    }
-
-                    if (list.Length >= 주기)
-                    {
-                        return 평균합 / 주기;
-                    }
-                    else
-                    {
-                        return 평균합 / list.Length;
+                        return 0;
                     }
                 }
 
-                //if (잔고.종목명.Equals("국전약품"))
-                //{
-                //    Console.WriteLine("\nmarket_code: " + avg.code);
-                //    Console.WriteLine("DateTime.Now: " + DateTime.Now.ToString("HHmmss"));
+                if (!use_cb || !use_combo) return 0;
+                if (period <= 0) return 0;
 
-                //    Console.WriteLine("잔고.분_리스트 Length : " + 잔고.분_리스트.Split(';').Length);
-                //    Console.WriteLine("잔고.분_리스트: " + 잔고.분_리스트);
+                double sum = 0;
+                int count = 0;
+                int limit = Math.Min(d_prices.Length, period);
 
-                //    Console.WriteLine();
-                //    Console.WriteLine("Rebal_mma1_A: " + avg.Rebal_ma1_A);
-                //    Console.WriteLine("Rebal_mma1_B: " + avg.Rebal_ma1_B);
-                //    Console.WriteLine("Rebal_mma1_C: " + avg.Rebal_ma1_C);
-                //    Console.WriteLine("Rebal_mma1_D: " + avg.Rebal_ma1_D);
-                //    Console.WriteLine("Rebal_mma1_E: " + avg.Rebal_ma1_E);
-                //    Console.WriteLine("Rebal_mma1_F: " + avg.Rebal_ma1_F);
-                //    Console.WriteLine("Rebal_mma1_G: " + avg.Rebal_ma1_G);
-                //    Console.WriteLine();
-                //    Console.WriteLine("Rebal_mma2_A: " + avg.Rebal_ma2_A);
-                //    Console.WriteLine("Rebal_mma2_B: " + avg.Rebal_ma2_B);
-                //    Console.WriteLine("Rebal_mma2_C: " + avg.Rebal_ma2_C);
-                //    Console.WriteLine("Rebal_mma2_D: " + avg.Rebal_ma2_D);
-                //    Console.WriteLine("Rebal_mma2_E: " + avg.Rebal_ma2_E);
-                //    Console.WriteLine("Rebal_mma2_F: " + avg.Rebal_ma2_F);
-                //    Console.WriteLine("Rebal_mma2_G: " + avg.Rebal_ma2_G);
-                //    Console.WriteLine();
-                //    Console.WriteLine("Rebal_TS_ma_1차_A: " + avg.Rebal_TS_ma_1차_A);
-                //    Console.WriteLine("Rebal_TS_ma_1차_B: " + avg.Rebal_TS_ma_1차_B);
-                //    Console.WriteLine("Rebal_TS_ma_1차_C: " + avg.Rebal_TS_ma_1차_C);
-                //    Console.WriteLine("Rebal_TS_ma_1차_D: " + avg.Rebal_TS_ma_1차_D);
-                //    Console.WriteLine("Rebal_TS_ma_1차_E: " + avg.Rebal_TS_ma_1차_E);
-                //    Console.WriteLine("Rebal_TS_ma_1차_F: " + avg.Rebal_TS_ma_1차_F);
-                //    Console.WriteLine("Rebal_TS_ma_1차_G: " + avg.Rebal_TS_ma_1차_G);
-                //    Console.WriteLine();
-                //    Console.WriteLine("Rebal_TS_ma_2차_A: " + avg.Rebal_TS_ma_2차_A);
-                //    Console.WriteLine("Rebal_TS_ma_2차_B: " + avg.Rebal_TS_ma_2차_B);
-                //    Console.WriteLine("Rebal_TS_ma_2차_C: " + avg.Rebal_TS_ma_2차_C);
-                //    Console.WriteLine("Rebal_TS_ma_2차_D: " + avg.Rebal_TS_ma_2차_D);
-                //    Console.WriteLine("Rebal_TS_ma_2차_E: " + avg.Rebal_TS_ma_2차_E);
-                //    Console.WriteLine("Rebal_TS_ma_2차_F: " + avg.Rebal_TS_ma_2차_F);
-                //    Console.WriteLine("Rebal_TS_ma_2차_G: " + avg.Rebal_TS_ma_2차_G);
-                //}
+                // 숫자 배열을 바로 더함 (CPU가 가장 좋아하는 연산)
+                for (int i = 0; i < limit; i++)
+                {
+                    sum += d_prices[i];
+                    count++;
+                }
+
+                double result = (count > 0) ? sum / count : 0;
+
+                // =========================================================
+                // [★ 로그 출력] 원하시는 계산 로그입니다.
+                // 너무 많이 출력되면 주석 처리 하세요.
+                // =========================================================
+                // 예: [이평계산] 005930 | repeat_MAValue1_A (기간:5) -> 72500
+                bool showLog = false; // false로 바꾸면 로그 안 나옴
+
+                if (showLog)
+                {
+                  Form1.Console_print($"[이평계산] {잔고.종목명} | {debugName} (기간:{period}) -> {result:N0} (현재가:{잔고.현재가:N0})");
+                }
+
+                return result;
             }
+
+            // -----------------------------------------------------------
+            // 5. 값 계산 및 할당 (변수명을 같이 넘겨주어 로그 확인이 쉽습니다)
+            // -----------------------------------------------------------
+
+            //체크박스 사용인지 확인
+            // [반복 매매 1차]
+            MAD.Repeat_MAValue1_A = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod1_A, GenieConfig.CB_repeat_use_A, GenieConfig.CBB_repeat_MinMAPeriod1_A > 0, false, "Min repeat_MAValue1_A");
+            MAD.Repeat_MAValue1_B = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod1_B, GenieConfig.CB_repeat_use_B, GenieConfig.CBB_repeat_MinMAPeriod1_A > 0, false, "Min repeat_MAValue1_B");
+            MAD.Repeat_MAValue1_C = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod1_C, GenieConfig.CB_repeat_use_C, GenieConfig.CBB_repeat_MinMAPeriod1_A > 0, false, "Min repeat_MAValue1_C");
+            MAD.Repeat_MAValue1_D = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod1_D, GenieConfig.CB_repeat_use_D, GenieConfig.CBB_repeat_MinMAPeriod1_A > 0, false, "Min repeat_MAValue1_D");
+            MAD.Repeat_MAValue1_E = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod1_E, GenieConfig.CB_repeat_use_E, GenieConfig.CBB_repeat_MinMAPeriod1_A > 0, false, "Min repeat_MAValue1_E");
+            MAD.Repeat_MAValue1_F = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod1_F, GenieConfig.CB_repeat_use_F, GenieConfig.CBB_repeat_MinMAPeriod1_A > 0, false, "Min repeat_MAValue1_F");
+            MAD.Repeat_MAValue1_G = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod1_G, GenieConfig.CB_repeat_use_G, GenieConfig.CBB_repeat_MinMAPeriod1_A > 0, false, "Min repeat_MAValue1_G");
+            MAD.Repeat_MAValue1_H = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod1_H, GenieConfig.CB_repeat_use_H, GenieConfig.CBB_repeat_MinMAPeriod1_A > 0, false, "Min repeat_MAValue1_H");
+            MAD.Repeat_MAValue1_I = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod1_I, GenieConfig.CB_repeat_use_I, GenieConfig.CBB_repeat_MinMAPeriod1_A > 0, false, "Min repeat_MAValue1_I");
+            MAD.Repeat_MAValue1_J = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod1_J, GenieConfig.CB_repeat_use_J, GenieConfig.CBB_repeat_MinMAPeriod1_A > 0, false, "Min repeat_MAValue1_J");
+            MAD.Repeat_MAValue1_K = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod1_K, GenieConfig.CB_repeat_use_K, GenieConfig.CBB_repeat_MinMAPeriod1_A > 0, false, "Min repeat_MAValue1_K");
+            MAD.Repeat_MAValue1_L = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod1_L, GenieConfig.CB_repeat_use_L, GenieConfig.CBB_repeat_MinMAPeriod1_A > 0, false, "Min repeat_MAValue1_L");
+            MAD.Repeat_MAValue1_M = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod1_M, GenieConfig.CB_repeat_use_M, GenieConfig.CBB_repeat_MinMAPeriod1_A > 0, false, "Min repeat_MAValue1_M");
+            MAD.Repeat_MAValue1_N = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod1_N, GenieConfig.CB_repeat_use_N, GenieConfig.CBB_repeat_MinMAPeriod1_A > 0, false, "Min repeat_MAValue1_N");
+
+            // [반복 매매 2차]
+            MAD.Repeat_MAValue2_A = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod2_A, GenieConfig.CB_repeat_use_A, GenieConfig.CBB_repeat_MinMAPeriod2_A > 0, false, "Min repeat_MAValue2_A");
+            MAD.Repeat_MAValue2_B = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod2_B, GenieConfig.CB_repeat_use_B, GenieConfig.CBB_repeat_MinMAPeriod2_A > 0, false, "Min repeat_MAValue2_B");
+            MAD.Repeat_MAValue2_C = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod2_C, GenieConfig.CB_repeat_use_C, GenieConfig.CBB_repeat_MinMAPeriod2_A > 0, false, "Min repeat_MAValue2_C");
+            MAD.Repeat_MAValue2_D = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod2_D, GenieConfig.CB_repeat_use_D, GenieConfig.CBB_repeat_MinMAPeriod2_A > 0, false, "Min repeat_MAValue2_D");
+            MAD.Repeat_MAValue2_E = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod2_E, GenieConfig.CB_repeat_use_E, GenieConfig.CBB_repeat_MinMAPeriod2_A > 0, false, "Min repeat_MAValue2_E");
+            MAD.Repeat_MAValue2_F = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod2_F, GenieConfig.CB_repeat_use_F, GenieConfig.CBB_repeat_MinMAPeriod2_A > 0, false, "Min repeat_MAValue2_F");
+            MAD.Repeat_MAValue2_G = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod2_G, GenieConfig.CB_repeat_use_G, GenieConfig.CBB_repeat_MinMAPeriod2_A > 0, false, "Min repeat_MAValue2_G");
+            MAD.Repeat_MAValue2_H = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod2_H, GenieConfig.CB_repeat_use_H, GenieConfig.CBB_repeat_MinMAPeriod2_A > 0, false, "Min repeat_MAValue2_H");
+            MAD.Repeat_MAValue2_I = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod2_I, GenieConfig.CB_repeat_use_I, GenieConfig.CBB_repeat_MinMAPeriod2_A > 0, false, "Min repeat_MAValue2_I");
+            MAD.Repeat_MAValue2_J = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod2_J, GenieConfig.CB_repeat_use_J, GenieConfig.CBB_repeat_MinMAPeriod2_A > 0, false, "Min repeat_MAValue2_J");
+            MAD.Repeat_MAValue2_K = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod2_K, GenieConfig.CB_repeat_use_K, GenieConfig.CBB_repeat_MinMAPeriod2_A > 0, false, "Min repeat_MAValue2_K");
+            MAD.Repeat_MAValue2_L = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod2_L, GenieConfig.CB_repeat_use_L, GenieConfig.CBB_repeat_MinMAPeriod2_A > 0, false, "Min repeat_MAValue2_L");
+            MAD.Repeat_MAValue2_M = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod2_M, GenieConfig.CB_repeat_use_M, GenieConfig.CBB_repeat_MinMAPeriod2_A > 0, false, "Min repeat_MAValue2_M");
+            MAD.Repeat_MAValue2_N = CalculateMa(GenieConfig.TB_repeat_MinMAPeriod2_N, GenieConfig.CB_repeat_use_N, GenieConfig.CBB_repeat_MinMAPeriod2_A > 0, false, "Min repeat_MAValue2_N");
+
+            // [리밸런싱 1차]
+            MAD.Rebalance_MAValue1_A = CalculateMa(GenieConfig.TB_rebalance_MinMAPeriod1_A, GenieConfig.CB_rebalance_A, GenieConfig.CBB_rebalance_MinMAPeriod1_A > 0, false, "Min Rebalance_MAValue1_A");
+            MAD.Rebalance_MAValue1_B = CalculateMa(GenieConfig.TB_rebalance_MinMAPeriod1_B, GenieConfig.CB_rebalance_B, GenieConfig.CBB_rebalance_MinMAPeriod1_B > 0, false, "Min Rebalance_MAValue1_B");
+            MAD.Rebalance_MAValue1_C = CalculateMa(GenieConfig.TB_rebalance_MinMAPeriod1_C, GenieConfig.CB_rebalance_C, GenieConfig.CBB_rebalance_MinMAPeriod1_C > 0, false, "Min Rebalance_MAValue1_C");
+            MAD.Rebalance_MAValue1_D = CalculateMa(GenieConfig.TB_rebalance_MinMAPeriod1_D, GenieConfig.CB_rebalance_D, GenieConfig.CBB_rebalance_MinMAPeriod1_D > 0, false, "Min Rebalance_MAValue1_D");
+            MAD.Rebalance_MAValue1_E = CalculateMa(GenieConfig.TB_rebalance_MinMAPeriod1_E, GenieConfig.CB_rebalance_E, GenieConfig.CBB_rebalance_MinMAPeriod1_E > 0, false, "Min Rebalance_MAValue1_E");
+            MAD.Rebalance_MAValue1_F = CalculateMa(GenieConfig.TB_rebalance_MinMAPeriod1_F, GenieConfig.CB_rebalance_F, GenieConfig.CBB_rebalance_MinMAPeriod1_F > 0, false, "Min Rebalance_MAValue1_F");
+            MAD.Rebalance_MAValue1_G = CalculateMa(GenieConfig.TB_rebalance_MinMAPeriod1_G, GenieConfig.CB_rebalance_G, GenieConfig.CBB_rebalance_MinMAPeriod1_G > 0, false, "Min Rebalance_MAValue1_G");
+
+            // [리밸런싱 2차]
+            MAD.Rebalance_MAValue2_A = CalculateMa(GenieConfig.TB_rebalance_MinMAPeriod2_A, GenieConfig.CB_rebalance_A, GenieConfig.CBB_rebalance_MinMAPeriod2_A > 0, false, "Min Rebalance_MAValue2_A");
+            MAD.Rebalance_MAValue2_B = CalculateMa(GenieConfig.TB_rebalance_MinMAPeriod2_B, GenieConfig.CB_rebalance_B, GenieConfig.CBB_rebalance_MinMAPeriod2_B > 0, false, "Min Rebalance_MAValue2_B");
+            MAD.Rebalance_MAValue2_C = CalculateMa(GenieConfig.TB_rebalance_MinMAPeriod2_C, GenieConfig.CB_rebalance_C, GenieConfig.CBB_rebalance_MinMAPeriod2_C > 0, false, "Min Rebalance_MAValue2_C");
+            MAD.Rebalance_MAValue2_D = CalculateMa(GenieConfig.TB_rebalance_MinMAPeriod2_D, GenieConfig.CB_rebalance_D, GenieConfig.CBB_rebalance_MinMAPeriod2_D > 0, false, "Min Rebalance_MAValue2_D");
+            MAD.Rebalance_MAValue2_E = CalculateMa(GenieConfig.TB_rebalance_MinMAPeriod2_E, GenieConfig.CB_rebalance_E, GenieConfig.CBB_rebalance_MinMAPeriod2_E > 0, false, "Min Rebalance_MAValue2_E");
+            MAD.Rebalance_MAValue2_F = CalculateMa(GenieConfig.TB_rebalance_MinMAPeriod2_F, GenieConfig.CB_rebalance_F, GenieConfig.CBB_rebalance_MinMAPeriod2_F > 0, false, "Min Rebalance_MAValue2_F");
+            MAD.Rebalance_MAValue2_G = CalculateMa(GenieConfig.TB_rebalance_MinMAPeriod2_G, GenieConfig.CB_rebalance_G, GenieConfig.CBB_rebalance_MinMAPeriod2_G > 0, false, "Min Rebalance_MAValue2_G");
+
+            // [청산]
+            MAD.Liquidation_MAValue_A = CalculateMa(GenieConfig.TB_Liquidation_MinMAPeriod_A, GenieConfig.CB_Liquidation_A, GenieConfig.CBB_Liquidation_MinMAPeriod_A > 0, false, "Min Liquidation_MAValue_A");
+            MAD.Liquidation_MAValue_B = CalculateMa(GenieConfig.TB_Liquidation_MinMAPeriod_B, GenieConfig.CB_Liquidation_B, GenieConfig.CBB_Liquidation_MinMAPeriod_B > 0, false, "Min Liquidation_MAValue_B");
+            MAD.Liquidation_MAValue_C = CalculateMa(GenieConfig.TB_Liquidation_MinMAPeriod_C, GenieConfig.CB_Liquidation_C, GenieConfig.CBB_Liquidation_MinMAPeriod_C > 0, false, "Min Liquidation_MAValue_C");
+
+            // [청산 TS]
+            MAD.Liquidation_TS_MAValue_A = CalculateMa(GenieConfig.TB_Liquidation_TS_MinMAPeriod_A, GenieConfig.CB_Liquidation_A, GenieConfig.CBB_Liquidation_TS_MinMAPeriod_A > 0, false, "Min Liquidation_TS_MAValue_A");
+            MAD.Liquidation_TS_MAValue_B = CalculateMa(GenieConfig.TB_Liquidation_TS_MinMAPeriod_B, GenieConfig.CB_Liquidation_B, GenieConfig.CBB_Liquidation_TS_MinMAPeriod_B > 0, false, "Min Liquidation_TS_MAValue_B");
+            MAD.Liquidation_TS_MAValue_C = CalculateMa(GenieConfig.TB_Liquidation_TS_MinMAPeriod_C, GenieConfig.CB_Liquidation_C, GenieConfig.CBB_Liquidation_TS_MinMAPeriod_C > 0, false, "Min Liquidation_TS_MAValue_C");
+
+            // [매매기간]
+            MAD.매매기간_TS_MAValue_A = CalculateMa(GenieConfig.TB_매매기간_TS_MinMAPeriod_A, GenieConfig.CBB_매매기간_trading_A > 0, GenieConfig.CBB_매매기간_TS_MinMAPeriod_A > 0, false, "Min 매매기간_TS_MAValue_A");
+            MAD.매매기간_TS_MAValue_B = CalculateMa(GenieConfig.TB_매매기간_TS_MinMAPeriod_B, GenieConfig.CBB_매매기간_trading_B > 0, GenieConfig.CBB_매매기간_TS_MinMAPeriod_B > 0, false, "Min 매매기간_TS_MAValue_B");
+            MAD.매매기간_TS_MAValue_C = CalculateMa(GenieConfig.TB_매매기간_TS_MinMAPeriod_C, GenieConfig.CBB_매매기간_trading_C > 0, GenieConfig.CBB_매매기간_TS_MinMAPeriod_C > 0, false, "Min 매매기간_TS_MAValue_C");
+            MAD.매매기간_TS_MAValue_D = CalculateMa(GenieConfig.TB_매매기간_TS_MinMAPeriod_D, GenieConfig.CBB_매매기간_trading_D > 0, GenieConfig.CBB_매매기간_TS_MinMAPeriod_D > 0, false, "Min 매매기간_TS_MAValue_D");
+            MAD.매매기간_TS_MAValue_E = CalculateMa(GenieConfig.TB_매매기간_TS_MinMAPeriod_E, GenieConfig.CBB_매매기간_trading_E > 0, GenieConfig.CBB_매매기간_TS_MinMAPeriod_E > 0, false, "Min 매매기간_TS_MAValue_E");
+            MAD.매매기간_TS_MAValue_F = CalculateMa(GenieConfig.TB_매매기간_TS_MinMAPeriod_F, GenieConfig.CBB_매매기간_trading_F > 0, GenieConfig.CBB_매매기간_TS_MinMAPeriod_F > 0, false, "Min 매매기간_TS_MAValue_F");
+
+            //감시주문이 있는지 먼저 확인후 실행
+            // [리밸런싱 TS 1차]
+            MAD.Rebalance_TS_MAValue_1차_A = CalculateMa(GenieConfig.TB_rebalance_TS_1차_MinMAPeriod_A, true, true, true, "Min Rebalance_TS_MAValue_1차_A");
+            MAD.Rebalance_TS_MAValue_1차_B = CalculateMa(GenieConfig.TB_rebalance_TS_1차_MinMAPeriod_B, true, true, true, "Min Rebalance_TS_MAValue_1차_B");
+            MAD.Rebalance_TS_MAValue_1차_C = CalculateMa(GenieConfig.TB_rebalance_TS_1차_MinMAPeriod_C, true, true, true, "Min Rebalance_TS_MAValue_1차_C");
+            MAD.Rebalance_TS_MAValue_1차_D = CalculateMa(GenieConfig.TB_rebalance_TS_1차_MinMAPeriod_D, true, true, true, "Min Rebalance_TS_MAValue_1차_D");
+            MAD.Rebalance_TS_MAValue_1차_E = CalculateMa(GenieConfig.TB_rebalance_TS_1차_MinMAPeriod_E, true, true, true, "Min Rebalance_TS_MAValue_1차_E");
+            MAD.Rebalance_TS_MAValue_1차_F = CalculateMa(GenieConfig.TB_rebalance_TS_1차_MinMAPeriod_F, true, true, true, "Min Rebalance_TS_MAValue_1차_F");
+            MAD.Rebalance_TS_MAValue_1차_G = CalculateMa(GenieConfig.TB_rebalance_TS_1차_MinMAPeriod_G, true, true, true, "Min Rebalance_TS_MAValue_1차_G");
+
+            // [리밸런싱 TS 2차]
+            MAD.Rebalance_TS_MAValue_2차_A = CalculateMa(GenieConfig.TB_rebalance_TS_2차_MinMAPeriod_A, true, true, true, "Min Rebalance_TS_MAValue_2차_A");
+            MAD.Rebalance_TS_MAValue_2차_B = CalculateMa(GenieConfig.TB_rebalance_TS_2차_MinMAPeriod_B, true, true, true, "Min Rebalance_TS_MAValue_2차_B");
+            MAD.Rebalance_TS_MAValue_2차_C = CalculateMa(GenieConfig.TB_rebalance_TS_2차_MinMAPeriod_C, true, true, true, "Min Rebalance_TS_MAValue_2차_C");
+            MAD.Rebalance_TS_MAValue_2차_D = CalculateMa(GenieConfig.TB_rebalance_TS_2차_MinMAPeriod_D, true, true, true, "Min Rebalance_TS_MAValue_2차_D");
+            MAD.Rebalance_TS_MAValue_2차_E = CalculateMa(GenieConfig.TB_rebalance_TS_2차_MinMAPeriod_E, true, true, true, "Min Rebalance_TS_MAValue_2차_E");
+            MAD.Rebalance_TS_MAValue_2차_F = CalculateMa(GenieConfig.TB_rebalance_TS_2차_MinMAPeriod_F, true, true, true, "Min Rebalance_TS_MAValue_2차_F");
+            MAD.Rebalance_TS_MAValue_2차_G = CalculateMa(GenieConfig.TB_rebalance_TS_2차_MinMAPeriod_G, true, true, true, "Min Rebalance_TS_MAValue_2차_G");
         }
 
+      
         public static void Dma_Record(Stockbalance 잔고)
         {
-            string[] 리스트 = 잔고.일_리스트.Split(';');
-            if (리스트.Length >= 300)
+            // 1. 데이터 유효성 검사
+            if (잔고 == null || string.IsNullOrEmpty(잔고.일_리스트)) return;
+
+            // 2. 첫 번째 세미콜론(;)의 위치를 찾습니다.
+            // 예: "1000;900;800;..." 에서 첫 번째 ;의 위치
+            int firstSemiIndex = 잔고.일_리스트.IndexOf(';');
+
+            if (firstSemiIndex != -1)
             {
-                잔고.일_리스트 = "";
-                for (int i = 0; i < 리스트.Length; i++)
-                {
-                    if (i == 0)
-                    {
-                        잔고.일_리스트 = 잔고.현재가.ToString();
-                    }
-                    else
-                    {
-                        잔고.일_리스트 = 잔고.일_리스트 + ";" + 리스트[i];
-                    }
-                }
+                // [핵심 로직]
+                // 앞부분(옛날 현재가)은 버리고, 새 현재가와 뒷부분(과거 데이터)을 붙입니다.
+                // Substring(firstSemiIndex)는 세미콜론을 포함한 뒷부분을 가져옵니다. (;900;800...)
+                잔고.일_리스트 = $"{잔고.현재가}{잔고.일_리스트.Substring(firstSemiIndex)}";
+            }
+            else
+            {
+                // 데이터가 1개밖에 없을 경우 (세미콜론이 없음) -> 그냥 통째로 바꿈
+                잔고.일_리스트 = 잔고.현재가.ToString();
             }
 
+            // 3. 이평선 재계산 호출
             Get_Day_Moving_Average(잔고);
         }
 
+      
+
         public static void Get_Day_Moving_Average(Stockbalance 잔고)
         {
+            // 1. 유효성 검사
+            if (잔고 == null || string.IsNullOrEmpty(잔고.일_리스트)) return;
 
-            if (잔고.일_리스트.Contains(';'))
+            // Day_ma_list에서 해당 종목의 설정(MAD)을 가져옵니다.
+            // (GET.Code는 사용자님 환경에 맞게 사용하세요)
+            if (!Form1.Day_ma_list.TryGetValue(잔고.종목코드, out MAPeriod MAD)) return;
+
+            // 2. [최적화 1단계] 문자열 분리 (1회 수행)
+            string[] s_prices = 잔고.일_리스트.Split(';');
+
+            // 3. [최적화 2단계] Double 배열 변환 (1회 수행)
+            double[] d_prices = new double[s_prices.Length];
+            for (int i = 0; i < s_prices.Length; i++)
             {
-                ma avg = Form1.Day_ma_list[잔고.종목코드];
+                double.TryParse(s_prices[i], out d_prices[i]);
+            }
 
-                avg.repeat_ma1_A = 값구하기(avg.repeat_ma1_value_A);
-                avg.repeat_ma1_B = 값구하기(avg.repeat_ma1_value_B);
-                avg.repeat_ma1_C = 값구하기(avg.repeat_ma1_value_C);
-                avg.repeat_ma1_D = 값구하기(avg.repeat_ma1_value_D);
-                avg.repeat_ma1_E = 값구하기(avg.repeat_ma1_value_E);
-                avg.repeat_ma1_F = 값구하기(avg.repeat_ma1_value_F);
-                avg.repeat_ma1_G = 값구하기(avg.repeat_ma1_value_G);
-                avg.repeat_ma1_H = 값구하기(avg.repeat_ma1_value_H);
-                avg.repeat_ma1_I = 값구하기(avg.repeat_ma1_value_I);
-                avg.repeat_ma1_J = 값구하기(avg.repeat_ma1_value_J);
-                avg.repeat_ma1_K = 값구하기(avg.repeat_ma1_value_K);
-                avg.repeat_ma1_L = 값구하기(avg.repeat_ma1_value_L);
-                avg.repeat_ma1_M = 값구하기(avg.repeat_ma1_value_M);
-                avg.repeat_ma1_N = 값구하기(avg.repeat_ma1_value_N);
+            // 4. [내부 함수] 이평선 계산 로직 (최적화됨)
+            double CalculateMa(int period, bool use_cb, bool use_combo, string debugName)
+            {
+                if (!use_cb || !use_combo) return 0;
+                if (period <= 0) return 0;
 
-                avg.repeat_ma2_A = 값구하기(avg.repeat_ma2_value_A);
-                avg.repeat_ma2_B = 값구하기(avg.repeat_ma2_value_B);
-                avg.repeat_ma2_C = 값구하기(avg.repeat_ma2_value_C);
-                avg.repeat_ma2_D = 값구하기(avg.repeat_ma2_value_D);
-                avg.repeat_ma2_E = 값구하기(avg.repeat_ma2_value_E);
-                avg.repeat_ma2_F = 값구하기(avg.repeat_ma2_value_F);
-                avg.repeat_ma2_G = 값구하기(avg.repeat_ma2_value_G);
-                avg.repeat_ma2_H = 값구하기(avg.repeat_ma2_value_H);
-                avg.repeat_ma2_I = 값구하기(avg.repeat_ma2_value_I);
-                avg.repeat_ma2_J = 값구하기(avg.repeat_ma2_value_J);
-                avg.repeat_ma2_K = 값구하기(avg.repeat_ma2_value_K);
-                avg.repeat_ma2_L = 값구하기(avg.repeat_ma2_value_L);
-                avg.repeat_ma2_M = 값구하기(avg.repeat_ma2_value_M);
-                avg.repeat_ma2_N = 값구하기(avg.repeat_ma2_value_N);
+                double sum = 0;
+                int count = 0;
 
-                avg.Rebal_ma1_A = 값구하기(avg.Rebal_ma1_value_A);
-                avg.Rebal_ma1_B = 값구하기(avg.Rebal_ma1_value_B);
-                avg.Rebal_ma1_C = 값구하기(avg.Rebal_ma1_value_C);
-                avg.Rebal_ma1_D = 값구하기(avg.Rebal_ma1_value_D);
-                avg.Rebal_ma1_E = 값구하기(avg.Rebal_ma1_value_E);
-                avg.Rebal_ma1_F = 값구하기(avg.Rebal_ma1_value_F);
-                avg.Rebal_ma1_G = 값구하기(avg.Rebal_ma1_value_G);
+                // 데이터 개수와 설정된 기간 중 작은 값만큼만 반복
+                int limit = Math.Min(d_prices.Length, period);
 
-                avg.Rebal_ma2_A = 값구하기(avg.Rebal_ma2_value_A);
-                avg.Rebal_ma2_B = 값구하기(avg.Rebal_ma2_value_B);
-                avg.Rebal_ma2_C = 값구하기(avg.Rebal_ma2_value_C);
-                avg.Rebal_ma2_D = 값구하기(avg.Rebal_ma2_value_D);
-                avg.Rebal_ma2_E = 값구하기(avg.Rebal_ma2_value_E);
-                avg.Rebal_ma2_F = 값구하기(avg.Rebal_ma2_value_F);
-                avg.Rebal_ma2_G = 값구하기(avg.Rebal_ma2_value_G);
-
-
-                avg.Liquidation_TS_ma_A = 값구하기(avg.Liquidation_TS_ma_value_A);
-                avg.Liquidation_TS_ma_B = 값구하기(avg.Liquidation_TS_ma_value_B);
-                avg.Liquidation_TS_ma_C = 값구하기(avg.Liquidation_TS_ma_value_C);
-
-                avg.매매기간_TS_ma_A = 값구하기(avg.매매기간_TS_ma_value_A);
-                avg.매매기간_TS_ma_B = 값구하기(avg.매매기간_TS_ma_value_B);
-                avg.매매기간_TS_ma_C = 값구하기(avg.매매기간_TS_ma_value_C);
-                avg.매매기간_TS_ma_D = 값구하기(avg.매매기간_TS_ma_value_D);
-                avg.매매기간_TS_ma_E = 값구하기(avg.매매기간_TS_ma_value_E);
-                avg.매매기간_TS_ma_F = 값구하기(avg.매매기간_TS_ma_value_F);
-
-                double 값구하기(int 주기)
+                for (int i = 0; i < limit; i++)
                 {
-                    string[] list = 잔고.일_리스트.Split(';');
-                    double 평균합 = 0;
-
-                    for (int i = 0; i < list.Length; i++)
-                    {
-                        if (i == 주기) break;
-                        double.TryParse(list[i], out double result);
-                        평균합 = 평균합 + result;
-                    }
-
-                    if (list.Length >= 주기)
-                    {
-                        return 평균합 / 주기;
-                    }
-                    else
-                    {
-                        return 평균합 / list.Length;
-                    }
+                    sum += d_prices[i];
+                    count++;
                 }
 
-                //if (잔고.종목명.Equals("국전약품"))
-                //{
-                //    Console.WriteLine("\nmarket_code: " + avg.code);
-                //    Console.WriteLine("DateTime.Now: " + DateTime.Now.ToString("HHmmss"));
+                double result = (count > 0) ? sum / count : 0;
 
-                //    Console.WriteLine("잔고.일_리스트 Length : " + 잔고.일_리스트.Split(';').Length);
-                //    Console.WriteLine("잔고.일_리스트: " + 잔고.일_리스트);
+                // [로그 출력] (필요 시 false로 변경)
+                bool showLog = true;
+                if (showLog)
+                {
+                    // 일봉 로그는 너무 많을 수 있으니 필요할 때만 켜세요.
+                    // Form1.Console_print($"[일봉이평] {잔고.종목명} | {debugName} (기간:{period}) -> {result:N0}");
+                }
 
-                //    Console.WriteLine();
-                //    Console.WriteLine("Rebal_dma1_A: " + avg.Rebal_ma1_A);
-                //    Console.WriteLine("Rebal_dma1_B: " + avg.Rebal_ma1_B);
-                //    Console.WriteLine("Rebal_dma1_C: " + avg.Rebal_ma1_C);
-                //    Console.WriteLine("Rebal_dma1_D: " + avg.Rebal_ma1_D);
-                //    Console.WriteLine("Rebal_dma1_E: " + avg.Rebal_ma1_E);
-                //    Console.WriteLine("Rebal_dma1_F: " + avg.Rebal_ma1_F);
-                //    Console.WriteLine("Rebal_dma1_G: " + avg.Rebal_ma1_G);
-                //    Console.WriteLine();
-                //    Console.WriteLine("Rebal_dma2_A: " + avg.Rebal_ma2_A);
-                //    Console.WriteLine("Rebal_dma2_B: " + avg.Rebal_ma2_B);
-                //    Console.WriteLine("Rebal_dma2_C: " + avg.Rebal_ma2_C);
-                //    Console.WriteLine("Rebal_dma2_D: " + avg.Rebal_ma2_D);
-                //    Console.WriteLine("Rebal_dma2_E: " + avg.Rebal_ma2_E);
-                //    Console.WriteLine("Rebal_dma2_F: " + avg.Rebal_ma2_F);
-                //    Console.WriteLine("Rebal_dma2_G: " + avg.Rebal_ma2_G);
-                //    Console.WriteLine();
-                //    Console.WriteLine("매매기간_TS_ma_A: " + avg.매매기간_TS_ma_A);
-                //    Console.WriteLine("매매기간_TS_ma_B: " + avg.매매기간_TS_ma_B);
-                //    Console.WriteLine("매매기간_TS_ma_C: " + avg.매매기간_TS_ma_C);
-                //    Console.WriteLine("매매기간_TS_ma_D: " + avg.매매기간_TS_ma_D);
-                //    Console.WriteLine("매매기간_TS_ma_E: " + avg.매매기간_TS_ma_E);
-                //    Console.WriteLine("매매기간_TS_ma_F: " + avg.매매기간_TS_ma_F);
-                //}
+                return result;
             }
+
+            // -----------------------------------------------------------
+            // 5. 값 계산 및 할당
+            // (GenieConfig의 TB(기간), CBB(사용여부) 변수명은 사용자님 환경에 맞게 확인해주세요)
+            // -----------------------------------------------------------
+
+            // [반복 매매 1차]
+            MAD.Repeat_MAValue1_A = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod1_A, GenieConfig.CB_repeat_use_A, GenieConfig.CBB_repeat_DayMAPeriod1_A > 0, "Day repeat_MAValue1_A");
+            MAD.Repeat_MAValue1_B = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod1_B, GenieConfig.CB_repeat_use_B, GenieConfig.CBB_repeat_DayMAPeriod1_A > 0, "Day repeat_MAValue1_B");
+            MAD.Repeat_MAValue1_C = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod1_C, GenieConfig.CB_repeat_use_C, GenieConfig.CBB_repeat_DayMAPeriod1_A > 0, "Day repeat_MAValue1_C");
+            MAD.Repeat_MAValue1_D = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod1_D, GenieConfig.CB_repeat_use_D, GenieConfig.CBB_repeat_DayMAPeriod1_A > 0, "Day repeat_MAValue1_D");
+            MAD.Repeat_MAValue1_E = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod1_E, GenieConfig.CB_repeat_use_E, GenieConfig.CBB_repeat_DayMAPeriod1_A > 0, "Day repeat_MAValue1_E");
+            MAD.Repeat_MAValue1_F = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod1_F, GenieConfig.CB_repeat_use_F, GenieConfig.CBB_repeat_DayMAPeriod1_A > 0, "Day repeat_MAValue1_F");
+            MAD.Repeat_MAValue1_G = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod1_G, GenieConfig.CB_repeat_use_G, GenieConfig.CBB_repeat_DayMAPeriod1_A > 0, "Day repeat_MAValue1_G");
+            MAD.Repeat_MAValue1_H = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod1_H, GenieConfig.CB_repeat_use_H, GenieConfig.CBB_repeat_DayMAPeriod1_A > 0, "Day repeat_MAValue1_H");
+            MAD.Repeat_MAValue1_I = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod1_I, GenieConfig.CB_repeat_use_I, GenieConfig.CBB_repeat_DayMAPeriod1_A > 0, "Day repeat_MAValue1_I");
+            MAD.Repeat_MAValue1_J = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod1_J, GenieConfig.CB_repeat_use_J, GenieConfig.CBB_repeat_DayMAPeriod1_A > 0, "Day repeat_MAValue1_J");
+            MAD.Repeat_MAValue1_K = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod1_K, GenieConfig.CB_repeat_use_K, GenieConfig.CBB_repeat_DayMAPeriod1_A > 0, "Day repeat_MAValue1_K");
+            MAD.Repeat_MAValue1_L = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod1_L, GenieConfig.CB_repeat_use_L, GenieConfig.CBB_repeat_DayMAPeriod1_A > 0, "Day repeat_MAValue1_L");
+            MAD.Repeat_MAValue1_M = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod1_M, GenieConfig.CB_repeat_use_M, GenieConfig.CBB_repeat_DayMAPeriod1_A > 0, "Day repeat_MAValue1_M");
+            MAD.Repeat_MAValue1_N = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod1_N, GenieConfig.CB_repeat_use_N, GenieConfig.CBB_repeat_DayMAPeriod1_A > 0, "Day repeat_MAValue1_N");
+
+            // [반복 매매 2차Day ]
+            MAD.Repeat_MAValue2_A = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod2_A, GenieConfig.CB_repeat_use_A, GenieConfig.CBB_repeat_DayMAPeriod2_A > 0, "Day repeat_MAValue2_A");
+            MAD.Repeat_MAValue2_B = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod2_B, GenieConfig.CB_repeat_use_B, GenieConfig.CBB_repeat_DayMAPeriod2_A > 0, "Day repeat_MAValue2_B");
+            MAD.Repeat_MAValue2_C = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod2_C, GenieConfig.CB_repeat_use_C, GenieConfig.CBB_repeat_DayMAPeriod2_A > 0, "Day repeat_MAValue2_C");
+            MAD.Repeat_MAValue2_D = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod2_D, GenieConfig.CB_repeat_use_D, GenieConfig.CBB_repeat_DayMAPeriod2_A > 0, "Day repeat_MAValue2_D");
+            MAD.Repeat_MAValue2_E = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod2_E, GenieConfig.CB_repeat_use_E, GenieConfig.CBB_repeat_DayMAPeriod2_A > 0, "Day repeat_MAValue2_E");
+            MAD.Repeat_MAValue2_F = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod2_F, GenieConfig.CB_repeat_use_F, GenieConfig.CBB_repeat_DayMAPeriod2_A > 0, "Day repeat_MAValue2_F");
+            MAD.Repeat_MAValue2_G = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod2_G, GenieConfig.CB_repeat_use_G, GenieConfig.CBB_repeat_DayMAPeriod2_A > 0, "Day repeat_MAValue2_G");
+            MAD.Repeat_MAValue2_H = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod2_H, GenieConfig.CB_repeat_use_H, GenieConfig.CBB_repeat_DayMAPeriod2_A > 0, "Day repeat_MAValue2_H");
+            MAD.Repeat_MAValue2_I = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod2_I, GenieConfig.CB_repeat_use_I, GenieConfig.CBB_repeat_DayMAPeriod2_A > 0, "Day repeat_MAValue2_I");
+            MAD.Repeat_MAValue2_J = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod2_J, GenieConfig.CB_repeat_use_J, GenieConfig.CBB_repeat_DayMAPeriod2_A > 0, "Day repeat_MAValue2_J");
+            MAD.Repeat_MAValue2_K = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod2_K, GenieConfig.CB_repeat_use_K, GenieConfig.CBB_repeat_DayMAPeriod2_A > 0, "Day repeat_MAValue2_K");
+            MAD.Repeat_MAValue2_L = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod2_L, GenieConfig.CB_repeat_use_L, GenieConfig.CBB_repeat_DayMAPeriod2_A > 0, "Day repeat_MAValue2_L");
+            MAD.Repeat_MAValue2_M = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod2_M, GenieConfig.CB_repeat_use_M, GenieConfig.CBB_repeat_DayMAPeriod2_A > 0, "Day repeat_MAValue2_M");
+            MAD.Repeat_MAValue2_N = CalculateMa(GenieConfig.TB_repeat_DayMAPeriod2_N, GenieConfig.CB_repeat_use_N, GenieConfig.CBB_repeat_DayMAPeriod2_A > 0, "Day repeat_MAValue2_N");
+
+            // [리밸런싱 1차]
+            MAD.Rebalance_MAValue1_A = CalculateMa(GenieConfig.TB_rebalance_DayMAPeriod1_A, GenieConfig.CB_rebalance_A, GenieConfig.CBB_rebalance_DayMAPeriod1_A > 0, "Day Rebalance_MAValue1_A");
+            MAD.Rebalance_MAValue1_B = CalculateMa(GenieConfig.TB_rebalance_DayMAPeriod1_B, GenieConfig.CB_rebalance_B, GenieConfig.CBB_rebalance_DayMAPeriod1_B > 0, "Day Rebalance_MAValue1_B");
+            MAD.Rebalance_MAValue1_C = CalculateMa(GenieConfig.TB_rebalance_DayMAPeriod1_C, GenieConfig.CB_rebalance_C, GenieConfig.CBB_rebalance_DayMAPeriod1_C > 0, "Day Rebalance_MAValue1_C");
+            MAD.Rebalance_MAValue1_D = CalculateMa(GenieConfig.TB_rebalance_DayMAPeriod1_D, GenieConfig.CB_rebalance_D, GenieConfig.CBB_rebalance_DayMAPeriod1_D > 0, "Day Rebalance_MAValue1_D");
+            MAD.Rebalance_MAValue1_E = CalculateMa(GenieConfig.TB_rebalance_DayMAPeriod1_E, GenieConfig.CB_rebalance_E, GenieConfig.CBB_rebalance_DayMAPeriod1_E > 0, "Day Rebalance_MAValue1_E");
+            MAD.Rebalance_MAValue1_F = CalculateMa(GenieConfig.TB_rebalance_DayMAPeriod1_F, GenieConfig.CB_rebalance_F, GenieConfig.CBB_rebalance_DayMAPeriod1_F > 0, "Day Rebalance_MAValue1_F");
+            MAD.Rebalance_MAValue1_G = CalculateMa(GenieConfig.TB_rebalance_DayMAPeriod1_G, GenieConfig.CB_rebalance_G, GenieConfig.CBB_rebalance_DayMAPeriod1_G > 0, "Day Rebalance_MAValue1_G");
+
+            // [리밸런싱 2차]                                                                                                      
+            MAD.Rebalance_MAValue2_A = CalculateMa(GenieConfig.TB_rebalance_DayMAPeriod2_A, GenieConfig.CB_rebalance_A, GenieConfig.CBB_rebalance_DayMAPeriod2_A > 0, "Day Rebalance_MAValue2_A");
+            MAD.Rebalance_MAValue2_B = CalculateMa(GenieConfig.TB_rebalance_DayMAPeriod2_B, GenieConfig.CB_rebalance_B, GenieConfig.CBB_rebalance_DayMAPeriod2_B > 0, "Day Rebalance_MAValue2_B");
+            MAD.Rebalance_MAValue2_C = CalculateMa(GenieConfig.TB_rebalance_DayMAPeriod2_C, GenieConfig.CB_rebalance_C, GenieConfig.CBB_rebalance_DayMAPeriod2_C > 0, "Day Rebalance_MAValue2_C");
+            MAD.Rebalance_MAValue2_D = CalculateMa(GenieConfig.TB_rebalance_DayMAPeriod2_D, GenieConfig.CB_rebalance_D, GenieConfig.CBB_rebalance_DayMAPeriod2_D > 0, "Day Rebalance_MAValue2_D");
+            MAD.Rebalance_MAValue2_E = CalculateMa(GenieConfig.TB_rebalance_DayMAPeriod2_E, GenieConfig.CB_rebalance_E, GenieConfig.CBB_rebalance_DayMAPeriod2_E > 0, "Day Rebalance_MAValue2_E");
+            MAD.Rebalance_MAValue2_F = CalculateMa(GenieConfig.TB_rebalance_DayMAPeriod2_F, GenieConfig.CB_rebalance_F, GenieConfig.CBB_rebalance_DayMAPeriod2_F > 0, "Day Rebalance_MAValue2_F");
+            MAD.Rebalance_MAValue2_G = CalculateMa(GenieConfig.TB_rebalance_DayMAPeriod2_G, GenieConfig.CB_rebalance_G, GenieConfig.CBB_rebalance_DayMAPeriod2_G > 0, "Day Rebalance_MAValue2_G");
+
+            // [청산 TS]
+            MAD.Liquidation_TS_MAValue_A = CalculateMa(GenieConfig.TB_Liquidation_TS_DayMAPeriod_A, GenieConfig.CB_Liquidation_A, GenieConfig.CBB_Liquidation_TS_DayMAPeriod_A > 0, "Day Liquidation_TS_MAValue_A");
+            MAD.Liquidation_TS_MAValue_B = CalculateMa(GenieConfig.TB_Liquidation_TS_DayMAPeriod_B, GenieConfig.CB_Liquidation_B, GenieConfig.CBB_Liquidation_TS_DayMAPeriod_B > 0, "Day Liquidation_TS_MAValue_B");
+            MAD.Liquidation_TS_MAValue_C = CalculateMa(GenieConfig.TB_Liquidation_TS_DayMAPeriod_C, GenieConfig.CB_Liquidation_C, GenieConfig.CBB_Liquidation_TS_DayMAPeriod_C > 0, "Day Liquidation_TS_MAValue_C");
+
+            // [매매기간]
+            MAD.매매기간_TS_MAValue_A = CalculateMa(GenieConfig.TB_매매기간_TS_DayMAPeriod_A, GenieConfig.CBB_매매기간_trading_A > 0, GenieConfig.CBB_매매기간_TS_DayMAPeriod_A > 0, "Day 매매기간_TS_MAValue_A");
+            MAD.매매기간_TS_MAValue_B = CalculateMa(GenieConfig.TB_매매기간_TS_DayMAPeriod_B, GenieConfig.CBB_매매기간_trading_B > 0, GenieConfig.CBB_매매기간_TS_DayMAPeriod_B > 0, "Day 매매기간_TS_MAValue_B");
+            MAD.매매기간_TS_MAValue_C = CalculateMa(GenieConfig.TB_매매기간_TS_DayMAPeriod_C, GenieConfig.CBB_매매기간_trading_C > 0, GenieConfig.CBB_매매기간_TS_DayMAPeriod_C > 0, "Day 매매기간_TS_MAValue_C");
+            MAD.매매기간_TS_MAValue_D = CalculateMa(GenieConfig.TB_매매기간_TS_DayMAPeriod_D, GenieConfig.CBB_매매기간_trading_D > 0, GenieConfig.CBB_매매기간_TS_DayMAPeriod_D > 0, "Day 매매기간_TS_MAValue_D");
+            MAD.매매기간_TS_MAValue_E = CalculateMa(GenieConfig.TB_매매기간_TS_DayMAPeriod_E, GenieConfig.CBB_매매기간_trading_E > 0, GenieConfig.CBB_매매기간_TS_DayMAPeriod_E > 0, "Day 매매기간_TS_MAValue_E");
+            MAD.매매기간_TS_MAValue_F = CalculateMa(GenieConfig.TB_매매기간_TS_DayMAPeriod_F, GenieConfig.CBB_매매기간_trading_F > 0, GenieConfig.CBB_매매기간_TS_DayMAPeriod_F > 0, "Day 매매기간_TS_MAValue_F");
         }
 
         public static void New_item(String 종목코드)
         {
-            Form1.Min_ma_list.Add(종목코드,
-                                new ma(종목코드,
-                                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                                     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                                     0, 0, 0, 0, 0, 0, 0,
-                                     0, 0, 0, 0, 0, 0, 0,
-                                     0, 0, 0, 0, 0, 0, 0,
-                                     0, 0, 0, 0, 0, 0, 0,
-                                     0, 0, 0, 0, 0, 0, 0,
-                                     0, 0, 0, 0, 0, 0, 0,
-                                     0, 0, 0, 0, 0, 0, 0,
-                                     0, 0, 0, 0, 0, 0, 0,
-                                     0, 0, 0, 0, 0, 0,
-                                     0, 0, 0, 0, 0, 0,
-                                     0, 0, 0, 0, 0, 0,
-                                     0, 0, 0, 0, 0, 0
-                                     ));
-
-            Form1.Day_ma_list.Add(종목코드,
-                                  new ma(종목코드,
-                                       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0,
-                                       0, 0, 0, 0, 0, 0
-                                       ));
-
-            change_value();
-        }
-
-        public static void change_value()
-        {
-            foreach (var key in Form1.Min_ma_list.ToList())
-            {
-                key.Value.repeat_ma1_value_A = Properties.Settings.Default.TB_repeat_mma_A;
-                key.Value.repeat_ma1_value_B = Properties.Settings.Default.TB_repeat_mma_B;
-                key.Value.repeat_ma1_value_C = Properties.Settings.Default.TB_repeat_mma_C;
-                key.Value.repeat_ma1_value_D = Properties.Settings.Default.TB_repeat_mma_D;
-                key.Value.repeat_ma1_value_E = Properties.Settings.Default.TB_repeat_mma_E;
-                key.Value.repeat_ma1_value_F = Properties.Settings.Default.TB_repeat_mma_F;
-                key.Value.repeat_ma1_value_G = Properties.Settings.Default.TB_repeat_mma_G;
-                key.Value.repeat_ma1_value_H = Properties.Settings.Default.TB_repeat_mma_H;
-                key.Value.repeat_ma1_value_I = Properties.Settings.Default.TB_repeat_mma_I;
-                key.Value.repeat_ma1_value_J = Properties.Settings.Default.TB_repeat_mma_J;
-                key.Value.repeat_ma1_value_K = Properties.Settings.Default.TB_repeat_mma_K;
-                key.Value.repeat_ma1_value_L = Properties.Settings.Default.TB_repeat_mma_L;
-                key.Value.repeat_ma1_value_M = Properties.Settings.Default.TB_repeat_mma_M;
-                key.Value.repeat_ma1_value_N = Properties.Settings.Default.TB_repeat_mma_N;
-
-                key.Value.repeat_ma2_value_A = Properties.Settings.Default.TB_repeat_mma2_A;
-                key.Value.repeat_ma2_value_B = Properties.Settings.Default.TB_repeat_mma2_B;
-                key.Value.repeat_ma2_value_C = Properties.Settings.Default.TB_repeat_mma2_C;
-                key.Value.repeat_ma2_value_D = Properties.Settings.Default.TB_repeat_mma2_D;
-                key.Value.repeat_ma2_value_E = Properties.Settings.Default.TB_repeat_mma2_E;
-                key.Value.repeat_ma2_value_F = Properties.Settings.Default.TB_repeat_mma2_F;
-                key.Value.repeat_ma2_value_G = Properties.Settings.Default.TB_repeat_mma2_G;
-                key.Value.repeat_ma2_value_H = Properties.Settings.Default.TB_repeat_mma2_H;
-                key.Value.repeat_ma2_value_I = Properties.Settings.Default.TB_repeat_mma2_I;
-                key.Value.repeat_ma2_value_J = Properties.Settings.Default.TB_repeat_mma2_J;
-                key.Value.repeat_ma2_value_K = Properties.Settings.Default.TB_repeat_mma2_K;
-                key.Value.repeat_ma2_value_L = Properties.Settings.Default.TB_repeat_mma2_L;
-                key.Value.repeat_ma2_value_M = Properties.Settings.Default.TB_repeat_mma2_M;
-                key.Value.repeat_ma2_value_N = Properties.Settings.Default.TB_repeat_mma2_N;
-
-                key.Value.Rebal_ma1_value_A = Properties.Settings.Default.TB_rebalance_mma_A;
-                key.Value.Rebal_ma1_value_B = Properties.Settings.Default.TB_rebalance_mma_B;
-                key.Value.Rebal_ma1_value_C = Properties.Settings.Default.TB_rebalance_mma_C;
-                key.Value.Rebal_ma1_value_D = Properties.Settings.Default.TB_rebalance_mma_D;
-                key.Value.Rebal_ma1_value_E = Properties.Settings.Default.TB_rebalance_mma_E;
-                key.Value.Rebal_ma1_value_F = Properties.Settings.Default.TB_rebalance_mma_F;
-                key.Value.Rebal_ma1_value_G = Properties.Settings.Default.TB_rebalance_mma_G;
-
-                key.Value.Rebal_ma2_value_A = Properties.Settings.Default.TB_rebalance_mma2_A;
-                key.Value.Rebal_ma2_value_B = Properties.Settings.Default.TB_rebalance_mma2_B;
-                key.Value.Rebal_ma2_value_C = Properties.Settings.Default.TB_rebalance_mma2_C;
-                key.Value.Rebal_ma2_value_D = Properties.Settings.Default.TB_rebalance_mma2_D;
-                key.Value.Rebal_ma2_value_E = Properties.Settings.Default.TB_rebalance_mma2_E;
-                key.Value.Rebal_ma2_value_F = Properties.Settings.Default.TB_rebalance_mma2_F;
-                key.Value.Rebal_ma2_value_G = Properties.Settings.Default.TB_rebalance_mma2_G;
-
-                key.Value.Rebal_TS_ma_1차_value_A = Properties.Settings.Default.TB_rebalance_TS_1차_mma_A;
-                key.Value.Rebal_TS_ma_1차_value_B = Properties.Settings.Default.TB_rebalance_TS_1차_mma_B;
-                key.Value.Rebal_TS_ma_1차_value_C = Properties.Settings.Default.TB_rebalance_TS_1차_mma_C;
-                key.Value.Rebal_TS_ma_1차_value_D = Properties.Settings.Default.TB_rebalance_TS_1차_mma_D;
-                key.Value.Rebal_TS_ma_1차_value_E = Properties.Settings.Default.TB_rebalance_TS_1차_mma_E;
-                key.Value.Rebal_TS_ma_1차_value_F = Properties.Settings.Default.TB_rebalance_TS_1차_mma_F;
-                key.Value.Rebal_TS_ma_1차_value_G = Properties.Settings.Default.TB_rebalance_TS_1차_mma_G;
-
-                key.Value.Rebal_TS_ma_2차_value_A = Properties.Settings.Default.TB_rebalance_TS_2차_mma_A;
-                key.Value.Rebal_TS_ma_2차_value_B = Properties.Settings.Default.TB_rebalance_TS_2차_mma_B;
-                key.Value.Rebal_TS_ma_2차_value_C = Properties.Settings.Default.TB_rebalance_TS_2차_mma_C;
-                key.Value.Rebal_TS_ma_2차_value_D = Properties.Settings.Default.TB_rebalance_TS_2차_mma_D;
-                key.Value.Rebal_TS_ma_2차_value_E = Properties.Settings.Default.TB_rebalance_TS_2차_mma_E;
-                key.Value.Rebal_TS_ma_2차_value_F = Properties.Settings.Default.TB_rebalance_TS_2차_mma_F;
-                key.Value.Rebal_TS_ma_2차_value_G = Properties.Settings.Default.TB_rebalance_TS_2차_mma_G;
-
-                key.Value.Liquidation_ma_value_A = Properties.Settings.Default.TB_Liquidation_mma_A;
-                key.Value.Liquidation_ma_value_B = Properties.Settings.Default.TB_Liquidation_mma_B;
-                key.Value.Liquidation_ma_value_C = Properties.Settings.Default.TB_Liquidation_mma_C;
-
-                key.Value.Liquidation_TS_ma_value_A = Properties.Settings.Default.TB_Liquidation_TS_mma_A;
-                key.Value.Liquidation_TS_ma_value_B = Properties.Settings.Default.TB_Liquidation_TS_mma_B;
-                key.Value.Liquidation_TS_ma_value_C = Properties.Settings.Default.TB_Liquidation_TS_mma_C;
-
-                key.Value.매매기간_TS_ma_value_A = Properties.Settings.Default.TB_매매기간_TS_mma_A;
-                key.Value.매매기간_TS_ma_value_B = Properties.Settings.Default.TB_매매기간_TS_mma_B;
-                key.Value.매매기간_TS_ma_value_C = Properties.Settings.Default.TB_매매기간_TS_mma_C;
-                key.Value.매매기간_TS_ma_value_D = Properties.Settings.Default.TB_매매기간_TS_mma_D;
-                key.Value.매매기간_TS_ma_value_E = Properties.Settings.Default.TB_매매기간_TS_mma_E;
-                key.Value.매매기간_TS_ma_value_F = Properties.Settings.Default.TB_매매기간_TS_mma_F;
-            }
-
-            foreach (var key in Form1.Day_ma_list.ToList())
-            {
-                key.Value.repeat_ma1_value_A = Properties.Settings.Default.TB_repeat_dma1_A;
-                key.Value.repeat_ma1_value_B = Properties.Settings.Default.TB_repeat_dma1_B;
-                key.Value.repeat_ma1_value_C = Properties.Settings.Default.TB_repeat_dma1_C;
-                key.Value.repeat_ma1_value_D = Properties.Settings.Default.TB_repeat_dma1_D;
-                key.Value.repeat_ma1_value_E = Properties.Settings.Default.TB_repeat_dma1_E;
-                key.Value.repeat_ma1_value_F = Properties.Settings.Default.TB_repeat_dma1_F;
-                key.Value.repeat_ma1_value_G = Properties.Settings.Default.TB_repeat_dma1_G;
-                key.Value.repeat_ma1_value_H = Properties.Settings.Default.TB_repeat_dma1_H;
-                key.Value.repeat_ma1_value_I = Properties.Settings.Default.TB_repeat_dma1_I;
-                key.Value.repeat_ma1_value_J = Properties.Settings.Default.TB_repeat_dma1_J;
-                key.Value.repeat_ma1_value_K = Properties.Settings.Default.TB_repeat_dma1_K;
-                key.Value.repeat_ma1_value_L = Properties.Settings.Default.TB_repeat_dma1_L;
-                key.Value.repeat_ma1_value_M = Properties.Settings.Default.TB_repeat_dma1_M;
-                key.Value.repeat_ma1_value_N = Properties.Settings.Default.TB_repeat_dma1_N;
-
-                key.Value.repeat_ma2_value_A = Properties.Settings.Default.TB_repeat_dma2_A;
-                key.Value.repeat_ma2_value_B = Properties.Settings.Default.TB_repeat_dma2_B;
-                key.Value.repeat_ma2_value_C = Properties.Settings.Default.TB_repeat_dma2_C;
-                key.Value.repeat_ma2_value_D = Properties.Settings.Default.TB_repeat_dma2_D;
-                key.Value.repeat_ma2_value_E = Properties.Settings.Default.TB_repeat_dma2_E;
-                key.Value.repeat_ma2_value_F = Properties.Settings.Default.TB_repeat_dma2_F;
-                key.Value.repeat_ma2_value_G = Properties.Settings.Default.TB_repeat_dma2_G;
-                key.Value.repeat_ma2_value_H = Properties.Settings.Default.TB_repeat_dma2_H;
-                key.Value.repeat_ma2_value_I = Properties.Settings.Default.TB_repeat_dma2_I;
-                key.Value.repeat_ma2_value_J = Properties.Settings.Default.TB_repeat_dma2_J;
-                key.Value.repeat_ma2_value_K = Properties.Settings.Default.TB_repeat_dma2_K;
-                key.Value.repeat_ma2_value_L = Properties.Settings.Default.TB_repeat_dma2_L;
-                key.Value.repeat_ma2_value_M = Properties.Settings.Default.TB_repeat_dma2_M;
-                key.Value.repeat_ma2_value_N = Properties.Settings.Default.TB_repeat_dma2_N;
-
-                key.Value.Rebal_ma1_value_A = Properties.Settings.Default.TB_rebalance_dma1_A;
-                key.Value.Rebal_ma1_value_B = Properties.Settings.Default.TB_rebalance_dma1_B;
-                key.Value.Rebal_ma1_value_C = Properties.Settings.Default.TB_rebalance_dma1_C;
-                key.Value.Rebal_ma1_value_D = Properties.Settings.Default.TB_rebalance_dma1_D;
-                key.Value.Rebal_ma1_value_E = Properties.Settings.Default.TB_rebalance_dma1_E;
-                key.Value.Rebal_ma1_value_F = Properties.Settings.Default.TB_rebalance_dma1_F;
-                key.Value.Rebal_ma1_value_G = Properties.Settings.Default.TB_rebalance_dma1_G;
-
-                key.Value.Rebal_ma2_value_A = Properties.Settings.Default.TB_rebalance_dma2_A;
-                key.Value.Rebal_ma2_value_B = Properties.Settings.Default.TB_rebalance_dma2_B;
-                key.Value.Rebal_ma2_value_C = Properties.Settings.Default.TB_rebalance_dma2_C;
-                key.Value.Rebal_ma2_value_D = Properties.Settings.Default.TB_rebalance_dma2_D;
-                key.Value.Rebal_ma2_value_E = Properties.Settings.Default.TB_rebalance_dma2_E;
-                key.Value.Rebal_ma2_value_F = Properties.Settings.Default.TB_rebalance_dma2_F;
-                key.Value.Rebal_ma2_value_G = Properties.Settings.Default.TB_rebalance_dma2_G;
-
-                key.Value.Liquidation_TS_ma_value_A = Properties.Settings.Default.TB_Liquidation_TS_dma_A;
-                key.Value.Liquidation_TS_ma_value_B = Properties.Settings.Default.TB_Liquidation_TS_dma_B;
-                key.Value.Liquidation_TS_ma_value_C = Properties.Settings.Default.TB_Liquidation_TS_dma_C;
-
-                key.Value.매매기간_TS_ma_value_A = Properties.Settings.Default.TB_매매기간_TS_dma_A;
-                key.Value.매매기간_TS_ma_value_B = Properties.Settings.Default.TB_매매기간_TS_dma_B;
-                key.Value.매매기간_TS_ma_value_C = Properties.Settings.Default.TB_매매기간_TS_dma_C;
-                key.Value.매매기간_TS_ma_value_D = Properties.Settings.Default.TB_매매기간_TS_dma_D;
-                key.Value.매매기간_TS_ma_value_E = Properties.Settings.Default.TB_매매기간_TS_dma_E;
-                key.Value.매매기간_TS_ma_value_F = Properties.Settings.Default.TB_매매기간_TS_dma_F;
-            }
+            String 코드 = 종목코드;
+            Form1.Min_ma_list.TryAdd(코드, new MAPeriod(코드));
+            Form1.Day_ma_list.TryAdd(코드, new MAPeriod(코드));
         }
 
         public static bool Get_이평(Stockbalance 잔고, int CBB_mma1, int CBB_mma2, int CBB_배열, double ma1, double ma2)

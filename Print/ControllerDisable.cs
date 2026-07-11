@@ -1,4 +1,6 @@
-﻿namespace 지니_64
+﻿using System.Windows.Forms;
+
+namespace 지니64
 {
     public class ControllerDisable
     {
@@ -7,7 +9,7 @@
             Form1.form1.TB_starttime.Enabled = false;
             Form1.form1.TB_stoptime.Enabled = false;
 
-            if (Properties.Settings.Default.CB_기본매매변경)
+            if (GenieConfig.CB_기본매매변경)
             {
                 Form1.form1.TB_setjango.Enabled = true;
                 Form1.form1.CB_계좌매입비_매수제한.Enabled = true;
@@ -81,10 +83,9 @@
 
         public static void Form_Jisu_Disable()
         {
-            box.Form_Jisu.form.CB_kospi_new_stop.Enabled = false;
-            box.Form_Jisu.form.CB_kospi_add_stop.Enabled = false;
-            box.Form_Jisu.form.CB_kosdaq_new_stop.Enabled = false;
-            box.Form_Jisu.form.CB_kosdaq_add_stop.Enabled = false;
+            box.Form_Jisu.form.BT_설정저장.Enabled = false;
+            box.Form_Jisu.form.CB_지수이평사용_kospi.Enabled = false;
+            box.Form_Jisu.form.CB_지수이평사용_kosdaq.Enabled = false;
             box.Form_Jisu.form.CB_use_kospi_min_03.Enabled = false;
             box.Form_Jisu.form.CB_use_kospi_min_05.Enabled = false;
             box.Form_Jisu.form.CB_use_kospi_min_10.Enabled = false;
@@ -137,7 +138,7 @@
 
         public static void Form_Basic_Disable()
         {
-            if (Properties.Settings.Default.CB_기본매매변경)
+            if (GenieConfig.CB_기본매매변경)
             {
                 Form_Basic.form.BT_기본매매저장.Enabled = true;
 
@@ -147,9 +148,9 @@
                 Form_Basic.form.combo_new_or_A.Enabled = true;
                 Form_Basic.form.combo_new_or_B.Enabled = true;
                 Form_Basic.form.combo_new_or_C.Enabled = true;
-                Form_Basic.form.combo_new_condition_A.Enabled = true;
-                Form_Basic.form.combo_new_condition_B.Enabled = true;
-                Form_Basic.form.combo_new_condition_C.Enabled = true;
+                Form_Basic.form.신규_A.Enabled = true;
+                Form_Basic.form.신규_B.Enabled = true;
+                Form_Basic.form.신규_C.Enabled = true;
                 Form_Basic.form.CB_TS_A.Enabled = true;
                 Form_Basic.form.CB_TS_B.Enabled = true;
                 Form_Basic.form.CB_TS_C.Enabled = true;
@@ -170,9 +171,9 @@
                 Form_Basic.form.combo_new_or_A.Enabled = false;
                 Form_Basic.form.combo_new_or_B.Enabled = false;
                 Form_Basic.form.combo_new_or_C.Enabled = false;
-                Form_Basic.form.combo_new_condition_A.Enabled = false;
-                Form_Basic.form.combo_new_condition_B.Enabled = false;
-                Form_Basic.form.combo_new_condition_C.Enabled = false;
+                Form_Basic.form.신규_A.Enabled = false;
+                Form_Basic.form.신규_B.Enabled = false;
+                Form_Basic.form.신규_C.Enabled = false;
                 Form_Basic.form.CB_TS_A.Enabled = false;
                 Form_Basic.form.CB_TS_B.Enabled = false;
                 Form_Basic.form.CB_TS_C.Enabled = false;
@@ -219,20 +220,20 @@
             Form_Repeat.form.combo_repeat_use_condition_M.Enabled = false;
             Form_Repeat.form.combo_repeat_use_condition_N.Enabled = false;
 
-            Form_Repeat.form.combo_repeat_condition_A.Enabled = false;
-            Form_Repeat.form.combo_repeat_condition_B.Enabled = false;
-            Form_Repeat.form.combo_repeat_condition_C.Enabled = false;
-            Form_Repeat.form.combo_repeat_condition_D.Enabled = false;
-            Form_Repeat.form.combo_repeat_condition_E.Enabled = false;
-            Form_Repeat.form.combo_repeat_condition_F.Enabled = false;
-            Form_Repeat.form.combo_repeat_condition_G.Enabled = false;
-            Form_Repeat.form.combo_repeat_condition_H.Enabled = false;
-            Form_Repeat.form.combo_repeat_condition_I.Enabled = false;
-            Form_Repeat.form.combo_repeat_condition_J.Enabled = false;
-            Form_Repeat.form.combo_repeat_condition_K.Enabled = false;
-            Form_Repeat.form.combo_repeat_condition_L.Enabled = false;
-            Form_Repeat.form.combo_repeat_condition_M.Enabled = false;
-            Form_Repeat.form.combo_repeat_condition_N.Enabled = false;
+            Form_Repeat.form.반복_A.Enabled = false;
+            Form_Repeat.form.반복_B.Enabled = false;
+            Form_Repeat.form.반복_C.Enabled = false;
+            Form_Repeat.form.반복_D.Enabled = false;
+            Form_Repeat.form.반복_E.Enabled = false;
+            Form_Repeat.form.반복_F.Enabled = false;
+            Form_Repeat.form.반복_G.Enabled = false;
+            Form_Repeat.form.반복_H.Enabled = false;
+            Form_Repeat.form.반복_I.Enabled = false;
+            Form_Repeat.form.반복_J.Enabled = false;
+            Form_Repeat.form.반복_K.Enabled = false;
+            Form_Repeat.form.반복_L.Enabled = false;
+            Form_Repeat.form.반복_M.Enabled = false;
+            Form_Repeat.form.반복_N.Enabled = false;
 
             Form_Repeat.form.CB_repeat_kind_A.Enabled = false;
             Form_Repeat.form.CB_repeat_kind_B.Enabled = false;
@@ -271,13 +272,13 @@
             Form_AccountManagement.form.combo_rebalance_use_condition_F.Enabled = false;
             Form_AccountManagement.form.combo_rebalance_use_condition_G.Enabled = false;
 
-            Form_AccountManagement.form.combo_rebalance_condition_A.Enabled = false;
-            Form_AccountManagement.form.combo_rebalance_condition_B.Enabled = false;
-            Form_AccountManagement.form.combo_rebalance_condition_C.Enabled = false;
-            Form_AccountManagement.form.combo_rebalance_condition_D.Enabled = false;
-            Form_AccountManagement.form.combo_rebalance_condition_E.Enabled = false;
-            Form_AccountManagement.form.combo_rebalance_condition_F.Enabled = false;
-            Form_AccountManagement.form.combo_rebalance_condition_G.Enabled = false;
+            Form_AccountManagement.form.리밸_A.Enabled = false;
+            Form_AccountManagement.form.리밸_B.Enabled = false;
+            Form_AccountManagement.form.리밸_C.Enabled = false;
+            Form_AccountManagement.form.리밸_D.Enabled = false;
+            Form_AccountManagement.form.리밸_E.Enabled = false;
+            Form_AccountManagement.form.리밸_F.Enabled = false;
+            Form_AccountManagement.form.리밸_G.Enabled = false;
 
             Form_AccountManagement.form.CB_Liquidation_A.Enabled = false;
             Form_AccountManagement.form.CB_Liquidation_B.Enabled = false;
@@ -287,15 +288,15 @@
             Form_AccountManagement.form.CBB_Liquidation_use_condition_B.Enabled = false;
             Form_AccountManagement.form.CBB_Liquidation_use_condition_C.Enabled = false;
 
-            Form_AccountManagement.form.CBB_Liquidation_condition_A.Enabled = false;
-            Form_AccountManagement.form.CBB_Liquidation_condition_B.Enabled = false;
-            Form_AccountManagement.form.CBB_Liquidation_condition_C.Enabled = false;
+            Form_AccountManagement.form.청산_A.Enabled = false;
+            Form_AccountManagement.form.청산_B.Enabled = false;
+            Form_AccountManagement.form.청산_C.Enabled = false;
 
             Form_AccountManagement.form.CB_cut_A.Enabled = false;
             Form_AccountManagement.form.CB_cut_B.Enabled = false;
             Form_AccountManagement.form.CB_cut_C.Enabled = false;
 
-            if (Properties.Settings.Default.CB_기본매매변경)
+            if (GenieConfig.CB_기본매매변경)
             {
                 Form_AccountManagement.form.TB_매수비율.Enabled = true;
                 Form_AccountManagement.form.TB_손익비율.Enabled = true;
@@ -422,16 +423,13 @@
             Form_PriceSearch.form.BT_대금탐색저장.Enabled = false;
 
             Form_PriceSearch.form.CB_매수탐색A.Enabled = false;
-            Form_PriceSearch.form.TB_매수탐색A.Enabled = false;
             Form_PriceSearch.form.CB_매수탐색B.Enabled = false;
-            Form_PriceSearch.form.TB_매수탐색B.Enabled = false;
             Form_PriceSearch.form.CB_매도탐색.Enabled = false;
-            Form_PriceSearch.form.TB_매도탐색.Enabled = false;
         }
 
         public static void Form_Function_Disable()
         {
-            if (Properties.Settings.Default.CB_기본매매변경)
+            if (GenieConfig.CB_기본매매변경)
             {
                 Form_Function.form.CB_편입추가.Enabled = true;
                 Form_Function.form.CB_최종가업데이트.Enabled = true;
@@ -443,7 +441,11 @@
                 Form_Function.form.CB_하매도취소.Enabled = true;
                 Form_Function.form.CB_상전량청산.Enabled = true;
                 Form_Function.form.CB_하전량청산.Enabled = true;
+                Form_Function.form.CB_중간가주문.Enabled = true;
                 Form_Function.form.BT_가이드매매.Enabled = true;
+                Form_Function.form.CB_NXT.Enabled = true;
+                Form_Function.form.CB_NXT_매수금지.Enabled = true;
+                Form_Function.form.CB_NXT_손실제한.Enabled = true;
             }
             else
             {
@@ -457,7 +459,12 @@
                 Form_Function.form.CB_하매도취소.Enabled = false;
                 Form_Function.form.CB_상전량청산.Enabled = false;
                 Form_Function.form.CB_하전량청산.Enabled = false;
+                Form_Function.form.CB_중간가주문.Enabled = false;
                 Form_Function.form.BT_가이드매매.Enabled = false;
+
+                Form_Function.form.CB_NXT.Enabled = false;
+                Form_Function.form.CB_NXT_매수금지.Enabled = false;
+                Form_Function.form.CB_NXT_손실제한.Enabled = false;
             }
         }
 

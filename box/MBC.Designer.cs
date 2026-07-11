@@ -1,5 +1,5 @@
 ﻿
-namespace 지니_64.box
+namespace 지니64.box
 {
     partial class MBC
     {

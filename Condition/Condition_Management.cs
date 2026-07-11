@@ -2,112 +2,54 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Telegram.Bot.Types;
 
-namespace 지니_64
+namespace 지니64
 {
-    class Condition_Management
+    public class Condition_Management : Form1
     {
-        public static void Condition_save()
+        public static void 검색식_초기화()
         {
-            if (Properties.Settings.Default.select_account != null)
+            // [최적화] ConcurrentDictionary는 Count보다 IsEmpty가 훨씬 빠름 (락을 안 걸기 때문)
+            if (!Form1.위치별검색식리스트.IsEmpty) return;
+
+            // [내부 헬퍼] 반복되는 등록 로직을 함수 하나로 통합
+            void 초기화_등록(string 헤더, char 시작, char 끝)
             {
-                string strFilePatth = Form1.startupPath + @"\Data\" + Form1.USER_ID + "__" + Properties.Settings.Default.select_account + "__\\검색식\\사용검색식.txt";
-
-                StreamWriter writer_;
-
-                writer_ = System.IO.File.CreateText(strFilePatth);
-
-                //      FileInfo File_Check = new FileInfo(Form1.startupPath + @"\Data\" + Form1.USER_ID + "__" + Properties.Settings.Default.select_account + "__\\잔고\\투자원금_계좌TS.txt");
-                //      if (File_Check.Exists)
-                //      {
-                //       writer_.Write("0 - ;\n");
-                //   }
-                //      else
-                //      {
-                writer_.Write("0 -" + "투자원금" + "^" + Properties.Settings.Default.MT_principal + "^" + Properties.Settings.Default.MT_sonik_price + "^" + Properties.Settings.Default.MT_buying_standard + "^" + Properties.Settings.Default.매수계산기준금 + "^" + Properties.Settings.Default.Today_매수기준금 + "^" + Properties.Settings.Default.손익계산기준금 + "^" + Properties.Settings.Default.Today_손익기준금 + ";\n");
-                //    }
-
-                writer_.Write("1 " + "계좌번호" + "^" + Properties.Settings.Default.select_account + ";\n");
-
-                string 신규검색식 = Properties.Settings.Default.신규검색식;
-                string 반복매매검색식 = Properties.Settings.Default.반복매매검색식;
-                string 계좌관리검색식 = Properties.Settings.Default.계좌관리검색식;
-                string 와치검색식 = Properties.Settings.Default.와치검색식;
-
-                writer_.Write("2 " + "신규매수_A" + "^" + 신규검색식.Split('^')[0] + ";\n");
-                writer_.Write("3 " + "신규매수_B" + "^" + 신규검색식.Split('^')[1] + ";\n");
-                writer_.Write("4 " + "신규매수_C" + "^" + 신규검색식.Split('^')[2] + ";\n");
-
-                writer_.Write("5 " + "반복매매_A" + "^" + 반복매매검색식.Split('^')[0] + ";\n");
-                writer_.Write("6 " + "반복매매_B" + "^" + 반복매매검색식.Split('^')[1] + ";\n");
-                writer_.Write("7 " + "반복매매_C" + "^" + 반복매매검색식.Split('^')[2] + ";\n");
-                writer_.Write("8 " + "반복매매_D" + "^" + 반복매매검색식.Split('^')[3] + ";\n");
-                writer_.Write("9 " + "반복매매_E" + "^" + 반복매매검색식.Split('^')[4] + ";\n");
-                writer_.Write("10 " + "반복매매_F" + "^" + 반복매매검색식.Split('^')[5] + ";\n");
-                writer_.Write("12 " + "반복매매_G" + "^" + 반복매매검색식.Split('^')[6] + ";\n");
-                writer_.Write("13 " + "반복매매_H" + "^" + 반복매매검색식.Split('^')[7] + ";\n");
-                writer_.Write("14 " + "반복매매_I" + "^" + 반복매매검색식.Split('^')[8] + ";\n");
-                writer_.Write("15 " + "반복매매_J" + "^" + 반복매매검색식.Split('^')[9] + ";\n");
-                writer_.Write("16 " + "반복매매_K" + "^" + 반복매매검색식.Split('^')[10] + ";\n");
-                writer_.Write("17 " + "반복매매_L" + "^" + 반복매매검색식.Split('^')[11] + ";\n");
-                writer_.Write("18 " + "반복매매_M" + "^" + 반복매매검색식.Split('^')[12] + ";\n");
-                writer_.Write("19 " + "반복매매_N" + "^" + 반복매매검색식.Split('^')[13] + ";\n");
-
-                writer_.Write("20 " + "Watch_추가_A" + "^" + 와치검색식.Split('^')[0] + ";\n");
-                writer_.Write("21 " + "Watch_추가_B" + "^" + 와치검색식.Split('^')[1] + ";\n");
-                writer_.Write("22 " + "Watch_추가_C" + "^" + 와치검색식.Split('^')[2] + ";\n");
-                writer_.Write("23 " + "Watch_추가_D" + "^" + 와치검색식.Split('^')[3] + ";\n");
-
-                writer_.Write("24 " + "리밸런싱_A" + "^" + 계좌관리검색식.Split('^')[0] + ";\n");
-                writer_.Write("25 " + "리밸런싱_B" + "^" + 계좌관리검색식.Split('^')[1] + ";\n");
-                writer_.Write("26 " + "리밸런싱_C" + "^" + 계좌관리검색식.Split('^')[2] + ";\n");
-                writer_.Write("27 " + "리밸런싱_D" + "^" + 계좌관리검색식.Split('^')[3] + ";\n");
-                writer_.Write("28 " + "리밸런싱_E" + "^" + 계좌관리검색식.Split('^')[4] + ";\n");
-                writer_.Write("29 " + "리밸런싱_F" + "^" + 계좌관리검색식.Split('^')[5] + ";\n");
-                writer_.Write("30 " + "리밸런싱_G" + "^" + 계좌관리검색식.Split('^')[6] + ";\n");
-
-                writer_.Write("31 " + "청산_A" + "^" + 계좌관리검색식.Split('^')[7] + ";\n");
-                writer_.Write("32 " + "청산_B" + "^" + 계좌관리검색식.Split('^')[8] + ";\n");
-                writer_.Write("33 " + "청산_C" + "^" + 계좌관리검색식.Split('^')[9]);
-
-                writer_.Close();
-
-                Form1.시장가탐색 = Condition_Management.시장가대금탐색();
-            }
-        }
-
-        public static void API_OnReceiveConditionVer()
-        {
-            Form1.비프음("실행");
-
-            string ConditionLists = Form1.form1.axKHOpenAPI1.GetConditionNameList();
-
-            string[] conditionArray = ConditionLists.Split(';');
-
-            Form1.form1.ConditionList.Clear();
-
-            foreach (string condition in conditionArray)
-            {
-                if (condition.Length > 0)
+                for (char c = 시작; c <= 끝; c++)
                 {
-                    string[] conditioninfo = condition.Split('^');
-                    string index = conditioninfo[0];
-                    string name = conditioninfo[1];
+                    string key = $"{헤더}_{c}";
 
-                    new Condition(int.Parse(index), name);
-                    Condition Cd_name = new Condition(int.Parse(index), name);
-
-                    Form1.form1.ConditionList.Add(Cd_name);
+                    // 💡 괄호() 대신 중괄호{}를 써서, 어떤 변수에 어떤 값이 들어가는지 이름표를 붙여줍니다!
+                    Form1.위치별검색식리스트.TryAdd(key, new 위치별검색식
+                    {
+                        위치 = key,
+                        이름 = "",
+                        중복여부 = false,
+                        실행여부 = false
+                    });
                 }
             }
 
-            if (Form1.로딩완료)
-            {
-                Form1.AutoClosingAlram("키움서버로 부터 검색식을 업데이트 받았습니다.", "검색식로딩", 5, "동작");
-            }
+            // 1. 신규 (A ~ C)
+            초기화_등록("신규", 'A', 'C');
+
+            // 2. 반복 (A ~ N)
+            초기화_등록("반복", 'A', 'N');
+
+            // 3. 리밸 (A ~ G)
+            초기화_등록("리밸", 'A', 'G');
+
+            // 4. 청산 (A ~ C)
+            초기화_등록("청산", 'A', 'C');
+
+            // 5. 와치 (A ~ D)
+            초기화_등록("와치", 'A', 'D');
         }
+
 
         public static void Condition_Add(object sender)
         {
@@ -115,1878 +57,1255 @@ namespace 지니_64
 
             combobox.Items.Clear();
 
-            추가("");
-            if (Properties.Settings.Default.CB_매수탐색A) 추가(Properties.Settings.Default.TB_매수탐색A);
-            if (Properties.Settings.Default.CB_매수탐색B) 추가(Properties.Settings.Default.TB_매수탐색B);
-            if (Properties.Settings.Default.CB_매도탐색) 추가(Properties.Settings.Default.TB_매도탐색);
-            for (int i = 0; i < Form1.form1.ConditionList.Count; i++)
-            {
-                추가(Form1.form1.ConditionList[i].name);
-            }
+            combobox.Items.Add("");
 
-            void 추가(string 식)
+            for (int i = 0; i < Form1.ConditionList.Count; i++)
             {
-                combobox.Items.Add(식);
+                combobox.Items.Add(Form1.ConditionList[i].name);
             }
         }
 
-        public static void Condition_TextChanged(object sender)
+        public static void Condition_DataLoad() // 계좌 번호에 따른 조건식 불러오기
         {
-            ComboBox combobox = sender as ComboBox;
-            string 신규검색식 = Properties.Settings.Default.신규검색식;
-            string 반복매매검색식 = Properties.Settings.Default.반복매매검색식;
-            string 계좌관리검색식 = Properties.Settings.Default.계좌관리검색식;
-            string 와치검색식 = Properties.Settings.Default.와치검색식;
-
-            if (계좌관리검색식.Split('^').Length < 9)
+            // 1. 관심 검색식 설정
+            if (Form1.form1.CBB_관심검색식.Items.Contains(GenieConfig.CBB_관심검색식))
             {
-                계좌관리검색식 = 계좌관리검색식.Split('^')[0] + "^" + 계좌관리검색식.Split('^')[1] + "^" + 계좌관리검색식.Split('^')[2] + "^" + 계좌관리검색식.Split('^')[3] + "^" + 계좌관리검색식.Split('^')[4] + "^^^" + 계좌관리검색식.Split('^')[5] + "^" + 계좌관리검색식.Split('^')[6] + "^";
-            }
-
-            if (combobox.SelectedIndex == -1)
-            {
-                if (combobox.Name.Equals("combo_new_condition_A")) combobox.SelectedItem = 신규검색식.Split('^')[0];
-                if (combobox.Name.Equals("combo_new_condition_B")) combobox.SelectedItem = 신규검색식.Split('^')[1];
-                if (combobox.Name.Equals("combo_new_condition_C")) combobox.SelectedItem = 신규검색식.Split('^')[2];
-                if (combobox.Name.Equals("combo_repeat_condition_A")) combobox.SelectedItem = 반복매매검색식.Split('^')[0];
-                if (combobox.Name.Equals("combo_repeat_condition_B")) combobox.SelectedItem = 반복매매검색식.Split('^')[1];
-                if (combobox.Name.Equals("combo_repeat_condition_C")) combobox.SelectedItem = 반복매매검색식.Split('^')[2];
-                if (combobox.Name.Equals("combo_repeat_condition_D")) combobox.SelectedItem = 반복매매검색식.Split('^')[3];
-                if (combobox.Name.Equals("combo_repeat_condition_E")) combobox.SelectedItem = 반복매매검색식.Split('^')[4];
-                if (combobox.Name.Equals("combo_repeat_condition_F")) combobox.SelectedItem = 반복매매검색식.Split('^')[5];
-                if (combobox.Name.Equals("combo_repeat_condition_G")) combobox.SelectedItem = 반복매매검색식.Split('^')[6];
-                if (combobox.Name.Equals("combo_repeat_condition_H")) combobox.SelectedItem = 반복매매검색식.Split('^')[7];
-                if (combobox.Name.Equals("combo_repeat_condition_I")) combobox.SelectedItem = 반복매매검색식.Split('^')[8];
-                if (combobox.Name.Equals("combo_repeat_condition_J")) combobox.SelectedItem = 반복매매검색식.Split('^')[9];
-                if (combobox.Name.Equals("combo_repeat_condition_K")) combobox.SelectedItem = 반복매매검색식.Split('^')[10];
-                if (combobox.Name.Equals("combo_repeat_condition_L")) combobox.SelectedItem = 반복매매검색식.Split('^')[11];
-                if (combobox.Name.Equals("combo_repeat_condition_M")) combobox.SelectedItem = 반복매매검색식.Split('^')[12];
-                if (combobox.Name.Equals("combo_repeat_condition_N")) combobox.SelectedItem = 반복매매검색식.Split('^')[13];
-                if (combobox.Name.Equals("combo_rebalance_condition_A")) combobox.SelectedItem = 계좌관리검색식.Split('^')[0];
-                if (combobox.Name.Equals("combo_rebalance_condition_B")) combobox.SelectedItem = 계좌관리검색식.Split('^')[1];
-                if (combobox.Name.Equals("combo_rebalance_condition_C")) combobox.SelectedItem = 계좌관리검색식.Split('^')[2];
-                if (combobox.Name.Equals("combo_rebalance_condition_D")) combobox.SelectedItem = 계좌관리검색식.Split('^')[3];
-                if (combobox.Name.Equals("combo_rebalance_condition_E")) combobox.SelectedItem = 계좌관리검색식.Split('^')[4];
-                if (combobox.Name.Equals("combo_rebalance_condition_F")) combobox.SelectedItem = 계좌관리검색식.Split('^')[5];
-                if (combobox.Name.Equals("combo_rebalance_condition_G")) combobox.SelectedItem = 계좌관리검색식.Split('^')[6];
-                if (combobox.Name.Equals("CBB_Liquidation_condition_A")) combobox.SelectedItem = 계좌관리검색식.Split('^')[7];
-                if (combobox.Name.Equals("CBB_Liquidation_condition_B")) combobox.SelectedItem = 계좌관리검색식.Split('^')[8];
-                if (combobox.Name.Equals("CBB_Liquidation_condition_C")) combobox.SelectedItem = 계좌관리검색식.Split('^')[9];
-                if (combobox.Name.Equals("combo_watch_condition_AA")) combobox.SelectedItem = 와치검색식.Split('^')[0];
-                if (combobox.Name.Equals("combo_watch_condition_BB")) combobox.SelectedItem = 와치검색식.Split('^')[1];
-                if (combobox.Name.Equals("combo_watch_condition_CC")) combobox.SelectedItem = 와치검색식.Split('^')[2];
-                if (combobox.Name.Equals("combo_watch_condition_DD")) combobox.SelectedItem = 와치검색식.Split('^')[3];
-                if (combobox.Name.Equals("CBB_관심검색식")) combobox.SelectedItem = Properties.Settings.Default.CBB_관심검색식;
+                Form1.form1.CBB_관심검색식.SelectedItem = GenieConfig.CBB_관심검색식;
             }
             else
             {
-                string 검색식 = combobox.Text;
-                if (combobox.Name.Equals("combo_new_condition_A")) Properties.Settings.Default.신규검색식 = 검색식 + "^" + 신규검색식.Split('^')[1] + "^" + 신규검색식.Split('^')[2];
-                if (combobox.Name.Equals("combo_new_condition_B")) Properties.Settings.Default.신규검색식 = 신규검색식.Split('^')[0] + "^" + 검색식 + "^" + 신규검색식.Split('^')[2];
-                if (combobox.Name.Equals("combo_new_condition_C")) Properties.Settings.Default.신규검색식 = 신규검색식.Split('^')[0] + "^" + 신규검색식.Split('^')[1] + "^" + 검색식;
-                if (combobox.Name.Equals("combo_repeat_condition_A")) Properties.Settings.Default.반복매매검색식 = 검색식 + "^" + 반복매매검색식.Split('^')[1] + "^" + 반복매매검색식.Split('^')[2] + "^" + 반복매매검색식.Split('^')[3] + "^" + 반복매매검색식.Split('^')[4] + "^" + 반복매매검색식.Split('^')[5] + "^" + 반복매매검색식.Split('^')[6] + "^" + 반복매매검색식.Split('^')[7] + "^" + 반복매매검색식.Split('^')[8] + "^" + 반복매매검색식.Split('^')[9] + "^" + 반복매매검색식.Split('^')[10] + "^" + 반복매매검색식.Split('^')[11] + "^" + 반복매매검색식.Split('^')[12] + "^" + 반복매매검색식.Split('^')[13];
-                if (combobox.Name.Equals("combo_repeat_condition_B")) Properties.Settings.Default.반복매매검색식 = 반복매매검색식.Split('^')[0] + "^" + 검색식 + "^" + 반복매매검색식.Split('^')[2] + "^" + 반복매매검색식.Split('^')[3] + "^" + 반복매매검색식.Split('^')[4] + "^" + 반복매매검색식.Split('^')[5] + "^" + 반복매매검색식.Split('^')[6] + "^" + 반복매매검색식.Split('^')[7] + "^" + 반복매매검색식.Split('^')[8] + "^" + 반복매매검색식.Split('^')[9] + "^" + 반복매매검색식.Split('^')[10] + "^" + 반복매매검색식.Split('^')[11] + "^" + 반복매매검색식.Split('^')[12] + "^" + 반복매매검색식.Split('^')[13];
-                if (combobox.Name.Equals("combo_repeat_condition_C")) Properties.Settings.Default.반복매매검색식 = 반복매매검색식.Split('^')[0] + "^" + 반복매매검색식.Split('^')[1] + "^" + 검색식 + "^" + 반복매매검색식.Split('^')[3] + "^" + 반복매매검색식.Split('^')[4] + "^" + 반복매매검색식.Split('^')[5] + "^" + 반복매매검색식.Split('^')[6] + "^" + 반복매매검색식.Split('^')[7] + "^" + 반복매매검색식.Split('^')[8] + "^" + 반복매매검색식.Split('^')[9] + "^" + 반복매매검색식.Split('^')[10] + "^" + 반복매매검색식.Split('^')[11] + "^" + 반복매매검색식.Split('^')[12] + "^" + 반복매매검색식.Split('^')[13];
-                if (combobox.Name.Equals("combo_repeat_condition_D")) Properties.Settings.Default.반복매매검색식 = 반복매매검색식.Split('^')[0] + "^" + 반복매매검색식.Split('^')[1] + "^" + 반복매매검색식.Split('^')[2] + "^" + 검색식 + "^" + 반복매매검색식.Split('^')[4] + "^" + 반복매매검색식.Split('^')[5] + "^" + 반복매매검색식.Split('^')[6] + "^" + 반복매매검색식.Split('^')[7] + "^" + 반복매매검색식.Split('^')[8] + "^" + 반복매매검색식.Split('^')[9] + "^" + 반복매매검색식.Split('^')[10] + "^" + 반복매매검색식.Split('^')[11] + "^" + 반복매매검색식.Split('^')[12] + "^" + 반복매매검색식.Split('^')[13];
-                if (combobox.Name.Equals("combo_repeat_condition_E")) Properties.Settings.Default.반복매매검색식 = 반복매매검색식.Split('^')[0] + "^" + 반복매매검색식.Split('^')[1] + "^" + 반복매매검색식.Split('^')[2] + "^" + 반복매매검색식.Split('^')[3] + "^" + 검색식 + "^" + 반복매매검색식.Split('^')[5] + "^" + 반복매매검색식.Split('^')[6] + "^" + 반복매매검색식.Split('^')[7] + "^" + 반복매매검색식.Split('^')[8] + "^" + 반복매매검색식.Split('^')[9] + "^" + 반복매매검색식.Split('^')[10] + "^" + 반복매매검색식.Split('^')[11] + "^" + 반복매매검색식.Split('^')[12] + "^" + 반복매매검색식.Split('^')[13];
-                if (combobox.Name.Equals("combo_repeat_condition_F")) Properties.Settings.Default.반복매매검색식 = 반복매매검색식.Split('^')[0] + "^" + 반복매매검색식.Split('^')[1] + "^" + 반복매매검색식.Split('^')[2] + "^" + 반복매매검색식.Split('^')[3] + "^" + 반복매매검색식.Split('^')[4] + "^" + 검색식 + "^" + 반복매매검색식.Split('^')[6] + "^" + 반복매매검색식.Split('^')[7] + "^" + 반복매매검색식.Split('^')[8] + "^" + 반복매매검색식.Split('^')[9] + "^" + 반복매매검색식.Split('^')[10] + "^" + 반복매매검색식.Split('^')[11] + "^" + 반복매매검색식.Split('^')[12] + "^" + 반복매매검색식.Split('^')[13];
-                if (combobox.Name.Equals("combo_repeat_condition_G")) Properties.Settings.Default.반복매매검색식 = 반복매매검색식.Split('^')[0] + "^" + 반복매매검색식.Split('^')[1] + "^" + 반복매매검색식.Split('^')[2] + "^" + 반복매매검색식.Split('^')[3] + "^" + 반복매매검색식.Split('^')[4] + "^" + 반복매매검색식.Split('^')[5] + "^" + 검색식 + "^" + 반복매매검색식.Split('^')[7] + "^" + 반복매매검색식.Split('^')[8] + "^" + 반복매매검색식.Split('^')[9] + "^" + 반복매매검색식.Split('^')[10] + "^" + 반복매매검색식.Split('^')[11] + "^" + 반복매매검색식.Split('^')[12] + "^" + 반복매매검색식.Split('^')[13];
-                if (combobox.Name.Equals("combo_repeat_condition_H")) Properties.Settings.Default.반복매매검색식 = 반복매매검색식.Split('^')[0] + "^" + 반복매매검색식.Split('^')[1] + "^" + 반복매매검색식.Split('^')[2] + "^" + 반복매매검색식.Split('^')[3] + "^" + 반복매매검색식.Split('^')[4] + "^" + 반복매매검색식.Split('^')[5] + "^" + 반복매매검색식.Split('^')[6] + "^" + 검색식 + "^" + 반복매매검색식.Split('^')[8] + "^" + 반복매매검색식.Split('^')[9] + "^" + 반복매매검색식.Split('^')[10] + "^" + 반복매매검색식.Split('^')[11] + "^" + 반복매매검색식.Split('^')[12] + "^" + 반복매매검색식.Split('^')[13];
-                if (combobox.Name.Equals("combo_repeat_condition_I")) Properties.Settings.Default.반복매매검색식 = 반복매매검색식.Split('^')[0] + "^" + 반복매매검색식.Split('^')[1] + "^" + 반복매매검색식.Split('^')[2] + "^" + 반복매매검색식.Split('^')[3] + "^" + 반복매매검색식.Split('^')[4] + "^" + 반복매매검색식.Split('^')[5] + "^" + 반복매매검색식.Split('^')[6] + "^" + 반복매매검색식.Split('^')[7] + "^" + 검색식 + "^" + 반복매매검색식.Split('^')[9] + "^" + 반복매매검색식.Split('^')[10] + "^" + 반복매매검색식.Split('^')[11] + "^" + 반복매매검색식.Split('^')[12] + "^" + 반복매매검색식.Split('^')[13];
-                if (combobox.Name.Equals("combo_repeat_condition_J")) Properties.Settings.Default.반복매매검색식 = 반복매매검색식.Split('^')[0] + "^" + 반복매매검색식.Split('^')[1] + "^" + 반복매매검색식.Split('^')[2] + "^" + 반복매매검색식.Split('^')[3] + "^" + 반복매매검색식.Split('^')[4] + "^" + 반복매매검색식.Split('^')[5] + "^" + 반복매매검색식.Split('^')[6] + "^" + 반복매매검색식.Split('^')[7] + "^" + 반복매매검색식.Split('^')[8] + "^" + 검색식 + "^" + 반복매매검색식.Split('^')[10] + "^" + 반복매매검색식.Split('^')[11] + "^" + 반복매매검색식.Split('^')[12] + "^" + 반복매매검색식.Split('^')[13];
-                if (combobox.Name.Equals("combo_repeat_condition_K")) Properties.Settings.Default.반복매매검색식 = 반복매매검색식.Split('^')[0] + "^" + 반복매매검색식.Split('^')[1] + "^" + 반복매매검색식.Split('^')[2] + "^" + 반복매매검색식.Split('^')[3] + "^" + 반복매매검색식.Split('^')[4] + "^" + 반복매매검색식.Split('^')[5] + "^" + 반복매매검색식.Split('^')[6] + "^" + 반복매매검색식.Split('^')[7] + "^" + 반복매매검색식.Split('^')[8] + "^" + 반복매매검색식.Split('^')[9] + "^" + 검색식 + "^" + 반복매매검색식.Split('^')[11] + "^" + 반복매매검색식.Split('^')[12] + "^" + 반복매매검색식.Split('^')[13];
-                if (combobox.Name.Equals("combo_repeat_condition_L")) Properties.Settings.Default.반복매매검색식 = 반복매매검색식.Split('^')[0] + "^" + 반복매매검색식.Split('^')[1] + "^" + 반복매매검색식.Split('^')[2] + "^" + 반복매매검색식.Split('^')[3] + "^" + 반복매매검색식.Split('^')[4] + "^" + 반복매매검색식.Split('^')[5] + "^" + 반복매매검색식.Split('^')[6] + "^" + 반복매매검색식.Split('^')[7] + "^" + 반복매매검색식.Split('^')[8] + "^" + 반복매매검색식.Split('^')[9] + "^" + 반복매매검색식.Split('^')[10] + "^" + 검색식 + "^" + 반복매매검색식.Split('^')[12] + "^" + 반복매매검색식.Split('^')[13];
-                if (combobox.Name.Equals("combo_repeat_condition_M")) Properties.Settings.Default.반복매매검색식 = 반복매매검색식.Split('^')[0] + "^" + 반복매매검색식.Split('^')[1] + "^" + 반복매매검색식.Split('^')[2] + "^" + 반복매매검색식.Split('^')[3] + "^" + 반복매매검색식.Split('^')[4] + "^" + 반복매매검색식.Split('^')[5] + "^" + 반복매매검색식.Split('^')[6] + "^" + 반복매매검색식.Split('^')[7] + "^" + 반복매매검색식.Split('^')[8] + "^" + 반복매매검색식.Split('^')[9] + "^" + 반복매매검색식.Split('^')[10] + "^" + 반복매매검색식.Split('^')[11] + "^" + 검색식 + "^" + 반복매매검색식.Split('^')[13];
-                if (combobox.Name.Equals("combo_repeat_condition_N")) Properties.Settings.Default.반복매매검색식 = 반복매매검색식.Split('^')[0] + "^" + 반복매매검색식.Split('^')[1] + "^" + 반복매매검색식.Split('^')[2] + "^" + 반복매매검색식.Split('^')[3] + "^" + 반복매매검색식.Split('^')[4] + "^" + 반복매매검색식.Split('^')[5] + "^" + 반복매매검색식.Split('^')[6] + "^" + 반복매매검색식.Split('^')[7] + "^" + 반복매매검색식.Split('^')[8] + "^" + 반복매매검색식.Split('^')[9] + "^" + 반복매매검색식.Split('^')[10] + "^" + 반복매매검색식.Split('^')[11] + "^" + 반복매매검색식.Split('^')[12] + "^" + 검색식;
-                if (combobox.Name.Equals("combo_rebalance_condition_A")) Properties.Settings.Default.계좌관리검색식 = 검색식 + "^" + 계좌관리검색식.Split('^')[1] + "^" + 계좌관리검색식.Split('^')[2] + "^" + 계좌관리검색식.Split('^')[3] + "^" + 계좌관리검색식.Split('^')[4] + "^" + 계좌관리검색식.Split('^')[5] + "^" + 계좌관리검색식.Split('^')[6] + "^" + 계좌관리검색식.Split('^')[7] + "^" + 계좌관리검색식.Split('^')[8] + "^" + 계좌관리검색식.Split('^')[9];
-                if (combobox.Name.Equals("combo_rebalance_condition_B")) Properties.Settings.Default.계좌관리검색식 = 계좌관리검색식.Split('^')[0] + "^" + 검색식 + "^" + 계좌관리검색식.Split('^')[2] + "^" + 계좌관리검색식.Split('^')[3] + "^" + 계좌관리검색식.Split('^')[4] + "^" + 계좌관리검색식.Split('^')[5] + "^" + 계좌관리검색식.Split('^')[6] + "^" + 계좌관리검색식.Split('^')[7] + "^" + 계좌관리검색식.Split('^')[8] + "^" + 계좌관리검색식.Split('^')[9];
-                if (combobox.Name.Equals("combo_rebalance_condition_C")) Properties.Settings.Default.계좌관리검색식 = 계좌관리검색식.Split('^')[0] + "^" + 계좌관리검색식.Split('^')[1] + "^" + 검색식 + "^" + 계좌관리검색식.Split('^')[3] + "^" + 계좌관리검색식.Split('^')[4] + "^" + 계좌관리검색식.Split('^')[5] + "^" + 계좌관리검색식.Split('^')[6] + "^" + 계좌관리검색식.Split('^')[7] + "^" + 계좌관리검색식.Split('^')[8] + "^" + 계좌관리검색식.Split('^')[9];
-                if (combobox.Name.Equals("combo_rebalance_condition_D")) Properties.Settings.Default.계좌관리검색식 = 계좌관리검색식.Split('^')[0] + "^" + 계좌관리검색식.Split('^')[1] + "^" + 계좌관리검색식.Split('^')[2] + "^" + 검색식 + "^" + 계좌관리검색식.Split('^')[4] + "^" + 계좌관리검색식.Split('^')[5] + "^" + 계좌관리검색식.Split('^')[6] + "^" + 계좌관리검색식.Split('^')[7] + "^" + 계좌관리검색식.Split('^')[8] + "^" + 계좌관리검색식.Split('^')[9];
-                if (combobox.Name.Equals("combo_rebalance_condition_E")) Properties.Settings.Default.계좌관리검색식 = 계좌관리검색식.Split('^')[0] + "^" + 계좌관리검색식.Split('^')[1] + "^" + 계좌관리검색식.Split('^')[2] + "^" + 계좌관리검색식.Split('^')[3] + "^" + 검색식 + "^" + 계좌관리검색식.Split('^')[5] + "^" + 계좌관리검색식.Split('^')[6] + "^" + 계좌관리검색식.Split('^')[7] + "^" + 계좌관리검색식.Split('^')[8] + "^" + 계좌관리검색식.Split('^')[9];
-                if (combobox.Name.Equals("combo_rebalance_condition_F")) Properties.Settings.Default.계좌관리검색식 = 계좌관리검색식.Split('^')[0] + "^" + 계좌관리검색식.Split('^')[1] + "^" + 계좌관리검색식.Split('^')[2] + "^" + 계좌관리검색식.Split('^')[3] + "^" + 계좌관리검색식.Split('^')[4] + "^" + 검색식 + "^" + 계좌관리검색식.Split('^')[6] + "^" + 계좌관리검색식.Split('^')[7] + "^" + 계좌관리검색식.Split('^')[8] + "^" + 계좌관리검색식.Split('^')[9];
-                if (combobox.Name.Equals("combo_rebalance_condition_G")) Properties.Settings.Default.계좌관리검색식 = 계좌관리검색식.Split('^')[0] + "^" + 계좌관리검색식.Split('^')[1] + "^" + 계좌관리검색식.Split('^')[2] + "^" + 계좌관리검색식.Split('^')[3] + "^" + 계좌관리검색식.Split('^')[4] + "^" + 계좌관리검색식.Split('^')[5] + "^" + 검색식 + "^" + 계좌관리검색식.Split('^')[7] + "^" + 계좌관리검색식.Split('^')[8] + "^" + 계좌관리검색식.Split('^')[9];
-                if (combobox.Name.Equals("CBB_Liquidation_condition_A")) Properties.Settings.Default.계좌관리검색식 = 계좌관리검색식.Split('^')[0] + "^" + 계좌관리검색식.Split('^')[1] + "^" + 계좌관리검색식.Split('^')[2] + "^" + 계좌관리검색식.Split('^')[3] + "^" + 계좌관리검색식.Split('^')[4] + "^" + 계좌관리검색식.Split('^')[5] + "^" + 계좌관리검색식.Split('^')[6] + "^" + 검색식 + "^" + 계좌관리검색식.Split('^')[8] + "^" + 계좌관리검색식.Split('^')[9];
-                if (combobox.Name.Equals("CBB_Liquidation_condition_B")) Properties.Settings.Default.계좌관리검색식 = 계좌관리검색식.Split('^')[0] + "^" + 계좌관리검색식.Split('^')[1] + "^" + 계좌관리검색식.Split('^')[2] + "^" + 계좌관리검색식.Split('^')[3] + "^" + 계좌관리검색식.Split('^')[4] + "^" + 계좌관리검색식.Split('^')[5] + "^" + 계좌관리검색식.Split('^')[6] + "^" + 계좌관리검색식.Split('^')[7] + "^" + 검색식 + "^" + 계좌관리검색식.Split('^')[9];
-                if (combobox.Name.Equals("CBB_Liquidation_condition_C")) Properties.Settings.Default.계좌관리검색식 = 계좌관리검색식.Split('^')[0] + "^" + 계좌관리검색식.Split('^')[1] + "^" + 계좌관리검색식.Split('^')[2] + "^" + 계좌관리검색식.Split('^')[3] + "^" + 계좌관리검색식.Split('^')[4] + "^" + 계좌관리검색식.Split('^')[5] + "^" + 계좌관리검색식.Split('^')[6] + "^" + 계좌관리검색식.Split('^')[7] + "^" + 계좌관리검색식.Split('^')[8] + "^" + 검색식;
-                if (combobox.Name.Equals("combo_watch_condition_AA")) Properties.Settings.Default.와치검색식 = 검색식 + "^" + 와치검색식.Split('^')[1] + "^" + 와치검색식.Split('^')[2] + "^" + 와치검색식.Split('^')[3];
-                if (combobox.Name.Equals("combo_watch_condition_BB")) Properties.Settings.Default.와치검색식 = 와치검색식.Split('^')[0] + "^" + 검색식 + "^" + 와치검색식.Split('^')[2] + "^" + 와치검색식.Split('^')[3];
-                if (combobox.Name.Equals("combo_watch_condition_CC")) Properties.Settings.Default.와치검색식 = 와치검색식.Split('^')[0] + "^" + 와치검색식.Split('^')[1] + "^" + 검색식 + "^" + 와치검색식.Split('^')[3];
-                if (combobox.Name.Equals("combo_watch_condition_DD")) Properties.Settings.Default.와치검색식 = 와치검색식.Split('^')[0] + "^" + 와치검색식.Split('^')[1] + "^" + 와치검색식.Split('^')[2] + "^" + 검색식;
-                if (combobox.Name.Equals("CBB_관심검색식")) Properties.Settings.Default.CBB_관심검색식 = 검색식;
+                Form1.form1.CBB_관심검색식.SelectedIndex = -1;
             }
-        }
 
+            // 2. JSON 파일 로드 (J사용검색식.json)
+            string filePath = Path.Combine(Form1.startupPath, "Data", $"{GenieConfig.textBox_ID}__{GenieConfig.textBox_계좌번호}__", "검색식", "J사용검색식.json");
 
-        public static void Condition_DataLoad(string 계좌번호) // 계좌 번호에 따른 조건식 불러오기
-        {
-            if (Form1.form1.CBB_관심검색식.Items.Contains(Properties.Settings.Default.CBB_관심검색식)) Form1.form1.CBB_관심검색식.SelectedItem = Properties.Settings.Default.CBB_관심검색식;
-            else Form1.form1.CBB_관심검색식.SelectedIndex = -1;
-
-            FileInfo File_Check = new FileInfo(System.Windows.Forms.Application.StartupPath + @"\Data\" + Form1.USER_ID + "__" + 계좌번호 + "__\\검색식\\사용검색식.txt");
-
-            if (File_Check.Exists)
+            if (File.Exists(filePath))
             {
-                string path = System.Windows.Forms.Application.StartupPath + @"\Data\" + Form1.USER_ID + "__" + 계좌번호 + "__\\검색식\\사용검색식.txt";
-                string OptionLists = File.ReadAllText(path);
-
-                if (OptionLists.Contains(계좌번호)) // 조건식 저장값 불러오기 
+                try
                 {
-                    string[] 검색식 = OptionLists.Split(';');
+                    string jsonString = File.ReadAllText(filePath);
 
-                    Properties.Settings.Default.combo_new_condition_A = 검색식[2].Split('^')[1];
-                    Properties.Settings.Default.combo_new_condition_B = 검색식[3].Split('^')[1];
-                    Properties.Settings.Default.combo_new_condition_C = 검색식[4].Split('^')[1];
+                    // [방어] 파일 내용이 없으면 중단
+                    if (string.IsNullOrWhiteSpace(jsonString)) return;
 
-                    Properties.Settings.Default.combo_repeat_condition_A = 검색식[5].Split('^')[1];
-                    Properties.Settings.Default.combo_repeat_condition_B = 검색식[6].Split('^')[1];
-                    Properties.Settings.Default.combo_repeat_condition_C = 검색식[7].Split('^')[1];
-                    Properties.Settings.Default.combo_repeat_condition_D = 검색식[8].Split('^')[1];
-                    Properties.Settings.Default.combo_repeat_condition_E = 검색식[9].Split('^')[1];
-                    Properties.Settings.Default.combo_repeat_condition_F = 검색식[10].Split('^')[1];
-                    Properties.Settings.Default.combo_repeat_condition_G = 검색식[11].Split('^')[1];
-                    Properties.Settings.Default.combo_repeat_condition_H = 검색식[12].Split('^')[1];
-                    Properties.Settings.Default.combo_repeat_condition_I = 검색식[13].Split('^')[1];
-                    Properties.Settings.Default.combo_repeat_condition_J = 검색식[14].Split('^')[1];
-                    Properties.Settings.Default.combo_repeat_condition_K = 검색식[15].Split('^')[1];
-                    Properties.Settings.Default.combo_repeat_condition_L = 검색식[16].Split('^')[1];
-                    Properties.Settings.Default.combo_repeat_condition_M = 검색식[17].Split('^')[1];
-                    Properties.Settings.Default.combo_repeat_condition_N = 검색식[18].Split('^')[1];
-                    Properties.Settings.Default.combo_watch_condition_AA = 검색식[19].Split('^')[1];
-                    Properties.Settings.Default.combo_watch_condition_BB = 검색식[20].Split('^')[1];
-                    Properties.Settings.Default.combo_watch_condition_CC = 검색식[21].Split('^')[1];
-                    Properties.Settings.Default.combo_watch_condition_DD = 검색식[22].Split('^')[1];
-                    Properties.Settings.Default.combo_rebalance_condition_A = 검색식[23].Split('^')[1];
-                    Properties.Settings.Default.combo_rebalance_condition_B = 검색식[24].Split('^')[1];
-                    Properties.Settings.Default.combo_rebalance_condition_C = 검색식[25].Split('^')[1];
-                    Properties.Settings.Default.combo_rebalance_condition_D = 검색식[26].Split('^')[1];
-                    Properties.Settings.Default.combo_rebalance_condition_E = 검색식[27].Split('^')[1];
-                    Properties.Settings.Default.combo_rebalance_condition_F = 검색식[28].Split('^')[1];
-                    Properties.Settings.Default.combo_rebalance_condition_G = 검색식[29].Split('^')[1];
-                    Properties.Settings.Default.CBB_Liquidation_condition_A = 검색식[30].Split('^')[1];
-                    Properties.Settings.Default.CBB_Liquidation_condition_B = 검색식[31].Split('^')[1];
-                    Properties.Settings.Default.CBB_Liquidation_condition_C = 검색식[32].Split('^')[1];
-
-                    Form1.form1.combo_watch_condition_AA.Items.Add(Properties.Settings.Default.combo_watch_condition_AA); if (condition_check(Properties.Settings.Default.combo_watch_condition_AA)) { Form1.form1.combo_watch_condition_AA.Text = Properties.Settings.Default.combo_watch_condition_AA; } else { Properties.Settings.Default.combo_watch_condition_AA = ""; }
-                    Form1.form1.combo_watch_condition_BB.Items.Add(Properties.Settings.Default.combo_watch_condition_BB); if (condition_check(Properties.Settings.Default.combo_watch_condition_BB)) { Form1.form1.combo_watch_condition_BB.Text = Properties.Settings.Default.combo_watch_condition_BB; } else { Properties.Settings.Default.combo_watch_condition_BB = ""; }
-                    Form1.form1.combo_watch_condition_CC.Items.Add(Properties.Settings.Default.combo_watch_condition_CC); if (condition_check(Properties.Settings.Default.combo_watch_condition_CC)) { Form1.form1.combo_watch_condition_CC.Text = Properties.Settings.Default.combo_watch_condition_CC; } else { Properties.Settings.Default.combo_watch_condition_CC = ""; }
-                    Form1.form1.combo_watch_condition_DD.Items.Add(Properties.Settings.Default.combo_watch_condition_DD); if (condition_check(Properties.Settings.Default.combo_watch_condition_DD)) { Form1.form1.combo_watch_condition_DD.Text = Properties.Settings.Default.combo_watch_condition_DD; } else { Properties.Settings.Default.combo_watch_condition_DD = ""; }
-
-                    if (Properties.Settings.Default.CB_new_A) if (!condition_Run(Properties.Settings.Default.combo_new_condition_A, "신규_A")) { Properties.Settings.Default.combo_new_condition_A = ""; Properties.Settings.Default.CB_new_A = false; }
-                    if (Properties.Settings.Default.CB_new_B) if (!condition_Run(Properties.Settings.Default.combo_new_condition_B, "신규_B")) { Properties.Settings.Default.combo_new_condition_B = ""; Properties.Settings.Default.CB_new_B = false; }
-                    if (Properties.Settings.Default.CB_new_C) if (!condition_Run(Properties.Settings.Default.combo_new_condition_C, "신규_C")) { Properties.Settings.Default.combo_new_condition_C = ""; Properties.Settings.Default.CB_new_C = false; }
-
-                    if (Properties.Settings.Default.combo_repeat_use_condition_A > 0) if (!condition_Run(Properties.Settings.Default.combo_repeat_condition_A, "반복_A")) { Properties.Settings.Default.combo_repeat_condition_A = ""; Properties.Settings.Default.combo_repeat_use_condition_A = 0; Properties.Settings.Default.CB_repeat_use_A = false; }
-                    if (Properties.Settings.Default.combo_repeat_use_condition_B > 0) if (!condition_Run(Properties.Settings.Default.combo_repeat_condition_B, "반복_B")) { Properties.Settings.Default.combo_repeat_condition_B = ""; Properties.Settings.Default.combo_repeat_use_condition_B = 0; Properties.Settings.Default.CB_repeat_use_B = false; }
-                    if (Properties.Settings.Default.combo_repeat_use_condition_C > 0) if (!condition_Run(Properties.Settings.Default.combo_repeat_condition_C, "반복_C")) { Properties.Settings.Default.combo_repeat_condition_C = ""; Properties.Settings.Default.combo_repeat_use_condition_C = 0; Properties.Settings.Default.CB_repeat_use_C = false; }
-                    if (Properties.Settings.Default.combo_repeat_use_condition_D > 0) if (!condition_Run(Properties.Settings.Default.combo_repeat_condition_D, "반복_D")) { Properties.Settings.Default.combo_repeat_condition_D = ""; Properties.Settings.Default.combo_repeat_use_condition_D = 0; Properties.Settings.Default.CB_repeat_use_D = false; }
-                    if (Properties.Settings.Default.combo_repeat_use_condition_E > 0) if (!condition_Run(Properties.Settings.Default.combo_repeat_condition_E, "반복_E")) { Properties.Settings.Default.combo_repeat_condition_E = ""; Properties.Settings.Default.combo_repeat_use_condition_E = 0; Properties.Settings.Default.CB_repeat_use_E = false; }
-                    if (Properties.Settings.Default.combo_repeat_use_condition_F > 0) if (!condition_Run(Properties.Settings.Default.combo_repeat_condition_F, "반복_F")) { Properties.Settings.Default.combo_repeat_condition_F = ""; Properties.Settings.Default.combo_repeat_use_condition_F = 0; Properties.Settings.Default.CB_repeat_use_F = false; }
-                    if (Properties.Settings.Default.combo_repeat_use_condition_G > 0) if (!condition_Run(Properties.Settings.Default.combo_repeat_condition_G, "반복_G")) { Properties.Settings.Default.combo_repeat_condition_G = ""; Properties.Settings.Default.combo_repeat_use_condition_G = 0; Properties.Settings.Default.CB_repeat_use_G = false; }
-                    if (Properties.Settings.Default.combo_repeat_use_condition_H > 0) if (!condition_Run(Properties.Settings.Default.combo_repeat_condition_H, "반복_H")) { Properties.Settings.Default.combo_repeat_condition_H = ""; Properties.Settings.Default.combo_repeat_use_condition_H = 0; Properties.Settings.Default.CB_repeat_use_H = false; }
-                    if (Properties.Settings.Default.combo_repeat_use_condition_I > 0) if (!condition_Run(Properties.Settings.Default.combo_repeat_condition_I, "반복_I")) { Properties.Settings.Default.combo_repeat_condition_I = ""; Properties.Settings.Default.combo_repeat_use_condition_I = 0; Properties.Settings.Default.CB_repeat_use_I = false; }
-                    if (Properties.Settings.Default.combo_repeat_use_condition_J > 0) if (!condition_Run(Properties.Settings.Default.combo_repeat_condition_J, "반복_J")) { Properties.Settings.Default.combo_repeat_condition_J = ""; Properties.Settings.Default.combo_repeat_use_condition_J = 0; Properties.Settings.Default.CB_repeat_use_J = false; }
-                    if (Properties.Settings.Default.combo_repeat_use_condition_K > 0) if (!condition_Run(Properties.Settings.Default.combo_repeat_condition_K, "반복_K")) { Properties.Settings.Default.combo_repeat_condition_K = ""; Properties.Settings.Default.combo_repeat_use_condition_K = 0; Properties.Settings.Default.CB_repeat_use_K = false; }
-                    if (Properties.Settings.Default.combo_repeat_use_condition_L > 0) if (!condition_Run(Properties.Settings.Default.combo_repeat_condition_L, "반복_L")) { Properties.Settings.Default.combo_repeat_condition_L = ""; Properties.Settings.Default.combo_repeat_use_condition_L = 0; Properties.Settings.Default.CB_repeat_use_L = false; }
-                    if (Properties.Settings.Default.combo_repeat_use_condition_M > 0) if (!condition_Run(Properties.Settings.Default.combo_repeat_condition_M, "반복_M")) { Properties.Settings.Default.combo_repeat_condition_M = ""; Properties.Settings.Default.combo_repeat_use_condition_M = 0; Properties.Settings.Default.CB_repeat_use_M = false; }
-                    if (Properties.Settings.Default.combo_repeat_use_condition_N > 0) if (!condition_Run(Properties.Settings.Default.combo_repeat_condition_N, "반복_N")) { Properties.Settings.Default.combo_repeat_condition_N = ""; Properties.Settings.Default.combo_repeat_use_condition_N = 0; Properties.Settings.Default.CB_repeat_use_N = false; }
-                    if (Properties.Settings.Default.combo_rebalance_use_condition_A > 0) if (!condition_Run(Properties.Settings.Default.combo_rebalance_condition_A, "리밸_A")) { Properties.Settings.Default.combo_rebalance_condition_A = ""; Properties.Settings.Default.combo_rebalance_use_condition_A = 0; Properties.Settings.Default.CB_rebalance_A = false; }
-                    if (Properties.Settings.Default.combo_rebalance_use_condition_B > 0) if (!condition_Run(Properties.Settings.Default.combo_rebalance_condition_B, "리밸_B")) { Properties.Settings.Default.combo_rebalance_condition_B = ""; Properties.Settings.Default.combo_rebalance_use_condition_B = 0; Properties.Settings.Default.CB_rebalance_B = false; }
-                    if (Properties.Settings.Default.combo_rebalance_use_condition_C > 0) if (!condition_Run(Properties.Settings.Default.combo_rebalance_condition_C, "리밸_C")) { Properties.Settings.Default.combo_rebalance_condition_C = ""; Properties.Settings.Default.combo_rebalance_use_condition_C = 0; Properties.Settings.Default.CB_rebalance_C = false; }
-                    if (Properties.Settings.Default.combo_rebalance_use_condition_D > 0) if (!condition_Run(Properties.Settings.Default.combo_rebalance_condition_D, "리밸_D")) { Properties.Settings.Default.combo_rebalance_condition_D = ""; Properties.Settings.Default.combo_rebalance_use_condition_D = 0; Properties.Settings.Default.CB_rebalance_D = false; }
-                    if (Properties.Settings.Default.combo_rebalance_use_condition_E > 0) if (!condition_Run(Properties.Settings.Default.combo_rebalance_condition_E, "리밸_E")) { Properties.Settings.Default.combo_rebalance_condition_E = ""; Properties.Settings.Default.combo_rebalance_use_condition_E = 0; Properties.Settings.Default.CB_rebalance_E = false; }
-                    if (Properties.Settings.Default.combo_rebalance_use_condition_F > 0) if (!condition_Run(Properties.Settings.Default.combo_rebalance_condition_F, "리밸_F")) { Properties.Settings.Default.combo_rebalance_condition_F = ""; Properties.Settings.Default.combo_rebalance_use_condition_F = 0; Properties.Settings.Default.CB_rebalance_F = false; }
-                    if (Properties.Settings.Default.combo_rebalance_use_condition_G > 0) if (!condition_Run(Properties.Settings.Default.combo_rebalance_condition_G, "리밸_G")) { Properties.Settings.Default.combo_rebalance_condition_G = ""; Properties.Settings.Default.combo_rebalance_use_condition_G = 0; Properties.Settings.Default.CB_rebalance_G = false; }
-                    if (Properties.Settings.Default.CBB_Liquidation_use_condition_A > 0) if (!condition_Run(Properties.Settings.Default.CBB_Liquidation_condition_A, "청산_A")) { Properties.Settings.Default.CBB_Liquidation_condition_A = ""; Properties.Settings.Default.CBB_Liquidation_use_condition_A = 0; Properties.Settings.Default.CB_Liquidation_A = false; }
-                    if (Properties.Settings.Default.CBB_Liquidation_use_condition_B > 0) if (!condition_Run(Properties.Settings.Default.CBB_Liquidation_condition_B, "청산_B")) { Properties.Settings.Default.CBB_Liquidation_condition_B = ""; Properties.Settings.Default.CBB_Liquidation_use_condition_B = 0; Properties.Settings.Default.CB_Liquidation_B = false; }
-                    if (Properties.Settings.Default.CBB_Liquidation_use_condition_C > 0) if (!condition_Run(Properties.Settings.Default.CBB_Liquidation_condition_C, "청산_C")) { Properties.Settings.Default.CBB_Liquidation_condition_C = ""; Properties.Settings.Default.CBB_Liquidation_use_condition_C = 0; Properties.Settings.Default.CB_Liquidation_C = false; }
-
-                    bool condition_Run(string condtion, string position)
+                    // [옵션] 유연한 변환 설정
+                    var options = new System.Text.Json.JsonSerializerOptions
                     {
-                        bool result = false;
-                        Condition start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(condtion));
-                        if (start_condition != null) { Start_Monitoring(start_condition, position); result = true; }
-                        if (Properties.Settings.Default.CB_매수탐색A && Properties.Settings.Default.TB_매수탐색A.Equals(condtion)) result = true;
-                        if (Properties.Settings.Default.CB_매수탐색B && Properties.Settings.Default.TB_매수탐색B.Equals(condtion)) result = true;
-                        if (Properties.Settings.Default.CB_매도탐색 && Properties.Settings.Default.TB_매도탐색.Equals(condtion)) result = true;
-                        return result;
-                    }
+                        NumberHandling = System.Text.Json.Serialization.JsonNumberHandling.AllowReadingFromString,
+                        PropertyNameCaseInsensitive = true
+                    };
 
-                    bool condition_check(string condtion)
+                    try
                     {
-                        bool result = false;
-                        Condition start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(condtion));
-                        if (start_condition != null) { result = true; }
-                        if (Properties.Settings.Default.CB_매수탐색A && Properties.Settings.Default.TB_매수탐색A.Equals(condtion)) result = true;
-                        if (Properties.Settings.Default.CB_매수탐색B && Properties.Settings.Default.TB_매수탐색B.Equals(condtion)) result = true;
-                        if (Properties.Settings.Default.CB_매도탐색 && Properties.Settings.Default.TB_매도탐색.Equals(condtion)) result = true;
-                        return result;
+                        // 1. 일단 일반 Dictionary로 읽어옵니다. (JSON -> Dictionary)
+                        var temp_data = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, 위치별검색식>>(jsonString, options);
+
+                        if (temp_data != null)
+                        {
+                            // 2. [핵심 수정] 일반 Dictionary를 ConcurrentDictionary로 변환해서 할당!
+                            Form1.위치별검색식리스트 = new System.Collections.Concurrent.ConcurrentDictionary<string, 위치별검색식>(temp_data);
+
+                            foreach (var Values in Form1.위치별검색식리스트.Values)
+                            {
+                                Values.이름 ??= ""; // null 방지 (JSON에서 누락된 경우)
+                            }
+
+                            Form1.Console_print("주식 자동매매프로그램 지니: 검색식 데이터 로드 성공!");
+                        }
                     }
-
-                    Properties.Settings.Default.신규검색식 = Properties.Settings.Default.combo_new_condition_A + "^" + Properties.Settings.Default.combo_new_condition_B + "^" + Properties.Settings.Default.combo_new_condition_C;
-
-                    Properties.Settings.Default.반복매매검색식 = Properties.Settings.Default.combo_repeat_condition_A + "^" + Properties.Settings.Default.combo_repeat_condition_B + "^" + Properties.Settings.Default.combo_repeat_condition_C + "^" +
-                                                                Properties.Settings.Default.combo_repeat_condition_D + "^" + Properties.Settings.Default.combo_repeat_condition_E + "^" + Properties.Settings.Default.combo_repeat_condition_F + "^" +
-                                                                Properties.Settings.Default.combo_repeat_condition_G + "^" + Properties.Settings.Default.combo_repeat_condition_H + "^" + Properties.Settings.Default.combo_repeat_condition_I + "^" +
-                                                                Properties.Settings.Default.combo_repeat_condition_J + "^" + Properties.Settings.Default.combo_repeat_condition_K + "^" + Properties.Settings.Default.combo_repeat_condition_L + "^" +
-                                                                Properties.Settings.Default.combo_repeat_condition_M + "^" + Properties.Settings.Default.combo_repeat_condition_N;
-
-                    Properties.Settings.Default.계좌관리검색식 = Properties.Settings.Default.combo_rebalance_condition_A + "^" + Properties.Settings.Default.combo_rebalance_condition_B + "^" + Properties.Settings.Default.combo_rebalance_condition_C + "^" +
-                                                                Properties.Settings.Default.combo_rebalance_condition_D + "^" + Properties.Settings.Default.combo_rebalance_condition_E + "^" + Properties.Settings.Default.combo_rebalance_condition_F + "^" +
-                                                                Properties.Settings.Default.combo_rebalance_condition_G + "^" + Properties.Settings.Default.CBB_Liquidation_condition_A + "^" + Properties.Settings.Default.CBB_Liquidation_condition_B + "^" +
-                                                                Properties.Settings.Default.CBB_Liquidation_condition_C;
-
-                    Properties.Settings.Default.와치검색식 = Properties.Settings.Default.combo_watch_condition_AA + "^" + Properties.Settings.Default.combo_watch_condition_BB + "^" + Properties.Settings.Default.combo_watch_condition_CC + "^" +
-                                                            Properties.Settings.Default.combo_watch_condition_DD;
+                    catch (Exception ex)
+                    {
+                        Form1.Console_print($"[에러] 검색식 로드 실패: {ex.Message}");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // 여기서 에러 메시지가 출력되면 파일 내용이 깨졌거나 형식이 바뀐 것입니다.
+                    Form1.Console_print($"검색식 로드 실패: {ex.Message}");
                 }
             }
 
 
-            if (!Form1.로딩완료)
-            {
-                Tab_Watch.Watch_DataLoad();
+            // 3. 조건식 자동 실행 및 검증 (Setting 변수 사용)
 
-                Form1.form1.CB_watch_use_A.Checked = Properties.Settings.Default.CB_watch_use_A;
-                Form1.form1.CB_watch_use_B.Checked = Properties.Settings.Default.CB_watch_use_B;
-                Form1.form1.CB_watch_use_C.Checked = Properties.Settings.Default.CB_watch_use_C;
-                Form1.form1.CB_watch_use_D.Checked = Properties.Settings.Default.CB_watch_use_D;
+            // [신규 매수]
+            if (GenieConfig.CB_new_A && !condition_Run("신규_A")) { Form1.위치별검색식리스트["신규_A"].이름 = ""; GenieConfig.CB_new_A = false; }
+            if (GenieConfig.CB_new_B && !condition_Run("신규_B")) { Form1.위치별검색식리스트["신규_B"].이름 = ""; GenieConfig.CB_new_B = false; }
+            if (GenieConfig.CB_new_C && !condition_Run("신규_C")) { Form1.위치별검색식리스트["신규_C"].이름 = ""; GenieConfig.CB_new_C = false; }
+
+            // [반복 매매 (A~N)]
+            if (GenieConfig.combo_repeat_use_condition_A > 0 && !condition_Run("반복_A")) { Reset_Repeat("반복_A"); GenieConfig.combo_repeat_use_condition_A = 0; GenieConfig.CB_repeat_use_A = false; }
+            if (GenieConfig.combo_repeat_use_condition_B > 0 && !condition_Run("반복_B")) { Reset_Repeat("반복_B"); GenieConfig.combo_repeat_use_condition_B = 0; GenieConfig.CB_repeat_use_B = false; }
+            if (GenieConfig.combo_repeat_use_condition_C > 0 && !condition_Run("반복_C")) { Reset_Repeat("반복_C"); GenieConfig.combo_repeat_use_condition_C = 0; GenieConfig.CB_repeat_use_C = false; }
+            if (GenieConfig.combo_repeat_use_condition_D > 0 && !condition_Run("반복_D")) { Reset_Repeat("반복_D"); GenieConfig.combo_repeat_use_condition_D = 0; GenieConfig.CB_repeat_use_D = false; }
+            if (GenieConfig.combo_repeat_use_condition_E > 0 && !condition_Run("반복_E")) { Reset_Repeat("반복_E"); GenieConfig.combo_repeat_use_condition_E = 0; GenieConfig.CB_repeat_use_E = false; }
+            if (GenieConfig.combo_repeat_use_condition_F > 0 && !condition_Run("반복_F")) { Reset_Repeat("반복_F"); GenieConfig.combo_repeat_use_condition_F = 0; GenieConfig.CB_repeat_use_F = false; }
+            if (GenieConfig.combo_repeat_use_condition_G > 0 && !condition_Run("반복_G")) { Reset_Repeat("반복_G"); GenieConfig.combo_repeat_use_condition_G = 0; GenieConfig.CB_repeat_use_G = false; }
+            if (GenieConfig.combo_repeat_use_condition_H > 0 && !condition_Run("반복_H")) { Reset_Repeat("반복_H"); GenieConfig.combo_repeat_use_condition_H = 0; GenieConfig.CB_repeat_use_H = false; }
+            if (GenieConfig.combo_repeat_use_condition_I > 0 && !condition_Run("반복_I")) { Reset_Repeat("반복_I"); GenieConfig.combo_repeat_use_condition_I = 0; GenieConfig.CB_repeat_use_I = false; }
+            if (GenieConfig.combo_repeat_use_condition_J > 0 && !condition_Run("반복_J")) { Reset_Repeat("반복_J"); GenieConfig.combo_repeat_use_condition_J = 0; GenieConfig.CB_repeat_use_J = false; }
+            if (GenieConfig.combo_repeat_use_condition_K > 0 && !condition_Run("반복_K")) { Reset_Repeat("반복_K"); GenieConfig.combo_repeat_use_condition_K = 0; GenieConfig.CB_repeat_use_K = false; }
+            if (GenieConfig.combo_repeat_use_condition_L > 0 && !condition_Run("반복_L")) { Reset_Repeat("반복_L"); GenieConfig.combo_repeat_use_condition_L = 0; GenieConfig.CB_repeat_use_L = false; }
+            if (GenieConfig.combo_repeat_use_condition_M > 0 && !condition_Run("반복_M")) { Reset_Repeat("반복_M"); GenieConfig.combo_repeat_use_condition_M = 0; GenieConfig.CB_repeat_use_M = false; }
+            if (GenieConfig.combo_repeat_use_condition_N > 0 && !condition_Run("반복_N")) { Reset_Repeat("반복_N"); GenieConfig.combo_repeat_use_condition_N = 0; GenieConfig.CB_repeat_use_N = false; }
+
+            // [리밸런싱 (A~G)]
+            if (GenieConfig.combo_rebalance_use_condition_A > 0 && !condition_Run("리밸_A")) { Reset_Repeat("리밸_A"); GenieConfig.combo_rebalance_use_condition_A = 0; GenieConfig.CB_rebalance_A = false; }
+            if (GenieConfig.combo_rebalance_use_condition_B > 0 && !condition_Run("리밸_B")) { Reset_Repeat("리밸_B"); GenieConfig.combo_rebalance_use_condition_B = 0; GenieConfig.CB_rebalance_B = false; }
+            if (GenieConfig.combo_rebalance_use_condition_C > 0 && !condition_Run("리밸_C")) { Reset_Repeat("리밸_C"); GenieConfig.combo_rebalance_use_condition_C = 0; GenieConfig.CB_rebalance_C = false; }
+            if (GenieConfig.combo_rebalance_use_condition_D > 0 && !condition_Run("리밸_D")) { Reset_Repeat("리밸_D"); GenieConfig.combo_rebalance_use_condition_D = 0; GenieConfig.CB_rebalance_D = false; }
+            if (GenieConfig.combo_rebalance_use_condition_E > 0 && !condition_Run("리밸_E")) { Reset_Repeat("리밸_E"); GenieConfig.combo_rebalance_use_condition_E = 0; GenieConfig.CB_rebalance_E = false; }
+            if (GenieConfig.combo_rebalance_use_condition_F > 0 && !condition_Run("리밸_F")) { Reset_Repeat("리밸_F"); GenieConfig.combo_rebalance_use_condition_F = 0; GenieConfig.CB_rebalance_F = false; }
+            if (GenieConfig.combo_rebalance_use_condition_G > 0 && !condition_Run("리밸_G")) { Reset_Repeat("리밸_G"); GenieConfig.combo_rebalance_use_condition_G = 0; GenieConfig.CB_rebalance_G = false; }
+
+            // [계좌 청산 (A~C)]
+            if (GenieConfig.CBB_Liquidation_use_condition_A > 0 && !condition_Run("청산_A")) { Reset_Repeat("청산_A"); GenieConfig.CBB_Liquidation_use_condition_A = 0; GenieConfig.CB_Liquidation_A = false; }
+            if (GenieConfig.CBB_Liquidation_use_condition_B > 0 && !condition_Run("청산_B")) { Reset_Repeat("청산_B"); GenieConfig.CBB_Liquidation_use_condition_B = 0; GenieConfig.CB_Liquidation_B = false; }
+            if (GenieConfig.CBB_Liquidation_use_condition_C > 0 && !condition_Run("청산_C")) { Reset_Repeat("청산_C"); GenieConfig.CBB_Liquidation_use_condition_C = 0; GenieConfig.CB_Liquidation_C = false; }
+
+            //// 4. 감시(Watch) 설정 UI 반영
+            try { Form1.form1.와치_A.Items.Add(Form1.위치별검색식리스트["와치_A"].이름); Form1.form1.와치_A.Text = Form1.위치별검색식리스트["와치_A"].이름; } catch { }
+            try { Form1.form1.와치_B.Items.Add(Form1.위치별검색식리스트["와치_B"].이름); Form1.form1.와치_B.Text = Form1.위치별검색식리스트["와치_B"].이름; } catch { }
+            try { Form1.form1.와치_C.Items.Add(Form1.위치별검색식리스트["와치_C"].이름); Form1.form1.와치_C.Text = Form1.위치별검색식리스트["와치_C"].이름; } catch { }
+            try { Form1.form1.와치_D.Items.Add(Form1.위치별검색식리스트["와치_D"].이름); Form1.form1.와치_D.Text = Form1.위치별검색식리스트["와치_D"].이름; } catch { }
+
+            if (GenieConfig.CB_watch_use_A && !condition_Run("와치_A")) { Reset_Repeat("와치_A"); GenieConfig.CB_watch_use_A = false; }
+            if (GenieConfig.CB_watch_use_B && !condition_Run("와치_B")) { Reset_Repeat("와치_B"); GenieConfig.CB_watch_use_B = false; }
+            if (GenieConfig.CB_watch_use_C && !condition_Run("와치_C")) { Reset_Repeat("와치_C"); GenieConfig.CB_watch_use_C = false; }
+            if (GenieConfig.CB_watch_use_D && !condition_Run("와치_D")) { Reset_Repeat("와치_D"); GenieConfig.CB_watch_use_D = false; }
+
+
+            // 내부 헬퍼 함수: 이름 초기화용 (코드 중복 줄이기)
+            void Reset_Repeat(string key)
+            {
+                if (Form1.위치별검색식리스트.ContainsKey(key)) Form1.위치별검색식리스트[key].이름 = "";
+            }
+
+            // 조건식 실행 함수
+            bool condition_Run(string where)
+            {
+                Form1.Console_print($"Condition_DataLoad where : {where}");
+                bool result = false;
+                if (Form1.위치별검색식리스트.ContainsKey(where))
+                {
+                    Condition start_condition = Form1.ConditionList.Find(o => o.name.Equals(Form1.위치별검색식리스트[where].이름));
+                    if (start_condition != null)
+                    {
+                        result = Start_Monitoring(start_condition, where, null, null);
+                    }
+                }
+                return result;
+            }
+
+            // 5. 매매 시작 상태가 아닐 때 UI 업데이트
+            if (Form1.매매시작 != "매매시작")
+            {
+                Form1.form1.CB_watch_use_A.Checked = GenieConfig.CB_watch_use_A;
+                Form1.form1.CB_watch_use_B.Checked = GenieConfig.CB_watch_use_B;
+                Form1.form1.CB_watch_use_C.Checked = GenieConfig.CB_watch_use_C;
+                Form1.form1.CB_watch_use_D.Checked = GenieConfig.CB_watch_use_D;
 
                 Tab_InterestGroup.관심실시간자동등록(false);
-
                 Tab_InterestGroup.자동삭제실행();
 
-
-
-                Console.WriteLine("1111111111 Condition_DataLoad ::" + Form1.condotionManager.Condotion_count());
-
-                Form1.condotionManager.DequeueRun();
-
-                Console.WriteLine("2222222222 Condition_DataLoad ::" + Form1.condotionManager.Condotion_count());
-
-                if (Form1.매매시작.Equals(""))
-                    Form1.form1.잔고_매매();
+                Log.동작기록("사용자 검색식 불러오기 완료.");
             }
         }
 
-        public static bool Overlap_condition(string condition) // 검색식 위치 와 이름  저장 
-        {
-            bool result = false;
-
-            List<string> 중복리스트 = Form1.form1.Overlap_condition_List;
-            중복리스트.Clear();
-
-            bool CBnew_A = Properties.Settings.Default.CB_new_A;
-            bool CBnew_B = Properties.Settings.Default.CB_new_B;
-            bool CBnew_C = Properties.Settings.Default.CB_new_C;
-
-            if (Form1.FormBasic_Open)
-            {
-                CBnew_A = Form_Basic.form.CB_new_A.Checked;
-                CBnew_B = Form_Basic.form.CB_new_B.Checked;
-                CBnew_C = Form_Basic.form.CB_new_C.Checked;
-            }
-
-            if (CBnew_A) 중복리스트.Add(Properties.Settings.Default.combo_new_condition_A);
-            if (CBnew_B) 중복리스트.Add(Properties.Settings.Default.combo_new_condition_B);
-            if (CBnew_C) 중복리스트.Add(Properties.Settings.Default.combo_new_condition_C);
-            if (Form1.form1.CB_watch_use_A.Checked) 중복리스트.Add(Properties.Settings.Default.combo_watch_condition_AA);
-            if (Form1.form1.CB_watch_use_B.Checked) 중복리스트.Add(Properties.Settings.Default.combo_watch_condition_BB);
-            if (Form1.form1.CB_watch_use_C.Checked) 중복리스트.Add(Properties.Settings.Default.combo_watch_condition_CC);
-            if (Form1.form1.CB_watch_use_D.Checked) 중복리스트.Add(Properties.Settings.Default.combo_watch_condition_DD);
-
-            int CBBrepeat_use_condition_A = Properties.Settings.Default.combo_repeat_use_condition_A;
-            int CBBrepeat_use_condition_B = Properties.Settings.Default.combo_repeat_use_condition_B;
-            int CBBrepeat_use_condition_C = Properties.Settings.Default.combo_repeat_use_condition_C;
-            int CBBrepeat_use_condition_D = Properties.Settings.Default.combo_repeat_use_condition_D;
-            int CBBrepeat_use_condition_E = Properties.Settings.Default.combo_repeat_use_condition_E;
-            int CBBrepeat_use_condition_F = Properties.Settings.Default.combo_repeat_use_condition_F;
-            int CBBrepeat_use_condition_G = Properties.Settings.Default.combo_repeat_use_condition_G;
-            int CBBrepeat_use_condition_H = Properties.Settings.Default.combo_repeat_use_condition_H;
-            int CBBrepeat_use_condition_I = Properties.Settings.Default.combo_repeat_use_condition_I;
-            int CBBrepeat_use_condition_J = Properties.Settings.Default.combo_repeat_use_condition_J;
-            int CBBrepeat_use_condition_K = Properties.Settings.Default.combo_repeat_use_condition_K;
-            int CBBrepeat_use_condition_L = Properties.Settings.Default.combo_repeat_use_condition_L;
-            int CBBrepeat_use_condition_M = Properties.Settings.Default.combo_repeat_use_condition_M;
-            int CBBrepeat_use_condition_N = Properties.Settings.Default.combo_repeat_use_condition_N;
-
-            if (Form1.FormRepeat_Open)
-            {
-                CBBrepeat_use_condition_A = Form_Repeat.form.combo_repeat_use_condition_A.SelectedIndex;
-                CBBrepeat_use_condition_B = Form_Repeat.form.combo_repeat_use_condition_B.SelectedIndex;
-                CBBrepeat_use_condition_C = Form_Repeat.form.combo_repeat_use_condition_C.SelectedIndex;
-                CBBrepeat_use_condition_D = Form_Repeat.form.combo_repeat_use_condition_D.SelectedIndex;
-                CBBrepeat_use_condition_E = Form_Repeat.form.combo_repeat_use_condition_E.SelectedIndex;
-                CBBrepeat_use_condition_F = Form_Repeat.form.combo_repeat_use_condition_F.SelectedIndex;
-                CBBrepeat_use_condition_G = Form_Repeat.form.combo_repeat_use_condition_G.SelectedIndex;
-                CBBrepeat_use_condition_H = Form_Repeat.form.combo_repeat_use_condition_H.SelectedIndex;
-                CBBrepeat_use_condition_I = Form_Repeat.form.combo_repeat_use_condition_I.SelectedIndex;
-                CBBrepeat_use_condition_J = Form_Repeat.form.combo_repeat_use_condition_J.SelectedIndex;
-                CBBrepeat_use_condition_K = Form_Repeat.form.combo_repeat_use_condition_K.SelectedIndex;
-                CBBrepeat_use_condition_L = Form_Repeat.form.combo_repeat_use_condition_L.SelectedIndex;
-                CBBrepeat_use_condition_M = Form_Repeat.form.combo_repeat_use_condition_M.SelectedIndex;
-                CBBrepeat_use_condition_N = Form_Repeat.form.combo_repeat_use_condition_N.SelectedIndex;
-            }
-
-            if (CBBrepeat_use_condition_A > 0) 중복리스트.Add(Properties.Settings.Default.combo_repeat_condition_A);
-            if (CBBrepeat_use_condition_B > 0) 중복리스트.Add(Properties.Settings.Default.combo_repeat_condition_B);
-            if (CBBrepeat_use_condition_C > 0) 중복리스트.Add(Properties.Settings.Default.combo_repeat_condition_C);
-            if (CBBrepeat_use_condition_D > 0) 중복리스트.Add(Properties.Settings.Default.combo_repeat_condition_D);
-            if (CBBrepeat_use_condition_E > 0) 중복리스트.Add(Properties.Settings.Default.combo_repeat_condition_E);
-            if (CBBrepeat_use_condition_F > 0) 중복리스트.Add(Properties.Settings.Default.combo_repeat_condition_F);
-            if (CBBrepeat_use_condition_G > 0) 중복리스트.Add(Properties.Settings.Default.combo_repeat_condition_G);
-            if (CBBrepeat_use_condition_H > 0) 중복리스트.Add(Properties.Settings.Default.combo_repeat_condition_H);
-            if (CBBrepeat_use_condition_I > 0) 중복리스트.Add(Properties.Settings.Default.combo_repeat_condition_I);
-            if (CBBrepeat_use_condition_J > 0) 중복리스트.Add(Properties.Settings.Default.combo_repeat_condition_J);
-            if (CBBrepeat_use_condition_K > 0) 중복리스트.Add(Properties.Settings.Default.combo_repeat_condition_K);
-            if (CBBrepeat_use_condition_L > 0) 중복리스트.Add(Properties.Settings.Default.combo_repeat_condition_L);
-            if (CBBrepeat_use_condition_M > 0) 중복리스트.Add(Properties.Settings.Default.combo_repeat_condition_M);
-            if (CBBrepeat_use_condition_N > 0) 중복리스트.Add(Properties.Settings.Default.combo_repeat_condition_N);
-
-            int comborebalance_use_condition_A = Properties.Settings.Default.combo_rebalance_use_condition_A;
-            int comborebalance_use_condition_B = Properties.Settings.Default.combo_rebalance_use_condition_B;
-            int comborebalance_use_condition_C = Properties.Settings.Default.combo_rebalance_use_condition_C;
-            int comborebalance_use_condition_D = Properties.Settings.Default.combo_rebalance_use_condition_D;
-            int comborebalance_use_condition_E = Properties.Settings.Default.combo_rebalance_use_condition_E;
-            int comborebalance_use_condition_F = Properties.Settings.Default.combo_rebalance_use_condition_F;
-            int comborebalance_use_condition_G = Properties.Settings.Default.combo_rebalance_use_condition_G;
-
-            int CBBLiquidation_use_condition_A = Properties.Settings.Default.CBB_Liquidation_use_condition_A;
-            int CBBLiquidation_use_condition_B = Properties.Settings.Default.CBB_Liquidation_use_condition_B;
-            int CBBLiquidation_use_condition_C = Properties.Settings.Default.CBB_Liquidation_use_condition_C;
-
-            if (Form1.FormAccountManagement_Open)
-            {
-                comborebalance_use_condition_A = Form_AccountManagement.form.combo_rebalance_use_condition_A.SelectedIndex;
-                comborebalance_use_condition_B = Form_AccountManagement.form.combo_rebalance_use_condition_B.SelectedIndex;
-                comborebalance_use_condition_C = Form_AccountManagement.form.combo_rebalance_use_condition_C.SelectedIndex;
-                comborebalance_use_condition_D = Form_AccountManagement.form.combo_rebalance_use_condition_D.SelectedIndex;
-                comborebalance_use_condition_E = Form_AccountManagement.form.combo_rebalance_use_condition_E.SelectedIndex;
-                comborebalance_use_condition_F = Form_AccountManagement.form.combo_rebalance_use_condition_F.SelectedIndex;
-                comborebalance_use_condition_G = Form_AccountManagement.form.combo_rebalance_use_condition_G.SelectedIndex;
-
-                CBBLiquidation_use_condition_A = Form_AccountManagement.form.CBB_Liquidation_use_condition_A.SelectedIndex;
-                CBBLiquidation_use_condition_B = Form_AccountManagement.form.CBB_Liquidation_use_condition_B.SelectedIndex;
-                CBBLiquidation_use_condition_C = Form_AccountManagement.form.CBB_Liquidation_use_condition_C.SelectedIndex;
-            }
-
-            if (comborebalance_use_condition_A > 0) 중복리스트.Add(Properties.Settings.Default.combo_rebalance_condition_A);
-            if (comborebalance_use_condition_B > 0) 중복리스트.Add(Properties.Settings.Default.combo_rebalance_condition_B);
-            if (comborebalance_use_condition_C > 0) 중복리스트.Add(Properties.Settings.Default.combo_rebalance_condition_C);
-            if (comborebalance_use_condition_D > 0) 중복리스트.Add(Properties.Settings.Default.combo_rebalance_condition_D);
-            if (comborebalance_use_condition_E > 0) 중복리스트.Add(Properties.Settings.Default.combo_rebalance_condition_E);
-            if (comborebalance_use_condition_F > 0) 중복리스트.Add(Properties.Settings.Default.combo_rebalance_condition_F);
-            if (comborebalance_use_condition_G > 0) 중복리스트.Add(Properties.Settings.Default.combo_rebalance_condition_G);
-
-            if (CBBLiquidation_use_condition_A > 0) 중복리스트.Add(Properties.Settings.Default.CBB_Liquidation_condition_A);
-            if (CBBLiquidation_use_condition_B > 0) 중복리스트.Add(Properties.Settings.Default.CBB_Liquidation_condition_B);
-            if (CBBLiquidation_use_condition_C > 0) 중복리스트.Add(Properties.Settings.Default.CBB_Liquidation_condition_C);
-
-            for (int i = 0; i < Form1.form1.Interest_condition_List.Count; i++)
-            {
-                중복리스트.Add(Form1.form1.Interest_condition_List[i]);
-            }
-
-            if (중복리스트.Contains(condition) && !Properties.Settings.Default.TB_매수탐색A.Equals(condition) && !Properties.Settings.Default.TB_매수탐색B.Equals(condition) && !Properties.Settings.Default.TB_매도탐색.Equals(condition)) result = true;
-
-            return result;
-        }
+        // ---------------------------------------------------------
+        // 체크박스 변경 시 조건식 감시 시작/정지 (수정됨)
+        // ---------------------------------------------------------
 
         public static void CB_condition_CheckedChanged(object sender) // 체크박스 와 콤보박스 사용 갯수 제한 
         {
-            CheckBox CB = (sender as CheckBox);
+            if (ConditionList.Count == 0) return;
 
-            Condition start_condition = null;
-            Condition stop_condition = null;
-
-            string location = "신규_A";
+            CheckBox checkbox = (sender as CheckBox);
             ComboBox combo = null;
 
-            switch (CB.Name)
+            // [수정] check 변수는 현재 로직에서 직접 쓰이진 않지만, 값 매핑을 최신 구조로 변경합니다.
+            bool check = false;
+
+            switch (checkbox.Name)
             {
-                case "CB_new_A":
-                    location = "신규_A";
-                    combo = Form_Basic.form.combo_new_condition_A;
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.신규검색식.Split('^')[0]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_new_condition_A));
-                    break;
-                case "CB_new_B":
-                    location = "신규_B";
-                    combo = Form_Basic.form.combo_new_condition_B;
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.신규검색식.Split('^')[1]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_new_condition_B));
-                    break;
-                case "CB_new_C":
-                    location = "신규_C";
-                    combo = Form_Basic.form.combo_new_condition_C;
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.신규검색식.Split('^')[2]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_new_condition_C));
-                    break;
-                case "CB_watch_use_A":
-                    location = "Watch_A";
-                    combo = Form1.form1.combo_watch_condition_AA;
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.와치검색식.Split('^')[0]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_watch_condition_AA));
-                    break;
-                case "CB_watch_use_B":
-                    location = "Watch_B";
-                    combo = Form1.form1.combo_watch_condition_BB;
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.와치검색식.Split('^')[1]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_watch_condition_BB));
-                    break;
-                case "CB_watch_use_C":
-                    location = "Watch_C";
-                    combo = Form1.form1.combo_watch_condition_CC;
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.와치검색식.Split('^')[2]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_watch_condition_CC));
-                    break;
-                case "CB_watch_use_D":
-                    location = "Watch_D";
-                    combo = Form1.form1.combo_watch_condition_DD;
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.와치검색식.Split('^')[3]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_watch_condition_DD));
-                    break;
+                // [신규 매수] -> Setting.basic
+                case "CB_new_A": combo = Form_Basic.form.신규_A; check = GenieConfig.CB_new_A; break;
+                case "CB_new_B": combo = Form_Basic.form.신규_B; check = GenieConfig.CB_new_B; break;
+                case "CB_new_C": combo = Form_Basic.form.신규_C; check = GenieConfig.CB_new_C; break;
+
+                // [감시(Watch)] -> Setting.watch
+                case "CB_watch_use_A": combo = Form1.form1.와치_A; check = GenieConfig.CB_watch_use_A; break;
+                case "CB_watch_use_B": combo = Form1.form1.와치_B; check = GenieConfig.CB_watch_use_B; break;
+                case "CB_watch_use_C": combo = Form1.form1.와치_C; check = GenieConfig.CB_watch_use_C; break;
+                case "CB_watch_use_D": combo = Form1.form1.와치_D; check = GenieConfig.CB_watch_use_D; break;
             }
 
-            if (CB.Checked)
+            if (checkbox.Checked)
             {
-                void 대금탐색on()
-                {
-                    Form1.비프음("실행");
-                    Form1.동작_Log("[검색식 가동확인] " + location + " - 검색식[ " + combo.Text + " ]이 실시간 감시를 시작 합니다.");
-                    검색식위치저장(location, combo.Text);
-                }
-                void 대금탐색off()
-                {
-                    Form1.비프음("정지");
-                    Form1.알림창("[ 검색식 가동확인 ]\n\n" + location + " - 검색식 [ " + combo.Text + " ]이 정지 되어 있습니다.", 5, false);
-                    (sender as CheckBox).Checked = false;
-                }
+                Console_print($"checkbox.Name [{checkbox.Name}]   combo.Text [{combo.Text}] ConditionList.count [{ConditionList.Count}]");
 
-                if (combo.Text.Equals(Properties.Settings.Default.TB_매수탐색A))
+                // [조건식 시작 로직]
+                Condition start_condition = Form1.ConditionList.Find(o => o.name.Equals(combo.Text));
+                if (start_condition != null)
                 {
-                    if (Properties.Settings.Default.CB_매수탐색A) 대금탐색on(); else 대금탐색off();
-                }
-                else if (combo.Text.Equals(Properties.Settings.Default.TB_매수탐색B))
-                {
-                    if (Properties.Settings.Default.CB_매수탐색B) 대금탐색on(); else 대금탐색off();
-                }
-                else if (combo.Text.Equals(Properties.Settings.Default.TB_매도탐색))
-                {
-                    if (Properties.Settings.Default.CB_매도탐색) 대금탐색on(); else 대금탐색off();
-                }
-                else
-                {
-                    if (Form1.Run_condition_List.Count < 10)
+                    if (combo.Text.Equals(""))
                     {
-                        if (start_condition != null)
-                        {
-                            if (combo.Text.Equals(""))
-                            {
-                                Form1.AutoClosingAlram(location + " - 검색식이 비어 있습니다.", "검색식알림", 5, "동작");
-                                (sender as CheckBox).Checked = false;
-                            }
-                            else
-                            {
-                                Start_Monitoring(start_condition, location);
-                                검색식위치저장(location, combo.Text);
-                            }
-                        }
-                        else
-                        {
-                            Form1.AutoClosingAlram(location + " - 검색식이 비어 있습니다.", "검색식알림", 5, "동작");
-                            (sender as CheckBox).Checked = false;
-                        }
+                        Form1.AutoClosingAlram(combo.Name.ToString() + " - 검색식이 비어 있습니다.", "검색식알림", 5, "동작");
+                        checkbox.Checked = false;
                     }
                     else
                     {
-                        if (!Form1.Run_condition_List.Contains(start_condition.name))
+                        // Start_Monitoring 호출
+                        if (!Start_Monitoring(start_condition, combo.Name, checkbox, null))
                         {
-                            if (start_condition.name.Equals(""))
-                                Form1.AutoClosingAlram(location + " - 검색식이 비어 있습니다.", "검색식알림", 5, "동작");
-                            else
-                                Form1.AutoClosingAlram("검색식은 10개 까지 사용할수 있습니다.", "검색식알림", 5, "동작");
-
-                            (sender as CheckBox).Checked = false;
-                        }
-                        else
-                        {
-                            if (Form1.로딩완료) Form1.알림창("[ 검색식 가동중 ]\n\n검색식( " + start_condition.name + " ) 이 실시간 감시 중 입니다.", 5, false);
-                            Form1.동작_Log("[검색식 가동중] 검색식( " + start_condition.name + " ) 이 실시간 감시 중 입니다.");
+                            checkbox.Checked = false;
                         }
                     }
+                }
+                else
+                {
+                    Form1.AutoClosingAlram(combo.Name.ToString() + " - 검색식이 비어 있습니다.", "검색식알림", 5, "동작");
+                    checkbox.Checked = false;
                 }
             }
             else
             {
-                if (combo.Text.Equals(Properties.Settings.Default.TB_매수탐색A) || combo.Text.Equals(Properties.Settings.Default.TB_매수탐색B) || combo.Text.Equals(Properties.Settings.Default.TB_매도탐색) || combo.Text.Equals(" "))
+                // [조건식 정지 로직]
+                // Form1.위치별검색식리스트 딕셔너리에 키가 있는지 먼저 확인하는 것이 안전합니다.
+                if (Form1.위치별검색식리스트.ContainsKey(combo.Name) && Form1.위치별검색식리스트[combo.Name].실행여부)
                 {
-                    if (combo.Text.Equals(" "))
-                        Form1.비프음("언체크");
-                    else
-                    { Form1.동작_Log("[검색식 가동확인] " + location + "검색식 [ " + combo.Text + " ]이 실시간 감시를 해제 합니다."); Form1.비프음("정지"); }
-                }
-                else
-                {
+                    Condition stop_condition = Form1.ConditionList.Find(o => o.name.Equals(Form1.위치별검색식리스트[combo.Name].이름));
                     if (stop_condition != null)
                     {
-                        Stop_Monitoring(stop_condition, location);  //검색식 정지 요청
+                        Stop_Monitoring(stop_condition, combo.Name);  // 검색식 정지 요청
                     }
                 }
             }
         }
-
-        public static void combo_use_condition_SelectedIndexChanged(object sender)
+        public static void Combo_use_condition_SelectedIndexChanged(object sender)
         {
-            Condition start_condition = null;
-            Condition stop_condition = null;
-
-            string location = "반복_A";
-            string condition_name = "";
-            ComboBox ComboBox_use = sender as ComboBox;
-            ComboBox ComboBox_condition = null;
-
-            switch (ComboBox_use.Name)
+            if (Form1.로딩완료)
             {
-                case "combo_repeat_use_condition_A":
-                    location = "반복_A";
-                    condition_name = Properties.Settings.Default.반복매매검색식.Split('^')[0];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.반복매매검색식.Split('^')[0]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_repeat_condition_A));
-                    if (Form1.로딩완료) Form_Repeat.form.CB_repeat_use_A.Checked = false;
-                    ComboBox_condition = Form_Repeat.form.combo_repeat_condition_A;
-                    Properties.Settings.Default.combo_repeat_use_condition_A = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_repeat_use_condition_B":
-                    location = "반복_B";
-                    condition_name = Properties.Settings.Default.반복매매검색식.Split('^')[1];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.반복매매검색식.Split('^')[1]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_repeat_condition_B));
-                    if (Form1.로딩완료) Form_Repeat.form.CB_repeat_use_B.Checked = false;
-                    ComboBox_condition = Form_Repeat.form.combo_repeat_condition_B;
-                    Properties.Settings.Default.combo_repeat_use_condition_B = ComboBox_use.SelectedIndex;
+                CheckBox checkbox = null;
+                ComboBox use = sender as ComboBox;
+                ComboBox combo = null;
 
-                    break;
-                case "combo_repeat_use_condition_C":
-                    location = "반복_C";
-                    condition_name = Properties.Settings.Default.반복매매검색식.Split('^')[2];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.반복매매검색식.Split('^')[2]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_repeat_condition_C));
-                    if (Form1.로딩완료) Form_Repeat.form.CB_repeat_use_C.Checked = false;
-                    ComboBox_condition = Form_Repeat.form.combo_repeat_condition_C;
-                    Properties.Settings.Default.combo_repeat_use_condition_C = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_repeat_use_condition_D":
-                    location = "반복_D";
-                    condition_name = Properties.Settings.Default.반복매매검색식.Split('^')[3];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.반복매매검색식.Split('^')[3]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_repeat_condition_D));
-                    if (Form1.로딩완료) Form_Repeat.form.CB_repeat_use_D.Checked = false;
-                    ComboBox_condition = Form_Repeat.form.combo_repeat_condition_D;
-                    Properties.Settings.Default.combo_repeat_use_condition_D = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_repeat_use_condition_E":
-                    location = "반복_E";
-                    condition_name = Properties.Settings.Default.반복매매검색식.Split('^')[4];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.반복매매검색식.Split('^')[4]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_repeat_condition_E));
-                    if (Form1.로딩완료) Form_Repeat.form.CB_repeat_use_E.Checked = false;
-                    ComboBox_condition = Form_Repeat.form.combo_repeat_condition_E;
-                    Properties.Settings.Default.combo_repeat_use_condition_E = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_repeat_use_condition_F":
-                    location = "반복_F";
-                    condition_name = Properties.Settings.Default.반복매매검색식.Split('^')[5];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.반복매매검색식.Split('^')[5]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_repeat_condition_F));
-                    if (Form1.로딩완료) Form_Repeat.form.CB_repeat_use_F.Checked = false;
-                    ComboBox_condition = Form_Repeat.form.combo_repeat_condition_F;
-                    Properties.Settings.Default.combo_repeat_use_condition_F = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_repeat_use_condition_G":
-                    location = "반복_G";
-                    condition_name = Properties.Settings.Default.반복매매검색식.Split('^')[6];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.반복매매검색식.Split('^')[6]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_repeat_condition_G));
-                    if (Form1.로딩완료) Form_Repeat.form.CB_repeat_use_G.Checked = false;
-                    ComboBox_condition = Form_Repeat.form.combo_repeat_condition_G;
-                    Properties.Settings.Default.combo_repeat_use_condition_G = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_repeat_use_condition_H":
-                    location = "반복_H";
-                    condition_name = Properties.Settings.Default.반복매매검색식.Split('^')[7];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.반복매매검색식.Split('^')[7]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_repeat_condition_H));
-                    if (Form1.로딩완료) Form_Repeat.form.CB_repeat_use_H.Checked = false;
-                    ComboBox_condition = Form_Repeat.form.combo_repeat_condition_H;
-                    Properties.Settings.Default.combo_repeat_use_condition_H = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_repeat_use_condition_I":
-                    location = "반복_I";
-                    condition_name = Properties.Settings.Default.반복매매검색식.Split('^')[8];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.반복매매검색식.Split('^')[8]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_repeat_condition_I));
-                    if (Form1.로딩완료) Form_Repeat.form.CB_repeat_use_I.Checked = false;
-                    ComboBox_condition = Form_Repeat.form.combo_repeat_condition_I;
-                    Properties.Settings.Default.combo_repeat_use_condition_I = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_repeat_use_condition_J":
-                    location = "반복_J";
-                    condition_name = Properties.Settings.Default.반복매매검색식.Split('^')[9];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.반복매매검색식.Split('^')[9]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_repeat_condition_J));
-                    if (Form1.로딩완료) Form_Repeat.form.CB_repeat_use_J.Checked = false;
-                    ComboBox_condition = Form_Repeat.form.combo_repeat_condition_J;
-                    Properties.Settings.Default.combo_repeat_use_condition_J = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_repeat_use_condition_K":
-                    location = "반복_K";
-                    condition_name = Properties.Settings.Default.반복매매검색식.Split('^')[10];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.반복매매검색식.Split('^')[10]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_repeat_condition_K));
-                    if (Form1.로딩완료) Form_Repeat.form.CB_repeat_use_K.Checked = false;
-                    ComboBox_condition = Form_Repeat.form.combo_repeat_condition_K;
-                    Properties.Settings.Default.combo_repeat_use_condition_K = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_repeat_use_condition_L":
-                    location = "반복_L";
-                    condition_name = Properties.Settings.Default.반복매매검색식.Split('^')[11];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.반복매매검색식.Split('^')[11]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_repeat_condition_L));
-                    if (Form1.로딩완료) Form_Repeat.form.CB_repeat_use_L.Checked = false;
-                    ComboBox_condition = Form_Repeat.form.combo_repeat_condition_L;
-                    Properties.Settings.Default.combo_repeat_use_condition_L = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_repeat_use_condition_M":
-                    location = "반복_M";
-                    condition_name = Properties.Settings.Default.반복매매검색식.Split('^')[12];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.반복매매검색식.Split('^')[12]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_repeat_condition_M));
-                    if (Form1.로딩완료) Form_Repeat.form.CB_repeat_use_M.Checked = false;
-                    ComboBox_condition = Form_Repeat.form.combo_repeat_condition_M;
-                    Properties.Settings.Default.combo_repeat_use_condition_M = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_repeat_use_condition_N":
-                    location = "반복_N";
-                    condition_name = Properties.Settings.Default.반복매매검색식.Split('^')[13];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.반복매매검색식.Split('^')[13]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_repeat_condition_N));
-                    if (Form1.로딩완료) Form_Repeat.form.CB_repeat_use_N.Checked = false;
-                    ComboBox_condition = Form_Repeat.form.combo_repeat_condition_N;
-                    Properties.Settings.Default.combo_repeat_use_condition_N = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_rebalance_use_condition_A":
-                    location = "리밸_A";
-                    condition_name = Properties.Settings.Default.계좌관리검색식.Split('^')[0];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.계좌관리검색식.Split('^')[0]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_rebalance_condition_A));
-                    if (Form1.로딩완료) Form_AccountManagement.form.CB_rebalance_A.Checked = false;
-                    ComboBox_condition = Form_AccountManagement.form.combo_rebalance_condition_A;
-                    Properties.Settings.Default.combo_rebalance_use_condition_A = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_rebalance_use_condition_B":
-                    location = "리밸_B";
-                    condition_name = Properties.Settings.Default.계좌관리검색식.Split('^')[1];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.계좌관리검색식.Split('^')[1]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_rebalance_condition_B));
-                    if (Form1.로딩완료) Form_AccountManagement.form.CB_rebalance_B.Checked = false;
-                    ComboBox_condition = Form_AccountManagement.form.combo_rebalance_condition_B;
-                    Properties.Settings.Default.combo_rebalance_use_condition_B = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_rebalance_use_condition_C":
-                    location = "리밸_C";
-                    condition_name = Properties.Settings.Default.계좌관리검색식.Split('^')[2];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.계좌관리검색식.Split('^')[2]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_rebalance_condition_C));
-                    if (Form1.로딩완료) Form_AccountManagement.form.CB_rebalance_C.Checked = false;
-                    ComboBox_condition = Form_AccountManagement.form.combo_rebalance_condition_C;
-                    Properties.Settings.Default.combo_rebalance_use_condition_C = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_rebalance_use_condition_D":
-                    location = "리밸_D";
-                    condition_name = Properties.Settings.Default.계좌관리검색식.Split('^')[3];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.계좌관리검색식.Split('^')[3]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_rebalance_condition_D));
-                    if (Form1.로딩완료) Form_AccountManagement.form.CB_rebalance_D.Checked = false;
-                    ComboBox_condition = Form_AccountManagement.form.combo_rebalance_condition_D;
-                    Properties.Settings.Default.combo_rebalance_use_condition_D = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_rebalance_use_condition_E":
-                    location = "리밸_E";
-                    condition_name = Properties.Settings.Default.계좌관리검색식.Split('^')[4];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.계좌관리검색식.Split('^')[4]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_rebalance_condition_E));
-                    if (Form1.로딩완료) Form_AccountManagement.form.CB_rebalance_E.Checked = false;
-                    ComboBox_condition = Form_AccountManagement.form.combo_rebalance_condition_E;
-                    Properties.Settings.Default.combo_rebalance_use_condition_E = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_rebalance_use_condition_F":
-                    location = "리밸_F";
-                    condition_name = Properties.Settings.Default.계좌관리검색식.Split('^')[5];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.계좌관리검색식.Split('^')[5]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_rebalance_condition_F));
-                    if (Form1.로딩완료) Form_AccountManagement.form.CB_rebalance_F.Checked = false;
-                    ComboBox_condition = Form_AccountManagement.form.combo_rebalance_condition_F;
-                    Properties.Settings.Default.combo_rebalance_use_condition_F = ComboBox_use.SelectedIndex;
-                    break;
-                case "combo_rebalance_use_condition_G":
-                    location = "리밸_G";
-                    condition_name = Properties.Settings.Default.계좌관리검색식.Split('^')[6];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.계좌관리검색식.Split('^')[6]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.combo_rebalance_condition_G));
-                    if (Form1.로딩완료) Form_AccountManagement.form.CB_rebalance_G.Checked = false;
-                    ComboBox_condition = Form_AccountManagement.form.combo_rebalance_condition_G;
-                    Properties.Settings.Default.combo_rebalance_use_condition_G = ComboBox_use.SelectedIndex;
-                    break;
-                case "CBB_Liquidation_use_condition_A":
-                    location = "청산_A";
-                    condition_name = Properties.Settings.Default.계좌관리검색식.Split('^')[7];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.계좌관리검색식.Split('^')[7]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.CBB_Liquidation_condition_A));
-                    if (Form1.로딩완료) Form_AccountManagement.form.CB_Liquidation_A.Checked = false;
-                    ComboBox_condition = Form_AccountManagement.form.CBB_Liquidation_condition_A;
-                    Properties.Settings.Default.CBB_Liquidation_use_condition_A = ComboBox_use.SelectedIndex;
-                    break;
-                case "CBB_Liquidation_use_condition_B":
-                    location = "청산_B";
-                    condition_name = Properties.Settings.Default.계좌관리검색식.Split('^')[8];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.계좌관리검색식.Split('^')[8]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.CBB_Liquidation_condition_B));
-                    if (Form1.로딩완료) Form_AccountManagement.form.CB_Liquidation_B.Checked = false;
-                    ComboBox_condition = Form_AccountManagement.form.CBB_Liquidation_condition_B;
-                    Properties.Settings.Default.CBB_Liquidation_use_condition_B = ComboBox_use.SelectedIndex;
-                    break;
-                case "CBB_Liquidation_use_condition_C":
-                    location = "청산_C";
-                    condition_name = Properties.Settings.Default.계좌관리검색식.Split('^')[9];
-                    start_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.계좌관리검색식.Split('^')[9]));
-                    stop_condition = Form1.form1.ConditionList.Find(o => o.name.Equals(Properties.Settings.Default.CBB_Liquidation_condition_C));
-                    if (Form1.로딩완료) Form_AccountManagement.form.CB_Liquidation_C.Checked = false;
-                    ComboBox_condition = Form_AccountManagement.form.CBB_Liquidation_condition_C;
-                    Properties.Settings.Default.CBB_Liquidation_use_condition_C = ComboBox_use.SelectedIndex;
-                    break;
-            }
-
-            if (ComboBox_use.SelectedIndex > 0)
-            {
-                void 대금탐색on()
+                // [중요] 기존 설정값을 읽거나 저장하기 위해 Setting 클래스를 사용합니다.
+                switch (use.Name)
                 {
-                    Form1.비프음("실행");
-                    Form1.동작_Log("검색식 [ " + condition_name + " ]이 실시간 감시를 시작 합니다.");
-                    검색식위치저장(location, ComboBox_condition.Text);
-                }
-                void 대금탐색off()
-                {
-                    Form1.비프음("정지");
-                    Form1.알림창("[ 검색식 가동확인 ]\n\n검색식 [ " + condition_name + " ]이 정지 되어 있습니다.", 5, false);
-                    ComboBox_use.SelectedIndex = 0;
+                    // =========================================================
+                    // [반복 매매 (Repeat) 그룹]
+                    // =========================================================
+                    case "combo_repeat_use_condition_A":
+                        checkbox = Form_Repeat.form.CB_repeat_use_A; combo = Form_Repeat.form.반복_A;
+                        GenieConfig.combo_repeat_use_condition_A = selectedindex(GenieConfig.combo_repeat_use_condition_A);
+                        use.SelectedIndex = GenieConfig.combo_repeat_use_condition_A;
+                        break;
+                    case "combo_repeat_use_condition_B":
+                        checkbox = Form_Repeat.form.CB_repeat_use_B; combo = Form_Repeat.form.반복_B;
+                        GenieConfig.combo_repeat_use_condition_B = selectedindex(GenieConfig.combo_repeat_use_condition_B);
+                        use.SelectedIndex = GenieConfig.combo_repeat_use_condition_B;
+                        break;
+                    case "combo_repeat_use_condition_C":
+                        checkbox = Form_Repeat.form.CB_repeat_use_C; combo = Form_Repeat.form.반복_C;
+                        GenieConfig.combo_repeat_use_condition_C = selectedindex(GenieConfig.combo_repeat_use_condition_C);
+                        use.SelectedIndex = GenieConfig.combo_repeat_use_condition_C;
+                        break;
+                    case "combo_repeat_use_condition_D":
+                        checkbox = Form_Repeat.form.CB_repeat_use_D; combo = Form_Repeat.form.반복_D;
+                        GenieConfig.combo_repeat_use_condition_D = selectedindex(GenieConfig.combo_repeat_use_condition_D);
+                        use.SelectedIndex = GenieConfig.combo_repeat_use_condition_D;
+                        break;
+                    case "combo_repeat_use_condition_E":
+                        checkbox = Form_Repeat.form.CB_repeat_use_E; combo = Form_Repeat.form.반복_E;
+                        GenieConfig.combo_repeat_use_condition_E = selectedindex(GenieConfig.combo_repeat_use_condition_E);
+                        use.SelectedIndex = GenieConfig.combo_repeat_use_condition_E;
+                        break;
+                    case "combo_repeat_use_condition_F":
+                        checkbox = Form_Repeat.form.CB_repeat_use_F; combo = Form_Repeat.form.반복_F;
+                        GenieConfig.combo_repeat_use_condition_F = selectedindex(GenieConfig.combo_repeat_use_condition_F);
+                        use.SelectedIndex = GenieConfig.combo_repeat_use_condition_F;
+                        break;
+                    case "combo_repeat_use_condition_G":
+                        checkbox = Form_Repeat.form.CB_repeat_use_G; combo = Form_Repeat.form.반복_G;
+                        GenieConfig.combo_repeat_use_condition_G = selectedindex(GenieConfig.combo_repeat_use_condition_G);
+                        use.SelectedIndex = GenieConfig.combo_repeat_use_condition_G;
+                        break;
+                    case "combo_repeat_use_condition_H":
+                        checkbox = Form_Repeat.form.CB_repeat_use_H; combo = Form_Repeat.form.반복_H;
+                        GenieConfig.combo_repeat_use_condition_H = selectedindex(GenieConfig.combo_repeat_use_condition_H);
+                        use.SelectedIndex = GenieConfig.combo_repeat_use_condition_H;
+                        break;
+                    case "combo_repeat_use_condition_I":
+                        checkbox = Form_Repeat.form.CB_repeat_use_I; combo = Form_Repeat.form.반복_I;
+                        GenieConfig.combo_repeat_use_condition_I = selectedindex(GenieConfig.combo_repeat_use_condition_I);
+                        use.SelectedIndex = GenieConfig.combo_repeat_use_condition_I;
+                        break;
+                    case "combo_repeat_use_condition_J":
+                        checkbox = Form_Repeat.form.CB_repeat_use_J; combo = Form_Repeat.form.반복_J;
+                        GenieConfig.combo_repeat_use_condition_J = selectedindex(GenieConfig.combo_repeat_use_condition_J);
+                        use.SelectedIndex = GenieConfig.combo_repeat_use_condition_J;
+                        break;
+                    case "combo_repeat_use_condition_K":
+                        checkbox = Form_Repeat.form.CB_repeat_use_K; combo = Form_Repeat.form.반복_K;
+                        GenieConfig.combo_repeat_use_condition_K = selectedindex(GenieConfig.combo_repeat_use_condition_K);
+                        use.SelectedIndex = GenieConfig.combo_repeat_use_condition_K;
+                        break;
+                    case "combo_repeat_use_condition_L":
+                        checkbox = Form_Repeat.form.CB_repeat_use_L; combo = Form_Repeat.form.반복_L;
+                        GenieConfig.combo_repeat_use_condition_L = selectedindex(GenieConfig.combo_repeat_use_condition_L);
+                        use.SelectedIndex = GenieConfig.combo_repeat_use_condition_L;
+                        break;
+                    case "combo_repeat_use_condition_M":
+                        checkbox = Form_Repeat.form.CB_repeat_use_M; combo = Form_Repeat.form.반복_M;
+                        GenieConfig.combo_repeat_use_condition_M = selectedindex(GenieConfig.combo_repeat_use_condition_M);
+                        use.SelectedIndex = GenieConfig.combo_repeat_use_condition_M;
+                        break;
+                    case "combo_repeat_use_condition_N":
+                        checkbox = Form_Repeat.form.CB_repeat_use_N; combo = Form_Repeat.form.반복_N;
+                        GenieConfig.combo_repeat_use_condition_N = selectedindex(GenieConfig.combo_repeat_use_condition_N);
+                        use.SelectedIndex = GenieConfig.combo_repeat_use_condition_N;
+                        break;
 
+                    // =========================================================
+                    // [리밸런싱 (Rebalance) 그룹]
+                    // =========================================================
+                    case "combo_rebalance_use_condition_A":
+                        checkbox = Form_AccountManagement.form.CB_rebalance_A; combo = Form_AccountManagement.form.리밸_A;
+                        GenieConfig.combo_rebalance_use_condition_A = selectedindex(GenieConfig.combo_rebalance_use_condition_A);
+                        use.SelectedIndex = GenieConfig.combo_rebalance_use_condition_A;
+                        break;
+                    case "combo_rebalance_use_condition_B":
+                        checkbox = Form_AccountManagement.form.CB_rebalance_B; combo = Form_AccountManagement.form.리밸_B;
+                        GenieConfig.combo_rebalance_use_condition_B = selectedindex(GenieConfig.combo_rebalance_use_condition_B);
+                        use.SelectedIndex = GenieConfig.combo_rebalance_use_condition_B;
+                        break;
+                    case "combo_rebalance_use_condition_C":
+                        checkbox = Form_AccountManagement.form.CB_rebalance_C; combo = Form_AccountManagement.form.리밸_C;
+                        GenieConfig.combo_rebalance_use_condition_C = selectedindex(GenieConfig.combo_rebalance_use_condition_C);
+                        use.SelectedIndex = GenieConfig.combo_rebalance_use_condition_C;
+                        break;
+                    case "combo_rebalance_use_condition_D":
+                        checkbox = Form_AccountManagement.form.CB_rebalance_D; combo = Form_AccountManagement.form.리밸_D;
+                        GenieConfig.combo_rebalance_use_condition_D = selectedindex(GenieConfig.combo_rebalance_use_condition_D);
+                        use.SelectedIndex = GenieConfig.combo_rebalance_use_condition_D;
+                        break;
+                    case "combo_rebalance_use_condition_E":
+                        checkbox = Form_AccountManagement.form.CB_rebalance_E; combo = Form_AccountManagement.form.리밸_E;
+                        GenieConfig.combo_rebalance_use_condition_E = selectedindex(GenieConfig.combo_rebalance_use_condition_E);
+                        use.SelectedIndex = GenieConfig.combo_rebalance_use_condition_E;
+                        break;
+                    case "combo_rebalance_use_condition_F":
+                        checkbox = Form_AccountManagement.form.CB_rebalance_F; combo = Form_AccountManagement.form.리밸_F;
+                        GenieConfig.combo_rebalance_use_condition_F = selectedindex(GenieConfig.combo_rebalance_use_condition_F);
+                        use.SelectedIndex = GenieConfig.combo_rebalance_use_condition_F;
+                        break;
+                    case "combo_rebalance_use_condition_G":
+                        checkbox = Form_AccountManagement.form.CB_rebalance_G; combo = Form_AccountManagement.form.리밸_G;
+                        GenieConfig.combo_rebalance_use_condition_G = selectedindex(GenieConfig.combo_rebalance_use_condition_G);
+                        use.SelectedIndex = GenieConfig.combo_rebalance_use_condition_G;
+                        break;
+
+                    // =========================================================
+                    // [계좌 청산 (Liquidation) 그룹]
+                    // =========================================================
+                    case "CBB_Liquidation_use_condition_A":
+                        checkbox = Form_AccountManagement.form.CB_Liquidation_A; combo = Form_AccountManagement.form.청산_A;
+                        GenieConfig.CBB_Liquidation_use_condition_A = selectedindex(GenieConfig.CBB_Liquidation_use_condition_A);
+                        use.SelectedIndex = GenieConfig.CBB_Liquidation_use_condition_A;
+                        break;
+                    case "CBB_Liquidation_use_condition_B":
+                        checkbox = Form_AccountManagement.form.CB_Liquidation_B; combo = Form_AccountManagement.form.청산_B;
+                        GenieConfig.CBB_Liquidation_use_condition_B = selectedindex(GenieConfig.CBB_Liquidation_use_condition_B);
+                        use.SelectedIndex = GenieConfig.CBB_Liquidation_use_condition_B;
+                        break;
+                    case "CBB_Liquidation_use_condition_C":
+                        checkbox = Form_AccountManagement.form.CB_Liquidation_C; combo = Form_AccountManagement.form.청산_C;
+                        GenieConfig.CBB_Liquidation_use_condition_C = selectedindex(GenieConfig.CBB_Liquidation_use_condition_C);
+                        use.SelectedIndex = GenieConfig.CBB_Liquidation_use_condition_C;
+                        break;
                 }
 
-                if (condition_name.Equals(Properties.Settings.Default.TB_매수탐색A))
+                // [내부 로컬 함수] 인덱스 변경 로직
+                int selectedindex(int befor_index)
                 {
-                    if (Properties.Settings.Default.CB_매수탐색A) 대금탐색on();
-                    else 대금탐색off();
-                }
-                else if (condition_name.Equals(Properties.Settings.Default.TB_매수탐색B))
-                {
-                    if (Properties.Settings.Default.CB_매수탐색B) 대금탐색on();
-                    else 대금탐색off();
-                }
-                else if (condition_name.Equals(Properties.Settings.Default.TB_매도탐색))
-                {
-                    if (Properties.Settings.Default.CB_매도탐색) 대금탐색on();
-                    else 대금탐색off();
-                }
-                else
-                {
-                    if (Form1.Run_condition_List.Count < 10)
+                    int after_index = use.SelectedIndex;
+
+                    if (befor_index != after_index)
                     {
-                        if (start_condition != null)
+                        if (use.SelectedIndex > 0)
                         {
-                            if (condition_name.Equals(""))
+                            Condition start_condition = Form1.ConditionList.Find(o => o.name.Equals(combo.Text));
+                            if (start_condition != null)
                             {
-                                Form1.알림창("[ 검색식 가동확인 ]\n\n" + location + " - 검색식이 비어 있습니다.", 10, false);
-                                ComboBox_use.SelectedIndex = 0;
+                                if (combo.Text != Form1.위치별검색식리스트[combo.Name.ToString()].이름)
+                                {
+                                    if (!Start_Monitoring(start_condition, combo.Name, null, use))
+                                    {
+                                        after_index = 0;
+                                    }
+                                }
                             }
                             else
                             {
-                                Start_Monitoring(start_condition, location);
-                                검색식위치저장(location, start_condition.name);
+                                Helper.알림창_멀티("검색식 가동확인", combo.Name + " - 검색식 존재하지 않습니다.", 10, false);
+                                after_index = 0;
                             }
                         }
                         else
                         {
-                            Form1.알림창("[ 검색식 가동확인 ]\n\n" + location + " - 검색식이 비어 있습니다.", 10, false);
-                            ComboBox_use.SelectedIndex = 0;
-                        }
-                    }
-                    else
-                    {
-                        if (start_condition == null)
-                        {
-                            Form1.알림창("[ 검색식 가동확인 ]\n\n" + location + " - 검색식이 비어 있습니다.", 10, false);
-                            ComboBox_use.SelectedIndex = 0;
-                        }
-                        else
-                        {
-                            if (!Form1.Run_condition_List.Contains(start_condition.name))
+                            Condition stop_condition = Form1.ConditionList.Find(o => o.name.Equals(Form1.위치별검색식리스트[combo.Name.ToString()].이름));
+                            if (stop_condition != null)
                             {
-                                if (start_condition.name.Equals(""))
-                                    Form1.알림창("[ 검색식 가동확인 ]\n\n" + location + " - 검색식이 비어 있습니다.", 10, false);
-                                else
-                                    Form1.알림창("[ 검색식 가동확인 ]\n\n" + location + " - 검색식은 10개 까지 사용할수 있습니다.", 10, false);
-
-                                ComboBox_use.SelectedIndex = 0;
-                            }
-                            else
-                            {
-                                if (Form1.로딩완료) Form1.알림창("[ 검색식 가동확인 ]\n\n" + location + " - 검색식[ " + start_condition.name + " ] 이 실시간 감시 중 입니다.", 5, false);
-                                Form1.동작_Log("[검색식 가동확인] " + location + " - 검색식[ " + start_condition.name + " ] 이 실시간 감시 중 입니다.");
+                                Stop_Monitoring(stop_condition, combo.Name);  // 검색식 정지 요청
                             }
                         }
+
+                        if (checkbox != null && checkbox.Checked) checkbox.Checked = false;
+
+                        if (after_index == 0)
+                        {
+                            Form1.위치별검색식리스트[combo.Name.ToString()].이름 = "";
+                        }
+
+                        return after_index;
                     }
+
+                    return befor_index;
                 }
             }
-            else
-            {
-                if (condition_name.Equals(Properties.Settings.Default.TB_매수탐색A) || condition_name.Equals(Properties.Settings.Default.TB_매수탐색B) || condition_name.Equals(Properties.Settings.Default.TB_매도탐색))
-                {
-                    if (condition_name.Equals(""))
-                        Form1.비프음("언체크");
-                    else
-                        Form1.동작_Log("[검색식 가동확인] " + location + " - 검색식 [ " + condition_name + " ]이 실시간 감시를 해제 합니다."); Form1.비프음("정지");
-
-                    ComboBox_use.SelectedIndex = 0;
-                }
-                else
-                {
-                    if (stop_condition != null)
-                    {
-                        Stop_Monitoring(stop_condition, location);  //검색식 정지 요청
-                    }
-                }
-            }
-
-            if (ComboBox_use.SelectedIndex == 0) ComboBox_condition.SelectedIndex = 0;
-
         }
 
-        public static void combo_condition_SelectedIndexChanged(object sender)
+
+        public static void Combo_condition_SelectedIndexChanged(object sender)
         {
             ComboBox combobox = sender as ComboBox;
-            int index = combobox.SelectedIndex;
-            string text = combobox.Text;
+            int combo_index = combobox.SelectedIndex;
+            string combo_text = combobox.Text;
+            string combo_name = combobox.Name;
 
             switch (combobox.Name)
             {
-                case "combo_new_condition_A":
-                    if (!Properties.Settings.Default.신규검색식.Split('^')[0].Equals(Properties.Settings.Default.combo_new_condition_A) || (index == 0 && text.Equals("")))
+                case "신규_A":
+                    if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                     {
-                        Properties.Settings.Default.CB_new_A = false;
-                        Form1.NewCatch_List_A.Clear();
-
+                        GenieConfig.CB_new_A = false;
+                        Form1.NewStock_List.RemoveAll(o => o.Pos == "New_A");
                         Form_Basic.form.CB_new_A.Checked = false;
                     }
                     break;
-                case "combo_new_condition_B":
-                    if (!Properties.Settings.Default.신규검색식.Split('^')[1].Equals(Properties.Settings.Default.combo_new_condition_B) || (index == 0 && text.Equals("")))
+                case "신규_B":
+                    if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                     {
-                        Properties.Settings.Default.CB_new_B = false;
-                        Form1.NewCatch_List_B.Clear();
-
+                        GenieConfig.CB_new_B = false;
+                        Form1.NewStock_List.RemoveAll(o => o.Pos == "New_B");
                         Form_Basic.form.CB_new_B.Checked = false;
                     }
                     break;
-                case "combo_new_condition_C":
-                    if (!Properties.Settings.Default.신규검색식.Split('^')[2].Equals(Properties.Settings.Default.combo_new_condition_C) || (index == 0 && text.Equals("")))
+                case "신규_C":
+                    if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                     {
-                        Properties.Settings.Default.CB_new_C = false;
-                        Form1.NewCatch_List_C.Clear();
-
+                        GenieConfig.CB_new_C = false;
+                        Form1.NewStock_List.RemoveAll(o => o.Pos == "New_C");
                         Form_Basic.form.CB_new_C.Checked = false;
                     }
                     break;
-                case "combo_repeat_condition_A":
+                case "반복_A":
                     if (Form_Repeat.form.combo_repeat_use_condition_A.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.반복매매검색식.Split('^')[0].Equals(Properties.Settings.Default.combo_repeat_condition_A) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_Repeat.form.CB_repeat_use_A.Checked = false;
-                            Form1.Repeat_condition_List_A.Clear();
+                            Catch_Stock_List_Clear("반복_A");
 
-                            Properties.Settings.Default.combo_repeat_use_condition_A = 0;
+                            GenieConfig.combo_repeat_use_condition_A = 0;
                             Form_Repeat.form.combo_repeat_use_condition_A.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_repeat_condition_B":
+                case "반복_B":
                     if (Form_Repeat.form.combo_repeat_use_condition_B.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.반복매매검색식.Split('^')[1].Equals(Properties.Settings.Default.combo_repeat_condition_B) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_Repeat.form.CB_repeat_use_B.Checked = false;
-                            Form1.Repeat_condition_List_B.Clear();
+                            Catch_Stock_List_Clear("반복_B");
 
-                            Properties.Settings.Default.combo_repeat_use_condition_B = 0;
+                            GenieConfig.combo_repeat_use_condition_B = 0;
                             Form_Repeat.form.combo_repeat_use_condition_B.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_repeat_condition_C":
+                case "반복_C":
                     if (Form_Repeat.form.combo_repeat_use_condition_C.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.반복매매검색식.Split('^')[2].Equals(Properties.Settings.Default.combo_repeat_condition_C) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_Repeat.form.CB_repeat_use_C.Checked = false;
-                            Properties.Settings.Default.combo_repeat_use_condition_C = 0;
-                            Form1.Repeat_condition_List_C.Clear();
+                            GenieConfig.combo_repeat_use_condition_C = 0;
+                            Catch_Stock_List_Clear("반복_C");
 
                             Form_Repeat.form.combo_repeat_use_condition_C.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_repeat_condition_D":
+                case "반복_D":
                     if (Form_Repeat.form.combo_repeat_use_condition_D.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.반복매매검색식.Split('^')[3].Equals(Properties.Settings.Default.combo_repeat_condition_D) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_Repeat.form.CB_repeat_use_D.Checked = false;
-                            Properties.Settings.Default.combo_repeat_use_condition_D = 0;
-                            Form1.Repeat_condition_List_D.Clear();
+                            GenieConfig.combo_repeat_use_condition_D = 0;
+                            Catch_Stock_List_Clear("반복_D");
 
                             Form_Repeat.form.combo_repeat_use_condition_D.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_repeat_condition_E":
+                case "반복_E":
                     if (Form_Repeat.form.combo_repeat_use_condition_E.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.반복매매검색식.Split('^')[4].Equals(Properties.Settings.Default.combo_repeat_condition_E) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_Repeat.form.CB_repeat_use_E.Checked = false;
-                            Properties.Settings.Default.combo_repeat_use_condition_E = 0;
-                            Form1.Repeat_condition_List_E.Clear();
+                            GenieConfig.combo_repeat_use_condition_E = 0;
+                            Catch_Stock_List_Clear("반복_E");
 
                             Form_Repeat.form.combo_repeat_use_condition_E.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_repeat_condition_F":
+                case "반복_F":
                     if (Form_Repeat.form.combo_repeat_use_condition_F.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.반복매매검색식.Split('^')[5].Equals(Properties.Settings.Default.combo_repeat_condition_F) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_Repeat.form.CB_repeat_use_F.Checked = false;
-                            Properties.Settings.Default.combo_repeat_use_condition_F = 0;
-                            Form1.Repeat_condition_List_F.Clear();
+                            GenieConfig.combo_repeat_use_condition_F = 0;
+                            Catch_Stock_List_Clear("반복_F");
 
                             Form_Repeat.form.combo_repeat_use_condition_F.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_repeat_condition_G":
+                case "반복_G":
                     if (Form_Repeat.form.combo_repeat_use_condition_G.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.반복매매검색식.Split('^')[6].Equals(Properties.Settings.Default.combo_repeat_condition_G) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_Repeat.form.CB_repeat_use_G.Checked = false;
-                            Properties.Settings.Default.combo_repeat_use_condition_G = 0;
-                            Form1.Repeat_condition_List_G.Clear();
+                            GenieConfig.combo_repeat_use_condition_G = 0;
+                            Catch_Stock_List_Clear("반복_G");
 
                             Form_Repeat.form.combo_repeat_use_condition_G.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_repeat_condition_H":
+                case "반복_H":
                     if (Form_Repeat.form.combo_repeat_use_condition_H.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.반복매매검색식.Split('^')[7].Equals(Properties.Settings.Default.combo_repeat_condition_H) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_Repeat.form.CB_repeat_use_H.Checked = false;
-                            Properties.Settings.Default.combo_repeat_use_condition_H = 0;
-                            Form1.Repeat_condition_List_H.Clear();
+                            GenieConfig.combo_repeat_use_condition_H = 0;
+                            Catch_Stock_List_Clear("반복_H");
 
                             Form_Repeat.form.combo_repeat_use_condition_H.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_repeat_condition_I":
+                case "반복_I":
                     if (Form_Repeat.form.combo_repeat_use_condition_I.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.반복매매검색식.Split('^')[8].Equals(Properties.Settings.Default.combo_repeat_condition_I) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_Repeat.form.CB_repeat_use_I.Checked = false;
-                            Properties.Settings.Default.combo_repeat_use_condition_I = 0;
-                            Form1.Repeat_condition_List_I.Clear();
+                            GenieConfig.combo_repeat_use_condition_I = 0;
+                            Catch_Stock_List_Clear("반복_I");
 
                             Form_Repeat.form.combo_repeat_use_condition_I.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_repeat_condition_J":
+                case "반복_J":
                     if (Form_Repeat.form.combo_repeat_use_condition_J.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.반복매매검색식.Split('^')[9].Equals(Properties.Settings.Default.combo_repeat_condition_J) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_Repeat.form.CB_repeat_use_J.Checked = false;
-                            Properties.Settings.Default.combo_repeat_use_condition_J = 0;
-                            Form1.Repeat_condition_List_J.Clear();
+                            GenieConfig.combo_repeat_use_condition_J = 0;
+                            Catch_Stock_List_Clear("반복_J");
 
                             Form_Repeat.form.combo_repeat_use_condition_J.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_repeat_condition_K":
+                case "반복_K":
                     if (Form_Repeat.form.combo_repeat_use_condition_K.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.반복매매검색식.Split('^')[10].Equals(Properties.Settings.Default.combo_repeat_condition_K) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_Repeat.form.CB_repeat_use_K.Checked = false;
-                            Properties.Settings.Default.combo_repeat_use_condition_K = 0;
-                            Form1.Repeat_condition_List_K.Clear();
+                            GenieConfig.combo_repeat_use_condition_K = 0;
+                            Catch_Stock_List_Clear("반복_K");
 
                             Form_Repeat.form.combo_repeat_use_condition_K.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_repeat_condition_L":
+                case "반복_L":
                     if (Form_Repeat.form.combo_repeat_use_condition_L.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.반복매매검색식.Split('^')[11].Equals(Properties.Settings.Default.combo_repeat_condition_L) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_Repeat.form.CB_repeat_use_L.Checked = false;
-                            Properties.Settings.Default.combo_repeat_use_condition_L = 0;
-                            Form1.Repeat_condition_List_L.Clear();
+                            GenieConfig.combo_repeat_use_condition_L = 0;
+                            Catch_Stock_List_Clear("반복_L");
 
                             Form_Repeat.form.combo_repeat_use_condition_L.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_repeat_condition_M":
+                case "반복_M":
                     if (Form_Repeat.form.combo_repeat_use_condition_M.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.반복매매검색식.Split('^')[12].Equals(Properties.Settings.Default.combo_repeat_condition_M) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_Repeat.form.CB_repeat_use_M.Checked = false;
-                            Properties.Settings.Default.combo_repeat_use_condition_M = 0;
-                            Form1.Repeat_condition_List_M.Clear();
+                            GenieConfig.combo_repeat_use_condition_M = 0;
+                            Catch_Stock_List_Clear("반복_M");
 
                             Form_Repeat.form.combo_repeat_use_condition_M.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_repeat_condition_N":
+                case "반복_N":
                     if (Form_Repeat.form.combo_repeat_use_condition_N.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.반복매매검색식.Split('^')[13].Equals(Properties.Settings.Default.combo_repeat_condition_N) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_Repeat.form.CB_repeat_use_N.Checked = false;
-                            Properties.Settings.Default.combo_repeat_use_condition_N = 0;
-                            Form1.Repeat_condition_List_N.Clear();
+                            GenieConfig.combo_repeat_use_condition_N = 0;
+                            Catch_Stock_List_Clear("반복_N");
 
                             Form_Repeat.form.combo_repeat_use_condition_N.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_rebalance_condition_A":
+                case "리밸_A":
                     if (Form_AccountManagement.form.combo_rebalance_use_condition_A.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.계좌관리검색식.Split('^')[0].Equals(Properties.Settings.Default.combo_rebalance_condition_A) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_AccountManagement.form.CB_rebalance_A.Checked = false;
-                            Form1.Rebal_condition_List_A.Clear();
+                            Catch_Stock_List_Clear("리밸_A");
 
-                            Properties.Settings.Default.combo_rebalance_use_condition_A = 0;
+                            GenieConfig.combo_rebalance_use_condition_A = 0;
                             Form_AccountManagement.form.combo_rebalance_use_condition_A.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_rebalance_condition_B":
+                case "리밸_B":
                     if (Form_AccountManagement.form.combo_rebalance_use_condition_B.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.계좌관리검색식.Split('^')[1].Equals(Properties.Settings.Default.combo_rebalance_condition_B) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_AccountManagement.form.CB_rebalance_B.Checked = false;
-                            Form1.Rebal_condition_List_B.Clear();
+                            Catch_Stock_List_Clear("리밸_B");
 
-                            Properties.Settings.Default.combo_rebalance_use_condition_B = 0;
+                            GenieConfig.combo_rebalance_use_condition_B = 0;
                             Form_AccountManagement.form.combo_rebalance_use_condition_B.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_rebalance_condition_C":
+                case "리밸_C":
                     if (Form_AccountManagement.form.combo_rebalance_use_condition_C.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.계좌관리검색식.Split('^')[2].Equals(Properties.Settings.Default.combo_rebalance_condition_C) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_AccountManagement.form.CB_rebalance_C.Checked = false;
-                            Form1.Rebal_condition_List_C.Clear();
+                            Catch_Stock_List_Clear("리밸_C");
 
-                            Properties.Settings.Default.combo_rebalance_use_condition_C = 0;
+                            GenieConfig.combo_rebalance_use_condition_C = 0;
                             Form_AccountManagement.form.combo_rebalance_use_condition_C.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_rebalance_condition_D":
+                case "리밸_D":
                     if (Form_AccountManagement.form.combo_rebalance_use_condition_D.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.계좌관리검색식.Split('^')[3].Equals(Properties.Settings.Default.combo_rebalance_condition_D) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_AccountManagement.form.CB_rebalance_D.Checked = false;
-                            Form1.Rebal_condition_List_E.Clear();
+                            Catch_Stock_List_Clear("리밸_D");
 
-                            Properties.Settings.Default.combo_rebalance_use_condition_D = 0;
+                            GenieConfig.combo_rebalance_use_condition_D = 0;
                             Form_AccountManagement.form.combo_rebalance_use_condition_D.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_rebalance_condition_E":
+                case "리밸_E":
                     if (Form_AccountManagement.form.combo_rebalance_use_condition_E.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.계좌관리검색식.Split('^')[4].Equals(Properties.Settings.Default.combo_rebalance_condition_E) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_AccountManagement.form.CB_rebalance_E.Checked = false;
-                            Form1.Rebal_condition_List_E.Clear();
+                            Catch_Stock_List_Clear("리밸_E");
 
-                            Properties.Settings.Default.combo_rebalance_use_condition_E = 0;
+                            GenieConfig.combo_rebalance_use_condition_E = 0;
                             Form_AccountManagement.form.combo_rebalance_use_condition_E.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_rebalance_condition_F":
+                case "리밸_F":
                     if (Form_AccountManagement.form.combo_rebalance_use_condition_F.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.계좌관리검색식.Split('^')[5].Equals(Properties.Settings.Default.combo_rebalance_condition_F) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_AccountManagement.form.CB_rebalance_F.Checked = false;
-                            Form1.Rebal_condition_List_F.Clear();
+                            Catch_Stock_List_Clear("리밸_F");
 
-                            Properties.Settings.Default.combo_rebalance_use_condition_F = 0;
+                            GenieConfig.combo_rebalance_use_condition_F = 0;
                             Form_AccountManagement.form.combo_rebalance_use_condition_F.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "combo_rebalance_condition_G":
+                case "리밸_G":
                     if (Form_AccountManagement.form.combo_rebalance_use_condition_G.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.계좌관리검색식.Split('^')[6].Equals(Properties.Settings.Default.combo_rebalance_condition_G) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_AccountManagement.form.CB_rebalance_G.Checked = false;
-                            Form1.Rebal_condition_List_G.Clear();
+                            Catch_Stock_List_Clear("리밸_G");
 
-                            Properties.Settings.Default.combo_rebalance_use_condition_G = 0;
+                            GenieConfig.combo_rebalance_use_condition_G = 0;
                             Form_AccountManagement.form.combo_rebalance_use_condition_G.SelectedIndex = 0;
                         }
                     }
                     break;
 
-                case "CBB_Liquidation_condition_A":
+                case "청산_A":
                     if (Form_AccountManagement.form.CBB_Liquidation_use_condition_A.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.계좌관리검색식.Split('^')[7].Equals(Properties.Settings.Default.CBB_Liquidation_condition_A) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_AccountManagement.form.CB_Liquidation_A.Checked = false;
-                            Form1.Liquidation_condition_List_A.Clear();
+                            Catch_Stock_List_Clear("청산_A");
 
-                            Properties.Settings.Default.CBB_Liquidation_use_condition_A = 0;
+                            GenieConfig.CBB_Liquidation_use_condition_A = 0;
                             Form_AccountManagement.form.CBB_Liquidation_use_condition_A.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "CBB_Liquidation_condition_B":
+                case "청산_B":
                     if (Form_AccountManagement.form.CBB_Liquidation_use_condition_B.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.계좌관리검색식.Split('^')[8].Equals(Properties.Settings.Default.CBB_Liquidation_condition_B) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_AccountManagement.form.CB_Liquidation_B.Checked = false;
-                            Form1.Liquidation_condition_List_B.Clear();
+                            Catch_Stock_List_Clear("청산_B");
 
-                            Properties.Settings.Default.CBB_Liquidation_use_condition_B = 0;
+                            GenieConfig.CBB_Liquidation_use_condition_B = 0;
                             Form_AccountManagement.form.CBB_Liquidation_use_condition_B.SelectedIndex = 0;
                         }
                     }
                     break;
-                case "CBB_Liquidation_condition_C":
+                case "청산_C":
                     if (Form_AccountManagement.form.CBB_Liquidation_use_condition_C.SelectedIndex != 0)
                     {
-                        if (!Properties.Settings.Default.계좌관리검색식.Split('^')[9].Equals(Properties.Settings.Default.CBB_Liquidation_condition_C) || (index == 0 && text.Equals("")))
+                        if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                         {
                             Form_AccountManagement.form.CB_Liquidation_C.Checked = false;
-                            Form1.Liquidation_condition_List_C.Clear();
+                            Catch_Stock_List_Clear("청산_C");
 
-                            Properties.Settings.Default.CBB_Liquidation_use_condition_C = 0;
+                            GenieConfig.CBB_Liquidation_use_condition_C = 0;
                             Form_AccountManagement.form.CBB_Liquidation_use_condition_C.SelectedIndex = 0;
                         }
                     }
                     break;
 
-                case "combo_watch_condition_AA":
-                    if (!Properties.Settings.Default.와치검색식.Split('^')[0].Equals(Properties.Settings.Default.combo_watch_condition_AA) || (index == 0 && text.Equals("")))
+                case "와치_A":
+                    if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                     {
                         Form1.form1.CB_watch_use_A.Checked = false;
                     }
                     break;
-                case "combo_watch_condition_BB":
-                    if (!Properties.Settings.Default.와치검색식.Split('^')[1].Equals(Properties.Settings.Default.combo_watch_condition_BB) || (index == 0 && text.Equals("")))
+                case "와치_B":
+                    if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                     {
                         Form1.form1.CB_watch_use_B.Checked = false;
                     }
                     break;
-                case "combo_watch_condition_CC":
-                    if (!Properties.Settings.Default.와치검색식.Split('^')[2].Equals(Properties.Settings.Default.combo_watch_condition_CC) || (index == 0 && text.Equals("")))
+                case "와치_C":
+                    if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                     {
                         Form1.form1.CB_watch_use_C.Checked = false;
                     }
                     break;
-                case "combo_watch_condition_DD":
-                    if (!Properties.Settings.Default.와치검색식.Split('^')[3].Equals(Properties.Settings.Default.combo_watch_condition_DD) || (index == 0 && text.Equals("")))
+                case "와치_D":
+                    if (!Form1.위치별검색식리스트[combo_name].이름.Equals(combo_text) || (combo_index == 0 && combo_index.Equals("")))
                     {
                         Form1.form1.CB_watch_use_D.Checked = false;
                     }
                     break;
             }
+
         }
 
-        public static void Start_Monitoring(Condition condition, string position)
+        public static bool Start_Monitoring(Condition condition, string where, CheckBox checkbox, ComboBox combobox)
         {
-            Console.WriteLine("Start_Monitoring 위치: " + position + " 검색식: " + condition.name);
+            Form1.Console_print("######### Start_Monitoring 위치: " + where + " 검색식: " + condition.name);
 
-
-            Task JO_Manager = new Task(() =>
+            if (condition.index == "index")
             {
-                try
+                switch (condition.name)
                 {
-                    Fail_condition fail = Form1.form1.fail_condition_List.Find(o => o.condition.Equals(condition.name));
-                    if (fail == null)
+                    case "매수탐색_A":
+                        if (!GenieConfig.CB_매수탐색A)
+                            return false;
+                        break;
+                    case "매수탐색_B":
+                        if (!GenieConfig.CB_매수탐색B)
+                            return false;
+                        break;
+                    case "매도탐색":
+                        if (!GenieConfig.CB_매도탐색)
+                            return false;
+                        break;
+                }
+            }
+
+            if (condition.index != "index")
+            {
+                List<RunCondition> list = Form1.Run_condition_List.FindAll(o => o.index.Equals(condition.index));
+                if (list.Count == 0)
+                {
+                    if (Form1.Run_condition_count < 10)
                     {
-                        if (!Form1.Run_condition_List.Contains(condition.name))
-                        {
-                            int result = result = Form1.form1.axKHOpenAPI1.SendCondition("1100", condition.name, condition.index, 1);
-
-                            if (result == 1) // 성공
-                            {
-                                Form1.비프음("실행");
-
-                                Form1.동작_Log(position + " => " + condition.name + " 을 감시를 시작합니다.");
-
-                                Form1.Run_condition_List.Add(condition.name);
-
-                                RunCondition Run = Form1.form1.search_condition_List.Find(o => o.condition.Equals(condition.name));
-                                if (Run == null)
-                                {
-                                    RunCondition search_Add = new RunCondition(condition.name, 0);
-                                    Form1.form1.search_condition_List.Add(search_Add);
-                                }
-                            }
-                            else // 실패
-                            {
-                                Form1.Error_Log(position + "_ " + condition.name + " 실시간 감시 요청 실패 하였습니다.");
-                                Form1.Error_Log("같은 조건식은 1분에 1회 실시간 감시 요청 할수 있습니다. " + position + " 체크박스 체크 해제후 다시 시도 하세요.");
-                                Form1.AutoClosingAlram("같은 조건식은 1분에 1회 실시간 감시 요청 할수 있습니다. \n" + position + " 체크박스 체크 해제후 다시 시도 하세요.", "검색식 가동실패", 10, "동작");
-
-                                Form1.비프음("언체크");
-
-                                Fail_condition add = new Fail_condition(condition.name, 60);
-                                Form1.form1.fail_condition_List.Add(add);
-
-                                사용중지_(position);
-
-                                Fail_condition fail_alram = Form1.form1.fail_condition_List.Find(o => o.condition.Equals(condition.name));
-                                Form1.알림창(fail_alram.condition, fail_alram.count, true);
-                            }
-                        }
-                        else
-                        {
-                            if (Form1.로딩완료) Form1.알림창("[ 검색식 가동중 ]\n\n검색식( " + condition.name + " ) 이 실시간 감시 중 입니다.", 5, false);
-                            Form1.동작_Log("[검색식 가동중] 검색식( " + condition.name + " ) 이 실시간 감시 중 입니다.");
-                        }
+                        REG.검색요청(condition.index);
+                        Form1.Run_condition_count++;
                     }
-                    else // 60초 전에 감시 재요청 
+                    else
                     {
-                        사용중지_(position);
-                        Form1.알림창(fail.condition, fail.count, true);
+                        if (checkbox != null) checkbox.Checked = false;
+                        if (combobox != null) combobox.SelectedIndex = 0;
+
+                        Helper.알림창_멀티("검색식 가동확인", where + " - 검색식은 10개 까지 사용할수 있습니다.", 10, false);
+                        return false;
                     }
                 }
-                catch (Exception e)
-                {
-                    string message = e.Message.ToString();
+            }
 
-                    Form1.알림창("[ 검색식 'start' 실패 ]\n\n검색식:" + condition.name + "\n\n검색식 'start' 실패 에러내역 :: " + message, 5, false);
+            Form1.위치별검색식리스트[where].이름 = condition.name;
+            Form1.위치별검색식리스트[where].실행여부 = true;
 
-                    Form1.Error_Log(" ");
-                    Form1.Error_Log("[검색식 'start' 실패] 검색식:" + condition.name + " 검색식 'start' 실패 에러내역 :: " + message);
-                    Form1.Error_Log(" ");
+            Form1.Run_condition_List.Add(new RunCondition(condition.index, condition.name, where));
 
-                    Form1.비프음("언체크");
-                }
-            });
-            Form1.condotionManager.RequestTrData(JO_Manager); // 생성된 Task 조스트 매니지먼트에 요청 등록. 
+
+            RunCondition 시장가 = Form1.Run_condition_List.Find(o => o.name.Equals("매수탐색_A") || o.name.Equals("매수탐색_B") || o.name.Equals("매도탐색"));
+            if (시장가 == null) Form1.시장가탐색 = false;
+            else Form1.시장가탐색 = true;
+
+            if (Form1.로딩완료) Form1.비프음("실행");
+            Log.동작기록("[검색식 RUN] " + where + " - 검색식[ " + condition.name + " ]이 실시간 감시를 시작 합니다.");
+
+            return true;
         }
 
 
-        public static void 사용중지_(string position)
-        {
-            if (Form1.FormBasic_Open)// Form 생성유무 확인
-            {
-                switch (position)
-                {
-                    case "신규_A": Form_Basic.form.CB_new_A.Checked = false; break;
-                    case "신규_B": Form_Basic.form.CB_new_B.Checked = false; break;
-                    case "신규_C": Form_Basic.form.CB_new_C.Checked = false; break;
-                }
-            }
-
-            if (Form1.FormRepeat_Open)// Form 생성유무 확인
-            {
-                switch (position)
-                {
-                    case "반복_A": Form_Repeat.form.combo_repeat_use_condition_A.SelectedIndex = 0; break;
-                    case "반복_B": Form_Repeat.form.combo_repeat_use_condition_B.SelectedIndex = 0; break;
-                    case "반복_C": Form_Repeat.form.combo_repeat_use_condition_C.SelectedIndex = 0; break;
-                    case "반복_D": Form_Repeat.form.combo_repeat_use_condition_D.SelectedIndex = 0; break;
-                    case "반복_E": Form_Repeat.form.combo_repeat_use_condition_E.SelectedIndex = 0; break;
-                    case "반복_F": Form_Repeat.form.combo_repeat_use_condition_F.SelectedIndex = 0; break;
-                    case "반복_G": Form_Repeat.form.combo_repeat_use_condition_G.SelectedIndex = 0; break;
-                    case "반복_H": Form_Repeat.form.combo_repeat_use_condition_H.SelectedIndex = 0; break;
-                    case "반복_I": Form_Repeat.form.combo_repeat_use_condition_I.SelectedIndex = 0; break;
-                    case "반복_J": Form_Repeat.form.combo_repeat_use_condition_J.SelectedIndex = 0; break;
-                    case "반복_K": Form_Repeat.form.combo_repeat_use_condition_K.SelectedIndex = 0; break;
-                    case "반복_L": Form_Repeat.form.combo_repeat_use_condition_L.SelectedIndex = 0; break;
-                    case "반복_M": Form_Repeat.form.combo_repeat_use_condition_M.SelectedIndex = 0; break;
-                    case "반복_N": Form_Repeat.form.combo_repeat_use_condition_N.SelectedIndex = 0; break;
-                }
-            }
-
-            if (Form1.FormAccountManagement_Open)// Form 생성유무 확인
-            {
-                switch (position)
-                {
-                    case "리밸_A": Form_AccountManagement.form.combo_rebalance_use_condition_A.SelectedIndex = 0; break;
-                    case "리밸_B": Form_AccountManagement.form.combo_rebalance_use_condition_B.SelectedIndex = 0; break;
-                    case "리밸_C": Form_AccountManagement.form.combo_rebalance_use_condition_C.SelectedIndex = 0; break;
-                    case "리밸_D": Form_AccountManagement.form.combo_rebalance_use_condition_D.SelectedIndex = 0; break;
-                    case "리밸_E": Form_AccountManagement.form.combo_rebalance_use_condition_E.SelectedIndex = 0; break;
-                    case "리밸_F": Form_AccountManagement.form.combo_rebalance_use_condition_F.SelectedIndex = 0; break;
-                    case "리밸_G": Form_AccountManagement.form.combo_rebalance_use_condition_G.SelectedIndex = 0; break;
-                    case "청산_A": Form_AccountManagement.form.CBB_Liquidation_use_condition_A.SelectedIndex = 0; break;
-                    case "청산_B": Form_AccountManagement.form.CBB_Liquidation_use_condition_B.SelectedIndex = 0; break;
-                    case "청산_C": Form_AccountManagement.form.CBB_Liquidation_use_condition_C.SelectedIndex = 0; break;
-                }
-            }
-
-            switch (position)
-            {
-                case "신규_A": Properties.Settings.Default.CB_new_A = false; break;
-                case "신규_B": Properties.Settings.Default.CB_new_B = false; break;
-                case "신규_C": Properties.Settings.Default.CB_new_C = false; break;
-
-                case "반복_A": Properties.Settings.Default.combo_repeat_use_condition_A = 0; break;
-                case "반복_B": Properties.Settings.Default.combo_repeat_use_condition_B = 0; break;
-                case "반복_C": Properties.Settings.Default.combo_repeat_use_condition_C = 0; break;
-                case "반복_D": Properties.Settings.Default.combo_repeat_use_condition_D = 0; break;
-                case "반복_E": Properties.Settings.Default.combo_repeat_use_condition_E = 0; break;
-                case "반복_F": Properties.Settings.Default.combo_repeat_use_condition_F = 0; break;
-                case "반복_G": Properties.Settings.Default.combo_repeat_use_condition_G = 0; break;
-                case "반복_H": Properties.Settings.Default.combo_repeat_use_condition_H = 0; break;
-                case "반복_I": Properties.Settings.Default.combo_repeat_use_condition_I = 0; break;
-                case "반복_J": Properties.Settings.Default.combo_repeat_use_condition_J = 0; break;
-                case "반복_K": Properties.Settings.Default.combo_repeat_use_condition_K = 0; break;
-                case "반복_L": Properties.Settings.Default.combo_repeat_use_condition_L = 0; break;
-                case "반복_M": Properties.Settings.Default.combo_repeat_use_condition_M = 0; break;
-                case "반복_N": Properties.Settings.Default.combo_repeat_use_condition_N = 0; break;
-
-                case "리밸_A": Properties.Settings.Default.combo_rebalance_use_condition_A = 0; break;
-                case "리밸_B": Properties.Settings.Default.combo_rebalance_use_condition_B = 0; break;
-                case "리밸_C": Properties.Settings.Default.combo_rebalance_use_condition_C = 0; break;
-                case "리밸_D": Properties.Settings.Default.combo_rebalance_use_condition_D = 0; break;
-                case "리밸_E": Properties.Settings.Default.combo_rebalance_use_condition_E = 0; break;
-                case "리밸_F": Properties.Settings.Default.combo_rebalance_use_condition_F = 0; break;
-                case "리밸_G": Properties.Settings.Default.combo_rebalance_use_condition_G = 0; break;
-
-                case "청산_A": Properties.Settings.Default.CBB_Liquidation_use_condition_A = 0; break;
-                case "청산_B": Properties.Settings.Default.CBB_Liquidation_use_condition_B = 0; break;
-                case "청산_C": Properties.Settings.Default.CBB_Liquidation_use_condition_C = 0; break;
-
-
-                case "Watch_A":
-                    Form1.form1.CB_watch_use_A.Checked = false;
-                    Properties.Settings.Default.CB_watch_use_A = false;
-                    break;
-
-                case "Watch_B":
-                    Form1.form1.CB_watch_use_B.Checked = false;
-                    Properties.Settings.Default.CB_watch_use_B = false;
-                    break;
-
-                case "Watch_C":
-                    Form1.form1.CB_watch_use_C.Checked = false;
-                    Properties.Settings.Default.CB_watch_use_C = false;
-                    break;
-
-                case "Watch_D":
-                    Form1.form1.CB_watch_use_D.Checked = false;
-                    Properties.Settings.Default.CB_watch_use_D = false;
-                    break;
-            }
-
-        }
-
-
-        public static void 검색식위치저장(string position, string 검색식)
-        {
-            switch (position)
-            {
-                case "신규_A": Properties.Settings.Default.combo_new_condition_A = 검색식; break;
-                case "신규_B": Properties.Settings.Default.combo_new_condition_B = 검색식; break;
-                case "신규_C": Properties.Settings.Default.combo_new_condition_C = 검색식; break;
-                case "반복_A": Properties.Settings.Default.combo_repeat_condition_A = 검색식; break;
-                case "반복_B": Properties.Settings.Default.combo_repeat_condition_B = 검색식; break;
-                case "반복_C": Properties.Settings.Default.combo_repeat_condition_C = 검색식; break;
-                case "반복_D": Properties.Settings.Default.combo_repeat_condition_D = 검색식; break;
-                case "반복_E": Properties.Settings.Default.combo_repeat_condition_E = 검색식; break;
-                case "반복_F": Properties.Settings.Default.combo_repeat_condition_F = 검색식; break;
-                case "반복_G": Properties.Settings.Default.combo_repeat_condition_G = 검색식; break;
-                case "반복_H": Properties.Settings.Default.combo_repeat_condition_H = 검색식; break;
-                case "반복_I": Properties.Settings.Default.combo_repeat_condition_I = 검색식; break;
-                case "반복_J": Properties.Settings.Default.combo_repeat_condition_J = 검색식; break;
-                case "반복_K": Properties.Settings.Default.combo_repeat_condition_K = 검색식; break;
-                case "반복_L": Properties.Settings.Default.combo_repeat_condition_L = 검색식; break;
-                case "반복_M": Properties.Settings.Default.combo_repeat_condition_M = 검색식; break;
-                case "반복_N": Properties.Settings.Default.combo_repeat_condition_N = 검색식; break;
-                case "리밸_A": Properties.Settings.Default.combo_rebalance_condition_A = 검색식; break;
-                case "리밸_B": Properties.Settings.Default.combo_rebalance_condition_B = 검색식; break;
-                case "리밸_C": Properties.Settings.Default.combo_rebalance_condition_C = 검색식; break;
-                case "리밸_D": Properties.Settings.Default.combo_rebalance_condition_D = 검색식; break;
-                case "리밸_E": Properties.Settings.Default.combo_rebalance_condition_E = 검색식; break;
-                case "리밸_F": Properties.Settings.Default.combo_rebalance_condition_F = 검색식; break;
-                case "리밸_G": Properties.Settings.Default.combo_rebalance_condition_G = 검색식; break;
-                case "청산_A": Properties.Settings.Default.CBB_Liquidation_condition_A = 검색식; break;
-                case "청산_B": Properties.Settings.Default.CBB_Liquidation_condition_B = 검색식; break;
-                case "청산_C": Properties.Settings.Default.CBB_Liquidation_condition_C = 검색식; break;
-                case "Watch_A": Properties.Settings.Default.combo_watch_condition_AA = 검색식; break;
-                case "Watch_B": Properties.Settings.Default.combo_watch_condition_BB = 검색식; break;
-                case "Watch_C": Properties.Settings.Default.combo_watch_condition_CC = 검색식; break;
-                case "Watch_D": Properties.Settings.Default.combo_watch_condition_DD = 검색식; break;
-            }
-        }
-
-
-        public static void 검색식강제중지(string 검색식)
-        {
-            Form1.form1.Invoke((MethodInvoker)delegate ()
-            {
-                if (Properties.Settings.Default.combo_new_condition_A.Equals(검색식)) Stop_Monitoring(리턴(), "신규_A");
-                if (Properties.Settings.Default.combo_new_condition_B.Equals(검색식)) Stop_Monitoring(리턴(), "신규_B");
-                if (Properties.Settings.Default.combo_new_condition_C.Equals(검색식)) Stop_Monitoring(리턴(), "신규_C");
-
-                if (Properties.Settings.Default.combo_repeat_condition_A.Equals(검색식)) Stop_Monitoring(리턴(), "반복_A");
-                if (Properties.Settings.Default.combo_repeat_condition_B.Equals(검색식)) Stop_Monitoring(리턴(), "반복_B");
-                if (Properties.Settings.Default.combo_repeat_condition_C.Equals(검색식)) Stop_Monitoring(리턴(), "반복_C");
-                if (Properties.Settings.Default.combo_repeat_condition_D.Equals(검색식)) Stop_Monitoring(리턴(), "반복_D");
-                if (Properties.Settings.Default.combo_repeat_condition_E.Equals(검색식)) Stop_Monitoring(리턴(), "반복_E");
-                if (Properties.Settings.Default.combo_repeat_condition_F.Equals(검색식)) Stop_Monitoring(리턴(), "반복_F");
-                if (Properties.Settings.Default.combo_repeat_condition_G.Equals(검색식)) Stop_Monitoring(리턴(), "반복_G");
-                if (Properties.Settings.Default.combo_repeat_condition_H.Equals(검색식)) Stop_Monitoring(리턴(), "반복_H");
-                if (Properties.Settings.Default.combo_repeat_condition_I.Equals(검색식)) Stop_Monitoring(리턴(), "반복_I");
-                if (Properties.Settings.Default.combo_repeat_condition_J.Equals(검색식)) Stop_Monitoring(리턴(), "반복_J");
-                if (Properties.Settings.Default.combo_repeat_condition_K.Equals(검색식)) Stop_Monitoring(리턴(), "반복_K");
-                if (Properties.Settings.Default.combo_repeat_condition_L.Equals(검색식)) Stop_Monitoring(리턴(), "반복_L");
-                if (Properties.Settings.Default.combo_repeat_condition_M.Equals(검색식)) Stop_Monitoring(리턴(), "반복_M");
-                if (Properties.Settings.Default.combo_repeat_condition_N.Equals(검색식)) Stop_Monitoring(리턴(), "반복_N");
-
-                if (Properties.Settings.Default.combo_rebalance_condition_A.Equals(검색식)) Stop_Monitoring(리턴(), "리밸_A");
-                if (Properties.Settings.Default.combo_rebalance_condition_B.Equals(검색식)) Stop_Monitoring(리턴(), "리밸_B");
-                if (Properties.Settings.Default.combo_rebalance_condition_C.Equals(검색식)) Stop_Monitoring(리턴(), "리밸_C");
-                if (Properties.Settings.Default.combo_rebalance_condition_D.Equals(검색식)) Stop_Monitoring(리턴(), "리밸_D");
-                if (Properties.Settings.Default.combo_rebalance_condition_E.Equals(검색식)) Stop_Monitoring(리턴(), "리밸_E");
-                if (Properties.Settings.Default.combo_rebalance_condition_F.Equals(검색식)) Stop_Monitoring(리턴(), "리밸_F");
-                if (Properties.Settings.Default.combo_rebalance_condition_G.Equals(검색식)) Stop_Monitoring(리턴(), "리밸_G");
-                if (Properties.Settings.Default.CBB_Liquidation_condition_A.Equals(검색식)) Stop_Monitoring(리턴(), "청산_A");
-                if (Properties.Settings.Default.CBB_Liquidation_condition_B.Equals(검색식)) Stop_Monitoring(리턴(), "청산_B");
-                if (Properties.Settings.Default.CBB_Liquidation_condition_C.Equals(검색식)) Stop_Monitoring(리턴(), "청산_C");
-
-                if (Properties.Settings.Default.combo_watch_condition_AA.Equals(검색식)) Stop_Monitoring(리턴(), "Watch_A");
-                if (Properties.Settings.Default.combo_watch_condition_BB.Equals(검색식)) Stop_Monitoring(리턴(), "Watch_B");
-                if (Properties.Settings.Default.combo_watch_condition_CC.Equals(검색식)) Stop_Monitoring(리턴(), "Watch_C");
-                if (Properties.Settings.Default.combo_watch_condition_DD.Equals(검색식)) Stop_Monitoring(리턴(), "Watch_D");
-            });
-
-            Condition 리턴()
-            {
-                Condition result = Form1.form1.ConditionList.Find(o => o.name.Equals(검색식));
-                return result;
-            }
-        }
 
 
         // 실시간 조건식 사용 해제
-        public static void Stop_Monitoring(Condition condition, string position)
+        public static void Stop_Monitoring(Condition condition, string where)
         {
-            Task JO_Manager = new Task(() =>
+            Form1.Console_print("Stop_Monitoring 위치: " + where + " 검색식: " + condition.name);
+
+            if (condition.index != "index")
             {
-                Form1.form1.Invoke((MethodInvoker)delegate ()
+                List<RunCondition> list = Form1.Run_condition_List.FindAll(o => o.index.Equals(condition.index));
+                if (list.Count == 1)
                 {
-                    try
-                    {
-                        if (!Overlap_condition(condition.name))
-                        {
-                            Fail_condition fail = Form1.form1.fail_condition_List.Find(o => o.condition.Equals(condition.name));
-                            if (fail == null)
-                            {
-                                if (Form1.Run_condition_List.Contains(condition.name))
-                                {
-                                    Form1.form1.axKHOpenAPI1.SendConditionStop("1100", condition.name, condition.index);
+                    REG.검색해제(condition.index);
+                    Form1.Run_condition_count--;
+                }
+            }
 
-                                    Form1.동작_Log(position + " - " + condition.name + " 실시간 감시를 해제 합니다.");
-                                    Form1.비프음("정지");
-                                    Form1.Run_condition_List.Remove(condition.name);
+            Form1.위치별검색식리스트[where].실행여부 = false;
 
-                                    RunCondition search_Run = Form1.form1.search_condition_List.Find(o => o.condition.Equals(condition.name));
-                                    if (search_Run != null)
-                                    {
-                                        Form1.form1.search_condition_List.Remove(search_Run);
-                                    }
-                                }
+            RunCondition item = Form1.Run_condition_List.Find(o => o.index.Equals(condition.index) && o.where.Equals(where));
+            if (item != null) Form1.Run_condition_List.Remove(item);
 
-                                사용중지_(position);
-                            }
-                        }
-                        else
-                        {
-                            Console.WriteLine("Stop_Monitoring :: " + condition.name + "  검색식 중복입니다." + " position:: " + position);
-                        }
-                    }
-                    catch (Exception e)
-                    {
-                        string message = e.Message.ToString();
+            RunCondition 시장가 = Form1.Run_condition_List.Find(o => o.name.Equals("매수탐색_A") || o.name.Equals("매수탐색_B") || o.name.Equals("매도탐색"));
+            if (시장가 == null) Form1.시장가탐색 = false;
+            else Form1.시장가탐색 = true;
 
-                        Form1.알림창("[ 검색식 'Stop' 실패 ]\n\n검색식:" + condition.name + "\n\n검색식 'Stop' 에러내역 :: " + message, 5, false);
-
-                        Form1.Error_Log(" ");
-                        Form1.Error_Log("[검색식 'Stop' 실패] 검색식:" + condition.name + " 검색식 'Stop' 에러내역 :: " + message);
-                        Form1.Error_Log(" ");
-
-                        Form1.비프음("언체크");
-                    }
-                });
-            });
-            Form1.condotionManager.RequestTrData(JO_Manager);  // 생성된 Task 조스트 매니지먼트에 요청 등록. 
+            Log.동작기록("[검색식 STOP] " + where + "검색식 [ " + condition.name + " ]이 실시간 감시를 해제 합니다.");
+            if (Form1.로딩완료) Form1.비프음("정지");
         }
+
+        // 전역 변수(또는 클래스 멤버)로 선언되어 있다고 가정합니다.
+        // (이미 차단된 검색식을 또 차단하지 않기 위함)
+        private static HashSet<string> overLoadSearchNames = new HashSet<string>();
 
         public static void 검색식사용제한()
         {
-            Form1.form1.검색식_tick++;
-            if (Form1.form1.검색식_tick >= 4)
+            // 1. 4초 주기 초기화 로직
+            // (ConcurrentDictionary는 Clear해도 안전합니다)
+            Get.검색식_tick++;
+            if (Get.검색식_tick >= 4)
             {
-                Form1.form1.검색식_tick = 0;
-                Form1.form1.Condition_Catch_List.Clear();
+                Get.검색식_tick = 0;
+
+                // [변경] Map 전체 비우기 (매우 빠름)
+                Form1.form1.Condition_Catch_Map.Clear();
+
+                // (선택사항) 4초마다 차단 목록도 초기화해서 다시 기회를 줄지, 
+                // 아니면 영구 차단할지에 따라 이 줄을 넣거나 뺍니다.
+                // overLoadSearchNames.Clear(); 
             }
 
-            if (Form1.로딩완료 && (Form1.server_알림.Contains("마켓") || Form1.server_알림.Contains("동시")))
+            // 2. 과부하 검색식 감지 로직
+            if (로딩완료 && (server_알림.Contains("마켓") || server_알림.Contains("동시")))
             {
-                foreach (var item in Form1.form1.Condition_Catch_List.ToList())
+                // [최적화 핵심] 
+                // 기존: 리스트 전체를 루프 돌며 Split + Count (느림)
+                // 변경: 딕셔너리의 Key(검색식)만 확인하면 됨 (빠름)
+
+                foreach (var item in Form1.form1.Condition_Catch_Map)
                 {
-                    string 검색식 = item.Split('^')[1];
-                    List<string> Group = Form1.form1.Condition_Catch_List.FindAll(o => o.Contains(검색식));
+                    string 검색식 = item.Key;
 
-                    if (Group.Count > 100)
+                    // 이미 차단된 검색식은 패스 (불필요한 연산 방지)
+                    if (overLoadSearchNames.Contains(검색식)) continue;
+
+                    // [속도 최적화] HashSet의 개수만 확인하면 끝! (O(1))
+                    int count = 0;
+
+                    // HashSet은 Thread-Safe하지 않으므로 읽을 때 lock 권장
+                    // (ConcurrentDictionary 안에 있는 HashSet이라도 내용은 보호해야 함)
+                    lock (item.Value)
                     {
-                        Form1.동작_Log("");
-                        Form1.AutoClosingAlram(검색식 + " 식 사용 중지 됩니다. 지니_64가 원할히 가동되기 위해 1초당 100개 이상 실시간 검색되는 조건식은 사용할수 없습니다. 검색식 을 적절히 수정하여 사용하세요.", "검색식 사용제한", 1800, "동작");
-                        Form1.동작_Log("");
-                        Form1.Error_Log("");
-                        Form1.Error_Log(검색식 + " 식이 사용 중지 됩니다. 지니_64가 원할히 가동되기 위해 1초당 100개 이상 실시간 검색되는 조건식은 사용할수 없습니다. 검색식 을 적절히 수정하여 사용하세요.");
-                        Form1.Error_Log("");
+                        count = item.Value.Count;
+                    }
 
+                    // 3. 100개 초과 시 차단 로직
+                    if (count > 100)
+                    {
+                        overLoadSearchNames.Add(검색식); // 차단 목록에 추가
+
+                        string message = $"[{검색식}] 식이 사용 중지됩니다.\n(원인: 1초당 {count}개 이상 과다 포착)";
+
+                        AutoClosingAlram(message, "검색식 과부하 경고", 1800, "동작");
+
+                        // 로그 기록
+                        Log.동작기록("=================================");
+                        Log.동작기록(message);
+                        Log.동작기록("=================================");
+                        Log.에러기록(message);
+
+                        // 강제 중지 로직 실행 (API 요청 중단)
                         검색식강제중지(검색식);
 
-                        for (int n = 0; n < Group.Count; n++)
+                        // [정리] 메모리 절약을 위해 해당 검색식의 종목 리스트 비우기
+                        lock (item.Value)
                         {
-                            string Remove = Group[n];
-
-                            Form1.form1.Condition_Catch_List.Remove(Remove);
+                            item.Value.Clear();
                         }
                     }
                 }
+            }
+        }
+
+        public static void 검색식강제중지(string 검색식)
+        {
+            Helper.안전한_UI_업데이트(Form1.form1, () =>
+           {
+               if (Form1.위치별검색식리스트["신규_A"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "신규_A");
+               if (Form1.위치별검색식리스트["신규_B"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "신규_B");
+               if (Form1.위치별검색식리스트["신규_C"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "신규_C");
+
+               if (Form1.위치별검색식리스트["반복_A"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "반복_A");
+               if (Form1.위치별검색식리스트["반복_B"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "반복_B");
+               if (Form1.위치별검색식리스트["반복_C"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "반복_C");
+               if (Form1.위치별검색식리스트["반복_D"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "반복_D");
+               if (Form1.위치별검색식리스트["반복_E"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "반복_E");
+               if (Form1.위치별검색식리스트["반복_F"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "반복_F");
+               if (Form1.위치별검색식리스트["반복_G"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "반복_G");
+               if (Form1.위치별검색식리스트["반복_H"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "반복_H");
+               if (Form1.위치별검색식리스트["반복_I"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "반복_I");
+               if (Form1.위치별검색식리스트["반복_J"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "반복_J");
+               if (Form1.위치별검색식리스트["반복_K"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "반복_K");
+               if (Form1.위치별검색식리스트["반복_L"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "반복_L");
+               if (Form1.위치별검색식리스트["반복_M"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "반복_M");
+               if (Form1.위치별검색식리스트["반복_N"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "반복_N");
+
+               if (Form1.위치별검색식리스트["리밸_A"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "리밸_A");
+               if (Form1.위치별검색식리스트["리밸_B"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "리밸_B");
+               if (Form1.위치별검색식리스트["리밸_C"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "리밸_C");
+               if (Form1.위치별검색식리스트["리밸_D"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "리밸_D");
+               if (Form1.위치별검색식리스트["리밸_E"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "리밸_E");
+               if (Form1.위치별검색식리스트["리밸_F"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "리밸_F");
+               if (Form1.위치별검색식리스트["리밸_G"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "리밸_G");
+               if (Form1.위치별검색식리스트["청산_A"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "청산_A");
+               if (Form1.위치별검색식리스트["청산_B"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "청산_B");
+               if (Form1.위치별검색식리스트["청산_C"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "청산_C");
+
+               if (Form1.위치별검색식리스트["와치_A"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "Watch_A");
+               if (Form1.위치별검색식리스트["와치_B"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "Watch_B");
+               if (Form1.위치별검색식리스트["와치_C"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "Watch_C");
+               if (Form1.위치별검색식리스트["와치_D"].이름.Equals(검색식)) Stop_Monitoring(리턴(), "Watch_D");
+           });
+
+            Condition 리턴()
+            {
+                Condition result = Form1.ConditionList.Find(o => o.name.Equals(검색식));
+                return result;
             }
         }
 
         public static void 검색식사용불가_강제정지()
         {
-            if (Form1.신규조회_List.Count > 30)
+            // [최적화 1] 전체 개수가 40개 이하라면 아예 로직을 수행하지 않아 CPU를 아낍니다.
+            if (Form1.신규조회_List.Count <= 40) return;
+
+            // [최적화 2] Dictionary를 사용하여 한 번만 순회하면서 개수를 셉니다. (LINQ 사용 안 함)
+            // ConcurrentDictionary는 Values 속성으로 값들에 접근합니다.
+            Dictionary<string, int> 카운터 = new Dictionary<string, int>();
+            string 과부하_검색식 = "";
+
+            foreach (var item in Form1.신규조회_List.Values)
             {
-                string 검색식 = Form1.신규조회_List[0].검색식;
+                if (item == null) continue;
+
+                string 현재검색식 = item.검색식;
+
+                if (!카운터.ContainsKey(현재검색식))
+                    카운터[현재검색식] = 0;
+
+                카운터[현재검색식]++;
+
+                // [최적화 3] 세다가 40개가 넘는 순간 즉시 루프를 멈추고 해당 검색식을 범인으로 지목합니다.
+                if (카운터[현재검색식] > 40)
+                {
+                    과부하_검색식 = 현재검색식;
+                    break;
+                }
+            }
+
+            // 40개 초과한 검색식이 발견된 경우에만 정지 로직 실행
+            if (!string.IsNullOrEmpty(과부하_검색식))
+            {
                 string 위치 = "";
 
-                List<신규조회> 조회개수_List = Form1.신규조회_List.FindAll(o => o.검색식.Equals(검색식));
-
-                if (조회개수_List.Count > 30)
+                // 검색식 명칭 비교 및 정지 실행
+                if (과부하_검색식.Equals(Form1.위치별검색식리스트["신규_A"].이름) && GenieConfig.CB_new_A)
                 {
-                    if (검색식.Equals(Properties.Settings.Default.combo_new_condition_A) && Properties.Settings.Default.CB_new_A)
-                    {
-                        Stop_Monitoring(리턴(), "신규_A");
-                        위치 = "신규_A";
-                        알림();
-                    }
-                    if (검색식.Equals(Properties.Settings.Default.combo_new_condition_B) && Properties.Settings.Default.CB_new_B)
-                    {
-                        Stop_Monitoring(리턴(), "신규_B");
-                        위치 = "신규_B";
-                        알림();
-                    }
-                    if (검색식.Equals(Properties.Settings.Default.combo_new_condition_C) && Properties.Settings.Default.CB_new_C)
-                    {
-                        Stop_Monitoring(리턴(), "신규_C");
-                        위치 = "신규_C";
-                        알림();
-                    }
-
-                    void 알림()
-                    {
-                        Form1.AutoClosingAlram(위치 + " [" + 검색식 + "] 검색식을 강제 중지합니다. \n신규매수 검색식의 검색허용치는 초당 20개로 제한됩니다.", "검색허용치 초과", 1800, "동작");
-                        Form1.Error_Log(위치 + " [" + 검색식 + "] 검색식을 강제 중지합니다. 신규매수 검색식의 검색허용치는 초당 20개로 제한됩니다.");
-                    }
+                    위치 = "신규_A";
+                    Stop_Monitoring(리턴(과부하_검색식), 위치);
+                    알림(위치, 과부하_검색식);
                 }
-
-                Condition 리턴()
+                else if (과부하_검색식.Equals(Form1.위치별검색식리스트["신규_B"].이름) && GenieConfig.CB_new_B)
                 {
-                    Condition result = Form1.form1.ConditionList.Find(o => o.name.Equals(검색식));
-                    return result;
+                    위치 = "신규_B";
+                    Stop_Monitoring(리턴(과부하_검색식), 위치);
+                    알림(위치, 과부하_검색식);
+                }
+                else if (과부하_검색식.Equals(Form1.위치별검색식리스트["신규_C"].이름) && GenieConfig.CB_new_C)
+                {
+                    위치 = "신규_C";
+                    Stop_Monitoring(리턴(과부하_검색식), 위치);
+                    알림(위치, 과부하_검색식);
                 }
             }
 
-            if (Form1.form1.fail_condition_List.Count > 0)
+            // [로컬 함수] 알림 (변수들을 인자로 받도록 수정하여 안전성 확보)
+            void 알림(string pos, string name)
             {
-                foreach (var item in Form1.form1.fail_condition_List.ToList())
-                {
-                    if (item.count > 0)
-                    {
-                        item.count--;
+                Form1.AutoClosingAlram(pos + " [" + name + "] 검색식을 강제 중지합니다. \n신규매수 검색식의 검색허용치는 초당 40개로 제한됩니다.", "검색허용치 초과", 1800, "동작");
+                Log.에러기록(pos + " [" + name + "] 검색식을 강제 중지합니다. 신규매수 검색식의 검색허용치는 초당 40개로 제한됩니다.");
+            }
 
-                        if (item.count == 0)
-                        {
-                            Form1.form1.fail_condition_List.Remove(item);
-                        }
-                    }
-                }
+            // [로컬 함수] Condition 리턴 (인자 추가)
+            Condition 리턴(string name)
+            {
+                return Form1.ConditionList.Find(o => o.name.Equals(name));
             }
         }
 
-
-        public static bool 시장가대금탐색()
-        {
-            bool T = false;
-            bool CBnew_A = Properties.Settings.Default.CB_new_A;
-            bool CBnew_B = Properties.Settings.Default.CB_new_B;
-            bool CBnew_C = Properties.Settings.Default.CB_new_C;
-
-            if (Form1.FormBasic_Open)
-            {
-                CBnew_A = Form_Basic.form.CB_new_A.Checked;
-                CBnew_B = Form_Basic.form.CB_new_B.Checked;
-                CBnew_C = Form_Basic.form.CB_new_C.Checked;
-            }
-
-            bool CBrepeat_use_A = Properties.Settings.Default.CB_repeat_use_A;
-            bool CBrepeat_use_B = Properties.Settings.Default.CB_repeat_use_B;
-            bool CBrepeat_use_C = Properties.Settings.Default.CB_repeat_use_C;
-            bool CBrepeat_use_D = Properties.Settings.Default.CB_repeat_use_D;
-            bool CBrepeat_use_E = Properties.Settings.Default.CB_repeat_use_E;
-            bool CBrepeat_use_F = Properties.Settings.Default.CB_repeat_use_F;
-            bool CBrepeat_use_G = Properties.Settings.Default.CB_repeat_use_G;
-            bool CBrepeat_use_H = Properties.Settings.Default.CB_repeat_use_H;
-            bool CBrepeat_use_I = Properties.Settings.Default.CB_repeat_use_I;
-            bool CBrepeat_use_J = Properties.Settings.Default.CB_repeat_use_J;
-            bool CBrepeat_use_K = Properties.Settings.Default.CB_repeat_use_K;
-            bool CBrepeat_use_L = Properties.Settings.Default.CB_repeat_use_L;
-            bool CBrepeat_use_M = Properties.Settings.Default.CB_repeat_use_M;
-            bool CBrepeat_use_N = Properties.Settings.Default.CB_repeat_use_N;
-
-            int CBBrepeat_use_condition_A = Properties.Settings.Default.combo_repeat_use_condition_A;
-            int CBBrepeat_use_condition_B = Properties.Settings.Default.combo_repeat_use_condition_B;
-            int CBBrepeat_use_condition_C = Properties.Settings.Default.combo_repeat_use_condition_C;
-            int CBBrepeat_use_condition_D = Properties.Settings.Default.combo_repeat_use_condition_D;
-            int CBBrepeat_use_condition_E = Properties.Settings.Default.combo_repeat_use_condition_E;
-            int CBBrepeat_use_condition_F = Properties.Settings.Default.combo_repeat_use_condition_F;
-            int CBBrepeat_use_condition_G = Properties.Settings.Default.combo_repeat_use_condition_G;
-            int CBBrepeat_use_condition_H = Properties.Settings.Default.combo_repeat_use_condition_H;
-            int CBBrepeat_use_condition_I = Properties.Settings.Default.combo_repeat_use_condition_I;
-            int CBBrepeat_use_condition_J = Properties.Settings.Default.combo_repeat_use_condition_J;
-            int CBBrepeat_use_condition_K = Properties.Settings.Default.combo_repeat_use_condition_K;
-            int CBBrepeat_use_condition_L = Properties.Settings.Default.combo_repeat_use_condition_L;
-            int CBBrepeat_use_condition_M = Properties.Settings.Default.combo_repeat_use_condition_M;
-            int CBBrepeat_use_condition_N = Properties.Settings.Default.combo_repeat_use_condition_N;
-
-            if (Form1.FormRepeat_Open)
-            {
-                CBrepeat_use_A = Form_Repeat.form.CB_repeat_use_A.Checked;
-                CBrepeat_use_B = Form_Repeat.form.CB_repeat_use_B.Checked;
-                CBrepeat_use_C = Form_Repeat.form.CB_repeat_use_C.Checked;
-                CBrepeat_use_D = Form_Repeat.form.CB_repeat_use_D.Checked;
-                CBrepeat_use_E = Form_Repeat.form.CB_repeat_use_E.Checked;
-                CBrepeat_use_F = Form_Repeat.form.CB_repeat_use_F.Checked;
-                CBrepeat_use_G = Form_Repeat.form.CB_repeat_use_G.Checked;
-                CBrepeat_use_H = Form_Repeat.form.CB_repeat_use_H.Checked;
-                CBrepeat_use_I = Form_Repeat.form.CB_repeat_use_I.Checked;
-                CBrepeat_use_J = Form_Repeat.form.CB_repeat_use_J.Checked;
-                CBrepeat_use_K = Form_Repeat.form.CB_repeat_use_K.Checked;
-                CBrepeat_use_L = Form_Repeat.form.CB_repeat_use_L.Checked;
-                CBrepeat_use_M = Form_Repeat.form.CB_repeat_use_M.Checked;
-                CBrepeat_use_N = Form_Repeat.form.CB_repeat_use_N.Checked;
-
-                CBBrepeat_use_condition_A = Form_Repeat.form.combo_repeat_use_condition_A.SelectedIndex;
-                CBBrepeat_use_condition_B = Form_Repeat.form.combo_repeat_use_condition_B.SelectedIndex;
-                CBBrepeat_use_condition_C = Form_Repeat.form.combo_repeat_use_condition_C.SelectedIndex;
-                CBBrepeat_use_condition_D = Form_Repeat.form.combo_repeat_use_condition_D.SelectedIndex;
-                CBBrepeat_use_condition_E = Form_Repeat.form.combo_repeat_use_condition_E.SelectedIndex;
-                CBBrepeat_use_condition_F = Form_Repeat.form.combo_repeat_use_condition_F.SelectedIndex;
-                CBBrepeat_use_condition_G = Form_Repeat.form.combo_repeat_use_condition_G.SelectedIndex;
-                CBBrepeat_use_condition_H = Form_Repeat.form.combo_repeat_use_condition_H.SelectedIndex;
-                CBBrepeat_use_condition_I = Form_Repeat.form.combo_repeat_use_condition_I.SelectedIndex;
-                CBBrepeat_use_condition_J = Form_Repeat.form.combo_repeat_use_condition_J.SelectedIndex;
-                CBBrepeat_use_condition_K = Form_Repeat.form.combo_repeat_use_condition_K.SelectedIndex;
-                CBBrepeat_use_condition_L = Form_Repeat.form.combo_repeat_use_condition_L.SelectedIndex;
-                CBBrepeat_use_condition_M = Form_Repeat.form.combo_repeat_use_condition_M.SelectedIndex;
-                CBBrepeat_use_condition_N = Form_Repeat.form.combo_repeat_use_condition_N.SelectedIndex;
-            }
-
-            bool CBrebalance_A = Properties.Settings.Default.CB_rebalance_A;
-            bool CBrebalance_B = Properties.Settings.Default.CB_rebalance_B;
-            bool CBrebalance_C = Properties.Settings.Default.CB_rebalance_C;
-            bool CBrebalance_D = Properties.Settings.Default.CB_rebalance_D;
-            bool CBrebalance_E = Properties.Settings.Default.CB_rebalance_E;
-            bool CBrebalance_F = Properties.Settings.Default.CB_rebalance_F;
-            bool CBrebalance_G = Properties.Settings.Default.CB_rebalance_G;
-
-            int CBBrebalance_use_condition_A = Properties.Settings.Default.combo_rebalance_use_condition_A;
-            int CBBrebalance_use_condition_B = Properties.Settings.Default.combo_rebalance_use_condition_B;
-            int CBBrebalance_use_condition_C = Properties.Settings.Default.combo_rebalance_use_condition_C;
-            int CBBrebalance_use_condition_D = Properties.Settings.Default.combo_rebalance_use_condition_D;
-            int CBBrebalance_use_condition_E = Properties.Settings.Default.combo_rebalance_use_condition_E;
-            int CBBrebalance_use_condition_F = Properties.Settings.Default.combo_rebalance_use_condition_F;
-            int CBBrebalance_use_condition_G = Properties.Settings.Default.combo_rebalance_use_condition_G;
-
-            bool CBLiquidation_A = Properties.Settings.Default.CB_Liquidation_A;
-            bool CBLiquidation_B = Properties.Settings.Default.CB_Liquidation_B;
-            bool CBLiquidation_C = Properties.Settings.Default.CB_Liquidation_C;
-
-            int CBBLiquidation_use_condition_A = Properties.Settings.Default.CBB_Liquidation_use_condition_A;
-            int CBBLiquidation_use_condition_B = Properties.Settings.Default.CBB_Liquidation_use_condition_B;
-            int CBBLiquidation_use_condition_C = Properties.Settings.Default.CBB_Liquidation_use_condition_C;
-
-            if (Form1.FormAccountManagement_Open)
-            {
-                CBrebalance_A = Form_AccountManagement.form.CB_rebalance_A.Checked;
-                CBrebalance_B = Form_AccountManagement.form.CB_rebalance_B.Checked;
-                CBrebalance_C = Form_AccountManagement.form.CB_rebalance_C.Checked;
-                CBrebalance_D = Form_AccountManagement.form.CB_rebalance_D.Checked;
-                CBrebalance_E = Form_AccountManagement.form.CB_rebalance_E.Checked;
-                CBrebalance_F = Form_AccountManagement.form.CB_rebalance_F.Checked;
-                CBrebalance_G = Form_AccountManagement.form.CB_rebalance_G.Checked;
-
-                CBBrebalance_use_condition_A = Form_AccountManagement.form.combo_rebalance_use_condition_A.SelectedIndex;
-                CBBrebalance_use_condition_B = Form_AccountManagement.form.combo_rebalance_use_condition_B.SelectedIndex;
-                CBBrebalance_use_condition_C = Form_AccountManagement.form.combo_rebalance_use_condition_C.SelectedIndex;
-                CBBrebalance_use_condition_D = Form_AccountManagement.form.combo_rebalance_use_condition_D.SelectedIndex;
-                CBBrebalance_use_condition_E = Form_AccountManagement.form.combo_rebalance_use_condition_E.SelectedIndex;
-                CBBrebalance_use_condition_F = Form_AccountManagement.form.combo_rebalance_use_condition_F.SelectedIndex;
-                CBBrebalance_use_condition_G = Form_AccountManagement.form.combo_rebalance_use_condition_G.SelectedIndex;
-
-                CBLiquidation_A = Form_AccountManagement.form.CB_Liquidation_A.Checked;
-                CBLiquidation_B = Form_AccountManagement.form.CB_Liquidation_B.Checked;
-                CBLiquidation_C = Form_AccountManagement.form.CB_Liquidation_C.Checked;
-
-                CBBLiquidation_use_condition_A = Form_AccountManagement.form.CBB_Liquidation_use_condition_A.SelectedIndex;
-                CBBLiquidation_use_condition_B = Form_AccountManagement.form.CBB_Liquidation_use_condition_B.SelectedIndex;
-                CBBLiquidation_use_condition_C = Form_AccountManagement.form.CBB_Liquidation_use_condition_C.SelectedIndex;
-            }
-
-            if (CBnew_A) 검색식확인(Properties.Settings.Default.combo_new_condition_A);
-            if (!T && CBnew_B) 검색식확인(Properties.Settings.Default.combo_new_condition_B);
-            if (!T && CBnew_C) 검색식확인(Properties.Settings.Default.combo_new_condition_C);
-
-            if (!T && CBrebalance_A && CBBrebalance_use_condition_A > 0) 검색식확인(Properties.Settings.Default.combo_rebalance_condition_A);
-            if (!T && CBrebalance_B && CBBrebalance_use_condition_B > 0) 검색식확인(Properties.Settings.Default.combo_rebalance_condition_B);
-            if (!T && CBrebalance_C && CBBrebalance_use_condition_C > 0) 검색식확인(Properties.Settings.Default.combo_rebalance_condition_C);
-            if (!T && CBrebalance_D && CBBrebalance_use_condition_D > 0) 검색식확인(Properties.Settings.Default.combo_rebalance_condition_D);
-            if (!T && CBrebalance_E && CBBrebalance_use_condition_E > 0) 검색식확인(Properties.Settings.Default.combo_rebalance_condition_E);
-            if (!T && CBrebalance_F && CBBrebalance_use_condition_F > 0) 검색식확인(Properties.Settings.Default.combo_rebalance_condition_F);
-            if (!T && CBrebalance_G && CBBrebalance_use_condition_G > 0) 검색식확인(Properties.Settings.Default.combo_rebalance_condition_G);
-
-            if (!T && CBrepeat_use_A && CBBrepeat_use_condition_A > 0) 검색식확인(Properties.Settings.Default.combo_repeat_condition_A);
-            if (!T && CBrepeat_use_B && CBBrepeat_use_condition_B > 0) 검색식확인(Properties.Settings.Default.combo_repeat_condition_B);
-            if (!T && CBrepeat_use_C && CBBrepeat_use_condition_C > 0) 검색식확인(Properties.Settings.Default.combo_repeat_condition_C);
-            if (!T && CBrepeat_use_D && CBBrepeat_use_condition_D > 0) 검색식확인(Properties.Settings.Default.combo_repeat_condition_D);
-            if (!T && CBrepeat_use_E && CBBrepeat_use_condition_E > 0) 검색식확인(Properties.Settings.Default.combo_repeat_condition_E);
-            if (!T && CBrepeat_use_F && CBBrepeat_use_condition_F > 0) 검색식확인(Properties.Settings.Default.combo_repeat_condition_F);
-            if (!T && CBrepeat_use_G && CBBrepeat_use_condition_G > 0) 검색식확인(Properties.Settings.Default.combo_repeat_condition_G);
-            if (!T && CBrepeat_use_H && CBBrepeat_use_condition_H > 0) 검색식확인(Properties.Settings.Default.combo_repeat_condition_H);
-            if (!T && CBrepeat_use_I && CBBrepeat_use_condition_I > 0) 검색식확인(Properties.Settings.Default.combo_repeat_condition_I);
-            if (!T && CBrepeat_use_J && CBBrepeat_use_condition_J > 0) 검색식확인(Properties.Settings.Default.combo_repeat_condition_J);
-            if (!T && CBrepeat_use_K && CBBrepeat_use_condition_K > 0) 검색식확인(Properties.Settings.Default.combo_repeat_condition_K);
-            if (!T && CBrepeat_use_L && CBBrepeat_use_condition_L > 0) 검색식확인(Properties.Settings.Default.combo_repeat_condition_L);
-            if (!T && CBrepeat_use_M && CBBrepeat_use_condition_M > 0) 검색식확인(Properties.Settings.Default.combo_repeat_condition_M);
-            if (!T && CBrepeat_use_N && CBBrepeat_use_condition_N > 0) 검색식확인(Properties.Settings.Default.combo_repeat_condition_N);
-
-            if (!T && Properties.Settings.Default.CB_watch_use_A) 검색식확인(Properties.Settings.Default.combo_watch_condition_AA);
-            if (!T && Properties.Settings.Default.CB_watch_use_B) 검색식확인(Properties.Settings.Default.combo_watch_condition_BB);
-            if (!T && Properties.Settings.Default.CB_watch_use_C) 검색식확인(Properties.Settings.Default.combo_watch_condition_CC);
-            if (!T && Properties.Settings.Default.CB_watch_use_D) 검색식확인(Properties.Settings.Default.combo_watch_condition_DD);
-
-            if (!T && CBLiquidation_A && CBBLiquidation_use_condition_A > 0) 검색식확인(Properties.Settings.Default.CBB_Liquidation_condition_A);
-            if (!T && CBLiquidation_B && CBBLiquidation_use_condition_B > 0) 검색식확인(Properties.Settings.Default.CBB_Liquidation_condition_B);
-            if (!T && CBLiquidation_C && CBBLiquidation_use_condition_C > 0) 검색식확인(Properties.Settings.Default.CBB_Liquidation_condition_C);
-
-            void 검색식확인(string 검색식)
-            {
-                if (검색식.Equals(Properties.Settings.Default.TB_매수탐색A) || 검색식.Equals(Properties.Settings.Default.TB_매수탐색B) || 검색식.Equals(Properties.Settings.Default.TB_매도탐색))
-                {
-                    T = true;
-                }
-            }
-
-            return T;
-        }
 
         public static void 대금탐색취소(String 검색식)
         {
-            if (Properties.Settings.Default.combo_new_condition_A.Equals(검색식)) Properties.Settings.Default.CB_new_A = false;
-            if (Properties.Settings.Default.combo_new_condition_B.Equals(검색식)) Properties.Settings.Default.CB_new_B = false;
-            if (Properties.Settings.Default.combo_new_condition_C.Equals(검색식)) Properties.Settings.Default.CB_new_C = false;
+            if (Form1.위치별검색식리스트["신규_A"].이름.Equals(검색식)) GenieConfig.CB_new_A = false;
+            if (Form1.위치별검색식리스트["신규_B"].이름.Equals(검색식)) GenieConfig.CB_new_B = false;
+            if (Form1.위치별검색식리스트["신규_C"].이름.Equals(검색식)) GenieConfig.CB_new_C = false;
 
-            if (Properties.Settings.Default.combo_watch_condition_AA.Equals(검색식)) Form1.form1.CB_watch_use_A.Checked = false;
-            if (Properties.Settings.Default.combo_watch_condition_BB.Equals(검색식)) Form1.form1.CB_watch_use_B.Checked = false;
-            if (Properties.Settings.Default.combo_watch_condition_CC.Equals(검색식)) Form1.form1.CB_watch_use_C.Checked = false;
-            if (Properties.Settings.Default.combo_watch_condition_DD.Equals(검색식)) Form1.form1.CB_watch_use_D.Checked = false;
+            if (Form1.위치별검색식리스트["와치_A"].이름.Equals(검색식)) Form1.form1.CB_watch_use_A.Checked = false;
+            if (Form1.위치별검색식리스트["와치_B"].이름.Equals(검색식)) Form1.form1.CB_watch_use_B.Checked = false;
+            if (Form1.위치별검색식리스트["와치_C"].이름.Equals(검색식)) Form1.form1.CB_watch_use_C.Checked = false;
+            if (Form1.위치별검색식리스트["와치_D"].이름.Equals(검색식)) Form1.form1.CB_watch_use_D.Checked = false;
 
-            if (Properties.Settings.Default.combo_repeat_condition_A.Equals(검색식)) Properties.Settings.Default.combo_repeat_use_condition_A = 0;
-            if (Properties.Settings.Default.combo_repeat_condition_B.Equals(검색식)) Properties.Settings.Default.combo_repeat_use_condition_B = 0;
-            if (Properties.Settings.Default.combo_repeat_condition_C.Equals(검색식)) Properties.Settings.Default.combo_repeat_use_condition_C = 0;
-            if (Properties.Settings.Default.combo_repeat_condition_D.Equals(검색식)) Properties.Settings.Default.combo_repeat_use_condition_D = 0;
-            if (Properties.Settings.Default.combo_repeat_condition_E.Equals(검색식)) Properties.Settings.Default.combo_repeat_use_condition_E = 0;
-            if (Properties.Settings.Default.combo_repeat_condition_F.Equals(검색식)) Properties.Settings.Default.combo_repeat_use_condition_F = 0;
-            if (Properties.Settings.Default.combo_repeat_condition_G.Equals(검색식)) Properties.Settings.Default.combo_repeat_use_condition_G = 0;
-            if (Properties.Settings.Default.combo_repeat_condition_H.Equals(검색식)) Properties.Settings.Default.combo_repeat_use_condition_H = 0;
-            if (Properties.Settings.Default.combo_repeat_condition_I.Equals(검색식)) Properties.Settings.Default.combo_repeat_use_condition_I = 0;
-            if (Properties.Settings.Default.combo_repeat_condition_J.Equals(검색식)) Properties.Settings.Default.combo_repeat_use_condition_J = 0;
-            if (Properties.Settings.Default.combo_repeat_condition_K.Equals(검색식)) Properties.Settings.Default.combo_repeat_use_condition_K = 0;
-            if (Properties.Settings.Default.combo_repeat_condition_L.Equals(검색식)) Properties.Settings.Default.combo_repeat_use_condition_L = 0;
-            if (Properties.Settings.Default.combo_repeat_condition_M.Equals(검색식)) Properties.Settings.Default.combo_repeat_use_condition_M = 0;
-            if (Properties.Settings.Default.combo_repeat_condition_N.Equals(검색식)) Properties.Settings.Default.combo_repeat_use_condition_N = 0;
+            if (Form1.위치별검색식리스트["반복_A"].이름.Equals(검색식)) GenieConfig.combo_repeat_use_condition_A = 0;
+            if (Form1.위치별검색식리스트["반복_B"].이름.Equals(검색식)) GenieConfig.combo_repeat_use_condition_B = 0;
+            if (Form1.위치별검색식리스트["반복_C"].이름.Equals(검색식)) GenieConfig.combo_repeat_use_condition_C = 0;
+            if (Form1.위치별검색식리스트["반복_D"].이름.Equals(검색식)) GenieConfig.combo_repeat_use_condition_D = 0;
+            if (Form1.위치별검색식리스트["반복_E"].이름.Equals(검색식)) GenieConfig.combo_repeat_use_condition_E = 0;
+            if (Form1.위치별검색식리스트["반복_F"].이름.Equals(검색식)) GenieConfig.combo_repeat_use_condition_F = 0;
+            if (Form1.위치별검색식리스트["반복_G"].이름.Equals(검색식)) GenieConfig.combo_repeat_use_condition_G = 0;
+            if (Form1.위치별검색식리스트["반복_H"].이름.Equals(검색식)) GenieConfig.combo_repeat_use_condition_H = 0;
+            if (Form1.위치별검색식리스트["반복_I"].이름.Equals(검색식)) GenieConfig.combo_repeat_use_condition_I = 0;
+            if (Form1.위치별검색식리스트["반복_J"].이름.Equals(검색식)) GenieConfig.combo_repeat_use_condition_J = 0;
+            if (Form1.위치별검색식리스트["반복_K"].이름.Equals(검색식)) GenieConfig.combo_repeat_use_condition_K = 0;
+            if (Form1.위치별검색식리스트["반복_L"].이름.Equals(검색식)) GenieConfig.combo_repeat_use_condition_L = 0;
+            if (Form1.위치별검색식리스트["반복_M"].이름.Equals(검색식)) GenieConfig.combo_repeat_use_condition_M = 0;
+            if (Form1.위치별검색식리스트["반복_N"].이름.Equals(검색식)) GenieConfig.combo_repeat_use_condition_N = 0;
 
-            if (Properties.Settings.Default.combo_rebalance_condition_A.Equals(검색식)) Properties.Settings.Default.combo_rebalance_use_condition_A = 0;
-            if (Properties.Settings.Default.combo_rebalance_condition_B.Equals(검색식)) Properties.Settings.Default.combo_rebalance_use_condition_B = 0;
-            if (Properties.Settings.Default.combo_rebalance_condition_C.Equals(검색식)) Properties.Settings.Default.combo_rebalance_use_condition_C = 0;
-            if (Properties.Settings.Default.combo_rebalance_condition_D.Equals(검색식)) Properties.Settings.Default.combo_rebalance_use_condition_D = 0;
-            if (Properties.Settings.Default.combo_rebalance_condition_E.Equals(검색식)) Properties.Settings.Default.combo_rebalance_use_condition_E = 0;
-            if (Properties.Settings.Default.combo_rebalance_condition_F.Equals(검색식)) Properties.Settings.Default.combo_rebalance_use_condition_F = 0;
-            if (Properties.Settings.Default.combo_rebalance_condition_G.Equals(검색식)) Properties.Settings.Default.combo_rebalance_use_condition_G = 0;
-            if (Properties.Settings.Default.CBB_Liquidation_condition_A.Equals(검색식)) Properties.Settings.Default.CBB_Liquidation_use_condition_A = 0;
-            if (Properties.Settings.Default.CBB_Liquidation_condition_B.Equals(검색식)) Properties.Settings.Default.CBB_Liquidation_use_condition_B = 0;
-            if (Properties.Settings.Default.CBB_Liquidation_condition_C.Equals(검색식)) Properties.Settings.Default.CBB_Liquidation_use_condition_C = 0;
+            if (Form1.위치별검색식리스트["리밸_A"].이름.Equals(검색식)) GenieConfig.combo_rebalance_use_condition_A = 0;
+            if (Form1.위치별검색식리스트["리밸_B"].이름.Equals(검색식)) GenieConfig.combo_rebalance_use_condition_B = 0;
+            if (Form1.위치별검색식리스트["리밸_C"].이름.Equals(검색식)) GenieConfig.combo_rebalance_use_condition_C = 0;
+            if (Form1.위치별검색식리스트["리밸_D"].이름.Equals(검색식)) GenieConfig.combo_rebalance_use_condition_D = 0;
+            if (Form1.위치별검색식리스트["리밸_E"].이름.Equals(검색식)) GenieConfig.combo_rebalance_use_condition_E = 0;
+            if (Form1.위치별검색식리스트["리밸_F"].이름.Equals(검색식)) GenieConfig.combo_rebalance_use_condition_F = 0;
+            if (Form1.위치별검색식리스트["리밸_G"].이름.Equals(검색식)) GenieConfig.combo_rebalance_use_condition_G = 0;
+            if (Form1.위치별검색식리스트["청산_A"].이름.Equals(검색식)) GenieConfig.CBB_Liquidation_use_condition_A = 0;
+            if (Form1.위치별검색식리스트["청산_B"].이름.Equals(검색식)) GenieConfig.CBB_Liquidation_use_condition_B = 0;
+            if (Form1.위치별검색식리스트["청산_C"].이름.Equals(검색식)) GenieConfig.CBB_Liquidation_use_condition_C = 0;
         }
 
+        public static void Catch_Stock_List_Clear(string key)
+        {
+            var keysToRemove = Form1.Catch_Stock_List
+           .Where(kvp => kvp.Key.Contains(key))
+           .Select(kvp => kvp.Key)
+           .ToList();
 
+            foreach (string keyToRemove in keysToRemove)
+            {
+                Form1.Catch_Stock_List.TryRemove(keyToRemove, out _);
+            }
+        }
 
+        ///////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////////
+        ///////////////           검색식 종목 진입&이탈 메소드              ////////////////
+
+        public static void RealCondition_item_search(string 종목코드, string 일련번호, string 삽입삭제)
+        {
+            // 1. 일련번호로 검색식 찾기
+            Condition 검색식 = Form1.ConditionList.Find(o => o.index.Equals(일련번호));
+            if (검색식 == null) return; // 검색식을 찾지 못한 경우 예외 방지
+
+            if (Form1.server_알림.Contains("마켓") || Form1.server_알림.Contains("동시"))
+            {
+                if (Form1.Market_Item_List.ContainsKey(종목코드))
+                {
+                    // [수정 핵심] 딕셔너리에서 해당 검색식의 방(HashSet)을 가져오거나 없으면 새로 만듭니다.
+                    // GetOrAdd는 쓰레드 세이프하게 방을 생성해줍니다.
+                    var 종목셋 = Form1.form1.Condition_Catch_Map.GetOrAdd(검색식.name, k => new HashSet<string>());
+
+                    // [최적화] HashSet 자체는 멀티스레드에 안전하지 않으므로 추가/삭제 시 lock을 걸어줍니다.
+                    lock (종목셋)
+                    {
+                        if (삽입삭제 == "I") // 종목 포착(Insert)
+                        {
+                            // HashSet이라 중복 종목은 알아서 걸러집니다.
+                            종목셋.Add(종목코드);
+                        }
+                        else if (삽입삭제 == "D") // 종목 이탈(Delete)
+                        {
+                            // 이탈한 종목은 리스트에서 제거해서 카운트에서 제외합니다.
+                            종목셋.Remove(종목코드);
+                        }
+                    }
+
+                    // 기존 매수/감시 로직 실행
+                    Item_search(삽입삭제, 종목코드, 검색식.name);
+                }
+            }
+        }
+
+        public static void Item_search(string 삽입삭제, string Code, string conditionName)
+        {
+            string SearchTime = Get.TimeNow.ToString("##:##:##");
+
+            UnifiedDataManager.Instance.Condition.Enqueue(async () =>
+            {
+             await    Tab_Basic.New_Buy(삽입삭제, Code, conditionName);
+                Tab_Repeat.Repeat_condition(삽입삭제, Code, conditionName);
+                Tab_AccountManagement.Rebalancing_condition(삽입삭제, Code, conditionName);
+                Tab_AccountManagement.Liquidation_condition(삽입삭제, Code, conditionName);
+                Tab_Watch.Watch_In_Out(삽입삭제, Code, conditionName, SearchTime);
+
+                SearchView_add(삽입삭제, Code, conditionName, SearchTime);
+
+                Tab_InterestGroup.관심_검색종목_등록실행(Code, conditionName, 삽입삭제);
+                Tab_InterestGroup.관심검색_실시간보기(conditionName, 삽입삭제, Code);
+            });
+        }
+
+        public static void SearchView_add(string 삽입삭제, string Code, string conditionName, string SearchTime)
+        {
+            Helper.안전한_UI_업데이트(Form1.form1, () =>
+           {
+               if (conditionName.Equals(Form1.form1.CBB_SearchCondition.Text) && 삽입삭제.Equals("I"))
+               {
+                   if (!Form1.form1.SearchView_List.Contains(Code))
+                   {
+                       Form1.form1.SearchView_List.Add(Code);
+                       Form1.form1.Search_List.Items.Insert(0, SearchTime + " | " + Form1.Market_Item_List[Code].종목명);
+
+                       if (Form1.form1.Search_List.Items[1].ToString().Contains("지니64오토스탁")) Form1.form1.Search_List.Items.RemoveAt(1);
+                       if (Form1.form1.Search_List.Items.Count > 8) Form1.form1.Search_List.Items.RemoveAt(8);
+                   }
+               }
+           });
+        }
+        public static void API_OnReceiveTRCondition(string Code, string 일련번호)
+        {
+            // 1. [데이터 연산 구역] 에러 방어 및 데이터 처리 0.001초 컷
+            string itemcode = Code.Substring(1);
+
+            // .Equals 대신 == 로 속도 향상, 못 찾았을 경우(null) 뻗는 현상 완벽 방어
+            Condition 검색식 = Form1.ConditionList.FirstOrDefault(o => o.index == 일련번호);
+
+            // 검색식이 없거나 시장에 없는 종목이면 즉시 컷! (NullReference 에러 원천 차단)
+            if (검색식 == null || !Form1.Market_Item_List.ContainsKey(itemcode))
+            {
+                return;
+            }
+
+            string 검색식명 = 검색식.name;
+
+            // UI 스레드를 괴롭히지 않고 백그라운드에서 리스트 검사 및 추가
+            if (Form1.form1.검색결과_List.Contains(검색식명) && !Form1.form1.검색결과_List.Contains(itemcode))
+            {
+                Form1.form1.검색결과_List.Add(itemcode);
+            }
+
+            if (GenieConfig.CB_편입추가)
+            {
+                Item_search("I", itemcode, 검색식명);
+            }
+
+            Tab_InterestGroup.관심_검색종목_등록실행(itemcode, 검색식명, "I");
+
+            // 2. [UI 업데이트 구역] 중복 호출 방지 및 최소화
+            if (Form1.로딩완료)
+            {
+                Helper.안전한_UI_업데이트(Form1.form1, () =>
+                {
+                    // 이미 0번이 아닐 때만 0번으로 변경! (종목이 100개 쏟아져도 화면 변경은 딱 1번만 일어남)
+                    if (Form1.form1.CBB_실시간n그룹n관심자동.SelectedIndex != 0)
+                    {
+                        Form1.form1.CBB_실시간n그룹n관심자동.SelectedIndex = 0;
+                        Tab_InterestGroup.CBB_실시간n그룹n관심자동_indexchange(0);
+                    }
+                });
+            }
+        }
+        ///////////////           검색식 종목 진입&이탈 메소드              /////////////////
+        ///////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////////
 
     }
 }

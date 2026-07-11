@@ -1,4 +1,4 @@
-﻿namespace 지니_64.Properties
+﻿namespace 지니64.Properties
 {
 
 

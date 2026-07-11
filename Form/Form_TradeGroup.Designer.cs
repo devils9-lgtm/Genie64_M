@@ -1,5 +1,5 @@
 ﻿
-namespace 지니_64
+namespace 지니64
 {
     partial class Form_TradeGroup
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace 지니_64.box
+namespace 지니64.box
 {
     partial class Form_JuMun
     {
@@ -155,8 +155,10 @@ namespace 지니_64.box
             this.JuMun_dataGridView.TabIndex = 68;
             this.JuMun_dataGridView.TabStop = false;
             this.JuMun_dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellClick);
+            this.JuMun_dataGridView.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.JuMun_DataGridView_CellPainting);
             this.JuMun_dataGridView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_CellValueChanged);
-            this.JuMun_dataGridView.CurrentCellDirtyStateChanged += new System.EventHandler(this.dataGridView_CurrentCellDirtyStateChanged);
+            this.JuMun_dataGridView.CurrentCellDirtyStateChanged += new System.EventHandler(this.DataGridView_CurrentCellDirtyStateChanged);
+            this.JuMun_dataGridView.MouseDown += new System.Windows.Forms.MouseEventHandler(this.JuMun_dataGridView_MouseDown);
             // 
             // Num_주문A
             // 
@@ -172,7 +174,7 @@ namespace 지니_64.box
             this.주문유형_주문A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.주문유형_주문A.DefaultCellStyle = dataGridViewCellStyle4;
-            this.주문유형_주문A.HeaderText = "주문유형";
+            this.주문유형_주문A.HeaderText = "매수매도";
             this.주문유형_주문A.Name = "주문유형_주문A";
             this.주문유형_주문A.ReadOnly = true;
             this.주문유형_주문A.Width = 60;
@@ -224,7 +226,7 @@ namespace 지니_64.box
             this.P현재가_주문A.HeaderText = "P현재가";
             this.P현재가_주문A.Name = "P현재가_주문A";
             this.P현재가_주문A.ReadOnly = true;
-            this.P현재가_주문A.Width = 55;
+            this.P현재가_주문A.Width = 65;
             // 
             // 주문가_주문A
             // 
@@ -235,7 +237,7 @@ namespace 지니_64.box
             this.주문가_주문A.HeaderText = "주문가";
             this.주문가_주문A.Name = "주문가_주문A";
             this.주문가_주문A.ReadOnly = true;
-            this.주문가_주문A.Width = 55;
+            this.주문가_주문A.Width = 65;
             // 
             // 수량_주문A
             // 
@@ -275,7 +277,7 @@ namespace 지니_64.box
             // 
             dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.주문_주문A.DefaultCellStyle = dataGridViewCellStyle14;
-            this.주문_주문A.HeaderText = "주문";
+            this.주문_주문A.HeaderText = "시장가";
             this.주문_주문A.Name = "주문_주문A";
             this.주문_주문A.ReadOnly = true;
             this.주문_주문A.Width = 50;
@@ -358,8 +360,8 @@ namespace 지니_64.box
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.Controls.Add(this.종목감추기_주문);
             this.Controls.Add(this.JuMun_dataGridView);
+            this.Controls.Add(this.종목감추기_주문);
             this.DoubleBuffered = true;
             this.Name = "Form_JuMun";
             this.Size = new System.Drawing.Size(846, 665);

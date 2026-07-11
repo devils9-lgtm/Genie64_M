@@ -1,5 +1,5 @@
 ﻿
-namespace 지니_64.box
+namespace 지니64.box
 {
     partial class Form_Outstanding
     {
@@ -62,28 +62,28 @@ namespace 지니_64.box
             this.L_미체결row = new System.Windows.Forms.Label();
             this.TB_미체결row = new System.Windows.Forms.TextBox();
             this.Outstanding_DataGridView = new System.Windows.Forms.DataGridView();
-            this.Num_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.주문취소_미체결 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.주문유형_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.주문시간_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.종목명_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.틱차이_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.주문수량_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.미체결량_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.취소대기_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.검색식_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.주문가격_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.등락률_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.수익률_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.현재가_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.적용금액_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.반복_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.주문_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.취소N거래구분_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.종목코드_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.주문번호_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.거래구분_미체결 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.종목감추기_미체결 = new System.Windows.Forms.Label();
+            this.Num = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.주문취소 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.매수매도 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.주문시간 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.종목명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.틱차이 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.주문수량 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.미체결량 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.취소대기 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.반복 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.검색식 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.주문가격 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.등락률 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.수익률 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.현재가 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.적용금액 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.시장가 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.취소N주문 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.주문 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.종목코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.주문번호 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Outstanding_DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -162,6 +162,7 @@ namespace 지니_64.box
             this.LB_미체결주문.TabIndex = 0;
             this.LB_미체결주문.Text = "미체결 주문:  00 건";
             this.LB_미체결주문.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LB_미체결주문.MouseDown += new System.Windows.Forms.MouseEventHandler(this.LB_미체결주문_MouseDown);
             // 
             // label_미체결내역
             // 
@@ -175,6 +176,7 @@ namespace 지니_64.box
             this.label_미체결내역.TabIndex = 0;
             this.label_미체결내역.Text = "미체결 내역";
             this.label_미체결내역.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_미체결내역.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label_미체결내역_MouseDown);
             // 
             // L_미체결row
             // 
@@ -188,6 +190,7 @@ namespace 지니_64.box
             this.L_미체결row.TabIndex = 0;
             this.L_미체결row.Text = "보이는 ROW 수";
             this.L_미체결row.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.L_미체결row.MouseDown += new System.Windows.Forms.MouseEventHandler(this.L_미체결row_MouseDown);
             // 
             // TB_미체결row
             // 
@@ -223,27 +226,27 @@ namespace 지니_64.box
             this.Outstanding_DataGridView.ColumnHeadersHeight = 20;
             this.Outstanding_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.Outstanding_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Num_미체결,
-            this.주문취소_미체결,
-            this.주문유형_미체결,
-            this.주문시간_미체결,
-            this.종목명_미체결,
-            this.틱차이_미체결,
-            this.주문수량_미체결,
-            this.미체결량_미체결,
-            this.취소대기_미체결,
-            this.검색식_미체결,
-            this.주문가격_미체결,
-            this.등락률_미체결,
-            this.수익률_미체결,
-            this.현재가_미체결,
-            this.적용금액_미체결,
-            this.반복_미체결,
-            this.주문_미체결,
-            this.취소N거래구분_미체결,
-            this.종목코드_미체결,
-            this.주문번호_미체결,
-            this.거래구분_미체결});
+            this.Num,
+            this.주문취소,
+            this.매수매도,
+            this.주문시간,
+            this.종목명,
+            this.틱차이,
+            this.주문수량,
+            this.미체결량,
+            this.취소대기,
+            this.반복,
+            this.검색식,
+            this.주문가격,
+            this.등락률,
+            this.수익률,
+            this.현재가,
+            this.적용금액,
+            this.시장가,
+            this.취소N주문,
+            this.주문,
+            this.종목코드,
+            this.주문번호});
             dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.ControlLightLight;
             dataGridViewCellStyle24.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -263,220 +266,11 @@ namespace 지니_64.box
             this.Outstanding_DataGridView.TabIndex = 2;
             this.Outstanding_DataGridView.TabStop = false;
             this.Outstanding_DataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellClick);
+            this.Outstanding_DataGridView.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.Outstanding_DataGridView_CellPainting);
             this.Outstanding_DataGridView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_CellValueChanged);
-            this.Outstanding_DataGridView.CurrentCellDirtyStateChanged += new System.EventHandler(this.dataGridView_CurrentCellDirtyStateChanged);
-            this.Outstanding_DataGridView.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGridView_RowPostPaint);
-            // 
-            // Num_미체결
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Num_미체결.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Num_미체결.HeaderText = "0";
-            this.Num_미체결.Name = "Num_미체결";
-            this.Num_미체결.ReadOnly = true;
-            this.Num_미체결.Width = 25;
-            // 
-            // 주문취소_미체결
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.NullValue = "취소";
-            this.주문취소_미체결.DefaultCellStyle = dataGridViewCellStyle4;
-            this.주문취소_미체결.HeaderText = "취소";
-            this.주문취소_미체결.Name = "주문취소_미체결";
-            this.주문취소_미체결.Width = 42;
-            // 
-            // 주문유형_미체결
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.주문유형_미체결.DefaultCellStyle = dataGridViewCellStyle5;
-            this.주문유형_미체결.HeaderText = "유형";
-            this.주문유형_미체결.Name = "주문유형_미체결";
-            this.주문유형_미체결.ReadOnly = true;
-            this.주문유형_미체결.Width = 42;
-            // 
-            // 주문시간_미체결
-            // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.NullValue = null;
-            this.주문시간_미체결.DefaultCellStyle = dataGridViewCellStyle6;
-            this.주문시간_미체결.HeaderText = "주문시간";
-            this.주문시간_미체결.Name = "주문시간_미체결";
-            this.주문시간_미체결.ReadOnly = true;
-            this.주문시간_미체결.Width = 60;
-            // 
-            // 종목명_미체결
-            // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.종목명_미체결.DefaultCellStyle = dataGridViewCellStyle7;
-            this.종목명_미체결.HeaderText = "종목명";
-            this.종목명_미체결.Name = "종목명_미체결";
-            this.종목명_미체결.ReadOnly = true;
-            // 
-            // 틱차이_미체결
-            // 
-            this.틱차이_미체결.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.틱차이_미체결.DefaultCellStyle = dataGridViewCellStyle8;
-            this.틱차이_미체결.HeaderText = "틱차";
-            this.틱차이_미체결.Name = "틱차이_미체결";
-            this.틱차이_미체결.ToolTipText = "주문가격과 현재가의 호가차이";
-            this.틱차이_미체결.Width = 45;
-            // 
-            // 주문수량_미체결
-            // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle9.Format = "N0";
-            dataGridViewCellStyle9.NullValue = null;
-            this.주문수량_미체결.DefaultCellStyle = dataGridViewCellStyle9;
-            this.주문수량_미체결.HeaderText = "주문수";
-            this.주문수량_미체결.Name = "주문수량_미체결";
-            this.주문수량_미체결.ReadOnly = true;
-            this.주문수량_미체결.ToolTipText = "주문수량";
-            this.주문수량_미체결.Width = 47;
-            // 
-            // 미체결량_미체결
-            // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle10.Format = "N0";
-            dataGridViewCellStyle10.NullValue = null;
-            this.미체결량_미체결.DefaultCellStyle = dataGridViewCellStyle10;
-            this.미체결량_미체결.HeaderText = "미체결";
-            this.미체결량_미체결.Name = "미체결량_미체결";
-            this.미체결량_미체결.ReadOnly = true;
-            this.미체결량_미체결.ToolTipText = "미체결수량";
-            this.미체결량_미체결.Width = 47;
-            // 
-            // 취소대기_미체결
-            // 
-            this.취소대기_미체결.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle11.Format = "N0";
-            dataGridViewCellStyle11.NullValue = null;
-            this.취소대기_미체결.DefaultCellStyle = dataGridViewCellStyle11;
-            this.취소대기_미체결.HeaderText = "취소";
-            this.취소대기_미체결.Name = "취소대기_미체결";
-            this.취소대기_미체결.ReadOnly = true;
-            this.취소대기_미체결.Width = 45;
-            // 
-            // 검색식_미체결
-            // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.검색식_미체결.DefaultCellStyle = dataGridViewCellStyle12;
-            this.검색식_미체결.HeaderText = "검색식";
-            this.검색식_미체결.Name = "검색식_미체결";
-            this.검색식_미체결.ReadOnly = true;
-            this.검색식_미체결.Width = 140;
-            // 
-            // 주문가격_미체결
-            // 
-            this.주문가격_미체결.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle13.Format = "N0";
-            this.주문가격_미체결.DefaultCellStyle = dataGridViewCellStyle13;
-            this.주문가격_미체결.HeaderText = "주문가";
-            this.주문가격_미체결.Name = "주문가격_미체결";
-            this.주문가격_미체결.ReadOnly = true;
-            this.주문가격_미체결.Width = 55;
-            // 
-            // 등락률_미체결
-            // 
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.등락률_미체결.DefaultCellStyle = dataGridViewCellStyle14;
-            this.등락률_미체결.HeaderText = "등락률";
-            this.등락률_미체결.Name = "등락률_미체결";
-            this.등락률_미체결.ReadOnly = true;
-            this.등락률_미체결.Width = 55;
-            // 
-            // 수익률_미체결
-            // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle15.Format = "N2";
-            dataGridViewCellStyle15.NullValue = null;
-            this.수익률_미체결.DefaultCellStyle = dataGridViewCellStyle15;
-            this.수익률_미체결.HeaderText = "수익률";
-            this.수익률_미체결.Name = "수익률_미체결";
-            this.수익률_미체결.ReadOnly = true;
-            this.수익률_미체결.Width = 55;
-            // 
-            // 현재가_미체결
-            // 
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle16.Format = "N0";
-            dataGridViewCellStyle16.NullValue = null;
-            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.현재가_미체결.DefaultCellStyle = dataGridViewCellStyle16;
-            this.현재가_미체결.HeaderText = "현재가";
-            this.현재가_미체결.Name = "현재가_미체결";
-            this.현재가_미체결.ReadOnly = true;
-            this.현재가_미체결.Width = 55;
-            // 
-            // 적용금액_미체결
-            // 
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle17.Format = "N0";
-            dataGridViewCellStyle17.NullValue = null;
-            this.적용금액_미체결.DefaultCellStyle = dataGridViewCellStyle17;
-            this.적용금액_미체결.HeaderText = "적용금액";
-            this.적용금액_미체결.Name = "적용금액_미체결";
-            this.적용금액_미체결.ReadOnly = true;
-            this.적용금액_미체결.Width = 70;
-            // 
-            // 반복_미체결
-            // 
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.반복_미체결.DefaultCellStyle = dataGridViewCellStyle18;
-            this.반복_미체결.HeaderText = "반복";
-            this.반복_미체결.Name = "반복_미체결";
-            this.반복_미체결.ReadOnly = true;
-            this.반복_미체결.Width = 45;
-            // 
-            // 주문_미체결
-            // 
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.주문_미체결.DefaultCellStyle = dataGridViewCellStyle19;
-            this.주문_미체결.HeaderText = "주문";
-            this.주문_미체결.Name = "주문_미체결";
-            this.주문_미체결.ReadOnly = true;
-            this.주문_미체결.Width = 60;
-            // 
-            // 취소N거래구분_미체결
-            // 
-            this.취소N거래구분_미체결.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.취소N거래구분_미체결.DefaultCellStyle = dataGridViewCellStyle20;
-            this.취소N거래구분_미체결.HeaderText = "취소N주문";
-            this.취소N거래구분_미체결.Name = "취소N거래구분_미체결";
-            this.취소N거래구분_미체결.ReadOnly = true;
-            this.취소N거래구분_미체결.Width = 80;
-            // 
-            // 종목코드_미체결
-            // 
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.종목코드_미체결.DefaultCellStyle = dataGridViewCellStyle21;
-            this.종목코드_미체결.HeaderText = "코드";
-            this.종목코드_미체결.Name = "종목코드_미체결";
-            this.종목코드_미체결.ReadOnly = true;
-            this.종목코드_미체결.Width = 55;
-            // 
-            // 주문번호_미체결
-            // 
-            this.주문번호_미체결.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.주문번호_미체결.DefaultCellStyle = dataGridViewCellStyle22;
-            this.주문번호_미체결.HeaderText = "주문번호";
-            this.주문번호_미체결.Name = "주문번호_미체결";
-            this.주문번호_미체결.ReadOnly = true;
-            this.주문번호_미체결.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.주문번호_미체결.Width = 70;
-            // 
-            // 거래구분_미체결
-            // 
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.거래구분_미체결.DefaultCellStyle = dataGridViewCellStyle23;
-            this.거래구분_미체결.HeaderText = "거래구분";
-            this.거래구분_미체결.Name = "거래구분_미체결";
-            this.거래구분_미체결.ReadOnly = true;
-            this.거래구분_미체결.Width = 70;
+            this.Outstanding_DataGridView.CurrentCellDirtyStateChanged += new System.EventHandler(this.DataGridView_CurrentCellDirtyStateChanged);
+            this.Outstanding_DataGridView.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.DataGridView_RowPostPaint);
+            this.Outstanding_DataGridView.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Outstanding_DataGridView_MouseDown);
             // 
             // 종목감추기_미체결
             // 
@@ -486,6 +280,218 @@ namespace 지니_64.box
             this.종목감추기_미체결.Size = new System.Drawing.Size(101, 285);
             this.종목감추기_미체결.TabIndex = 67;
             this.종목감추기_미체결.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Num
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Num.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Num.HeaderText = "0";
+            this.Num.Name = "Num";
+            this.Num.ReadOnly = true;
+            this.Num.Width = 25;
+            // 
+            // 주문취소
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.NullValue = "취소";
+            this.주문취소.DefaultCellStyle = dataGridViewCellStyle4;
+            this.주문취소.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.주문취소.HeaderText = "취소";
+            this.주문취소.Name = "주문취소";
+            this.주문취소.Width = 42;
+            // 
+            // 매수매도
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.매수매도.DefaultCellStyle = dataGridViewCellStyle5;
+            this.매수매도.HeaderText = "매수매도";
+            this.매수매도.Name = "매수매도";
+            this.매수매도.ReadOnly = true;
+            this.매수매도.Width = 60;
+            // 
+            // 주문시간
+            // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.NullValue = null;
+            this.주문시간.DefaultCellStyle = dataGridViewCellStyle6;
+            this.주문시간.HeaderText = "주문시간";
+            this.주문시간.Name = "주문시간";
+            this.주문시간.ReadOnly = true;
+            this.주문시간.Width = 60;
+            // 
+            // 종목명
+            // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.종목명.DefaultCellStyle = dataGridViewCellStyle7;
+            this.종목명.HeaderText = "종목명";
+            this.종목명.Name = "종목명";
+            this.종목명.ReadOnly = true;
+            // 
+            // 틱차이
+            // 
+            this.틱차이.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.틱차이.DefaultCellStyle = dataGridViewCellStyle8;
+            this.틱차이.HeaderText = "틱차";
+            this.틱차이.Name = "틱차이";
+            this.틱차이.ToolTipText = "주문가격과 현재가의 호가차이";
+            this.틱차이.Width = 45;
+            // 
+            // 주문수량
+            // 
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle9.Format = "N0";
+            dataGridViewCellStyle9.NullValue = null;
+            this.주문수량.DefaultCellStyle = dataGridViewCellStyle9;
+            this.주문수량.HeaderText = "주문수";
+            this.주문수량.Name = "주문수량";
+            this.주문수량.ReadOnly = true;
+            this.주문수량.ToolTipText = "주문수량";
+            this.주문수량.Width = 47;
+            // 
+            // 미체결량
+            // 
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle10.Format = "N0";
+            dataGridViewCellStyle10.NullValue = null;
+            this.미체결량.DefaultCellStyle = dataGridViewCellStyle10;
+            this.미체결량.HeaderText = "미체결";
+            this.미체결량.Name = "미체결량";
+            this.미체결량.ReadOnly = true;
+            this.미체결량.ToolTipText = "미체결수량";
+            this.미체결량.Width = 47;
+            // 
+            // 취소대기
+            // 
+            this.취소대기.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle11.Format = "N0";
+            dataGridViewCellStyle11.NullValue = null;
+            this.취소대기.DefaultCellStyle = dataGridViewCellStyle11;
+            this.취소대기.HeaderText = "취소";
+            this.취소대기.Name = "취소대기";
+            this.취소대기.ReadOnly = true;
+            this.취소대기.Width = 45;
+            // 
+            // 반복
+            // 
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.반복.DefaultCellStyle = dataGridViewCellStyle12;
+            this.반복.HeaderText = "반복";
+            this.반복.Name = "반복";
+            this.반복.ReadOnly = true;
+            this.반복.Width = 45;
+            // 
+            // 검색식
+            // 
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.검색식.DefaultCellStyle = dataGridViewCellStyle13;
+            this.검색식.HeaderText = "검색식";
+            this.검색식.Name = "검색식";
+            this.검색식.ReadOnly = true;
+            this.검색식.Width = 140;
+            // 
+            // 주문가격
+            // 
+            this.주문가격.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle14.Format = "N0";
+            this.주문가격.DefaultCellStyle = dataGridViewCellStyle14;
+            this.주문가격.HeaderText = "주문가";
+            this.주문가격.Name = "주문가격";
+            this.주문가격.ReadOnly = true;
+            this.주문가격.Width = 65;
+            // 
+            // 등락률
+            // 
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.등락률.DefaultCellStyle = dataGridViewCellStyle15;
+            this.등락률.HeaderText = "등락률";
+            this.등락률.Name = "등락률";
+            this.등락률.ReadOnly = true;
+            this.등락률.Width = 55;
+            // 
+            // 수익률
+            // 
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle16.Format = "N2";
+            dataGridViewCellStyle16.NullValue = null;
+            this.수익률.DefaultCellStyle = dataGridViewCellStyle16;
+            this.수익률.HeaderText = "수익률";
+            this.수익률.Name = "수익률";
+            this.수익률.ReadOnly = true;
+            this.수익률.Width = 55;
+            // 
+            // 현재가
+            // 
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle17.Format = "N0";
+            dataGridViewCellStyle17.NullValue = null;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.현재가.DefaultCellStyle = dataGridViewCellStyle17;
+            this.현재가.HeaderText = "현재가";
+            this.현재가.Name = "현재가";
+            this.현재가.ReadOnly = true;
+            this.현재가.Width = 65;
+            // 
+            // 적용금액
+            // 
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle18.Format = "N0";
+            dataGridViewCellStyle18.NullValue = null;
+            this.적용금액.DefaultCellStyle = dataGridViewCellStyle18;
+            this.적용금액.HeaderText = "적용금액";
+            this.적용금액.Name = "적용금액";
+            this.적용금액.ReadOnly = true;
+            this.적용금액.Width = 70;
+            // 
+            // 시장가
+            // 
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.시장가.DefaultCellStyle = dataGridViewCellStyle19;
+            this.시장가.HeaderText = "시장가";
+            this.시장가.Name = "시장가";
+            this.시장가.ReadOnly = true;
+            this.시장가.Width = 55;
+            // 
+            // 취소N주문
+            // 
+            this.취소N주문.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.취소N주문.DefaultCellStyle = dataGridViewCellStyle20;
+            this.취소N주문.HeaderText = "취소N주문";
+            this.취소N주문.Name = "취소N주문";
+            this.취소N주문.ReadOnly = true;
+            this.취소N주문.Width = 80;
+            // 
+            // 주문
+            // 
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.주문.DefaultCellStyle = dataGridViewCellStyle21;
+            this.주문.HeaderText = "주문";
+            this.주문.Name = "주문";
+            this.주문.ReadOnly = true;
+            this.주문.Width = 50;
+            // 
+            // 종목코드
+            // 
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.종목코드.DefaultCellStyle = dataGridViewCellStyle22;
+            this.종목코드.HeaderText = "코드";
+            this.종목코드.Name = "종목코드";
+            this.종목코드.ReadOnly = true;
+            this.종목코드.Width = 55;
+            // 
+            // 주문번호
+            // 
+            this.주문번호.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.주문번호.DefaultCellStyle = dataGridViewCellStyle23;
+            this.주문번호.HeaderText = "주문번호";
+            this.주문번호.Name = "주문번호";
+            this.주문번호.ReadOnly = true;
+            this.주문번호.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.주문번호.Width = 70;
             // 
             // Form_Outstanding
             // 
@@ -505,6 +511,7 @@ namespace 지니_64.box
             this.DoubleBuffered = true;
             this.Name = "Form_Outstanding";
             this.Size = new System.Drawing.Size(1102, 342);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form_Outstanding_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.Outstanding_DataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -522,27 +529,27 @@ namespace 지니_64.box
         public System.Windows.Forms.Label L_미체결row;
         public System.Windows.Forms.TextBox TB_미체결row;
         public System.Windows.Forms.DataGridView Outstanding_DataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Num_미체결;
-        private System.Windows.Forms.DataGridViewButtonColumn 주문취소_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 주문유형_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 주문시간_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 종목명_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 틱차이_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 주문수량_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 미체결량_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 취소대기_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 검색식_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 주문가격_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 등락률_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 수익률_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 현재가_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 적용금액_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 반복_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 주문_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 취소N거래구분_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 종목코드_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 주문번호_미체결;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 거래구분_미체결;
         public System.Windows.Forms.Label 종목감추기_미체결;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Num;
+        private System.Windows.Forms.DataGridViewButtonColumn 주문취소;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 매수매도;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 주문시간;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 종목명;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 틱차이;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 주문수량;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 미체결량;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 취소대기;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 반복;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 검색식;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 주문가격;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 등락률;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 수익률;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 현재가;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 적용금액;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 시장가;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 취소N주문;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 주문;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 종목코드;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 주문번호;
     }
 }

@@ -1,63 +1,87 @@
-﻿using System;
-using System.Diagnostics;           //Process 
+﻿//using System;
+//using System.Diagnostics;           //Process 
+//using System.Windows.Forms;
+
+//namespace 지니64
+//{
+//    static class Program
+//    {
+//        [STAThread]
+
+//        static void Main()
+//        {
+//            System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
+
+//             Form1.Console_print("프로그램 실행");
+
+//            Application.EnableVisualStyles();
+//            Application.SetCompatibleTextRenderingDefault(false);
+
+//            // 1. 메인 폼 생성
+//            Form1 mainForm = new Form1();
+
+//            // 2. [핵심] 폼이 닫힐 때(사용자가 X 버튼 누를 때) 모든 스레드를 종료하도록 설정
+//            mainForm.FormClosed += (sender, e) =>
+//            {
+//                Application.ExitThread();
+//                Environment.Exit(0);
+//            };
+
+//            Application.Run(mainForm);
+//        }
+
+//    }
+//}
+
+
+using System;
+using System.Diagnostics;
+using System.Threading;
 using System.Windows.Forms;
 
-namespace 지니_64
+namespace 지니64
 {
     static class Program
     {
-        /// <summary>
-        /// 해당 애플리케이션의 주 진입점입니다.
-        /// </summary>
         [STAThread]
-
         static void Main()
         {
+            // 1. 기존 설정 유지 (TLS 1.2 통신 보안 설정)
             System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
 
-            Console.WriteLine("프로그램 실행");
+            // 2. 폴더 기반 중복 실행 방지 (Mutex)
+            string 실행경로 = Application.StartupPath;
+            string 뮤텍스이름 = "Genie_" + 실행경로.Replace("\\", "_").Replace(":", "_");
+            bool 신규실행여부;
 
-            Process[] processes = Process.GetProcessesByName("Excel");
-
-            foreach (Process p in processes)
+            // 뮤텍스를 통해 현재 폴더 경로에 대한 소유권을 확인합니다.
+            using (Mutex 고유뮤텍스 = new Mutex(true, 뮤텍스이름, out 신규실행여부))
             {
-                if (!string.IsNullOrEmpty(p.ProcessName))
+                if (!신규실행여부)
                 {
-                    try
-                    {
-                        p.Kill();
-                    }
-                    catch { }
+                    // 이미 해당 폴더에서 실행 중인 경우 경고창을 띄우고 즉시 종료
+                    MessageBox.Show("해당 폴더에서 이미 지니64 프로그램이 실행 중입니다.", "중복 실행 방지", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
                 }
-            }
 
-            if (IsExistProcess(Process.GetCurrentProcess().ProcessName))
-            {
-                MessageBox.Show(new Form { TopMost = true }, "'지니_64' 이미 실행 중입니다", "실행알람", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-            }
-            else
-            {
+                // 3. 중복이 아닐 경우 기존 메인 로직 정상 실행
+                Form1.Console_print("프로그램 실행");
+
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
-                Application.Run(new Form1());
-            }
-        }
 
-        static bool IsExistProcess(string processName)
-        {
-            Process[] process = Process.GetProcesses();
-            int cnt = 0;
+                // 메인 폼 생성
+                Form1 mainForm = new Form1();
 
-            //프로세스명으로 확인해서 동일한 프로세스 개수가 2개이상인지 확인합니다. 
-            //현재실행하는 프로세스도 포함되기때문에 1보다커야합니다.
-            foreach (var p in process)
-            {
-                if (p.ProcessName == processName)
-                    cnt++;
-                if (cnt > 1)
-                    return true;
+                // [핵심] 폼이 닫힐 때(사용자가 X 버튼 누를 때) 모든 스레드를 종료하도록 설정
+                mainForm.FormClosed += (sender, e) =>
+                {
+                    Application.ExitThread();
+                    Environment.Exit(0);
+                };
+
+                Application.Run(mainForm);
             }
-            return false;
         }
     }
 }

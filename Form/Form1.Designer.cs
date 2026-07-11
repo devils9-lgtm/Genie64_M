@@ -1,5 +1,7 @@
 ﻿
-namespace 지니_64
+using System.Threading.Tasks;
+
+namespace 지니64
 {
     partial class Form1
     {
@@ -31,195 +33,197 @@ namespace 지니_64
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle95 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle96 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle73 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle74 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle75 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle76 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle77 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle78 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle79 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle80 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle81 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle82 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle83 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle84 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle85 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle86 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle87 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle88 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle89 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle90 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle91 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle92 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle93 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle94 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle97 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle98 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle123 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle124 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle99 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle100 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle101 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle102 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle103 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle104 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle105 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle106 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle107 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle108 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle109 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle110 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle111 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle112 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle113 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle114 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle115 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle116 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle117 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle118 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle119 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle120 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle121 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle122 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle125 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle126 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle151 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle152 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle127 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle128 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle129 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle130 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle131 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle132 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle133 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle134 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle135 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle136 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle137 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle138 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle139 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle140 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle141 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle142 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle143 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle144 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle145 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle146 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle147 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle148 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle149 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle150 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle153 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle154 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle179 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle180 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle155 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle156 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle157 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle158 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle159 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle160 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle161 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle162 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle163 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle164 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle165 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle166 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle167 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle168 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle169 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle170 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle171 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle172 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle173 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle174 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle175 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle176 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle177 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle178 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle181 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle182 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle183 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle216 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle217 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle184 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle185 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle186 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle187 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle188 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle189 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle190 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle191 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle192 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle193 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle194 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle195 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle196 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle197 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle198 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle199 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle200 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle201 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle202 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle203 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle204 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle205 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle206 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle207 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle208 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle209 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle210 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle211 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle212 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle213 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle214 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle215 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle218 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle219 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle232 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle233 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle220 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle221 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle222 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle223 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle224 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle225 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle226 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle227 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle228 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle229 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle230 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle231 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle234 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle235 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle246 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle247 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle236 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle237 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle238 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle239 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle240 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle241 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle242 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle243 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle244 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle245 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle248 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle249 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle274 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle275 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle250 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle251 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle252 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle253 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle254 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle255 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle256 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle257 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle258 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle259 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle260 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle261 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle262 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle263 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle264 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle265 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle266 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle267 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle268 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle269 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle270 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle271 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle272 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle273 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle276 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle277 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle302 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle303 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle278 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle279 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle280 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle281 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle282 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle283 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle284 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle285 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle286 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle287 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle288 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle289 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle290 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle291 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle292 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle293 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle294 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle295 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle296 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle297 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle298 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle299 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle300 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle301 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle304 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle305 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle330 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle331 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle306 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle307 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle308 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle309 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle310 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle311 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle312 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle313 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle314 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle315 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle316 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle317 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle318 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle319 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle320 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle321 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle322 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle323 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle324 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle325 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle326 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle327 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle328 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle329 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle332 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle333 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle358 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle359 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle334 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle335 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle336 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle337 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle338 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle339 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle340 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle341 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle342 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle343 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle344 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle345 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle346 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle347 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle348 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle349 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle350 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle351 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle352 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle353 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle354 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle355 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle356 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle357 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle360 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle361 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle362 = new System.Windows.Forms.DataGridViewCellStyle();
             this.CB_Auto_tradingstart = new System.Windows.Forms.CheckBox();
             this.panel115 = new System.Windows.Forms.Panel();
             this.RB_buy_run = new System.Windows.Forms.RadioButton();
@@ -228,11 +232,11 @@ namespace 지니_64
             this.RB_sell_stop = new System.Windows.Forms.RadioButton();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label_추정증가자산 = new System.Windows.Forms.Label();
+            this.label_D2주문가능 = new System.Windows.Forms.Label();
+            this.label_실현손익 = new System.Windows.Forms.Label();
+            this.label_매입평가금 = new System.Windows.Forms.Label();
+            this.label_평가손익 = new System.Windows.Forms.Label();
             this.TB_평가금 = new System.Windows.Forms.TextBox();
             this.TB_평가손익율 = new System.Windows.Forms.TextBox();
             this.TB_추정자산 = new System.Windows.Forms.TextBox();
@@ -266,6 +270,39 @@ namespace 지니_64
             this.LB_Log = new System.Windows.Forms.ListBox();
             this.chart_Month = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.TP_관심그룹 = new System.Windows.Forms.TabPage();
+            this.panel_TP_관종 = new System.Windows.Forms.Panel();
+            this.panel38 = new System.Windows.Forms.Panel();
+            this.BT_관심그룹변경 = new System.Windows.Forms.Button();
+            this.BT_자동등록 = new System.Windows.Forms.Button();
+            this.TB_관심그룹_종목명 = new System.Windows.Forms.TextBox();
+            this.CB_관심등록 = new System.Windows.Forms.CheckBox();
+            this.label113 = new System.Windows.Forms.Label();
+            this.BT_자동해제 = new System.Windows.Forms.Button();
+            this.CB_관심삭제 = new System.Windows.Forms.CheckBox();
+            this.TB_자동관심_동작시간 = new System.Windows.Forms.TextBox();
+            this.CBB_관심그룹변경_Title = new System.Windows.Forms.ComboBox();
+            this.CB_실시간검색결과보기 = new System.Windows.Forms.CheckBox();
+            this.BT_관심등록 = new System.Windows.Forms.Button();
+            this.BT_미체결요청 = new System.Windows.Forms.Button();
+            this.BT_검색요청 = new System.Windows.Forms.Button();
+            this.label40 = new System.Windows.Forms.Label();
+            this.CB_시세감시등록 = new System.Windows.Forms.CheckBox();
+            this.BT_관심삭제 = new System.Windows.Forms.Button();
+            this.MTB_자동삭제기간 = new System.Windows.Forms.MaskedTextBox();
+            this.BT_신규매수내역 = new System.Windows.Forms.Button();
+            this.CBB_관심그룹 = new System.Windows.Forms.ComboBox();
+            this.BT_그룹추가 = new System.Windows.Forms.Button();
+            this.label95 = new System.Windows.Forms.Label();
+            this.CB_실시간관심등록 = new System.Windows.Forms.CheckBox();
+            this.BT_자동삭제 = new System.Windows.Forms.Button();
+            this.BT_그룹삭제 = new System.Windows.Forms.Button();
+            this.CBB_관심검색식 = new System.Windows.Forms.ComboBox();
+            this.BT_전량매도내역 = new System.Windows.Forms.Button();
+            this.label173 = new System.Windows.Forms.Label();
+            this.BT_Setting_Load = new System.Windows.Forms.Button();
+            this.TB_관심그룹추가 = new System.Windows.Forms.TextBox();
+            this.CBB_그룹자동삭제 = new System.Windows.Forms.ComboBox();
+            this.CBB_관심그룹변경 = new System.Windows.Forms.ComboBox();
             this.LB_검색결과n관심리스트 = new System.Windows.Forms.ListBox();
             this.label118 = new System.Windows.Forms.Label();
             this.label117 = new System.Windows.Forms.Label();
@@ -277,75 +314,47 @@ namespace 지니_64
             this.LB_관심_B = new System.Windows.Forms.ListBox();
             this.LB_관심_A = new System.Windows.Forms.ListBox();
             this.LB_관심_C = new System.Windows.Forms.ListBox();
-            this.BT_Setting_Load = new System.Windows.Forms.Button();
-            this.BT_전량매도내역 = new System.Windows.Forms.Button();
-            this.BT_신규매수내역 = new System.Windows.Forms.Button();
-            this.panel38 = new System.Windows.Forms.Panel();
-            this.BT_자동등록 = new System.Windows.Forms.Button();
-            this.BT_자동해제 = new System.Windows.Forms.Button();
-            this.BT_관심등록 = new System.Windows.Forms.Button();
-            this.BT_관심삭제 = new System.Windows.Forms.Button();
-            this.label95 = new System.Windows.Forms.Label();
-            this.CBB_관심검색식 = new System.Windows.Forms.ComboBox();
-            this.label173 = new System.Windows.Forms.Label();
-            this.CB_실시간관심등록 = new System.Windows.Forms.CheckBox();
-            this.MTB_자동삭제기간 = new System.Windows.Forms.MaskedTextBox();
-            this.BT_검색요청 = new System.Windows.Forms.Button();
-            this.CBB_관심그룹변경_Title = new System.Windows.Forms.ComboBox();
-            this.CB_관심삭제 = new System.Windows.Forms.CheckBox();
-            this.CB_관심등록 = new System.Windows.Forms.CheckBox();
-            this.CBB_관심그룹변경 = new System.Windows.Forms.ComboBox();
-            this.TB_관심그룹_종목명 = new System.Windows.Forms.TextBox();
-            this.label113 = new System.Windows.Forms.Label();
-            this.CBB_그룹자동삭제 = new System.Windows.Forms.ComboBox();
-            this.CB_실시간검색결과보기 = new System.Windows.Forms.CheckBox();
-            this.CB_시세감시등록 = new System.Windows.Forms.CheckBox();
-            this.BT_그룹추가 = new System.Windows.Forms.Button();
-            this.BT_그룹삭제 = new System.Windows.Forms.Button();
-            this.BT_관심그룹변경 = new System.Windows.Forms.Button();
-            this.TB_관심그룹추가 = new System.Windows.Forms.TextBox();
-            this.BT_자동삭제 = new System.Windows.Forms.Button();
-            this.CBB_관심그룹 = new System.Windows.Forms.ComboBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.TB_자동관심_동작시간 = new System.Windows.Forms.TextBox();
-            this.BT_미체결요청 = new System.Windows.Forms.Button();
             this.TP_잔고 = new System.Windows.Forms.TabPage();
+            this.panel_TP_잔고 = new System.Windows.Forms.Panel();
             this.JanGo_dataGridView = new System.Windows.Forms.DataGridView();
-            this.선택_잔고A = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.그룹_잔고A = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.NUM_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.시장구분_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.종목상태_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.종목명_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.현재가_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.등락율_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.평균단가_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.수익률_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.평가손익_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.금일수익금_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.누적손익_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.예상손익_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.매입금액_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.보유비중_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.주문가능수량_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.최고수익률_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.최저수익률_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.보유수량_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.평가금액_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.매수횟수_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.매도횟수_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.금일매수금_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.금일매도금_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.전일매수량_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.전일매도량_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.초기매수일_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.추가매수일_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.거래일_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.선택_잔고 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.그룹_잔고 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.NUM_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.시장구분_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.융자_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.종목상태_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.종목명_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.현재가_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.등락율_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.평균단가_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.수익률_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.평가손익_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.금일수익금_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.누적손익_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.예상손익_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.매입금액_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.보유비중_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.주문가능수량_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.최고수익률_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.최저수익률_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.보유수량_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.평가금액_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.신용이자 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.매수횟수_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.매도횟수_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.금일매수금_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.금일매도금_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.전일매수량_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.전일매도량_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.초기매수일_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.추가매수일_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.거래일_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.초기매수검색식 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.코드_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.재매수_잔고A = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LB_주문내역 = new System.Windows.Forms.Label();
+            this.코드_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.재매수_잔고 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.종목감추기_잔고 = new System.Windows.Forms.Label();
+            this.Label_주문내역 = new System.Windows.Forms.Label();
+            this.BT_지수이평 = new System.Windows.Forms.Button();
             this.label175 = new System.Windows.Forms.Label();
             this.TB_jango_count = new System.Windows.Forms.TextBox();
             this.TB_setjango = new System.Windows.Forms.TextBox();
@@ -360,7 +369,9 @@ namespace 지니_64
             this.Combo_misu_jumnun = new System.Windows.Forms.ComboBox();
             this.label245 = new System.Windows.Forms.Label();
             this.tab_잔고 = new System.Windows.Forms.TabControl();
-            this.TP_매매통계 = new System.Windows.Forms.TabPage();
+            this.TP_통계 = new System.Windows.Forms.TabPage();
+            this.panel_TP_통계 = new System.Windows.Forms.Panel();
+            this.BT_매매동계 = new System.Windows.Forms.Button();
             this.DGV_통계 = new System.Windows.Forms.DataGridView();
             this.총매수금액_통계 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.매수회전_통계 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -376,17 +387,14 @@ namespace 지니_64
             this.손실횟수_통계 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label355 = new System.Windows.Forms.Label();
             this.TB_일통계기준 = new System.Windows.Forms.TextBox();
-            this.DTP_기준일 = new System.Windows.Forms.DateTimePicker();
-            this.BT_기준일별매매확인 = new System.Windows.Forms.Button();
-            this.CBB_통계 = new System.Windows.Forms.ComboBox();
-            this.label354 = new System.Windows.Forms.Label();
-            this.BT_매매동계 = new System.Windows.Forms.Button();
-            this.TB_통계 = new System.Windows.Forms.TextBox();
-            this.TB_월통계기준 = new System.Windows.Forms.TextBox();
-            this.LB_종목수 = new System.Windows.Forms.Label();
-            this.chart_Day = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label387 = new System.Windows.Forms.Label();
-            this.종목감추기6 = new System.Windows.Forms.Label();
+            this.DTP_기준일 = new System.Windows.Forms.DateTimePicker();
+            this.LB_종목수 = new System.Windows.Forms.Label();
+            this.BT_기준일별매매확인 = new System.Windows.Forms.Button();
+            this.TB_월통계기준 = new System.Windows.Forms.TextBox();
+            this.CBB_통계 = new System.Windows.Forms.ComboBox();
+            this.TB_통계 = new System.Windows.Forms.TextBox();
+            this.label354 = new System.Windows.Forms.Label();
             this.DGV_통계B = new System.Windows.Forms.DataGridView();
             this.일자_통계B = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.매수금액_통계B = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -400,6 +408,8 @@ namespace 지니_64
             this.매매세금_통계B = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.매매세금율_통계B = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.수익n손실_통계B = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.종목감추기6 = new System.Windows.Forms.Label();
+            this.chart_Day = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.BT_미체결취소 = new System.Windows.Forms.Button();
             this.CB_미체결취소 = new System.Windows.Forms.CheckBox();
             this.BT_jangos_sell = new System.Windows.Forms.Button();
@@ -414,9 +424,9 @@ namespace 지니_64
             this.CB_TR_A = new System.Windows.Forms.CheckBox();
             this.BT_watch_Save_C = new System.Windows.Forms.Button();
             this.Search_List = new System.Windows.Forms.ListBox();
-            this.L_주문row = new System.Windows.Forms.Label();
+            this.Label_주문row = new System.Windows.Forms.Label();
             this.TB_주문row = new System.Windows.Forms.TextBox();
-            this.L_체결row = new System.Windows.Forms.Label();
+            this.Label_체결row = new System.Windows.Forms.Label();
             this.TB_체결row = new System.Windows.Forms.TextBox();
             this.TB_WatchRow_D = new System.Windows.Forms.TextBox();
             this.label425 = new System.Windows.Forms.Label();
@@ -431,27 +441,28 @@ namespace 지니_64
             this.CB_잔고매입비_추매제한 = new System.Windows.Forms.CheckBox();
             this.TB_jango_sell_time = new System.Windows.Forms.TextBox();
             this.TB_jango_sell_repeat = new System.Windows.Forms.TextBox();
-            this.MT_principal = new System.Windows.Forms.TextBox();
+            this.textBox_계좌번호 = new System.Windows.Forms.TextBox();
+            this.MT_투자원금 = new System.Windows.Forms.TextBox();
             this.MT_sonik_price = new System.Windows.Forms.TextBox();
             this.MT_buying_standard = new System.Windows.Forms.TextBox();
             this.LB_error = new System.Windows.Forms.ListBox();
-            this.combo_watch_condition_DD = new System.Windows.Forms.ComboBox();
-            this.combo_watch_condition_CC = new System.Windows.Forms.ComboBox();
-            this.combo_watch_condition_D = new System.Windows.Forms.ComboBox();
-            this.combo_watch_condition_C = new System.Windows.Forms.ComboBox();
-            this.combo_watch_condition_A = new System.Windows.Forms.ComboBox();
-            this.combo_watch_condition_B = new System.Windows.Forms.ComboBox();
-            this.combo_watch_condition_AA = new System.Windows.Forms.ComboBox();
-            this.combo_watch_condition_BB = new System.Windows.Forms.ComboBox();
+            this.와치_D = new System.Windows.Forms.ComboBox();
+            this.와치_C = new System.Windows.Forms.ComboBox();
+            this.watch_condition_D = new System.Windows.Forms.ComboBox();
+            this.watch_condition_C = new System.Windows.Forms.ComboBox();
+            this.watch_condition_A = new System.Windows.Forms.ComboBox();
+            this.watch_condition_B = new System.Windows.Forms.ComboBox();
+            this.와치_A = new System.Windows.Forms.ComboBox();
+            this.와치_B = new System.Windows.Forms.ComboBox();
             this.combo_jango_sell = new System.Windows.Forms.ComboBox();
             this.TB_증가자산 = new System.Windows.Forms.TextBox();
             this.TB_D2 = new System.Windows.Forms.TextBox();
             this.TB_실현손익 = new System.Windows.Forms.TextBox();
             this.TB_매입금 = new System.Windows.Forms.TextBox();
             this.TB_평가손익금 = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel_잔고 = new System.Windows.Forms.Panel();
             this.panel91 = new System.Windows.Forms.Panel();
-            this.label98 = new System.Windows.Forms.Label();
+            this.label_투자원금 = new System.Windows.Forms.Label();
             this.TP_조건식TEST_B = new System.Windows.Forms.TabPage();
             this.panel_TEST_D = new System.Windows.Forms.Panel();
             this.label29 = new System.Windows.Forms.Label();
@@ -631,7 +642,7 @@ namespace 지니_64
             this.TP_ERROG_LOG = new System.Windows.Forms.TabPage();
             this.tab_주문 = new System.Windows.Forms.TabControl();
             this.TP_동작상태 = new System.Windows.Forms.TabPage();
-            this.최종매입가View = new System.Windows.Forms.DataGridView();
+            this.DGV_최종매입가View = new System.Windows.Forms.DataGridView();
             this.차수 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.A_매입가 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.A_수익률 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -686,11 +697,11 @@ namespace 지니_64
             this.감추기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.재시작ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.종료ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CBB_지니_64종료 = new System.Windows.Forms.ComboBox();
+            this.CBB_지니64종료 = new System.Windows.Forms.ComboBox();
             this.label_time = new System.Windows.Forms.Label();
             this.label_date = new System.Windows.Forms.Label();
             this.종목감추기7 = new System.Windows.Forms.Label();
-            this.P_Search_List = new System.Windows.Forms.Panel();
+            this.Panel_Search_List = new System.Windows.Forms.Panel();
             this.label_Search = new System.Windows.Forms.Label();
             this.CBB_SearchCondition = new System.Windows.Forms.ComboBox();
             this.TB_closetime = new System.Windows.Forms.TextBox();
@@ -705,78 +716,88 @@ namespace 지니_64
             this.CB_매매그룹 = new System.Windows.Forms.CheckBox();
             this.CB_기능설정 = new System.Windows.Forms.CheckBox();
             this.CB_미니시계 = new System.Windows.Forms.CheckBox();
-            this.panel_주문 = new System.Windows.Forms.Panel();
+            this.panel_tab_주문 = new System.Windows.Forms.Panel();
             this.BT_종목다운 = new System.Windows.Forms.Button();
             this.BT_종목업 = new System.Windows.Forms.Button();
             this.CBB_최종가종목 = new System.Windows.Forms.ComboBox();
-            this.panel_잔고 = new System.Windows.Forms.Panel();
+            this.panel_tab_잔고 = new System.Windows.Forms.Panel();
             this.panel_체결 = new System.Windows.Forms.Panel();
             this.panel_지수 = new System.Windows.Forms.Panel();
-            this.combo_p_ratio = new System.Windows.Forms.ComboBox();
+            this.TB_p_go = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.TB_p_down = new System.Windows.Forms.TextBox();
-            this.TB_p_go_use = new System.Windows.Forms.TextBox();
             this.TB_q_down = new System.Windows.Forms.TextBox();
-            this.TB_q_ratio_use = new System.Windows.Forms.TextBox();
             this.label174 = new System.Windows.Forms.Label();
-            this.TB_q_go_use = new System.Windows.Forms.TextBox();
             this.label253 = new System.Windows.Forms.Label();
-            this.TB_q_down_use = new System.Windows.Forms.TextBox();
-            this.TB_p_go = new System.Windows.Forms.TextBox();
             this.TB_q_go = new System.Windows.Forms.TextBox();
             this.TB_P_ratio = new System.Windows.Forms.TextBox();
-            this.TB_p_down_use = new System.Windows.Forms.TextBox();
-            this.CB_Jisu_avgset = new System.Windows.Forms.CheckBox();
             this.TB_q_ratio = new System.Windows.Forms.TextBox();
             this.label249 = new System.Windows.Forms.Label();
-            this.combo_p_go = new System.Windows.Forms.ComboBox();
             this.label206 = new System.Windows.Forms.Label();
-            this.TB_p_ratio_use = new System.Windows.Forms.TextBox();
             this.label251 = new System.Windows.Forms.Label();
-            this.combo_q_go = new System.Windows.Forms.ComboBox();
             this.label255 = new System.Windows.Forms.Label();
             this.label252 = new System.Windows.Forms.Label();
             this.label247 = new System.Windows.Forms.Label();
             this.label254 = new System.Windows.Forms.Label();
             this.label204 = new System.Windows.Forms.Label();
-            this.combo_q_go_UD = new System.Windows.Forms.ComboBox();
-            this.combo_q_down = new System.Windows.Forms.ComboBox();
-            this.combo_p_go_UD = new System.Windows.Forms.ComboBox();
-            this.combo_q_down_UD = new System.Windows.Forms.ComboBox();
-            this.combo_p_ratio_UD = new System.Windows.Forms.ComboBox();
-            this.combo_p_down = new System.Windows.Forms.ComboBox();
-            this.combo_p_down_UD = new System.Windows.Forms.ComboBox();
+            this.panel_지수설정 = new System.Windows.Forms.Panel();
             this.combo_q_ratio = new System.Windows.Forms.ComboBox();
+            this.combo_p_down = new System.Windows.Forms.ComboBox();
+            this.combo_p_ratio = new System.Windows.Forms.ComboBox();
+            this.combo_q_down = new System.Windows.Forms.ComboBox();
+            this.combo_q_go = new System.Windows.Forms.ComboBox();
+            this.combo_p_go = new System.Windows.Forms.ComboBox();
+            this.TB_p_ratio_use = new System.Windows.Forms.TextBox();
+            this.TB_p_go_use = new System.Windows.Forms.TextBox();
+            this.TB_q_ratio_use = new System.Windows.Forms.TextBox();
+            this.TB_q_go_use = new System.Windows.Forms.TextBox();
+            this.TB_q_down_use = new System.Windows.Forms.TextBox();
+            this.TB_p_down_use = new System.Windows.Forms.TextBox();
             this.combo_q_ratio_UD = new System.Windows.Forms.ComboBox();
-            this.CB_계좌비공개 = new System.Windows.Forms.CheckBox();
+            this.combo_p_down_UD = new System.Windows.Forms.ComboBox();
+            this.combo_p_ratio_UD = new System.Windows.Forms.ComboBox();
+            this.combo_q_down_UD = new System.Windows.Forms.ComboBox();
+            this.combo_p_go_UD = new System.Windows.Forms.ComboBox();
+            this.combo_q_go_UD = new System.Windows.Forms.ComboBox();
+            this.CB_검색보기 = new System.Windows.Forms.CheckBox();
             this.CB_종목비공개 = new System.Windows.Forms.CheckBox();
-            this.PN_지수연동 = new System.Windows.Forms.Panel();
-            this.stockbalanceBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label_로그인알림 = new System.Windows.Forms.Label();
+            this.Panel_지수연동 = new System.Windows.Forms.Panel();
+            this.label_ONLINE = new System.Windows.Forms.Label();
             this.label_appkey = new System.Windows.Forms.Label();
             this.label_키움ID = new System.Windows.Forms.Label();
             this.textBox_appkey = new System.Windows.Forms.TextBox();
             this.textBox_키움ID = new System.Windows.Forms.TextBox();
             this.checkBox_key = new System.Windows.Forms.CheckBox();
-            this.button_save_key = new System.Windows.Forms.Button();
             this.textBox_appsecret = new System.Windows.Forms.TextBox();
             this.label_appsecret = new System.Windows.Forms.Label();
-            this.checkBox_mockapi = new System.Windows.Forms.CheckBox();
+            this.checkBox_Simulation = new System.Windows.Forms.CheckBox();
+            this.label_계좌번호 = new System.Windows.Forms.Label();
+            this.TR_timer = new System.Windows.Forms.Timer(this.components);
+            this.panel_계좌설정 = new System.Windows.Forms.Panel();
+            this.panel_form = new System.Windows.Forms.Panel();
+            this.CB_세로보기 = new System.Windows.Forms.CheckBox();
+            this.panel_clock = new System.Windows.Forms.Panel();
+            this.panel_key = new System.Windows.Forms.Panel();
+            this.panel_기능버튼 = new System.Windows.Forms.Panel();
             this.panel115.SuspendLayout();
             this.tab_체결.SuspendLayout();
             this.TP_로그B.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_Month)).BeginInit();
             this.TP_관심그룹.SuspendLayout();
+            this.panel_TP_관종.SuspendLayout();
             this.panel38.SuspendLayout();
             this.TP_잔고.SuspendLayout();
+            this.panel_TP_잔고.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.JanGo_dataGridView)).BeginInit();
             this.tab_잔고.SuspendLayout();
-            this.TP_매매통계.SuspendLayout();
+            this.TP_통계.SuspendLayout();
+            this.panel_TP_통계.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_통계)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart_Day)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_통계B)).BeginInit();
-            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_Day)).BeginInit();
+            this.panel_잔고.SuspendLayout();
             this.panel91.SuspendLayout();
             this.TP_조건식TEST_B.SuspendLayout();
             this.panel_TEST_D.SuspendLayout();
@@ -791,15 +812,20 @@ namespace 지니_64
             this.TP_ERROG_LOG.SuspendLayout();
             this.tab_주문.SuspendLayout();
             this.TP_동작상태.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.최종매입가View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_최종매입가View)).BeginInit();
             this.contextMenuStrip.SuspendLayout();
-            this.P_Search_List.SuspendLayout();
-            this.panel_주문.SuspendLayout();
-            this.panel_잔고.SuspendLayout();
+            this.Panel_Search_List.SuspendLayout();
+            this.panel_tab_주문.SuspendLayout();
+            this.panel_tab_잔고.SuspendLayout();
             this.panel_체결.SuspendLayout();
             this.panel_지수.SuspendLayout();
-            this.PN_지수연동.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.stockbalanceBindingSource)).BeginInit();
+            this.panel_지수설정.SuspendLayout();
+            this.Panel_지수연동.SuspendLayout();
+            this.panel_계좌설정.SuspendLayout();
+            this.panel_form.SuspendLayout();
+            this.panel_clock.SuspendLayout();
+            this.panel_key.SuspendLayout();
+            this.panel_기능버튼.SuspendLayout();
             this.SuspendLayout();
             // 
             // CB_Auto_tradingstart
@@ -813,7 +839,7 @@ namespace 지니_64
             this.CB_Auto_tradingstart.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.CB_Auto_tradingstart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_Auto_tradingstart.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CB_Auto_tradingstart.Location = new System.Drawing.Point(-1, 40);
+            this.CB_Auto_tradingstart.Location = new System.Drawing.Point(-1, 39);
             this.CB_Auto_tradingstart.Name = "CB_Auto_tradingstart";
             this.CB_Auto_tradingstart.Size = new System.Drawing.Size(98, 21);
             this.CB_Auto_tradingstart.TabIndex = 4;
@@ -827,7 +853,7 @@ namespace 지니_64
             this.panel115.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel115.Controls.Add(this.RB_buy_run);
             this.panel115.Controls.Add(this.RB_buy_stop);
-            this.panel115.Location = new System.Drawing.Point(-1, 60);
+            this.panel115.Location = new System.Drawing.Point(-1, 59);
             this.panel115.Name = "panel115";
             this.panel115.Size = new System.Drawing.Size(98, 21);
             this.panel115.TabIndex = 36;
@@ -879,7 +905,7 @@ namespace 지니_64
             this.RB_sell_run.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.RB_sell_run.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RB_sell_run.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.RB_sell_run.Location = new System.Drawing.Point(-1, 0);
+            this.RB_sell_run.Location = new System.Drawing.Point(-1, -1);
             this.RB_sell_run.Name = "RB_sell_run";
             this.RB_sell_run.Size = new System.Drawing.Size(50, 21);
             this.RB_sell_run.TabIndex = 4;
@@ -898,7 +924,7 @@ namespace 지니_64
             this.RB_sell_stop.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.RB_sell_stop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RB_sell_stop.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.RB_sell_stop.Location = new System.Drawing.Point(47, 0);
+            this.RB_sell_stop.Location = new System.Drawing.Point(47, -1);
             this.RB_sell_stop.Name = "RB_sell_stop";
             this.RB_sell_stop.Size = new System.Drawing.Size(50, 21);
             this.RB_sell_stop.TabIndex = 4;
@@ -912,7 +938,7 @@ namespace 지니_64
             this.label38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label38.Cursor = System.Windows.Forms.Cursors.Default;
             this.label38.Font = new System.Drawing.Font("굴림체", 9.75F);
-            this.label38.Location = new System.Drawing.Point(96, 60);
+            this.label38.Location = new System.Drawing.Point(96, 59);
             this.label38.Margin = new System.Windows.Forms.Padding(3);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(55, 21);
@@ -927,7 +953,7 @@ namespace 지니_64
             this.label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label39.Cursor = System.Windows.Forms.Cursors.Default;
             this.label39.Font = new System.Drawing.Font("굴림체", 9.75F);
-            this.label39.Location = new System.Drawing.Point(96, 80);
+            this.label39.Location = new System.Drawing.Point(96, 79);
             this.label39.Margin = new System.Windows.Forms.Padding(3);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(55, 21);
@@ -936,81 +962,75 @@ namespace 지니_64
             this.label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.label39, "# 매매 정지시간");
             // 
-            // label1
+            // label_추정증가자산
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label1.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(306, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "추정/증가자산";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_추정증가자산.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label_추정증가자산.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_추정증가자산.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label_추정증가자산.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_추정증가자산.Location = new System.Drawing.Point(306, -1);
+            this.label_추정증가자산.Margin = new System.Windows.Forms.Padding(3);
+            this.label_추정증가자산.Name = "label_추정증가자산";
+            this.label_추정증가자산.Size = new System.Drawing.Size(110, 21);
+            this.label_추정증가자산.TabIndex = 0;
+            this.label_추정증가자산.Text = "추정/증가자산";
+            this.label_추정증가자산.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // label_D2주문가능
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label5.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label5.Location = new System.Drawing.Point(415, 0);
-            this.label5.Margin = new System.Windows.Forms.Padding(3);
-            this.label5.MaximumSize = new System.Drawing.Size(103, 22);
-            this.label5.MinimumSize = new System.Drawing.Size(100, 21);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 21);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "D+2/주문가능";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_D2주문가능.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label_D2주문가능.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_D2주문가능.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label_D2주문가능.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_D2주문가능.Location = new System.Drawing.Point(415, -1);
+            this.label_D2주문가능.Margin = new System.Windows.Forms.Padding(3);
+            this.label_D2주문가능.Name = "label_D2주문가능";
+            this.label_D2주문가능.Size = new System.Drawing.Size(100, 21);
+            this.label_D2주문가능.TabIndex = 0;
+            this.label_D2주문가능.Text = "D+2/주문가능";
+            this.label_D2주문가능.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // label_실현손익
             // 
-            this.label6.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label6.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label6.Location = new System.Drawing.Point(702, 0);
-            this.label6.Margin = new System.Windows.Forms.Padding(3);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 21);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "실현손익/ %";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_실현손익.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label_실현손익.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_실현손익.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label_실현손익.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_실현손익.Location = new System.Drawing.Point(702, -1);
+            this.label_실현손익.Margin = new System.Windows.Forms.Padding(3);
+            this.label_실현손익.Name = "label_실현손익";
+            this.label_실현손익.Size = new System.Drawing.Size(90, 21);
+            this.label_실현손익.TabIndex = 0;
+            this.label_실현손익.Text = "실현손익/ %";
+            this.label_실현손익.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label7
+            // label_매입평가금
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label7.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label7.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label7.Location = new System.Drawing.Point(514, 0);
-            this.label7.Margin = new System.Windows.Forms.Padding(3);
-            this.label7.MaximumSize = new System.Drawing.Size(103, 22);
-            this.label7.MinimumSize = new System.Drawing.Size(100, 21);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 21);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "매입/평가금";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_매입평가금.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label_매입평가금.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_매입평가금.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label_매입평가금.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_매입평가금.Location = new System.Drawing.Point(514, -1);
+            this.label_매입평가금.Margin = new System.Windows.Forms.Padding(3);
+            this.label_매입평가금.Name = "label_매입평가금";
+            this.label_매입평가금.Size = new System.Drawing.Size(100, 21);
+            this.label_매입평가금.TabIndex = 0;
+            this.label_매입평가금.Text = "매입/평가금";
+            this.label_매입평가금.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label9
+            // label_평가손익
             // 
-            this.label9.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label9.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label9.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label9.Location = new System.Drawing.Point(613, 0);
-            this.label9.Margin = new System.Windows.Forms.Padding(3);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(90, 21);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "평가손익/ %";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_평가손익.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label_평가손익.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_평가손익.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label_평가손익.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_평가손익.Location = new System.Drawing.Point(613, -1);
+            this.label_평가손익.Margin = new System.Windows.Forms.Padding(3);
+            this.label_평가손익.Name = "label_평가손익";
+            this.label_평가손익.Size = new System.Drawing.Size(90, 21);
+            this.label_평가손익.TabIndex = 0;
+            this.label_평가손익.Text = "평가손익/ %";
+            this.label_평가손익.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TB_평가금
             // 
@@ -1018,9 +1038,7 @@ namespace 지니_64
             this.TB_평가금.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_평가금.Cursor = System.Windows.Forms.Cursors.Default;
             this.TB_평가금.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_평가금.Location = new System.Drawing.Point(514, 40);
-            this.TB_평가금.MaximumSize = new System.Drawing.Size(95, 20);
-            this.TB_평가금.MinimumSize = new System.Drawing.Size(100, 21);
+            this.TB_평가금.Location = new System.Drawing.Point(514, 39);
             this.TB_평가금.Name = "TB_평가금";
             this.TB_평가금.ReadOnly = true;
             this.TB_평가금.Size = new System.Drawing.Size(100, 21);
@@ -1034,7 +1052,7 @@ namespace 지니_64
             this.TB_평가손익율.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_평가손익율.Cursor = System.Windows.Forms.Cursors.Default;
             this.TB_평가손익율.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_평가손익율.Location = new System.Drawing.Point(613, 40);
+            this.TB_평가손익율.Location = new System.Drawing.Point(613, 39);
             this.TB_평가손익율.Name = "TB_평가손익율";
             this.TB_평가손익율.ReadOnly = true;
             this.TB_평가손익율.Size = new System.Drawing.Size(90, 21);
@@ -1049,7 +1067,7 @@ namespace 지니_64
             this.TB_추정자산.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_추정자산.Cursor = System.Windows.Forms.Cursors.Default;
             this.TB_추정자산.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_추정자산.Location = new System.Drawing.Point(306, 20);
+            this.TB_추정자산.Location = new System.Drawing.Point(306, 19);
             this.TB_추정자산.Name = "TB_추정자산";
             this.TB_추정자산.ReadOnly = true;
             this.TB_추정자산.Size = new System.Drawing.Size(110, 21);
@@ -1064,9 +1082,7 @@ namespace 지니_64
             this.TB_추정D2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_추정D2.Cursor = System.Windows.Forms.Cursors.Default;
             this.TB_추정D2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_추정D2.Location = new System.Drawing.Point(415, 40);
-            this.TB_추정D2.MaximumSize = new System.Drawing.Size(95, 20);
-            this.TB_추정D2.MinimumSize = new System.Drawing.Size(100, 21);
+            this.TB_추정D2.Location = new System.Drawing.Point(415, 39);
             this.TB_추정D2.Name = "TB_추정D2";
             this.TB_추정D2.ReadOnly = true;
             this.TB_추정D2.Size = new System.Drawing.Size(100, 21);
@@ -1080,7 +1096,7 @@ namespace 지니_64
             this.TB_실현손익율.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_실현손익율.Cursor = System.Windows.Forms.Cursors.Default;
             this.TB_실현손익율.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_실현손익율.Location = new System.Drawing.Point(702, 40);
+            this.TB_실현손익율.Location = new System.Drawing.Point(702, 39);
             this.TB_실현손익율.Name = "TB_실현손익율";
             this.TB_실현손익율.ReadOnly = true;
             this.TB_실현손익율.Size = new System.Drawing.Size(90, 21);
@@ -1094,7 +1110,7 @@ namespace 지니_64
             this.LB_닥기관.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LB_닥기관.Cursor = System.Windows.Forms.Cursors.Default;
             this.LB_닥기관.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LB_닥기관.Location = new System.Drawing.Point(655, 120);
+            this.LB_닥기관.Location = new System.Drawing.Point(655, 119);
             this.LB_닥기관.Name = "LB_닥기관";
             this.LB_닥기관.Size = new System.Drawing.Size(65, 20);
             this.LB_닥기관.TabIndex = 5;
@@ -1107,7 +1123,7 @@ namespace 지니_64
             this.LB_피기관.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LB_피기관.Cursor = System.Windows.Forms.Cursors.Default;
             this.LB_피기관.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LB_피기관.Location = new System.Drawing.Point(105, 120);
+            this.LB_피기관.Location = new System.Drawing.Point(105, 119);
             this.LB_피기관.Name = "LB_피기관";
             this.LB_피기관.Size = new System.Drawing.Size(65, 20);
             this.LB_피기관.TabIndex = 5;
@@ -1120,7 +1136,7 @@ namespace 지니_64
             this.LB_닥외인.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LB_닥외인.Cursor = System.Windows.Forms.Cursors.Default;
             this.LB_닥외인.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LB_닥외인.Location = new System.Drawing.Point(591, 120);
+            this.LB_닥외인.Location = new System.Drawing.Point(591, 119);
             this.LB_닥외인.Name = "LB_닥외인";
             this.LB_닥외인.Size = new System.Drawing.Size(65, 20);
             this.LB_닥외인.TabIndex = 5;
@@ -1133,7 +1149,7 @@ namespace 지니_64
             this.LB_피외인.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LB_피외인.Cursor = System.Windows.Forms.Cursors.Default;
             this.LB_피외인.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LB_피외인.Location = new System.Drawing.Point(41, 120);
+            this.LB_피외인.Location = new System.Drawing.Point(41, 119);
             this.LB_피외인.Name = "LB_피외인";
             this.LB_피외인.Size = new System.Drawing.Size(65, 20);
             this.LB_피외인.TabIndex = 5;
@@ -1146,7 +1162,7 @@ namespace 지니_64
             this.LB_닥프로그램.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LB_닥프로그램.Cursor = System.Windows.Forms.Cursors.Default;
             this.LB_닥프로그램.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LB_닥프로그램.Location = new System.Drawing.Point(719, 120);
+            this.LB_닥프로그램.Location = new System.Drawing.Point(719, 119);
             this.LB_닥프로그램.Name = "LB_닥프로그램";
             this.LB_닥프로그램.Size = new System.Drawing.Size(65, 20);
             this.LB_닥프로그램.TabIndex = 5;
@@ -1159,7 +1175,7 @@ namespace 지니_64
             this.LB_피프로그램.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LB_피프로그램.Cursor = System.Windows.Forms.Cursors.Default;
             this.LB_피프로그램.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LB_피프로그램.Location = new System.Drawing.Point(169, 120);
+            this.LB_피프로그램.Location = new System.Drawing.Point(169, 119);
             this.LB_피프로그램.Name = "LB_피프로그램";
             this.LB_피프로그램.Size = new System.Drawing.Size(65, 20);
             this.LB_피프로그램.TabIndex = 5;
@@ -1173,7 +1189,7 @@ namespace 지니_64
             this.label380.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label380.Cursor = System.Windows.Forms.Cursors.Default;
             this.label380.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label380.Location = new System.Drawing.Point(549, 120);
+            this.label380.Location = new System.Drawing.Point(549, 119);
             this.label380.Name = "label380";
             this.label380.Size = new System.Drawing.Size(43, 20);
             this.label380.TabIndex = 5;
@@ -1186,7 +1202,7 @@ namespace 지니_64
             this.label83.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label83.Cursor = System.Windows.Forms.Cursors.Default;
             this.label83.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label83.Location = new System.Drawing.Point(-1, 120);
+            this.label83.Location = new System.Drawing.Point(-1, 119);
             this.label83.Name = "label83";
             this.label83.Size = new System.Drawing.Size(43, 20);
             this.label83.TabIndex = 5;
@@ -1317,7 +1333,7 @@ namespace 지니_64
             "1.수익 2.우선 ",
             "1.손실 2.우선 ",
             "- 전체 균등 -"});
-            this.Combo_misu.Location = new System.Drawing.Point(591, 100);
+            this.Combo_misu.Location = new System.Drawing.Point(284, 39);
             this.Combo_misu.Name = "Combo_misu";
             this.Combo_misu.Size = new System.Drawing.Size(120, 21);
             this.Combo_misu.TabIndex = 3;
@@ -1335,7 +1351,7 @@ namespace 지니_64
             "신규 금지",
             "추가 금지",
             "신n추 금지"});
-            this.CBB_계좌매입비_제한선택.Location = new System.Drawing.Point(718, 60);
+            this.CBB_계좌매입비_제한선택.Location = new System.Drawing.Point(411, -1);
             this.CBB_계좌매입비_제한선택.Name = "CBB_계좌매입비_제한선택";
             this.CBB_계좌매입비_제한선택.Size = new System.Drawing.Size(103, 21);
             this.CBB_계좌매입비_제한선택.TabIndex = 3;
@@ -1348,7 +1364,7 @@ namespace 지니_64
             this.label_misu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_misu.Cursor = System.Windows.Forms.Cursors.Default;
             this.label_misu.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_misu.Location = new System.Drawing.Point(560, 100);
+            this.label_misu.Location = new System.Drawing.Point(253, 39);
             this.label_misu.Name = "label_misu";
             this.label_misu.Size = new System.Drawing.Size(32, 21);
             this.label_misu.TabIndex = 2;
@@ -1360,7 +1376,7 @@ namespace 지니_64
             this.label_계좌매입비2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label_계좌매입비2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_계좌매입비2.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_계좌매입비2.Location = new System.Drawing.Point(671, 60);
+            this.label_계좌매입비2.Location = new System.Drawing.Point(364, -1);
             this.label_계좌매입비2.Name = "label_계좌매입비2";
             this.label_계좌매입비2.Size = new System.Drawing.Size(48, 21);
             this.label_계좌매입비2.TabIndex = 2;
@@ -1380,7 +1396,7 @@ namespace 지니_64
             this.CB_misu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_misu.Font = new System.Drawing.Font("굴림체", 9F);
             this.CB_misu.ForeColor = System.Drawing.Color.Black;
-            this.CB_misu.Location = new System.Drawing.Point(415, 100);
+            this.CB_misu.Location = new System.Drawing.Point(108, 39);
             this.CB_misu.Name = "CB_misu";
             this.CB_misu.Size = new System.Drawing.Size(100, 21);
             this.CB_misu.TabIndex = 0;
@@ -1395,7 +1411,7 @@ namespace 지니_64
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Cursor = System.Windows.Forms.Cursors.Default;
             this.label10.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(197, 60);
+            this.label10.Location = new System.Drawing.Point(197, 59);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(110, 21);
             this.label10.TabIndex = 0;
@@ -1408,7 +1424,7 @@ namespace 지니_64
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Cursor = System.Windows.Forms.Cursors.Default;
             this.label8.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(197, 80);
+            this.label8.Location = new System.Drawing.Point(197, 79);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(110, 21);
             this.label8.TabIndex = 0;
@@ -1429,8 +1445,8 @@ namespace 지니_64
             this.tab_체결.SelectedIndex = 0;
             this.tab_체결.Size = new System.Drawing.Size(828, 346);
             this.tab_체결.TabIndex = 11;
-            this.tab_체결.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl_L_Top_DrawItem);
-            this.tab_체결.SelectedIndexChanged += new System.EventHandler(this.tab_체결_SelectedIndexChanged);
+            this.tab_체결.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.TabControl_L_Top_DrawItem);
+            this.tab_체결.SelectedIndexChanged += new System.EventHandler(this.Tab_체결_SelectedIndexChanged);
             // 
             // TP_체결내역
             // 
@@ -1484,50 +1500,50 @@ namespace 지니_64
             // chart_Month
             // 
             this.chart_Month.BackColor = System.Drawing.SystemColors.ControlLight;
-            chartArea3.AxisX.Crossing = 0D;
-            chartArea3.AxisX.Interval = 1D;
-            chartArea3.AxisX.MajorGrid.Enabled = false;
-            chartArea3.AxisX.MajorTickMark.Size = 0.5F;
-            chartArea3.AxisX.MajorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.AcrossAxis;
-            chartArea3.AxisX2.LineWidth = 2;
-            chartArea3.AxisY.LabelStyle.Format = "N0";
-            chartArea3.AxisY.MajorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea3.AxisY.MajorTickMark.Size = 0.5F;
-            chartArea3.AxisY.MajorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.AcrossAxis;
-            chartArea3.AxisY2.LineWidth = 2;
-            chartArea3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            chartArea3.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
-            chartArea3.Name = "ChartArea1";
-            this.chart_Month.ChartAreas.Add(chartArea3);
-            legend3.Enabled = false;
-            legend3.Name = "Legend1";
-            this.chart_Month.Legends.Add(legend3);
+            chartArea1.AxisX.Crossing = 0D;
+            chartArea1.AxisX.Interval = 1D;
+            chartArea1.AxisX.MajorGrid.Enabled = false;
+            chartArea1.AxisX.MajorTickMark.Size = 0.5F;
+            chartArea1.AxisX.MajorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.AcrossAxis;
+            chartArea1.AxisX2.LineWidth = 2;
+            chartArea1.AxisY.LabelStyle.Format = "N0";
+            chartArea1.AxisY.MajorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea1.AxisY.MajorTickMark.Size = 0.5F;
+            chartArea1.AxisY.MajorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.AcrossAxis;
+            chartArea1.AxisY2.LineWidth = 2;
+            chartArea1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            chartArea1.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
+            chartArea1.Name = "ChartArea1";
+            this.chart_Month.ChartAreas.Add(chartArea1);
+            legend1.Enabled = false;
+            legend1.Name = "Legend1";
+            this.chart_Month.Legends.Add(legend1);
             this.chart_Month.Location = new System.Drawing.Point(1175, 263);
             this.chart_Month.Name = "chart_Month";
             this.chart_Month.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series5.BorderWidth = 2;
-            series5.ChartArea = "ChartArea1";
-            series5.Color = System.Drawing.Color.Red;
-            series5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series5.IsValueShownAsLabel = true;
-            series5.LabelBackColor = System.Drawing.Color.WhiteSmoke;
-            series5.LabelBorderColor = System.Drawing.Color.Black;
-            series5.LabelFormat = "N0";
-            series5.Legend = "Legend1";
-            series5.Name = "월간수익";
-            series6.BorderWidth = 3;
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series6.Color = System.Drawing.Color.Orange;
-            series6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series6.IsValueShownAsLabel = true;
-            series6.LabelBackColor = System.Drawing.Color.Khaki;
-            series6.LabelBorderColor = System.Drawing.Color.Black;
-            series6.LabelFormat = "N0";
-            series6.Legend = "Legend1";
-            series6.Name = "수익합계";
-            this.chart_Month.Series.Add(series5);
-            this.chart_Month.Series.Add(series6);
+            series1.BorderWidth = 2;
+            series1.ChartArea = "ChartArea1";
+            series1.Color = System.Drawing.Color.Red;
+            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.IsValueShownAsLabel = true;
+            series1.LabelBackColor = System.Drawing.Color.WhiteSmoke;
+            series1.LabelBorderColor = System.Drawing.Color.Black;
+            series1.LabelFormat = "N0";
+            series1.Legend = "Legend1";
+            series1.Name = "월간수익";
+            series2.BorderWidth = 3;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Color = System.Drawing.Color.Orange;
+            series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series2.IsValueShownAsLabel = true;
+            series2.LabelBackColor = System.Drawing.Color.Khaki;
+            series2.LabelBorderColor = System.Drawing.Color.Black;
+            series2.LabelFormat = "N0";
+            series2.Legend = "Legend1";
+            series2.Name = "수익합계";
+            this.chart_Month.Series.Add(series1);
+            this.chart_Month.Series.Add(series2);
             this.chart_Month.Size = new System.Drawing.Size(171, 155);
             this.chart_Month.TabIndex = 68;
             this.chart_Month.Text = "chart월";
@@ -1536,28 +1552,7 @@ namespace 지니_64
             // 
             this.TP_관심그룹.BackColor = System.Drawing.SystemColors.ControlLight;
             this.TP_관심그룹.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TP_관심그룹.Controls.Add(this.LB_검색결과n관심리스트);
-            this.TP_관심그룹.Controls.Add(this.label118);
-            this.TP_관심그룹.Controls.Add(this.label117);
-            this.TP_관심그룹.Controls.Add(this.label115);
-            this.TP_관심그룹.Controls.Add(this.CBB_실시간n그룹n관심자동);
-            this.TP_관심그룹.Controls.Add(this.CBB_관심그룹_A);
-            this.TP_관심그룹.Controls.Add(this.CBB_관심그룹_B);
-            this.TP_관심그룹.Controls.Add(this.CBB_관심그룹_C);
-            this.TP_관심그룹.Controls.Add(this.LB_관심_B);
-            this.TP_관심그룹.Controls.Add(this.LB_관심_A);
-            this.TP_관심그룹.Controls.Add(this.LB_관심_C);
-            this.TP_관심그룹.Controls.Add(this.BT_jagoGroup_initialization);
-            this.TP_관심그룹.Controls.Add(this.BT_condition_loading);
-            this.TP_관심그룹.Controls.Add(this.BT_Setting_Load);
-            this.TP_관심그룹.Controls.Add(this.BT_전량매도내역);
-            this.TP_관심그룹.Controls.Add(this.BT_체결내역);
-            this.TP_관심그룹.Controls.Add(this.BT_Setting_Save);
-            this.TP_관심그룹.Controls.Add(this.BT_신규매수내역);
-            this.TP_관심그룹.Controls.Add(this.BT_주문내역);
-            this.TP_관심그룹.Controls.Add(this.panel38);
-            this.TP_관심그룹.Controls.Add(this.BT_미체결요청);
-            this.TP_관심그룹.Controls.Add(this.BT_재시작);
+            this.TP_관심그룹.Controls.Add(this.panel_TP_관종);
             this.TP_관심그룹.Location = new System.Drawing.Point(4, 22);
             this.TP_관심그룹.Margin = new System.Windows.Forms.Padding(0);
             this.TP_관심그룹.Name = "TP_관심그룹";
@@ -1565,245 +1560,88 @@ namespace 지니_64
             this.TP_관심그룹.TabIndex = 2;
             this.TP_관심그룹.Text = "관심그룹/내역";
             // 
-            // LB_검색결과n관심리스트
+            // panel_TP_관종
             // 
-            this.LB_검색결과n관심리스트.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.LB_검색결과n관심리스트.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LB_검색결과n관심리스트.FormattingEnabled = true;
-            this.LB_검색결과n관심리스트.HorizontalScrollbar = true;
-            this.LB_검색결과n관심리스트.Location = new System.Drawing.Point(167, 21);
-            this.LB_검색결과n관심리스트.Margin = new System.Windows.Forms.Padding(0);
-            this.LB_검색결과n관심리스트.Name = "LB_검색결과n관심리스트";
-            this.LB_검색결과n관심리스트.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.LB_검색결과n관심리스트.Size = new System.Drawing.Size(235, 498);
-            this.LB_검색결과n관심리스트.TabIndex = 33;
-            this.LB_검색결과n관심리스트.Click += new System.EventHandler(this.LB_관심_A_Click);
-            this.LB_검색결과n관심리스트.SelectedIndexChanged += new System.EventHandler(this.LB_검색결과n관심리스트_SelectedIndexChanged);
-            // 
-            // label118
-            // 
-            this.label118.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label118.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label118.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label118.Location = new System.Drawing.Point(867, -1);
-            this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(76, 23);
-            this.label118.TabIndex = 50;
-            this.label118.Text = "관심그룹";
-            this.label118.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label117
-            // 
-            this.label117.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label117.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label117.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label117.Location = new System.Drawing.Point(634, -1);
-            this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(75, 23);
-            this.label117.TabIndex = 50;
-            this.label117.Text = "관심그룹";
-            this.label117.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label115
-            // 
-            this.label115.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label115.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label115.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label115.Location = new System.Drawing.Point(401, -1);
-            this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(75, 23);
-            this.label115.TabIndex = 50;
-            this.label115.Text = "관심그룹";
-            this.label115.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CBB_실시간n그룹n관심자동
-            // 
-            this.CBB_실시간n그룹n관심자동.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CBB_실시간n그룹n관심자동.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_실시간n그룹n관심자동.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBB_실시간n그룹n관심자동.FormattingEnabled = true;
-            this.CBB_실시간n그룹n관심자동.Items.AddRange(new object[] {
-            "검색결과 (시장/종목명/현재가)",
-            "조건별 매매그룹 리스트",
-            "관종그룹 자동추가 리스트"});
-            this.CBB_실시간n그룹n관심자동.Location = new System.Drawing.Point(167, -1);
-            this.CBB_실시간n그룹n관심자동.Name = "CBB_실시간n그룹n관심자동";
-            this.CBB_실시간n그룹n관심자동.Size = new System.Drawing.Size(235, 23);
-            this.CBB_실시간n그룹n관심자동.TabIndex = 34;
-            this.CBB_실시간n그룹n관심자동.DropDownClosed += new System.EventHandler(this.CBB_실시간n그룹n관심자동_DropDownClosed);
-            // 
-            // CBB_관심그룹_A
-            // 
-            this.CBB_관심그룹_A.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CBB_관심그룹_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_관심그룹_A.DropDownWidth = 200;
-            this.CBB_관심그룹_A.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBB_관심그룹_A.FormattingEnabled = true;
-            this.CBB_관심그룹_A.Location = new System.Drawing.Point(474, -1);
-            this.CBB_관심그룹_A.Name = "CBB_관심그룹_A";
-            this.CBB_관심그룹_A.Size = new System.Drawing.Size(161, 23);
-            this.CBB_관심그룹_A.TabIndex = 34;
-            this.CBB_관심그룹_A.DropDownClosed += new System.EventHandler(this.콤보_관심그룹_DropDownClosed);
-            // 
-            // CBB_관심그룹_B
-            // 
-            this.CBB_관심그룹_B.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CBB_관심그룹_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_관심그룹_B.DropDownWidth = 200;
-            this.CBB_관심그룹_B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.CBB_관심그룹_B.FormattingEnabled = true;
-            this.CBB_관심그룹_B.Location = new System.Drawing.Point(707, -1);
-            this.CBB_관심그룹_B.Name = "CBB_관심그룹_B";
-            this.CBB_관심그룹_B.Size = new System.Drawing.Size(161, 23);
-            this.CBB_관심그룹_B.TabIndex = 34;
-            this.CBB_관심그룹_B.DropDownClosed += new System.EventHandler(this.콤보_관심그룹_DropDownClosed);
-            // 
-            // CBB_관심그룹_C
-            // 
-            this.CBB_관심그룹_C.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CBB_관심그룹_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_관심그룹_C.DropDownWidth = 200;
-            this.CBB_관심그룹_C.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.CBB_관심그룹_C.FormattingEnabled = true;
-            this.CBB_관심그룹_C.Location = new System.Drawing.Point(942, -1);
-            this.CBB_관심그룹_C.Name = "CBB_관심그룹_C";
-            this.CBB_관심그룹_C.Size = new System.Drawing.Size(160, 23);
-            this.CBB_관심그룹_C.TabIndex = 34;
-            this.CBB_관심그룹_C.DropDownClosed += new System.EventHandler(this.콤보_관심그룹_DropDownClosed);
-            // 
-            // LB_관심_B
-            // 
-            this.LB_관심_B.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.LB_관심_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LB_관심_B.FormattingEnabled = true;
-            this.LB_관심_B.HorizontalScrollbar = true;
-            this.LB_관심_B.Location = new System.Drawing.Point(634, 21);
-            this.LB_관심_B.Margin = new System.Windows.Forms.Padding(0);
-            this.LB_관심_B.Name = "LB_관심_B";
-            this.LB_관심_B.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.LB_관심_B.Size = new System.Drawing.Size(234, 498);
-            this.LB_관심_B.TabIndex = 33;
-            this.LB_관심_B.Click += new System.EventHandler(this.LB_관심_A_Click);
-            this.LB_관심_B.SelectedIndexChanged += new System.EventHandler(this.LB_관심_A_SelectedIndexChanged);
-            // 
-            // LB_관심_A
-            // 
-            this.LB_관심_A.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.LB_관심_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LB_관심_A.FormattingEnabled = true;
-            this.LB_관심_A.HorizontalScrollbar = true;
-            this.LB_관심_A.Location = new System.Drawing.Point(401, 21);
-            this.LB_관심_A.Margin = new System.Windows.Forms.Padding(0);
-            this.LB_관심_A.Name = "LB_관심_A";
-            this.LB_관심_A.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.LB_관심_A.Size = new System.Drawing.Size(234, 498);
-            this.LB_관심_A.TabIndex = 33;
-            this.LB_관심_A.Click += new System.EventHandler(this.LB_관심_A_Click);
-            this.LB_관심_A.SelectedIndexChanged += new System.EventHandler(this.LB_관심_A_SelectedIndexChanged);
-            // 
-            // LB_관심_C
-            // 
-            this.LB_관심_C.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.LB_관심_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LB_관심_C.FormattingEnabled = true;
-            this.LB_관심_C.HorizontalScrollbar = true;
-            this.LB_관심_C.Location = new System.Drawing.Point(867, 21);
-            this.LB_관심_C.Margin = new System.Windows.Forms.Padding(0);
-            this.LB_관심_C.Name = "LB_관심_C";
-            this.LB_관심_C.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.LB_관심_C.Size = new System.Drawing.Size(235, 498);
-            this.LB_관심_C.TabIndex = 33;
-            this.LB_관심_C.Click += new System.EventHandler(this.LB_관심_A_Click);
-            this.LB_관심_C.SelectedIndexChanged += new System.EventHandler(this.LB_관심_A_SelectedIndexChanged);
-            // 
-            // BT_Setting_Load
-            // 
-            this.BT_Setting_Load.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.BT_Setting_Load.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BT_Setting_Load.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_Setting_Load.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BT_Setting_Load.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_Setting_Load.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_Setting_Load.Font = new System.Drawing.Font("굴림체", 9F);
-            this.BT_Setting_Load.Location = new System.Drawing.Point(-1, 395);
-            this.BT_Setting_Load.Margin = new System.Windows.Forms.Padding(0);
-            this.BT_Setting_Load.Name = "BT_Setting_Load";
-            this.BT_Setting_Load.Size = new System.Drawing.Size(167, 25);
-            this.BT_Setting_Load.TabIndex = 12;
-            this.BT_Setting_Load.Text = "환경설정 불러오기";
-            this.BT_Setting_Load.UseVisualStyleBackColor = false;
-            this.BT_Setting_Load.Click += new System.EventHandler(this.BT_Setting_Load_Click);
-            // 
-            // BT_전량매도내역
-            // 
-            this.BT_전량매도내역.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.BT_전량매도내역.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BT_전량매도내역.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_전량매도내역.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BT_전량매도내역.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_전량매도내역.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_전량매도내역.Font = new System.Drawing.Font("굴림체", 9F);
-            this.BT_전량매도내역.Location = new System.Drawing.Point(75, 447);
-            this.BT_전량매도내역.Margin = new System.Windows.Forms.Padding(0);
-            this.BT_전량매도내역.Name = "BT_전량매도내역";
-            this.BT_전량매도내역.Size = new System.Drawing.Size(91, 25);
-            this.BT_전량매도내역.TabIndex = 12;
-            this.BT_전량매도내역.Text = "전량매도내역";
-            this.BT_전량매도내역.UseVisualStyleBackColor = false;
-            this.BT_전량매도내역.Click += new System.EventHandler(this.BT_전량매도내역_Click);
-            // 
-            // BT_신규매수내역
-            // 
-            this.BT_신규매수내역.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.BT_신규매수내역.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BT_신규매수내역.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_신규매수내역.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BT_신규매수내역.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_신규매수내역.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_신규매수내역.Font = new System.Drawing.Font("굴림체", 9F);
-            this.BT_신규매수내역.Location = new System.Drawing.Point(75, 421);
-            this.BT_신규매수내역.Margin = new System.Windows.Forms.Padding(0);
-            this.BT_신규매수내역.Name = "BT_신규매수내역";
-            this.BT_신규매수내역.Size = new System.Drawing.Size(91, 25);
-            this.BT_신규매수내역.TabIndex = 12;
-            this.BT_신규매수내역.Text = "신규매수내역";
-            this.BT_신규매수내역.UseVisualStyleBackColor = false;
-            this.BT_신규매수내역.Click += new System.EventHandler(this.BT_신규매수내역_Click);
+            this.panel_TP_관종.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_TP_관종.Controls.Add(this.panel38);
+            this.panel_TP_관종.Controls.Add(this.LB_검색결과n관심리스트);
+            this.panel_TP_관종.Controls.Add(this.label118);
+            this.panel_TP_관종.Controls.Add(this.label117);
+            this.panel_TP_관종.Controls.Add(this.label115);
+            this.panel_TP_관종.Controls.Add(this.CBB_실시간n그룹n관심자동);
+            this.panel_TP_관종.Controls.Add(this.CBB_관심그룹_A);
+            this.panel_TP_관종.Controls.Add(this.CBB_관심그룹_B);
+            this.panel_TP_관종.Controls.Add(this.CBB_관심그룹_C);
+            this.panel_TP_관종.Controls.Add(this.LB_관심_B);
+            this.panel_TP_관종.Controls.Add(this.LB_관심_A);
+            this.panel_TP_관종.Controls.Add(this.LB_관심_C);
+            this.panel_TP_관종.Location = new System.Drawing.Point(-1, -1);
+            this.panel_TP_관종.Name = "panel_TP_관종";
+            this.panel_TP_관종.Size = new System.Drawing.Size(1103, 518);
+            this.panel_TP_관종.TabIndex = 0;
             // 
             // panel38
             // 
             this.panel38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel38.Controls.Add(this.BT_자동등록);
-            this.panel38.Controls.Add(this.BT_자동해제);
-            this.panel38.Controls.Add(this.BT_관심등록);
-            this.panel38.Controls.Add(this.BT_관심삭제);
-            this.panel38.Controls.Add(this.label95);
-            this.panel38.Controls.Add(this.CBB_관심검색식);
-            this.panel38.Controls.Add(this.label173);
-            this.panel38.Controls.Add(this.CB_실시간관심등록);
-            this.panel38.Controls.Add(this.MTB_자동삭제기간);
-            this.panel38.Controls.Add(this.BT_검색요청);
-            this.panel38.Controls.Add(this.CBB_관심그룹변경_Title);
-            this.panel38.Controls.Add(this.CB_관심삭제);
-            this.panel38.Controls.Add(this.CB_관심등록);
-            this.panel38.Controls.Add(this.CBB_관심그룹변경);
-            this.panel38.Controls.Add(this.TB_관심그룹_종목명);
-            this.panel38.Controls.Add(this.label113);
-            this.panel38.Controls.Add(this.CBB_그룹자동삭제);
-            this.panel38.Controls.Add(this.CB_실시간검색결과보기);
-            this.panel38.Controls.Add(this.CB_시세감시등록);
-            this.panel38.Controls.Add(this.BT_그룹추가);
-            this.panel38.Controls.Add(this.BT_그룹삭제);
             this.panel38.Controls.Add(this.BT_관심그룹변경);
-            this.panel38.Controls.Add(this.TB_관심그룹추가);
-            this.panel38.Controls.Add(this.BT_자동삭제);
-            this.panel38.Controls.Add(this.CBB_관심그룹);
-            this.panel38.Controls.Add(this.label40);
+            this.panel38.Controls.Add(this.BT_자동등록);
+            this.panel38.Controls.Add(this.TB_관심그룹_종목명);
+            this.panel38.Controls.Add(this.CB_관심등록);
+            this.panel38.Controls.Add(this.label113);
+            this.panel38.Controls.Add(this.BT_자동해제);
+            this.panel38.Controls.Add(this.CB_관심삭제);
             this.panel38.Controls.Add(this.TB_자동관심_동작시간);
+            this.panel38.Controls.Add(this.CBB_관심그룹변경_Title);
+            this.panel38.Controls.Add(this.BT_재시작);
+            this.panel38.Controls.Add(this.CB_실시간검색결과보기);
+            this.panel38.Controls.Add(this.BT_관심등록);
+            this.panel38.Controls.Add(this.BT_미체결요청);
+            this.panel38.Controls.Add(this.BT_검색요청);
+            this.panel38.Controls.Add(this.label40);
+            this.panel38.Controls.Add(this.CB_시세감시등록);
+            this.panel38.Controls.Add(this.BT_주문내역);
+            this.panel38.Controls.Add(this.BT_관심삭제);
+            this.panel38.Controls.Add(this.MTB_자동삭제기간);
+            this.panel38.Controls.Add(this.BT_신규매수내역);
+            this.panel38.Controls.Add(this.CBB_관심그룹);
+            this.panel38.Controls.Add(this.BT_그룹추가);
+            this.panel38.Controls.Add(this.BT_Setting_Save);
+            this.panel38.Controls.Add(this.label95);
+            this.panel38.Controls.Add(this.CB_실시간관심등록);
+            this.panel38.Controls.Add(this.BT_체결내역);
+            this.panel38.Controls.Add(this.BT_자동삭제);
+            this.panel38.Controls.Add(this.BT_그룹삭제);
+            this.panel38.Controls.Add(this.CBB_관심검색식);
+            this.panel38.Controls.Add(this.BT_전량매도내역);
+            this.panel38.Controls.Add(this.BT_jagoGroup_initialization);
+            this.panel38.Controls.Add(this.label173);
+            this.panel38.Controls.Add(this.BT_condition_loading);
+            this.panel38.Controls.Add(this.BT_Setting_Load);
+            this.panel38.Controls.Add(this.TB_관심그룹추가);
+            this.panel38.Controls.Add(this.CBB_그룹자동삭제);
+            this.panel38.Controls.Add(this.CBB_관심그룹변경);
             this.panel38.Location = new System.Drawing.Point(-1, -1);
             this.panel38.Name = "panel38";
-            this.panel38.Size = new System.Drawing.Size(167, 319);
+            this.panel38.Size = new System.Drawing.Size(167, 518);
             this.panel38.TabIndex = 47;
+            // 
+            // BT_관심그룹변경
+            // 
+            this.BT_관심그룹변경.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.BT_관심그룹변경.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BT_관심그룹변경.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_관심그룹변경.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BT_관심그룹변경.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_관심그룹변경.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_관심그룹변경.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.BT_관심그룹변경.Location = new System.Drawing.Point(-2, -1);
+            this.BT_관심그룹변경.Name = "BT_관심그룹변경";
+            this.BT_관심그룹변경.Size = new System.Drawing.Size(167, 23);
+            this.BT_관심그룹변경.TabIndex = 0;
+            this.BT_관심그룹변경.Text = "관심그룹 변경";
+            this.toolTip1.SetToolTip(this.BT_관심그룹변경, "# 매수매도별 관심그룹을 지정합니다.");
+            this.BT_관심그룹변경.UseVisualStyleBackColor = false;
+            this.BT_관심그룹변경.Click += new System.EventHandler(this.BT_관심그룹변경_Click);
             // 
             // BT_자동등록
             // 
@@ -1822,6 +1660,53 @@ namespace 지니_64
             this.BT_자동등록.UseVisualStyleBackColor = false;
             this.BT_자동등록.Click += new System.EventHandler(this.BT_자동등록_Click);
             // 
+            // TB_관심그룹_종목명
+            // 
+            this.TB_관심그룹_종목명.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.TB_관심그룹_종목명.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.TB_관심그룹_종목명.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_관심그룹_종목명.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_관심그룹_종목명.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_관심그룹_종목명.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.TB_관심그룹_종목명.Location = new System.Drawing.Point(54, 115);
+            this.TB_관심그룹_종목명.MaxLength = 100;
+            this.TB_관심그룹_종목명.Name = "TB_관심그룹_종목명";
+            this.TB_관심그룹_종목명.Size = new System.Drawing.Size(112, 21);
+            this.TB_관심그룹_종목명.TabIndex = 13;
+            this.TB_관심그룹_종목명.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_관심그룹_종목명.Click += new System.EventHandler(this.LB_관심_A_Click);
+            // 
+            // CB_관심등록
+            // 
+            this.CB_관심등록.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_관심등록.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_관심등록.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_관심등록.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_관심등록.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_관심등록.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_관심등록.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_관심등록.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CB_관심등록.Location = new System.Drawing.Point(-1, 137);
+            this.CB_관심등록.Name = "CB_관심등록";
+            this.CB_관심등록.Size = new System.Drawing.Size(84, 22);
+            this.CB_관심등록.TabIndex = 47;
+            this.CB_관심등록.Text = "□ 선택등록";
+            this.CB_관심등록.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CB_관심등록.UseVisualStyleBackColor = false;
+            this.CB_관심등록.CheckedChanged += new System.EventHandler(this.그룹선택_CheckedChanged);
+            // 
+            // label113
+            // 
+            this.label113.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label113.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label113.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label113.Location = new System.Drawing.Point(-2, 92);
+            this.label113.Name = "label113";
+            this.label113.Size = new System.Drawing.Size(56, 22);
+            this.label113.TabIndex = 50;
+            this.label113.Text = "관심그룹";
+            this.label113.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // BT_자동해제
             // 
             this.BT_자동해제.BackColor = System.Drawing.Color.MediumAquamarine;
@@ -1838,152 +1723,6 @@ namespace 지니_64
             this.BT_자동해제.Text = "자동 해제";
             this.BT_자동해제.UseVisualStyleBackColor = false;
             this.BT_자동해제.Click += new System.EventHandler(this.BT_자동해제_Click);
-            // 
-            // BT_관심등록
-            // 
-            this.BT_관심등록.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.BT_관심등록.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BT_관심등록.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_관심등록.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BT_관심등록.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_관심등록.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_관심등록.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BT_관심등록.Location = new System.Drawing.Point(-1, 160);
-            this.BT_관심등록.Name = "BT_관심등록";
-            this.BT_관심등록.Size = new System.Drawing.Size(84, 22);
-            this.BT_관심등록.TabIndex = 0;
-            this.BT_관심등록.Text = "관심 등록";
-            this.BT_관심등록.UseVisualStyleBackColor = false;
-            this.BT_관심등록.Click += new System.EventHandler(this.BT_관심등록_Click);
-            // 
-            // BT_관심삭제
-            // 
-            this.BT_관심삭제.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.BT_관심삭제.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BT_관심삭제.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_관심삭제.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BT_관심삭제.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_관심삭제.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_관심삭제.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BT_관심삭제.Location = new System.Drawing.Point(82, 160);
-            this.BT_관심삭제.Name = "BT_관심삭제";
-            this.BT_관심삭제.Size = new System.Drawing.Size(84, 22);
-            this.BT_관심삭제.TabIndex = 0;
-            this.BT_관심삭제.Text = "관심 삭제";
-            this.BT_관심삭제.UseVisualStyleBackColor = false;
-            this.BT_관심삭제.Click += new System.EventHandler(this.BT_관심삭제_Click);
-            // 
-            // label95
-            // 
-            this.label95.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label95.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label95.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label95.Location = new System.Drawing.Point(-1, 183);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(56, 20);
-            this.label95.TabIndex = 50;
-            this.label95.Text = "검색식";
-            this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CBB_관심검색식
-            // 
-            this.CBB_관심검색식.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.CBB_관심검색식.DropDownHeight = 600;
-            this.CBB_관심검색식.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_관심검색식.DropDownWidth = 200;
-            this.CBB_관심검색식.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_관심검색식.FormattingEnabled = true;
-            this.CBB_관심검색식.IntegralHeight = false;
-            this.CBB_관심검색식.Location = new System.Drawing.Point(54, 183);
-            this.CBB_관심검색식.Name = "CBB_관심검색식";
-            this.CBB_관심검색식.Size = new System.Drawing.Size(130, 20);
-            this.CBB_관심검색식.TabIndex = 34;
-            this.CBB_관심검색식.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.CBB_관심검색식.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.CBB_관심검색식.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
-            this.CBB_관심검색식.MouseHover += new System.EventHandler(this.combo_new_condition_A_MouseHover);
-            // 
-            // label173
-            // 
-            this.label173.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label173.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label173.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label173.Location = new System.Drawing.Point(-1, 115);
-            this.label173.Name = "label173";
-            this.label173.Size = new System.Drawing.Size(56, 21);
-            this.label173.TabIndex = 50;
-            this.label173.Text = "종목명";
-            this.label173.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CB_실시간관심등록
-            // 
-            this.CB_실시간관심등록.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_실시간관심등록.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_실시간관심등록.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_실시간관심등록.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_실시간관심등록.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_실시간관심등록.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_실시간관심등록.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_실시간관심등록.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CB_실시간관심등록.Location = new System.Drawing.Point(-1, 204);
-            this.CB_실시간관심등록.Margin = new System.Windows.Forms.Padding(0);
-            this.CB_실시간관심등록.Name = "CB_실시간관심등록";
-            this.CB_실시간관심등록.Size = new System.Drawing.Size(75, 21);
-            this.CB_실시간관심등록.TabIndex = 47;
-            this.CB_실시간관심등록.Text = "□검색시간";
-            this.CB_실시간관심등록.UseVisualStyleBackColor = false;
-            this.CB_실시간관심등록.CheckedChanged += new System.EventHandler(this.검색시간_CheckedChanged);
-            // 
-            // MTB_자동삭제기간
-            // 
-            this.MTB_자동삭제기간.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.MTB_자동삭제기간.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.MTB_자동삭제기간.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.MTB_자동삭제기간.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MTB_자동삭제기간.HidePromptOnLeave = true;
-            this.MTB_자동삭제기간.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.MTB_자동삭제기간.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
-            this.MTB_자동삭제기간.Location = new System.Drawing.Point(82, 294);
-            this.MTB_자동삭제기간.Mask = "000일";
-            this.MTB_자동삭제기간.Name = "MTB_자동삭제기간";
-            this.MTB_자동삭제기간.RejectInputOnFirstFailure = true;
-            this.MTB_자동삭제기간.Size = new System.Drawing.Size(39, 22);
-            this.MTB_자동삭제기간.TabIndex = 34;
-            this.MTB_자동삭제기간.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.MTB_자동삭제기간.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.MTB_자동삭제기간.ValidatingType = typeof(System.DateTime);
-            // 
-            // BT_검색요청
-            // 
-            this.BT_검색요청.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.BT_검색요청.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BT_검색요청.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_검색요청.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BT_검색요청.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_검색요청.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_검색요청.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BT_검색요청.Location = new System.Drawing.Point(121, 204);
-            this.BT_검색요청.Name = "BT_검색요청";
-            this.BT_검색요청.Size = new System.Drawing.Size(45, 21);
-            this.BT_검색요청.TabIndex = 0;
-            this.BT_검색요청.Text = "검색";
-            this.BT_검색요청.UseVisualStyleBackColor = false;
-            this.BT_검색요청.Click += new System.EventHandler(this.BT_검색요청_Click);
-            // 
-            // CBB_관심그룹변경_Title
-            // 
-            this.CBB_관심그룹변경_Title.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.CBB_관심그룹변경_Title.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_관심그룹변경_Title.DropDownWidth = 150;
-            this.CBB_관심그룹변경_Title.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBB_관심그룹변경_Title.FormattingEnabled = true;
-            this.CBB_관심그룹변경_Title.Items.AddRange(new object[] {
-            " "});
-            this.CBB_관심그룹변경_Title.Location = new System.Drawing.Point(59, 23);
-            this.CBB_관심그룹변경_Title.Name = "CBB_관심그룹변경_Title";
-            this.CBB_관심그룹변경_Title.Size = new System.Drawing.Size(125, 22);
-            this.CBB_관심그룹변경_Title.TabIndex = 34;
-            this.CBB_관심그룹변경_Title.DropDownClosed += new System.EventHandler(this.콤보_관심그룹_DropDownClosed);
             // 
             // CB_관심삭제
             // 
@@ -2004,24 +1743,383 @@ namespace 지니_64
             this.CB_관심삭제.UseVisualStyleBackColor = false;
             this.CB_관심삭제.CheckedChanged += new System.EventHandler(this.그룹선택_CheckedChanged);
             // 
-            // CB_관심등록
+            // TB_자동관심_동작시간
             // 
-            this.CB_관심등록.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_관심등록.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_관심등록.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_관심등록.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_관심등록.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_관심등록.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_관심등록.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_관심등록.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CB_관심등록.Location = new System.Drawing.Point(-1, 137);
-            this.CB_관심등록.Name = "CB_관심등록";
-            this.CB_관심등록.Size = new System.Drawing.Size(84, 22);
-            this.CB_관심등록.TabIndex = 47;
-            this.CB_관심등록.Text = "□ 선택등록";
-            this.CB_관심등록.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CB_관심등록.UseVisualStyleBackColor = false;
-            this.CB_관심등록.CheckedChanged += new System.EventHandler(this.그룹선택_CheckedChanged);
+            this.TB_자동관심_동작시간.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_자동관심_동작시간.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_자동관심_동작시간.Font = new System.Drawing.Font("Arial", 9F);
+            this.TB_자동관심_동작시간.Location = new System.Drawing.Point(72, 204);
+            this.TB_자동관심_동작시간.Name = "TB_자동관심_동작시간";
+            this.TB_자동관심_동작시간.Size = new System.Drawing.Size(49, 21);
+            this.TB_자동관심_동작시간.TabIndex = 53;
+            this.TB_자동관심_동작시간.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_자동관심_동작시간.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
+            // 
+            // CBB_관심그룹변경_Title
+            // 
+            this.CBB_관심그룹변경_Title.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.CBB_관심그룹변경_Title.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_관심그룹변경_Title.DropDownWidth = 150;
+            this.CBB_관심그룹변경_Title.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBB_관심그룹변경_Title.FormattingEnabled = true;
+            this.CBB_관심그룹변경_Title.Items.AddRange(new object[] {
+            " "});
+            this.CBB_관심그룹변경_Title.Location = new System.Drawing.Point(58, 23);
+            this.CBB_관심그룹변경_Title.Name = "CBB_관심그룹변경_Title";
+            this.CBB_관심그룹변경_Title.Size = new System.Drawing.Size(125, 22);
+            this.CBB_관심그룹변경_Title.TabIndex = 34;
+            this.CBB_관심그룹변경_Title.DropDownClosed += new System.EventHandler(this.콤보_관심그룹_DropDownClosed);
+            // 
+            // CB_실시간검색결과보기
+            // 
+            this.CB_실시간검색결과보기.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_실시간검색결과보기.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_실시간검색결과보기.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_실시간검색결과보기.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_실시간검색결과보기.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_실시간검색결과보기.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_실시간검색결과보기.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_실시간검색결과보기.Location = new System.Drawing.Point(-1, 248);
+            this.CB_실시간검색결과보기.Name = "CB_실시간검색결과보기";
+            this.CB_실시간검색결과보기.Size = new System.Drawing.Size(167, 21);
+            this.CB_실시간검색결과보기.TabIndex = 52;
+            this.CB_실시간검색결과보기.Text = "□ 실시간 검색결과 보기";
+            this.CB_실시간검색결과보기.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CB_실시간검색결과보기.UseVisualStyleBackColor = false;
+            this.CB_실시간검색결과보기.CheckedChanged += new System.EventHandler(this.Box_CheckedChanged);
+            // 
+            // BT_관심등록
+            // 
+            this.BT_관심등록.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.BT_관심등록.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BT_관심등록.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_관심등록.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BT_관심등록.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_관심등록.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_관심등록.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.BT_관심등록.Location = new System.Drawing.Point(-1, 160);
+            this.BT_관심등록.Name = "BT_관심등록";
+            this.BT_관심등록.Size = new System.Drawing.Size(84, 22);
+            this.BT_관심등록.TabIndex = 0;
+            this.BT_관심등록.Text = "관심 등록";
+            this.BT_관심등록.UseVisualStyleBackColor = false;
+            this.BT_관심등록.Click += new System.EventHandler(this.BT_관심등록_Click);
+            // 
+            // BT_미체결요청
+            // 
+            this.BT_미체결요청.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.BT_미체결요청.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BT_미체결요청.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_미체결요청.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BT_미체결요청.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_미체결요청.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_미체결요청.Font = new System.Drawing.Font("굴림체", 9F);
+            this.BT_미체결요청.Location = new System.Drawing.Point(75, 473);
+            this.BT_미체결요청.Margin = new System.Windows.Forms.Padding(0);
+            this.BT_미체결요청.Name = "BT_미체결요청";
+            this.BT_미체결요청.Size = new System.Drawing.Size(91, 25);
+            this.BT_미체결요청.TabIndex = 39;
+            this.BT_미체결요청.Text = "미체결요청";
+            this.BT_미체결요청.UseVisualStyleBackColor = false;
+            this.BT_미체결요청.Click += new System.EventHandler(this.BT_미체결요청_Click);
+            // 
+            // BT_검색요청
+            // 
+            this.BT_검색요청.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.BT_검색요청.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BT_검색요청.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_검색요청.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BT_검색요청.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_검색요청.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_검색요청.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.BT_검색요청.Location = new System.Drawing.Point(122, 204);
+            this.BT_검색요청.Name = "BT_검색요청";
+            this.BT_검색요청.Size = new System.Drawing.Size(45, 21);
+            this.BT_검색요청.TabIndex = 0;
+            this.BT_검색요청.Text = "검색";
+            this.BT_검색요청.UseVisualStyleBackColor = false;
+            this.BT_검색요청.Click += new System.EventHandler(this.BT_검색요청_Click);
+            // 
+            // label40
+            // 
+            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label40.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label40.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label40.ForeColor = System.Drawing.Color.DarkRed;
+            this.label40.Location = new System.Drawing.Point(-1, 46);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(167, 23);
+            this.label40.TabIndex = 46;
+            this.label40.Text = "관심종목";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CB_시세감시등록
+            // 
+            this.CB_시세감시등록.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_시세감시등록.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_시세감시등록.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_시세감시등록.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_시세감시등록.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_시세감시등록.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_시세감시등록.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_시세감시등록.Location = new System.Drawing.Point(-1, 226);
+            this.CB_시세감시등록.Name = "CB_시세감시등록";
+            this.CB_시세감시등록.Size = new System.Drawing.Size(167, 21);
+            this.CB_시세감시등록.TabIndex = 52;
+            this.CB_시세감시등록.Text = "□ 시세 감시 등록";
+            this.CB_시세감시등록.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.CB_시세감시등록, "관심종목의 실시간 시세 감시를 등록합니다. ");
+            this.CB_시세감시등록.UseVisualStyleBackColor = false;
+            this.CB_시세감시등록.CheckedChanged += new System.EventHandler(this.Box_CheckedChanged);
+            // 
+            // BT_관심삭제
+            // 
+            this.BT_관심삭제.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.BT_관심삭제.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BT_관심삭제.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_관심삭제.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BT_관심삭제.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_관심삭제.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_관심삭제.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.BT_관심삭제.Location = new System.Drawing.Point(82, 160);
+            this.BT_관심삭제.Name = "BT_관심삭제";
+            this.BT_관심삭제.Size = new System.Drawing.Size(84, 22);
+            this.BT_관심삭제.TabIndex = 0;
+            this.BT_관심삭제.Text = "관심 삭제";
+            this.BT_관심삭제.UseVisualStyleBackColor = false;
+            this.BT_관심삭제.Click += new System.EventHandler(this.BT_관심삭제_Click);
+            // 
+            // MTB_자동삭제기간
+            // 
+            this.MTB_자동삭제기간.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.MTB_자동삭제기간.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MTB_자동삭제기간.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.MTB_자동삭제기간.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MTB_자동삭제기간.HidePromptOnLeave = true;
+            this.MTB_자동삭제기간.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.MTB_자동삭제기간.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
+            this.MTB_자동삭제기간.Location = new System.Drawing.Point(81, 294);
+            this.MTB_자동삭제기간.Mask = "000일";
+            this.MTB_자동삭제기간.Name = "MTB_자동삭제기간";
+            this.MTB_자동삭제기간.RejectInputOnFirstFailure = true;
+            this.MTB_자동삭제기간.Size = new System.Drawing.Size(39, 22);
+            this.MTB_자동삭제기간.TabIndex = 34;
+            this.MTB_자동삭제기간.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.MTB_자동삭제기간.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.MTB_자동삭제기간.ValidatingType = typeof(System.DateTime);
+            // 
+            // BT_신규매수내역
+            // 
+            this.BT_신규매수내역.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.BT_신규매수내역.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BT_신규매수내역.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_신규매수내역.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BT_신규매수내역.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_신규매수내역.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_신규매수내역.Font = new System.Drawing.Font("굴림체", 9F);
+            this.BT_신규매수내역.Location = new System.Drawing.Point(75, 421);
+            this.BT_신규매수내역.Margin = new System.Windows.Forms.Padding(0);
+            this.BT_신규매수내역.Name = "BT_신규매수내역";
+            this.BT_신규매수내역.Size = new System.Drawing.Size(91, 25);
+            this.BT_신규매수내역.TabIndex = 12;
+            this.BT_신규매수내역.Text = "신규매수내역";
+            this.BT_신규매수내역.UseVisualStyleBackColor = false;
+            this.BT_신규매수내역.Click += new System.EventHandler(this.BT_신규매수내역_Click);
+            // 
+            // CBB_관심그룹
+            // 
+            this.CBB_관심그룹.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CBB_관심그룹.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_관심그룹.DropDownWidth = 103;
+            this.CBB_관심그룹.Font = new System.Drawing.Font("Arial", 8.25F);
+            this.CBB_관심그룹.FormattingEnabled = true;
+            this.CBB_관심그룹.Items.AddRange(new object[] {
+            " "});
+            this.CBB_관심그룹.Location = new System.Drawing.Point(53, 92);
+            this.CBB_관심그룹.Name = "CBB_관심그룹";
+            this.CBB_관심그룹.Size = new System.Drawing.Size(130, 22);
+            this.CBB_관심그룹.TabIndex = 34;
+            this.CBB_관심그룹.DropDownClosed += new System.EventHandler(this.콤보_관심그룹_DropDownClosed);
+            // 
+            // BT_그룹추가
+            // 
+            this.BT_그룹추가.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.BT_그룹추가.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BT_그룹추가.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_그룹추가.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BT_그룹추가.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_그룹추가.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_그룹추가.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.BT_그룹추가.Location = new System.Drawing.Point(-2, 70);
+            this.BT_그룹추가.Margin = new System.Windows.Forms.Padding(0);
+            this.BT_그룹추가.Name = "BT_그룹추가";
+            this.BT_그룹추가.Size = new System.Drawing.Size(40, 21);
+            this.BT_그룹추가.TabIndex = 0;
+            this.BT_그룹추가.Text = "추가";
+            this.BT_그룹추가.UseVisualStyleBackColor = false;
+            this.BT_그룹추가.Click += new System.EventHandler(this.BT_그룹추가_Click);
+            // 
+            // label95
+            // 
+            this.label95.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label95.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label95.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label95.Location = new System.Drawing.Point(-2, 183);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(56, 20);
+            this.label95.TabIndex = 50;
+            this.label95.Text = "검색식";
+            this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CB_실시간관심등록
+            // 
+            this.CB_실시간관심등록.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_실시간관심등록.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_실시간관심등록.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_실시간관심등록.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_실시간관심등록.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_실시간관심등록.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.CB_실시간관심등록.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_실시간관심등록.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CB_실시간관심등록.Location = new System.Drawing.Point(-2, 204);
+            this.CB_실시간관심등록.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_실시간관심등록.Name = "CB_실시간관심등록";
+            this.CB_실시간관심등록.Size = new System.Drawing.Size(75, 21);
+            this.CB_실시간관심등록.TabIndex = 47;
+            this.CB_실시간관심등록.Text = "□검색시간";
+            this.CB_실시간관심등록.UseVisualStyleBackColor = false;
+            this.CB_실시간관심등록.CheckedChanged += new System.EventHandler(this.검색시간_CheckedChanged);
+            // 
+            // BT_자동삭제
+            // 
+            this.BT_자동삭제.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.BT_자동삭제.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BT_자동삭제.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_자동삭제.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BT_자동삭제.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_자동삭제.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_자동삭제.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.BT_자동삭제.Location = new System.Drawing.Point(121, 294);
+            this.BT_자동삭제.Name = "BT_자동삭제";
+            this.BT_자동삭제.Size = new System.Drawing.Size(46, 22);
+            this.BT_자동삭제.TabIndex = 0;
+            this.BT_자동삭제.Text = "실행";
+            this.BT_자동삭제.UseVisualStyleBackColor = false;
+            this.BT_자동삭제.Click += new System.EventHandler(this.BT_자동삭제_Click);
+            // 
+            // BT_그룹삭제
+            // 
+            this.BT_그룹삭제.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.BT_그룹삭제.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BT_그룹삭제.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_그룹삭제.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BT_그룹삭제.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_그룹삭제.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_그룹삭제.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.BT_그룹삭제.Location = new System.Drawing.Point(128, 70);
+            this.BT_그룹삭제.Margin = new System.Windows.Forms.Padding(0);
+            this.BT_그룹삭제.Name = "BT_그룹삭제";
+            this.BT_그룹삭제.Size = new System.Drawing.Size(39, 21);
+            this.BT_그룹삭제.TabIndex = 0;
+            this.BT_그룹삭제.Text = "삭제";
+            this.BT_그룹삭제.UseVisualStyleBackColor = false;
+            this.BT_그룹삭제.Click += new System.EventHandler(this.BT_그룹삭제_Click);
+            // 
+            // CBB_관심검색식
+            // 
+            this.CBB_관심검색식.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.CBB_관심검색식.DropDownHeight = 600;
+            this.CBB_관심검색식.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_관심검색식.DropDownWidth = 200;
+            this.CBB_관심검색식.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_관심검색식.FormattingEnabled = true;
+            this.CBB_관심검색식.IntegralHeight = false;
+            this.CBB_관심검색식.Location = new System.Drawing.Point(53, 183);
+            this.CBB_관심검색식.Name = "CBB_관심검색식";
+            this.CBB_관심검색식.Size = new System.Drawing.Size(130, 20);
+            this.CBB_관심검색식.TabIndex = 34;
+            this.CBB_관심검색식.DropDown += new System.EventHandler(this.Combo_Condition_Add);
+            this.CBB_관심검색식.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.CBB_관심검색식.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
+            this.CBB_관심검색식.MouseHover += new System.EventHandler(this.신규_A_MouseHover);
+            // 
+            // BT_전량매도내역
+            // 
+            this.BT_전량매도내역.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.BT_전량매도내역.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BT_전량매도내역.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_전량매도내역.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BT_전량매도내역.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_전량매도내역.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_전량매도내역.Font = new System.Drawing.Font("굴림체", 9F);
+            this.BT_전량매도내역.Location = new System.Drawing.Point(75, 447);
+            this.BT_전량매도내역.Margin = new System.Windows.Forms.Padding(0);
+            this.BT_전량매도내역.Name = "BT_전량매도내역";
+            this.BT_전량매도내역.Size = new System.Drawing.Size(91, 25);
+            this.BT_전량매도내역.TabIndex = 12;
+            this.BT_전량매도내역.Text = "전량매도내역";
+            this.BT_전량매도내역.UseVisualStyleBackColor = false;
+            this.BT_전량매도내역.Click += new System.EventHandler(this.BT_전량매도내역_Click);
+            // 
+            // label173
+            // 
+            this.label173.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label173.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label173.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label173.Location = new System.Drawing.Point(-1, 115);
+            this.label173.Name = "label173";
+            this.label173.Size = new System.Drawing.Size(56, 21);
+            this.label173.TabIndex = 50;
+            this.label173.Text = "종목명";
+            this.label173.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BT_Setting_Load
+            // 
+            this.BT_Setting_Load.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.BT_Setting_Load.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BT_Setting_Load.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_Setting_Load.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BT_Setting_Load.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_Setting_Load.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_Setting_Load.Font = new System.Drawing.Font("굴림체", 9F);
+            this.BT_Setting_Load.Location = new System.Drawing.Point(-1, 395);
+            this.BT_Setting_Load.Margin = new System.Windows.Forms.Padding(0);
+            this.BT_Setting_Load.Name = "BT_Setting_Load";
+            this.BT_Setting_Load.Size = new System.Drawing.Size(167, 25);
+            this.BT_Setting_Load.TabIndex = 12;
+            this.BT_Setting_Load.Text = "환경설정 불러오기";
+            this.BT_Setting_Load.UseVisualStyleBackColor = false;
+            this.BT_Setting_Load.Click += new System.EventHandler(this.BT_Setting_Load_Click);
+            // 
+            // TB_관심그룹추가
+            // 
+            this.TB_관심그룹추가.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.TB_관심그룹추가.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.TB_관심그룹추가.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_관심그룹추가.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_관심그룹추가.Font = new System.Drawing.Font("Arial", 9F);
+            this.TB_관심그룹추가.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.TB_관심그룹추가.Location = new System.Drawing.Point(37, 70);
+            this.TB_관심그룹추가.Name = "TB_관심그룹추가";
+            this.TB_관심그룹추가.Size = new System.Drawing.Size(90, 21);
+            this.TB_관심그룹추가.TabIndex = 13;
+            this.TB_관심그룹추가.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // CBB_그룹자동삭제
+            // 
+            this.CBB_그룹자동삭제.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CBB_그룹자동삭제.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_그룹자동삭제.DropDownWidth = 80;
+            this.CBB_그룹자동삭제.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBB_그룹자동삭제.FormattingEnabled = true;
+            this.CBB_그룹자동삭제.Items.AddRange(new object[] {
+            "삭제해제",
+            "자동삭제",
+            "이탈삭제"});
+            this.CBB_그룹자동삭제.Location = new System.Drawing.Point(-2, 294);
+            this.CBB_그룹자동삭제.Name = "CBB_그룹자동삭제";
+            this.CBB_그룹자동삭제.Size = new System.Drawing.Size(105, 22);
+            this.CBB_그룹자동삭제.TabIndex = 34;
             // 
             // CBB_관심그룹변경
             // 
@@ -2070,243 +2168,168 @@ namespace 지니_64
             "기간_D",
             "기간_E",
             "기간_F"});
-            this.CBB_관심그룹변경.Location = new System.Drawing.Point(-1, 23);
+            this.CBB_관심그룹변경.Location = new System.Drawing.Point(-2, 23);
             this.CBB_관심그룹변경.Name = "CBB_관심그룹변경";
             this.CBB_관심그룹변경.Size = new System.Drawing.Size(80, 22);
             this.CBB_관심그룹변경.TabIndex = 34;
             this.CBB_관심그룹변경.DropDownClosed += new System.EventHandler(this.CBB_신규그룹_DropDownClosed);
             // 
-            // TB_관심그룹_종목명
+            // LB_검색결과n관심리스트
             // 
-            this.TB_관심그룹_종목명.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.TB_관심그룹_종목명.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.TB_관심그룹_종목명.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TB_관심그룹_종목명.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_관심그룹_종목명.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_관심그룹_종목명.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.TB_관심그룹_종목명.Location = new System.Drawing.Point(54, 115);
-            this.TB_관심그룹_종목명.MaxLength = 100;
-            this.TB_관심그룹_종목명.Name = "TB_관심그룹_종목명";
-            this.TB_관심그룹_종목명.Size = new System.Drawing.Size(112, 21);
-            this.TB_관심그룹_종목명.TabIndex = 13;
-            this.TB_관심그룹_종목명.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_관심그룹_종목명.Click += new System.EventHandler(this.LB_관심_A_Click);
+            this.LB_검색결과n관심리스트.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.LB_검색결과n관심리스트.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.LB_검색결과n관심리스트.FormattingEnabled = true;
+            this.LB_검색결과n관심리스트.HorizontalScrollbar = true;
+            this.LB_검색결과n관심리스트.Location = new System.Drawing.Point(167, 25);
+            this.LB_검색결과n관심리스트.Margin = new System.Windows.Forms.Padding(0);
+            this.LB_검색결과n관심리스트.Name = "LB_검색결과n관심리스트";
+            this.LB_검색결과n관심리스트.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.LB_검색결과n관심리스트.Size = new System.Drawing.Size(235, 498);
+            this.LB_검색결과n관심리스트.TabIndex = 33;
+            this.LB_검색결과n관심리스트.Click += new System.EventHandler(this.LB_관심_A_Click);
+            this.LB_검색결과n관심리스트.SelectedIndexChanged += new System.EventHandler(this.LB_검색결과n관심리스트_SelectedIndexChanged);
             // 
-            // label113
+            // label118
             // 
-            this.label113.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label113.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label113.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label113.Location = new System.Drawing.Point(-1, 92);
-            this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(56, 22);
-            this.label113.TabIndex = 50;
-            this.label113.Text = "관심그룹";
-            this.label113.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label118.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label118.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label118.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label118.Location = new System.Drawing.Point(867, 1);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(76, 23);
+            this.label118.TabIndex = 50;
+            this.label118.Text = "관심그룹";
+            this.label118.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CBB_그룹자동삭제
+            // label117
             // 
-            this.CBB_그룹자동삭제.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CBB_그룹자동삭제.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_그룹자동삭제.DropDownWidth = 80;
-            this.CBB_그룹자동삭제.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBB_그룹자동삭제.FormattingEnabled = true;
-            this.CBB_그룹자동삭제.Items.AddRange(new object[] {
-            "삭제해제",
-            "자동삭제",
-            "이탈삭제"});
-            this.CBB_그룹자동삭제.Location = new System.Drawing.Point(-1, 294);
-            this.CBB_그룹자동삭제.Name = "CBB_그룹자동삭제";
-            this.CBB_그룹자동삭제.Size = new System.Drawing.Size(105, 22);
-            this.CBB_그룹자동삭제.TabIndex = 34;
+            this.label117.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label117.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label117.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label117.Location = new System.Drawing.Point(634, 1);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(75, 23);
+            this.label117.TabIndex = 50;
+            this.label117.Text = "관심그룹";
+            this.label117.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CB_실시간검색결과보기
+            // label115
             // 
-            this.CB_실시간검색결과보기.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_실시간검색결과보기.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_실시간검색결과보기.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_실시간검색결과보기.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_실시간검색결과보기.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_실시간검색결과보기.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_실시간검색결과보기.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_실시간검색결과보기.Location = new System.Drawing.Point(-1, 248);
-            this.CB_실시간검색결과보기.Name = "CB_실시간검색결과보기";
-            this.CB_실시간검색결과보기.Size = new System.Drawing.Size(167, 21);
-            this.CB_실시간검색결과보기.TabIndex = 52;
-            this.CB_실시간검색결과보기.Text = "□ 실시간 검색결과 보기";
-            this.CB_실시간검색결과보기.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CB_실시간검색결과보기.UseVisualStyleBackColor = false;
-            this.CB_실시간검색결과보기.CheckedChanged += new System.EventHandler(this.Box_CheckedChanged);
+            this.label115.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label115.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label115.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label115.Location = new System.Drawing.Point(401, 1);
+            this.label115.Name = "label115";
+            this.label115.Size = new System.Drawing.Size(75, 23);
+            this.label115.TabIndex = 50;
+            this.label115.Text = "관심그룹";
+            this.label115.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CB_시세감시등록
+            // CBB_실시간n그룹n관심자동
             // 
-            this.CB_시세감시등록.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_시세감시등록.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_시세감시등록.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_시세감시등록.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_시세감시등록.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_시세감시등록.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.CB_시세감시등록.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_시세감시등록.Location = new System.Drawing.Point(-1, 226);
-            this.CB_시세감시등록.Name = "CB_시세감시등록";
-            this.CB_시세감시등록.Size = new System.Drawing.Size(167, 21);
-            this.CB_시세감시등록.TabIndex = 52;
-            this.CB_시세감시등록.Text = "□ 시세 감시 등록";
-            this.CB_시세감시등록.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.CB_시세감시등록, "관심종목의 실시간 시세 감시를 등록합니다. ");
-            this.CB_시세감시등록.UseVisualStyleBackColor = false;
-            this.CB_시세감시등록.CheckedChanged += new System.EventHandler(this.Box_CheckedChanged);
+            this.CBB_실시간n그룹n관심자동.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CBB_실시간n그룹n관심자동.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_실시간n그룹n관심자동.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBB_실시간n그룹n관심자동.FormattingEnabled = true;
+            this.CBB_실시간n그룹n관심자동.Items.AddRange(new object[] {
+            "검색결과 (시장/종목명/현재가)",
+            "조건별 매매그룹 리스트",
+            "관종그룹 자동추가 리스트"});
+            this.CBB_실시간n그룹n관심자동.Location = new System.Drawing.Point(167, 1);
+            this.CBB_실시간n그룹n관심자동.Name = "CBB_실시간n그룹n관심자동";
+            this.CBB_실시간n그룹n관심자동.Size = new System.Drawing.Size(235, 23);
+            this.CBB_실시간n그룹n관심자동.TabIndex = 34;
+            this.CBB_실시간n그룹n관심자동.DropDownClosed += new System.EventHandler(this.CBB_실시간n그룹n관심자동_DropDownClosed);
             // 
-            // BT_그룹추가
+            // CBB_관심그룹_A
             // 
-            this.BT_그룹추가.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.BT_그룹추가.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BT_그룹추가.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_그룹추가.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BT_그룹추가.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_그룹추가.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_그룹추가.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BT_그룹추가.Location = new System.Drawing.Point(-1, 70);
-            this.BT_그룹추가.Margin = new System.Windows.Forms.Padding(0);
-            this.BT_그룹추가.Name = "BT_그룹추가";
-            this.BT_그룹추가.Size = new System.Drawing.Size(40, 21);
-            this.BT_그룹추가.TabIndex = 0;
-            this.BT_그룹추가.Text = "추가";
-            this.BT_그룹추가.UseVisualStyleBackColor = false;
-            this.BT_그룹추가.Click += new System.EventHandler(this.BT_그룹추가_Click);
+            this.CBB_관심그룹_A.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CBB_관심그룹_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_관심그룹_A.DropDownWidth = 200;
+            this.CBB_관심그룹_A.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBB_관심그룹_A.FormattingEnabled = true;
+            this.CBB_관심그룹_A.Location = new System.Drawing.Point(475, 1);
+            this.CBB_관심그룹_A.Name = "CBB_관심그룹_A";
+            this.CBB_관심그룹_A.Size = new System.Drawing.Size(161, 23);
+            this.CBB_관심그룹_A.TabIndex = 34;
+            this.CBB_관심그룹_A.DropDownClosed += new System.EventHandler(this.콤보_관심그룹_DropDownClosed);
             // 
-            // BT_그룹삭제
+            // CBB_관심그룹_B
             // 
-            this.BT_그룹삭제.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.BT_그룹삭제.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BT_그룹삭제.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_그룹삭제.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BT_그룹삭제.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_그룹삭제.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_그룹삭제.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BT_그룹삭제.Location = new System.Drawing.Point(127, 70);
-            this.BT_그룹삭제.Margin = new System.Windows.Forms.Padding(0);
-            this.BT_그룹삭제.Name = "BT_그룹삭제";
-            this.BT_그룹삭제.Size = new System.Drawing.Size(39, 21);
-            this.BT_그룹삭제.TabIndex = 0;
-            this.BT_그룹삭제.Text = "삭제";
-            this.BT_그룹삭제.UseVisualStyleBackColor = false;
-            this.BT_그룹삭제.Click += new System.EventHandler(this.BT_그룹삭제_Click);
+            this.CBB_관심그룹_B.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CBB_관심그룹_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_관심그룹_B.DropDownWidth = 200;
+            this.CBB_관심그룹_B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.CBB_관심그룹_B.FormattingEnabled = true;
+            this.CBB_관심그룹_B.Location = new System.Drawing.Point(708, 1);
+            this.CBB_관심그룹_B.Name = "CBB_관심그룹_B";
+            this.CBB_관심그룹_B.Size = new System.Drawing.Size(161, 23);
+            this.CBB_관심그룹_B.TabIndex = 34;
+            this.CBB_관심그룹_B.DropDownClosed += new System.EventHandler(this.콤보_관심그룹_DropDownClosed);
             // 
-            // BT_관심그룹변경
+            // CBB_관심그룹_C
             // 
-            this.BT_관심그룹변경.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.BT_관심그룹변경.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BT_관심그룹변경.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_관심그룹변경.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BT_관심그룹변경.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_관심그룹변경.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_관심그룹변경.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BT_관심그룹변경.Location = new System.Drawing.Point(-1, -1);
-            this.BT_관심그룹변경.Name = "BT_관심그룹변경";
-            this.BT_관심그룹변경.Size = new System.Drawing.Size(167, 23);
-            this.BT_관심그룹변경.TabIndex = 0;
-            this.BT_관심그룹변경.Text = "관심그룹 변경";
-            this.toolTip1.SetToolTip(this.BT_관심그룹변경, "# 매매구분별 관심그룹을 지정합니다.");
-            this.BT_관심그룹변경.UseVisualStyleBackColor = false;
-            this.BT_관심그룹변경.Click += new System.EventHandler(this.BT_관심그룹변경_Click);
+            this.CBB_관심그룹_C.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CBB_관심그룹_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_관심그룹_C.DropDownWidth = 200;
+            this.CBB_관심그룹_C.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.CBB_관심그룹_C.FormattingEnabled = true;
+            this.CBB_관심그룹_C.Location = new System.Drawing.Point(942, 1);
+            this.CBB_관심그룹_C.Name = "CBB_관심그룹_C";
+            this.CBB_관심그룹_C.Size = new System.Drawing.Size(160, 23);
+            this.CBB_관심그룹_C.TabIndex = 34;
+            this.CBB_관심그룹_C.DropDownClosed += new System.EventHandler(this.콤보_관심그룹_DropDownClosed);
             // 
-            // TB_관심그룹추가
+            // LB_관심_B
             // 
-            this.TB_관심그룹추가.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.TB_관심그룹추가.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.TB_관심그룹추가.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TB_관심그룹추가.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_관심그룹추가.Font = new System.Drawing.Font("Arial", 9F);
-            this.TB_관심그룹추가.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.TB_관심그룹추가.Location = new System.Drawing.Point(38, 70);
-            this.TB_관심그룹추가.Name = "TB_관심그룹추가";
-            this.TB_관심그룹추가.Size = new System.Drawing.Size(90, 21);
-            this.TB_관심그룹추가.TabIndex = 13;
-            this.TB_관심그룹추가.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.LB_관심_B.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.LB_관심_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.LB_관심_B.FormattingEnabled = true;
+            this.LB_관심_B.HorizontalScrollbar = true;
+            this.LB_관심_B.Location = new System.Drawing.Point(634, 25);
+            this.LB_관심_B.Margin = new System.Windows.Forms.Padding(0);
+            this.LB_관심_B.Name = "LB_관심_B";
+            this.LB_관심_B.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.LB_관심_B.Size = new System.Drawing.Size(234, 498);
+            this.LB_관심_B.TabIndex = 33;
+            this.LB_관심_B.Click += new System.EventHandler(this.LB_관심_A_Click);
+            this.LB_관심_B.SelectedIndexChanged += new System.EventHandler(this.LB_관심_A_SelectedIndexChanged);
             // 
-            // BT_자동삭제
+            // LB_관심_A
             // 
-            this.BT_자동삭제.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.BT_자동삭제.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BT_자동삭제.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_자동삭제.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BT_자동삭제.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_자동삭제.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_자동삭제.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BT_자동삭제.Location = new System.Drawing.Point(120, 294);
-            this.BT_자동삭제.Name = "BT_자동삭제";
-            this.BT_자동삭제.Size = new System.Drawing.Size(46, 22);
-            this.BT_자동삭제.TabIndex = 0;
-            this.BT_자동삭제.Text = "실행";
-            this.BT_자동삭제.UseVisualStyleBackColor = false;
-            this.BT_자동삭제.Click += new System.EventHandler(this.BT_자동삭제_Click);
+            this.LB_관심_A.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.LB_관심_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.LB_관심_A.FormattingEnabled = true;
+            this.LB_관심_A.HorizontalScrollbar = true;
+            this.LB_관심_A.Location = new System.Drawing.Point(401, 25);
+            this.LB_관심_A.Margin = new System.Windows.Forms.Padding(0);
+            this.LB_관심_A.Name = "LB_관심_A";
+            this.LB_관심_A.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.LB_관심_A.Size = new System.Drawing.Size(234, 498);
+            this.LB_관심_A.TabIndex = 33;
+            this.LB_관심_A.Click += new System.EventHandler(this.LB_관심_A_Click);
+            this.LB_관심_A.SelectedIndexChanged += new System.EventHandler(this.LB_관심_A_SelectedIndexChanged);
             // 
-            // CBB_관심그룹
+            // LB_관심_C
             // 
-            this.CBB_관심그룹.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CBB_관심그룹.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_관심그룹.DropDownWidth = 103;
-            this.CBB_관심그룹.Font = new System.Drawing.Font("Arial", 8.25F);
-            this.CBB_관심그룹.FormattingEnabled = true;
-            this.CBB_관심그룹.Items.AddRange(new object[] {
-            " "});
-            this.CBB_관심그룹.Location = new System.Drawing.Point(54, 92);
-            this.CBB_관심그룹.Name = "CBB_관심그룹";
-            this.CBB_관심그룹.Size = new System.Drawing.Size(130, 22);
-            this.CBB_관심그룹.TabIndex = 34;
-            this.CBB_관심그룹.DropDownClosed += new System.EventHandler(this.콤보_관심그룹_DropDownClosed);
-            // 
-            // label40
-            // 
-            this.label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label40.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label40.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label40.ForeColor = System.Drawing.Color.DarkRed;
-            this.label40.Location = new System.Drawing.Point(-1, 46);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(167, 23);
-            this.label40.TabIndex = 46;
-            this.label40.Text = "관심종목";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TB_자동관심_동작시간
-            // 
-            this.TB_자동관심_동작시간.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TB_자동관심_동작시간.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_자동관심_동작시간.Font = new System.Drawing.Font("Arial", 9F);
-            this.TB_자동관심_동작시간.Location = new System.Drawing.Point(73, 204);
-            this.TB_자동관심_동작시간.Name = "TB_자동관심_동작시간";
-            this.TB_자동관심_동작시간.Size = new System.Drawing.Size(49, 21);
-            this.TB_자동관심_동작시간.TabIndex = 53;
-            this.TB_자동관심_동작시간.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_자동관심_동작시간.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
-            // 
-            // BT_미체결요청
-            // 
-            this.BT_미체결요청.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.BT_미체결요청.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BT_미체결요청.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_미체결요청.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.BT_미체결요청.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.BT_미체결요청.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_미체결요청.Font = new System.Drawing.Font("굴림체", 9F);
-            this.BT_미체결요청.Location = new System.Drawing.Point(75, 473);
-            this.BT_미체결요청.Margin = new System.Windows.Forms.Padding(0);
-            this.BT_미체결요청.Name = "BT_미체결요청";
-            this.BT_미체결요청.Size = new System.Drawing.Size(91, 25);
-            this.BT_미체결요청.TabIndex = 39;
-            this.BT_미체결요청.Text = "미체결요청";
-            this.BT_미체결요청.UseVisualStyleBackColor = false;
-            this.BT_미체결요청.Click += new System.EventHandler(this.BT_미체결요청_Click);
+            this.LB_관심_C.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.LB_관심_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.LB_관심_C.FormattingEnabled = true;
+            this.LB_관심_C.HorizontalScrollbar = true;
+            this.LB_관심_C.Location = new System.Drawing.Point(867, 25);
+            this.LB_관심_C.Margin = new System.Windows.Forms.Padding(0);
+            this.LB_관심_C.Name = "LB_관심_C";
+            this.LB_관심_C.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
+            this.LB_관심_C.Size = new System.Drawing.Size(235, 498);
+            this.LB_관심_C.TabIndex = 33;
+            this.LB_관심_C.Click += new System.EventHandler(this.LB_관심_A_Click);
+            this.LB_관심_C.SelectedIndexChanged += new System.EventHandler(this.LB_관심_A_SelectedIndexChanged);
             // 
             // TP_잔고
             // 
             this.TP_잔고.BackColor = System.Drawing.SystemColors.ControlLight;
             this.TP_잔고.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TP_잔고.Controls.Add(this.JanGo_dataGridView);
-            this.TP_잔고.Controls.Add(this.LB_주문내역);
-            this.TP_잔고.Controls.Add(this.종목감추기_잔고);
+            this.TP_잔고.Controls.Add(this.panel_TP_잔고);
             this.TP_잔고.Location = new System.Drawing.Point(4, 22);
             this.TP_잔고.Margin = new System.Windows.Forms.Padding(0);
             this.TP_잔고.Name = "TP_잔고";
@@ -2314,77 +2337,92 @@ namespace 지니_64
             this.TP_잔고.TabIndex = 1;
             this.TP_잔고.Text = "잔고";
             // 
+            // panel_TP_잔고
+            // 
+            this.panel_TP_잔고.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_TP_잔고.Controls.Add(this.JanGo_dataGridView);
+            this.panel_TP_잔고.Controls.Add(this.종목감추기_잔고);
+            this.panel_TP_잔고.Controls.Add(this.Label_주문내역);
+            this.panel_TP_잔고.Location = new System.Drawing.Point(-1, -1);
+            this.panel_TP_잔고.Name = "panel_TP_잔고";
+            this.panel_TP_잔고.Size = new System.Drawing.Size(1103, 518);
+            this.panel_TP_잔고.TabIndex = 68;
+            // 
             // JanGo_dataGridView
             // 
             this.JanGo_dataGridView.AllowUserToAddRows = false;
             this.JanGo_dataGridView.AllowUserToDeleteRows = false;
             this.JanGo_dataGridView.AllowUserToOrderColumns = true;
             this.JanGo_dataGridView.AllowUserToResizeRows = false;
-            dataGridViewCellStyle182.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.JanGo_dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle182;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.JanGo_dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.JanGo_dataGridView.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.JanGo_dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.JanGo_dataGridView.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            dataGridViewCellStyle183.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle183.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle183.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle183.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle183.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle183.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle183.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.JanGo_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle183;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.JanGo_dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.JanGo_dataGridView.ColumnHeadersHeight = 20;
             this.JanGo_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.JanGo_dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.선택_잔고A,
-            this.그룹_잔고A,
-            this.NUM_잔고A,
-            this.시장구분_잔고A,
-            this.종목상태_잔고A,
-            this.종목명_잔고A,
-            this.현재가_잔고A,
-            this.등락율_잔고A,
-            this.평균단가_잔고A,
-            this.수익률_잔고A,
-            this.평가손익_잔고A,
-            this.금일수익금_잔고A,
-            this.누적손익_잔고A,
-            this.예상손익_잔고A,
-            this.매입금액_잔고A,
-            this.보유비중_잔고A,
-            this.주문가능수량_잔고A,
-            this.최고수익률_잔고A,
-            this.최저수익률_잔고A,
-            this.보유수량_잔고A,
-            this.평가금액_잔고A,
-            this.매수횟수_잔고A,
-            this.매도횟수_잔고A,
-            this.금일매수금_잔고A,
-            this.금일매도금_잔고A,
-            this.전일매수량_잔고A,
-            this.전일매도량_잔고A,
-            this.초기매수일_잔고A,
-            this.추가매수일_잔고A,
-            this.거래일_잔고A,
+            this.선택_잔고,
+            this.그룹_잔고,
+            this.NUM_잔고,
+            this.시장구분_잔고,
+            this.융자_잔고,
+            this.종목상태_잔고,
+            this.종목명_잔고,
+            this.현재가_잔고,
+            this.등락율_잔고,
+            this.평균단가_잔고,
+            this.수익률_잔고,
+            this.평가손익_잔고,
+            this.금일수익금_잔고,
+            this.누적손익_잔고,
+            this.예상손익_잔고,
+            this.매입금액_잔고,
+            this.보유비중_잔고,
+            this.주문가능수량_잔고,
+            this.최고수익률_잔고,
+            this.최저수익률_잔고,
+            this.보유수량_잔고,
+            this.평가금액_잔고,
+            this.신용이자,
+            this.매수횟수_잔고,
+            this.매도횟수_잔고,
+            this.금일매수금_잔고,
+            this.금일매도금_잔고,
+            this.전일매수량_잔고,
+            this.전일매도량_잔고,
+            this.초기매수일_잔고,
+            this.추가매수일_잔고,
+            this.거래일_잔고,
             this.초기매수검색식,
-            this.코드_잔고A,
-            this.재매수_잔고A});
-            dataGridViewCellStyle216.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle216.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle216.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle216.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle216.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle216.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle216.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.JanGo_dataGridView.DefaultCellStyle = dataGridViewCellStyle216;
+            this.코드_잔고,
+            this.재매수_잔고});
+            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle37.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle37.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.JanGo_dataGridView.DefaultCellStyle = dataGridViewCellStyle37;
             this.JanGo_dataGridView.EnableHeadersVisualStyles = false;
-            this.JanGo_dataGridView.Location = new System.Drawing.Point(-3, -2);
+            this.JanGo_dataGridView.Location = new System.Drawing.Point(-1, -1);
             this.JanGo_dataGridView.Margin = new System.Windows.Forms.Padding(0);
             this.JanGo_dataGridView.MultiSelect = false;
             this.JanGo_dataGridView.Name = "JanGo_dataGridView";
             this.JanGo_dataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle217.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.JanGo_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle217;
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.JanGo_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle38;
             this.JanGo_dataGridView.RowHeadersVisible = false;
             this.JanGo_dataGridView.RowTemplate.Height = 23;
             this.JanGo_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -2393,37 +2431,37 @@ namespace 지니_64
             this.JanGo_dataGridView.TabStop = false;
             this.JanGo_dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellClick);
             this.JanGo_dataGridView.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.JanGo_dataGridView_A_CellMouseClick);
-            this.JanGo_dataGridView.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dataGridView_JanGo_A_CellPainting);
+            this.JanGo_dataGridView.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.DataGridView_JanGo_A_CellPainting);
             this.JanGo_dataGridView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_CellValueChanged);
-            this.JanGo_dataGridView.CurrentCellDirtyStateChanged += new System.EventHandler(this.dataGridView_CurrentCellDirtyStateChanged);
+            this.JanGo_dataGridView.CurrentCellDirtyStateChanged += new System.EventHandler(this.DataGridView_CurrentCellDirtyStateChanged);
             this.JanGo_dataGridView.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.JanGo_dataGridView_A_EditingControlShowing);
-            this.JanGo_dataGridView.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGridView_RowPostPaint);
+            this.JanGo_dataGridView.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.DataGridView_RowPostPaint);
             // 
-            // 선택_잔고A
+            // 선택_잔고
             // 
-            this.선택_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.선택_잔고A.DataPropertyName = "선택";
-            this.선택_잔고A.FillWeight = 1F;
-            this.선택_잔고A.Frozen = true;
-            this.선택_잔고A.HeaderText = "√";
-            this.선택_잔고A.MinimumWidth = 10;
-            this.선택_잔고A.Name = "선택_잔고A";
-            this.선택_잔고A.ReadOnly = true;
-            this.선택_잔고A.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.선택_잔고A.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.선택_잔고A.ToolTipText = "선택";
-            this.선택_잔고A.TrueValue = "true";
-            this.선택_잔고A.Width = 26;
+            this.선택_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.선택_잔고.DataPropertyName = "선택";
+            this.선택_잔고.FillWeight = 1F;
+            this.선택_잔고.Frozen = true;
+            this.선택_잔고.HeaderText = "√";
+            this.선택_잔고.MinimumWidth = 10;
+            this.선택_잔고.Name = "선택_잔고";
+            this.선택_잔고.ReadOnly = true;
+            this.선택_잔고.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.선택_잔고.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.선택_잔고.ToolTipText = "선택";
+            this.선택_잔고.TrueValue = "true";
+            this.선택_잔고.Width = 26;
             // 
-            // 그룹_잔고A
+            // 그룹_잔고
             // 
-            dataGridViewCellStyle184.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.그룹_잔고A.DefaultCellStyle = dataGridViewCellStyle184;
-            this.그룹_잔고A.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
-            this.그룹_잔고A.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.그룹_잔고A.Frozen = true;
-            this.그룹_잔고A.HeaderText = "G";
-            this.그룹_잔고A.Items.AddRange(new object[] {
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.그룹_잔고.DefaultCellStyle = dataGridViewCellStyle3;
+            this.그룹_잔고.DisplayStyle = System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing;
+            this.그룹_잔고.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.그룹_잔고.Frozen = true;
+            this.그룹_잔고.HeaderText = "G";
+            this.그룹_잔고.Items.AddRange(new object[] {
             " ",
             "A",
             "B",
@@ -2436,387 +2474,410 @@ namespace 지니_64
             "I",
             "J",
             "K",
-            "L"});
-            this.그룹_잔고A.Name = "그룹_잔고A";
-            this.그룹_잔고A.ToolTipText = "매매그룹지정";
-            this.그룹_잔고A.Width = 25;
+            "L",
+            "X"});
+            this.그룹_잔고.Name = "그룹_잔고";
+            this.그룹_잔고.ToolTipText = "매매그룹지정 ( \'X\' : 매매가 되지 않고 잔고수에 포함되지 않습니다. 단. 기능설정. ETF 비율제외를 선택하면  ETF 일때만 미수금 정리에" +
+    " 포함됩니다.)";
+            this.그룹_잔고.Width = 25;
             // 
-            // NUM_잔고A
+            // NUM_잔고
             // 
-            this.NUM_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle185.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.NUM_잔고A.DefaultCellStyle = dataGridViewCellStyle185;
-            this.NUM_잔고A.Frozen = true;
-            this.NUM_잔고A.HeaderText = "N";
-            this.NUM_잔고A.Name = "NUM_잔고A";
-            this.NUM_잔고A.ReadOnly = true;
-            this.NUM_잔고A.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.NUM_잔고A.ToolTipText = "종목번호";
-            this.NUM_잔고A.Width = 25;
+            this.NUM_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.NUM_잔고.DefaultCellStyle = dataGridViewCellStyle4;
+            this.NUM_잔고.Frozen = true;
+            this.NUM_잔고.HeaderText = "N";
+            this.NUM_잔고.Name = "NUM_잔고";
+            this.NUM_잔고.ReadOnly = true;
+            this.NUM_잔고.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.NUM_잔고.ToolTipText = "종목번호";
+            this.NUM_잔고.Width = 22;
             // 
-            // 시장구분_잔고A
+            // 시장구분_잔고
             // 
-            this.시장구분_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.시장구분_잔고A.DataPropertyName = "시장";
-            dataGridViewCellStyle186.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.시장구분_잔고A.DefaultCellStyle = dataGridViewCellStyle186;
-            this.시장구분_잔고A.FillWeight = 2F;
-            this.시장구분_잔고A.Frozen = true;
-            this.시장구분_잔고A.HeaderText = "M";
-            this.시장구분_잔고A.MinimumWidth = 10;
-            this.시장구분_잔고A.Name = "시장구분_잔고A";
-            this.시장구분_잔고A.ReadOnly = true;
-            this.시장구분_잔고A.ToolTipText = "시장구분";
-            this.시장구분_잔고A.Width = 22;
+            this.시장구분_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.시장구분_잔고.DataPropertyName = "시장";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.시장구분_잔고.DefaultCellStyle = dataGridViewCellStyle5;
+            this.시장구분_잔고.FillWeight = 2F;
+            this.시장구분_잔고.Frozen = true;
+            this.시장구분_잔고.HeaderText = "M";
+            this.시장구분_잔고.MinimumWidth = 10;
+            this.시장구분_잔고.Name = "시장구분_잔고";
+            this.시장구분_잔고.ReadOnly = true;
+            this.시장구분_잔고.ToolTipText = "시장구분";
+            this.시장구분_잔고.Width = 22;
             // 
-            // 종목상태_잔고A
+            // 융자_잔고
             // 
-            dataGridViewCellStyle187.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.종목상태_잔고A.DefaultCellStyle = dataGridViewCellStyle187;
-            this.종목상태_잔고A.Frozen = true;
-            this.종목상태_잔고A.HeaderText = "종목상태";
-            this.종목상태_잔고A.Name = "종목상태_잔고A";
-            this.종목상태_잔고A.ReadOnly = true;
-            this.종목상태_잔고A.ToolTipText = "※X: NXT 불가 ※N: NXT 가능 ※불: 신용불가 ※신: 신용가능 ※숫자: 증거금률 ※T:매매가능 ※F:매매정지 ";
-            this.종목상태_잔고A.Width = 90;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.융자_잔고.DefaultCellStyle = dataGridViewCellStyle6;
+            this.융자_잔고.Frozen = true;
+            this.융자_잔고.HeaderText = "융";
+            this.융자_잔고.Name = "융자_잔고";
+            this.융자_잔고.ReadOnly = true;
+            this.융자_잔고.ToolTipText = "현금(현) 신용(융) 현금+신용(합)";
+            this.융자_잔고.Width = 22;
             // 
-            // 종목명_잔고A
+            // 종목상태_잔고
             // 
-            this.종목명_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.종목명_잔고A.DataPropertyName = "종목명";
-            dataGridViewCellStyle188.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.종목명_잔고A.DefaultCellStyle = dataGridViewCellStyle188;
-            this.종목명_잔고A.FillWeight = 2F;
-            this.종목명_잔고A.Frozen = true;
-            this.종목명_잔고A.HeaderText = "종목명";
-            this.종목명_잔고A.MinimumWidth = 10;
-            this.종목명_잔고A.Name = "종목명_잔고A";
-            this.종목명_잔고A.ReadOnly = true;
-            this.종목명_잔고A.Width = 110;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.종목상태_잔고.DefaultCellStyle = dataGridViewCellStyle7;
+            this.종목상태_잔고.Frozen = true;
+            this.종목상태_잔고.HeaderText = "종목상태";
+            this.종목상태_잔고.Name = "종목상태_잔고";
+            this.종목상태_잔고.ReadOnly = true;
+            this.종목상태_잔고.ToolTipText = "※X: NXT 불가 ※N: NXT 가능 ※불: 신용불가 ※가: 신용가능 ※초: 신용한도초과 ※숫자: 증거금률 ※T:매매가능 ※F:매매정지 ";
+            this.종목상태_잔고.Width = 90;
             // 
-            // 현재가_잔고A
+            // 종목명_잔고
             // 
-            this.현재가_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.현재가_잔고A.DataPropertyName = "현재가";
-            dataGridViewCellStyle189.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle189.Format = "N0";
-            dataGridViewCellStyle189.NullValue = null;
-            this.현재가_잔고A.DefaultCellStyle = dataGridViewCellStyle189;
-            this.현재가_잔고A.Frozen = true;
-            this.현재가_잔고A.HeaderText = "현재가";
-            this.현재가_잔고A.Name = "현재가_잔고A";
-            this.현재가_잔고A.ReadOnly = true;
-            this.현재가_잔고A.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.현재가_잔고A.Width = 55;
+            this.종목명_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.종목명_잔고.DataPropertyName = "종목명";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.종목명_잔고.DefaultCellStyle = dataGridViewCellStyle8;
+            this.종목명_잔고.FillWeight = 2F;
+            this.종목명_잔고.Frozen = true;
+            this.종목명_잔고.HeaderText = "종목명";
+            this.종목명_잔고.MinimumWidth = 10;
+            this.종목명_잔고.Name = "종목명_잔고";
+            this.종목명_잔고.ReadOnly = true;
+            this.종목명_잔고.Width = 110;
             // 
-            // 등락율_잔고A
+            // 현재가_잔고
             // 
-            this.등락율_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle190.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle190.Format = "N2";
-            dataGridViewCellStyle190.NullValue = "0";
-            this.등락율_잔고A.DefaultCellStyle = dataGridViewCellStyle190;
-            this.등락율_잔고A.FillWeight = 70F;
-            this.등락율_잔고A.Frozen = true;
-            this.등락율_잔고A.HeaderText = "등락율";
-            this.등락율_잔고A.MinimumWidth = 10;
-            this.등락율_잔고A.Name = "등락율_잔고A";
-            this.등락율_잔고A.ReadOnly = true;
-            this.등락율_잔고A.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.등락율_잔고A.ToolTipText = "전일대비 등락율";
-            this.등락율_잔고A.Width = 55;
+            this.현재가_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.현재가_잔고.DataPropertyName = "현재가";
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle9.Format = "N0";
+            dataGridViewCellStyle9.NullValue = null;
+            this.현재가_잔고.DefaultCellStyle = dataGridViewCellStyle9;
+            this.현재가_잔고.Frozen = true;
+            this.현재가_잔고.HeaderText = "현재가";
+            this.현재가_잔고.Name = "현재가_잔고";
+            this.현재가_잔고.ReadOnly = true;
+            this.현재가_잔고.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.현재가_잔고.Width = 65;
             // 
-            // 평균단가_잔고A
+            // 등락율_잔고
             // 
-            this.평균단가_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.평균단가_잔고A.DataPropertyName = "매입가";
-            dataGridViewCellStyle191.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle191.Format = "N0";
-            dataGridViewCellStyle191.NullValue = "0";
-            this.평균단가_잔고A.DefaultCellStyle = dataGridViewCellStyle191;
-            this.평균단가_잔고A.FillWeight = 70F;
-            this.평균단가_잔고A.Frozen = true;
-            this.평균단가_잔고A.HeaderText = "평단가";
-            this.평균단가_잔고A.MinimumWidth = 10;
-            this.평균단가_잔고A.Name = "평균단가_잔고A";
-            this.평균단가_잔고A.ReadOnly = true;
-            this.평균단가_잔고A.Width = 55;
+            this.등락율_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.Format = "N2";
+            dataGridViewCellStyle10.NullValue = "0";
+            this.등락율_잔고.DefaultCellStyle = dataGridViewCellStyle10;
+            this.등락율_잔고.FillWeight = 70F;
+            this.등락율_잔고.Frozen = true;
+            this.등락율_잔고.HeaderText = "등락율";
+            this.등락율_잔고.MinimumWidth = 10;
+            this.등락율_잔고.Name = "등락율_잔고";
+            this.등락율_잔고.ReadOnly = true;
+            this.등락율_잔고.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.등락율_잔고.ToolTipText = "전일대비 등락율";
+            this.등락율_잔고.Width = 55;
             // 
-            // 수익률_잔고A
+            // 평균단가_잔고
             // 
-            this.수익률_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.수익률_잔고A.DataPropertyName = "수익률";
-            dataGridViewCellStyle192.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle192.Format = "N2";
-            dataGridViewCellStyle192.NullValue = "0";
-            this.수익률_잔고A.DefaultCellStyle = dataGridViewCellStyle192;
-            this.수익률_잔고A.FillWeight = 60F;
-            this.수익률_잔고A.Frozen = true;
-            this.수익률_잔고A.HeaderText = "수익률";
-            this.수익률_잔고A.MinimumWidth = 10;
-            this.수익률_잔고A.Name = "수익률_잔고A";
-            this.수익률_잔고A.ReadOnly = true;
-            this.수익률_잔고A.ToolTipText = "평가수익률";
-            this.수익률_잔고A.Width = 55;
+            this.평균단가_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.평균단가_잔고.DataPropertyName = "매입가";
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle11.Format = "N0";
+            dataGridViewCellStyle11.NullValue = "0";
+            this.평균단가_잔고.DefaultCellStyle = dataGridViewCellStyle11;
+            this.평균단가_잔고.FillWeight = 70F;
+            this.평균단가_잔고.Frozen = true;
+            this.평균단가_잔고.HeaderText = "평단가";
+            this.평균단가_잔고.MinimumWidth = 10;
+            this.평균단가_잔고.Name = "평균단가_잔고";
+            this.평균단가_잔고.ReadOnly = true;
+            this.평균단가_잔고.Width = 65;
             // 
-            // 평가손익_잔고A
+            // 수익률_잔고
             // 
-            this.평가손익_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.평가손익_잔고A.DataPropertyName = "평가손익";
-            dataGridViewCellStyle193.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle193.Format = "N0";
-            dataGridViewCellStyle193.NullValue = null;
-            this.평가손익_잔고A.DefaultCellStyle = dataGridViewCellStyle193;
-            this.평가손익_잔고A.FillWeight = 90F;
-            this.평가손익_잔고A.HeaderText = "평가손익";
-            this.평가손익_잔고A.MinimumWidth = 10;
-            this.평가손익_잔고A.Name = "평가손익_잔고A";
-            this.평가손익_잔고A.ReadOnly = true;
-            this.평가손익_잔고A.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.평가손익_잔고A.Width = 75;
+            this.수익률_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.수익률_잔고.DataPropertyName = "수익률";
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.Format = "N2";
+            dataGridViewCellStyle12.NullValue = "0";
+            this.수익률_잔고.DefaultCellStyle = dataGridViewCellStyle12;
+            this.수익률_잔고.FillWeight = 60F;
+            this.수익률_잔고.Frozen = true;
+            this.수익률_잔고.HeaderText = "수익률";
+            this.수익률_잔고.MinimumWidth = 10;
+            this.수익률_잔고.Name = "수익률_잔고";
+            this.수익률_잔고.ReadOnly = true;
+            this.수익률_잔고.ToolTipText = "평가수익률";
+            this.수익률_잔고.Width = 55;
             // 
-            // 금일수익금_잔고A
+            // 평가손익_잔고
             // 
-            this.금일수익금_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle194.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle194.Format = "N0";
-            dataGridViewCellStyle194.NullValue = null;
-            this.금일수익금_잔고A.DefaultCellStyle = dataGridViewCellStyle194;
-            this.금일수익금_잔고A.FillWeight = 90F;
-            this.금일수익금_잔고A.HeaderText = "금일수익";
-            this.금일수익금_잔고A.MinimumWidth = 10;
-            this.금일수익금_잔고A.Name = "금일수익금_잔고A";
-            this.금일수익금_잔고A.ReadOnly = true;
-            this.금일수익금_잔고A.Width = 75;
+            this.평가손익_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.평가손익_잔고.DataPropertyName = "평가손익";
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle13.Format = "N0";
+            dataGridViewCellStyle13.NullValue = null;
+            this.평가손익_잔고.DefaultCellStyle = dataGridViewCellStyle13;
+            this.평가손익_잔고.FillWeight = 90F;
+            this.평가손익_잔고.HeaderText = "평가손익";
+            this.평가손익_잔고.MinimumWidth = 10;
+            this.평가손익_잔고.Name = "평가손익_잔고";
+            this.평가손익_잔고.ReadOnly = true;
+            this.평가손익_잔고.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.평가손익_잔고.Width = 75;
             // 
-            // 누적손익_잔고A
+            // 금일수익금_잔고
             // 
-            dataGridViewCellStyle195.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle195.Format = "N0";
-            dataGridViewCellStyle195.NullValue = null;
-            this.누적손익_잔고A.DefaultCellStyle = dataGridViewCellStyle195;
-            this.누적손익_잔고A.HeaderText = "누적손익";
-            this.누적손익_잔고A.Name = "누적손익_잔고A";
-            this.누적손익_잔고A.ReadOnly = true;
-            this.누적손익_잔고A.Width = 75;
+            this.금일수익금_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle14.Format = "N0";
+            dataGridViewCellStyle14.NullValue = null;
+            this.금일수익금_잔고.DefaultCellStyle = dataGridViewCellStyle14;
+            this.금일수익금_잔고.FillWeight = 90F;
+            this.금일수익금_잔고.HeaderText = "금일수익";
+            this.금일수익금_잔고.MinimumWidth = 10;
+            this.금일수익금_잔고.Name = "금일수익금_잔고";
+            this.금일수익금_잔고.ReadOnly = true;
+            this.금일수익금_잔고.Width = 75;
             // 
-            // 예상손익_잔고A
+            // 누적손익_잔고
             // 
-            dataGridViewCellStyle196.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle196.Format = "N0";
-            dataGridViewCellStyle196.NullValue = null;
-            this.예상손익_잔고A.DefaultCellStyle = dataGridViewCellStyle196;
-            this.예상손익_잔고A.HeaderText = "예상손익";
-            this.예상손익_잔고A.Name = "예상손익_잔고A";
-            this.예상손익_잔고A.ReadOnly = true;
-            this.예상손익_잔고A.Width = 75;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle15.Format = "N0";
+            dataGridViewCellStyle15.NullValue = null;
+            this.누적손익_잔고.DefaultCellStyle = dataGridViewCellStyle15;
+            this.누적손익_잔고.HeaderText = "누적손익";
+            this.누적손익_잔고.Name = "누적손익_잔고";
+            this.누적손익_잔고.ReadOnly = true;
+            this.누적손익_잔고.Width = 75;
             // 
-            // 매입금액_잔고A
+            // 예상손익_잔고
             // 
-            this.매입금액_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.매입금액_잔고A.DataPropertyName = "매입금액";
-            dataGridViewCellStyle197.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle197.Format = "N0";
-            dataGridViewCellStyle197.NullValue = null;
-            this.매입금액_잔고A.DefaultCellStyle = dataGridViewCellStyle197;
-            this.매입금액_잔고A.FillWeight = 90F;
-            this.매입금액_잔고A.HeaderText = "매입금액";
-            this.매입금액_잔고A.MinimumWidth = 10;
-            this.매입금액_잔고A.Name = "매입금액_잔고A";
-            this.매입금액_잔고A.ReadOnly = true;
-            this.매입금액_잔고A.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.매입금액_잔고A.ToolTipText = "잔고 매입금액";
-            this.매입금액_잔고A.Width = 75;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle16.Format = "N0";
+            dataGridViewCellStyle16.NullValue = null;
+            this.예상손익_잔고.DefaultCellStyle = dataGridViewCellStyle16;
+            this.예상손익_잔고.HeaderText = "예상손익";
+            this.예상손익_잔고.Name = "예상손익_잔고";
+            this.예상손익_잔고.ReadOnly = true;
+            this.예상손익_잔고.Width = 75;
             // 
-            // 보유비중_잔고A
+            // 매입금액_잔고
             // 
-            dataGridViewCellStyle198.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle198.Format = "N2";
-            dataGridViewCellStyle198.NullValue = null;
-            this.보유비중_잔고A.DefaultCellStyle = dataGridViewCellStyle198;
-            this.보유비중_잔고A.HeaderText = "비중";
-            this.보유비중_잔고A.Name = "보유비중_잔고A";
-            this.보유비중_잔고A.ReadOnly = true;
-            this.보유비중_잔고A.ToolTipText = "\'비중(매수기준금액 대비 매입금액)\' ";
-            this.보유비중_잔고A.Width = 50;
+            this.매입금액_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.매입금액_잔고.DataPropertyName = "매입금액";
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle17.Format = "N0";
+            dataGridViewCellStyle17.NullValue = null;
+            this.매입금액_잔고.DefaultCellStyle = dataGridViewCellStyle17;
+            this.매입금액_잔고.FillWeight = 90F;
+            this.매입금액_잔고.HeaderText = "매입금액";
+            this.매입금액_잔고.MinimumWidth = 10;
+            this.매입금액_잔고.Name = "매입금액_잔고";
+            this.매입금액_잔고.ReadOnly = true;
+            this.매입금액_잔고.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.매입금액_잔고.ToolTipText = "잔고 매입금액";
+            this.매입금액_잔고.Width = 80;
             // 
-            // 주문가능수량_잔고A
+            // 보유비중_잔고
             // 
-            this.주문가능수량_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle199.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.주문가능수량_잔고A.DefaultCellStyle = dataGridViewCellStyle199;
-            this.주문가능수량_잔고A.HeaderText = "가능";
-            this.주문가능수량_잔고A.Name = "주문가능수량_잔고A";
-            this.주문가능수량_잔고A.ReadOnly = true;
-            this.주문가능수량_잔고A.Width = 53;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.Format = "N2";
+            dataGridViewCellStyle18.NullValue = null;
+            this.보유비중_잔고.DefaultCellStyle = dataGridViewCellStyle18;
+            this.보유비중_잔고.HeaderText = "비중";
+            this.보유비중_잔고.Name = "보유비중_잔고";
+            this.보유비중_잔고.ReadOnly = true;
+            this.보유비중_잔고.ToolTipText = "\'비중(매수기준금액 대비 매입금액)\' ";
+            this.보유비중_잔고.Width = 65;
             // 
-            // 최고수익률_잔고A
+            // 주문가능수량_잔고
             // 
-            this.최고수익률_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle200.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle200.Format = "N2";
-            dataGridViewCellStyle200.NullValue = "0";
-            this.최고수익률_잔고A.DefaultCellStyle = dataGridViewCellStyle200;
-            this.최고수익률_잔고A.HeaderText = "최고수익";
-            this.최고수익률_잔고A.Name = "최고수익률_잔고A";
-            this.최고수익률_잔고A.ToolTipText = "최고 수익률 or 예상손익금";
-            this.최고수익률_잔고A.Width = 70;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.주문가능수량_잔고.DefaultCellStyle = dataGridViewCellStyle19;
+            this.주문가능수량_잔고.HeaderText = "주문가능";
+            this.주문가능수량_잔고.MinimumWidth = 30;
+            this.주문가능수량_잔고.Name = "주문가능수량_잔고";
+            this.주문가능수량_잔고.ReadOnly = true;
+            this.주문가능수량_잔고.ToolTipText = "현금수량 / 신용수량";
+            this.주문가능수량_잔고.Width = 90;
             // 
-            // 최저수익률_잔고A
+            // 최고수익률_잔고
             // 
-            this.최저수익률_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle201.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle201.Format = "N2";
-            dataGridViewCellStyle201.NullValue = "0";
-            this.최저수익률_잔고A.DefaultCellStyle = dataGridViewCellStyle201;
-            this.최저수익률_잔고A.HeaderText = "최저수익";
-            this.최저수익률_잔고A.Name = "최저수익률_잔고A";
-            this.최저수익률_잔고A.ToolTipText = "최저 수익률 or 예상손익금";
-            this.최저수익률_잔고A.Width = 70;
+            this.최고수익률_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle20.Format = "N2";
+            dataGridViewCellStyle20.NullValue = "0";
+            this.최고수익률_잔고.DefaultCellStyle = dataGridViewCellStyle20;
+            this.최고수익률_잔고.HeaderText = "최고수익";
+            this.최고수익률_잔고.Name = "최고수익률_잔고";
+            this.최고수익률_잔고.ToolTipText = "최고 수익률 or 예상손익금";
+            this.최고수익률_잔고.Width = 70;
             // 
-            // 보유수량_잔고A
+            // 최저수익률_잔고
             // 
-            this.보유수량_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.보유수량_잔고A.DataPropertyName = "보유수량";
-            dataGridViewCellStyle202.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.보유수량_잔고A.DefaultCellStyle = dataGridViewCellStyle202;
-            this.보유수량_잔고A.FillWeight = 80F;
-            this.보유수량_잔고A.HeaderText = "보유수";
-            this.보유수량_잔고A.MinimumWidth = 10;
-            this.보유수량_잔고A.Name = "보유수량_잔고A";
-            this.보유수량_잔고A.ReadOnly = true;
-            this.보유수량_잔고A.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.보유수량_잔고A.ToolTipText = "잔고 보유수량";
-            this.보유수량_잔고A.Width = 55;
+            this.최저수익률_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.Format = "N2";
+            dataGridViewCellStyle21.NullValue = "0";
+            this.최저수익률_잔고.DefaultCellStyle = dataGridViewCellStyle21;
+            this.최저수익률_잔고.HeaderText = "최저수익";
+            this.최저수익률_잔고.Name = "최저수익률_잔고";
+            this.최저수익률_잔고.ToolTipText = "최저 수익률 or 예상손익금";
+            this.최저수익률_잔고.Width = 70;
             // 
-            // 평가금액_잔고A
+            // 보유수량_잔고
             // 
-            this.평가금액_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.평가금액_잔고A.DataPropertyName = "평가금액";
-            dataGridViewCellStyle203.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle203.Format = "N0";
-            dataGridViewCellStyle203.NullValue = null;
-            this.평가금액_잔고A.DefaultCellStyle = dataGridViewCellStyle203;
-            this.평가금액_잔고A.FillWeight = 90F;
-            this.평가금액_잔고A.HeaderText = "평가금";
-            this.평가금액_잔고A.MinimumWidth = 10;
-            this.평가금액_잔고A.Name = "평가금액_잔고A";
-            this.평가금액_잔고A.ReadOnly = true;
-            this.평가금액_잔고A.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.평가금액_잔고A.Width = 75;
+            this.보유수량_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.보유수량_잔고.DataPropertyName = "보유수량";
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.보유수량_잔고.DefaultCellStyle = dataGridViewCellStyle22;
+            this.보유수량_잔고.FillWeight = 80F;
+            this.보유수량_잔고.HeaderText = "보유수량";
+            this.보유수량_잔고.MinimumWidth = 10;
+            this.보유수량_잔고.Name = "보유수량_잔고";
+            this.보유수량_잔고.ReadOnly = true;
+            this.보유수량_잔고.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.보유수량_잔고.ToolTipText = "현금수량 / 신용수량";
+            this.보유수량_잔고.Width = 90;
             // 
-            // 매수횟수_잔고A
+            // 평가금액_잔고
             // 
-            this.매수횟수_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle204.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle204.Format = "N0";
-            dataGridViewCellStyle204.NullValue = null;
-            this.매수횟수_잔고A.DefaultCellStyle = dataGridViewCellStyle204;
-            this.매수횟수_잔고A.HeaderText = "매수횟수";
-            this.매수횟수_잔고A.MinimumWidth = 10;
-            this.매수횟수_잔고A.Name = "매수횟수_잔고A";
-            this.매수횟수_잔고A.ReadOnly = true;
-            this.매수횟수_잔고A.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.매수횟수_잔고A.Width = 60;
+            this.평가금액_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.평가금액_잔고.DataPropertyName = "평가금액";
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle23.Format = "N0";
+            dataGridViewCellStyle23.NullValue = null;
+            this.평가금액_잔고.DefaultCellStyle = dataGridViewCellStyle23;
+            this.평가금액_잔고.FillWeight = 90F;
+            this.평가금액_잔고.HeaderText = "평가금";
+            this.평가금액_잔고.MinimumWidth = 10;
+            this.평가금액_잔고.Name = "평가금액_잔고";
+            this.평가금액_잔고.ReadOnly = true;
+            this.평가금액_잔고.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.평가금액_잔고.Width = 75;
             // 
-            // 매도횟수_잔고A
+            // 신용이자
             // 
-            this.매도횟수_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle205.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle205.Format = "N0";
-            dataGridViewCellStyle205.NullValue = null;
-            this.매도횟수_잔고A.DefaultCellStyle = dataGridViewCellStyle205;
-            this.매도횟수_잔고A.HeaderText = "매도횟수";
-            this.매도횟수_잔고A.MinimumWidth = 10;
-            this.매도횟수_잔고A.Name = "매도횟수_잔고A";
-            this.매도횟수_잔고A.ReadOnly = true;
-            this.매도횟수_잔고A.Width = 60;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.신용이자.DefaultCellStyle = dataGridViewCellStyle24;
+            this.신용이자.HeaderText = "신용이자";
+            this.신용이자.Name = "신용이자";
+            this.신용이자.ReadOnly = true;
+            this.신용이자.Width = 70;
             // 
-            // 금일매수금_잔고A
+            // 매수횟수_잔고
             // 
-            this.금일매수금_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle206.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle206.Format = "N0";
-            dataGridViewCellStyle206.NullValue = null;
-            this.금일매수금_잔고A.DefaultCellStyle = dataGridViewCellStyle206;
-            this.금일매수금_잔고A.HeaderText = "금일<매수>금";
-            this.금일매수금_잔고A.MinimumWidth = 10;
-            this.금일매수금_잔고A.Name = "금일매수금_잔고A";
-            this.금일매수금_잔고A.ReadOnly = true;
-            this.금일매수금_잔고A.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.매수횟수_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.Format = "N0";
+            dataGridViewCellStyle25.NullValue = null;
+            this.매수횟수_잔고.DefaultCellStyle = dataGridViewCellStyle25;
+            this.매수횟수_잔고.HeaderText = "매수횟수";
+            this.매수횟수_잔고.MinimumWidth = 10;
+            this.매수횟수_잔고.Name = "매수횟수_잔고";
+            this.매수횟수_잔고.ReadOnly = true;
+            this.매수횟수_잔고.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.매수횟수_잔고.Width = 60;
             // 
-            // 금일매도금_잔고A
+            // 매도횟수_잔고
             // 
-            dataGridViewCellStyle207.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle207.Format = "N0";
-            dataGridViewCellStyle207.NullValue = null;
-            this.금일매도금_잔고A.DefaultCellStyle = dataGridViewCellStyle207;
-            this.금일매도금_잔고A.HeaderText = "금일<매도>금";
-            this.금일매도금_잔고A.Name = "금일매도금_잔고A";
-            this.금일매도금_잔고A.ReadOnly = true;
+            this.매도횟수_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.Format = "N0";
+            dataGridViewCellStyle26.NullValue = null;
+            this.매도횟수_잔고.DefaultCellStyle = dataGridViewCellStyle26;
+            this.매도횟수_잔고.HeaderText = "매도횟수";
+            this.매도횟수_잔고.MinimumWidth = 10;
+            this.매도횟수_잔고.Name = "매도횟수_잔고";
+            this.매도횟수_잔고.ReadOnly = true;
+            this.매도횟수_잔고.Width = 60;
             // 
-            // 전일매수량_잔고A
+            // 금일매수금_잔고
             // 
-            dataGridViewCellStyle208.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle208.Format = "N0";
-            dataGridViewCellStyle208.NullValue = null;
-            this.전일매수량_잔고A.DefaultCellStyle = dataGridViewCellStyle208;
-            this.전일매수량_잔고A.HeaderText = "전일<매수>량";
-            this.전일매수량_잔고A.Name = "전일매수량_잔고A";
-            this.전일매수량_잔고A.ReadOnly = true;
+            this.금일매수금_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle27.Format = "N0";
+            dataGridViewCellStyle27.NullValue = null;
+            this.금일매수금_잔고.DefaultCellStyle = dataGridViewCellStyle27;
+            this.금일매수금_잔고.HeaderText = "금일<매수>금";
+            this.금일매수금_잔고.MinimumWidth = 10;
+            this.금일매수금_잔고.Name = "금일매수금_잔고";
+            this.금일매수금_잔고.ReadOnly = true;
+            this.금일매수금_잔고.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
-            // 전일매도량_잔고A
+            // 금일매도금_잔고
             // 
-            dataGridViewCellStyle209.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle209.Format = "N0";
-            dataGridViewCellStyle209.NullValue = null;
-            this.전일매도량_잔고A.DefaultCellStyle = dataGridViewCellStyle209;
-            this.전일매도량_잔고A.HeaderText = "전일<매도>량";
-            this.전일매도량_잔고A.Name = "전일매도량_잔고A";
-            this.전일매도량_잔고A.ReadOnly = true;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle28.Format = "N0";
+            dataGridViewCellStyle28.NullValue = null;
+            this.금일매도금_잔고.DefaultCellStyle = dataGridViewCellStyle28;
+            this.금일매도금_잔고.HeaderText = "금일<매도>금";
+            this.금일매도금_잔고.Name = "금일매도금_잔고";
+            this.금일매도금_잔고.ReadOnly = true;
             // 
-            // 초기매수일_잔고A
+            // 전일매수량_잔고
             // 
-            this.초기매수일_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle210.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.초기매수일_잔고A.DefaultCellStyle = dataGridViewCellStyle210;
-            this.초기매수일_잔고A.FillWeight = 150F;
-            this.초기매수일_잔고A.HeaderText = "초기매수일";
-            this.초기매수일_잔고A.MinimumWidth = 10;
-            this.초기매수일_잔고A.Name = "초기매수일_잔고A";
-            this.초기매수일_잔고A.ReadOnly = true;
-            this.초기매수일_잔고A.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.초기매수일_잔고A.Width = 85;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle29.Format = "N0";
+            dataGridViewCellStyle29.NullValue = null;
+            this.전일매수량_잔고.DefaultCellStyle = dataGridViewCellStyle29;
+            this.전일매수량_잔고.HeaderText = "전일<매수>량";
+            this.전일매수량_잔고.Name = "전일매수량_잔고";
+            this.전일매수량_잔고.ReadOnly = true;
             // 
-            // 추가매수일_잔고A
+            // 전일매도량_잔고
             // 
-            this.추가매수일_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle211.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.추가매수일_잔고A.DefaultCellStyle = dataGridViewCellStyle211;
-            this.추가매수일_잔고A.HeaderText = "추가매수일";
-            this.추가매수일_잔고A.Name = "추가매수일_잔고A";
-            this.추가매수일_잔고A.ReadOnly = true;
-            this.추가매수일_잔고A.Width = 85;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle30.Format = "N0";
+            dataGridViewCellStyle30.NullValue = null;
+            this.전일매도량_잔고.DefaultCellStyle = dataGridViewCellStyle30;
+            this.전일매도량_잔고.HeaderText = "전일<매도>량";
+            this.전일매도량_잔고.Name = "전일매도량_잔고";
+            this.전일매도량_잔고.ReadOnly = true;
             // 
-            // 거래일_잔고A
+            // 초기매수일_잔고
             // 
-            this.거래일_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle212.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.거래일_잔고A.DefaultCellStyle = dataGridViewCellStyle212;
-            this.거래일_잔고A.FillWeight = 90F;
-            this.거래일_잔고A.HeaderText = "거래일";
-            this.거래일_잔고A.MinimumWidth = 10;
-            this.거래일_잔고A.Name = "거래일_잔고A";
-            this.거래일_잔고A.ReadOnly = true;
-            this.거래일_잔고A.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.거래일_잔고A.ToolTipText = "누적 거래일(주말포함)";
-            this.거래일_잔고A.Width = 50;
+            this.초기매수일_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.초기매수일_잔고.DefaultCellStyle = dataGridViewCellStyle31;
+            this.초기매수일_잔고.FillWeight = 150F;
+            this.초기매수일_잔고.HeaderText = "초기매수일";
+            this.초기매수일_잔고.MinimumWidth = 10;
+            this.초기매수일_잔고.Name = "초기매수일_잔고";
+            this.초기매수일_잔고.ReadOnly = true;
+            this.초기매수일_잔고.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.초기매수일_잔고.Width = 85;
+            // 
+            // 추가매수일_잔고
+            // 
+            this.추가매수일_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.추가매수일_잔고.DefaultCellStyle = dataGridViewCellStyle32;
+            this.추가매수일_잔고.HeaderText = "추가매수일";
+            this.추가매수일_잔고.Name = "추가매수일_잔고";
+            this.추가매수일_잔고.ReadOnly = true;
+            this.추가매수일_잔고.Width = 85;
+            // 
+            // 거래일_잔고
+            // 
+            this.거래일_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.거래일_잔고.DefaultCellStyle = dataGridViewCellStyle33;
+            this.거래일_잔고.FillWeight = 90F;
+            this.거래일_잔고.HeaderText = "거래일";
+            this.거래일_잔고.MinimumWidth = 10;
+            this.거래일_잔고.Name = "거래일_잔고";
+            this.거래일_잔고.ReadOnly = true;
+            this.거래일_잔고.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.거래일_잔고.ToolTipText = "시장 거래일";
+            this.거래일_잔고.Width = 50;
             // 
             // 초기매수검색식
             // 
             this.초기매수검색식.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle213.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.초기매수검색식.DefaultCellStyle = dataGridViewCellStyle213;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.초기매수검색식.DefaultCellStyle = dataGridViewCellStyle34;
             this.초기매수검색식.FillWeight = 120F;
             this.초기매수검색식.HeaderText = "초기매수검색식";
             this.초기매수검색식.MinimumWidth = 10;
@@ -2825,50 +2886,66 @@ namespace 지니_64
             this.초기매수검색식.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.초기매수검색식.Width = 150;
             // 
-            // 코드_잔고A
+            // 코드_잔고
             // 
-            this.코드_잔고A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.코드_잔고A.DataPropertyName = "종목코드";
-            dataGridViewCellStyle214.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.코드_잔고A.DefaultCellStyle = dataGridViewCellStyle214;
-            this.코드_잔고A.FillWeight = 2F;
-            this.코드_잔고A.HeaderText = "코드";
-            this.코드_잔고A.MinimumWidth = 10;
-            this.코드_잔고A.Name = "코드_잔고A";
-            this.코드_잔고A.ReadOnly = true;
-            this.코드_잔고A.ToolTipText = "종목코드";
-            this.코드_잔고A.Width = 50;
+            this.코드_잔고.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.코드_잔고.DataPropertyName = "종목코드";
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.코드_잔고.DefaultCellStyle = dataGridViewCellStyle35;
+            this.코드_잔고.FillWeight = 2F;
+            this.코드_잔고.HeaderText = "코드";
+            this.코드_잔고.MinimumWidth = 10;
+            this.코드_잔고.Name = "코드_잔고";
+            this.코드_잔고.ReadOnly = true;
+            this.코드_잔고.ToolTipText = "종목코드";
+            this.코드_잔고.Width = 50;
             // 
-            // 재매수_잔고A
+            // 재매수_잔고
             // 
-            dataGridViewCellStyle215.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.재매수_잔고A.DefaultCellStyle = dataGridViewCellStyle215;
-            this.재매수_잔고A.HeaderText = "재매수";
-            this.재매수_잔고A.Name = "재매수_잔고A";
-            this.재매수_잔고A.ReadOnly = true;
-            this.재매수_잔고A.Width = 50;
-            // 
-            // LB_주문내역
-            // 
-            this.LB_주문내역.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.LB_주문내역.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LB_주문내역.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LB_주문내역.ForeColor = System.Drawing.Color.DarkRed;
-            this.LB_주문내역.Location = new System.Drawing.Point(0, 209);
-            this.LB_주문내역.Name = "LB_주문내역";
-            this.LB_주문내역.Size = new System.Drawing.Size(90, 21);
-            this.LB_주문내역.TabIndex = 67;
-            this.LB_주문내역.Text = "주문 내역";
-            this.LB_주문내역.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.재매수_잔고.DefaultCellStyle = dataGridViewCellStyle36;
+            this.재매수_잔고.HeaderText = "재매수";
+            this.재매수_잔고.Name = "재매수_잔고";
+            this.재매수_잔고.ReadOnly = true;
+            this.재매수_잔고.Width = 50;
             // 
             // 종목감추기_잔고
             // 
             this.종목감추기_잔고.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.종목감추기_잔고.Location = new System.Drawing.Point(185, 17);
+            this.종목감추기_잔고.Location = new System.Drawing.Point(187, 18);
             this.종목감추기_잔고.Name = "종목감추기_잔고";
             this.종목감추기_잔고.Size = new System.Drawing.Size(111, 483);
             this.종목감추기_잔고.TabIndex = 66;
             this.종목감추기_잔고.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Label_주문내역
+            // 
+            this.Label_주문내역.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.Label_주문내역.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Label_주문내역.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_주문내역.ForeColor = System.Drawing.Color.DarkRed;
+            this.Label_주문내역.Location = new System.Drawing.Point(2, 210);
+            this.Label_주문내역.Name = "Label_주문내역";
+            this.Label_주문내역.Size = new System.Drawing.Size(90, 21);
+            this.Label_주문내역.TabIndex = 67;
+            this.Label_주문내역.Text = "주문 내역";
+            this.Label_주문내역.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // BT_지수이평
+            // 
+            this.BT_지수이평.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.BT_지수이평.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BT_지수이평.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BT_지수이평.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BT_지수이평.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_지수이평.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.BT_지수이평.Location = new System.Drawing.Point(17, -1);
+            this.BT_지수이평.Name = "BT_지수이평";
+            this.BT_지수이평.Size = new System.Drawing.Size(55, 21);
+            this.BT_지수이평.TabIndex = 5;
+            this.BT_지수이평.Text = "등락률";
+            this.BT_지수이평.UseVisualStyleBackColor = false;
+            this.BT_지수이평.Click += new System.EventHandler(this.BT_지수이평_Click);
             // 
             // label175
             // 
@@ -2909,10 +2986,10 @@ namespace 지니_64
             this.TB_setjango.Name = "TB_setjango";
             this.TB_setjango.Size = new System.Drawing.Size(30, 15);
             this.TB_setjango.TabIndex = 2;
-            this.TB_setjango.Text = "200";
+            this.TB_setjango.Text = "100";
             this.TB_setjango.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_setjango, "## 최대 잔고 설정\r\n최대 200종목 까지 가능합니다.");
-            this.TB_setjango.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.toolTip1.SetToolTip(this.TB_setjango, "## 최대 잔고 설정\r\n최대 100종목 까지 가능합니다.");
+            this.TB_setjango.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label_계좌매입비1
             // 
@@ -2921,7 +2998,7 @@ namespace 지니_64
             this.label_계좌매입비1.Cursor = System.Windows.Forms.Cursors.Default;
             this.label_계좌매입비1.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label_계좌매입비1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label_계좌매입비1.Location = new System.Drawing.Point(561, 60);
+            this.label_계좌매입비1.Location = new System.Drawing.Point(254, -1);
             this.label_계좌매입비1.Name = "label_계좌매입비1";
             this.label_계좌매입비1.Size = new System.Drawing.Size(67, 21);
             this.label_계좌매입비1.TabIndex = 0;
@@ -2935,7 +3012,7 @@ namespace 지니_64
             this.TB_계좌매입비_제한비중.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_계좌매입비_제한비중.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_계좌매입비_제한비중.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_계좌매입비_제한비중.Location = new System.Drawing.Point(627, 60);
+            this.TB_계좌매입비_제한비중.Location = new System.Drawing.Point(320, -1);
             this.TB_계좌매입비_제한비중.MaxLength = 6;
             this.TB_계좌매입비_제한비중.Name = "TB_계좌매입비_제한비중";
             this.TB_계좌매입비_제한비중.Size = new System.Drawing.Size(45, 21);
@@ -2944,7 +3021,7 @@ namespace 지니_64
             this.TB_계좌매입비_제한비중.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_계좌매입비_제한비중, "# 계좌 매입비 매수제한\r\n기준금 = 투자원금 또는 추정자산 중 큰 금액\r\n기준금 / 총 매입금 이 n % 초과시 동작\r\n");
             this.TB_계좌매입비_제한비중.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_계좌매입비_제한비중.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_계좌매입비_제한비중.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_계좌매입비_매수제한
             // 
@@ -2958,7 +3035,7 @@ namespace 지니_64
             this.CB_계좌매입비_매수제한.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_계좌매입비_매수제한.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.CB_계좌매입비_매수제한.ForeColor = System.Drawing.Color.Black;
-            this.CB_계좌매입비_매수제한.Location = new System.Drawing.Point(415, 60);
+            this.CB_계좌매입비_매수제한.Location = new System.Drawing.Point(108, -1);
             this.CB_계좌매입비_매수제한.Name = "CB_계좌매입비_매수제한";
             this.CB_계좌매입비_매수제한.Size = new System.Drawing.Size(100, 21);
             this.CB_계좌매입비_매수제한.TabIndex = 0;
@@ -2973,7 +3050,7 @@ namespace 지니_64
             this.TB_계좌매입비_현비중.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_계좌매입비_현비중.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_계좌매입비_현비중.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_계좌매입비_현비중.Location = new System.Drawing.Point(514, 60);
+            this.TB_계좌매입비_현비중.Location = new System.Drawing.Point(207, -1);
             this.TB_계좌매입비_현비중.Name = "TB_계좌매입비_현비중";
             this.TB_계좌매입비_현비중.ReadOnly = true;
             this.TB_계좌매입비_현비중.Size = new System.Drawing.Size(48, 21);
@@ -2991,7 +3068,7 @@ namespace 지니_64
             this.MT_misu_time.HidePromptOnLeave = true;
             this.MT_misu_time.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.MT_misu_time.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Overwrite;
-            this.MT_misu_time.Location = new System.Drawing.Point(513, 100);
+            this.MT_misu_time.Location = new System.Drawing.Point(206, 39);
             this.MT_misu_time.Mask = "000000";
             this.MT_misu_time.Name = "MT_misu_time";
             this.MT_misu_time.RejectInputOnFirstFailure = true;
@@ -3000,6 +3077,8 @@ namespace 지니_64
             this.MT_misu_time.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MT_misu_time.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.toolTip1.SetToolTip(this.MT_misu_time, "#정리 시작시간");
+            this.MT_misu_time.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MT_misu_time_KeyDown);
+            this.MT_misu_time.Leave += new System.EventHandler(this.MT_misu_time_Leave);
             // 
             // TB_misu_repeat_time
             // 
@@ -3007,7 +3086,7 @@ namespace 지니_64
             this.TB_misu_repeat_time.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_misu_repeat_time.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_misu_repeat_time.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TB_misu_repeat_time.Location = new System.Drawing.Point(770, 100);
+            this.TB_misu_repeat_time.Location = new System.Drawing.Point(463, 39);
             this.TB_misu_repeat_time.MaxLength = 7;
             this.TB_misu_repeat_time.Name = "TB_misu_repeat_time";
             this.TB_misu_repeat_time.Size = new System.Drawing.Size(22, 21);
@@ -3015,7 +3094,7 @@ namespace 지니_64
             this.TB_misu_repeat_time.Text = "1";
             this.TB_misu_repeat_time.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_misu_repeat_time, "#취소시간(초)");
-            this.TB_misu_repeat_time.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_misu_repeat_time.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_misu_ratio
             // 
@@ -3023,7 +3102,7 @@ namespace 지니_64
             this.TB_misu_ratio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_misu_ratio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_misu_ratio.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TB_misu_ratio.Location = new System.Drawing.Point(689, 100);
+            this.TB_misu_ratio.Location = new System.Drawing.Point(382, 39);
             this.TB_misu_ratio.MaxLength = 4;
             this.TB_misu_ratio.Name = "TB_misu_ratio";
             this.TB_misu_ratio.Size = new System.Drawing.Size(31, 21);
@@ -3032,7 +3111,7 @@ namespace 지니_64
             this.TB_misu_ratio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_misu_ratio, "# 1회당 주문 금액(만원)");
             this.TB_misu_ratio.TextChanged += new System.EventHandler(this.TextBox_빨파검);
-            this.TB_misu_ratio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_misu_ratio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_misu_value
             // 
@@ -3040,7 +3119,7 @@ namespace 지니_64
             this.TB_misu_value.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_misu_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_misu_value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TB_misu_value.Location = new System.Drawing.Point(719, 100);
+            this.TB_misu_value.Location = new System.Drawing.Point(412, 39);
             this.TB_misu_value.MaxLength = 2;
             this.TB_misu_value.Name = "TB_misu_value";
             this.TB_misu_value.Size = new System.Drawing.Size(20, 21);
@@ -3049,19 +3128,20 @@ namespace 지니_64
             this.TB_misu_value.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_misu_value, "#매도 호가");
             this.TB_misu_value.TextChanged += new System.EventHandler(this.TextBox_빨파검);
-            this.TB_misu_value.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수실수_키프레스);
+            this.TB_misu_value.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수실수_키프레스_);
             // 
             // Combo_misu_jumnun
             // 
             this.Combo_misu_jumnun.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Combo_misu_jumnun.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Combo_misu_jumnun.Enabled = false;
             this.Combo_misu_jumnun.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Combo_misu_jumnun.FormattingEnabled = true;
             this.Combo_misu_jumnun.Items.AddRange(new object[] {
             "시장가",
             "현재가",
             "호가"});
-            this.Combo_misu_jumnun.Location = new System.Drawing.Point(738, 100);
+            this.Combo_misu_jumnun.Location = new System.Drawing.Point(431, 39);
             this.Combo_misu_jumnun.Name = "Combo_misu_jumnun";
             this.Combo_misu_jumnun.Size = new System.Drawing.Size(54, 21);
             this.Combo_misu_jumnun.TabIndex = 11;
@@ -3083,7 +3163,7 @@ namespace 지니_64
             // 
             this.tab_잔고.Controls.Add(this.TP_잔고);
             this.tab_잔고.Controls.Add(this.TP_관심그룹);
-            this.tab_잔고.Controls.Add(this.TP_매매통계);
+            this.tab_잔고.Controls.Add(this.TP_통계);
             this.tab_잔고.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tab_잔고.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.tab_잔고.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -3094,58 +3174,82 @@ namespace 지니_64
             this.tab_잔고.SelectedIndex = 0;
             this.tab_잔고.Size = new System.Drawing.Size(1111, 544);
             this.tab_잔고.TabIndex = 10;
-            this.tab_잔고.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl_L_Top_DrawItem);
-            this.tab_잔고.SelectedIndexChanged += new System.EventHandler(this.tabControl_L_Top_SelectedIndexChanged);
+            this.tab_잔고.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.TabControl_L_Top_DrawItem);
+            this.tab_잔고.SelectedIndexChanged += new System.EventHandler(this.Tab_잔고_SelectedIndexChanged);
             // 
-            // TP_매매통계
+            // TP_통계
             // 
-            this.TP_매매통계.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TP_매매통계.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TP_매매통계.Controls.Add(this.DGV_통계);
-            this.TP_매매통계.Controls.Add(this.label355);
-            this.TP_매매통계.Controls.Add(this.TB_일통계기준);
-            this.TP_매매통계.Controls.Add(this.DTP_기준일);
-            this.TP_매매통계.Controls.Add(this.BT_기준일별매매확인);
-            this.TP_매매통계.Controls.Add(this.CBB_통계);
-            this.TP_매매통계.Controls.Add(this.label354);
-            this.TP_매매통계.Controls.Add(this.BT_매매동계);
-            this.TP_매매통계.Controls.Add(this.TB_통계);
-            this.TP_매매통계.Controls.Add(this.TB_월통계기준);
-            this.TP_매매통계.Controls.Add(this.LB_종목수);
-            this.TP_매매통계.Controls.Add(this.chart_Day);
-            this.TP_매매통계.Controls.Add(this.chart_Month);
-            this.TP_매매통계.Controls.Add(this.label387);
-            this.TP_매매통계.Controls.Add(this.종목감추기6);
-            this.TP_매매통계.Controls.Add(this.DGV_통계B);
-            this.TP_매매통계.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TP_매매통계.Location = new System.Drawing.Point(4, 22);
-            this.TP_매매통계.Margin = new System.Windows.Forms.Padding(0);
-            this.TP_매매통계.Name = "TP_매매통계";
-            this.TP_매매통계.Size = new System.Drawing.Size(1103, 518);
-            this.TP_매매통계.TabIndex = 3;
-            this.TP_매매통계.Text = "통계";
+            this.TP_통계.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TP_통계.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TP_통계.Controls.Add(this.panel_TP_통계);
+            this.TP_통계.Controls.Add(this.chart_Day);
+            this.TP_통계.Controls.Add(this.chart_Month);
+            this.TP_통계.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TP_통계.Location = new System.Drawing.Point(4, 22);
+            this.TP_통계.Margin = new System.Windows.Forms.Padding(0);
+            this.TP_통계.Name = "TP_통계";
+            this.TP_통계.Size = new System.Drawing.Size(1103, 518);
+            this.TP_통계.TabIndex = 3;
+            this.TP_통계.Text = "통계";
+            // 
+            // panel_TP_통계
+            // 
+            this.panel_TP_통계.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_TP_통계.Controls.Add(this.BT_매매동계);
+            this.panel_TP_통계.Controls.Add(this.DGV_통계);
+            this.panel_TP_통계.Controls.Add(this.label355);
+            this.panel_TP_통계.Controls.Add(this.TB_일통계기준);
+            this.panel_TP_통계.Controls.Add(this.label387);
+            this.panel_TP_통계.Controls.Add(this.DTP_기준일);
+            this.panel_TP_통계.Controls.Add(this.LB_종목수);
+            this.panel_TP_통계.Controls.Add(this.BT_기준일별매매확인);
+            this.panel_TP_통계.Controls.Add(this.TB_월통계기준);
+            this.panel_TP_통계.Controls.Add(this.CBB_통계);
+            this.panel_TP_통계.Controls.Add(this.TB_통계);
+            this.panel_TP_통계.Controls.Add(this.label354);
+            this.panel_TP_통계.Controls.Add(this.DGV_통계B);
+            this.panel_TP_통계.Controls.Add(this.종목감추기6);
+            this.panel_TP_통계.Location = new System.Drawing.Point(-1, -1);
+            this.panel_TP_통계.Name = "panel_TP_통계";
+            this.panel_TP_통계.Size = new System.Drawing.Size(1103, 518);
+            this.panel_TP_통계.TabIndex = 70;
+            // 
+            // BT_매매동계
+            // 
+            this.BT_매매동계.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.BT_매매동계.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BT_매매동계.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BT_매매동계.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.BT_매매동계.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BT_매매동계.Location = new System.Drawing.Point(-1, -1);
+            this.BT_매매동계.Margin = new System.Windows.Forms.Padding(0);
+            this.BT_매매동계.Name = "BT_매매동계";
+            this.BT_매매동계.Size = new System.Drawing.Size(108, 22);
+            this.BT_매매동계.TabIndex = 0;
+            this.BT_매매동계.Text = "매매내역확인";
+            this.BT_매매동계.UseVisualStyleBackColor = false;
+            this.BT_매매동계.Click += new System.EventHandler(this.BT_매매내역확인_Click);
             // 
             // DGV_통계
             // 
             this.DGV_통계.AllowUserToAddRows = false;
             this.DGV_통계.AllowUserToDeleteRows = false;
             this.DGV_통계.AllowUserToResizeRows = false;
-            dataGridViewCellStyle218.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle218.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle218.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle218.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle218.SelectionBackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle218.SelectionForeColor = System.Drawing.Color.Black;
-            this.DGV_통계.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle218;
+            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle39.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle39.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.Black;
+            this.DGV_통계.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle39;
             this.DGV_통계.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.DGV_통계.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle219.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle219.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle219.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle219.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle219.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle219.SelectionForeColor = System.Drawing.Color.Black;
-            this.DGV_통계.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle219;
+            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle40.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.Black;
+            this.DGV_통계.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle40;
             this.DGV_통계.ColumnHeadersHeight = 20;
             this.DGV_통계.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DGV_통계.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3167,16 +3271,16 @@ namespace 지니_64
             this.DGV_통계.Name = "DGV_통계";
             this.DGV_통계.ReadOnly = true;
             this.DGV_통계.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle232.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.DGV_통계.RowHeadersDefaultCellStyle = dataGridViewCellStyle232;
+            dataGridViewCellStyle53.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.DGV_통계.RowHeadersDefaultCellStyle = dataGridViewCellStyle53;
             this.DGV_통계.RowHeadersVisible = false;
-            dataGridViewCellStyle233.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle233.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle233.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle233.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle233.SelectionBackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle233.SelectionForeColor = System.Drawing.Color.Black;
-            this.DGV_통계.RowsDefaultCellStyle = dataGridViewCellStyle233;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle54.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle54.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle54.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.Color.Black;
+            this.DGV_통계.RowsDefaultCellStyle = dataGridViewCellStyle54;
             this.DGV_통계.RowTemplate.Height = 23;
             this.DGV_통계.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGV_통계.Size = new System.Drawing.Size(1104, 42);
@@ -3184,13 +3288,13 @@ namespace 지니_64
             this.DGV_통계.TabStop = false;
             this.DGV_통계.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_통계_CellClick);
             this.DGV_통계.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_CellValueChanged);
-            this.DGV_통계.CurrentCellDirtyStateChanged += new System.EventHandler(this.dataGridView_CurrentCellDirtyStateChanged);
+            this.DGV_통계.CurrentCellDirtyStateChanged += new System.EventHandler(this.DataGridView_CurrentCellDirtyStateChanged);
             // 
             // 총매수금액_통계
             // 
-            dataGridViewCellStyle220.Format = "N0";
-            dataGridViewCellStyle220.NullValue = null;
-            this.총매수금액_통계.DefaultCellStyle = dataGridViewCellStyle220;
+            dataGridViewCellStyle41.Format = "N0";
+            dataGridViewCellStyle41.NullValue = null;
+            this.총매수금액_통계.DefaultCellStyle = dataGridViewCellStyle41;
             this.총매수금액_통계.HeaderText = "총매수금액";
             this.총매수금액_통계.Name = "총매수금액_통계";
             this.총매수금액_통계.ReadOnly = true;
@@ -3199,9 +3303,9 @@ namespace 지니_64
             // 
             // 매수회전_통계
             // 
-            dataGridViewCellStyle221.Format = "N2";
-            dataGridViewCellStyle221.NullValue = null;
-            this.매수회전_통계.DefaultCellStyle = dataGridViewCellStyle221;
+            dataGridViewCellStyle42.Format = "N2";
+            dataGridViewCellStyle42.NullValue = null;
+            this.매수회전_통계.DefaultCellStyle = dataGridViewCellStyle42;
             this.매수회전_통계.HeaderText = "매수회전율";
             this.매수회전_통계.Name = "매수회전_통계";
             this.매수회전_통계.ReadOnly = true;
@@ -3210,9 +3314,9 @@ namespace 지니_64
             // 
             // 총매도금액_통계
             // 
-            dataGridViewCellStyle222.Format = "N0";
-            dataGridViewCellStyle222.NullValue = null;
-            this.총매도금액_통계.DefaultCellStyle = dataGridViewCellStyle222;
+            dataGridViewCellStyle43.Format = "N0";
+            dataGridViewCellStyle43.NullValue = null;
+            this.총매도금액_통계.DefaultCellStyle = dataGridViewCellStyle43;
             this.총매도금액_통계.HeaderText = "총매도금액";
             this.총매도금액_통계.Name = "총매도금액_통계";
             this.총매도금액_통계.ReadOnly = true;
@@ -3221,9 +3325,9 @@ namespace 지니_64
             // 
             // 매도회전_통계
             // 
-            dataGridViewCellStyle223.Format = "N2";
-            dataGridViewCellStyle223.NullValue = null;
-            this.매도회전_통계.DefaultCellStyle = dataGridViewCellStyle223;
+            dataGridViewCellStyle44.Format = "N2";
+            dataGridViewCellStyle44.NullValue = null;
+            this.매도회전_통계.DefaultCellStyle = dataGridViewCellStyle44;
             this.매도회전_통계.HeaderText = "매도회전율";
             this.매도회전_통계.Name = "매도회전_통계";
             this.매도회전_통계.ReadOnly = true;
@@ -3232,9 +3336,9 @@ namespace 지니_64
             // 
             // 총실현손익_통계
             // 
-            dataGridViewCellStyle224.Format = "N0";
-            dataGridViewCellStyle224.NullValue = null;
-            this.총실현손익_통계.DefaultCellStyle = dataGridViewCellStyle224;
+            dataGridViewCellStyle45.Format = "N0";
+            dataGridViewCellStyle45.NullValue = null;
+            this.총실현손익_통계.DefaultCellStyle = dataGridViewCellStyle45;
             this.총실현손익_통계.HeaderText = "총실현손익";
             this.총실현손익_통계.Name = "총실현손익_통계";
             this.총실현손익_통계.ReadOnly = true;
@@ -3243,9 +3347,9 @@ namespace 지니_64
             // 
             // 실현손익율_통계
             // 
-            dataGridViewCellStyle225.Format = "N2";
-            dataGridViewCellStyle225.NullValue = null;
-            this.실현손익율_통계.DefaultCellStyle = dataGridViewCellStyle225;
+            dataGridViewCellStyle46.Format = "N2";
+            dataGridViewCellStyle46.NullValue = null;
+            this.실현손익율_통계.DefaultCellStyle = dataGridViewCellStyle46;
             this.실현손익율_통계.HeaderText = "실현손익율";
             this.실현손익율_통계.Name = "실현손익율_통계";
             this.실현손익율_통계.ReadOnly = true;
@@ -3254,9 +3358,9 @@ namespace 지니_64
             // 
             // 총매매수수료_통계
             // 
-            dataGridViewCellStyle226.Format = "N0";
-            dataGridViewCellStyle226.NullValue = null;
-            this.총매매수수료_통계.DefaultCellStyle = dataGridViewCellStyle226;
+            dataGridViewCellStyle47.Format = "N0";
+            dataGridViewCellStyle47.NullValue = null;
+            this.총매매수수료_통계.DefaultCellStyle = dataGridViewCellStyle47;
             this.총매매수수료_통계.HeaderText = "총매매수수료";
             this.총매매수수료_통계.Name = "총매매수수료_통계";
             this.총매매수수료_통계.ReadOnly = true;
@@ -3264,9 +3368,9 @@ namespace 지니_64
             // 
             // 수수료율_통계
             // 
-            dataGridViewCellStyle227.Format = "N2";
-            dataGridViewCellStyle227.NullValue = null;
-            this.수수료율_통계.DefaultCellStyle = dataGridViewCellStyle227;
+            dataGridViewCellStyle48.Format = "N2";
+            dataGridViewCellStyle48.NullValue = null;
+            this.수수료율_통계.DefaultCellStyle = dataGridViewCellStyle48;
             this.수수료율_통계.HeaderText = "수수료율";
             this.수수료율_통계.Name = "수수료율_통계";
             this.수수료율_통계.ReadOnly = true;
@@ -3275,9 +3379,9 @@ namespace 지니_64
             // 
             // 총매매세금_통계
             // 
-            dataGridViewCellStyle228.Format = "N0";
-            dataGridViewCellStyle228.NullValue = null;
-            this.총매매세금_통계.DefaultCellStyle = dataGridViewCellStyle228;
+            dataGridViewCellStyle49.Format = "N0";
+            dataGridViewCellStyle49.NullValue = null;
+            this.총매매세금_통계.DefaultCellStyle = dataGridViewCellStyle49;
             this.총매매세금_통계.HeaderText = "총매매세금";
             this.총매매세금_통계.Name = "총매매세금_통계";
             this.총매매세금_통계.ReadOnly = true;
@@ -3286,9 +3390,9 @@ namespace 지니_64
             // 
             // 세금율_통계
             // 
-            dataGridViewCellStyle229.Format = "N2";
-            dataGridViewCellStyle229.NullValue = null;
-            this.세금율_통계.DefaultCellStyle = dataGridViewCellStyle229;
+            dataGridViewCellStyle50.Format = "N2";
+            dataGridViewCellStyle50.NullValue = null;
+            this.세금율_통계.DefaultCellStyle = dataGridViewCellStyle50;
             this.세금율_통계.HeaderText = "세금율";
             this.세금율_통계.Name = "세금율_통계";
             this.세금율_통계.ReadOnly = true;
@@ -3297,10 +3401,10 @@ namespace 지니_64
             // 
             // 수익횟수_통계
             // 
-            dataGridViewCellStyle230.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle230.Format = "N0";
-            dataGridViewCellStyle230.NullValue = null;
-            this.수익횟수_통계.DefaultCellStyle = dataGridViewCellStyle230;
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle51.Format = "N0";
+            dataGridViewCellStyle51.NullValue = null;
+            this.수익횟수_통계.DefaultCellStyle = dataGridViewCellStyle51;
             this.수익횟수_통계.HeaderText = "수익횟수";
             this.수익횟수_통계.Name = "수익횟수_통계";
             this.수익횟수_통계.ReadOnly = true;
@@ -3309,10 +3413,10 @@ namespace 지니_64
             // 
             // 손실횟수_통계
             // 
-            dataGridViewCellStyle231.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle231.Format = "N0";
-            dataGridViewCellStyle231.NullValue = null;
-            this.손실횟수_통계.DefaultCellStyle = dataGridViewCellStyle231;
+            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle52.Format = "N0";
+            dataGridViewCellStyle52.NullValue = null;
+            this.손실횟수_통계.DefaultCellStyle = dataGridViewCellStyle52;
             this.손실횟수_통계.HeaderText = "손실횟수";
             this.손실횟수_통계.Name = "손실횟수_통계";
             this.손실횟수_통계.ReadOnly = true;
@@ -3348,7 +3452,22 @@ namespace 지니_64
             this.TB_일통계기준.Text = "1000000000000";
             this.TB_일통계기준.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_일통계기준.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_일통계기준.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_일통계기준.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
+            // 
+            // label387
+            // 
+            this.label387.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.label387.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label387.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label387.Font = new System.Drawing.Font("굴림체", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label387.Location = new System.Drawing.Point(259, -1);
+            this.label387.Margin = new System.Windows.Forms.Padding(3);
+            this.label387.Name = "label387";
+            this.label387.Size = new System.Drawing.Size(98, 22);
+            this.label387.TabIndex = 7;
+            this.label387.Text = "월통계 기준";
+            this.label387.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.label387, "# 년통계 에서 월별 비율계산 기준( ex. 투자원금 )");
             // 
             // DTP_기준일
             // 
@@ -3358,6 +3477,20 @@ namespace 지니_64
             this.DTP_기준일.Name = "DTP_기준일";
             this.DTP_기준일.Size = new System.Drawing.Size(188, 22);
             this.DTP_기준일.TabIndex = 13;
+            // 
+            // LB_종목수
+            // 
+            this.LB_종목수.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.LB_종목수.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LB_종목수.Cursor = System.Windows.Forms.Cursors.Default;
+            this.LB_종목수.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.LB_종목수.Location = new System.Drawing.Point(1004, -1);
+            this.LB_종목수.Margin = new System.Windows.Forms.Padding(3);
+            this.LB_종목수.Name = "LB_종목수";
+            this.LB_종목수.Size = new System.Drawing.Size(98, 22);
+            this.LB_종목수.TabIndex = 7;
+            this.LB_종목수.Text = "종목: 0 EA";
+            this.LB_종목수.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // BT_기준일별매매확인
             // 
@@ -3374,6 +3507,22 @@ namespace 지니_64
             this.BT_기준일별매매확인.Text = "기준일별 매매내역";
             this.BT_기준일별매매확인.UseVisualStyleBackColor = false;
             this.BT_기준일별매매확인.Click += new System.EventHandler(this.BT_기준일별매매확인_Click);
+            // 
+            // TB_월통계기준
+            // 
+            this.TB_월통계기준.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_월통계기준.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_월통계기준.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_월통계기준.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.TB_월통계기준.Location = new System.Drawing.Point(356, -1);
+            this.TB_월통계기준.MaxLength = 13;
+            this.TB_월통계기준.Name = "TB_월통계기준";
+            this.TB_월통계기준.Size = new System.Drawing.Size(118, 22);
+            this.TB_월통계기준.TabIndex = 10;
+            this.TB_월통계기준.Text = "1000000000000";
+            this.TB_월통계기준.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_월통계기준.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
+            this.TB_월통계기준.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // CBB_통계
             // 
@@ -3402,35 +3551,6 @@ namespace 지니_64
             this.CBB_통계.TabIndex = 5;
             this.CBB_통계.SelectedIndexChanged += new System.EventHandler(this.CBB_통계_SelectedIndexChanged);
             // 
-            // label354
-            // 
-            this.label354.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label354.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label354.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label354.Location = new System.Drawing.Point(170, -1);
-            this.label354.Margin = new System.Windows.Forms.Padding(0);
-            this.label354.Name = "label354";
-            this.label354.Size = new System.Drawing.Size(26, 22);
-            this.label354.TabIndex = 2;
-            this.label354.Text = "년";
-            this.label354.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // BT_매매동계
-            // 
-            this.BT_매매동계.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.BT_매매동계.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BT_매매동계.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BT_매매동계.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.BT_매매동계.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_매매동계.Location = new System.Drawing.Point(-1, -1);
-            this.BT_매매동계.Margin = new System.Windows.Forms.Padding(0);
-            this.BT_매매동계.Name = "BT_매매동계";
-            this.BT_매매동계.Size = new System.Drawing.Size(108, 22);
-            this.BT_매매동계.TabIndex = 0;
-            this.BT_매매동계.Text = "매매내역확인";
-            this.BT_매매동계.UseVisualStyleBackColor = false;
-            this.BT_매매동계.Click += new System.EventHandler(this.BT_매매내역확인_Click);
-            // 
             // TB_통계
             // 
             this.TB_통계.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -3444,132 +3564,40 @@ namespace 지니_64
             this.TB_통계.TabIndex = 1;
             this.TB_통계.Text = "2023";
             this.TB_통계.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_통계.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_통계.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_월통계기준
+            // label354
             // 
-            this.TB_월통계기준.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TB_월통계기준.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_월통계기준.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_월통계기준.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.TB_월통계기준.Location = new System.Drawing.Point(356, -1);
-            this.TB_월통계기준.MaxLength = 13;
-            this.TB_월통계기준.Name = "TB_월통계기준";
-            this.TB_월통계기준.Size = new System.Drawing.Size(118, 22);
-            this.TB_월통계기준.TabIndex = 10;
-            this.TB_월통계기준.Text = "1000000000000";
-            this.TB_월통계기준.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_월통계기준.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_월통계기준.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
-            // 
-            // LB_종목수
-            // 
-            this.LB_종목수.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.LB_종목수.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LB_종목수.Cursor = System.Windows.Forms.Cursors.Default;
-            this.LB_종목수.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.LB_종목수.Location = new System.Drawing.Point(1004, -1);
-            this.LB_종목수.Margin = new System.Windows.Forms.Padding(3);
-            this.LB_종목수.Name = "LB_종목수";
-            this.LB_종목수.Size = new System.Drawing.Size(98, 22);
-            this.LB_종목수.TabIndex = 7;
-            this.LB_종목수.Text = "종목: 0 EA";
-            this.LB_종목수.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // chart_Day
-            // 
-            this.chart_Day.BackColor = System.Drawing.SystemColors.ControlLight;
-            chartArea4.AxisX.Crossing = 0D;
-            chartArea4.AxisX.Interval = 1D;
-            chartArea4.AxisX.MajorGrid.Enabled = false;
-            chartArea4.AxisX.MajorTickMark.Size = 0.5F;
-            chartArea4.AxisX.MajorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.AcrossAxis;
-            chartArea4.AxisX2.LineWidth = 2;
-            chartArea4.AxisY.LabelStyle.Format = "N0";
-            chartArea4.AxisY.MajorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea4.AxisY.MajorTickMark.Size = 0.5F;
-            chartArea4.AxisY.MajorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.AcrossAxis;
-            chartArea4.AxisY2.LineWidth = 2;
-            chartArea4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            chartArea4.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
-            chartArea4.Name = "ChartArea1";
-            this.chart_Day.ChartAreas.Add(chartArea4);
-            legend4.Enabled = false;
-            legend4.Name = "Legend1";
-            this.chart_Day.Legends.Add(legend4);
-            this.chart_Day.Location = new System.Drawing.Point(1186, 37);
-            this.chart_Day.Name = "chart_Day";
-            this.chart_Day.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            series7.BorderWidth = 2;
-            series7.ChartArea = "ChartArea1";
-            series7.Color = System.Drawing.Color.Red;
-            series7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series7.IsValueShownAsLabel = true;
-            series7.LabelBackColor = System.Drawing.Color.WhiteSmoke;
-            series7.LabelBorderColor = System.Drawing.Color.Black;
-            series7.LabelFormat = "N0";
-            series7.Legend = "Legend1";
-            series7.Name = "일간수익";
-            series8.BorderWidth = 3;
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series8.Color = System.Drawing.Color.Orange;
-            series8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            series8.IsValueShownAsLabel = true;
-            series8.LabelBackColor = System.Drawing.Color.Khaki;
-            series8.LabelBorderColor = System.Drawing.Color.Black;
-            series8.LabelFormat = "N0";
-            series8.Legend = "Legend1";
-            series8.Name = "수익합계";
-            this.chart_Day.Series.Add(series7);
-            this.chart_Day.Series.Add(series8);
-            this.chart_Day.Size = new System.Drawing.Size(160, 163);
-            this.chart_Day.TabIndex = 69;
-            this.chart_Day.Text = "chart월";
-            // 
-            // label387
-            // 
-            this.label387.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.label387.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label387.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label387.Font = new System.Drawing.Font("굴림체", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label387.Location = new System.Drawing.Point(259, -1);
-            this.label387.Margin = new System.Windows.Forms.Padding(3);
-            this.label387.Name = "label387";
-            this.label387.Size = new System.Drawing.Size(98, 22);
-            this.label387.TabIndex = 7;
-            this.label387.Text = "월통계 기준";
-            this.label387.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.label387, "# 년통계 에서 월별 비율계산 기준( ex. 투자원금 )");
-            // 
-            // 종목감추기6
-            // 
-            this.종목감추기6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.종목감추기6.Location = new System.Drawing.Point(-1, 81);
-            this.종목감추기6.Name = "종목감추기6";
-            this.종목감추기6.Size = new System.Drawing.Size(126, 480);
-            this.종목감추기6.TabIndex = 14;
+            this.label354.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label354.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label354.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label354.Location = new System.Drawing.Point(170, -1);
+            this.label354.Margin = new System.Windows.Forms.Padding(0);
+            this.label354.Name = "label354";
+            this.label354.Size = new System.Drawing.Size(26, 22);
+            this.label354.TabIndex = 2;
+            this.label354.Text = "년";
+            this.label354.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DGV_통계B
             // 
             this.DGV_통계B.AllowUserToAddRows = false;
             this.DGV_통계B.AllowUserToDeleteRows = false;
             this.DGV_통계B.AllowUserToResizeRows = false;
-            dataGridViewCellStyle234.BackColor = System.Drawing.SystemColors.ControlLight;
-            dataGridViewCellStyle234.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle234.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle234.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle234.SelectionForeColor = System.Drawing.Color.Black;
-            this.DGV_통계B.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle234;
+            dataGridViewCellStyle55.BackColor = System.Drawing.SystemColors.ControlLight;
+            dataGridViewCellStyle55.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.Color.Black;
+            this.DGV_통계B.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle55;
             this.DGV_통계B.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.DGV_통계B.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle235.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle235.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle235.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle235.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle235.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle235.SelectionForeColor = System.Drawing.Color.Black;
-            this.DGV_통계B.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle235;
+            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle56.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle56.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle56.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.Color.Black;
+            this.DGV_통계B.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle56;
             this.DGV_통계B.ColumnHeadersHeight = 20;
             this.DGV_통계B.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.DGV_통계B.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3585,22 +3613,22 @@ namespace 지니_64
             this.매매세금_통계B,
             this.매매세금율_통계B,
             this.수익n손실_통계B});
-            dataGridViewCellStyle246.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle246.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle246.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle246.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle246.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle246.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle246.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DGV_통계B.DefaultCellStyle = dataGridViewCellStyle246;
+            dataGridViewCellStyle67.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle67.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle67.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle67.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle67.SelectionBackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle67.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle67.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_통계B.DefaultCellStyle = dataGridViewCellStyle67;
             this.DGV_통계B.EnableHeadersVisualStyles = false;
             this.DGV_통계B.Location = new System.Drawing.Point(-2, 62);
             this.DGV_통계B.MultiSelect = false;
             this.DGV_통계B.Name = "DGV_통계B";
             this.DGV_통계B.ReadOnly = true;
             this.DGV_통계B.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle247.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.DGV_통계B.RowHeadersDefaultCellStyle = dataGridViewCellStyle247;
+            dataGridViewCellStyle68.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.DGV_통계B.RowHeadersDefaultCellStyle = dataGridViewCellStyle68;
             this.DGV_통계B.RowHeadersVisible = false;
             this.DGV_통계B.RowTemplate.Height = 23;
             this.DGV_통계B.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -3609,7 +3637,7 @@ namespace 지니_64
             this.DGV_통계B.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_통계_CellClick);
             this.DGV_통계B.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGV_통계B_CellDoubleClick);
             this.DGV_통계B.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_CellValueChanged);
-            this.DGV_통계B.CurrentCellDirtyStateChanged += new System.EventHandler(this.dataGridView_CurrentCellDirtyStateChanged);
+            this.DGV_통계B.CurrentCellDirtyStateChanged += new System.EventHandler(this.DataGridView_CurrentCellDirtyStateChanged);
             // 
             // 일자_통계B
             // 
@@ -3621,9 +3649,9 @@ namespace 지니_64
             // 
             // 매수금액_통계B
             // 
-            dataGridViewCellStyle236.Format = "N0";
-            dataGridViewCellStyle236.NullValue = null;
-            this.매수금액_통계B.DefaultCellStyle = dataGridViewCellStyle236;
+            dataGridViewCellStyle57.Format = "N0";
+            dataGridViewCellStyle57.NullValue = null;
+            this.매수금액_통계B.DefaultCellStyle = dataGridViewCellStyle57;
             this.매수금액_통계B.HeaderText = "매수금액";
             this.매수금액_통계B.Name = "매수금액_통계B";
             this.매수금액_통계B.ReadOnly = true;
@@ -3631,9 +3659,9 @@ namespace 지니_64
             // 
             // 매수회전율_통계B
             // 
-            dataGridViewCellStyle237.Format = "N2";
-            dataGridViewCellStyle237.NullValue = null;
-            this.매수회전율_통계B.DefaultCellStyle = dataGridViewCellStyle237;
+            dataGridViewCellStyle58.Format = "N2";
+            dataGridViewCellStyle58.NullValue = null;
+            this.매수회전율_통계B.DefaultCellStyle = dataGridViewCellStyle58;
             this.매수회전율_통계B.HeaderText = "매수회전율";
             this.매수회전율_통계B.Name = "매수회전율_통계B";
             this.매수회전율_통계B.ReadOnly = true;
@@ -3641,9 +3669,9 @@ namespace 지니_64
             // 
             // 매도금액_통계B
             // 
-            dataGridViewCellStyle238.Format = "N0";
-            dataGridViewCellStyle238.NullValue = null;
-            this.매도금액_통계B.DefaultCellStyle = dataGridViewCellStyle238;
+            dataGridViewCellStyle59.Format = "N0";
+            dataGridViewCellStyle59.NullValue = null;
+            this.매도금액_통계B.DefaultCellStyle = dataGridViewCellStyle59;
             this.매도금액_통계B.HeaderText = "매도금액";
             this.매도금액_통계B.Name = "매도금액_통계B";
             this.매도금액_통계B.ReadOnly = true;
@@ -3651,9 +3679,9 @@ namespace 지니_64
             // 
             // 매도회전율_통계B
             // 
-            dataGridViewCellStyle239.Format = "N2";
-            dataGridViewCellStyle239.NullValue = null;
-            this.매도회전율_통계B.DefaultCellStyle = dataGridViewCellStyle239;
+            dataGridViewCellStyle60.Format = "N2";
+            dataGridViewCellStyle60.NullValue = null;
+            this.매도회전율_통계B.DefaultCellStyle = dataGridViewCellStyle60;
             this.매도회전율_통계B.HeaderText = "매도회전율";
             this.매도회전율_통계B.Name = "매도회전율_통계B";
             this.매도회전율_통계B.ReadOnly = true;
@@ -3661,9 +3689,9 @@ namespace 지니_64
             // 
             // 실현손익_통계B
             // 
-            dataGridViewCellStyle240.Format = "N0";
-            dataGridViewCellStyle240.NullValue = null;
-            this.실현손익_통계B.DefaultCellStyle = dataGridViewCellStyle240;
+            dataGridViewCellStyle61.Format = "N0";
+            dataGridViewCellStyle61.NullValue = null;
+            this.실현손익_통계B.DefaultCellStyle = dataGridViewCellStyle61;
             this.실현손익_통계B.HeaderText = "실현손익";
             this.실현손익_통계B.Name = "실현손익_통계B";
             this.실현손익_통계B.ReadOnly = true;
@@ -3671,9 +3699,9 @@ namespace 지니_64
             // 
             // 실현손익율_통계B
             // 
-            dataGridViewCellStyle241.Format = "N2";
-            dataGridViewCellStyle241.NullValue = null;
-            this.실현손익율_통계B.DefaultCellStyle = dataGridViewCellStyle241;
+            dataGridViewCellStyle62.Format = "N2";
+            dataGridViewCellStyle62.NullValue = null;
+            this.실현손익율_통계B.DefaultCellStyle = dataGridViewCellStyle62;
             this.실현손익율_통계B.HeaderText = "실현손익율";
             this.실현손익율_통계B.Name = "실현손익율_통계B";
             this.실현손익율_통계B.ReadOnly = true;
@@ -3681,9 +3709,9 @@ namespace 지니_64
             // 
             // 매매수수료_통계B
             // 
-            dataGridViewCellStyle242.Format = "N0";
-            dataGridViewCellStyle242.NullValue = null;
-            this.매매수수료_통계B.DefaultCellStyle = dataGridViewCellStyle242;
+            dataGridViewCellStyle63.Format = "N0";
+            dataGridViewCellStyle63.NullValue = null;
+            this.매매수수료_통계B.DefaultCellStyle = dataGridViewCellStyle63;
             this.매매수수료_통계B.HeaderText = "매매수수료";
             this.매매수수료_통계B.Name = "매매수수료_통계B";
             this.매매수수료_통계B.ReadOnly = true;
@@ -3691,9 +3719,9 @@ namespace 지니_64
             // 
             // 매매수수료율_통계B
             // 
-            dataGridViewCellStyle243.Format = "N2";
-            dataGridViewCellStyle243.NullValue = null;
-            this.매매수수료율_통계B.DefaultCellStyle = dataGridViewCellStyle243;
+            dataGridViewCellStyle64.Format = "N2";
+            dataGridViewCellStyle64.NullValue = null;
+            this.매매수수료율_통계B.DefaultCellStyle = dataGridViewCellStyle64;
             this.매매수수료율_통계B.HeaderText = "수수료율";
             this.매매수수료율_통계B.Name = "매매수수료율_통계B";
             this.매매수수료율_통계B.ReadOnly = true;
@@ -3701,9 +3729,9 @@ namespace 지니_64
             // 
             // 매매세금_통계B
             // 
-            dataGridViewCellStyle244.Format = "N0";
-            dataGridViewCellStyle244.NullValue = null;
-            this.매매세금_통계B.DefaultCellStyle = dataGridViewCellStyle244;
+            dataGridViewCellStyle65.Format = "N0";
+            dataGridViewCellStyle65.NullValue = null;
+            this.매매세금_통계B.DefaultCellStyle = dataGridViewCellStyle65;
             this.매매세금_통계B.HeaderText = "매매세금";
             this.매매세금_통계B.Name = "매매세금_통계B";
             this.매매세금_통계B.ReadOnly = true;
@@ -3711,9 +3739,9 @@ namespace 지니_64
             // 
             // 매매세금율_통계B
             // 
-            dataGridViewCellStyle245.Format = "N2";
-            dataGridViewCellStyle245.NullValue = null;
-            this.매매세금율_통계B.DefaultCellStyle = dataGridViewCellStyle245;
+            dataGridViewCellStyle66.Format = "N2";
+            dataGridViewCellStyle66.NullValue = null;
+            this.매매세금율_통계B.DefaultCellStyle = dataGridViewCellStyle66;
             this.매매세금율_통계B.HeaderText = "세금율";
             this.매매세금율_통계B.Name = "매매세금율_통계B";
             this.매매세금율_통계B.ReadOnly = true;
@@ -3726,6 +3754,65 @@ namespace 지니_64
             this.수익n손실_통계B.ReadOnly = true;
             this.수익n손실_통계B.Width = 71;
             // 
+            // 종목감추기6
+            // 
+            this.종목감추기6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.종목감추기6.Location = new System.Drawing.Point(3, 83);
+            this.종목감추기6.Name = "종목감추기6";
+            this.종목감추기6.Size = new System.Drawing.Size(126, 319);
+            this.종목감추기6.TabIndex = 14;
+            // 
+            // chart_Day
+            // 
+            this.chart_Day.BackColor = System.Drawing.SystemColors.ControlLight;
+            chartArea2.AxisX.Crossing = 0D;
+            chartArea2.AxisX.Interval = 1D;
+            chartArea2.AxisX.MajorGrid.Enabled = false;
+            chartArea2.AxisX.MajorTickMark.Size = 0.5F;
+            chartArea2.AxisX.MajorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.AcrossAxis;
+            chartArea2.AxisX2.LineWidth = 2;
+            chartArea2.AxisY.LabelStyle.Format = "N0";
+            chartArea2.AxisY.MajorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea2.AxisY.MajorTickMark.Size = 0.5F;
+            chartArea2.AxisY.MajorTickMark.TickMarkStyle = System.Windows.Forms.DataVisualization.Charting.TickMarkStyle.AcrossAxis;
+            chartArea2.AxisY2.LineWidth = 2;
+            chartArea2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            chartArea2.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center;
+            chartArea2.Name = "ChartArea1";
+            this.chart_Day.ChartAreas.Add(chartArea2);
+            legend2.Enabled = false;
+            legend2.Name = "Legend1";
+            this.chart_Day.Legends.Add(legend2);
+            this.chart_Day.Location = new System.Drawing.Point(1186, 37);
+            this.chart_Day.Name = "chart_Day";
+            this.chart_Day.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            series3.BorderWidth = 2;
+            series3.ChartArea = "ChartArea1";
+            series3.Color = System.Drawing.Color.Red;
+            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series3.IsValueShownAsLabel = true;
+            series3.LabelBackColor = System.Drawing.Color.WhiteSmoke;
+            series3.LabelBorderColor = System.Drawing.Color.Black;
+            series3.LabelFormat = "N0";
+            series3.Legend = "Legend1";
+            series3.Name = "일간수익";
+            series4.BorderWidth = 3;
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Color = System.Drawing.Color.Orange;
+            series4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series4.IsValueShownAsLabel = true;
+            series4.LabelBackColor = System.Drawing.Color.Khaki;
+            series4.LabelBorderColor = System.Drawing.Color.Black;
+            series4.LabelFormat = "N0";
+            series4.Legend = "Legend1";
+            series4.Name = "수익합계";
+            this.chart_Day.Series.Add(series3);
+            this.chart_Day.Series.Add(series4);
+            this.chart_Day.Size = new System.Drawing.Size(160, 163);
+            this.chart_Day.TabIndex = 69;
+            this.chart_Day.Text = "chart월";
+            // 
             // BT_미체결취소
             // 
             this.BT_미체결취소.BackColor = System.Drawing.Color.DarkSeaGreen;
@@ -3734,7 +3821,7 @@ namespace 지니_64
             this.BT_미체결취소.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.BT_미체결취소.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_미체결취소.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BT_미체결취소.Location = new System.Drawing.Point(266, 100);
+            this.BT_미체결취소.Location = new System.Drawing.Point(266, 99);
             this.BT_미체결취소.Name = "BT_미체결취소";
             this.BT_미체결취소.Size = new System.Drawing.Size(150, 21);
             this.BT_미체결취소.TabIndex = 40;
@@ -3754,7 +3841,7 @@ namespace 지니_64
             this.CB_미체결취소.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_미체결취소.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.CB_미체결취소.ForeColor = System.Drawing.Color.Black;
-            this.CB_미체결취소.Location = new System.Drawing.Point(197, 100);
+            this.CB_미체결취소.Location = new System.Drawing.Point(197, 99);
             this.CB_미체결취소.Name = "CB_미체결취소";
             this.CB_미체결취소.Size = new System.Drawing.Size(70, 21);
             this.CB_미체결취소.TabIndex = 41;
@@ -3770,7 +3857,7 @@ namespace 지니_64
             this.BT_jangos_sell.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.BT_jangos_sell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_jangos_sell.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BT_jangos_sell.Location = new System.Drawing.Point(-1, 100);
+            this.BT_jangos_sell.Location = new System.Drawing.Point(-1, 99);
             this.BT_jangos_sell.Margin = new System.Windows.Forms.Padding(0);
             this.BT_jangos_sell.Name = "BT_jangos_sell";
             this.BT_jangos_sell.Size = new System.Drawing.Size(50, 21);
@@ -3795,7 +3882,7 @@ namespace 지니_64
             this.label_잔고매입비.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_잔고매입비.Cursor = System.Windows.Forms.Cursors.Default;
             this.label_잔고매입비.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_잔고매입비.Location = new System.Drawing.Point(642, 80);
+            this.label_잔고매입비.Location = new System.Drawing.Point(335, 19);
             this.label_잔고매입비.Name = "label_잔고매입비";
             this.label_잔고매입비.Size = new System.Drawing.Size(150, 21);
             this.label_잔고매입비.TabIndex = 0;
@@ -3811,7 +3898,7 @@ namespace 지니_64
             this.BT_계좌설정저장.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.BT_계좌설정저장.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_계좌설정저장.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.BT_계좌설정저장.Location = new System.Drawing.Point(96, 20);
+            this.BT_계좌설정저장.Location = new System.Drawing.Point(96, 19);
             this.BT_계좌설정저장.Name = "BT_계좌설정저장";
             this.BT_계좌설정저장.Size = new System.Drawing.Size(99, 21);
             this.BT_계좌설정저장.TabIndex = 5;
@@ -3900,6 +3987,9 @@ namespace 지니_64
             // 
             this.CB_TR_A.AutoSize = true;
             this.CB_TR_A.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_TR_A.Checked = true;
+            this.CB_TR_A.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CB_TR_A.Enabled = false;
             this.CB_TR_A.Location = new System.Drawing.Point(191, 3);
             this.CB_TR_A.Name = "CB_TR_A";
             this.CB_TR_A.Size = new System.Drawing.Size(36, 16);
@@ -3935,26 +4025,26 @@ namespace 지니_64
             this.Search_List.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Search_List.FormattingEnabled = true;
             this.Search_List.ItemHeight = 12;
-            this.Search_List.Location = new System.Drawing.Point(0, 1);
+            this.Search_List.Location = new System.Drawing.Point(-1, 21);
             this.Search_List.Name = "Search_List";
             this.Search_List.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.Search_List.Size = new System.Drawing.Size(195, 108);
+            this.Search_List.Size = new System.Drawing.Size(195, 96);
             this.Search_List.TabIndex = 70;
             this.toolTip1.SetToolTip(this.Search_List, "첫 진입만 표시됩니다.");
             // 
-            // L_주문row
+            // Label_주문row
             // 
-            this.L_주문row.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.L_주문row.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L_주문row.Cursor = System.Windows.Forms.Cursors.Default;
-            this.L_주문row.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.L_주문row.Location = new System.Drawing.Point(409, -1);
-            this.L_주문row.Name = "L_주문row";
-            this.L_주문row.Size = new System.Drawing.Size(90, 21);
-            this.L_주문row.TabIndex = 0;
-            this.L_주문row.Text = "보이는 ROW 수";
-            this.L_주문row.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.L_주문row, "보여지는 열(Row) 의 수가 많을수록\r\n지니_64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
+            this.Label_주문row.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Label_주문row.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Label_주문row.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Label_주문row.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_주문row.Location = new System.Drawing.Point(409, -1);
+            this.Label_주문row.Name = "Label_주문row";
+            this.Label_주문row.Size = new System.Drawing.Size(90, 21);
+            this.Label_주문row.TabIndex = 0;
+            this.Label_주문row.Text = "보이는 ROW 수";
+            this.Label_주문row.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.Label_주문row, "보여지는 열(Row) 의 수가 많을수록\r\n지니64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
             // 
             // TB_주문row
             // 
@@ -3969,22 +4059,22 @@ namespace 지니_64
             this.TB_주문row.TabIndex = 2;
             this.TB_주문row.Text = "12";
             this.TB_주문row.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_주문row, "보여지는 열(Row) 의 수가 많을수록\r\n지니_64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
-            this.TB_주문row.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.toolTip1.SetToolTip(this.TB_주문row, "보여지는 열(Row) 의 수가 많을수록\r\n지니64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
+            this.TB_주문row.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // L_체결row
+            // Label_체결row
             // 
-            this.L_체결row.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.L_체결row.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.L_체결row.Cursor = System.Windows.Forms.Cursors.Default;
-            this.L_체결row.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.L_체결row.Location = new System.Drawing.Point(154, -1);
-            this.L_체결row.Name = "L_체결row";
-            this.L_체결row.Size = new System.Drawing.Size(96, 21);
-            this.L_체결row.TabIndex = 0;
-            this.L_체결row.Text = "보이는 ROW 수";
-            this.L_체결row.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.L_체결row, "보여지는 열(Row) 의 수가 많을수록\r\n지니_64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
+            this.Label_체결row.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Label_체결row.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Label_체결row.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Label_체결row.Font = new System.Drawing.Font("굴림체", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_체결row.Location = new System.Drawing.Point(154, -1);
+            this.Label_체결row.Name = "Label_체결row";
+            this.Label_체결row.Size = new System.Drawing.Size(96, 21);
+            this.Label_체결row.TabIndex = 0;
+            this.Label_체결row.Text = "보이는 ROW 수";
+            this.Label_체결row.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.Label_체결row, "보여지는 열(Row) 의 수가 많을수록\r\n지니64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
             // 
             // TB_체결row
             // 
@@ -3999,8 +4089,8 @@ namespace 지니_64
             this.TB_체결row.TabIndex = 2;
             this.TB_체결row.Text = "12";
             this.TB_체결row.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_체결row, "보여지는 열(Row) 의 수가 많을수록\r\n지니_64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
-            this.TB_체결row.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.toolTip1.SetToolTip(this.TB_체결row, "보여지는 열(Row) 의 수가 많을수록\r\n지니64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
+            this.TB_체결row.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_WatchRow_D
             // 
@@ -4015,7 +4105,7 @@ namespace 지니_64
             this.TB_WatchRow_D.TabIndex = 62;
             this.TB_WatchRow_D.Text = "12";
             this.TB_WatchRow_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_WatchRow_D, "보여지는 열(Row) 의 수가 많을수록\r\n지니_64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
+            this.toolTip1.SetToolTip(this.TB_WatchRow_D, "보여지는 열(Row) 의 수가 많을수록\r\n지니64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
             // 
             // label425
             // 
@@ -4029,7 +4119,7 @@ namespace 지니_64
             this.label425.TabIndex = 61;
             this.label425.Text = "보이는 ROW 수";
             this.label425.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.label425, "보여지는 열(Row) 의 수가 많을수록\r\n지니_64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
+            this.toolTip1.SetToolTip(this.label425, "보여지는 열(Row) 의 수가 많을수록\r\n지니64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
             // 
             // label424
             // 
@@ -4043,7 +4133,7 @@ namespace 지니_64
             this.label424.TabIndex = 61;
             this.label424.Text = "보이는 ROW 수";
             this.label424.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.label424, "보여지는 열(Row) 의 수가 많을수록 지니_64가 느려집니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
+            this.toolTip1.SetToolTip(this.label424, "보여지는 열(Row) 의 수가 많을수록 지니64가 느려집니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
             // 
             // TB_WatchRow_C
             // 
@@ -4058,7 +4148,7 @@ namespace 지니_64
             this.TB_WatchRow_C.TabIndex = 62;
             this.TB_WatchRow_C.Text = "12";
             this.TB_WatchRow_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_WatchRow_C, "보여지는 열(Row) 의 수가 많을수록 지니_64가 느려집니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
+            this.toolTip1.SetToolTip(this.TB_WatchRow_C, "보여지는 열(Row) 의 수가 많을수록 지니64가 느려집니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
             // 
             // label391
             // 
@@ -4072,7 +4162,7 @@ namespace 지니_64
             this.label391.TabIndex = 0;
             this.label391.Text = "보이는 ROW 수";
             this.label391.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.label391, "보여지는 열(Row) 의 수가 많을수록\r\n지니_64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
+            this.toolTip1.SetToolTip(this.label391, "보여지는 열(Row) 의 수가 많을수록\r\n지니64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
             // 
             // TB_WatchRow_A
             // 
@@ -4087,8 +4177,8 @@ namespace 지니_64
             this.TB_WatchRow_A.TabIndex = 2;
             this.TB_WatchRow_A.Text = "12";
             this.TB_WatchRow_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_WatchRow_A, "보여지는 열(Row) 의 수가 많을수록\r\n지니_64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
-            this.TB_WatchRow_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.toolTip1.SetToolTip(this.TB_WatchRow_A, "보여지는 열(Row) 의 수가 많을수록\r\n지니64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
+            this.TB_WatchRow_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label423
             // 
@@ -4102,7 +4192,7 @@ namespace 지니_64
             this.label423.TabIndex = 0;
             this.label423.Text = "보이는 ROW 수";
             this.label423.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.label423, "보여지는 열(Row) 의 수가 많을수록\r\n지니_64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
+            this.toolTip1.SetToolTip(this.label423, "보여지는 열(Row) 의 수가 많을수록\r\n지니64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
             // 
             // TB_WatchRow_B
             // 
@@ -4117,8 +4207,8 @@ namespace 지니_64
             this.TB_WatchRow_B.TabIndex = 2;
             this.TB_WatchRow_B.Text = "12";
             this.TB_WatchRow_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_WatchRow_B, "보여지는 열(Row) 의 수가 많을수록\r\n지니_64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
-            this.TB_WatchRow_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.toolTip1.SetToolTip(this.TB_WatchRow_B, "보여지는 열(Row) 의 수가 많을수록\r\n지니64가 느려지고 매매에 영향을 줍니다.\r\n1 page 를 넘지 않게 사용하는것이 좋습니다.\r\n");
+            this.TB_WatchRow_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // CBB_지수연동_추매
             // 
@@ -4160,7 +4250,7 @@ namespace 지니_64
             this.TB_잔고매입비_추매제한.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_잔고매입비_추매제한.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_잔고매입비_추매제한.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_잔고매입비_추매제한.Location = new System.Drawing.Point(591, 80);
+            this.TB_잔고매입비_추매제한.Location = new System.Drawing.Point(284, 19);
             this.TB_잔고매입비_추매제한.MaxLength = 6;
             this.TB_잔고매입비_추매제한.Name = "TB_잔고매입비_추매제한";
             this.TB_잔고매입비_추매제한.Size = new System.Drawing.Size(52, 21);
@@ -4169,7 +4259,7 @@ namespace 지니_64
             this.TB_잔고매입비_추매제한.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_잔고매입비_추매제한, "# 잔고 매입비중 추매제한\r\n개별종목 의 \'비중(매수기준금액 대비 매입금액)\' 이 \r\nn % 초과 이면 추가매수 제한");
             this.TB_잔고매입비_추매제한.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_잔고매입비_추매제한.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_잔고매입비_추매제한.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_잔고매입비_추매제한
             // 
@@ -4183,7 +4273,7 @@ namespace 지니_64
             this.CB_잔고매입비_추매제한.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_잔고매입비_추매제한.Font = new System.Drawing.Font("굴림체", 9F);
             this.CB_잔고매입비_추매제한.ForeColor = System.Drawing.Color.Black;
-            this.CB_잔고매입비_추매제한.Location = new System.Drawing.Point(415, 80);
+            this.CB_잔고매입비_추매제한.Location = new System.Drawing.Point(108, 19);
             this.CB_잔고매입비_추매제한.Name = "CB_잔고매입비_추매제한";
             this.CB_잔고매입비_추매제한.Size = new System.Drawing.Size(177, 21);
             this.CB_잔고매입비_추매제한.TabIndex = 2;
@@ -4199,7 +4289,7 @@ namespace 지니_64
             this.TB_jango_sell_time.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_jango_sell_time.ForeColor = System.Drawing.SystemColors.WindowText;
             this.TB_jango_sell_time.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_jango_sell_time.Location = new System.Drawing.Point(150, 100);
+            this.TB_jango_sell_time.Location = new System.Drawing.Point(150, 99);
             this.TB_jango_sell_time.MaxLength = 4;
             this.TB_jango_sell_time.Name = "TB_jango_sell_time";
             this.TB_jango_sell_time.Size = new System.Drawing.Size(32, 21);
@@ -4207,7 +4297,7 @@ namespace 지니_64
             this.TB_jango_sell_time.Text = "9999";
             this.TB_jango_sell_time.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_jango_sell_time, "#취소시간(초)");
-            this.TB_jango_sell_time.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_jango_sell_time.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_jango_sell_repeat
             // 
@@ -4216,7 +4306,7 @@ namespace 지니_64
             this.TB_jango_sell_repeat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_jango_sell_repeat.ForeColor = System.Drawing.SystemColors.WindowText;
             this.TB_jango_sell_repeat.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_jango_sell_repeat.Location = new System.Drawing.Point(181, 100);
+            this.TB_jango_sell_repeat.Location = new System.Drawing.Point(181, 99);
             this.TB_jango_sell_repeat.MaxLength = 1;
             this.TB_jango_sell_repeat.Name = "TB_jango_sell_repeat";
             this.TB_jango_sell_repeat.Size = new System.Drawing.Size(14, 21);
@@ -4224,23 +4314,40 @@ namespace 지니_64
             this.TB_jango_sell_repeat.Text = "0";
             this.TB_jango_sell_repeat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_jango_sell_repeat, "#재주문 횟수");
-            this.TB_jango_sell_repeat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_jango_sell_repeat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // MT_principal
+            // textBox_계좌번호
             // 
-            this.MT_principal.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.MT_principal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.MT_principal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MT_principal.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.MT_principal.Location = new System.Drawing.Point(197, 20);
-            this.MT_principal.MaxLength = 15;
-            this.MT_principal.Name = "MT_principal";
-            this.MT_principal.Size = new System.Drawing.Size(110, 21);
-            this.MT_principal.TabIndex = 10;
-            this.MT_principal.Text = "투자원금";
-            this.MT_principal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.MT_principal.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.MT_principal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.textBox_계좌번호.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.textBox_계좌번호.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_계좌번호.Enabled = false;
+            this.textBox_계좌번호.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox_계좌번호.Location = new System.Drawing.Point(345, -1);
+            this.textBox_계좌번호.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox_계좌번호.MaxLength = 10;
+            this.textBox_계좌번호.Name = "textBox_계좌번호";
+            this.textBox_계좌번호.ReadOnly = true;
+            this.textBox_계좌번호.Size = new System.Drawing.Size(129, 21);
+            this.textBox_계좌번호.TabIndex = 158;
+            this.textBox_계좌번호.Text = "계좌번호";
+            this.textBox_계좌번호.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.textBox_계좌번호, "계좌번호");
+            // 
+            // MT_투자원금
+            // 
+            this.MT_투자원금.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.MT_투자원금.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MT_투자원금.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MT_투자원금.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.MT_투자원금.Location = new System.Drawing.Point(197, 19);
+            this.MT_투자원금.MaxLength = 15;
+            this.MT_투자원금.Name = "MT_투자원금";
+            this.MT_투자원금.Size = new System.Drawing.Size(110, 21);
+            this.MT_투자원금.TabIndex = 10;
+            this.MT_투자원금.Text = "투자원금";
+            this.MT_투자원금.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.MT_투자원금.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
+            this.MT_투자원금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // MT_sonik_price
             // 
@@ -4248,7 +4355,7 @@ namespace 지니_64
             this.MT_sonik_price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.MT_sonik_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MT_sonik_price.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.MT_sonik_price.Location = new System.Drawing.Point(306, 80);
+            this.MT_sonik_price.Location = new System.Drawing.Point(-1, 19);
             this.MT_sonik_price.MaxLength = 15;
             this.MT_sonik_price.Name = "MT_sonik_price";
             this.MT_sonik_price.Size = new System.Drawing.Size(110, 21);
@@ -4256,7 +4363,7 @@ namespace 지니_64
             this.MT_sonik_price.Text = "0";
             this.MT_sonik_price.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.MT_sonik_price.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.MT_sonik_price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.MT_sonik_price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // MT_buying_standard
             // 
@@ -4264,7 +4371,7 @@ namespace 지니_64
             this.MT_buying_standard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.MT_buying_standard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MT_buying_standard.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.MT_buying_standard.Location = new System.Drawing.Point(306, 60);
+            this.MT_buying_standard.Location = new System.Drawing.Point(-1, -1);
             this.MT_buying_standard.MaxLength = 15;
             this.MT_buying_standard.Name = "MT_buying_standard";
             this.MT_buying_standard.Size = new System.Drawing.Size(110, 21);
@@ -4272,7 +4379,7 @@ namespace 지니_64
             this.MT_buying_standard.Text = "0";
             this.MT_buying_standard.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.MT_buying_standard.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.MT_buying_standard.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.MT_buying_standard.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // LB_error
             // 
@@ -4290,161 +4397,161 @@ namespace 지니_64
             this.LB_error.Size = new System.Drawing.Size(812, 972);
             this.LB_error.TabIndex = 0;
             // 
-            // combo_watch_condition_DD
+            // 와치_D
             // 
-            this.combo_watch_condition_DD.DropDownHeight = 600;
-            this.combo_watch_condition_DD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_watch_condition_DD.DropDownWidth = 200;
-            this.combo_watch_condition_DD.Enabled = false;
-            this.combo_watch_condition_DD.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_watch_condition_DD.FormattingEnabled = true;
-            this.combo_watch_condition_DD.IntegralHeight = false;
-            this.combo_watch_condition_DD.Location = new System.Drawing.Point(237, 19);
-            this.combo_watch_condition_DD.Name = "combo_watch_condition_DD";
-            this.combo_watch_condition_DD.Size = new System.Drawing.Size(150, 21);
-            this.combo_watch_condition_DD.TabIndex = 0;
-            this.combo_watch_condition_DD.TabStop = false;
-            this.combo_watch_condition_DD.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.combo_watch_condition_DD.SelectedIndexChanged += new System.EventHandler(this.combo_condition_SelectedIndexChanged);
-            this.combo_watch_condition_DD.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.combo_watch_condition_DD.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
+            this.와치_D.DropDownHeight = 600;
+            this.와치_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.와치_D.DropDownWidth = 200;
+            this.와치_D.Enabled = false;
+            this.와치_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.와치_D.FormattingEnabled = true;
+            this.와치_D.IntegralHeight = false;
+            this.와치_D.Location = new System.Drawing.Point(237, 19);
+            this.와치_D.Name = "와치_D";
+            this.와치_D.Size = new System.Drawing.Size(150, 21);
+            this.와치_D.TabIndex = 0;
+            this.와치_D.TabStop = false;
+            this.와치_D.DropDown += new System.EventHandler(this.Combo_Condition_Add);
+            this.와치_D.SelectedIndexChanged += new System.EventHandler(this.Combo_condition_SelectedIndexChanged);
+            this.와치_D.DropDownClosed += new System.EventHandler(this.와치_DropDownClosed);
+            this.와치_D.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
             // 
-            // combo_watch_condition_CC
+            // 와치_C
             // 
-            this.combo_watch_condition_CC.DropDownHeight = 600;
-            this.combo_watch_condition_CC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_watch_condition_CC.DropDownWidth = 200;
-            this.combo_watch_condition_CC.Enabled = false;
-            this.combo_watch_condition_CC.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_watch_condition_CC.FormattingEnabled = true;
-            this.combo_watch_condition_CC.IntegralHeight = false;
-            this.combo_watch_condition_CC.Location = new System.Drawing.Point(237, 19);
-            this.combo_watch_condition_CC.Name = "combo_watch_condition_CC";
-            this.combo_watch_condition_CC.Size = new System.Drawing.Size(150, 21);
-            this.combo_watch_condition_CC.TabIndex = 0;
-            this.combo_watch_condition_CC.TabStop = false;
-            this.combo_watch_condition_CC.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.combo_watch_condition_CC.SelectedIndexChanged += new System.EventHandler(this.combo_condition_SelectedIndexChanged);
-            this.combo_watch_condition_CC.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.combo_watch_condition_CC.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
+            this.와치_C.DropDownHeight = 600;
+            this.와치_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.와치_C.DropDownWidth = 200;
+            this.와치_C.Enabled = false;
+            this.와치_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.와치_C.FormattingEnabled = true;
+            this.와치_C.IntegralHeight = false;
+            this.와치_C.Location = new System.Drawing.Point(237, 19);
+            this.와치_C.Name = "와치_C";
+            this.와치_C.Size = new System.Drawing.Size(150, 21);
+            this.와치_C.TabIndex = 0;
+            this.와치_C.TabStop = false;
+            this.와치_C.DropDown += new System.EventHandler(this.Combo_Condition_Add);
+            this.와치_C.SelectedIndexChanged += new System.EventHandler(this.Combo_condition_SelectedIndexChanged);
+            this.와치_C.DropDownClosed += new System.EventHandler(this.와치_DropDownClosed);
+            this.와치_C.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
             // 
-            // combo_watch_condition_D
+            // watch_condition_D
             // 
-            this.combo_watch_condition_D.DropDownHeight = 300;
-            this.combo_watch_condition_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_watch_condition_D.DropDownWidth = 200;
-            this.combo_watch_condition_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_watch_condition_D.FormattingEnabled = true;
-            this.combo_watch_condition_D.IntegralHeight = false;
-            this.combo_watch_condition_D.Location = new System.Drawing.Point(58, 19);
-            this.combo_watch_condition_D.Name = "combo_watch_condition_D";
-            this.combo_watch_condition_D.Size = new System.Drawing.Size(131, 21);
-            this.combo_watch_condition_D.Sorted = true;
-            this.combo_watch_condition_D.TabIndex = 0;
-            this.combo_watch_condition_D.TabStop = false;
-            this.combo_watch_condition_D.DropDown += new System.EventHandler(this.combo_Watch_DropDown);
-            this.combo_watch_condition_D.SelectedIndexChanged += new System.EventHandler(this.combo_watch_Changed);
-            this.combo_watch_condition_D.DropDownClosed += new System.EventHandler(this.combo_watch_DropDownClosed);
+            this.watch_condition_D.DropDownHeight = 300;
+            this.watch_condition_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.watch_condition_D.DropDownWidth = 200;
+            this.watch_condition_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.watch_condition_D.FormattingEnabled = true;
+            this.watch_condition_D.IntegralHeight = false;
+            this.watch_condition_D.Location = new System.Drawing.Point(58, 19);
+            this.watch_condition_D.Name = "watch_condition_D";
+            this.watch_condition_D.Size = new System.Drawing.Size(131, 21);
+            this.watch_condition_D.Sorted = true;
+            this.watch_condition_D.TabIndex = 0;
+            this.watch_condition_D.TabStop = false;
+            this.watch_condition_D.DropDown += new System.EventHandler(this.Combo_Watch_DropDown);
+            this.watch_condition_D.SelectedIndexChanged += new System.EventHandler(this.Combo_watch_Changed);
+            this.watch_condition_D.DropDownClosed += new System.EventHandler(this.Combo_watch_DropDownClosed);
             // 
-            // combo_watch_condition_C
+            // watch_condition_C
             // 
-            this.combo_watch_condition_C.DropDownHeight = 300;
-            this.combo_watch_condition_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_watch_condition_C.DropDownWidth = 200;
-            this.combo_watch_condition_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_watch_condition_C.FormattingEnabled = true;
-            this.combo_watch_condition_C.IntegralHeight = false;
-            this.combo_watch_condition_C.Location = new System.Drawing.Point(58, 19);
-            this.combo_watch_condition_C.Name = "combo_watch_condition_C";
-            this.combo_watch_condition_C.Size = new System.Drawing.Size(131, 21);
-            this.combo_watch_condition_C.Sorted = true;
-            this.combo_watch_condition_C.TabIndex = 0;
-            this.combo_watch_condition_C.TabStop = false;
-            this.combo_watch_condition_C.DropDown += new System.EventHandler(this.combo_Watch_DropDown);
-            this.combo_watch_condition_C.SelectedIndexChanged += new System.EventHandler(this.combo_watch_Changed);
-            this.combo_watch_condition_C.DropDownClosed += new System.EventHandler(this.combo_watch_DropDownClosed);
+            this.watch_condition_C.DropDownHeight = 300;
+            this.watch_condition_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.watch_condition_C.DropDownWidth = 200;
+            this.watch_condition_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.watch_condition_C.FormattingEnabled = true;
+            this.watch_condition_C.IntegralHeight = false;
+            this.watch_condition_C.Location = new System.Drawing.Point(58, 19);
+            this.watch_condition_C.Name = "watch_condition_C";
+            this.watch_condition_C.Size = new System.Drawing.Size(131, 21);
+            this.watch_condition_C.Sorted = true;
+            this.watch_condition_C.TabIndex = 0;
+            this.watch_condition_C.TabStop = false;
+            this.watch_condition_C.DropDown += new System.EventHandler(this.Combo_Watch_DropDown);
+            this.watch_condition_C.SelectedIndexChanged += new System.EventHandler(this.Combo_watch_Changed);
+            this.watch_condition_C.DropDownClosed += new System.EventHandler(this.Combo_watch_DropDownClosed);
             // 
-            // combo_watch_condition_A
+            // watch_condition_A
             // 
-            this.combo_watch_condition_A.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.combo_watch_condition_A.DropDownHeight = 300;
-            this.combo_watch_condition_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_watch_condition_A.DropDownWidth = 200;
-            this.combo_watch_condition_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_watch_condition_A.FormattingEnabled = true;
-            this.combo_watch_condition_A.IntegralHeight = false;
-            this.combo_watch_condition_A.Location = new System.Drawing.Point(58, 19);
-            this.combo_watch_condition_A.Name = "combo_watch_condition_A";
-            this.combo_watch_condition_A.Size = new System.Drawing.Size(131, 21);
-            this.combo_watch_condition_A.Sorted = true;
-            this.combo_watch_condition_A.TabIndex = 0;
-            this.combo_watch_condition_A.TabStop = false;
-            this.combo_watch_condition_A.DropDown += new System.EventHandler(this.combo_Watch_DropDown);
-            this.combo_watch_condition_A.SelectedIndexChanged += new System.EventHandler(this.combo_watch_Changed);
-            this.combo_watch_condition_A.DropDownClosed += new System.EventHandler(this.combo_watch_DropDownClosed);
-            this.combo_watch_condition_A.MouseHover += new System.EventHandler(this.combo_watch_condition_A_MouseHover);
+            this.watch_condition_A.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.watch_condition_A.DropDownHeight = 300;
+            this.watch_condition_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.watch_condition_A.DropDownWidth = 200;
+            this.watch_condition_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.watch_condition_A.FormattingEnabled = true;
+            this.watch_condition_A.IntegralHeight = false;
+            this.watch_condition_A.Location = new System.Drawing.Point(58, 19);
+            this.watch_condition_A.Name = "watch_condition_A";
+            this.watch_condition_A.Size = new System.Drawing.Size(131, 21);
+            this.watch_condition_A.Sorted = true;
+            this.watch_condition_A.TabIndex = 0;
+            this.watch_condition_A.TabStop = false;
+            this.watch_condition_A.DropDown += new System.EventHandler(this.Combo_Watch_DropDown);
+            this.watch_condition_A.SelectedIndexChanged += new System.EventHandler(this.Combo_watch_Changed);
+            this.watch_condition_A.DropDownClosed += new System.EventHandler(this.Combo_watch_DropDownClosed);
+            this.watch_condition_A.MouseHover += new System.EventHandler(this.와치_A_MouseHover);
             // 
-            // combo_watch_condition_B
+            // watch_condition_B
             // 
-            this.combo_watch_condition_B.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.combo_watch_condition_B.DropDownHeight = 300;
-            this.combo_watch_condition_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_watch_condition_B.DropDownWidth = 200;
-            this.combo_watch_condition_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_watch_condition_B.FormattingEnabled = true;
-            this.combo_watch_condition_B.IntegralHeight = false;
-            this.combo_watch_condition_B.Location = new System.Drawing.Point(58, 19);
-            this.combo_watch_condition_B.Name = "combo_watch_condition_B";
-            this.combo_watch_condition_B.Size = new System.Drawing.Size(131, 21);
-            this.combo_watch_condition_B.Sorted = true;
-            this.combo_watch_condition_B.TabIndex = 0;
-            this.combo_watch_condition_B.TabStop = false;
-            this.combo_watch_condition_B.DropDown += new System.EventHandler(this.combo_Watch_DropDown);
-            this.combo_watch_condition_B.SelectedIndexChanged += new System.EventHandler(this.combo_watch_Changed);
-            this.combo_watch_condition_B.DropDownClosed += new System.EventHandler(this.combo_watch_DropDownClosed);
-            this.combo_watch_condition_B.MouseHover += new System.EventHandler(this.combo_watch_condition_A_MouseHover);
+            this.watch_condition_B.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.watch_condition_B.DropDownHeight = 300;
+            this.watch_condition_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.watch_condition_B.DropDownWidth = 200;
+            this.watch_condition_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.watch_condition_B.FormattingEnabled = true;
+            this.watch_condition_B.IntegralHeight = false;
+            this.watch_condition_B.Location = new System.Drawing.Point(58, 19);
+            this.watch_condition_B.Name = "watch_condition_B";
+            this.watch_condition_B.Size = new System.Drawing.Size(131, 21);
+            this.watch_condition_B.Sorted = true;
+            this.watch_condition_B.TabIndex = 0;
+            this.watch_condition_B.TabStop = false;
+            this.watch_condition_B.DropDown += new System.EventHandler(this.Combo_Watch_DropDown);
+            this.watch_condition_B.SelectedIndexChanged += new System.EventHandler(this.Combo_watch_Changed);
+            this.watch_condition_B.DropDownClosed += new System.EventHandler(this.Combo_watch_DropDownClosed);
+            this.watch_condition_B.MouseHover += new System.EventHandler(this.와치_A_MouseHover);
             // 
-            // combo_watch_condition_AA
+            // 와치_A
             // 
-            this.combo_watch_condition_AA.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.combo_watch_condition_AA.DropDownHeight = 600;
-            this.combo_watch_condition_AA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_watch_condition_AA.DropDownWidth = 200;
-            this.combo_watch_condition_AA.Enabled = false;
-            this.combo_watch_condition_AA.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_watch_condition_AA.FormattingEnabled = true;
-            this.combo_watch_condition_AA.IntegralHeight = false;
-            this.combo_watch_condition_AA.Location = new System.Drawing.Point(237, 19);
-            this.combo_watch_condition_AA.Name = "combo_watch_condition_AA";
-            this.combo_watch_condition_AA.Size = new System.Drawing.Size(150, 21);
-            this.combo_watch_condition_AA.TabIndex = 0;
-            this.combo_watch_condition_AA.TabStop = false;
-            this.combo_watch_condition_AA.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.combo_watch_condition_AA.SelectedIndexChanged += new System.EventHandler(this.combo_condition_SelectedIndexChanged);
-            this.combo_watch_condition_AA.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.combo_watch_condition_AA.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
-            this.combo_watch_condition_AA.MouseHover += new System.EventHandler(this.combo_watch_condition_A_MouseHover);
+            this.와치_A.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.와치_A.DropDownHeight = 600;
+            this.와치_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.와치_A.DropDownWidth = 200;
+            this.와치_A.Enabled = false;
+            this.와치_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.와치_A.FormattingEnabled = true;
+            this.와치_A.IntegralHeight = false;
+            this.와치_A.Location = new System.Drawing.Point(237, 19);
+            this.와치_A.Name = "와치_A";
+            this.와치_A.Size = new System.Drawing.Size(150, 21);
+            this.와치_A.TabIndex = 0;
+            this.와치_A.TabStop = false;
+            this.와치_A.DropDown += new System.EventHandler(this.Combo_Condition_Add);
+            this.와치_A.SelectedIndexChanged += new System.EventHandler(this.Combo_condition_SelectedIndexChanged);
+            this.와치_A.DropDownClosed += new System.EventHandler(this.와치_DropDownClosed);
+            this.와치_A.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
+            this.와치_A.MouseHover += new System.EventHandler(this.와치_A_MouseHover);
             // 
-            // combo_watch_condition_BB
+            // 와치_B
             // 
-            this.combo_watch_condition_BB.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.combo_watch_condition_BB.DropDownHeight = 600;
-            this.combo_watch_condition_BB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_watch_condition_BB.DropDownWidth = 200;
-            this.combo_watch_condition_BB.Enabled = false;
-            this.combo_watch_condition_BB.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_watch_condition_BB.FormattingEnabled = true;
-            this.combo_watch_condition_BB.IntegralHeight = false;
-            this.combo_watch_condition_BB.Location = new System.Drawing.Point(237, 19);
-            this.combo_watch_condition_BB.Name = "combo_watch_condition_BB";
-            this.combo_watch_condition_BB.Size = new System.Drawing.Size(150, 21);
-            this.combo_watch_condition_BB.TabIndex = 0;
-            this.combo_watch_condition_BB.TabStop = false;
-            this.combo_watch_condition_BB.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.combo_watch_condition_BB.SelectedIndexChanged += new System.EventHandler(this.combo_condition_SelectedIndexChanged);
-            this.combo_watch_condition_BB.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.combo_watch_condition_BB.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
-            this.combo_watch_condition_BB.MouseHover += new System.EventHandler(this.combo_watch_condition_A_MouseHover);
+            this.와치_B.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.와치_B.DropDownHeight = 600;
+            this.와치_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.와치_B.DropDownWidth = 200;
+            this.와치_B.Enabled = false;
+            this.와치_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.와치_B.FormattingEnabled = true;
+            this.와치_B.IntegralHeight = false;
+            this.와치_B.Location = new System.Drawing.Point(237, 19);
+            this.와치_B.Name = "와치_B";
+            this.와치_B.Size = new System.Drawing.Size(150, 21);
+            this.와치_B.TabIndex = 0;
+            this.와치_B.TabStop = false;
+            this.와치_B.DropDown += new System.EventHandler(this.Combo_Condition_Add);
+            this.와치_B.SelectedIndexChanged += new System.EventHandler(this.Combo_condition_SelectedIndexChanged);
+            this.와치_B.DropDownClosed += new System.EventHandler(this.와치_DropDownClosed);
+            this.와치_B.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
+            this.와치_B.MouseHover += new System.EventHandler(this.와치_A_MouseHover);
             // 
             // combo_jango_sell
             // 
@@ -4456,7 +4563,7 @@ namespace 지니_64
             "시장가",
             "현재가",
             "호가"});
-            this.combo_jango_sell.Location = new System.Drawing.Point(96, 100);
+            this.combo_jango_sell.Location = new System.Drawing.Point(96, 99);
             this.combo_jango_sell.Name = "combo_jango_sell";
             this.combo_jango_sell.Size = new System.Drawing.Size(70, 21);
             this.combo_jango_sell.TabIndex = 11;
@@ -4469,7 +4576,7 @@ namespace 지니_64
             this.TB_증가자산.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_증가자산.Cursor = System.Windows.Forms.Cursors.Default;
             this.TB_증가자산.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_증가자산.Location = new System.Drawing.Point(306, 40);
+            this.TB_증가자산.Location = new System.Drawing.Point(306, 39);
             this.TB_증가자산.Name = "TB_증가자산";
             this.TB_증가자산.Size = new System.Drawing.Size(110, 21);
             this.TB_증가자산.TabIndex = 10;
@@ -4483,7 +4590,7 @@ namespace 지니_64
             this.TB_D2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_D2.Cursor = System.Windows.Forms.Cursors.Default;
             this.TB_D2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_D2.Location = new System.Drawing.Point(415, 20);
+            this.TB_D2.Location = new System.Drawing.Point(415, 19);
             this.TB_D2.Name = "TB_D2";
             this.TB_D2.Size = new System.Drawing.Size(100, 21);
             this.TB_D2.TabIndex = 10;
@@ -4496,7 +4603,7 @@ namespace 지니_64
             this.TB_실현손익.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_실현손익.Cursor = System.Windows.Forms.Cursors.Default;
             this.TB_실현손익.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_실현손익.Location = new System.Drawing.Point(702, 20);
+            this.TB_실현손익.Location = new System.Drawing.Point(702, 19);
             this.TB_실현손익.Name = "TB_실현손익";
             this.TB_실현손익.Size = new System.Drawing.Size(90, 21);
             this.TB_실현손익.TabIndex = 10;
@@ -4510,7 +4617,7 @@ namespace 지니_64
             this.TB_매입금.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_매입금.Cursor = System.Windows.Forms.Cursors.Default;
             this.TB_매입금.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_매입금.Location = new System.Drawing.Point(514, 20);
+            this.TB_매입금.Location = new System.Drawing.Point(514, 19);
             this.TB_매입금.Name = "TB_매입금";
             this.TB_매입금.Size = new System.Drawing.Size(100, 21);
             this.TB_매입금.TabIndex = 10;
@@ -4523,7 +4630,7 @@ namespace 지니_64
             this.TB_평가손익금.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_평가손익금.Cursor = System.Windows.Forms.Cursors.Default;
             this.TB_평가손익금.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_평가손익금.Location = new System.Drawing.Point(613, 20);
+            this.TB_평가손익금.Location = new System.Drawing.Point(613, 19);
             this.TB_평가손익금.Name = "TB_평가손익금";
             this.TB_평가손익금.Size = new System.Drawing.Size(90, 21);
             this.TB_평가손익금.TabIndex = 10;
@@ -4531,18 +4638,18 @@ namespace 지니_64
             this.TB_평가손익금.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_평가손익금.TextChanged += new System.EventHandler(this.TextBox_빨파검);
             // 
-            // panel6
+            // panel_잔고
             // 
-            this.panel6.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.label175);
-            this.panel6.Controls.Add(this.label245);
-            this.panel6.Controls.Add(this.TB_setjango);
-            this.panel6.Controls.Add(this.TB_jango_count);
-            this.panel6.Location = new System.Drawing.Point(197, 40);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(110, 21);
-            this.panel6.TabIndex = 12;
+            this.panel_잔고.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel_잔고.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_잔고.Controls.Add(this.label175);
+            this.panel_잔고.Controls.Add(this.label245);
+            this.panel_잔고.Controls.Add(this.TB_setjango);
+            this.panel_잔고.Controls.Add(this.TB_jango_count);
+            this.panel_잔고.Location = new System.Drawing.Point(197, 39);
+            this.panel_잔고.Name = "panel_잔고";
+            this.panel_잔고.Size = new System.Drawing.Size(110, 21);
+            this.panel_잔고.TabIndex = 12;
             // 
             // panel91
             // 
@@ -4551,22 +4658,22 @@ namespace 지니_64
             this.panel91.Controls.Add(this.RB_sell_stop);
             this.panel91.Location = new System.Drawing.Point(-1, 79);
             this.panel91.Name = "panel91";
-            this.panel91.Size = new System.Drawing.Size(98, 22);
+            this.panel91.Size = new System.Drawing.Size(98, 21);
             this.panel91.TabIndex = 36;
             // 
-            // label98
+            // label_투자원금
             // 
-            this.label98.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label98.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label98.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label98.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label98.Location = new System.Drawing.Point(197, 0);
-            this.label98.Margin = new System.Windows.Forms.Padding(3);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(110, 21);
-            this.label98.TabIndex = 7;
-            this.label98.Text = "투자원금";
-            this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_투자원금.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label_투자원금.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_투자원금.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label_투자원금.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_투자원금.Location = new System.Drawing.Point(197, -1);
+            this.label_투자원금.Margin = new System.Windows.Forms.Padding(3);
+            this.label_투자원금.Name = "label_투자원금";
+            this.label_투자원금.Size = new System.Drawing.Size(110, 21);
+            this.label_투자원금.TabIndex = 7;
+            this.label_투자원금.Text = "투자원금";
+            this.label_투자원금.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TP_조건식TEST_B
             // 
@@ -4592,11 +4699,11 @@ namespace 지니_64
             this.panel_TEST_D.Controls.Add(this.BT_watch_Save_D);
             this.panel_TEST_D.Controls.Add(this.MTB_watch_지연_D);
             this.panel_TEST_D.Controls.Add(this.label25);
-            this.panel_TEST_D.Controls.Add(this.combo_watch_condition_DD);
+            this.panel_TEST_D.Controls.Add(this.와치_D);
             this.panel_TEST_D.Controls.Add(this.TB_WatchRow_D);
             this.panel_TEST_D.Controls.Add(this.label74);
             this.panel_TEST_D.Controls.Add(this.label425);
-            this.panel_TEST_D.Controls.Add(this.combo_watch_condition_D);
+            this.panel_TEST_D.Controls.Add(this.watch_condition_D);
             this.panel_TEST_D.Controls.Add(this.CB_Watch_log_D);
             this.panel_TEST_D.Controls.Add(this.label75);
             this.panel_TEST_D.Controls.Add(this.BT_test_viwe_D);
@@ -4771,6 +4878,9 @@ namespace 지니_64
             // CB_TR_D
             // 
             this.CB_TR_D.AutoSize = true;
+            this.CB_TR_D.Checked = true;
+            this.CB_TR_D.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CB_TR_D.Enabled = false;
             this.CB_TR_D.Location = new System.Drawing.Point(191, 3);
             this.CB_TR_D.Name = "CB_TR_D";
             this.CB_TR_D.Size = new System.Drawing.Size(36, 16);
@@ -4829,7 +4939,7 @@ namespace 지니_64
             this.TB_watch_손절_D.Text = "99.99";
             this.TB_watch_손절_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_watch_손절_D.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_watch_손절_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_watch_손절_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CB_watch_remove_D
             // 
@@ -4857,7 +4967,7 @@ namespace 지니_64
             this.TB_watch_익절_D.Text = "99.99";
             this.TB_watch_익절_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_watch_익절_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_watch_익절_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_watch_익절_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CBB_Watch관심_D
             // 
@@ -4879,18 +4989,18 @@ namespace 지니_64
             this.dataGridView_watch_D.AllowUserToDeleteRows = false;
             this.dataGridView_watch_D.AllowUserToOrderColumns = true;
             this.dataGridView_watch_D.AllowUserToResizeRows = false;
-            dataGridViewCellStyle248.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.dataGridView_watch_D.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle248;
+            dataGridViewCellStyle69.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.dataGridView_watch_D.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle69;
             this.dataGridView_watch_D.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView_watch_D.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle249.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle249.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle249.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle249.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle249.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle249.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle249.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_watch_D.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle249;
+            dataGridViewCellStyle70.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle70.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle70.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle70.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle70.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle70.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle70.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_watch_D.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle70;
             this.dataGridView_watch_D.ColumnHeadersHeight = 20;
             this.dataGridView_watch_D.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView_watch_D.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -4918,21 +5028,21 @@ namespace 지니_64
             this.거래회전율_Watch_D,
             this.시가총액_Watch_D,
             this.코드_Watch_D});
-            dataGridViewCellStyle274.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle274.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle274.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle274.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle274.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle274.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle274.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_watch_D.DefaultCellStyle = dataGridViewCellStyle274;
+            dataGridViewCellStyle95.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle95.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle95.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle95.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle95.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle95.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle95.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_watch_D.DefaultCellStyle = dataGridViewCellStyle95;
             this.dataGridView_watch_D.EnableHeadersVisualStyles = false;
             this.dataGridView_watch_D.Location = new System.Drawing.Point(-4, 39);
             this.dataGridView_watch_D.MultiSelect = false;
             this.dataGridView_watch_D.Name = "dataGridView_watch_D";
             this.dataGridView_watch_D.ReadOnly = true;
-            dataGridViewCellStyle275.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.dataGridView_watch_D.RowHeadersDefaultCellStyle = dataGridViewCellStyle275;
+            dataGridViewCellStyle96.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.dataGridView_watch_D.RowHeadersDefaultCellStyle = dataGridViewCellStyle96;
             this.dataGridView_watch_D.RowHeadersVisible = false;
             this.dataGridView_watch_D.RowTemplate.Height = 20;
             this.dataGridView_watch_D.RowTemplate.ReadOnly = true;
@@ -4941,16 +5051,17 @@ namespace 지니_64
             this.dataGridView_watch_D.TabIndex = 2;
             this.dataGridView_watch_D.TabStop = false;
             this.dataGridView_watch_D.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellClick);
+            this.dataGridView_watch_D.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.DataGridView_watch_D_CellPainting);
             this.dataGridView_watch_D.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_CellValueChanged);
-            this.dataGridView_watch_D.CurrentCellDirtyStateChanged += new System.EventHandler(this.dataGridView_CurrentCellDirtyStateChanged);
-            this.dataGridView_watch_D.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGridView_RowPostPaint);
+            this.dataGridView_watch_D.CurrentCellDirtyStateChanged += new System.EventHandler(this.DataGridView_CurrentCellDirtyStateChanged);
+            this.dataGridView_watch_D.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.DataGridView_RowPostPaint);
             // 
             // Num_Watch_D
             // 
-            dataGridViewCellStyle250.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle250.Format = "N0";
-            dataGridViewCellStyle250.NullValue = null;
-            this.Num_Watch_D.DefaultCellStyle = dataGridViewCellStyle250;
+            dataGridViewCellStyle71.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle71.Format = "N0";
+            dataGridViewCellStyle71.NullValue = null;
+            this.Num_Watch_D.DefaultCellStyle = dataGridViewCellStyle71;
             this.Num_Watch_D.Frozen = true;
             this.Num_Watch_D.HeaderText = "N";
             this.Num_Watch_D.Name = "Num_Watch_D";
@@ -4959,8 +5070,8 @@ namespace 지니_64
             // 
             // 시장_Watch_D
             // 
-            dataGridViewCellStyle251.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.시장_Watch_D.DefaultCellStyle = dataGridViewCellStyle251;
+            dataGridViewCellStyle72.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.시장_Watch_D.DefaultCellStyle = dataGridViewCellStyle72;
             this.시장_Watch_D.HeaderText = "M";
             this.시장_Watch_D.Name = "시장_Watch_D";
             this.시장_Watch_D.ReadOnly = true;
@@ -4968,8 +5079,8 @@ namespace 지니_64
             // 
             // 진입시간_Watch_D
             // 
-            dataGridViewCellStyle252.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.진입시간_Watch_D.DefaultCellStyle = dataGridViewCellStyle252;
+            dataGridViewCellStyle73.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.진입시간_Watch_D.DefaultCellStyle = dataGridViewCellStyle73;
             this.진입시간_Watch_D.HeaderText = "진입시간";
             this.진입시간_Watch_D.Name = "진입시간_Watch_D";
             this.진입시간_Watch_D.ReadOnly = true;
@@ -4979,8 +5090,8 @@ namespace 지니_64
             // 상태_Watch_D
             // 
             this.상태_Watch_D.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle253.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.상태_Watch_D.DefaultCellStyle = dataGridViewCellStyle253;
+            dataGridViewCellStyle74.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.상태_Watch_D.DefaultCellStyle = dataGridViewCellStyle74;
             this.상태_Watch_D.FillWeight = 10F;
             this.상태_Watch_D.HeaderText = "상태";
             this.상태_Watch_D.MaxInputLength = 2;
@@ -4993,8 +5104,8 @@ namespace 지니_64
             // 
             // 유지_Watch_D
             // 
-            dataGridViewCellStyle254.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.유지_Watch_D.DefaultCellStyle = dataGridViewCellStyle254;
+            dataGridViewCellStyle75.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.유지_Watch_D.DefaultCellStyle = dataGridViewCellStyle75;
             this.유지_Watch_D.HeaderText = "유지";
             this.유지_Watch_D.Name = "유지_Watch_D";
             this.유지_Watch_D.ReadOnly = true;
@@ -5002,8 +5113,8 @@ namespace 지니_64
             // 
             // 종목명_Watch_D
             // 
-            dataGridViewCellStyle255.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.종목명_Watch_D.DefaultCellStyle = dataGridViewCellStyle255;
+            dataGridViewCellStyle76.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.종목명_Watch_D.DefaultCellStyle = dataGridViewCellStyle76;
             this.종목명_Watch_D.HeaderText = "종목명";
             this.종목명_Watch_D.Name = "종목명_Watch_D";
             this.종목명_Watch_D.ReadOnly = true;
@@ -5012,10 +5123,10 @@ namespace 지니_64
             // 
             // 현재가_Watch_D
             // 
-            dataGridViewCellStyle256.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle256.Format = "N0";
-            dataGridViewCellStyle256.NullValue = null;
-            this.현재가_Watch_D.DefaultCellStyle = dataGridViewCellStyle256;
+            dataGridViewCellStyle77.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle77.Format = "N0";
+            dataGridViewCellStyle77.NullValue = null;
+            this.현재가_Watch_D.DefaultCellStyle = dataGridViewCellStyle77;
             this.현재가_Watch_D.HeaderText = "현재가";
             this.현재가_Watch_D.Name = "현재가_Watch_D";
             this.현재가_Watch_D.ReadOnly = true;
@@ -5023,10 +5134,10 @@ namespace 지니_64
             // 
             // 등락율_Watch_D
             // 
-            dataGridViewCellStyle257.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle257.Format = "N2";
-            dataGridViewCellStyle257.NullValue = null;
-            this.등락율_Watch_D.DefaultCellStyle = dataGridViewCellStyle257;
+            dataGridViewCellStyle78.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle78.Format = "N2";
+            dataGridViewCellStyle78.NullValue = null;
+            this.등락율_Watch_D.DefaultCellStyle = dataGridViewCellStyle78;
             this.등락율_Watch_D.HeaderText = "등락율";
             this.등락율_Watch_D.Name = "등락율_Watch_D";
             this.등락율_Watch_D.ReadOnly = true;
@@ -5035,10 +5146,10 @@ namespace 지니_64
             // 
             // 진입가_Watch_D
             // 
-            dataGridViewCellStyle258.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle258.Format = "N0";
-            dataGridViewCellStyle258.NullValue = null;
-            this.진입가_Watch_D.DefaultCellStyle = dataGridViewCellStyle258;
+            dataGridViewCellStyle79.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle79.Format = "N0";
+            dataGridViewCellStyle79.NullValue = null;
+            this.진입가_Watch_D.DefaultCellStyle = dataGridViewCellStyle79;
             this.진입가_Watch_D.HeaderText = "진입가";
             this.진입가_Watch_D.Name = "진입가_Watch_D";
             this.진입가_Watch_D.ReadOnly = true;
@@ -5047,8 +5158,8 @@ namespace 지니_64
             // 
             // 매매_Watch_D
             // 
-            dataGridViewCellStyle259.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.매매_Watch_D.DefaultCellStyle = dataGridViewCellStyle259;
+            dataGridViewCellStyle80.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.매매_Watch_D.DefaultCellStyle = dataGridViewCellStyle80;
             this.매매_Watch_D.HeaderText = "매매";
             this.매매_Watch_D.Name = "매매_Watch_D";
             this.매매_Watch_D.ReadOnly = true;
@@ -5056,10 +5167,10 @@ namespace 지니_64
             // 
             // 매수가_Watch_D
             // 
-            dataGridViewCellStyle260.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle260.Format = "N0";
-            dataGridViewCellStyle260.NullValue = null;
-            this.매수가_Watch_D.DefaultCellStyle = dataGridViewCellStyle260;
+            dataGridViewCellStyle81.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle81.Format = "N0";
+            dataGridViewCellStyle81.NullValue = null;
+            this.매수가_Watch_D.DefaultCellStyle = dataGridViewCellStyle81;
             this.매수가_Watch_D.HeaderText = "매수가";
             this.매수가_Watch_D.Name = "매수가_Watch_D";
             this.매수가_Watch_D.ReadOnly = true;
@@ -5067,10 +5178,10 @@ namespace 지니_64
             // 
             // 진입후등락_Watch_D
             // 
-            dataGridViewCellStyle261.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle261.Format = "N2";
-            dataGridViewCellStyle261.NullValue = null;
-            this.진입후등락_Watch_D.DefaultCellStyle = dataGridViewCellStyle261;
+            dataGridViewCellStyle82.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle82.Format = "N2";
+            dataGridViewCellStyle82.NullValue = null;
+            this.진입후등락_Watch_D.DefaultCellStyle = dataGridViewCellStyle82;
             this.진입후등락_Watch_D.HeaderText = "현재(%)";
             this.진입후등락_Watch_D.Name = "진입후등락_Watch_D";
             this.진입후등락_Watch_D.ReadOnly = true;
@@ -5079,10 +5190,10 @@ namespace 지니_64
             // 
             // 진입후최고_Watch_D
             // 
-            dataGridViewCellStyle262.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle262.Format = "N2";
-            dataGridViewCellStyle262.NullValue = null;
-            this.진입후최고_Watch_D.DefaultCellStyle = dataGridViewCellStyle262;
+            dataGridViewCellStyle83.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle83.Format = "N2";
+            dataGridViewCellStyle83.NullValue = null;
+            this.진입후최고_Watch_D.DefaultCellStyle = dataGridViewCellStyle83;
             this.진입후최고_Watch_D.HeaderText = "최고(%)";
             this.진입후최고_Watch_D.Name = "진입후최고_Watch_D";
             this.진입후최고_Watch_D.ReadOnly = true;
@@ -5091,10 +5202,10 @@ namespace 지니_64
             // 
             // 진입후최저_Watch_D
             // 
-            dataGridViewCellStyle263.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle263.Format = "N2";
-            dataGridViewCellStyle263.NullValue = null;
-            this.진입후최저_Watch_D.DefaultCellStyle = dataGridViewCellStyle263;
+            dataGridViewCellStyle84.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle84.Format = "N2";
+            dataGridViewCellStyle84.NullValue = null;
+            this.진입후최저_Watch_D.DefaultCellStyle = dataGridViewCellStyle84;
             this.진입후최저_Watch_D.HeaderText = "최저(%)";
             this.진입후최저_Watch_D.Name = "진입후최저_Watch_D";
             this.진입후최저_Watch_D.ReadOnly = true;
@@ -5103,10 +5214,10 @@ namespace 지니_64
             // 
             // 시가_Watch_D
             // 
-            dataGridViewCellStyle264.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle264.Format = "N0";
-            dataGridViewCellStyle264.NullValue = null;
-            this.시가_Watch_D.DefaultCellStyle = dataGridViewCellStyle264;
+            dataGridViewCellStyle85.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle85.Format = "N0";
+            dataGridViewCellStyle85.NullValue = null;
+            this.시가_Watch_D.DefaultCellStyle = dataGridViewCellStyle85;
             this.시가_Watch_D.HeaderText = "시가";
             this.시가_Watch_D.Name = "시가_Watch_D";
             this.시가_Watch_D.ReadOnly = true;
@@ -5114,10 +5225,10 @@ namespace 지니_64
             // 
             // 고가_Watch_D
             // 
-            dataGridViewCellStyle265.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle265.Format = "N0";
-            dataGridViewCellStyle265.NullValue = null;
-            this.고가_Watch_D.DefaultCellStyle = dataGridViewCellStyle265;
+            dataGridViewCellStyle86.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle86.Format = "N0";
+            dataGridViewCellStyle86.NullValue = null;
+            this.고가_Watch_D.DefaultCellStyle = dataGridViewCellStyle86;
             this.고가_Watch_D.HeaderText = "고가";
             this.고가_Watch_D.Name = "고가_Watch_D";
             this.고가_Watch_D.ReadOnly = true;
@@ -5125,10 +5236,10 @@ namespace 지니_64
             // 
             // 저가_Watch_D
             // 
-            dataGridViewCellStyle266.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle266.Format = "N0";
-            dataGridViewCellStyle266.NullValue = null;
-            this.저가_Watch_D.DefaultCellStyle = dataGridViewCellStyle266;
+            dataGridViewCellStyle87.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle87.Format = "N0";
+            dataGridViewCellStyle87.NullValue = null;
+            this.저가_Watch_D.DefaultCellStyle = dataGridViewCellStyle87;
             this.저가_Watch_D.HeaderText = "저가";
             this.저가_Watch_D.Name = "저가_Watch_D";
             this.저가_Watch_D.ReadOnly = true;
@@ -5136,20 +5247,20 @@ namespace 지니_64
             // 
             // 누적거래량_Watch_D
             // 
-            dataGridViewCellStyle267.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle267.Format = "N0";
-            dataGridViewCellStyle267.NullValue = null;
-            this.누적거래량_Watch_D.DefaultCellStyle = dataGridViewCellStyle267;
+            dataGridViewCellStyle88.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle88.Format = "N0";
+            dataGridViewCellStyle88.NullValue = null;
+            this.누적거래량_Watch_D.DefaultCellStyle = dataGridViewCellStyle88;
             this.누적거래량_Watch_D.HeaderText = "누적거래량";
             this.누적거래량_Watch_D.Name = "누적거래량_Watch_D";
             this.누적거래량_Watch_D.ReadOnly = true;
             // 
             // 전일거래량대비_Watch_D
             // 
-            dataGridViewCellStyle268.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle268.Format = "N2";
-            dataGridViewCellStyle268.NullValue = null;
-            this.전일거래량대비_Watch_D.DefaultCellStyle = dataGridViewCellStyle268;
+            dataGridViewCellStyle89.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle89.Format = "N2";
+            dataGridViewCellStyle89.NullValue = null;
+            this.전일거래량대비_Watch_D.DefaultCellStyle = dataGridViewCellStyle89;
             this.전일거래량대비_Watch_D.HeaderText = "전일거래량대비";
             this.전일거래량대비_Watch_D.Name = "전일거래량대비_Watch_D";
             this.전일거래량대비_Watch_D.ReadOnly = true;
@@ -5157,10 +5268,10 @@ namespace 지니_64
             // 
             // 누적거래대금_Watch_D
             // 
-            dataGridViewCellStyle269.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle269.Format = "N0";
-            dataGridViewCellStyle269.NullValue = null;
-            this.누적거래대금_Watch_D.DefaultCellStyle = dataGridViewCellStyle269;
+            dataGridViewCellStyle90.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle90.Format = "N0";
+            dataGridViewCellStyle90.NullValue = null;
+            this.누적거래대금_Watch_D.DefaultCellStyle = dataGridViewCellStyle90;
             this.누적거래대금_Watch_D.HeaderText = "거래대금";
             this.누적거래대금_Watch_D.Name = "누적거래대금_Watch_D";
             this.누적거래대금_Watch_D.ReadOnly = true;
@@ -5169,10 +5280,10 @@ namespace 지니_64
             // 
             // 거래대금증감_Watch_D
             // 
-            dataGridViewCellStyle270.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle270.Format = "N2";
-            dataGridViewCellStyle270.NullValue = null;
-            this.거래대금증감_Watch_D.DefaultCellStyle = dataGridViewCellStyle270;
+            dataGridViewCellStyle91.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle91.Format = "N2";
+            dataGridViewCellStyle91.NullValue = null;
+            this.거래대금증감_Watch_D.DefaultCellStyle = dataGridViewCellStyle91;
             this.거래대금증감_Watch_D.HeaderText = "대금증감";
             this.거래대금증감_Watch_D.Name = "거래대금증감_Watch_D";
             this.거래대금증감_Watch_D.ReadOnly = true;
@@ -5180,20 +5291,20 @@ namespace 지니_64
             // 
             // 거래회전율_Watch_D
             // 
-            dataGridViewCellStyle271.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle271.Format = "N2";
-            dataGridViewCellStyle271.NullValue = null;
-            this.거래회전율_Watch_D.DefaultCellStyle = dataGridViewCellStyle271;
+            dataGridViewCellStyle92.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle92.Format = "N2";
+            dataGridViewCellStyle92.NullValue = null;
+            this.거래회전율_Watch_D.DefaultCellStyle = dataGridViewCellStyle92;
             this.거래회전율_Watch_D.HeaderText = "거래회전율(%)";
             this.거래회전율_Watch_D.Name = "거래회전율_Watch_D";
             this.거래회전율_Watch_D.ReadOnly = true;
             // 
             // 시가총액_Watch_D
             // 
-            dataGridViewCellStyle272.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle272.Format = "N0";
-            dataGridViewCellStyle272.NullValue = null;
-            this.시가총액_Watch_D.DefaultCellStyle = dataGridViewCellStyle272;
+            dataGridViewCellStyle93.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle93.Format = "N0";
+            dataGridViewCellStyle93.NullValue = null;
+            this.시가총액_Watch_D.DefaultCellStyle = dataGridViewCellStyle93;
             this.시가총액_Watch_D.HeaderText = "시가총액(억)";
             this.시가총액_Watch_D.Name = "시가총액_Watch_D";
             this.시가총액_Watch_D.ReadOnly = true;
@@ -5201,8 +5312,8 @@ namespace 지니_64
             // 
             // 코드_Watch_D
             // 
-            dataGridViewCellStyle273.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.코드_Watch_D.DefaultCellStyle = dataGridViewCellStyle273;
+            dataGridViewCellStyle94.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.코드_Watch_D.DefaultCellStyle = dataGridViewCellStyle94;
             this.코드_Watch_D.HeaderText = "코드";
             this.코드_Watch_D.Name = "코드_Watch_D";
             this.코드_Watch_D.ReadOnly = true;
@@ -5221,7 +5332,7 @@ namespace 지니_64
             this.panel_TEST_C.Controls.Add(this.label131);
             this.panel_TEST_C.Controls.Add(this.label161);
             this.panel_TEST_C.Controls.Add(this.CB_Watch_log_C);
-            this.panel_TEST_C.Controls.Add(this.combo_watch_condition_C);
+            this.panel_TEST_C.Controls.Add(this.watch_condition_C);
             this.panel_TEST_C.Controls.Add(this.label41);
             this.panel_TEST_C.Controls.Add(this.CBB_watch_trading_C);
             this.panel_TEST_C.Controls.Add(this.CBB_Watch_ID_C);
@@ -5233,7 +5344,7 @@ namespace 지니_64
             this.panel_TEST_C.Controls.Add(this.CBB_Watch관심_C);
             this.panel_TEST_C.Controls.Add(this.CB_TR_C);
             this.panel_TEST_C.Controls.Add(this.label124);
-            this.panel_TEST_C.Controls.Add(this.combo_watch_condition_CC);
+            this.panel_TEST_C.Controls.Add(this.와치_C);
             this.panel_TEST_C.Controls.Add(this.CB_watch_use_C);
             this.panel_TEST_C.Controls.Add(this.dataGridView_watch_C);
             this.panel_TEST_C.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -5418,7 +5529,7 @@ namespace 지니_64
             this.TB_watch_익절_C.Text = "99.99";
             this.TB_watch_익절_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_watch_익절_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_watch_익절_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_watch_익절_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_watch_손절_C
             // 
@@ -5434,7 +5545,7 @@ namespace 지니_64
             this.TB_watch_손절_C.Text = "99.99";
             this.TB_watch_손절_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_watch_손절_C.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_watch_손절_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_watch_손절_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CB_watch_remove_C
             // 
@@ -5465,6 +5576,9 @@ namespace 지니_64
             // CB_TR_C
             // 
             this.CB_TR_C.AutoSize = true;
+            this.CB_TR_C.Checked = true;
+            this.CB_TR_C.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CB_TR_C.Enabled = false;
             this.CB_TR_C.Location = new System.Drawing.Point(191, 3);
             this.CB_TR_C.Name = "CB_TR_C";
             this.CB_TR_C.Size = new System.Drawing.Size(36, 16);
@@ -5491,18 +5605,18 @@ namespace 지니_64
             this.dataGridView_watch_C.AllowUserToDeleteRows = false;
             this.dataGridView_watch_C.AllowUserToOrderColumns = true;
             this.dataGridView_watch_C.AllowUserToResizeRows = false;
-            dataGridViewCellStyle276.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.dataGridView_watch_C.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle276;
+            dataGridViewCellStyle97.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.dataGridView_watch_C.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle97;
             this.dataGridView_watch_C.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView_watch_C.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle277.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle277.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle277.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle277.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle277.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle277.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle277.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_watch_C.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle277;
+            dataGridViewCellStyle98.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle98.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle98.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle98.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle98.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle98.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle98.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_watch_C.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle98;
             this.dataGridView_watch_C.ColumnHeadersHeight = 20;
             this.dataGridView_watch_C.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView_watch_C.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -5530,21 +5644,21 @@ namespace 지니_64
             this.거래회전율_Watch_C,
             this.시가총액_Watch_C,
             this.코드_Watch_C});
-            dataGridViewCellStyle302.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle302.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle302.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle302.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle302.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle302.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle302.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_watch_C.DefaultCellStyle = dataGridViewCellStyle302;
+            dataGridViewCellStyle123.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle123.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle123.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle123.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle123.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle123.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle123.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_watch_C.DefaultCellStyle = dataGridViewCellStyle123;
             this.dataGridView_watch_C.EnableHeadersVisualStyles = false;
             this.dataGridView_watch_C.Location = new System.Drawing.Point(-4, 39);
             this.dataGridView_watch_C.MultiSelect = false;
             this.dataGridView_watch_C.Name = "dataGridView_watch_C";
             this.dataGridView_watch_C.ReadOnly = true;
-            dataGridViewCellStyle303.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.dataGridView_watch_C.RowHeadersDefaultCellStyle = dataGridViewCellStyle303;
+            dataGridViewCellStyle124.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.dataGridView_watch_C.RowHeadersDefaultCellStyle = dataGridViewCellStyle124;
             this.dataGridView_watch_C.RowHeadersVisible = false;
             this.dataGridView_watch_C.RowTemplate.Height = 20;
             this.dataGridView_watch_C.RowTemplate.ReadOnly = true;
@@ -5553,16 +5667,17 @@ namespace 지니_64
             this.dataGridView_watch_C.TabIndex = 2;
             this.dataGridView_watch_C.TabStop = false;
             this.dataGridView_watch_C.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellClick);
+            this.dataGridView_watch_C.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.DataGridView_watch_C_CellPainting);
             this.dataGridView_watch_C.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_CellValueChanged);
-            this.dataGridView_watch_C.CurrentCellDirtyStateChanged += new System.EventHandler(this.dataGridView_CurrentCellDirtyStateChanged);
-            this.dataGridView_watch_C.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGridView_RowPostPaint);
+            this.dataGridView_watch_C.CurrentCellDirtyStateChanged += new System.EventHandler(this.DataGridView_CurrentCellDirtyStateChanged);
+            this.dataGridView_watch_C.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.DataGridView_RowPostPaint);
             // 
             // Num_Watch_C
             // 
-            dataGridViewCellStyle278.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle278.Format = "N0";
-            dataGridViewCellStyle278.NullValue = null;
-            this.Num_Watch_C.DefaultCellStyle = dataGridViewCellStyle278;
+            dataGridViewCellStyle99.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle99.Format = "N0";
+            dataGridViewCellStyle99.NullValue = null;
+            this.Num_Watch_C.DefaultCellStyle = dataGridViewCellStyle99;
             this.Num_Watch_C.Frozen = true;
             this.Num_Watch_C.HeaderText = "N";
             this.Num_Watch_C.Name = "Num_Watch_C";
@@ -5571,8 +5686,8 @@ namespace 지니_64
             // 
             // 시장_Watch_C
             // 
-            dataGridViewCellStyle279.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.시장_Watch_C.DefaultCellStyle = dataGridViewCellStyle279;
+            dataGridViewCellStyle100.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.시장_Watch_C.DefaultCellStyle = dataGridViewCellStyle100;
             this.시장_Watch_C.HeaderText = "M";
             this.시장_Watch_C.Name = "시장_Watch_C";
             this.시장_Watch_C.ReadOnly = true;
@@ -5580,8 +5695,8 @@ namespace 지니_64
             // 
             // 진입시간_Watch_C
             // 
-            dataGridViewCellStyle280.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.진입시간_Watch_C.DefaultCellStyle = dataGridViewCellStyle280;
+            dataGridViewCellStyle101.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.진입시간_Watch_C.DefaultCellStyle = dataGridViewCellStyle101;
             this.진입시간_Watch_C.HeaderText = "진입시간";
             this.진입시간_Watch_C.Name = "진입시간_Watch_C";
             this.진입시간_Watch_C.ReadOnly = true;
@@ -5591,8 +5706,8 @@ namespace 지니_64
             // 상태_Watch_C
             // 
             this.상태_Watch_C.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle281.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.상태_Watch_C.DefaultCellStyle = dataGridViewCellStyle281;
+            dataGridViewCellStyle102.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.상태_Watch_C.DefaultCellStyle = dataGridViewCellStyle102;
             this.상태_Watch_C.FillWeight = 10F;
             this.상태_Watch_C.HeaderText = "상태";
             this.상태_Watch_C.MaxInputLength = 2;
@@ -5605,8 +5720,8 @@ namespace 지니_64
             // 
             // 유지_Watch_C
             // 
-            dataGridViewCellStyle282.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.유지_Watch_C.DefaultCellStyle = dataGridViewCellStyle282;
+            dataGridViewCellStyle103.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.유지_Watch_C.DefaultCellStyle = dataGridViewCellStyle103;
             this.유지_Watch_C.HeaderText = "유지";
             this.유지_Watch_C.Name = "유지_Watch_C";
             this.유지_Watch_C.ReadOnly = true;
@@ -5614,8 +5729,8 @@ namespace 지니_64
             // 
             // 종목명_Watch_C
             // 
-            dataGridViewCellStyle283.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.종목명_Watch_C.DefaultCellStyle = dataGridViewCellStyle283;
+            dataGridViewCellStyle104.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.종목명_Watch_C.DefaultCellStyle = dataGridViewCellStyle104;
             this.종목명_Watch_C.HeaderText = "종목명";
             this.종목명_Watch_C.Name = "종목명_Watch_C";
             this.종목명_Watch_C.ReadOnly = true;
@@ -5624,10 +5739,10 @@ namespace 지니_64
             // 
             // 현재가_Watch_C
             // 
-            dataGridViewCellStyle284.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle284.Format = "N0";
-            dataGridViewCellStyle284.NullValue = null;
-            this.현재가_Watch_C.DefaultCellStyle = dataGridViewCellStyle284;
+            dataGridViewCellStyle105.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle105.Format = "N0";
+            dataGridViewCellStyle105.NullValue = null;
+            this.현재가_Watch_C.DefaultCellStyle = dataGridViewCellStyle105;
             this.현재가_Watch_C.HeaderText = "현재가";
             this.현재가_Watch_C.Name = "현재가_Watch_C";
             this.현재가_Watch_C.ReadOnly = true;
@@ -5635,10 +5750,10 @@ namespace 지니_64
             // 
             // 등락율_Watch_C
             // 
-            dataGridViewCellStyle285.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle285.Format = "N2";
-            dataGridViewCellStyle285.NullValue = null;
-            this.등락율_Watch_C.DefaultCellStyle = dataGridViewCellStyle285;
+            dataGridViewCellStyle106.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle106.Format = "N2";
+            dataGridViewCellStyle106.NullValue = null;
+            this.등락율_Watch_C.DefaultCellStyle = dataGridViewCellStyle106;
             this.등락율_Watch_C.HeaderText = "등락율";
             this.등락율_Watch_C.Name = "등락율_Watch_C";
             this.등락율_Watch_C.ReadOnly = true;
@@ -5647,10 +5762,10 @@ namespace 지니_64
             // 
             // 진입가_Watch_C
             // 
-            dataGridViewCellStyle286.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle286.Format = "N0";
-            dataGridViewCellStyle286.NullValue = null;
-            this.진입가_Watch_C.DefaultCellStyle = dataGridViewCellStyle286;
+            dataGridViewCellStyle107.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle107.Format = "N0";
+            dataGridViewCellStyle107.NullValue = null;
+            this.진입가_Watch_C.DefaultCellStyle = dataGridViewCellStyle107;
             this.진입가_Watch_C.HeaderText = "진입가";
             this.진입가_Watch_C.Name = "진입가_Watch_C";
             this.진입가_Watch_C.ReadOnly = true;
@@ -5659,8 +5774,8 @@ namespace 지니_64
             // 
             // 매매_Watch_C
             // 
-            dataGridViewCellStyle287.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.매매_Watch_C.DefaultCellStyle = dataGridViewCellStyle287;
+            dataGridViewCellStyle108.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.매매_Watch_C.DefaultCellStyle = dataGridViewCellStyle108;
             this.매매_Watch_C.HeaderText = "매매";
             this.매매_Watch_C.Name = "매매_Watch_C";
             this.매매_Watch_C.ReadOnly = true;
@@ -5668,10 +5783,10 @@ namespace 지니_64
             // 
             // 매수가_Watch_C
             // 
-            dataGridViewCellStyle288.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle288.Format = "N0";
-            dataGridViewCellStyle288.NullValue = null;
-            this.매수가_Watch_C.DefaultCellStyle = dataGridViewCellStyle288;
+            dataGridViewCellStyle109.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle109.Format = "N0";
+            dataGridViewCellStyle109.NullValue = null;
+            this.매수가_Watch_C.DefaultCellStyle = dataGridViewCellStyle109;
             this.매수가_Watch_C.HeaderText = "매수가";
             this.매수가_Watch_C.Name = "매수가_Watch_C";
             this.매수가_Watch_C.ReadOnly = true;
@@ -5679,10 +5794,10 @@ namespace 지니_64
             // 
             // 진입후등락_Watch_C
             // 
-            dataGridViewCellStyle289.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle289.Format = "N2";
-            dataGridViewCellStyle289.NullValue = null;
-            this.진입후등락_Watch_C.DefaultCellStyle = dataGridViewCellStyle289;
+            dataGridViewCellStyle110.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle110.Format = "N2";
+            dataGridViewCellStyle110.NullValue = null;
+            this.진입후등락_Watch_C.DefaultCellStyle = dataGridViewCellStyle110;
             this.진입후등락_Watch_C.HeaderText = "현재(%)";
             this.진입후등락_Watch_C.Name = "진입후등락_Watch_C";
             this.진입후등락_Watch_C.ReadOnly = true;
@@ -5691,10 +5806,10 @@ namespace 지니_64
             // 
             // 진입후최고_Watch_C
             // 
-            dataGridViewCellStyle290.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle290.Format = "N2";
-            dataGridViewCellStyle290.NullValue = null;
-            this.진입후최고_Watch_C.DefaultCellStyle = dataGridViewCellStyle290;
+            dataGridViewCellStyle111.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle111.Format = "N2";
+            dataGridViewCellStyle111.NullValue = null;
+            this.진입후최고_Watch_C.DefaultCellStyle = dataGridViewCellStyle111;
             this.진입후최고_Watch_C.HeaderText = "최고(%)";
             this.진입후최고_Watch_C.Name = "진입후최고_Watch_C";
             this.진입후최고_Watch_C.ReadOnly = true;
@@ -5703,10 +5818,10 @@ namespace 지니_64
             // 
             // 진입후최저_Watch_C
             // 
-            dataGridViewCellStyle291.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle291.Format = "N2";
-            dataGridViewCellStyle291.NullValue = null;
-            this.진입후최저_Watch_C.DefaultCellStyle = dataGridViewCellStyle291;
+            dataGridViewCellStyle112.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle112.Format = "N2";
+            dataGridViewCellStyle112.NullValue = null;
+            this.진입후최저_Watch_C.DefaultCellStyle = dataGridViewCellStyle112;
             this.진입후최저_Watch_C.HeaderText = "최저(%)";
             this.진입후최저_Watch_C.Name = "진입후최저_Watch_C";
             this.진입후최저_Watch_C.ReadOnly = true;
@@ -5715,10 +5830,10 @@ namespace 지니_64
             // 
             // 시가_Watch_C
             // 
-            dataGridViewCellStyle292.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle292.Format = "N0";
-            dataGridViewCellStyle292.NullValue = null;
-            this.시가_Watch_C.DefaultCellStyle = dataGridViewCellStyle292;
+            dataGridViewCellStyle113.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle113.Format = "N0";
+            dataGridViewCellStyle113.NullValue = null;
+            this.시가_Watch_C.DefaultCellStyle = dataGridViewCellStyle113;
             this.시가_Watch_C.HeaderText = "시가";
             this.시가_Watch_C.Name = "시가_Watch_C";
             this.시가_Watch_C.ReadOnly = true;
@@ -5726,10 +5841,10 @@ namespace 지니_64
             // 
             // 고가_Watch_C
             // 
-            dataGridViewCellStyle293.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle293.Format = "N0";
-            dataGridViewCellStyle293.NullValue = null;
-            this.고가_Watch_C.DefaultCellStyle = dataGridViewCellStyle293;
+            dataGridViewCellStyle114.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle114.Format = "N0";
+            dataGridViewCellStyle114.NullValue = null;
+            this.고가_Watch_C.DefaultCellStyle = dataGridViewCellStyle114;
             this.고가_Watch_C.HeaderText = "고가";
             this.고가_Watch_C.Name = "고가_Watch_C";
             this.고가_Watch_C.ReadOnly = true;
@@ -5737,10 +5852,10 @@ namespace 지니_64
             // 
             // 저가_Watch_C
             // 
-            dataGridViewCellStyle294.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle294.Format = "N0";
-            dataGridViewCellStyle294.NullValue = null;
-            this.저가_Watch_C.DefaultCellStyle = dataGridViewCellStyle294;
+            dataGridViewCellStyle115.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle115.Format = "N0";
+            dataGridViewCellStyle115.NullValue = null;
+            this.저가_Watch_C.DefaultCellStyle = dataGridViewCellStyle115;
             this.저가_Watch_C.HeaderText = "저가";
             this.저가_Watch_C.Name = "저가_Watch_C";
             this.저가_Watch_C.ReadOnly = true;
@@ -5748,20 +5863,20 @@ namespace 지니_64
             // 
             // 누적거래량_Watch_C
             // 
-            dataGridViewCellStyle295.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle295.Format = "N0";
-            dataGridViewCellStyle295.NullValue = null;
-            this.누적거래량_Watch_C.DefaultCellStyle = dataGridViewCellStyle295;
+            dataGridViewCellStyle116.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle116.Format = "N0";
+            dataGridViewCellStyle116.NullValue = null;
+            this.누적거래량_Watch_C.DefaultCellStyle = dataGridViewCellStyle116;
             this.누적거래량_Watch_C.HeaderText = "누적거래량";
             this.누적거래량_Watch_C.Name = "누적거래량_Watch_C";
             this.누적거래량_Watch_C.ReadOnly = true;
             // 
             // 전일거래량대비_Watch_C
             // 
-            dataGridViewCellStyle296.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle296.Format = "N2";
-            dataGridViewCellStyle296.NullValue = null;
-            this.전일거래량대비_Watch_C.DefaultCellStyle = dataGridViewCellStyle296;
+            dataGridViewCellStyle117.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle117.Format = "N2";
+            dataGridViewCellStyle117.NullValue = null;
+            this.전일거래량대비_Watch_C.DefaultCellStyle = dataGridViewCellStyle117;
             this.전일거래량대비_Watch_C.HeaderText = "전일거래량대비";
             this.전일거래량대비_Watch_C.Name = "전일거래량대비_Watch_C";
             this.전일거래량대비_Watch_C.ReadOnly = true;
@@ -5769,10 +5884,10 @@ namespace 지니_64
             // 
             // 누적거래대금_Watch_C
             // 
-            dataGridViewCellStyle297.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle297.Format = "N0";
-            dataGridViewCellStyle297.NullValue = null;
-            this.누적거래대금_Watch_C.DefaultCellStyle = dataGridViewCellStyle297;
+            dataGridViewCellStyle118.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle118.Format = "N0";
+            dataGridViewCellStyle118.NullValue = null;
+            this.누적거래대금_Watch_C.DefaultCellStyle = dataGridViewCellStyle118;
             this.누적거래대금_Watch_C.HeaderText = "거래대금";
             this.누적거래대금_Watch_C.Name = "누적거래대금_Watch_C";
             this.누적거래대금_Watch_C.ReadOnly = true;
@@ -5781,10 +5896,10 @@ namespace 지니_64
             // 
             // 거래대금증감_Watch_C
             // 
-            dataGridViewCellStyle298.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle298.Format = "N2";
-            dataGridViewCellStyle298.NullValue = null;
-            this.거래대금증감_Watch_C.DefaultCellStyle = dataGridViewCellStyle298;
+            dataGridViewCellStyle119.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle119.Format = "N2";
+            dataGridViewCellStyle119.NullValue = null;
+            this.거래대금증감_Watch_C.DefaultCellStyle = dataGridViewCellStyle119;
             this.거래대금증감_Watch_C.HeaderText = "대금증감";
             this.거래대금증감_Watch_C.Name = "거래대금증감_Watch_C";
             this.거래대금증감_Watch_C.ReadOnly = true;
@@ -5792,20 +5907,20 @@ namespace 지니_64
             // 
             // 거래회전율_Watch_C
             // 
-            dataGridViewCellStyle299.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle299.Format = "N2";
-            dataGridViewCellStyle299.NullValue = null;
-            this.거래회전율_Watch_C.DefaultCellStyle = dataGridViewCellStyle299;
+            dataGridViewCellStyle120.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle120.Format = "N2";
+            dataGridViewCellStyle120.NullValue = null;
+            this.거래회전율_Watch_C.DefaultCellStyle = dataGridViewCellStyle120;
             this.거래회전율_Watch_C.HeaderText = "거래회전율(%)";
             this.거래회전율_Watch_C.Name = "거래회전율_Watch_C";
             this.거래회전율_Watch_C.ReadOnly = true;
             // 
             // 시가총액_Watch_C
             // 
-            dataGridViewCellStyle300.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle300.Format = "N0";
-            dataGridViewCellStyle300.NullValue = null;
-            this.시가총액_Watch_C.DefaultCellStyle = dataGridViewCellStyle300;
+            dataGridViewCellStyle121.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle121.Format = "N0";
+            dataGridViewCellStyle121.NullValue = null;
+            this.시가총액_Watch_C.DefaultCellStyle = dataGridViewCellStyle121;
             this.시가총액_Watch_C.HeaderText = "시가총액(억)";
             this.시가총액_Watch_C.Name = "시가총액_Watch_C";
             this.시가총액_Watch_C.ReadOnly = true;
@@ -5813,8 +5928,8 @@ namespace 지니_64
             // 
             // 코드_Watch_C
             // 
-            dataGridViewCellStyle301.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.코드_Watch_C.DefaultCellStyle = dataGridViewCellStyle301;
+            dataGridViewCellStyle122.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.코드_Watch_C.DefaultCellStyle = dataGridViewCellStyle122;
             this.코드_Watch_C.HeaderText = "코드";
             this.코드_Watch_C.Name = "코드_Watch_C";
             this.코드_Watch_C.ReadOnly = true;
@@ -5840,7 +5955,7 @@ namespace 지니_64
             this.panel_TEST_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_TEST_A.Controls.Add(this.label119);
             this.panel_TEST_A.Controls.Add(this.label103);
-            this.panel_TEST_A.Controls.Add(this.combo_watch_condition_A);
+            this.panel_TEST_A.Controls.Add(this.watch_condition_A);
             this.panel_TEST_A.Controls.Add(this.CB_TR_A);
             this.panel_TEST_A.Controls.Add(this.label91);
             this.panel_TEST_A.Controls.Add(this.CB_watch_remove_A);
@@ -5853,7 +5968,7 @@ namespace 지니_64
             this.panel_TEST_A.Controls.Add(this.label11);
             this.panel_TEST_A.Controls.Add(this.label391);
             this.panel_TEST_A.Controls.Add(this.CBB_watch_trading_A);
-            this.panel_TEST_A.Controls.Add(this.combo_watch_condition_AA);
+            this.panel_TEST_A.Controls.Add(this.와치_A);
             this.panel_TEST_A.Controls.Add(this.BT_watch_Save_A);
             this.panel_TEST_A.Controls.Add(this.CBB_Watch_ID_A);
             this.panel_TEST_A.Controls.Add(this.TB_watch_익절_A);
@@ -6071,7 +6186,7 @@ namespace 지니_64
             this.TB_watch_익절_A.Text = "99.99";
             this.TB_watch_익절_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_watch_익절_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_watch_익절_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_watch_익절_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CBB_Watch관심_A
             // 
@@ -6104,7 +6219,7 @@ namespace 지니_64
             this.TB_watch_손절_A.Text = "99.99";
             this.TB_watch_손절_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_watch_손절_A.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_watch_손절_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_watch_손절_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // dataGridView_watch_A
             // 
@@ -6112,18 +6227,18 @@ namespace 지니_64
             this.dataGridView_watch_A.AllowUserToDeleteRows = false;
             this.dataGridView_watch_A.AllowUserToOrderColumns = true;
             this.dataGridView_watch_A.AllowUserToResizeRows = false;
-            dataGridViewCellStyle304.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.dataGridView_watch_A.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle304;
+            dataGridViewCellStyle125.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.dataGridView_watch_A.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle125;
             this.dataGridView_watch_A.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView_watch_A.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle305.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle305.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle305.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle305.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle305.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle305.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle305.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_watch_A.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle305;
+            dataGridViewCellStyle126.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle126.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle126.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle126.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle126.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle126.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle126.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_watch_A.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle126;
             this.dataGridView_watch_A.ColumnHeadersHeight = 20;
             this.dataGridView_watch_A.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView_watch_A.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -6151,21 +6266,21 @@ namespace 지니_64
             this.거래회전율_Watch_A,
             this.시가총액_Watch_A,
             this.코드_Watch_A});
-            dataGridViewCellStyle330.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle330.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle330.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle330.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle330.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle330.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle330.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_watch_A.DefaultCellStyle = dataGridViewCellStyle330;
+            dataGridViewCellStyle151.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle151.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle151.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle151.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle151.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle151.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle151.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_watch_A.DefaultCellStyle = dataGridViewCellStyle151;
             this.dataGridView_watch_A.EnableHeadersVisualStyles = false;
             this.dataGridView_watch_A.Location = new System.Drawing.Point(-4, 39);
             this.dataGridView_watch_A.MultiSelect = false;
             this.dataGridView_watch_A.Name = "dataGridView_watch_A";
             this.dataGridView_watch_A.ReadOnly = true;
-            dataGridViewCellStyle331.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.dataGridView_watch_A.RowHeadersDefaultCellStyle = dataGridViewCellStyle331;
+            dataGridViewCellStyle152.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.dataGridView_watch_A.RowHeadersDefaultCellStyle = dataGridViewCellStyle152;
             this.dataGridView_watch_A.RowHeadersVisible = false;
             this.dataGridView_watch_A.RowTemplate.Height = 20;
             this.dataGridView_watch_A.RowTemplate.ReadOnly = true;
@@ -6174,16 +6289,17 @@ namespace 지니_64
             this.dataGridView_watch_A.TabIndex = 2;
             this.dataGridView_watch_A.TabStop = false;
             this.dataGridView_watch_A.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellClick);
+            this.dataGridView_watch_A.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.DataGridView_watch_A_CellPainting);
             this.dataGridView_watch_A.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_CellValueChanged);
-            this.dataGridView_watch_A.CurrentCellDirtyStateChanged += new System.EventHandler(this.dataGridView_CurrentCellDirtyStateChanged);
-            this.dataGridView_watch_A.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGridView_RowPostPaint);
+            this.dataGridView_watch_A.CurrentCellDirtyStateChanged += new System.EventHandler(this.DataGridView_CurrentCellDirtyStateChanged);
+            this.dataGridView_watch_A.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.DataGridView_RowPostPaint);
             // 
             // Num_Watch_A
             // 
-            dataGridViewCellStyle306.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle306.Format = "N0";
-            dataGridViewCellStyle306.NullValue = null;
-            this.Num_Watch_A.DefaultCellStyle = dataGridViewCellStyle306;
+            dataGridViewCellStyle127.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle127.Format = "N0";
+            dataGridViewCellStyle127.NullValue = null;
+            this.Num_Watch_A.DefaultCellStyle = dataGridViewCellStyle127;
             this.Num_Watch_A.Frozen = true;
             this.Num_Watch_A.HeaderText = "N";
             this.Num_Watch_A.Name = "Num_Watch_A";
@@ -6192,8 +6308,8 @@ namespace 지니_64
             // 
             // 시장_Watch_A
             // 
-            dataGridViewCellStyle307.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.시장_Watch_A.DefaultCellStyle = dataGridViewCellStyle307;
+            dataGridViewCellStyle128.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.시장_Watch_A.DefaultCellStyle = dataGridViewCellStyle128;
             this.시장_Watch_A.HeaderText = "M";
             this.시장_Watch_A.Name = "시장_Watch_A";
             this.시장_Watch_A.ReadOnly = true;
@@ -6201,8 +6317,8 @@ namespace 지니_64
             // 
             // 진입시간_Watch_A
             // 
-            dataGridViewCellStyle308.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.진입시간_Watch_A.DefaultCellStyle = dataGridViewCellStyle308;
+            dataGridViewCellStyle129.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.진입시간_Watch_A.DefaultCellStyle = dataGridViewCellStyle129;
             this.진입시간_Watch_A.HeaderText = "진입시간";
             this.진입시간_Watch_A.Name = "진입시간_Watch_A";
             this.진입시간_Watch_A.ReadOnly = true;
@@ -6212,8 +6328,8 @@ namespace 지니_64
             // 상태_Watch_A
             // 
             this.상태_Watch_A.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle309.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.상태_Watch_A.DefaultCellStyle = dataGridViewCellStyle309;
+            dataGridViewCellStyle130.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.상태_Watch_A.DefaultCellStyle = dataGridViewCellStyle130;
             this.상태_Watch_A.FillWeight = 10F;
             this.상태_Watch_A.HeaderText = "상태";
             this.상태_Watch_A.MaxInputLength = 2;
@@ -6226,8 +6342,8 @@ namespace 지니_64
             // 
             // 유지_Watch_A
             // 
-            dataGridViewCellStyle310.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.유지_Watch_A.DefaultCellStyle = dataGridViewCellStyle310;
+            dataGridViewCellStyle131.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.유지_Watch_A.DefaultCellStyle = dataGridViewCellStyle131;
             this.유지_Watch_A.HeaderText = "유지";
             this.유지_Watch_A.Name = "유지_Watch_A";
             this.유지_Watch_A.ReadOnly = true;
@@ -6235,8 +6351,8 @@ namespace 지니_64
             // 
             // 종목명_Watch_A
             // 
-            dataGridViewCellStyle311.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.종목명_Watch_A.DefaultCellStyle = dataGridViewCellStyle311;
+            dataGridViewCellStyle132.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.종목명_Watch_A.DefaultCellStyle = dataGridViewCellStyle132;
             this.종목명_Watch_A.HeaderText = "종목명";
             this.종목명_Watch_A.Name = "종목명_Watch_A";
             this.종목명_Watch_A.ReadOnly = true;
@@ -6245,10 +6361,10 @@ namespace 지니_64
             // 
             // 현재가_Watch_A
             // 
-            dataGridViewCellStyle312.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle312.Format = "N0";
-            dataGridViewCellStyle312.NullValue = null;
-            this.현재가_Watch_A.DefaultCellStyle = dataGridViewCellStyle312;
+            dataGridViewCellStyle133.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle133.Format = "N0";
+            dataGridViewCellStyle133.NullValue = null;
+            this.현재가_Watch_A.DefaultCellStyle = dataGridViewCellStyle133;
             this.현재가_Watch_A.HeaderText = "현재가";
             this.현재가_Watch_A.Name = "현재가_Watch_A";
             this.현재가_Watch_A.ReadOnly = true;
@@ -6256,10 +6372,10 @@ namespace 지니_64
             // 
             // 등락율_Watch_A
             // 
-            dataGridViewCellStyle313.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle313.Format = "N2";
-            dataGridViewCellStyle313.NullValue = null;
-            this.등락율_Watch_A.DefaultCellStyle = dataGridViewCellStyle313;
+            dataGridViewCellStyle134.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle134.Format = "N2";
+            dataGridViewCellStyle134.NullValue = null;
+            this.등락율_Watch_A.DefaultCellStyle = dataGridViewCellStyle134;
             this.등락율_Watch_A.HeaderText = "등락율";
             this.등락율_Watch_A.Name = "등락율_Watch_A";
             this.등락율_Watch_A.ReadOnly = true;
@@ -6268,10 +6384,10 @@ namespace 지니_64
             // 
             // 진입가_Watch_A
             // 
-            dataGridViewCellStyle314.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle314.Format = "N0";
-            dataGridViewCellStyle314.NullValue = null;
-            this.진입가_Watch_A.DefaultCellStyle = dataGridViewCellStyle314;
+            dataGridViewCellStyle135.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle135.Format = "N0";
+            dataGridViewCellStyle135.NullValue = null;
+            this.진입가_Watch_A.DefaultCellStyle = dataGridViewCellStyle135;
             this.진입가_Watch_A.HeaderText = "진입가";
             this.진입가_Watch_A.Name = "진입가_Watch_A";
             this.진입가_Watch_A.ReadOnly = true;
@@ -6280,8 +6396,8 @@ namespace 지니_64
             // 
             // 매매_Watch_A
             // 
-            dataGridViewCellStyle315.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.매매_Watch_A.DefaultCellStyle = dataGridViewCellStyle315;
+            dataGridViewCellStyle136.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.매매_Watch_A.DefaultCellStyle = dataGridViewCellStyle136;
             this.매매_Watch_A.HeaderText = "매매";
             this.매매_Watch_A.Name = "매매_Watch_A";
             this.매매_Watch_A.ReadOnly = true;
@@ -6289,10 +6405,10 @@ namespace 지니_64
             // 
             // 매수가_Watch_A
             // 
-            dataGridViewCellStyle316.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle316.Format = "N0";
-            dataGridViewCellStyle316.NullValue = null;
-            this.매수가_Watch_A.DefaultCellStyle = dataGridViewCellStyle316;
+            dataGridViewCellStyle137.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle137.Format = "N0";
+            dataGridViewCellStyle137.NullValue = null;
+            this.매수가_Watch_A.DefaultCellStyle = dataGridViewCellStyle137;
             this.매수가_Watch_A.HeaderText = "매수가";
             this.매수가_Watch_A.Name = "매수가_Watch_A";
             this.매수가_Watch_A.ReadOnly = true;
@@ -6300,10 +6416,10 @@ namespace 지니_64
             // 
             // 진입후등락_Watch_A
             // 
-            dataGridViewCellStyle317.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle317.Format = "N2";
-            dataGridViewCellStyle317.NullValue = null;
-            this.진입후등락_Watch_A.DefaultCellStyle = dataGridViewCellStyle317;
+            dataGridViewCellStyle138.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle138.Format = "N2";
+            dataGridViewCellStyle138.NullValue = null;
+            this.진입후등락_Watch_A.DefaultCellStyle = dataGridViewCellStyle138;
             this.진입후등락_Watch_A.HeaderText = "현재(%)";
             this.진입후등락_Watch_A.Name = "진입후등락_Watch_A";
             this.진입후등락_Watch_A.ReadOnly = true;
@@ -6312,10 +6428,10 @@ namespace 지니_64
             // 
             // 진입후최고_Watch_A
             // 
-            dataGridViewCellStyle318.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle318.Format = "N2";
-            dataGridViewCellStyle318.NullValue = null;
-            this.진입후최고_Watch_A.DefaultCellStyle = dataGridViewCellStyle318;
+            dataGridViewCellStyle139.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle139.Format = "N2";
+            dataGridViewCellStyle139.NullValue = null;
+            this.진입후최고_Watch_A.DefaultCellStyle = dataGridViewCellStyle139;
             this.진입후최고_Watch_A.HeaderText = "최고(%)";
             this.진입후최고_Watch_A.Name = "진입후최고_Watch_A";
             this.진입후최고_Watch_A.ReadOnly = true;
@@ -6324,10 +6440,10 @@ namespace 지니_64
             // 
             // 진입후최저_Watch_A
             // 
-            dataGridViewCellStyle319.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle319.Format = "N2";
-            dataGridViewCellStyle319.NullValue = null;
-            this.진입후최저_Watch_A.DefaultCellStyle = dataGridViewCellStyle319;
+            dataGridViewCellStyle140.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle140.Format = "N2";
+            dataGridViewCellStyle140.NullValue = null;
+            this.진입후최저_Watch_A.DefaultCellStyle = dataGridViewCellStyle140;
             this.진입후최저_Watch_A.HeaderText = "최저(%)";
             this.진입후최저_Watch_A.Name = "진입후최저_Watch_A";
             this.진입후최저_Watch_A.ReadOnly = true;
@@ -6336,10 +6452,10 @@ namespace 지니_64
             // 
             // 시가_Watch_A
             // 
-            dataGridViewCellStyle320.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle320.Format = "N0";
-            dataGridViewCellStyle320.NullValue = null;
-            this.시가_Watch_A.DefaultCellStyle = dataGridViewCellStyle320;
+            dataGridViewCellStyle141.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle141.Format = "N0";
+            dataGridViewCellStyle141.NullValue = null;
+            this.시가_Watch_A.DefaultCellStyle = dataGridViewCellStyle141;
             this.시가_Watch_A.HeaderText = "시가";
             this.시가_Watch_A.Name = "시가_Watch_A";
             this.시가_Watch_A.ReadOnly = true;
@@ -6347,10 +6463,10 @@ namespace 지니_64
             // 
             // 고가_Watch_A
             // 
-            dataGridViewCellStyle321.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle321.Format = "N0";
-            dataGridViewCellStyle321.NullValue = null;
-            this.고가_Watch_A.DefaultCellStyle = dataGridViewCellStyle321;
+            dataGridViewCellStyle142.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle142.Format = "N0";
+            dataGridViewCellStyle142.NullValue = null;
+            this.고가_Watch_A.DefaultCellStyle = dataGridViewCellStyle142;
             this.고가_Watch_A.HeaderText = "고가";
             this.고가_Watch_A.Name = "고가_Watch_A";
             this.고가_Watch_A.ReadOnly = true;
@@ -6358,10 +6474,10 @@ namespace 지니_64
             // 
             // 저가_Watch_A
             // 
-            dataGridViewCellStyle322.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle322.Format = "N0";
-            dataGridViewCellStyle322.NullValue = null;
-            this.저가_Watch_A.DefaultCellStyle = dataGridViewCellStyle322;
+            dataGridViewCellStyle143.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle143.Format = "N0";
+            dataGridViewCellStyle143.NullValue = null;
+            this.저가_Watch_A.DefaultCellStyle = dataGridViewCellStyle143;
             this.저가_Watch_A.HeaderText = "저가";
             this.저가_Watch_A.Name = "저가_Watch_A";
             this.저가_Watch_A.ReadOnly = true;
@@ -6369,20 +6485,20 @@ namespace 지니_64
             // 
             // 누적거래량_Watch_A
             // 
-            dataGridViewCellStyle323.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle323.Format = "N0";
-            dataGridViewCellStyle323.NullValue = null;
-            this.누적거래량_Watch_A.DefaultCellStyle = dataGridViewCellStyle323;
+            dataGridViewCellStyle144.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle144.Format = "N0";
+            dataGridViewCellStyle144.NullValue = null;
+            this.누적거래량_Watch_A.DefaultCellStyle = dataGridViewCellStyle144;
             this.누적거래량_Watch_A.HeaderText = "누적거래량";
             this.누적거래량_Watch_A.Name = "누적거래량_Watch_A";
             this.누적거래량_Watch_A.ReadOnly = true;
             // 
             // 전일거래량대비_Watch_A
             // 
-            dataGridViewCellStyle324.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle324.Format = "N2";
-            dataGridViewCellStyle324.NullValue = null;
-            this.전일거래량대비_Watch_A.DefaultCellStyle = dataGridViewCellStyle324;
+            dataGridViewCellStyle145.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle145.Format = "N2";
+            dataGridViewCellStyle145.NullValue = null;
+            this.전일거래량대비_Watch_A.DefaultCellStyle = dataGridViewCellStyle145;
             this.전일거래량대비_Watch_A.HeaderText = "전일거래량대비";
             this.전일거래량대비_Watch_A.Name = "전일거래량대비_Watch_A";
             this.전일거래량대비_Watch_A.ReadOnly = true;
@@ -6390,10 +6506,10 @@ namespace 지니_64
             // 
             // 누적거래대금_Watch_A
             // 
-            dataGridViewCellStyle325.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle325.Format = "N0";
-            dataGridViewCellStyle325.NullValue = null;
-            this.누적거래대금_Watch_A.DefaultCellStyle = dataGridViewCellStyle325;
+            dataGridViewCellStyle146.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle146.Format = "N0";
+            dataGridViewCellStyle146.NullValue = null;
+            this.누적거래대금_Watch_A.DefaultCellStyle = dataGridViewCellStyle146;
             this.누적거래대금_Watch_A.HeaderText = "거래대금";
             this.누적거래대금_Watch_A.Name = "누적거래대금_Watch_A";
             this.누적거래대금_Watch_A.ReadOnly = true;
@@ -6402,10 +6518,10 @@ namespace 지니_64
             // 
             // 거래대금증감_Watch_A
             // 
-            dataGridViewCellStyle326.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle326.Format = "N2";
-            dataGridViewCellStyle326.NullValue = null;
-            this.거래대금증감_Watch_A.DefaultCellStyle = dataGridViewCellStyle326;
+            dataGridViewCellStyle147.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle147.Format = "N2";
+            dataGridViewCellStyle147.NullValue = null;
+            this.거래대금증감_Watch_A.DefaultCellStyle = dataGridViewCellStyle147;
             this.거래대금증감_Watch_A.HeaderText = "대금증감";
             this.거래대금증감_Watch_A.Name = "거래대금증감_Watch_A";
             this.거래대금증감_Watch_A.ReadOnly = true;
@@ -6413,20 +6529,20 @@ namespace 지니_64
             // 
             // 거래회전율_Watch_A
             // 
-            dataGridViewCellStyle327.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle327.Format = "N2";
-            dataGridViewCellStyle327.NullValue = null;
-            this.거래회전율_Watch_A.DefaultCellStyle = dataGridViewCellStyle327;
+            dataGridViewCellStyle148.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle148.Format = "N2";
+            dataGridViewCellStyle148.NullValue = null;
+            this.거래회전율_Watch_A.DefaultCellStyle = dataGridViewCellStyle148;
             this.거래회전율_Watch_A.HeaderText = "거래회전율(%)";
             this.거래회전율_Watch_A.Name = "거래회전율_Watch_A";
             this.거래회전율_Watch_A.ReadOnly = true;
             // 
             // 시가총액_Watch_A
             // 
-            dataGridViewCellStyle328.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle328.Format = "N0";
-            dataGridViewCellStyle328.NullValue = null;
-            this.시가총액_Watch_A.DefaultCellStyle = dataGridViewCellStyle328;
+            dataGridViewCellStyle149.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle149.Format = "N0";
+            dataGridViewCellStyle149.NullValue = null;
+            this.시가총액_Watch_A.DefaultCellStyle = dataGridViewCellStyle149;
             this.시가총액_Watch_A.HeaderText = "시가총액(억)";
             this.시가총액_Watch_A.Name = "시가총액_Watch_A";
             this.시가총액_Watch_A.ReadOnly = true;
@@ -6434,8 +6550,8 @@ namespace 지니_64
             // 
             // 코드_Watch_A
             // 
-            dataGridViewCellStyle329.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.코드_Watch_A.DefaultCellStyle = dataGridViewCellStyle329;
+            dataGridViewCellStyle150.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.코드_Watch_A.DefaultCellStyle = dataGridViewCellStyle150;
             this.코드_Watch_A.HeaderText = "코드";
             this.코드_Watch_A.Name = "코드_Watch_A";
             this.코드_Watch_A.ReadOnly = true;
@@ -6447,7 +6563,7 @@ namespace 지니_64
             this.panel_TEST_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_TEST_B.Controls.Add(this.label135);
             this.panel_TEST_B.Controls.Add(this.label165);
-            this.panel_TEST_B.Controls.Add(this.combo_watch_condition_B);
+            this.panel_TEST_B.Controls.Add(this.watch_condition_B);
             this.panel_TEST_B.Controls.Add(this.MTB_watch_지연_B);
             this.panel_TEST_B.Controls.Add(this.label106);
             this.panel_TEST_B.Controls.Add(this.label166);
@@ -6460,7 +6576,7 @@ namespace 지니_64
             this.panel_TEST_B.Controls.Add(this.label423);
             this.panel_TEST_B.Controls.Add(this.CBB_watch_trading_B);
             this.panel_TEST_B.Controls.Add(this.TB_watch_손절_B);
-            this.panel_TEST_B.Controls.Add(this.combo_watch_condition_BB);
+            this.panel_TEST_B.Controls.Add(this.와치_B);
             this.panel_TEST_B.Controls.Add(this.TB_WatchRow_B);
             this.panel_TEST_B.Controls.Add(this.BT_watch_Save_B);
             this.panel_TEST_B.Controls.Add(this.TB_watch_익절_B);
@@ -6666,7 +6782,7 @@ namespace 지니_64
             this.TB_watch_손절_B.Text = "99.99";
             this.TB_watch_손절_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_watch_손절_B.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_watch_손절_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_watch_손절_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // BT_watch_Save_B
             // 
@@ -6700,7 +6816,7 @@ namespace 지니_64
             this.TB_watch_익절_B.Text = "99.99";
             this.TB_watch_익절_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_watch_익절_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_watch_익절_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_watch_익절_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CBB_Watch관심_B
             // 
@@ -6734,6 +6850,9 @@ namespace 지니_64
             // 
             this.CB_TR_B.AutoSize = true;
             this.CB_TR_B.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_TR_B.Checked = true;
+            this.CB_TR_B.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CB_TR_B.Enabled = false;
             this.CB_TR_B.Location = new System.Drawing.Point(191, 3);
             this.CB_TR_B.Name = "CB_TR_B";
             this.CB_TR_B.Size = new System.Drawing.Size(36, 16);
@@ -6749,18 +6868,18 @@ namespace 지니_64
             this.dataGridView_watch_B.AllowUserToDeleteRows = false;
             this.dataGridView_watch_B.AllowUserToOrderColumns = true;
             this.dataGridView_watch_B.AllowUserToResizeRows = false;
-            dataGridViewCellStyle332.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.dataGridView_watch_B.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle332;
+            dataGridViewCellStyle153.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.dataGridView_watch_B.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle153;
             this.dataGridView_watch_B.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView_watch_B.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle333.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle333.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle333.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle333.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle333.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle333.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle333.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_watch_B.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle333;
+            dataGridViewCellStyle154.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle154.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle154.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle154.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle154.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle154.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle154.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_watch_B.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle154;
             this.dataGridView_watch_B.ColumnHeadersHeight = 20;
             this.dataGridView_watch_B.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView_watch_B.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -6788,27 +6907,27 @@ namespace 지니_64
             this.거래회전율_Watch_B,
             this.시가총액_Watch_B,
             this.코드_Watch_B});
-            dataGridViewCellStyle358.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle358.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle358.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle358.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle358.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle358.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle358.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_watch_B.DefaultCellStyle = dataGridViewCellStyle358;
+            dataGridViewCellStyle179.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle179.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle179.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle179.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle179.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle179.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle179.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_watch_B.DefaultCellStyle = dataGridViewCellStyle179;
             this.dataGridView_watch_B.EnableHeadersVisualStyles = false;
             this.dataGridView_watch_B.Location = new System.Drawing.Point(-4, 39);
             this.dataGridView_watch_B.MultiSelect = false;
             this.dataGridView_watch_B.Name = "dataGridView_watch_B";
             this.dataGridView_watch_B.ReadOnly = true;
-            dataGridViewCellStyle359.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle359.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle359.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle359.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle359.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle359.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle359.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_watch_B.RowHeadersDefaultCellStyle = dataGridViewCellStyle359;
+            dataGridViewCellStyle180.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle180.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle180.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle180.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle180.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle180.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle180.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_watch_B.RowHeadersDefaultCellStyle = dataGridViewCellStyle180;
             this.dataGridView_watch_B.RowHeadersVisible = false;
             this.dataGridView_watch_B.RowTemplate.Height = 20;
             this.dataGridView_watch_B.RowTemplate.ReadOnly = true;
@@ -6817,16 +6936,17 @@ namespace 지니_64
             this.dataGridView_watch_B.TabIndex = 2;
             this.dataGridView_watch_B.TabStop = false;
             this.dataGridView_watch_B.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellClick);
+            this.dataGridView_watch_B.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.DataGridView_watch_B_CellPainting);
             this.dataGridView_watch_B.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_CellValueChanged);
-            this.dataGridView_watch_B.CurrentCellDirtyStateChanged += new System.EventHandler(this.dataGridView_CurrentCellDirtyStateChanged);
-            this.dataGridView_watch_B.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dataGridView_RowPostPaint);
+            this.dataGridView_watch_B.CurrentCellDirtyStateChanged += new System.EventHandler(this.DataGridView_CurrentCellDirtyStateChanged);
+            this.dataGridView_watch_B.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.DataGridView_RowPostPaint);
             // 
             // Num_Watch_B
             // 
-            dataGridViewCellStyle334.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle334.Format = "N0";
-            dataGridViewCellStyle334.NullValue = null;
-            this.Num_Watch_B.DefaultCellStyle = dataGridViewCellStyle334;
+            dataGridViewCellStyle155.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle155.Format = "N0";
+            dataGridViewCellStyle155.NullValue = null;
+            this.Num_Watch_B.DefaultCellStyle = dataGridViewCellStyle155;
             this.Num_Watch_B.Frozen = true;
             this.Num_Watch_B.HeaderText = "N";
             this.Num_Watch_B.Name = "Num_Watch_B";
@@ -6835,8 +6955,8 @@ namespace 지니_64
             // 
             // 시장_Watch_B
             // 
-            dataGridViewCellStyle335.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.시장_Watch_B.DefaultCellStyle = dataGridViewCellStyle335;
+            dataGridViewCellStyle156.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.시장_Watch_B.DefaultCellStyle = dataGridViewCellStyle156;
             this.시장_Watch_B.HeaderText = "M";
             this.시장_Watch_B.Name = "시장_Watch_B";
             this.시장_Watch_B.ReadOnly = true;
@@ -6844,8 +6964,8 @@ namespace 지니_64
             // 
             // 진입시간_Watch_B
             // 
-            dataGridViewCellStyle336.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.진입시간_Watch_B.DefaultCellStyle = dataGridViewCellStyle336;
+            dataGridViewCellStyle157.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.진입시간_Watch_B.DefaultCellStyle = dataGridViewCellStyle157;
             this.진입시간_Watch_B.HeaderText = "진입시간";
             this.진입시간_Watch_B.Name = "진입시간_Watch_B";
             this.진입시간_Watch_B.ReadOnly = true;
@@ -6855,8 +6975,8 @@ namespace 지니_64
             // 상태_Watch_B
             // 
             this.상태_Watch_B.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle337.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.상태_Watch_B.DefaultCellStyle = dataGridViewCellStyle337;
+            dataGridViewCellStyle158.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.상태_Watch_B.DefaultCellStyle = dataGridViewCellStyle158;
             this.상태_Watch_B.FillWeight = 10F;
             this.상태_Watch_B.HeaderText = "상태";
             this.상태_Watch_B.MaxInputLength = 2;
@@ -6869,8 +6989,8 @@ namespace 지니_64
             // 
             // 유지_Watch_B
             // 
-            dataGridViewCellStyle338.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.유지_Watch_B.DefaultCellStyle = dataGridViewCellStyle338;
+            dataGridViewCellStyle159.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.유지_Watch_B.DefaultCellStyle = dataGridViewCellStyle159;
             this.유지_Watch_B.HeaderText = "유지";
             this.유지_Watch_B.Name = "유지_Watch_B";
             this.유지_Watch_B.ReadOnly = true;
@@ -6878,8 +6998,8 @@ namespace 지니_64
             // 
             // 종목명_Watch_B
             // 
-            dataGridViewCellStyle339.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.종목명_Watch_B.DefaultCellStyle = dataGridViewCellStyle339;
+            dataGridViewCellStyle160.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.종목명_Watch_B.DefaultCellStyle = dataGridViewCellStyle160;
             this.종목명_Watch_B.HeaderText = "종목명";
             this.종목명_Watch_B.Name = "종목명_Watch_B";
             this.종목명_Watch_B.ReadOnly = true;
@@ -6888,10 +7008,10 @@ namespace 지니_64
             // 
             // 현재가_Watch_B
             // 
-            dataGridViewCellStyle340.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle340.Format = "N0";
-            dataGridViewCellStyle340.NullValue = null;
-            this.현재가_Watch_B.DefaultCellStyle = dataGridViewCellStyle340;
+            dataGridViewCellStyle161.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle161.Format = "N0";
+            dataGridViewCellStyle161.NullValue = null;
+            this.현재가_Watch_B.DefaultCellStyle = dataGridViewCellStyle161;
             this.현재가_Watch_B.HeaderText = "현재가";
             this.현재가_Watch_B.Name = "현재가_Watch_B";
             this.현재가_Watch_B.ReadOnly = true;
@@ -6899,10 +7019,10 @@ namespace 지니_64
             // 
             // 등락율_Watch_B
             // 
-            dataGridViewCellStyle341.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle341.Format = "N2";
-            dataGridViewCellStyle341.NullValue = null;
-            this.등락율_Watch_B.DefaultCellStyle = dataGridViewCellStyle341;
+            dataGridViewCellStyle162.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle162.Format = "N2";
+            dataGridViewCellStyle162.NullValue = null;
+            this.등락율_Watch_B.DefaultCellStyle = dataGridViewCellStyle162;
             this.등락율_Watch_B.HeaderText = "등락율";
             this.등락율_Watch_B.Name = "등락율_Watch_B";
             this.등락율_Watch_B.ReadOnly = true;
@@ -6911,10 +7031,10 @@ namespace 지니_64
             // 
             // 진입가_Watch_B
             // 
-            dataGridViewCellStyle342.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle342.Format = "N0";
-            dataGridViewCellStyle342.NullValue = null;
-            this.진입가_Watch_B.DefaultCellStyle = dataGridViewCellStyle342;
+            dataGridViewCellStyle163.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle163.Format = "N0";
+            dataGridViewCellStyle163.NullValue = null;
+            this.진입가_Watch_B.DefaultCellStyle = dataGridViewCellStyle163;
             this.진입가_Watch_B.HeaderText = "진입가";
             this.진입가_Watch_B.Name = "진입가_Watch_B";
             this.진입가_Watch_B.ReadOnly = true;
@@ -6923,8 +7043,8 @@ namespace 지니_64
             // 
             // 매매_Watch_B
             // 
-            dataGridViewCellStyle343.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.매매_Watch_B.DefaultCellStyle = dataGridViewCellStyle343;
+            dataGridViewCellStyle164.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.매매_Watch_B.DefaultCellStyle = dataGridViewCellStyle164;
             this.매매_Watch_B.HeaderText = "매매";
             this.매매_Watch_B.Name = "매매_Watch_B";
             this.매매_Watch_B.ReadOnly = true;
@@ -6932,10 +7052,10 @@ namespace 지니_64
             // 
             // 매수가_Watch_B
             // 
-            dataGridViewCellStyle344.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle344.Format = "N0";
-            dataGridViewCellStyle344.NullValue = null;
-            this.매수가_Watch_B.DefaultCellStyle = dataGridViewCellStyle344;
+            dataGridViewCellStyle165.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle165.Format = "N0";
+            dataGridViewCellStyle165.NullValue = null;
+            this.매수가_Watch_B.DefaultCellStyle = dataGridViewCellStyle165;
             this.매수가_Watch_B.HeaderText = "매수가";
             this.매수가_Watch_B.Name = "매수가_Watch_B";
             this.매수가_Watch_B.ReadOnly = true;
@@ -6943,10 +7063,10 @@ namespace 지니_64
             // 
             // 진입후등락_Watch_B
             // 
-            dataGridViewCellStyle345.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle345.Format = "N2";
-            dataGridViewCellStyle345.NullValue = null;
-            this.진입후등락_Watch_B.DefaultCellStyle = dataGridViewCellStyle345;
+            dataGridViewCellStyle166.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle166.Format = "N2";
+            dataGridViewCellStyle166.NullValue = null;
+            this.진입후등락_Watch_B.DefaultCellStyle = dataGridViewCellStyle166;
             this.진입후등락_Watch_B.HeaderText = "현재(%)";
             this.진입후등락_Watch_B.Name = "진입후등락_Watch_B";
             this.진입후등락_Watch_B.ReadOnly = true;
@@ -6955,10 +7075,10 @@ namespace 지니_64
             // 
             // 진입후최고_Watch_B
             // 
-            dataGridViewCellStyle346.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle346.Format = "N2";
-            dataGridViewCellStyle346.NullValue = null;
-            this.진입후최고_Watch_B.DefaultCellStyle = dataGridViewCellStyle346;
+            dataGridViewCellStyle167.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle167.Format = "N2";
+            dataGridViewCellStyle167.NullValue = null;
+            this.진입후최고_Watch_B.DefaultCellStyle = dataGridViewCellStyle167;
             this.진입후최고_Watch_B.HeaderText = "최고(%)";
             this.진입후최고_Watch_B.Name = "진입후최고_Watch_B";
             this.진입후최고_Watch_B.ReadOnly = true;
@@ -6967,10 +7087,10 @@ namespace 지니_64
             // 
             // 진입후최저_Watch_B
             // 
-            dataGridViewCellStyle347.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle347.Format = "N2";
-            dataGridViewCellStyle347.NullValue = null;
-            this.진입후최저_Watch_B.DefaultCellStyle = dataGridViewCellStyle347;
+            dataGridViewCellStyle168.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle168.Format = "N2";
+            dataGridViewCellStyle168.NullValue = null;
+            this.진입후최저_Watch_B.DefaultCellStyle = dataGridViewCellStyle168;
             this.진입후최저_Watch_B.HeaderText = "최저(%)";
             this.진입후최저_Watch_B.Name = "진입후최저_Watch_B";
             this.진입후최저_Watch_B.ReadOnly = true;
@@ -6979,10 +7099,10 @@ namespace 지니_64
             // 
             // 시가_Watch_B
             // 
-            dataGridViewCellStyle348.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle348.Format = "N0";
-            dataGridViewCellStyle348.NullValue = null;
-            this.시가_Watch_B.DefaultCellStyle = dataGridViewCellStyle348;
+            dataGridViewCellStyle169.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle169.Format = "N0";
+            dataGridViewCellStyle169.NullValue = null;
+            this.시가_Watch_B.DefaultCellStyle = dataGridViewCellStyle169;
             this.시가_Watch_B.HeaderText = "시가";
             this.시가_Watch_B.Name = "시가_Watch_B";
             this.시가_Watch_B.ReadOnly = true;
@@ -6990,10 +7110,10 @@ namespace 지니_64
             // 
             // 고가_Watch_B
             // 
-            dataGridViewCellStyle349.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle349.Format = "N0";
-            dataGridViewCellStyle349.NullValue = null;
-            this.고가_Watch_B.DefaultCellStyle = dataGridViewCellStyle349;
+            dataGridViewCellStyle170.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle170.Format = "N0";
+            dataGridViewCellStyle170.NullValue = null;
+            this.고가_Watch_B.DefaultCellStyle = dataGridViewCellStyle170;
             this.고가_Watch_B.HeaderText = "고가";
             this.고가_Watch_B.Name = "고가_Watch_B";
             this.고가_Watch_B.ReadOnly = true;
@@ -7001,10 +7121,10 @@ namespace 지니_64
             // 
             // 저가_Watch_B
             // 
-            dataGridViewCellStyle350.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle350.Format = "N0";
-            dataGridViewCellStyle350.NullValue = null;
-            this.저가_Watch_B.DefaultCellStyle = dataGridViewCellStyle350;
+            dataGridViewCellStyle171.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle171.Format = "N0";
+            dataGridViewCellStyle171.NullValue = null;
+            this.저가_Watch_B.DefaultCellStyle = dataGridViewCellStyle171;
             this.저가_Watch_B.HeaderText = "저가";
             this.저가_Watch_B.Name = "저가_Watch_B";
             this.저가_Watch_B.ReadOnly = true;
@@ -7012,20 +7132,20 @@ namespace 지니_64
             // 
             // 누적거래량_Watch_B
             // 
-            dataGridViewCellStyle351.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle351.Format = "N0";
-            dataGridViewCellStyle351.NullValue = null;
-            this.누적거래량_Watch_B.DefaultCellStyle = dataGridViewCellStyle351;
+            dataGridViewCellStyle172.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle172.Format = "N0";
+            dataGridViewCellStyle172.NullValue = null;
+            this.누적거래량_Watch_B.DefaultCellStyle = dataGridViewCellStyle172;
             this.누적거래량_Watch_B.HeaderText = "누적거래량";
             this.누적거래량_Watch_B.Name = "누적거래량_Watch_B";
             this.누적거래량_Watch_B.ReadOnly = true;
             // 
             // 전일거래량대비_Watch_B
             // 
-            dataGridViewCellStyle352.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle352.Format = "N2";
-            dataGridViewCellStyle352.NullValue = null;
-            this.전일거래량대비_Watch_B.DefaultCellStyle = dataGridViewCellStyle352;
+            dataGridViewCellStyle173.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle173.Format = "N2";
+            dataGridViewCellStyle173.NullValue = null;
+            this.전일거래량대비_Watch_B.DefaultCellStyle = dataGridViewCellStyle173;
             this.전일거래량대비_Watch_B.HeaderText = "전일거래량대비";
             this.전일거래량대비_Watch_B.Name = "전일거래량대비_Watch_B";
             this.전일거래량대비_Watch_B.ReadOnly = true;
@@ -7033,10 +7153,10 @@ namespace 지니_64
             // 
             // 누적거래대금_Watch_B
             // 
-            dataGridViewCellStyle353.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle353.Format = "N0";
-            dataGridViewCellStyle353.NullValue = null;
-            this.누적거래대금_Watch_B.DefaultCellStyle = dataGridViewCellStyle353;
+            dataGridViewCellStyle174.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle174.Format = "N0";
+            dataGridViewCellStyle174.NullValue = null;
+            this.누적거래대금_Watch_B.DefaultCellStyle = dataGridViewCellStyle174;
             this.누적거래대금_Watch_B.HeaderText = "거래대금";
             this.누적거래대금_Watch_B.Name = "누적거래대금_Watch_B";
             this.누적거래대금_Watch_B.ReadOnly = true;
@@ -7045,10 +7165,10 @@ namespace 지니_64
             // 
             // 거래대금증감_Watch_B
             // 
-            dataGridViewCellStyle354.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle354.Format = "N2";
-            dataGridViewCellStyle354.NullValue = null;
-            this.거래대금증감_Watch_B.DefaultCellStyle = dataGridViewCellStyle354;
+            dataGridViewCellStyle175.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle175.Format = "N2";
+            dataGridViewCellStyle175.NullValue = null;
+            this.거래대금증감_Watch_B.DefaultCellStyle = dataGridViewCellStyle175;
             this.거래대금증감_Watch_B.HeaderText = "대금증감";
             this.거래대금증감_Watch_B.Name = "거래대금증감_Watch_B";
             this.거래대금증감_Watch_B.ReadOnly = true;
@@ -7056,20 +7176,20 @@ namespace 지니_64
             // 
             // 거래회전율_Watch_B
             // 
-            dataGridViewCellStyle355.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle355.Format = "N2";
-            dataGridViewCellStyle355.NullValue = null;
-            this.거래회전율_Watch_B.DefaultCellStyle = dataGridViewCellStyle355;
+            dataGridViewCellStyle176.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle176.Format = "N2";
+            dataGridViewCellStyle176.NullValue = null;
+            this.거래회전율_Watch_B.DefaultCellStyle = dataGridViewCellStyle176;
             this.거래회전율_Watch_B.HeaderText = "거래회전율(%)";
             this.거래회전율_Watch_B.Name = "거래회전율_Watch_B";
             this.거래회전율_Watch_B.ReadOnly = true;
             // 
             // 시가총액_Watch_B
             // 
-            dataGridViewCellStyle356.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle356.Format = "N0";
-            dataGridViewCellStyle356.NullValue = null;
-            this.시가총액_Watch_B.DefaultCellStyle = dataGridViewCellStyle356;
+            dataGridViewCellStyle177.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle177.Format = "N0";
+            dataGridViewCellStyle177.NullValue = null;
+            this.시가총액_Watch_B.DefaultCellStyle = dataGridViewCellStyle177;
             this.시가총액_Watch_B.HeaderText = "시가총액(억)";
             this.시가총액_Watch_B.Name = "시가총액_Watch_B";
             this.시가총액_Watch_B.ReadOnly = true;
@@ -7077,8 +7197,8 @@ namespace 지니_64
             // 
             // 코드_Watch_B
             // 
-            dataGridViewCellStyle357.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.코드_Watch_B.DefaultCellStyle = dataGridViewCellStyle357;
+            dataGridViewCellStyle178.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.코드_Watch_B.DefaultCellStyle = dataGridViewCellStyle178;
             this.코드_Watch_B.HeaderText = "코드";
             this.코드_Watch_B.Name = "코드_Watch_B";
             this.코드_Watch_B.ReadOnly = true;
@@ -7125,14 +7245,14 @@ namespace 지니_64
             this.tab_주문.SelectedIndex = 0;
             this.tab_주문.Size = new System.Drawing.Size(828, 663);
             this.tab_주문.TabIndex = 11;
-            this.tab_주문.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl_L_Top_DrawItem);
-            this.tab_주문.SelectedIndexChanged += new System.EventHandler(this.tabControl_R_Top_SelectedIndexChanged);
+            this.tab_주문.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.TabControl_L_Top_DrawItem);
+            this.tab_주문.SelectedIndexChanged += new System.EventHandler(this.Tab_주문_SelectedIndexChanged);
             // 
             // TP_동작상태
             // 
             this.TP_동작상태.BackColor = System.Drawing.SystemColors.ControlLight;
             this.TP_동작상태.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TP_동작상태.Controls.Add(this.최종매입가View);
+            this.TP_동작상태.Controls.Add(this.DGV_최종매입가View);
             this.TP_동작상태.Controls.Add(this.LB_JumunList);
             this.TP_동작상태.Location = new System.Drawing.Point(4, 22);
             this.TP_동작상태.Margin = new System.Windows.Forms.Padding(0);
@@ -7141,27 +7261,27 @@ namespace 지니_64
             this.TP_동작상태.TabIndex = 4;
             this.TP_동작상태.Text = "동작/감시 보기";
             // 
-            // 최종매입가View
+            // DGV_최종매입가View
             // 
-            this.최종매입가View.AllowUserToAddRows = false;
-            this.최종매입가View.AllowUserToDeleteRows = false;
-            this.최종매입가View.AllowUserToOrderColumns = true;
-            this.최종매입가View.AllowUserToResizeRows = false;
-            dataGridViewCellStyle360.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.최종매입가View.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle360;
-            this.최종매입가View.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            this.최종매입가View.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            dataGridViewCellStyle361.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle361.BackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle361.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle361.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle361.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle361.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle361.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.최종매입가View.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle361;
-            this.최종매입가View.ColumnHeadersHeight = 20;
-            this.최종매입가View.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.최종매입가View.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DGV_최종매입가View.AllowUserToAddRows = false;
+            this.DGV_최종매입가View.AllowUserToDeleteRows = false;
+            this.DGV_최종매입가View.AllowUserToOrderColumns = true;
+            this.DGV_최종매입가View.AllowUserToResizeRows = false;
+            dataGridViewCellStyle181.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.DGV_최종매입가View.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle181;
+            this.DGV_최종매입가View.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.DGV_최종매입가View.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            dataGridViewCellStyle182.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle182.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle182.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle182.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle182.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle182.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle182.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGV_최종매입가View.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle182;
+            this.DGV_최종매입가View.ColumnHeadersHeight = 20;
+            this.DGV_최종매입가View.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.DGV_최종매입가View.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.차수,
             this.A_매입가,
             this.A_수익률,
@@ -7177,30 +7297,30 @@ namespace 지니_64
             this.F_수익률,
             this.G_매입가,
             this.G_수익률});
-            dataGridViewCellStyle362.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle362.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle362.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle362.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle362.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle362.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle362.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.최종매입가View.DefaultCellStyle = dataGridViewCellStyle362;
-            this.최종매입가View.Enabled = false;
-            this.최종매입가View.EnableHeadersVisualStyles = false;
-            this.최종매입가View.Location = new System.Drawing.Point(22, 79);
-            this.최종매입가View.MultiSelect = false;
-            this.최종매입가View.Name = "최종매입가View";
-            this.최종매입가View.ReadOnly = true;
-            this.최종매입가View.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.최종매입가View.RowHeadersVisible = false;
-            this.최종매입가View.RowTemplate.Height = 23;
-            this.최종매입가View.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.최종매입가View.Size = new System.Drawing.Size(172, 184);
-            this.최종매입가View.TabIndex = 1;
-            this.최종매입가View.TabStop = false;
-            this.최종매입가View.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.최종매입가View_CellEnter);
-            this.최종매입가View.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.최종매입가View_CellLeave);
-            this.최종매입가View.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_CellValueChanged);
+            dataGridViewCellStyle183.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle183.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle183.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle183.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle183.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle183.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle183.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DGV_최종매입가View.DefaultCellStyle = dataGridViewCellStyle183;
+            this.DGV_최종매입가View.Enabled = false;
+            this.DGV_최종매입가View.EnableHeadersVisualStyles = false;
+            this.DGV_최종매입가View.Location = new System.Drawing.Point(22, 79);
+            this.DGV_최종매입가View.MultiSelect = false;
+            this.DGV_최종매입가View.Name = "DGV_최종매입가View";
+            this.DGV_최종매입가View.ReadOnly = true;
+            this.DGV_최종매입가View.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.DGV_최종매입가View.RowHeadersVisible = false;
+            this.DGV_최종매입가View.RowTemplate.Height = 23;
+            this.DGV_최종매입가View.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.DGV_최종매입가View.Size = new System.Drawing.Size(172, 184);
+            this.DGV_최종매입가View.TabIndex = 1;
+            this.DGV_최종매입가View.TabStop = false;
+            this.DGV_최종매입가View.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.최종매입가View_CellEnter);
+            this.DGV_최종매입가View.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.최종매입가View_CellLeave);
+            this.DGV_최종매입가View.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_CellValueChanged);
             // 
             // 차수
             // 
@@ -7330,7 +7450,7 @@ namespace 지니_64
             this.LB_JumunList.HorizontalScrollbar = true;
             this.LB_JumunList.ItemHeight = 12;
             this.LB_JumunList.Items.AddRange(new object[] {
-            "Jumun List"});
+            "jumun List"});
             this.LB_JumunList.Location = new System.Drawing.Point(-1, 2);
             this.LB_JumunList.Margin = new System.Windows.Forms.Padding(0);
             this.LB_JumunList.Name = "LB_JumunList";
@@ -7345,7 +7465,7 @@ namespace 지니_64
             this.TB_jango_sell_value.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_jango_sell_value.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_jango_sell_value.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.TB_jango_sell_value.Location = new System.Drawing.Point(48, 100);
+            this.TB_jango_sell_value.Location = new System.Drawing.Point(48, 99);
             this.TB_jango_sell_value.MaxLength = 7;
             this.TB_jango_sell_value.Name = "TB_jango_sell_value";
             this.TB_jango_sell_value.Size = new System.Drawing.Size(49, 21);
@@ -7353,14 +7473,14 @@ namespace 지니_64
             this.TB_jango_sell_value.Text = "0";
             this.TB_jango_sell_value.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_jango_sell_value.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_jango_sell_value.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수실수_키프레스);
+            this.TB_jango_sell_value.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수실수_키프레스_);
             // 
             // LB_코스피대금
             // 
             this.LB_코스피대금.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LB_코스피대금.Cursor = System.Windows.Forms.Cursors.Default;
             this.LB_코스피대금.Font = new System.Drawing.Font("굴림체", 9F);
-            this.LB_코스피대금.Location = new System.Drawing.Point(233, 120);
+            this.LB_코스피대금.Location = new System.Drawing.Point(233, 119);
             this.LB_코스피대금.Name = "LB_코스피대금";
             this.LB_코스피대금.Size = new System.Drawing.Size(75, 20);
             this.LB_코스피대금.TabIndex = 54;
@@ -7372,7 +7492,7 @@ namespace 지니_64
             this.LB_코스피보합.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LB_코스피보합.Cursor = System.Windows.Forms.Cursors.Default;
             this.LB_코스피보합.Font = new System.Drawing.Font("굴림체", 9F);
-            this.LB_코스피보합.Location = new System.Drawing.Point(401, 120);
+            this.LB_코스피보합.Location = new System.Drawing.Point(401, 119);
             this.LB_코스피보합.Name = "LB_코스피보합";
             this.LB_코스피보합.Size = new System.Drawing.Size(55, 20);
             this.LB_코스피보합.TabIndex = 55;
@@ -7385,7 +7505,7 @@ namespace 지니_64
             this.LB_코스피하락.Cursor = System.Windows.Forms.Cursors.Default;
             this.LB_코스피하락.Font = new System.Drawing.Font("굴림체", 9F);
             this.LB_코스피하락.ForeColor = System.Drawing.Color.Blue;
-            this.LB_코스피하락.Location = new System.Drawing.Point(455, 120);
+            this.LB_코스피하락.Location = new System.Drawing.Point(455, 119);
             this.LB_코스피하락.Name = "LB_코스피하락";
             this.LB_코스피하락.Size = new System.Drawing.Size(95, 20);
             this.LB_코스피하락.TabIndex = 56;
@@ -7398,7 +7518,7 @@ namespace 지니_64
             this.LB_코스피상승.Cursor = System.Windows.Forms.Cursors.Default;
             this.LB_코스피상승.Font = new System.Drawing.Font("굴림체", 9F);
             this.LB_코스피상승.ForeColor = System.Drawing.Color.Red;
-            this.LB_코스피상승.Location = new System.Drawing.Point(307, 120);
+            this.LB_코스피상승.Location = new System.Drawing.Point(307, 119);
             this.LB_코스피상승.Name = "LB_코스피상승";
             this.LB_코스피상승.Size = new System.Drawing.Size(95, 20);
             this.LB_코스피상승.TabIndex = 57;
@@ -7410,7 +7530,7 @@ namespace 지니_64
             this.LB_코스닥보합.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LB_코스닥보합.Cursor = System.Windows.Forms.Cursors.Default;
             this.LB_코스닥보합.Font = new System.Drawing.Font("굴림체", 9F);
-            this.LB_코스닥보합.Location = new System.Drawing.Point(950, 120);
+            this.LB_코스닥보합.Location = new System.Drawing.Point(950, 119);
             this.LB_코스닥보합.Name = "LB_코스닥보합";
             this.LB_코스닥보합.Size = new System.Drawing.Size(55, 20);
             this.LB_코스닥보합.TabIndex = 58;
@@ -7423,7 +7543,7 @@ namespace 지니_64
             this.LB_코스닥하락.Cursor = System.Windows.Forms.Cursors.Default;
             this.LB_코스닥하락.Font = new System.Drawing.Font("굴림체", 9F);
             this.LB_코스닥하락.ForeColor = System.Drawing.Color.Blue;
-            this.LB_코스닥하락.Location = new System.Drawing.Point(1004, 120);
+            this.LB_코스닥하락.Location = new System.Drawing.Point(1004, 119);
             this.LB_코스닥하락.Name = "LB_코스닥하락";
             this.LB_코스닥하락.Size = new System.Drawing.Size(98, 20);
             this.LB_코스닥하락.TabIndex = 59;
@@ -7436,7 +7556,7 @@ namespace 지니_64
             this.LB_코스닥상승.Cursor = System.Windows.Forms.Cursors.Default;
             this.LB_코스닥상승.Font = new System.Drawing.Font("굴림체", 9F);
             this.LB_코스닥상승.ForeColor = System.Drawing.Color.Red;
-            this.LB_코스닥상승.Location = new System.Drawing.Point(856, 120);
+            this.LB_코스닥상승.Location = new System.Drawing.Point(856, 119);
             this.LB_코스닥상승.Name = "LB_코스닥상승";
             this.LB_코스닥상승.Size = new System.Drawing.Size(95, 20);
             this.LB_코스닥상승.TabIndex = 60;
@@ -7448,7 +7568,7 @@ namespace 지니_64
             this.LB_코스닥대금.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.LB_코스닥대금.Cursor = System.Windows.Forms.Cursors.Default;
             this.LB_코스닥대금.Font = new System.Drawing.Font("굴림체", 9F);
-            this.LB_코스닥대금.Location = new System.Drawing.Point(783, 120);
+            this.LB_코스닥대금.Location = new System.Drawing.Point(783, 119);
             this.LB_코스닥대금.Name = "LB_코스닥대금";
             this.LB_코스닥대금.Size = new System.Drawing.Size(74, 20);
             this.LB_코스닥대금.TabIndex = 61;
@@ -7689,9 +7809,9 @@ namespace 지니_64
             // 
             this.notifyIcon.ContextMenuStrip = this.contextMenuStrip;
             this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
-            this.notifyIcon.Text = "지니_64";
+            this.notifyIcon.Text = "지니64";
             this.notifyIcon.Visible = true;
-            this.notifyIcon.DoubleClick += new System.EventHandler(this.notifyIcon_DoubleClick);
+            this.notifyIcon.DoubleClick += new System.EventHandler(this.NotifyIcon_DoubleClick);
             // 
             // contextMenuStrip
             // 
@@ -7707,7 +7827,7 @@ namespace 지니_64
             this.contextMenuStrip.ShowImageMargin = false;
             this.contextMenuStrip.ShowItemToolTips = false;
             this.contextMenuStrip.Size = new System.Drawing.Size(100, 114);
-            this.contextMenuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.contextMenuStrip_ItemClicked);
+            this.contextMenuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.ContextMenuStrip_ItemClicked);
             // 
             // 최대화ToolStripMenuItem
             // 
@@ -7744,20 +7864,20 @@ namespace 지니_64
             this.종료ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.종료ToolStripMenuItem.Text = "      종 료";
             // 
-            // CBB_지니_64종료
+            // CBB_지니64종료
             // 
-            this.CBB_지니_64종료.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CBB_지니_64종료.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_지니_64종료.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_지니_64종료.FormattingEnabled = true;
-            this.CBB_지니_64종료.Items.AddRange(new object[] {
+            this.CBB_지니64종료.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CBB_지니64종료.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_지니64종료.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_지니64종료.FormattingEnabled = true;
+            this.CBB_지니64종료.Items.AddRange(new object[] {
             "G..종료",
             "G재시작"});
-            this.CBB_지니_64종료.Location = new System.Drawing.Point(96, 40);
-            this.CBB_지니_64종료.Name = "CBB_지니_64종료";
-            this.CBB_지니_64종료.Size = new System.Drawing.Size(72, 21);
-            this.CBB_지니_64종료.TabIndex = 65;
-            this.CBB_지니_64종료.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.CBB_지니64종료.Location = new System.Drawing.Point(96, 39);
+            this.CBB_지니64종료.Name = "CBB_지니64종료";
+            this.CBB_지니64종료.Size = new System.Drawing.Size(72, 21);
+            this.CBB_지니64종료.TabIndex = 65;
+            this.CBB_지니64종료.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
             // 
             // label_time
             // 
@@ -7765,7 +7885,7 @@ namespace 지니_64
             this.label_time.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_time.Font = new System.Drawing.Font("굴림체", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label_time.ForeColor = System.Drawing.Color.Red;
-            this.label_time.Location = new System.Drawing.Point(306, 87);
+            this.label_time.Location = new System.Drawing.Point(-1, 26);
             this.label_time.Margin = new System.Windows.Forms.Padding(0);
             this.label_time.Name = "label_time";
             this.label_time.Size = new System.Drawing.Size(486, 34);
@@ -7779,7 +7899,7 @@ namespace 지니_64
             this.label_date.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_date.Font = new System.Drawing.Font("굴림체", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label_date.ForeColor = System.Drawing.Color.Black;
-            this.label_date.Location = new System.Drawing.Point(306, 60);
+            this.label_date.Location = new System.Drawing.Point(-1, -1);
             this.label_date.Margin = new System.Windows.Forms.Padding(0);
             this.label_date.Name = "label_date";
             this.label_date.Size = new System.Drawing.Size(486, 28);
@@ -7791,27 +7911,30 @@ namespace 지니_64
             // 
             this.종목감추기7.BackColor = System.Drawing.SystemColors.ControlLight;
             this.종목감추기7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.종목감추기7.Location = new System.Drawing.Point(166, -1);
+            this.종목감추기7.Location = new System.Drawing.Point(52, -1);
             this.종목감추기7.Name = "종목감추기7";
             this.종목감추기7.Size = new System.Drawing.Size(144, 121);
             this.종목감추기7.TabIndex = 68;
             this.종목감추기7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // P_Search_List
+            // Panel_Search_List
             // 
-            this.P_Search_List.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.P_Search_List.Controls.Add(this.Search_List);
-            this.P_Search_List.Location = new System.Drawing.Point(113, 19);
-            this.P_Search_List.Name = "P_Search_List";
-            this.P_Search_List.Size = new System.Drawing.Size(197, 101);
-            this.P_Search_List.TabIndex = 67;
+            this.Panel_Search_List.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Panel_Search_List.Controls.Add(this.label_Search);
+            this.Panel_Search_List.Controls.Add(this.CBB_SearchCondition);
+            this.Panel_Search_List.Controls.Add(this.종목감추기7);
+            this.Panel_Search_List.Controls.Add(this.Search_List);
+            this.Panel_Search_List.Location = new System.Drawing.Point(113, -1);
+            this.Panel_Search_List.Name = "Panel_Search_List";
+            this.Panel_Search_List.Size = new System.Drawing.Size(197, 121);
+            this.Panel_Search_List.TabIndex = 67;
             // 
             // label_Search
             // 
             this.label_Search.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label_Search.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_Search.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_Search.Location = new System.Drawing.Point(113, -1);
+            this.label_Search.Location = new System.Drawing.Point(-1, -1);
             this.label_Search.Name = "label_Search";
             this.label_Search.Size = new System.Drawing.Size(54, 21);
             this.label_Search.TabIndex = 71;
@@ -7827,14 +7950,14 @@ namespace 지니_64
             this.CBB_SearchCondition.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.CBB_SearchCondition.FormattingEnabled = true;
             this.CBB_SearchCondition.IntegralHeight = false;
-            this.CBB_SearchCondition.Location = new System.Drawing.Point(166, -1);
+            this.CBB_SearchCondition.Location = new System.Drawing.Point(53, -1);
             this.CBB_SearchCondition.Name = "CBB_SearchCondition";
             this.CBB_SearchCondition.Size = new System.Drawing.Size(144, 21);
             this.CBB_SearchCondition.TabIndex = 69;
             this.CBB_SearchCondition.DropDown += new System.EventHandler(this.CBB_RunCondition_DropDown);
             this.CBB_SearchCondition.DropDownClosed += new System.EventHandler(this.CBB_RunCondition_DropDownClosed);
             this.CBB_SearchCondition.TextChanged += new System.EventHandler(this.CBB_SearchCondition_TextChanged);
-            this.CBB_SearchCondition.MouseHover += new System.EventHandler(this.combo_new_condition_A_MouseHover);
+            this.CBB_SearchCondition.MouseHover += new System.EventHandler(this.신규_A_MouseHover);
             // 
             // TB_closetime
             // 
@@ -7843,14 +7966,14 @@ namespace 지니_64
             this.TB_closetime.Font = new System.Drawing.Font("Arial", 9F);
             this.TB_closetime.ForeColor = System.Drawing.SystemColors.WindowText;
             this.TB_closetime.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_closetime.Location = new System.Drawing.Point(150, 40);
+            this.TB_closetime.Location = new System.Drawing.Point(150, 39);
             this.TB_closetime.MaxLength = 6;
             this.TB_closetime.Name = "TB_closetime";
             this.TB_closetime.Size = new System.Drawing.Size(45, 21);
             this.TB_closetime.TabIndex = 67;
             this.TB_closetime.Text = "160000";
             this.TB_closetime.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_closetime.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_closetime.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_starttime
             // 
@@ -7859,14 +7982,14 @@ namespace 지니_64
             this.TB_starttime.Font = new System.Drawing.Font("Arial", 9F);
             this.TB_starttime.ForeColor = System.Drawing.SystemColors.WindowText;
             this.TB_starttime.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_starttime.Location = new System.Drawing.Point(150, 60);
+            this.TB_starttime.Location = new System.Drawing.Point(150, 59);
             this.TB_starttime.MaxLength = 6;
             this.TB_starttime.Name = "TB_starttime";
             this.TB_starttime.Size = new System.Drawing.Size(45, 21);
             this.TB_starttime.TabIndex = 67;
             this.TB_starttime.Text = "90000";
             this.TB_starttime.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_starttime.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_starttime.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_stoptime
             // 
@@ -7875,14 +7998,14 @@ namespace 지니_64
             this.TB_stoptime.Font = new System.Drawing.Font("Arial", 9F);
             this.TB_stoptime.ForeColor = System.Drawing.SystemColors.WindowText;
             this.TB_stoptime.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_stoptime.Location = new System.Drawing.Point(150, 80);
+            this.TB_stoptime.Location = new System.Drawing.Point(150, 79);
             this.TB_stoptime.MaxLength = 6;
             this.TB_stoptime.Name = "TB_stoptime";
             this.TB_stoptime.Size = new System.Drawing.Size(45, 21);
             this.TB_stoptime.TabIndex = 67;
             this.TB_stoptime.Text = "153000";
             this.TB_stoptime.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_stoptime.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_stoptime.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // CBB_layout
             // 
@@ -7898,7 +8021,7 @@ namespace 지니_64
             "LAYOUT 4",
             "LAYOUT 5",
             "LAYOUT 6"});
-            this.CBB_layout.Location = new System.Drawing.Point(1101, 0);
+            this.CBB_layout.Location = new System.Drawing.Point(0, 0);
             this.CBB_layout.Name = "CBB_layout";
             this.CBB_layout.Size = new System.Drawing.Size(99, 21);
             this.CBB_layout.TabIndex = 1;
@@ -7914,7 +8037,7 @@ namespace 지니_64
             this.CB_기본매매.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.CB_기본매매.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_기본매매.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CB_기본매매.Location = new System.Drawing.Point(1185, 0);
+            this.CB_기본매매.Location = new System.Drawing.Point(84, 0);
             this.CB_기본매매.Name = "CB_기본매매";
             this.CB_기본매매.Size = new System.Drawing.Size(71, 21);
             this.CB_기본매매.TabIndex = 130;
@@ -7932,7 +8055,7 @@ namespace 지니_64
             this.CB_반복매매.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.CB_반복매매.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_반복매매.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CB_반복매매.Location = new System.Drawing.Point(1258, 0);
+            this.CB_반복매매.Location = new System.Drawing.Point(157, 0);
             this.CB_반복매매.Name = "CB_반복매매";
             this.CB_반복매매.Size = new System.Drawing.Size(71, 21);
             this.CB_반복매매.TabIndex = 130;
@@ -7950,7 +8073,7 @@ namespace 지니_64
             this.CB_계좌관리.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.CB_계좌관리.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_계좌관리.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CB_계좌관리.Location = new System.Drawing.Point(1331, 0);
+            this.CB_계좌관리.Location = new System.Drawing.Point(230, 0);
             this.CB_계좌관리.Name = "CB_계좌관리";
             this.CB_계좌관리.Size = new System.Drawing.Size(71, 21);
             this.CB_계좌관리.TabIndex = 130;
@@ -7968,7 +8091,7 @@ namespace 지니_64
             this.CB_특수매매.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.CB_특수매매.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_특수매매.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CB_특수매매.Location = new System.Drawing.Point(1404, 0);
+            this.CB_특수매매.Location = new System.Drawing.Point(303, 0);
             this.CB_특수매매.Name = "CB_특수매매";
             this.CB_특수매매.Size = new System.Drawing.Size(71, 21);
             this.CB_특수매매.TabIndex = 130;
@@ -7986,7 +8109,7 @@ namespace 지니_64
             this.CB_대금탐색.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.CB_대금탐색.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_대금탐색.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CB_대금탐색.Location = new System.Drawing.Point(1550, 0);
+            this.CB_대금탐색.Location = new System.Drawing.Point(449, 0);
             this.CB_대금탐색.Name = "CB_대금탐색";
             this.CB_대금탐색.Size = new System.Drawing.Size(71, 21);
             this.CB_대금탐색.TabIndex = 130;
@@ -8004,7 +8127,7 @@ namespace 지니_64
             this.CB_매매그룹.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.CB_매매그룹.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_매매그룹.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CB_매매그룹.Location = new System.Drawing.Point(1477, 0);
+            this.CB_매매그룹.Location = new System.Drawing.Point(376, 0);
             this.CB_매매그룹.Name = "CB_매매그룹";
             this.CB_매매그룹.Size = new System.Drawing.Size(71, 21);
             this.CB_매매그룹.TabIndex = 130;
@@ -8022,7 +8145,7 @@ namespace 지니_64
             this.CB_기능설정.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.CB_기능설정.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_기능설정.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CB_기능설정.Location = new System.Drawing.Point(1623, 0);
+            this.CB_기능설정.Location = new System.Drawing.Point(522, 0);
             this.CB_기능설정.Name = "CB_기능설정";
             this.CB_기능설정.Size = new System.Drawing.Size(71, 21);
             this.CB_기능설정.TabIndex = 130;
@@ -8040,7 +8163,7 @@ namespace 지니_64
             this.CB_미니시계.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.CB_미니시계.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_미니시계.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CB_미니시계.Location = new System.Drawing.Point(1696, 0);
+            this.CB_미니시계.Location = new System.Drawing.Point(595, 0);
             this.CB_미니시계.Name = "CB_미니시계";
             this.CB_미니시계.Size = new System.Drawing.Size(71, 21);
             this.CB_미니시계.TabIndex = 130;
@@ -8049,20 +8172,20 @@ namespace 지니_64
             this.CB_미니시계.UseVisualStyleBackColor = false;
             this.CB_미니시계.CheckedChanged += new System.EventHandler(this.CB_미니시계_CheckedChanged);
             // 
-            // panel_주문
+            // panel_tab_주문
             // 
-            this.panel_주문.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_주문.Controls.Add(this.BT_종목다운);
-            this.panel_주문.Controls.Add(this.L_주문row);
-            this.panel_주문.Controls.Add(this.BT_종목업);
-            this.panel_주문.Controls.Add(this.TB_주문row);
-            this.panel_주문.Controls.Add(this.CBB_최종가종목);
-            this.panel_주문.Controls.Add(this.tab_주문);
-            this.panel_주문.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.panel_주문.Location = new System.Drawing.Point(1101, 20);
-            this.panel_주문.Name = "panel_주문";
-            this.panel_주문.Size = new System.Drawing.Size(821, 657);
-            this.panel_주문.TabIndex = 131;
+            this.panel_tab_주문.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_tab_주문.Controls.Add(this.BT_종목다운);
+            this.panel_tab_주문.Controls.Add(this.Label_주문row);
+            this.panel_tab_주문.Controls.Add(this.BT_종목업);
+            this.panel_tab_주문.Controls.Add(this.TB_주문row);
+            this.panel_tab_주문.Controls.Add(this.CBB_최종가종목);
+            this.panel_tab_주문.Controls.Add(this.tab_주문);
+            this.panel_tab_주문.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.panel_tab_주문.Location = new System.Drawing.Point(1101, 20);
+            this.panel_tab_주문.Name = "panel_tab_주문";
+            this.panel_tab_주문.Size = new System.Drawing.Size(821, 657);
+            this.panel_tab_주문.TabIndex = 131;
             // 
             // BT_종목다운
             // 
@@ -8095,28 +8218,28 @@ namespace 지니_64
             this.CBB_최종가종목.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.CBB_최종가종목.FormattingEnabled = true;
             this.CBB_최종가종목.IntegralHeight = false;
-            this.CBB_최종가종목.Location = new System.Drawing.Point(555, -1);
+            this.CBB_최종가종목.Location = new System.Drawing.Point(568, -1);
             this.CBB_최종가종목.Name = "CBB_최종가종목";
-            this.CBB_최종가종목.Size = new System.Drawing.Size(187, 21);
+            this.CBB_최종가종목.Size = new System.Drawing.Size(207, 21);
             this.CBB_최종가종목.TabIndex = 2;
             this.CBB_최종가종목.SelectedIndexChanged += new System.EventHandler(this.CBB_최종가종목_SelectedIndexChanged);
             // 
-            // panel_잔고
+            // panel_tab_잔고
             // 
-            this.panel_잔고.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_잔고.Controls.Add(this.label385);
-            this.panel_잔고.Controls.Add(this.LB_남은기간);
-            this.panel_잔고.Controls.Add(this.LB_license);
-            this.panel_잔고.Controls.Add(this.tab_잔고);
-            this.panel_잔고.Location = new System.Drawing.Point(-1, 139);
-            this.panel_잔고.Name = "panel_잔고";
-            this.panel_잔고.Size = new System.Drawing.Size(1103, 538);
-            this.panel_잔고.TabIndex = 132;
+            this.panel_tab_잔고.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_tab_잔고.Controls.Add(this.label385);
+            this.panel_tab_잔고.Controls.Add(this.LB_남은기간);
+            this.panel_tab_잔고.Controls.Add(this.LB_license);
+            this.panel_tab_잔고.Controls.Add(this.tab_잔고);
+            this.panel_tab_잔고.Location = new System.Drawing.Point(-1, 139);
+            this.panel_tab_잔고.Name = "panel_tab_잔고";
+            this.panel_tab_잔고.Size = new System.Drawing.Size(1103, 538);
+            this.panel_tab_잔고.TabIndex = 132;
             // 
             // panel_체결
             // 
             this.panel_체결.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_체결.Controls.Add(this.L_체결row);
+            this.panel_체결.Controls.Add(this.Label_체결row);
             this.panel_체결.Controls.Add(this.TB_체결row);
             this.panel_체결.Controls.Add(this.tab_체결);
             this.panel_체결.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
@@ -8128,74 +8251,70 @@ namespace 지니_64
             // panel_지수
             // 
             this.panel_지수.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel_지수.Controls.Add(this.combo_p_ratio);
+            this.panel_지수.Controls.Add(this.BT_지수이평);
+            this.panel_지수.Controls.Add(this.TB_p_go);
+            this.panel_지수.Controls.Add(this.button2);
             this.panel_지수.Controls.Add(this.button1);
+            this.panel_지수.Controls.Add(this.Panel_Search_List);
             this.panel_지수.Controls.Add(this.label15);
             this.panel_지수.Controls.Add(this.TB_p_down);
-            this.panel_지수.Controls.Add(this.TB_p_go_use);
             this.panel_지수.Controls.Add(this.TB_q_down);
-            this.panel_지수.Controls.Add(this.TB_q_ratio_use);
             this.panel_지수.Controls.Add(this.label174);
-            this.panel_지수.Controls.Add(this.TB_q_go_use);
             this.panel_지수.Controls.Add(this.label253);
-            this.panel_지수.Controls.Add(this.TB_q_down_use);
-            this.panel_지수.Controls.Add(this.TB_p_go);
             this.panel_지수.Controls.Add(this.TB_q_go);
             this.panel_지수.Controls.Add(this.TB_P_ratio);
-            this.panel_지수.Controls.Add(this.TB_p_down_use);
-            this.panel_지수.Controls.Add(this.CB_Jisu_avgset);
             this.panel_지수.Controls.Add(this.TB_q_ratio);
             this.panel_지수.Controls.Add(this.label249);
-            this.panel_지수.Controls.Add(this.combo_p_go);
             this.panel_지수.Controls.Add(this.label206);
-            this.panel_지수.Controls.Add(this.TB_p_ratio_use);
-            this.panel_지수.Controls.Add(this.label_Search);
             this.panel_지수.Controls.Add(this.label251);
-            this.panel_지수.Controls.Add(this.combo_q_go);
             this.panel_지수.Controls.Add(this.label255);
             this.panel_지수.Controls.Add(this.label252);
             this.panel_지수.Controls.Add(this.label247);
             this.panel_지수.Controls.Add(this.label254);
             this.panel_지수.Controls.Add(this.label204);
-            this.panel_지수.Controls.Add(this.combo_q_go_UD);
-            this.panel_지수.Controls.Add(this.combo_q_down);
-            this.panel_지수.Controls.Add(this.combo_p_go_UD);
-            this.panel_지수.Controls.Add(this.combo_q_down_UD);
-            this.panel_지수.Controls.Add(this.combo_p_ratio_UD);
-            this.panel_지수.Controls.Add(this.combo_p_down);
-            this.panel_지수.Controls.Add(this.CBB_SearchCondition);
-            this.panel_지수.Controls.Add(this.combo_p_down_UD);
-            this.panel_지수.Controls.Add(this.combo_q_ratio);
-            this.panel_지수.Controls.Add(this.combo_q_ratio_UD);
-            this.panel_지수.Controls.Add(this.P_Search_List);
-            this.panel_지수.Controls.Add(this.종목감추기7);
-            this.panel_지수.Location = new System.Drawing.Point(791, 0);
+            this.panel_지수.Controls.Add(this.panel_지수설정);
+            this.panel_지수.Location = new System.Drawing.Point(791, -1);
             this.panel_지수.Name = "panel_지수";
             this.panel_지수.Size = new System.Drawing.Size(311, 121);
             this.panel_지수.TabIndex = 137;
             // 
-            // combo_p_ratio
+            // TB_p_go
             // 
-            this.combo_p_ratio.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.combo_p_ratio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.combo_p_ratio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_p_ratio.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_p_ratio.FormattingEnabled = true;
-            this.combo_p_ratio.Items.AddRange(new object[] {
-            "사용 안함",
-            "신규 중지",
-            "추매 중지",
-            "신&추 중지"});
-            this.combo_p_ratio.Location = new System.Drawing.Point(209, -1);
-            this.combo_p_ratio.Name = "combo_p_ratio";
-            this.combo_p_ratio.Size = new System.Drawing.Size(101, 21);
-            this.combo_p_ratio.TabIndex = 2;
-            this.combo_p_ratio.TabStop = false;
-            this.combo_p_ratio.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.TB_p_go.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.TB_p_go.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_p_go.Cursor = System.Windows.Forms.Cursors.Default;
+            this.TB_p_go.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_p_go.Location = new System.Drawing.Point(71, 19);
+            this.TB_p_go.Name = "TB_p_go";
+            this.TB_p_go.ReadOnly = true;
+            this.TB_p_go.Size = new System.Drawing.Size(43, 21);
+            this.TB_p_go.TabIndex = 3;
+            this.TB_p_go.Text = "00";
+            this.TB_p_go.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_p_go.TextChanged += new System.EventHandler(this.TextBox_빨파검);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlLight;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("굴림체", 9F);
+            this.button2.Location = new System.Drawing.Point(-1, 79);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(19, 21);
+            this.button2.TabIndex = 141;
+            this.button2.Text = "스";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlLight;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlLight;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("굴림체", 9F);
             this.button1.Location = new System.Drawing.Point(17, 59);
@@ -8204,7 +8323,7 @@ namespace 지니_64
             this.button1.TabIndex = 140;
             this.button1.Text = "등락률";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // label15
             // 
@@ -8236,22 +8355,6 @@ namespace 지니_64
             this.TB_p_down.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_p_down.TextChanged += new System.EventHandler(this.TextBox_빨파검);
             // 
-            // TB_p_go_use
-            // 
-            this.TB_p_go_use.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.TB_p_go_use.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_p_go_use.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_p_go_use.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_p_go_use.Location = new System.Drawing.Point(113, 19);
-            this.TB_p_go_use.MaxLength = 6;
-            this.TB_p_go_use.Name = "TB_p_go_use";
-            this.TB_p_go_use.Size = new System.Drawing.Size(43, 21);
-            this.TB_p_go_use.TabIndex = 3;
-            this.TB_p_go_use.Text = "-10.00";
-            this.TB_p_go_use.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_p_go_use.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_p_go_use.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
-            // 
             // TB_q_down
             // 
             this.TB_q_down.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -8268,22 +8371,6 @@ namespace 지니_64
             this.TB_q_down.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_q_down.TextChanged += new System.EventHandler(this.TextBox_빨파검);
             // 
-            // TB_q_ratio_use
-            // 
-            this.TB_q_ratio_use.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TB_q_ratio_use.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_q_ratio_use.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_q_ratio_use.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_q_ratio_use.Location = new System.Drawing.Point(113, 59);
-            this.TB_q_ratio_use.MaxLength = 6;
-            this.TB_q_ratio_use.Name = "TB_q_ratio_use";
-            this.TB_q_ratio_use.Size = new System.Drawing.Size(43, 21);
-            this.TB_q_ratio_use.TabIndex = 3;
-            this.TB_q_ratio_use.Text = "-10.00";
-            this.TB_q_ratio_use.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_q_ratio_use.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_q_ratio_use.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
-            // 
             // label174
             // 
             this.label174.AutoSize = true;
@@ -8299,22 +8386,6 @@ namespace 지니_64
             this.label174.Text = "저가대비";
             this.label174.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TB_q_go_use
-            // 
-            this.TB_q_go_use.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TB_q_go_use.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_q_go_use.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_q_go_use.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_q_go_use.Location = new System.Drawing.Point(113, 79);
-            this.TB_q_go_use.MaxLength = 6;
-            this.TB_q_go_use.Name = "TB_q_go_use";
-            this.TB_q_go_use.Size = new System.Drawing.Size(43, 21);
-            this.TB_q_go_use.TabIndex = 3;
-            this.TB_q_go_use.Text = "-10.00";
-            this.TB_q_go_use.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_q_go_use.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_q_go_use.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
-            // 
             // label253
             // 
             this.label253.AutoSize = true;
@@ -8329,37 +8400,6 @@ namespace 지니_64
             this.label253.TabIndex = 1;
             this.label253.Text = "저가대비";
             this.label253.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TB_q_down_use
-            // 
-            this.TB_q_down_use.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TB_q_down_use.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_q_down_use.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_q_down_use.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_q_down_use.Location = new System.Drawing.Point(113, 99);
-            this.TB_q_down_use.MaxLength = 6;
-            this.TB_q_down_use.Name = "TB_q_down_use";
-            this.TB_q_down_use.Size = new System.Drawing.Size(43, 21);
-            this.TB_q_down_use.TabIndex = 3;
-            this.TB_q_down_use.Text = "-10.00";
-            this.TB_q_down_use.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_q_down_use.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_q_down_use.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
-            // 
-            // TB_p_go
-            // 
-            this.TB_p_go.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.TB_p_go.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_p_go.Cursor = System.Windows.Forms.Cursors.Default;
-            this.TB_p_go.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_p_go.Location = new System.Drawing.Point(71, 19);
-            this.TB_p_go.Name = "TB_p_go";
-            this.TB_p_go.ReadOnly = true;
-            this.TB_p_go.Size = new System.Drawing.Size(43, 21);
-            this.TB_p_go.TabIndex = 3;
-            this.TB_p_go.Text = "00";
-            this.TB_p_go.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_p_go.TextChanged += new System.EventHandler(this.TextBox_빨파검);
             // 
             // TB_q_go
             // 
@@ -8390,41 +8430,6 @@ namespace 지니_64
             this.TB_P_ratio.Text = "00";
             this.TB_P_ratio.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_P_ratio.TextChanged += new System.EventHandler(this.TextBox_빨파검);
-            // 
-            // TB_p_down_use
-            // 
-            this.TB_p_down_use.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.TB_p_down_use.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_p_down_use.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_p_down_use.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_p_down_use.Location = new System.Drawing.Point(113, 39);
-            this.TB_p_down_use.MaxLength = 6;
-            this.TB_p_down_use.Name = "TB_p_down_use";
-            this.TB_p_down_use.Size = new System.Drawing.Size(43, 21);
-            this.TB_p_down_use.TabIndex = 3;
-            this.TB_p_down_use.Text = "-10.00";
-            this.TB_p_down_use.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_p_down_use.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_p_down_use.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
-            // 
-            // CB_Jisu_avgset
-            // 
-            this.CB_Jisu_avgset.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_Jisu_avgset.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.CB_Jisu_avgset.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CB_Jisu_avgset.FlatAppearance.CheckedBackColor = System.Drawing.Color.YellowGreen;
-            this.CB_Jisu_avgset.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.CB_Jisu_avgset.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.CB_Jisu_avgset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_Jisu_avgset.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CB_Jisu_avgset.Location = new System.Drawing.Point(17, -1);
-            this.CB_Jisu_avgset.Name = "CB_Jisu_avgset";
-            this.CB_Jisu_avgset.Size = new System.Drawing.Size(55, 21);
-            this.CB_Jisu_avgset.TabIndex = 130;
-            this.CB_Jisu_avgset.Text = "등락률";
-            this.CB_Jisu_avgset.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CB_Jisu_avgset.UseVisualStyleBackColor = false;
-            this.CB_Jisu_avgset.CheckedChanged += new System.EventHandler(this.CB_Jisu_avgset_CheckedChanged);
             // 
             // TB_q_ratio
             // 
@@ -8457,25 +8462,6 @@ namespace 지니_64
             this.label249.Text = "등락률";
             this.label249.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // combo_p_go
-            // 
-            this.combo_p_go.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.combo_p_go.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.combo_p_go.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_p_go.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_p_go.FormattingEnabled = true;
-            this.combo_p_go.Items.AddRange(new object[] {
-            "사용 안함",
-            "신규 중지",
-            "추매 중지",
-            "신&추 중지"});
-            this.combo_p_go.Location = new System.Drawing.Point(209, 19);
-            this.combo_p_go.Name = "combo_p_go";
-            this.combo_p_go.Size = new System.Drawing.Size(101, 21);
-            this.combo_p_go.TabIndex = 2;
-            this.combo_p_go.TabStop = false;
-            this.combo_p_go.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
             // label206
             // 
             this.label206.AutoSize = true;
@@ -8491,22 +8477,6 @@ namespace 지니_64
             this.label206.Text = "고가대비";
             this.label206.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TB_p_ratio_use
-            // 
-            this.TB_p_ratio_use.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.TB_p_ratio_use.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_p_ratio_use.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_p_ratio_use.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_p_ratio_use.Location = new System.Drawing.Point(113, -1);
-            this.TB_p_ratio_use.MaxLength = 6;
-            this.TB_p_ratio_use.Name = "TB_p_ratio_use";
-            this.TB_p_ratio_use.Size = new System.Drawing.Size(43, 21);
-            this.TB_p_ratio_use.TabIndex = 3;
-            this.TB_p_ratio_use.Text = "-10.00";
-            this.TB_p_ratio_use.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TB_p_ratio_use.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_p_ratio_use.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
-            // 
             // label251
             // 
             this.label251.AutoSize = true;
@@ -8521,25 +8491,6 @@ namespace 지니_64
             this.label251.TabIndex = 1;
             this.label251.Text = "고가대비";
             this.label251.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // combo_q_go
-            // 
-            this.combo_q_go.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.combo_q_go.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.combo_q_go.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_q_go.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_q_go.FormattingEnabled = true;
-            this.combo_q_go.Items.AddRange(new object[] {
-            "사용 안함",
-            "신규 중지",
-            "추매 중지",
-            "신&추 중지"});
-            this.combo_q_go.Location = new System.Drawing.Point(209, 79);
-            this.combo_q_go.Name = "combo_q_go";
-            this.combo_q_go.Size = new System.Drawing.Size(101, 21);
-            this.combo_q_go.TabIndex = 2;
-            this.combo_q_go.TabStop = false;
-            this.combo_q_go.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
             // 
             // label255
             // 
@@ -8616,128 +8567,31 @@ namespace 지니_64
             this.label204.Text = "S";
             this.label204.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // combo_q_go_UD
+            // panel_지수설정
             // 
-            this.combo_q_go_UD.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.combo_q_go_UD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.combo_q_go_UD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_q_go_UD.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_q_go_UD.FormattingEnabled = true;
-            this.combo_q_go_UD.Items.AddRange(new object[] {
-            "% 이하",
-            "% 이상"});
-            this.combo_q_go_UD.Location = new System.Drawing.Point(155, 79);
-            this.combo_q_go_UD.Name = "combo_q_go_UD";
-            this.combo_q_go_UD.Size = new System.Drawing.Size(70, 21);
-            this.combo_q_go_UD.TabIndex = 2;
-            this.combo_q_go_UD.TabStop = false;
-            this.combo_q_go_UD.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // combo_q_down
-            // 
-            this.combo_q_down.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.combo_q_down.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.combo_q_down.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_q_down.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_q_down.FormattingEnabled = true;
-            this.combo_q_down.Items.AddRange(new object[] {
-            "사용 안함",
-            "신규 중지",
-            "추매 중지",
-            "신&추 중지"});
-            this.combo_q_down.Location = new System.Drawing.Point(209, 99);
-            this.combo_q_down.Name = "combo_q_down";
-            this.combo_q_down.Size = new System.Drawing.Size(101, 21);
-            this.combo_q_down.TabIndex = 2;
-            this.combo_q_down.TabStop = false;
-            this.combo_q_down.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // combo_p_go_UD
-            // 
-            this.combo_p_go_UD.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.combo_p_go_UD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.combo_p_go_UD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_p_go_UD.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_p_go_UD.FormattingEnabled = true;
-            this.combo_p_go_UD.Items.AddRange(new object[] {
-            "% 이하",
-            "% 이상"});
-            this.combo_p_go_UD.Location = new System.Drawing.Point(155, 19);
-            this.combo_p_go_UD.Name = "combo_p_go_UD";
-            this.combo_p_go_UD.Size = new System.Drawing.Size(70, 21);
-            this.combo_p_go_UD.TabIndex = 2;
-            this.combo_p_go_UD.TabStop = false;
-            this.combo_p_go_UD.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // combo_q_down_UD
-            // 
-            this.combo_q_down_UD.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.combo_q_down_UD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.combo_q_down_UD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_q_down_UD.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_q_down_UD.FormattingEnabled = true;
-            this.combo_q_down_UD.Items.AddRange(new object[] {
-            "% 이하",
-            "% 이상"});
-            this.combo_q_down_UD.Location = new System.Drawing.Point(155, 99);
-            this.combo_q_down_UD.Name = "combo_q_down_UD";
-            this.combo_q_down_UD.Size = new System.Drawing.Size(70, 21);
-            this.combo_q_down_UD.TabIndex = 2;
-            this.combo_q_down_UD.TabStop = false;
-            this.combo_q_down_UD.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // combo_p_ratio_UD
-            // 
-            this.combo_p_ratio_UD.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.combo_p_ratio_UD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.combo_p_ratio_UD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_p_ratio_UD.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_p_ratio_UD.FormattingEnabled = true;
-            this.combo_p_ratio_UD.Items.AddRange(new object[] {
-            "% 이하",
-            "% 이상"});
-            this.combo_p_ratio_UD.Location = new System.Drawing.Point(155, -1);
-            this.combo_p_ratio_UD.Name = "combo_p_ratio_UD";
-            this.combo_p_ratio_UD.Size = new System.Drawing.Size(70, 21);
-            this.combo_p_ratio_UD.TabIndex = 2;
-            this.combo_p_ratio_UD.TabStop = false;
-            this.combo_p_ratio_UD.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // combo_p_down
-            // 
-            this.combo_p_down.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.combo_p_down.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.combo_p_down.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_p_down.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_p_down.FormattingEnabled = true;
-            this.combo_p_down.Items.AddRange(new object[] {
-            "사용 안함",
-            "신규 중지",
-            "추매 중지",
-            "신&추 중지"});
-            this.combo_p_down.Location = new System.Drawing.Point(209, 39);
-            this.combo_p_down.Name = "combo_p_down";
-            this.combo_p_down.Size = new System.Drawing.Size(101, 21);
-            this.combo_p_down.TabIndex = 2;
-            this.combo_p_down.TabStop = false;
-            this.combo_p_down.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            // 
-            // combo_p_down_UD
-            // 
-            this.combo_p_down_UD.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.combo_p_down_UD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.combo_p_down_UD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_p_down_UD.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_p_down_UD.FormattingEnabled = true;
-            this.combo_p_down_UD.Items.AddRange(new object[] {
-            "% 이하",
-            "% 이상"});
-            this.combo_p_down_UD.Location = new System.Drawing.Point(155, 39);
-            this.combo_p_down_UD.Name = "combo_p_down_UD";
-            this.combo_p_down_UD.Size = new System.Drawing.Size(70, 21);
-            this.combo_p_down_UD.TabIndex = 2;
-            this.combo_p_down_UD.TabStop = false;
-            this.combo_p_down_UD.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.panel_지수설정.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_지수설정.Controls.Add(this.combo_q_ratio);
+            this.panel_지수설정.Controls.Add(this.combo_p_down);
+            this.panel_지수설정.Controls.Add(this.combo_p_ratio);
+            this.panel_지수설정.Controls.Add(this.combo_q_down);
+            this.panel_지수설정.Controls.Add(this.combo_q_go);
+            this.panel_지수설정.Controls.Add(this.combo_p_go);
+            this.panel_지수설정.Controls.Add(this.TB_p_ratio_use);
+            this.panel_지수설정.Controls.Add(this.TB_p_go_use);
+            this.panel_지수설정.Controls.Add(this.TB_q_ratio_use);
+            this.panel_지수설정.Controls.Add(this.TB_q_go_use);
+            this.panel_지수설정.Controls.Add(this.TB_q_down_use);
+            this.panel_지수설정.Controls.Add(this.TB_p_down_use);
+            this.panel_지수설정.Controls.Add(this.combo_q_ratio_UD);
+            this.panel_지수설정.Controls.Add(this.combo_p_down_UD);
+            this.panel_지수설정.Controls.Add(this.combo_p_ratio_UD);
+            this.panel_지수설정.Controls.Add(this.combo_q_down_UD);
+            this.panel_지수설정.Controls.Add(this.combo_p_go_UD);
+            this.panel_지수설정.Controls.Add(this.combo_q_go_UD);
+            this.panel_지수설정.Location = new System.Drawing.Point(113, -1);
+            this.panel_지수설정.Name = "panel_지수설정";
+            this.panel_지수설정.Size = new System.Drawing.Size(197, 121);
+            this.panel_지수설정.TabIndex = 68;
             // 
             // combo_q_ratio
             // 
@@ -8751,12 +8605,203 @@ namespace 지니_64
             "신규 중지",
             "추매 중지",
             "신&추 중지"});
-            this.combo_q_ratio.Location = new System.Drawing.Point(209, 59);
+            this.combo_q_ratio.Location = new System.Drawing.Point(95, 59);
             this.combo_q_ratio.Name = "combo_q_ratio";
             this.combo_q_ratio.Size = new System.Drawing.Size(101, 21);
             this.combo_q_ratio.TabIndex = 2;
             this.combo_q_ratio.TabStop = false;
             this.combo_q_ratio.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // combo_p_down
+            // 
+            this.combo_p_down.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.combo_p_down.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.combo_p_down.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_p_down.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.combo_p_down.FormattingEnabled = true;
+            this.combo_p_down.Items.AddRange(new object[] {
+            "사용 안함",
+            "신규 중지",
+            "추매 중지",
+            "신&추 중지"});
+            this.combo_p_down.Location = new System.Drawing.Point(95, 39);
+            this.combo_p_down.Name = "combo_p_down";
+            this.combo_p_down.Size = new System.Drawing.Size(101, 21);
+            this.combo_p_down.TabIndex = 2;
+            this.combo_p_down.TabStop = false;
+            this.combo_p_down.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // combo_p_ratio
+            // 
+            this.combo_p_ratio.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.combo_p_ratio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.combo_p_ratio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_p_ratio.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.combo_p_ratio.FormattingEnabled = true;
+            this.combo_p_ratio.Items.AddRange(new object[] {
+            "사용 안함",
+            "신규 중지",
+            "추매 중지",
+            "신&추 중지"});
+            this.combo_p_ratio.Location = new System.Drawing.Point(95, -1);
+            this.combo_p_ratio.Name = "combo_p_ratio";
+            this.combo_p_ratio.Size = new System.Drawing.Size(101, 21);
+            this.combo_p_ratio.TabIndex = 2;
+            this.combo_p_ratio.TabStop = false;
+            this.combo_p_ratio.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // combo_q_down
+            // 
+            this.combo_q_down.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.combo_q_down.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.combo_q_down.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_q_down.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.combo_q_down.FormattingEnabled = true;
+            this.combo_q_down.Items.AddRange(new object[] {
+            "사용 안함",
+            "신규 중지",
+            "추매 중지",
+            "신&추 중지"});
+            this.combo_q_down.Location = new System.Drawing.Point(95, 99);
+            this.combo_q_down.Name = "combo_q_down";
+            this.combo_q_down.Size = new System.Drawing.Size(101, 21);
+            this.combo_q_down.TabIndex = 2;
+            this.combo_q_down.TabStop = false;
+            this.combo_q_down.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // combo_q_go
+            // 
+            this.combo_q_go.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.combo_q_go.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.combo_q_go.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_q_go.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.combo_q_go.FormattingEnabled = true;
+            this.combo_q_go.Items.AddRange(new object[] {
+            "사용 안함",
+            "신규 중지",
+            "추매 중지",
+            "신&추 중지"});
+            this.combo_q_go.Location = new System.Drawing.Point(95, 79);
+            this.combo_q_go.Name = "combo_q_go";
+            this.combo_q_go.Size = new System.Drawing.Size(101, 21);
+            this.combo_q_go.TabIndex = 2;
+            this.combo_q_go.TabStop = false;
+            this.combo_q_go.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // combo_p_go
+            // 
+            this.combo_p_go.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.combo_p_go.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.combo_p_go.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_p_go.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.combo_p_go.FormattingEnabled = true;
+            this.combo_p_go.Items.AddRange(new object[] {
+            "사용 안함",
+            "신규 중지",
+            "추매 중지",
+            "신&추 중지"});
+            this.combo_p_go.Location = new System.Drawing.Point(95, 19);
+            this.combo_p_go.Name = "combo_p_go";
+            this.combo_p_go.Size = new System.Drawing.Size(101, 21);
+            this.combo_p_go.TabIndex = 2;
+            this.combo_p_go.TabStop = false;
+            this.combo_p_go.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // TB_p_ratio_use
+            // 
+            this.TB_p_ratio_use.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.TB_p_ratio_use.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_p_ratio_use.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_p_ratio_use.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_p_ratio_use.Location = new System.Drawing.Point(-1, -1);
+            this.TB_p_ratio_use.MaxLength = 6;
+            this.TB_p_ratio_use.Name = "TB_p_ratio_use";
+            this.TB_p_ratio_use.Size = new System.Drawing.Size(43, 21);
+            this.TB_p_ratio_use.TabIndex = 3;
+            this.TB_p_ratio_use.Text = "-10.00";
+            this.TB_p_ratio_use.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_p_ratio_use.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
+            this.TB_p_ratio_use.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
+            // 
+            // TB_p_go_use
+            // 
+            this.TB_p_go_use.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.TB_p_go_use.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_p_go_use.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_p_go_use.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_p_go_use.Location = new System.Drawing.Point(-1, 19);
+            this.TB_p_go_use.MaxLength = 6;
+            this.TB_p_go_use.Name = "TB_p_go_use";
+            this.TB_p_go_use.Size = new System.Drawing.Size(43, 21);
+            this.TB_p_go_use.TabIndex = 3;
+            this.TB_p_go_use.Text = "-10.00";
+            this.TB_p_go_use.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_p_go_use.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
+            this.TB_p_go_use.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
+            // 
+            // TB_q_ratio_use
+            // 
+            this.TB_q_ratio_use.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_q_ratio_use.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_q_ratio_use.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_q_ratio_use.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_q_ratio_use.Location = new System.Drawing.Point(-1, 59);
+            this.TB_q_ratio_use.MaxLength = 6;
+            this.TB_q_ratio_use.Name = "TB_q_ratio_use";
+            this.TB_q_ratio_use.Size = new System.Drawing.Size(43, 21);
+            this.TB_q_ratio_use.TabIndex = 3;
+            this.TB_q_ratio_use.Text = "-10.00";
+            this.TB_q_ratio_use.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_q_ratio_use.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
+            this.TB_q_ratio_use.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
+            // 
+            // TB_q_go_use
+            // 
+            this.TB_q_go_use.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_q_go_use.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_q_go_use.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_q_go_use.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_q_go_use.Location = new System.Drawing.Point(-1, 79);
+            this.TB_q_go_use.MaxLength = 6;
+            this.TB_q_go_use.Name = "TB_q_go_use";
+            this.TB_q_go_use.Size = new System.Drawing.Size(43, 21);
+            this.TB_q_go_use.TabIndex = 3;
+            this.TB_q_go_use.Text = "-10.00";
+            this.TB_q_go_use.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_q_go_use.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
+            this.TB_q_go_use.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
+            // 
+            // TB_q_down_use
+            // 
+            this.TB_q_down_use.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.TB_q_down_use.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_q_down_use.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_q_down_use.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_q_down_use.Location = new System.Drawing.Point(-1, 99);
+            this.TB_q_down_use.MaxLength = 6;
+            this.TB_q_down_use.Name = "TB_q_down_use";
+            this.TB_q_down_use.Size = new System.Drawing.Size(43, 21);
+            this.TB_q_down_use.TabIndex = 3;
+            this.TB_q_down_use.Text = "-10.00";
+            this.TB_q_down_use.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_q_down_use.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
+            this.TB_q_down_use.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
+            // 
+            // TB_p_down_use
+            // 
+            this.TB_p_down_use.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.TB_p_down_use.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_p_down_use.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_p_down_use.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_p_down_use.Location = new System.Drawing.Point(-1, 39);
+            this.TB_p_down_use.MaxLength = 6;
+            this.TB_p_down_use.Name = "TB_p_down_use";
+            this.TB_p_down_use.Size = new System.Drawing.Size(43, 21);
+            this.TB_p_down_use.TabIndex = 3;
+            this.TB_p_down_use.Text = "-10.00";
+            this.TB_p_down_use.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TB_p_down_use.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
+            this.TB_p_down_use.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // combo_q_ratio_UD
             // 
@@ -8768,40 +8813,124 @@ namespace 지니_64
             this.combo_q_ratio_UD.Items.AddRange(new object[] {
             "% 이하",
             "% 이상"});
-            this.combo_q_ratio_UD.Location = new System.Drawing.Point(155, 59);
+            this.combo_q_ratio_UD.Location = new System.Drawing.Point(41, 59);
             this.combo_q_ratio_UD.Name = "combo_q_ratio_UD";
             this.combo_q_ratio_UD.Size = new System.Drawing.Size(70, 21);
             this.combo_q_ratio_UD.TabIndex = 2;
             this.combo_q_ratio_UD.TabStop = false;
             this.combo_q_ratio_UD.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
             // 
-            // CB_계좌비공개
+            // combo_p_down_UD
             // 
-            this.CB_계좌비공개.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_계좌비공개.BackColor = System.Drawing.Color.NavajoWhite;
-            this.CB_계좌비공개.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkOrange;
-            this.CB_계좌비공개.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.CB_계좌비공개.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.CB_계좌비공개.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_계좌비공개.Location = new System.Drawing.Point(1769, 0);
-            this.CB_계좌비공개.Name = "CB_계좌비공개";
-            this.CB_계좌비공개.Size = new System.Drawing.Size(75, 21);
-            this.CB_계좌비공개.TabIndex = 138;
-            this.CB_계좌비공개.Text = "계좌비공개";
-            this.CB_계좌비공개.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CB_계좌비공개.UseVisualStyleBackColor = false;
-            this.CB_계좌비공개.CheckedChanged += new System.EventHandler(this.CB_계좌비공개_CheckedChanged);
+            this.combo_p_down_UD.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.combo_p_down_UD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.combo_p_down_UD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_p_down_UD.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.combo_p_down_UD.FormattingEnabled = true;
+            this.combo_p_down_UD.Items.AddRange(new object[] {
+            "% 이하",
+            "% 이상"});
+            this.combo_p_down_UD.Location = new System.Drawing.Point(41, 39);
+            this.combo_p_down_UD.Name = "combo_p_down_UD";
+            this.combo_p_down_UD.Size = new System.Drawing.Size(70, 21);
+            this.combo_p_down_UD.TabIndex = 2;
+            this.combo_p_down_UD.TabStop = false;
+            this.combo_p_down_UD.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // combo_p_ratio_UD
+            // 
+            this.combo_p_ratio_UD.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.combo_p_ratio_UD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.combo_p_ratio_UD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_p_ratio_UD.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.combo_p_ratio_UD.FormattingEnabled = true;
+            this.combo_p_ratio_UD.Items.AddRange(new object[] {
+            "% 이하",
+            "% 이상"});
+            this.combo_p_ratio_UD.Location = new System.Drawing.Point(41, -1);
+            this.combo_p_ratio_UD.Name = "combo_p_ratio_UD";
+            this.combo_p_ratio_UD.Size = new System.Drawing.Size(70, 21);
+            this.combo_p_ratio_UD.TabIndex = 2;
+            this.combo_p_ratio_UD.TabStop = false;
+            this.combo_p_ratio_UD.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // combo_q_down_UD
+            // 
+            this.combo_q_down_UD.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.combo_q_down_UD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.combo_q_down_UD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_q_down_UD.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.combo_q_down_UD.FormattingEnabled = true;
+            this.combo_q_down_UD.Items.AddRange(new object[] {
+            "% 이하",
+            "% 이상"});
+            this.combo_q_down_UD.Location = new System.Drawing.Point(41, 99);
+            this.combo_q_down_UD.Name = "combo_q_down_UD";
+            this.combo_q_down_UD.Size = new System.Drawing.Size(70, 21);
+            this.combo_q_down_UD.TabIndex = 2;
+            this.combo_q_down_UD.TabStop = false;
+            this.combo_q_down_UD.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // combo_p_go_UD
+            // 
+            this.combo_p_go_UD.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.combo_p_go_UD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.combo_p_go_UD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_p_go_UD.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.combo_p_go_UD.FormattingEnabled = true;
+            this.combo_p_go_UD.Items.AddRange(new object[] {
+            "% 이하",
+            "% 이상"});
+            this.combo_p_go_UD.Location = new System.Drawing.Point(41, 19);
+            this.combo_p_go_UD.Name = "combo_p_go_UD";
+            this.combo_p_go_UD.Size = new System.Drawing.Size(70, 21);
+            this.combo_p_go_UD.TabIndex = 2;
+            this.combo_p_go_UD.TabStop = false;
+            this.combo_p_go_UD.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // combo_q_go_UD
+            // 
+            this.combo_q_go_UD.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.combo_q_go_UD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.combo_q_go_UD.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_q_go_UD.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.combo_q_go_UD.FormattingEnabled = true;
+            this.combo_q_go_UD.Items.AddRange(new object[] {
+            "% 이하",
+            "% 이상"});
+            this.combo_q_go_UD.Location = new System.Drawing.Point(41, 79);
+            this.combo_q_go_UD.Name = "combo_q_go_UD";
+            this.combo_q_go_UD.Size = new System.Drawing.Size(70, 21);
+            this.combo_q_go_UD.TabIndex = 2;
+            this.combo_q_go_UD.TabStop = false;
+            this.combo_q_go_UD.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            // 
+            // CB_검색보기
+            // 
+            this.CB_검색보기.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_검색보기.BackColor = System.Drawing.Color.NavajoWhite;
+            this.CB_검색보기.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkOrange;
+            this.CB_검색보기.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CB_검색보기.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.CB_검색보기.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_검색보기.Location = new System.Drawing.Point(668, 0);
+            this.CB_검색보기.Name = "CB_검색보기";
+            this.CB_검색보기.Size = new System.Drawing.Size(75, 21);
+            this.CB_검색보기.TabIndex = 138;
+            this.CB_검색보기.Text = "검색보기";
+            this.CB_검색보기.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CB_검색보기.UseVisualStyleBackColor = false;
+            this.CB_검색보기.CheckedChanged += new System.EventHandler(this.CB_검색보기_CheckedChanged);
             // 
             // CB_종목비공개
             // 
             this.CB_종목비공개.Appearance = System.Windows.Forms.Appearance.Button;
             this.CB_종목비공개.BackColor = System.Drawing.Color.NavajoWhite;
-            this.CB_종목비공개.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
             this.CB_종목비공개.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkOrange;
             this.CB_종목비공개.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.CB_종목비공개.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.CB_종목비공개.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_종목비공개.Location = new System.Drawing.Point(1846, 0);
+            this.CB_종목비공개.Location = new System.Drawing.Point(745, 0);
             this.CB_종목비공개.Name = "CB_종목비공개";
             this.CB_종목비공개.Size = new System.Drawing.Size(75, 21);
             this.CB_종목비공개.TabIndex = 139;
@@ -8810,41 +8939,41 @@ namespace 지니_64
             this.CB_종목비공개.UseVisualStyleBackColor = false;
             this.CB_종목비공개.CheckedChanged += new System.EventHandler(this.CB_종목비공개_CheckedChanged);
             // 
-            // PN_지수연동
+            // Panel_지수연동
             // 
-            this.PN_지수연동.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PN_지수연동.Controls.Add(this.LB_닥_신규);
-            this.PN_지수연동.Controls.Add(this.LB_연동신규);
-            this.PN_지수연동.Controls.Add(this.LB_피_신규);
-            this.PN_지수연동.Controls.Add(this.LB_닥_추매);
-            this.PN_지수연동.Controls.Add(this.CBB_지수연동_신규);
-            this.PN_지수연동.Controls.Add(this.LB_피_추매);
-            this.PN_지수연동.Controls.Add(this.LB_연동추매);
-            this.PN_지수연동.Controls.Add(this.CBB_지수연동_추매);
-            this.PN_지수연동.Location = new System.Drawing.Point(401, 139);
-            this.PN_지수연동.Name = "PN_지수연동";
-            this.PN_지수연동.Size = new System.Drawing.Size(701, 21);
-            this.PN_지수연동.TabIndex = 68;
+            this.Panel_지수연동.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Panel_지수연동.Controls.Add(this.LB_닥_신규);
+            this.Panel_지수연동.Controls.Add(this.LB_연동신규);
+            this.Panel_지수연동.Controls.Add(this.LB_피_신규);
+            this.Panel_지수연동.Controls.Add(this.LB_닥_추매);
+            this.Panel_지수연동.Controls.Add(this.CBB_지수연동_신규);
+            this.Panel_지수연동.Controls.Add(this.LB_피_추매);
+            this.Panel_지수연동.Controls.Add(this.LB_연동추매);
+            this.Panel_지수연동.Controls.Add(this.CBB_지수연동_추매);
+            this.Panel_지수연동.Location = new System.Drawing.Point(401, 139);
+            this.Panel_지수연동.Name = "Panel_지수연동";
+            this.Panel_지수연동.Size = new System.Drawing.Size(701, 21);
+            this.Panel_지수연동.TabIndex = 68;
             // 
-            // label_로그인알림
+            // label_ONLINE
             // 
-            this.label_로그인알림.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label_로그인알림.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label_로그인알림.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label_로그인알림.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_로그인알림.Location = new System.Drawing.Point(-1, 0);
-            this.label_로그인알림.Name = "label_로그인알림";
-            this.label_로그인알림.Size = new System.Drawing.Size(196, 21);
-            this.label_로그인알림.TabIndex = 148;
-            this.label_로그인알림.Text = "OFF LINE";
-            this.label_로그인알림.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_ONLINE.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label_ONLINE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_ONLINE.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label_ONLINE.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_ONLINE.Location = new System.Drawing.Point(-1, -1);
+            this.label_ONLINE.Name = "label_ONLINE";
+            this.label_ONLINE.Size = new System.Drawing.Size(196, 21);
+            this.label_ONLINE.TabIndex = 148;
+            this.label_ONLINE.Text = "OFF LINE";
+            this.label_ONLINE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label_appkey
             // 
             this.label_appkey.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label_appkey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_appkey.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_appkey.Location = new System.Drawing.Point(197, 20);
+            this.label_appkey.Location = new System.Drawing.Point(-1, 19);
             this.label_appkey.Margin = new System.Windows.Forms.Padding(0);
             this.label_appkey.Name = "label_appkey";
             this.label_appkey.Size = new System.Drawing.Size(110, 21);
@@ -8857,7 +8986,7 @@ namespace 지니_64
             this.label_키움ID.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label_키움ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_키움ID.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_키움ID.Location = new System.Drawing.Point(197, 0);
+            this.label_키움ID.Location = new System.Drawing.Point(-1, -1);
             this.label_키움ID.Margin = new System.Windows.Forms.Padding(0);
             this.label_키움ID.Name = "label_키움ID";
             this.label_키움ID.Size = new System.Drawing.Size(110, 21);
@@ -8869,11 +8998,13 @@ namespace 지니_64
             // 
             this.textBox_appkey.BackColor = System.Drawing.SystemColors.ControlLight;
             this.textBox_appkey.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_appkey.Enabled = false;
             this.textBox_appkey.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_appkey.Location = new System.Drawing.Point(306, 20);
+            this.textBox_appkey.Location = new System.Drawing.Point(108, 19);
             this.textBox_appkey.Margin = new System.Windows.Forms.Padding(0);
             this.textBox_appkey.Name = "textBox_appkey";
-            this.textBox_appkey.Size = new System.Drawing.Size(397, 21);
+            this.textBox_appkey.ReadOnly = true;
+            this.textBox_appkey.Size = new System.Drawing.Size(486, 21);
             this.textBox_appkey.TabIndex = 150;
             this.textBox_appkey.Text = "키움에서 발급 받은 App Key";
             // 
@@ -8881,13 +9012,15 @@ namespace 지니_64
             // 
             this.textBox_키움ID.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.textBox_키움ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_키움ID.Enabled = false;
             this.textBox_키움ID.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_키움ID.Location = new System.Drawing.Point(306, 0);
+            this.textBox_키움ID.Location = new System.Drawing.Point(108, -1);
             this.textBox_키움ID.Margin = new System.Windows.Forms.Padding(0);
             this.textBox_키움ID.Name = "textBox_키움ID";
-            this.textBox_키움ID.Size = new System.Drawing.Size(209, 21);
+            this.textBox_키움ID.ReadOnly = true;
+            this.textBox_키움ID.Size = new System.Drawing.Size(199, 21);
             this.textBox_키움ID.TabIndex = 153;
-            this.textBox_키움ID.Text = "키움 ID";
+            this.textBox_키움ID.Text = "ID";
             // 
             // checkBox_key
             // 
@@ -8895,44 +9028,31 @@ namespace 지니_64
             this.checkBox_key.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.checkBox_key.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox_key.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.checkBox_key.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkSeaGreen;
+            this.checkBox_key.FlatAppearance.CheckedBackColor = System.Drawing.Color.Salmon;
             this.checkBox_key.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox_key.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.checkBox_key.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox_key.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox_key.Location = new System.Drawing.Point(-1, 20);
+            this.checkBox_key.Location = new System.Drawing.Point(48, 19);
             this.checkBox_key.Name = "checkBox_key";
-            this.checkBox_key.Size = new System.Drawing.Size(98, 21);
+            this.checkBox_key.Size = new System.Drawing.Size(49, 21);
             this.checkBox_key.TabIndex = 152;
-            this.checkBox_key.Text = "Key 입력";
+            this.checkBox_key.Text = "KEY";
             this.checkBox_key.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.checkBox_key.UseVisualStyleBackColor = false;
-            this.checkBox_key.CheckedChanged += new System.EventHandler(this.checkBox_key_CheckedChanged);
-            // 
-            // button_save_key
-            // 
-            this.button_save_key.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.button_save_key.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button_save_key.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button_save_key.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button_save_key.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_save_key.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_save_key.Location = new System.Drawing.Point(613, 0);
-            this.button_save_key.Name = "button_save_key";
-            this.button_save_key.Size = new System.Drawing.Size(90, 21);
-            this.button_save_key.TabIndex = 149;
-            this.button_save_key.Text = "Key 저장";
-            this.button_save_key.UseVisualStyleBackColor = false;
+            this.checkBox_key.CheckedChanged += new System.EventHandler(this.CheckBox_key_CheckedChanged);
             // 
             // textBox_appsecret
             // 
             this.textBox_appsecret.BackColor = System.Drawing.SystemColors.ControlLight;
             this.textBox_appsecret.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox_appsecret.Enabled = false;
             this.textBox_appsecret.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox_appsecret.Location = new System.Drawing.Point(306, 40);
+            this.textBox_appsecret.Location = new System.Drawing.Point(108, 39);
             this.textBox_appsecret.Margin = new System.Windows.Forms.Padding(0);
             this.textBox_appsecret.Name = "textBox_appsecret";
-            this.textBox_appsecret.Size = new System.Drawing.Size(397, 21);
+            this.textBox_appsecret.ReadOnly = true;
+            this.textBox_appsecret.Size = new System.Drawing.Size(486, 21);
             this.textBox_appsecret.TabIndex = 156;
             this.textBox_appsecret.Text = "키움에서 발급 받은 App Secret";
             // 
@@ -8941,7 +9061,7 @@ namespace 지니_64
             this.label_appsecret.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label_appsecret.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_appsecret.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_appsecret.Location = new System.Drawing.Point(197, 40);
+            this.label_appsecret.Location = new System.Drawing.Point(-1, 39);
             this.label_appsecret.Margin = new System.Windows.Forms.Padding(0);
             this.label_appsecret.Name = "label_appsecret";
             this.label_appsecret.Size = new System.Drawing.Size(110, 21);
@@ -8949,155 +9069,247 @@ namespace 지니_64
             this.label_appsecret.Text = "App Secret";
             this.label_appsecret.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // checkBox_mockapi
+            // checkBox_Simulation
             // 
-            this.checkBox_mockapi.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox_mockapi.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.checkBox_mockapi.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.checkBox_mockapi.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.checkBox_mockapi.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.checkBox_mockapi.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.checkBox_mockapi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox_mockapi.Location = new System.Drawing.Point(514, 0);
-            this.checkBox_mockapi.Name = "checkBox_mockapi";
-            this.checkBox_mockapi.Size = new System.Drawing.Size(100, 21);
-            this.checkBox_mockapi.TabIndex = 157;
-            this.checkBox_mockapi.Text = "□ 모의투자";
-            this.checkBox_mockapi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox_mockapi.UseVisualStyleBackColor = false;
+            this.checkBox_Simulation.Appearance = System.Windows.Forms.Appearance.Button;
+            this.checkBox_Simulation.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.checkBox_Simulation.Enabled = false;
+            this.checkBox_Simulation.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.checkBox_Simulation.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.checkBox_Simulation.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.checkBox_Simulation.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.checkBox_Simulation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox_Simulation.Location = new System.Drawing.Point(473, -1);
+            this.checkBox_Simulation.Name = "checkBox_Simulation";
+            this.checkBox_Simulation.Size = new System.Drawing.Size(121, 21);
+            this.checkBox_Simulation.TabIndex = 157;
+            this.checkBox_Simulation.Text = "□ 모의투자";
+            this.checkBox_Simulation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.checkBox_Simulation.UseVisualStyleBackColor = false;
+            this.checkBox_Simulation.CheckedChanged += new System.EventHandler(this.CheckBox_Simulation_CheckedChanged_1);
+            // 
+            // label_계좌번호
+            // 
+            this.label_계좌번호.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label_계좌번호.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_계좌번호.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_계좌번호.Location = new System.Drawing.Point(306, -1);
+            this.label_계좌번호.Margin = new System.Windows.Forms.Padding(0);
+            this.label_계좌번호.Name = "label_계좌번호";
+            this.label_계좌번호.Size = new System.Drawing.Size(40, 21);
+            this.label_계좌번호.TabIndex = 159;
+            this.label_계좌번호.Text = "번호";
+            this.label_계좌번호.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TR_timer
+            // 
+            this.TR_timer.Enabled = true;
+            this.TR_timer.Interval = 1000;
+            this.TR_timer.Tick += new System.EventHandler(this.TR_timer_Tick);
+            // 
+            // panel_계좌설정
+            // 
+            this.panel_계좌설정.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_계좌설정.Controls.Add(this.MT_sonik_price);
+            this.panel_계좌설정.Controls.Add(this.CB_잔고매입비_추매제한);
+            this.panel_계좌설정.Controls.Add(this.TB_misu_repeat_time);
+            this.panel_계좌설정.Controls.Add(this.label_계좌매입비1);
+            this.panel_계좌설정.Controls.Add(this.CB_misu);
+            this.panel_계좌설정.Controls.Add(this.MT_misu_time);
+            this.panel_계좌설정.Controls.Add(this.CB_계좌매입비_매수제한);
+            this.panel_계좌설정.Controls.Add(this.TB_잔고매입비_추매제한);
+            this.panel_계좌설정.Controls.Add(this.TB_계좌매입비_제한비중);
+            this.panel_계좌설정.Controls.Add(this.TB_계좌매입비_현비중);
+            this.panel_계좌설정.Controls.Add(this.TB_misu_ratio);
+            this.panel_계좌설정.Controls.Add(this.label_misu);
+            this.panel_계좌설정.Controls.Add(this.TB_misu_value);
+            this.panel_계좌설정.Controls.Add(this.label_잔고매입비);
+            this.panel_계좌설정.Controls.Add(this.label_계좌매입비2);
+            this.panel_계좌설정.Controls.Add(this.Combo_misu_jumnun);
+            this.panel_계좌설정.Controls.Add(this.Combo_misu);
+            this.panel_계좌설정.Controls.Add(this.CBB_계좌매입비_제한선택);
+            this.panel_계좌설정.Controls.Add(this.MT_buying_standard);
+            this.panel_계좌설정.Location = new System.Drawing.Point(306, 59);
+            this.panel_계좌설정.Name = "panel_계좌설정";
+            this.panel_계좌설정.Size = new System.Drawing.Size(486, 61);
+            this.panel_계좌설정.TabIndex = 68;
+            // 
+            // panel_form
+            // 
+            this.panel_form.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_form.Controls.Add(this.panel_key);
+            this.panel_form.Controls.Add(this.CB_세로보기);
+            this.panel_form.Controls.Add(this.panel_지수);
+            this.panel_form.Controls.Add(this.BT_미체결취소);
+            this.panel_form.Controls.Add(this.panel91);
+            this.panel_form.Controls.Add(this.TB_stoptime);
+            this.panel_form.Controls.Add(this.TB_starttime);
+            this.panel_form.Controls.Add(this.TB_closetime);
+            this.panel_form.Controls.Add(this.LB_피기관);
+            this.panel_form.Controls.Add(this.LB_피외인);
+            this.panel_form.Controls.Add(this.label39);
+            this.panel_form.Controls.Add(this.label_ONLINE);
+            this.panel_form.Controls.Add(this.TB_jango_sell_value);
+            this.panel_form.Controls.Add(this.CB_Auto_tradingstart);
+            this.panel_form.Controls.Add(this.TB_jango_sell_time);
+            this.panel_form.Controls.Add(this.checkBox_key);
+            this.panel_form.Controls.Add(this.LB_닥기관);
+            this.panel_form.Controls.Add(this.BT_계좌설정저장);
+            this.panel_form.Controls.Add(this.LB_닥외인);
+            this.panel_form.Controls.Add(this.label380);
+            this.panel_form.Controls.Add(this.LB_코스피하락);
+            this.panel_form.Controls.Add(this.label8);
+            this.panel_form.Controls.Add(this.LB_코스닥하락);
+            this.panel_form.Controls.Add(this.label10);
+            this.panel_form.Controls.Add(this.combo_jango_sell);
+            this.panel_form.Controls.Add(this.label_실현손익);
+            this.panel_form.Controls.Add(this.LB_코스닥보합);
+            this.panel_form.Controls.Add(this.CB_미체결취소);
+            this.panel_form.Controls.Add(this.LB_코스닥대금);
+            this.panel_form.Controls.Add(this.label_평가손익);
+            this.panel_form.Controls.Add(this.panel115);
+            this.panel_form.Controls.Add(this.BT_jangos_sell);
+            this.panel_form.Controls.Add(this.LB_코스닥상승);
+            this.panel_form.Controls.Add(this.label_매입평가금);
+            this.panel_form.Controls.Add(this.LB_피프로그램);
+            this.panel_form.Controls.Add(this.label38);
+            this.panel_form.Controls.Add(this.TB_jango_sell_repeat);
+            this.panel_form.Controls.Add(this.LB_코스피대금);
+            this.panel_form.Controls.Add(this.LB_코스피보합);
+            this.panel_form.Controls.Add(this.LB_코스피상승);
+            this.panel_form.Controls.Add(this.LB_닥프로그램);
+            this.panel_form.Controls.Add(this.label83);
+            this.panel_form.Controls.Add(this.CBB_지니64종료);
+            this.panel_form.Controls.Add(this.panel_계좌설정);
+            this.panel_form.Controls.Add(this.TB_실현손익);
+            this.panel_form.Controls.Add(this.TB_실현손익율);
+            this.panel_form.Controls.Add(this.TB_D2);
+            this.panel_form.Controls.Add(this.TB_매입금);
+            this.panel_form.Controls.Add(this.TB_추정D2);
+            this.panel_form.Controls.Add(this.TB_평가손익금);
+            this.panel_form.Controls.Add(this.TB_평가금);
+            this.panel_form.Controls.Add(this.label_D2주문가능);
+            this.panel_form.Controls.Add(this.TB_증가자산);
+            this.panel_form.Controls.Add(this.TB_평가손익율);
+            this.panel_form.Controls.Add(this.panel_잔고);
+            this.panel_form.Controls.Add(this.MT_투자원금);
+            this.panel_form.Controls.Add(this.panel_clock);
+            this.panel_form.Controls.Add(this.label_추정증가자산);
+            this.panel_form.Controls.Add(this.label_투자원금);
+            this.panel_form.Controls.Add(this.TB_추정자산);
+            this.panel_form.Location = new System.Drawing.Point(-1, 0);
+            this.panel_form.Name = "panel_form";
+            this.panel_form.Size = new System.Drawing.Size(1103, 140);
+            this.panel_form.TabIndex = 15;
+            // 
+            // CB_세로보기
+            // 
+            this.CB_세로보기.Appearance = System.Windows.Forms.Appearance.Button;
+            this.CB_세로보기.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.CB_세로보기.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CB_세로보기.Enabled = false;
+            this.CB_세로보기.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CB_세로보기.FlatAppearance.CheckedBackColor = System.Drawing.Color.Salmon;
+            this.CB_세로보기.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CB_세로보기.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.CB_세로보기.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CB_세로보기.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CB_세로보기.Location = new System.Drawing.Point(-1, 19);
+            this.CB_세로보기.Name = "CB_세로보기";
+            this.CB_세로보기.Size = new System.Drawing.Size(50, 21);
+            this.CB_세로보기.TabIndex = 153;
+            this.CB_세로보기.Text = "FULL";
+            this.CB_세로보기.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CB_세로보기.UseVisualStyleBackColor = false;
+            this.CB_세로보기.CheckedChanged += new System.EventHandler(this.CB_세로보기_CheckedChanged);
+            // 
+            // panel_clock
+            // 
+            this.panel_clock.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_clock.Controls.Add(this.label_date);
+            this.panel_clock.Controls.Add(this.label_time);
+            this.panel_clock.Location = new System.Drawing.Point(306, 59);
+            this.panel_clock.Name = "panel_clock";
+            this.panel_clock.Size = new System.Drawing.Size(486, 61);
+            this.panel_clock.TabIndex = 68;
+            // 
+            // panel_key
+            // 
+            this.panel_key.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel_key.Controls.Add(this.textBox_키움ID);
+            this.panel_key.Controls.Add(this.label_키움ID);
+            this.panel_key.Controls.Add(this.label_appkey);
+            this.panel_key.Controls.Add(this.textBox_appsecret);
+            this.panel_key.Controls.Add(this.label_appsecret);
+            this.panel_key.Controls.Add(this.textBox_appkey);
+            this.panel_key.Controls.Add(this.label_계좌번호);
+            this.panel_key.Controls.Add(this.textBox_계좌번호);
+            this.panel_key.Controls.Add(this.checkBox_Simulation);
+            this.panel_key.Enabled = false;
+            this.panel_key.Location = new System.Drawing.Point(197, -1);
+            this.panel_key.Name = "panel_key";
+            this.panel_key.Size = new System.Drawing.Size(595, 61);
+            this.panel_key.TabIndex = 137;
+            // 
+            // panel_기능버튼
+            // 
+            this.panel_기능버튼.Controls.Add(this.CB_종목비공개);
+            this.panel_기능버튼.Controls.Add(this.CB_기본매매);
+            this.panel_기능버튼.Controls.Add(this.CB_계좌관리);
+            this.panel_기능버튼.Controls.Add(this.CB_검색보기);
+            this.panel_기능버튼.Controls.Add(this.CB_대금탐색);
+            this.panel_기능버튼.Controls.Add(this.CB_반복매매);
+            this.panel_기능버튼.Controls.Add(this.CB_미니시계);
+            this.panel_기능버튼.Controls.Add(this.CB_특수매매);
+            this.panel_기능버튼.Controls.Add(this.CB_기능설정);
+            this.panel_기능버튼.Controls.Add(this.CB_매매그룹);
+            this.panel_기능버튼.Controls.Add(this.CBB_layout);
+            this.panel_기능버튼.Location = new System.Drawing.Point(1101, 0);
+            this.panel_기능버튼.Name = "panel_기능버튼";
+            this.panel_기능버튼.Size = new System.Drawing.Size(820, 21);
+            this.panel_기능버튼.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1920, 1015);
-            this.Controls.Add(this.checkBox_mockapi);
-            this.Controls.Add(this.textBox_appsecret);
-            this.Controls.Add(this.label_appsecret);
-            this.Controls.Add(this.label_appkey);
-            this.Controls.Add(this.label_키움ID);
-            this.Controls.Add(this.textBox_appkey);
-            this.Controls.Add(this.textBox_키움ID);
-            this.Controls.Add(this.button_save_key);
-            this.Controls.Add(this.PN_지수연동);
-            this.Controls.Add(this.CB_계좌비공개);
-            this.Controls.Add(this.CB_종목비공개);
-            this.Controls.Add(this.panel_지수);
-            this.Controls.Add(this.CB_미니시계);
-            this.Controls.Add(this.CB_기능설정);
-            this.Controls.Add(this.CB_매매그룹);
-            this.Controls.Add(this.CB_특수매매);
-            this.Controls.Add(this.CB_반복매매);
-            this.Controls.Add(this.CB_대금탐색);
-            this.Controls.Add(this.CB_계좌관리);
-            this.Controls.Add(this.CB_기본매매);
-            this.Controls.Add(this.label_잔고매입비);
-            this.Controls.Add(this.TB_misu_value);
-            this.Controls.Add(this.TB_stoptime);
-            this.Controls.Add(this.TB_starttime);
-            this.Controls.Add(this.TB_closetime);
-            this.Controls.Add(this.label_misu);
-            this.Controls.Add(this.TB_misu_ratio);
-            this.Controls.Add(this.LB_피기관);
-            this.Controls.Add(this.LB_피외인);
-            this.Controls.Add(this.label39);
-            this.Controls.Add(this.TB_jango_sell_value);
-            this.Controls.Add(this.TB_jango_sell_time);
-            this.Controls.Add(this.LB_닥기관);
-            this.Controls.Add(this.LB_닥외인);
-            this.Controls.Add(this.label380);
-            this.Controls.Add(this.LB_코스피하락);
-            this.Controls.Add(this.label98);
-            this.Controls.Add(this.TB_평가손익율);
-            this.Controls.Add(this.label_계좌매입비2);
-            this.Controls.Add(this.TB_실현손익율);
-            this.Controls.Add(this.LB_코스닥하락);
-            this.Controls.Add(this.combo_jango_sell);
-            this.Controls.Add(this.CBB_계좌매입비_제한선택);
-            this.Controls.Add(this.LB_코스닥보합);
-            this.Controls.Add(this.LB_코스닥대금);
-            this.Controls.Add(this.panel115);
-            this.Controls.Add(this.LB_코스닥상승);
-            this.Controls.Add(this.LB_피프로그램);
-            this.Controls.Add(this.panel91);
-            this.Controls.Add(this.LB_코스피대금);
-            this.Controls.Add(this.LB_코스피상승);
-            this.Controls.Add(this.label83);
-            this.Controls.Add(this.TB_증가자산);
-            this.Controls.Add(this.LB_닥프로그램);
-            this.Controls.Add(this.TB_계좌매입비_현비중);
-            this.Controls.Add(this.LB_코스피보합);
-            this.Controls.Add(this.MT_buying_standard);
-            this.Controls.Add(this.TB_계좌매입비_제한비중);
-            this.Controls.Add(this.TB_jango_sell_repeat);
-            this.Controls.Add(this.MT_sonik_price);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.MT_principal);
-            this.Controls.Add(this.TB_잔고매입비_추매제한);
-            this.Controls.Add(this.TB_평가금);
-            this.Controls.Add(this.TB_추정자산);
-            this.Controls.Add(this.Combo_misu);
-            this.Controls.Add(this.CB_계좌매입비_매수제한);
-            this.Controls.Add(this.MT_misu_time);
-            this.Controls.Add(this.label38);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.BT_jangos_sell);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.CB_misu);
-            this.Controls.Add(this.TB_평가손익금);
-            this.Controls.Add(this.TB_추정D2);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.TB_매입금);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.TB_실현손익);
-            this.Controls.Add(this.TB_D2);
-            this.Controls.Add(this.label_계좌매입비1);
-            this.Controls.Add(this.CB_미체결취소);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.BT_미체결취소);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.TB_misu_repeat_time);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.CB_잔고매입비_추매제한);
-            this.Controls.Add(this.label_date);
-            this.Controls.Add(this.Combo_misu_jumnun);
-            this.Controls.Add(this.label_time);
+            this.Controls.Add(this.panel_기능버튼);
+            this.Controls.Add(this.panel_form);
+            this.Controls.Add(this.Panel_지수연동);
             this.Controls.Add(this.panel_체결);
-            this.Controls.Add(this.CBB_layout);
-            this.Controls.Add(this.panel_주문);
-            this.Controls.Add(this.panel_잔고);
-            this.Controls.Add(this.BT_계좌설정저장);
-            this.Controls.Add(this.checkBox_key);
-            this.Controls.Add(this.CB_Auto_tradingstart);
-            this.Controls.Add(this.label_로그인알림);
-            this.Controls.Add(this.CBB_지니_64종료);
+            this.Controls.Add(this.panel_tab_주문);
+            this.Controls.Add(this.panel_tab_잔고);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.Opacity = 0D;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "지니_64";
+            this.Text = "지니64";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel115.ResumeLayout(false);
             this.tab_체결.ResumeLayout(false);
             this.TP_로그B.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart_Month)).EndInit();
             this.TP_관심그룹.ResumeLayout(false);
+            this.panel_TP_관종.ResumeLayout(false);
             this.panel38.ResumeLayout(false);
             this.panel38.PerformLayout();
             this.TP_잔고.ResumeLayout(false);
+            this.panel_TP_잔고.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.JanGo_dataGridView)).EndInit();
             this.tab_잔고.ResumeLayout(false);
-            this.TP_매매통계.ResumeLayout(false);
-            this.TP_매매통계.PerformLayout();
+            this.TP_통계.ResumeLayout(false);
+            this.panel_TP_통계.ResumeLayout(false);
+            this.panel_TP_통계.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_통계)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart_Day)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DGV_통계B)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart_Day)).EndInit();
+            this.panel_잔고.ResumeLayout(false);
+            this.panel_잔고.PerformLayout();
             this.panel91.ResumeLayout(false);
             this.TP_조건식TEST_B.ResumeLayout(false);
             this.panel_TEST_D.ResumeLayout(false);
@@ -9116,29 +9328,37 @@ namespace 지니_64
             this.TP_ERROG_LOG.ResumeLayout(false);
             this.tab_주문.ResumeLayout(false);
             this.TP_동작상태.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.최종매입가View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGV_최종매입가View)).EndInit();
             this.contextMenuStrip.ResumeLayout(false);
-            this.P_Search_List.ResumeLayout(false);
-            this.panel_주문.ResumeLayout(false);
-            this.panel_주문.PerformLayout();
-            this.panel_잔고.ResumeLayout(false);
+            this.Panel_Search_List.ResumeLayout(false);
+            this.panel_tab_주문.ResumeLayout(false);
+            this.panel_tab_주문.PerformLayout();
+            this.panel_tab_잔고.ResumeLayout(false);
             this.panel_체결.ResumeLayout(false);
             this.panel_체결.PerformLayout();
             this.panel_지수.ResumeLayout(false);
             this.panel_지수.PerformLayout();
-            this.PN_지수연동.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.stockbalanceBindingSource)).EndInit();
+            this.panel_지수설정.ResumeLayout(false);
+            this.panel_지수설정.PerformLayout();
+            this.Panel_지수연동.ResumeLayout(false);
+            this.panel_계좌설정.ResumeLayout(false);
+            this.panel_계좌설정.PerformLayout();
+            this.panel_form.ResumeLayout(false);
+            this.panel_form.PerformLayout();
+            this.panel_clock.ResumeLayout(false);
+            this.panel_key.ResumeLayout(false);
+            this.panel_key.PerformLayout();
+            this.panel_기능버튼.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_D2주문가능;
+        private System.Windows.Forms.Label label_실현손익;
+        private System.Windows.Forms.Label label_매입평가금;
+        private System.Windows.Forms.Label label_평가손익;
+        private System.Windows.Forms.Label label_추정증가자산;
         private System.Windows.Forms.TabPage TP_체결내역;
         private System.Windows.Forms.TabPage TP_관심그룹;
         private System.Windows.Forms.Label label175;
@@ -9152,12 +9372,12 @@ namespace 지니_64
         private System.Windows.Forms.Button BT_계좌설정저장;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
-		private System.Windows.Forms.Panel panel6;
+		private System.Windows.Forms.Panel panel_잔고;
         public System.Windows.Forms.TextBox TB_계좌매입비_현비중;
         public System.Windows.Forms.TabPage TP_잔고;
         public System.Windows.Forms.DataGridView JanGo_dataGridView;
         private System.Windows.Forms.Panel panel91;
-        private System.Windows.Forms.Label label98;
+        private System.Windows.Forms.Label label_투자원금;
         public System.Windows.Forms.TabControl tab_잔고;
         private System.Windows.Forms.TabPage TP_조건식TEST_B;
         public System.Windows.Forms.ComboBox CBB_Watch_ID_D;
@@ -9166,21 +9386,20 @@ namespace 지니_64
         public System.Windows.Forms.TabPage TP_ERROG_LOG;
         public System.Windows.Forms.ListBox LB_error;
         public System.Windows.Forms.TabControl tab_주문;
-        private System.Windows.Forms.TabPage TP_동작상태;
         public System.Windows.Forms.CheckBox CB_watch_use_D;
         public System.Windows.Forms.CheckBox CB_watch_use_C;
-        public System.Windows.Forms.ComboBox combo_watch_condition_CC;
-        public System.Windows.Forms.ComboBox combo_watch_condition_DD;
+        public System.Windows.Forms.ComboBox 와치_C;
+        public System.Windows.Forms.ComboBox 와치_D;
         public System.Windows.Forms.CheckBox CB_watch_use_B;
         public System.Windows.Forms.CheckBox CB_watch_use_A;
-        public System.Windows.Forms.ComboBox combo_watch_condition_BB;
-        public System.Windows.Forms.ComboBox combo_watch_condition_AA;
+        public System.Windows.Forms.ComboBox 와치_B;
+        public System.Windows.Forms.ComboBox 와치_A;
         private System.Windows.Forms.Label label380;
         private System.Windows.Forms.Label label83;
         private System.Windows.Forms.Label LB_연동추매;
         private System.Windows.Forms.Label LB_연동신규;
         private System.Windows.Forms.Label label385;
-        private System.Windows.Forms.TabPage TP_매매통계;
+        private System.Windows.Forms.TabPage TP_통계;
         private System.Windows.Forms.Label label354;
         private System.Windows.Forms.Button BT_매매동계;
         private System.Windows.Forms.Label label387;
@@ -9328,7 +9547,7 @@ namespace 지니_64
         public System.Windows.Forms.TextBox TB_매입금;
         public System.Windows.Forms.TextBox TB_실현손익;
         public System.Windows.Forms.TextBox TB_D2;
-        public System.Windows.Forms.TextBox MT_principal;
+        public System.Windows.Forms.TextBox MT_투자원금;
         public System.Windows.Forms.Button BT_체결내역;
         public System.Windows.Forms.Button BT_주문내역;
         public System.Windows.Forms.Panel panel38;
@@ -9374,7 +9593,7 @@ namespace 지니_64
         public System.Windows.Forms.CheckBox CB_watch_remove_D;
         public System.Windows.Forms.MaskedTextBox MTB_watch_지연_C;
         public System.Windows.Forms.Label label164;
-        public System.Windows.Forms.ComboBox combo_watch_condition_C;
+        public System.Windows.Forms.ComboBox watch_condition_C;
         public System.Windows.Forms.Label label161;
         public System.Windows.Forms.CheckBox CB_watch_remove_C;
         public System.Windows.Forms.Label label140;
@@ -9387,7 +9606,7 @@ namespace 지니_64
         public System.Windows.Forms.Label label48;
         public System.Windows.Forms.CheckBox CB_TR_D;
         public System.Windows.Forms.Label label75;
-        public System.Windows.Forms.ComboBox combo_watch_condition_D;
+        public System.Windows.Forms.ComboBox watch_condition_D;
         public System.Windows.Forms.Label label74;
         public System.Windows.Forms.Label label25;
         public System.Windows.Forms.Label label29;
@@ -9413,8 +9632,8 @@ namespace 지니_64
         public System.Windows.Forms.Label label165;
         public System.Windows.Forms.MaskedTextBox MTB_watch_지연_B;
         public System.Windows.Forms.Label label103;
-        public System.Windows.Forms.ComboBox combo_watch_condition_B;
-        public System.Windows.Forms.ComboBox combo_watch_condition_A;
+        public System.Windows.Forms.ComboBox watch_condition_B;
+        public System.Windows.Forms.ComboBox watch_condition_A;
         public System.Windows.Forms.MaskedTextBox MTB_watch_지연_A;
         public System.Windows.Forms.Label label119;
         public System.Windows.Forms.Label label163;
@@ -9493,7 +9712,7 @@ namespace 지니_64
         private System.Windows.Forms.ToolStripMenuItem 종료ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 보이기ToolStripMenuItem;
         public System.Windows.Forms.Button BT_Setting_Load;
-        public System.Windows.Forms.ComboBox CBB_지니_64종료;
+        public System.Windows.Forms.ComboBox CBB_지니64종료;
         public System.Windows.Forms.Label label173;
         public System.Windows.Forms.Label label_time;
         public System.Windows.Forms.Label label_date;
@@ -9530,9 +9749,9 @@ namespace 지니_64
         public System.Windows.Forms.CheckBox CB_미니시계;
         public System.Windows.Forms.CheckBox CB_특수매매;
         public System.Windows.Forms.ComboBox CBB_layout;
-        public System.Windows.Forms.Label L_주문row;
+        public System.Windows.Forms.Label Label_주문row;
         public System.Windows.Forms.TextBox TB_주문row;
-        public System.Windows.Forms.Label L_체결row;
+        public System.Windows.Forms.Label Label_체결row;
         public System.Windows.Forms.TextBox TB_체결row;
         public System.Windows.Forms.CheckBox CB_기본매매;
         public System.Windows.Forms.CheckBox CB_반복매매;
@@ -9541,9 +9760,9 @@ namespace 지니_64
         public System.Windows.Forms.CheckBox CB_매매그룹;
         public System.Windows.Forms.CheckBox CB_기능설정;
         public System.Windows.Forms.CheckBox CB_실시간검색결과보기;
-        public System.Windows.Forms.CheckBox CB_계좌비공개;
+        public System.Windows.Forms.CheckBox CB_검색보기;
         public System.Windows.Forms.CheckBox CB_종목비공개;
-        public System.Windows.Forms.Panel panel_주문;
+        public System.Windows.Forms.Panel panel_tab_주문;
         private System.Windows.Forms.DataGridViewTextBoxColumn 일자_통계B;
         private System.Windows.Forms.DataGridViewTextBoxColumn 매수금액_통계B;
         private System.Windows.Forms.DataGridViewTextBoxColumn 매수회전율_통계B;
@@ -9556,9 +9775,8 @@ namespace 지니_64
         private System.Windows.Forms.DataGridViewTextBoxColumn 매매세금_통계B;
         private System.Windows.Forms.DataGridViewTextBoxColumn 매매세금율_통계B;
         private System.Windows.Forms.DataGridViewTextBoxColumn 수익n손실_통계B;
-        public System.Windows.Forms.Label LB_주문내역;
-        private System.Windows.Forms.Panel PN_지수연동;
-        public System.Windows.Forms.DataGridView 최종매입가View;
+        public System.Windows.Forms.Label Label_주문내역;
+        public System.Windows.Forms.DataGridView DGV_최종매입가View;
         public System.Windows.Forms.Button BT_종목다운;
         public System.Windows.Forms.Button BT_종목업;
         public System.Windows.Forms.ComboBox CBB_최종가종목;
@@ -9590,9 +9808,9 @@ namespace 지니_64
         public System.Windows.Forms.Button BT_watch_Save_D;
         public System.Windows.Forms.Button BT_watch_Save_B;
         public System.Windows.Forms.Panel panel_체결;
-        public System.Windows.Forms.Panel panel_잔고;
+        public System.Windows.Forms.Panel panel_tab_잔고;
         public System.Windows.Forms.Panel panel_지수;
-        public System.Windows.Forms.Panel P_Search_List;
+        public System.Windows.Forms.Panel Panel_Search_List;
         public System.Windows.Forms.Label label_Search;
         public System.Windows.Forms.Label LB_license;
         public System.Windows.Forms.Label LB_남은기간;
@@ -9636,52 +9854,68 @@ namespace 지니_64
         public System.Windows.Forms.ComboBox combo_p_down_UD;
         public System.Windows.Forms.ComboBox combo_q_ratio;
         public System.Windows.Forms.ComboBox combo_q_ratio_UD;
-        public System.Windows.Forms.CheckBox CB_Jisu_avgset;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn 선택_잔고A;
-        private System.Windows.Forms.DataGridViewComboBoxColumn 그룹_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NUM_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 시장구분_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 종목상태_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 종목명_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 현재가_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 등락율_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 평균단가_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 수익률_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 평가손익_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 금일수익금_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 누적손익_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 예상손익_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 매입금액_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 보유비중_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 주문가능수량_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 최고수익률_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 최저수익률_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 보유수량_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 평가금액_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 매수횟수_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 매도횟수_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 금일매수금_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 금일매도금_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 전일매수량_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 전일매도량_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 초기매수일_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 추가매수일_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 거래일_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 초기매수검색식;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 코드_잔고A;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 재매수_잔고A;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.BindingSource stockbalanceBindingSource;
-        public System.Windows.Forms.Label label_로그인알림;
+        public System.Windows.Forms.Label label_ONLINE;
         public System.Windows.Forms.Label label_appkey;
         public System.Windows.Forms.Label label_키움ID;
         public System.Windows.Forms.TextBox textBox_appkey;
         public System.Windows.Forms.TextBox textBox_키움ID;
-        private System.Windows.Forms.CheckBox checkBox_key;
-        private System.Windows.Forms.Button button_save_key;
         public System.Windows.Forms.TextBox textBox_appsecret;
         public System.Windows.Forms.Label label_appsecret;
-        private System.Windows.Forms.CheckBox checkBox_mockapi;
+        public System.Windows.Forms.CheckBox checkBox_Simulation;
+        public System.Windows.Forms.TextBox textBox_계좌번호;
+        public System.Windows.Forms.Label label_계좌번호;
+        private System.Windows.Forms.Timer TR_timer;
+        public System.Windows.Forms.Panel panel_계좌설정;
+        public System.Windows.Forms.Panel panel_지수설정;
+        public System.Windows.Forms.Panel panel_TP_통계;
+        public System.Windows.Forms.TabPage TP_동작상태;
+        public System.Windows.Forms.Panel panel_form;
+        public System.Windows.Forms.Panel panel_기능버튼;
+        public System.Windows.Forms.Panel panel_clock;
+        public System.Windows.Forms.Panel Panel_지수연동;
+        public System.Windows.Forms.Panel panel_TP_관종;
+        public System.Windows.Forms.Panel panel_TP_잔고;
+        public System.Windows.Forms.Panel panel_key;
+        private System.Windows.Forms.Button button2;
+        public System.Windows.Forms.CheckBox checkBox_key;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn 선택_잔고;
+        private System.Windows.Forms.DataGridViewComboBoxColumn 그룹_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NUM_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 시장구분_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 융자_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 종목상태_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 종목명_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 현재가_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 등락율_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 평균단가_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 수익률_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 평가손익_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 금일수익금_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 누적손익_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 예상손익_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 매입금액_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 보유비중_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 주문가능수량_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 최고수익률_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 최저수익률_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 보유수량_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 평가금액_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 신용이자;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 매수횟수_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 매도횟수_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 금일매수금_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 금일매도금_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 전일매수량_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 전일매도량_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 초기매수일_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 추가매수일_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 거래일_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 초기매수검색식;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 코드_잔고;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 재매수_잔고;
+        private System.Windows.Forms.Button BT_지수이평;
+        public System.Windows.Forms.CheckBox CB_세로보기;
     }
 }
 

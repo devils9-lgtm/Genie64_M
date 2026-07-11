@@ -1,5 +1,5 @@
 ﻿
-namespace 지니_64
+namespace 지니64
 {
     partial class Form_Function
     {
@@ -32,6 +32,24 @@ namespace 지니_64
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Function));
             this.기능설정_P = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.경고_2 = new System.Windows.Forms.Label();
+            this.label_신용_2 = new System.Windows.Forms.Label();
+            this.경고_7 = new System.Windows.Forms.Label();
+            this.경고_6 = new System.Windows.Forms.Label();
+            this.경고_5 = new System.Windows.Forms.Label();
+            this.경고_4 = new System.Windows.Forms.Label();
+            this.경고_3 = new System.Windows.Forms.Label();
+            this.경고_1 = new System.Windows.Forms.Label();
+            this.CB_신용_주문사용 = new System.Windows.Forms.CheckBox();
+            this.CB_신용_신용우선사용 = new System.Windows.Forms.CheckBox();
+            this.CB_신용_현금우선사용 = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label_신용_1 = new System.Windows.Forms.Label();
+            this.CB_신용_현신별도사용 = new System.Windows.Forms.CheckBox();
+            this.label_신용 = new System.Windows.Forms.Label();
+            this.TB_신용_신용증거금비율 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.CB_시작가격보기 = new System.Windows.Forms.CheckBox();
             this.CB_최종매입가_A = new System.Windows.Forms.CheckBox();
@@ -65,32 +83,33 @@ namespace 지니_64
             this.CB_매수알림 = new System.Windows.Forms.CheckBox();
             this.label384 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.CB_NXT = new System.Windows.Forms.CheckBox();
             this.CB_하전량청산 = new System.Windows.Forms.CheckBox();
             this.CB_상전량청산 = new System.Windows.Forms.CheckBox();
-            this.CB_최대화로실행 = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.CB_추가매수정지 = new System.Windows.Forms.CheckBox();
             this.CB_신규매수정지 = new System.Windows.Forms.CheckBox();
-            this.CB_지니_64크기고정 = new System.Windows.Forms.CheckBox();
             this.CB_VI매수취소 = new System.Windows.Forms.CheckBox();
-            this.CB_지니_64항상위에 = new System.Windows.Forms.CheckBox();
             this.CB_음소거 = new System.Windows.Forms.CheckBox();
             this.CB_VI매도취소 = new System.Windows.Forms.CheckBox();
             this.CB_상매수취소 = new System.Windows.Forms.CheckBox();
             this.CB_하매도취소 = new System.Windows.Forms.CheckBox();
             this.CB_동작실시간 = new System.Windows.Forms.CheckBox();
             this.CB_에러내역보기 = new System.Windows.Forms.CheckBox();
-            this.CB_매매엑셀저장 = new System.Windows.Forms.CheckBox();
-            this.CB_체결엑셀저장 = new System.Windows.Forms.CheckBox();
-            this.CB_주문엑셀저장 = new System.Windows.Forms.CheckBox();
             this.CB_편입추가 = new System.Windows.Forms.CheckBox();
             this.CB_최종가업데이트 = new System.Windows.Forms.CheckBox();
+            this.CB_기본매매변경 = new System.Windows.Forms.CheckBox();
+            this.CB_가이드매매 = new System.Windows.Forms.CheckBox();
             this.BT_가이드매매 = new System.Windows.Forms.Button();
             this.BT_검색식확인 = new System.Windows.Forms.Button();
-            this.CB_가이드매매 = new System.Windows.Forms.CheckBox();
-            this.CB_기본매매변경 = new System.Windows.Forms.CheckBox();
+            this.CB_중간가주문 = new System.Windows.Forms.CheckBox();
+            this.CB_ETF매입비제외 = new System.Windows.Forms.CheckBox();
+            this.CB_지니64크기고정 = new System.Windows.Forms.CheckBox();
+            this.CB_지니64항상위에 = new System.Windows.Forms.CheckBox();
+            this.CB_최대화로실행 = new System.Windows.Forms.CheckBox();
+            this.CB_NXT = new System.Windows.Forms.CheckBox();
+            this.CB_NXT_매수금지 = new System.Windows.Forms.CheckBox();
+            this.CB_NXT_손실제한 = new System.Windows.Forms.CheckBox();
             this.BT_telegram_send = new System.Windows.Forms.Button();
             this.TB_Record_Run = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -108,8 +127,8 @@ namespace 지니_64
             this.CB_텔레그램사용 = new System.Windows.Forms.CheckBox();
             this.BT_기능설정저장 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.CB_ETF매입비제외 = new System.Windows.Forms.CheckBox();
             this.기능설정_P.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -117,6 +136,7 @@ namespace 지니_64
             // 기능설정_P
             // 
             this.기능설정_P.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.기능설정_P.Controls.Add(this.tableLayoutPanel3);
             this.기능설정_P.Controls.Add(this.tableLayoutPanel2);
             this.기능설정_P.Controls.Add(this.CB_기능설정_시작위치저장);
             this.기능설정_P.Controls.Add(this.CB_레이아웃고정_기능설정);
@@ -146,6 +166,313 @@ namespace 지니_64
             this.기능설정_P.Name = "기능설정_P";
             this.기능설정_P.Size = new System.Drawing.Size(1922, 350);
             this.기능설정_P.TabIndex = 136;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tableLayoutPanel3.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
+            this.tableLayoutPanel3.Controls.Add(this.경고_2, 1, 7);
+            this.tableLayoutPanel3.Controls.Add(this.label_신용_2, 1, 6);
+            this.tableLayoutPanel3.Controls.Add(this.경고_7, 0, 10);
+            this.tableLayoutPanel3.Controls.Add(this.경고_6, 1, 9);
+            this.tableLayoutPanel3.Controls.Add(this.경고_5, 0, 9);
+            this.tableLayoutPanel3.Controls.Add(this.경고_4, 1, 8);
+            this.tableLayoutPanel3.Controls.Add(this.경고_3, 0, 8);
+            this.tableLayoutPanel3.Controls.Add(this.경고_1, 0, 7);
+            this.tableLayoutPanel3.Controls.Add(this.CB_신용_주문사용, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.CB_신용_신용우선사용, 0, 3);
+            this.tableLayoutPanel3.Controls.Add(this.CB_신용_현금우선사용, 0, 2);
+            this.tableLayoutPanel3.Controls.Add(this.label7, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label8, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.label_신용_1, 0, 6);
+            this.tableLayoutPanel3.Controls.Add(this.CB_신용_현신별도사용, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.label_신용, 0, 4);
+            this.tableLayoutPanel3.Controls.Add(this.TB_신용_신용증거금비율, 1, 4);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(488, 2);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 15;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(240, 344);
+            this.tableLayoutPanel3.TabIndex = 113;
+            // 
+            // 경고_2
+            // 
+            this.경고_2.BackColor = System.Drawing.Color.Salmon;
+            this.경고_2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.경고_2.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.경고_2.Location = new System.Drawing.Point(117, 162);
+            this.경고_2.Margin = new System.Windows.Forms.Padding(0);
+            this.경고_2.Name = "경고_2";
+            this.경고_2.Size = new System.Drawing.Size(122, 22);
+            this.경고_2.TabIndex = 144;
+            this.경고_2.Text = "고 @@";
+            this.경고_2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTip1.SetToolTip(this.경고_2, "#증거금 비율\r\n총매수금 + 현금 x 증거금비율 \r\n\r\n- 현금 우선 사용, 현신 별도 사용 일때 적용됩니다.\r\n- 증거금비율 만큼 현금이 남고 " +
+        "신용이 매수 됩니다.");
+            // 
+            // label_신용_2
+            // 
+            this.label_신용_2.BackColor = System.Drawing.Color.Salmon;
+            this.label_신용_2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_신용_2.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_신용_2.Location = new System.Drawing.Point(117, 139);
+            this.label_신용_2.Margin = new System.Windows.Forms.Padding(0);
+            this.label_신용_2.Name = "label_신용_2";
+            this.label_신용_2.Size = new System.Drawing.Size(122, 22);
+            this.label_신용_2.TabIndex = 143;
+            this.label_신용_2.Text = "30 ~ 100 %";
+            this.label_신용_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.label_신용_2, "#증거금 비율\r\n총매수금 + 현금 x 증거금비율 \r\n\r\n- 현금 우선 사용, 현신 별도 사용 일때 적용됩니다.\r\n- 증거금비율 만큼 현금이 남고 " +
+        "신용이 매수 됩니다.");
+            // 
+            // 경고_7
+            // 
+            this.경고_7.BackColor = System.Drawing.Color.Salmon;
+            this.경고_7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.경고_7.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.경고_7.Location = new System.Drawing.Point(1, 231);
+            this.경고_7.Margin = new System.Windows.Forms.Padding(0);
+            this.경고_7.Name = "경고_7";
+            this.경고_7.Size = new System.Drawing.Size(115, 22);
+            this.경고_7.TabIndex = 140;
+            this.경고_7.Text = "되지 않습니다.";
+            this.경고_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.경고_7, "#증거금 비율\r\n총매수금 + 현금 x 증거금비율 \r\n\r\n- 현금 우선 사용, 현신 별도 사용 일때 적용됩니다.\r\n- 증거금비율 만큼 현금이 남고 " +
+        "신용이 매수 됩니다.");
+            // 
+            // 경고_6
+            // 
+            this.경고_6.BackColor = System.Drawing.Color.Salmon;
+            this.경고_6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.경고_6.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.경고_6.Location = new System.Drawing.Point(117, 208);
+            this.경고_6.Margin = new System.Windows.Forms.Padding(0);
+            this.경고_6.Name = "경고_6";
+            this.경고_6.Size = new System.Drawing.Size(122, 22);
+            this.경고_6.TabIndex = 139;
+            this.경고_6.Text = "콜 (반대매매) ";
+            this.경고_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.경고_6, "#증거금 비율\r\n총매수금 + 현금 x 증거금비율 \r\n\r\n- 현금 우선 사용, 현신 별도 사용 일때 적용됩니다.\r\n- 증거금비율 만큼 현금이 남고 " +
+        "신용이 매수 됩니다.");
+            // 
+            // 경고_5
+            // 
+            this.경고_5.BackColor = System.Drawing.Color.Salmon;
+            this.경고_5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.경고_5.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.경고_5.Location = new System.Drawing.Point(1, 208);
+            this.경고_5.Margin = new System.Windows.Forms.Padding(0);
+            this.경고_5.Name = "경고_5";
+            this.경고_5.Size = new System.Drawing.Size(115, 22);
+            this.경고_5.TabIndex = 138;
+            this.경고_5.Text = "매수해야 마진";
+            this.경고_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.경고_5, "#증거금 비율\r\n총매수금 + 현금 x 증거금비율 \r\n\r\n- 현금 우선 사용, 현신 별도 사용 일때 적용됩니다.\r\n- 증거금비율 만큼 현금이 남고 " +
+        "신용이 매수 됩니다.");
+            // 
+            // 경고_4
+            // 
+            this.경고_4.BackColor = System.Drawing.Color.Salmon;
+            this.경고_4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.경고_4.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.경고_4.Location = new System.Drawing.Point(117, 185);
+            this.경고_4.Margin = new System.Windows.Forms.Padding(0);
+            this.경고_4.Name = "경고_4";
+            this.경고_4.Size = new System.Drawing.Size(122, 22);
+            this.경고_4.TabIndex = 137;
+            this.경고_4.Text = "남겨두고 신용";
+            this.경고_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.경고_4, "#증거금 비율\r\n총매수금 + 현금 x 증거금비율 \r\n\r\n- 현금 우선 사용, 현신 별도 사용 일때 적용됩니다.\r\n- 증거금비율 만큼 현금이 남고 " +
+        "신용이 매수 됩니다.");
+            // 
+            // 경고_3
+            // 
+            this.경고_3.BackColor = System.Drawing.Color.Salmon;
+            this.경고_3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.경고_3.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.경고_3.Location = new System.Drawing.Point(1, 185);
+            this.경고_3.Margin = new System.Windows.Forms.Padding(0);
+            this.경고_3.Name = "경고_3";
+            this.경고_3.Size = new System.Drawing.Size(115, 22);
+            this.경고_3.TabIndex = 136;
+            this.경고_3.Text = "현금 30% 이상";
+            this.경고_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.경고_3, "#증거금 비율\r\n총매수금 + 현금 x 증거금비율 \r\n\r\n- 현금 우선 사용, 현신 별도 사용 일때 적용됩니다.\r\n- 증거금비율 만큼 현금이 남고 " +
+        "신용이 매수 됩니다.");
+            // 
+            // 경고_1
+            // 
+            this.경고_1.BackColor = System.Drawing.Color.Salmon;
+            this.경고_1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.경고_1.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.경고_1.Location = new System.Drawing.Point(1, 162);
+            this.경고_1.Margin = new System.Windows.Forms.Padding(0);
+            this.경고_1.Name = "경고_1";
+            this.경고_1.Size = new System.Drawing.Size(115, 22);
+            this.경고_1.TabIndex = 134;
+            this.경고_1.Text = "@@ 경";
+            this.경고_1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.toolTip1.SetToolTip(this.경고_1, "#증거금 비율\r\n총매수금 + 현금 x 증거금비율 \r\n\r\n- 현금 우선 사용, 현신 별도 사용 일때 적용됩니다.\r\n- 증거금비율 만큼 현금이 남고 " +
+        "신용이 매수 됩니다.");
+            // 
+            // CB_신용_주문사용
+            // 
+            this.CB_신용_주문사용.AutoSize = true;
+            this.CB_신용_주문사용.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_신용_주문사용.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CB_신용_주문사용.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CB_신용_주문사용.Location = new System.Drawing.Point(1, 24);
+            this.CB_신용_주문사용.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_신용_주문사용.Name = "CB_신용_주문사용";
+            this.CB_신용_주문사용.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
+            this.CB_신용_주문사용.Size = new System.Drawing.Size(115, 22);
+            this.CB_신용_주문사용.TabIndex = 123;
+            this.CB_신용_주문사용.TabStop = false;
+            this.CB_신용_주문사용.Text = "신용주문 사용";
+            this.CB_신용_주문사용.UseVisualStyleBackColor = false;
+            this.CB_신용_주문사용.CheckedChanged += new System.EventHandler(this.CB_신용_주문사용_CheckedChanged);
+            // 
+            // CB_신용_신용우선사용
+            // 
+            this.CB_신용_신용우선사용.AutoSize = true;
+            this.CB_신용_신용우선사용.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_신용_신용우선사용.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CB_신용_신용우선사용.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CB_신용_신용우선사용.Location = new System.Drawing.Point(1, 70);
+            this.CB_신용_신용우선사용.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_신용_신용우선사용.Name = "CB_신용_신용우선사용";
+            this.CB_신용_신용우선사용.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
+            this.CB_신용_신용우선사용.Size = new System.Drawing.Size(115, 22);
+            this.CB_신용_신용우선사용.TabIndex = 115;
+            this.CB_신용_신용우선사용.TabStop = false;
+            this.CB_신용_신용우선사용.Text = "신용 우선 사용";
+            this.CB_신용_신용우선사용.UseVisualStyleBackColor = false;
+            this.CB_신용_신용우선사용.CheckedChanged += new System.EventHandler(this.CB_신용_신용우선사용_CheckedChanged);
+            // 
+            // CB_신용_현금우선사용
+            // 
+            this.CB_신용_현금우선사용.AutoSize = true;
+            this.CB_신용_현금우선사용.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_신용_현금우선사용.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CB_신용_현금우선사용.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CB_신용_현금우선사용.Location = new System.Drawing.Point(1, 47);
+            this.CB_신용_현금우선사용.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_신용_현금우선사용.Name = "CB_신용_현금우선사용";
+            this.CB_신용_현금우선사용.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
+            this.CB_신용_현금우선사용.Size = new System.Drawing.Size(115, 22);
+            this.CB_신용_현금우선사용.TabIndex = 124;
+            this.CB_신용_현금우선사용.TabStop = false;
+            this.CB_신용_현금우선사용.Text = "현금 우선 사용";
+            this.CB_신용_현금우선사용.UseVisualStyleBackColor = false;
+            this.CB_신용_현금우선사용.CheckedChanged += new System.EventHandler(this.CB_신용_현금우선사용_CheckedChanged);
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label7.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label7.Location = new System.Drawing.Point(1, 1);
+            this.label7.Margin = new System.Windows.Forms.Padding(0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(115, 22);
+            this.label7.TabIndex = 63;
+            this.label7.Text = "신용 주문";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label8.Location = new System.Drawing.Point(117, 1);
+            this.label8.Margin = new System.Windows.Forms.Padding(0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(122, 22);
+            this.label8.TabIndex = 63;
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_신용_1
+            // 
+            this.label_신용_1.BackColor = System.Drawing.Color.Salmon;
+            this.label_신용_1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_신용_1.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_신용_1.Location = new System.Drawing.Point(1, 139);
+            this.label_신용_1.Margin = new System.Windows.Forms.Padding(0);
+            this.label_신용_1.Name = "label_신용_1";
+            this.label_신용_1.Size = new System.Drawing.Size(115, 22);
+            this.label_신용_1.TabIndex = 129;
+            this.label_신용_1.Text = " ex) 현금 비율";
+            this.label_신용_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.label_신용_1, "#증거금 비율\r\n총매수금 + 현금 x 증거금비율 \r\n\r\n- 현금 우선 사용, 현신 별도 사용 일때 적용됩니다.\r\n- 증거금비율 만큼 현금이 남고 " +
+        "신용이 매수 됩니다.");
+            // 
+            // CB_신용_현신별도사용
+            // 
+            this.CB_신용_현신별도사용.AutoSize = true;
+            this.CB_신용_현신별도사용.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_신용_현신별도사용.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CB_신용_현신별도사용.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CB_신용_현신별도사용.Location = new System.Drawing.Point(117, 47);
+            this.CB_신용_현신별도사용.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_신용_현신별도사용.Name = "CB_신용_현신별도사용";
+            this.CB_신용_현신별도사용.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
+            this.CB_신용_현신별도사용.Size = new System.Drawing.Size(122, 22);
+            this.CB_신용_현신별도사용.TabIndex = 131;
+            this.CB_신용_현신별도사용.TabStop = false;
+            this.CB_신용_현신별도사용.Text = "현신 별도 사용";
+            this.CB_신용_현신별도사용.UseVisualStyleBackColor = false;
+            this.CB_신용_현신별도사용.CheckedChanged += new System.EventHandler(this.CB_신용_현신별도사용_CheckedChanged);
+            // 
+            // label_신용
+            // 
+            this.label_신용.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label_신용.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label_신용.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_신용.Location = new System.Drawing.Point(1, 93);
+            this.label_신용.Margin = new System.Windows.Forms.Padding(0);
+            this.label_신용.Name = "label_신용";
+            this.label_신용.Size = new System.Drawing.Size(115, 22);
+            this.label_신용.TabIndex = 126;
+            this.label_신용.Text = "현금(증거금)비";
+            this.label_신용.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.toolTip1.SetToolTip(this.label_신용, "#증거금 비율\r\n총매수금 + 현금 x 증거금비율 \r\n\r\n- 현금 우선 사용, 현신 별도 사용 일때 적용됩니다.\r\n- 증거금비율 만큼 현금이 남고 " +
+        "신용이 매수 됩니다.");
+            // 
+            // TB_신용_신용증거금비율
+            // 
+            this.TB_신용_신용증거금비율.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TB_신용_신용증거금비율.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TB_신용_신용증거금비율.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TB_신용_신용증거금비율.Location = new System.Drawing.Point(120, 96);
+            this.TB_신용_신용증거금비율.MaxLength = 3;
+            this.TB_신용_신용증거금비율.Name = "TB_신용_신용증거금비율";
+            this.TB_신용_신용증거금비율.Size = new System.Drawing.Size(116, 15);
+            this.TB_신용_신용증거금비율.TabIndex = 127;
+            this.TB_신용_신용증거금비율.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_신용_신용증거금비율, "#증거금 비율\r\n총매수금 + 현금 x 증거금비율 \r\n\r\n- 현금 우선 사용, 현신 별도 사용 일때 적용됩니다.\r\n- 증거금비율 만큼 현금이 남고 " +
+        "신용이 매수 됩니다.");
+            this.TB_신용_신용증거금비율.TextChanged += new System.EventHandler(this.TB_신용_신용증거금비율_TextChanged);
+            this.TB_신용_신용증거금비율.Enter += new System.EventHandler(this.TB_신용_신용증거금비율_Enter);
+            this.TB_신용_신용증거금비율.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TB_신용_신용증거금비율_KeyDown);
+            this.TB_신용_신용증거금비율.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB_신용_신용증거금비율_KeyPress);
+            this.TB_신용_신용증거금비율.Leave += new System.EventHandler(this.TB_신용_신용증거금비율_Leave);
             // 
             // tableLayoutPanel2
             // 
@@ -179,7 +506,7 @@ namespace 지니_64
             this.tableLayoutPanel2.Controls.Add(this.CB_잔고청산_C, 0, 12);
             this.tableLayoutPanel2.Controls.Add(this.CB_매도X, 1, 10);
             this.tableLayoutPanel2.Controls.Add(this.CB_추매X, 1, 11);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(246, 2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(245, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 15;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
@@ -215,8 +542,8 @@ namespace 지니_64
             this.CB_시작가격보기.TabIndex = 123;
             this.CB_시작가격보기.TabStop = false;
             this.CB_시작가격보기.Text = "시작가 보기";
-            this.toolTip1.SetToolTip(this.CB_시작가격보기, "# 잔고화면에 시작 가격 과 시작% 를 표시합니다.\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니_64가 느려질수 있습" +
-        "니다.\r\n");
+            this.toolTip1.SetToolTip(this.CB_시작가격보기, "# 잔고화면에 시작 가격 과 시작% 를 표시합니다.\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니64가 느려질수 " +
+        "있습니다.\r\n");
             this.CB_시작가격보기.UseVisualStyleBackColor = false;
             // 
             // CB_최종매입가_A
@@ -233,7 +560,7 @@ namespace 지니_64
             this.CB_최종매입가_A.TabIndex = 115;
             this.CB_최종매입가_A.TabStop = false;
             this.CB_최종매입가_A.Text = "최종매입가_ A";
-            this.toolTip1.SetToolTip(this.CB_최종매입가_A, "#잔고화면에 최종매입가 표시합니다\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니_64가 느려질수 있습니다.\r\n");
+            this.toolTip1.SetToolTip(this.CB_최종매입가_A, "#잔고화면에 최종매입가 표시합니다\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니64가 느려질수 있습니다.\r\n");
             this.CB_최종매입가_A.UseVisualStyleBackColor = false;
             // 
             // CB_최종매입가_B
@@ -250,7 +577,7 @@ namespace 지니_64
             this.CB_최종매입가_B.TabIndex = 115;
             this.CB_최종매입가_B.TabStop = false;
             this.CB_최종매입가_B.Text = "최종매입가_ B";
-            this.toolTip1.SetToolTip(this.CB_최종매입가_B, "#잔고화면에 최종매입가 표시합니다\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니_64가 느려질수 있습니다.\r\n");
+            this.toolTip1.SetToolTip(this.CB_최종매입가_B, "#잔고화면에 최종매입가 표시합니다\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니64가 느려질수 있습니다.\r\n");
             this.CB_최종매입가_B.UseVisualStyleBackColor = false;
             // 
             // CB_최종매입가_C
@@ -267,7 +594,7 @@ namespace 지니_64
             this.CB_최종매입가_C.TabIndex = 115;
             this.CB_최종매입가_C.TabStop = false;
             this.CB_최종매입가_C.Text = "최종매입가_ C";
-            this.toolTip1.SetToolTip(this.CB_최종매입가_C, "#잔고화면에 최종매입가 표시합니다\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니_64가 느려질수 있습니다.\r\n");
+            this.toolTip1.SetToolTip(this.CB_최종매입가_C, "#잔고화면에 최종매입가 표시합니다\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니64가 느려질수 있습니다.\r\n");
             this.CB_최종매입가_C.UseVisualStyleBackColor = false;
             // 
             // CB_최종매입가_D
@@ -284,7 +611,7 @@ namespace 지니_64
             this.CB_최종매입가_D.TabIndex = 115;
             this.CB_최종매입가_D.TabStop = false;
             this.CB_최종매입가_D.Text = "최종매입가_ D";
-            this.toolTip1.SetToolTip(this.CB_최종매입가_D, "#잔고화면에 최종매입가 표시합니다\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니_64가 느려질수 있습니다.\r\n");
+            this.toolTip1.SetToolTip(this.CB_최종매입가_D, "#잔고화면에 최종매입가 표시합니다\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니64가 느려질수 있습니다.\r\n");
             this.CB_최종매입가_D.UseVisualStyleBackColor = false;
             // 
             // CB_최종매입가_E
@@ -301,7 +628,7 @@ namespace 지니_64
             this.CB_최종매입가_E.TabIndex = 115;
             this.CB_최종매입가_E.TabStop = false;
             this.CB_최종매입가_E.Text = "최종매입가_ E";
-            this.toolTip1.SetToolTip(this.CB_최종매입가_E, "#잔고화면에 최종매입가 표시합니다\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니_64가 느려질수 있습니다.\r\n");
+            this.toolTip1.SetToolTip(this.CB_최종매입가_E, "#잔고화면에 최종매입가 표시합니다\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니64가 느려질수 있습니다.\r\n");
             this.CB_최종매입가_E.UseVisualStyleBackColor = false;
             // 
             // CB_최종매입가_F
@@ -318,7 +645,7 @@ namespace 지니_64
             this.CB_최종매입가_F.TabIndex = 115;
             this.CB_최종매입가_F.TabStop = false;
             this.CB_최종매입가_F.Text = "최종매입가_ F";
-            this.toolTip1.SetToolTip(this.CB_최종매입가_F, "#잔고화면에 최종매입가 표시합니다\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니_64가 느려질수 있습니다.\r\n");
+            this.toolTip1.SetToolTip(this.CB_최종매입가_F, "#잔고화면에 최종매입가 표시합니다\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니64가 느려질수 있습니다.\r\n");
             this.CB_최종매입가_F.UseVisualStyleBackColor = false;
             // 
             // CB_수익금or수익률
@@ -354,7 +681,7 @@ namespace 지니_64
             this.CB_익절모니터.TabStop = false;
             this.CB_익절모니터.Text = "익절 && 트레일링";
             this.toolTip1.SetToolTip(this.CB_익절모니터, "잔고화면에 모니터 를 표시 합니다.\r\n- 익절 또는 트레일링 스탑의 동작을 표시합니다. \r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에" +
-        " 많이 표시될수록 지니_64가 느려질수 있습니다.\r\n");
+        " 많이 표시될수록 지니64가 느려질수 있습니다.\r\n");
             this.CB_익절모니터.UseVisualStyleBackColor = false;
             // 
             // CB_보전모니터
@@ -371,7 +698,7 @@ namespace 지니_64
             this.CB_보전모니터.TabIndex = 117;
             this.CB_보전모니터.TabStop = false;
             this.CB_보전모니터.Text = "보전 모니터";
-            this.toolTip1.SetToolTip(this.CB_보전모니터, "잔고화면에 모니터 를 표시 합니다.\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니_64가 느려질수 있습니다.\r\n");
+            this.toolTip1.SetToolTip(this.CB_보전모니터, "잔고화면에 모니터 를 표시 합니다.\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니64가 느려질수 있습니다.\r\n");
             this.CB_보전모니터.UseVisualStyleBackColor = false;
             // 
             // CB_손절모니터
@@ -388,7 +715,7 @@ namespace 지니_64
             this.CB_손절모니터.TabIndex = 118;
             this.CB_손절모니터.TabStop = false;
             this.CB_손절모니터.Text = "손절 모니터";
-            this.toolTip1.SetToolTip(this.CB_손절모니터, "잔고화면에 모니터 를 표시 합니다.\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니_64가 느려질수 있습니다.\r\n");
+            this.toolTip1.SetToolTip(this.CB_손절모니터, "잔고화면에 모니터 를 표시 합니다.\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니64가 느려질수 있습니다.\r\n");
             this.CB_손절모니터.UseVisualStyleBackColor = false;
             // 
             // CB_시간청산범위
@@ -406,7 +733,7 @@ namespace 지니_64
             this.CB_시간청산범위.TabStop = false;
             this.CB_시간청산범위.Text = "시간청산 범위";
             this.toolTip1.SetToolTip(this.CB_시간청산범위, "# 잔고화면에 수익범위 모니터를 표시합니다\r\n   수익범위 (  => ) 옵션이 동작 상태이면 알파벳이 표시 됩니다.\r\n# 사용하는 항목만 선택 " +
-        "하세요. \r\n   잔고 화면에 많이 표시될수록 지니_64가 느려질수 있습니다.");
+        "하세요. \r\n   잔고 화면에 많이 표시될수록 지니64가 느려질수 있습니다.");
             this.CB_시간청산범위.UseVisualStyleBackColor = false;
             // 
             // CB_반복매매범위
@@ -424,7 +751,7 @@ namespace 지니_64
             this.CB_반복매매범위.TabStop = false;
             this.CB_반복매매범위.Text = "반복매매 범위";
             this.toolTip1.SetToolTip(this.CB_반복매매범위, "# 잔고화면에 수익범위 모니터를 표시합니다\r\n   수익범위 (  => ) 옵션이 동작 상태이면 알파벳이 표시 됩니다.\r\n# 사용하는 항목만 선택 " +
-        "하세요. \r\n   잔고 화면에 많이 표시될수록 지니_64가 느려질수 있습니다.");
+        "하세요. \r\n   잔고 화면에 많이 표시될수록 지니64가 느려질수 있습니다.");
             this.CB_반복매매범위.UseVisualStyleBackColor = false;
             // 
             // CB_리밸런싱범위
@@ -442,7 +769,7 @@ namespace 지니_64
             this.CB_리밸런싱범위.TabStop = false;
             this.CB_리밸런싱범위.Text = "리밸런싱 범위";
             this.toolTip1.SetToolTip(this.CB_리밸런싱범위, "# 잔고화면에 수익범위 모니터를 표시합니다\r\n   수익범위 (  => ) 옵션이 동작 상태이면 알파벳이 표시 됩니다.\r\n# 사용하는 항목만 선택 " +
-        "하세요. \r\n   잔고 화면에 많이 표시될수록 지니_64가 느려질수 있습니다.");
+        "하세요. \r\n   잔고 화면에 많이 표시될수록 지니64가 느려질수 있습니다.");
             this.CB_리밸런싱범위.UseVisualStyleBackColor = false;
             // 
             // CB_잔고청산범위
@@ -460,7 +787,7 @@ namespace 지니_64
             this.CB_잔고청산범위.TabStop = false;
             this.CB_잔고청산범위.Text = "잔고청산 범위";
             this.toolTip1.SetToolTip(this.CB_잔고청산범위, "# 잔고화면에 수익범위 모니터를 표시합니다\r\n   수익범위 (  => ) 옵션이 동작 상태이면 알파벳이 표시 됩니다.\r\n# 사용하는 항목만 선택 " +
-        "하세요. \r\n   잔고 화면에 많이 표시될수록 지니_64가 느려질수 있습니다.");
+        "하세요. \r\n   잔고 화면에 많이 표시될수록 지니64가 느려질수 있습니다.");
             this.CB_잔고청산범위.UseVisualStyleBackColor = false;
             // 
             // CB_익회모니터
@@ -477,7 +804,7 @@ namespace 지니_64
             this.CB_익회모니터.TabIndex = 115;
             this.CB_익회모니터.TabStop = false;
             this.CB_익회모니터.Text = "일회 모니터";
-            this.toolTip1.SetToolTip(this.CB_익회모니터, "잔고화면에 모니터 를 표시 합니다.\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니_64가 느려질수 있습니다.\r\n");
+            this.toolTip1.SetToolTip(this.CB_익회모니터, "잔고화면에 모니터 를 표시 합니다.\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니64가 느려질수 있습니다.\r\n");
             this.CB_익회모니터.UseVisualStyleBackColor = false;
             // 
             // CB_최종매입가_G
@@ -494,7 +821,7 @@ namespace 지니_64
             this.CB_최종매입가_G.TabIndex = 115;
             this.CB_최종매입가_G.TabStop = false;
             this.CB_최종매입가_G.Text = "최종매입가_ G";
-            this.toolTip1.SetToolTip(this.CB_최종매입가_G, "#잔고화면에 최종매입가 표시합니다\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니_64가 느려질수 있습니다.\r\n");
+            this.toolTip1.SetToolTip(this.CB_최종매입가_G, "#잔고화면에 최종매입가 표시합니다\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니64가 느려질수 있습니다.\r\n");
             this.CB_최종매입가_G.UseVisualStyleBackColor = false;
             // 
             // CB_기준가격보기
@@ -511,8 +838,8 @@ namespace 지니_64
             this.CB_기준가격보기.TabIndex = 124;
             this.CB_기준가격보기.TabStop = false;
             this.CB_기준가격보기.Text = "기준가 보기";
-            this.toolTip1.SetToolTip(this.CB_기준가격보기, "# 잔고화면에 기준가격과 지준% 를 표시합니다.\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니_64가 느려질수 있습니다" +
-        ".\r\n");
+            this.toolTip1.SetToolTip(this.CB_기준가격보기, "# 잔고화면에 기준가격과 지준% 를 표시합니다.\r\n# 사용하는 항목만 선택 하세요. \r\n   잔고 화면에 많이 표시될수록 지니64가 느려질수 있습" +
+        "니다.\r\n");
             this.CB_기준가격보기.UseVisualStyleBackColor = false;
             // 
             // label2
@@ -624,7 +951,7 @@ namespace 지니_64
             this.CB_기능설정_시작위치저장.AutoSize = true;
             this.CB_기능설정_시작위치저장.Checked = true;
             this.CB_기능설정_시작위치저장.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CB_기능설정_시작위치저장.Location = new System.Drawing.Point(841, 6);
+            this.CB_기능설정_시작위치저장.Location = new System.Drawing.Point(1082, 6);
             this.CB_기능설정_시작위치저장.Name = "CB_기능설정_시작위치저장";
             this.CB_기능설정_시작위치저장.Size = new System.Drawing.Size(96, 16);
             this.CB_기능설정_시작위치저장.TabIndex = 112;
@@ -636,7 +963,7 @@ namespace 지니_64
             this.CB_레이아웃고정_기능설정.AutoSize = true;
             this.CB_레이아웃고정_기능설정.Checked = true;
             this.CB_레이아웃고정_기능설정.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CB_레이아웃고정_기능설정.Location = new System.Drawing.Point(741, 6);
+            this.CB_레이아웃고정_기능설정.Location = new System.Drawing.Point(982, 6);
             this.CB_레이아웃고정_기능설정.Name = "CB_레이아웃고정_기능설정";
             this.CB_레이아웃고정_기능설정.Size = new System.Drawing.Size(90, 16);
             this.CB_레이아웃고정_기능설정.TabIndex = 112;
@@ -654,7 +981,7 @@ namespace 지니_64
             this.CB_매도알림.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.CB_매도알림.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
             this.CB_매도알림.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_매도알림.Location = new System.Drawing.Point(663, 26);
+            this.CB_매도알림.Location = new System.Drawing.Point(904, 26);
             this.CB_매도알림.Margin = new System.Windows.Forms.Padding(0);
             this.CB_매도알림.Name = "CB_매도알림";
             this.CB_매도알림.Size = new System.Drawing.Size(75, 22);
@@ -668,7 +995,7 @@ namespace 지니_64
             // 
             this.label310.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label310.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label310.Location = new System.Drawing.Point(490, 110);
+            this.label310.Location = new System.Drawing.Point(731, 110);
             this.label310.Name = "label310";
             this.label310.Padding = new System.Windows.Forms.Padding(5, 5, 0, 0);
             this.label310.Size = new System.Drawing.Size(588, 236);
@@ -685,7 +1012,7 @@ namespace 지니_64
             this.CB_매수알림.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.CB_매수알림.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
             this.CB_매수알림.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_매수알림.Location = new System.Drawing.Point(589, 26);
+            this.CB_매수알림.Location = new System.Drawing.Point(830, 26);
             this.CB_매수알림.Margin = new System.Windows.Forms.Padding(0);
             this.CB_매수알림.Name = "CB_매수알림";
             this.CB_매수알림.Size = new System.Drawing.Size(75, 22);
@@ -699,7 +1026,7 @@ namespace 지니_64
             // 
             this.label384.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label384.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label384.Location = new System.Drawing.Point(490, 89);
+            this.label384.Location = new System.Drawing.Point(731, 89);
             this.label384.Margin = new System.Windows.Forms.Padding(0);
             this.label384.Name = "label384";
             this.label384.Size = new System.Drawing.Size(100, 22);
@@ -714,33 +1041,33 @@ namespace 지니_64
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
-            this.tableLayoutPanel1.Controls.Add(this.CB_ETF매입비제외, 0, 11);
-            this.tableLayoutPanel1.Controls.Add(this.CB_NXT, 1, 10);
             this.tableLayoutPanel1.Controls.Add(this.CB_하전량청산, 0, 10);
             this.tableLayoutPanel1.Controls.Add(this.CB_상전량청산, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.CB_최대화로실행, 1, 9);
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label6, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.CB_추가매수정지, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.CB_신규매수정지, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.CB_지니_64크기고정, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.CB_VI매수취소, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.CB_지니_64항상위에, 1, 7);
             this.tableLayoutPanel1.Controls.Add(this.CB_음소거, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.CB_VI매도취소, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.CB_상매수취소, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.CB_하매도취소, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.CB_동작실시간, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.CB_에러내역보기, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.CB_매매엑셀저장, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.CB_체결엑셀저장, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.CB_주문엑셀저장, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.CB_편입추가, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.CB_최종가업데이트, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.BT_가이드매매, 0, 12);
-            this.tableLayoutPanel1.Controls.Add(this.BT_검색식확인, 1, 12);
-            this.tableLayoutPanel1.Controls.Add(this.CB_가이드매매, 0, 13);
-            this.tableLayoutPanel1.Controls.Add(this.CB_기본매매변경, 1, 13);
+            this.tableLayoutPanel1.Controls.Add(this.CB_기본매매변경, 1, 14);
+            this.tableLayoutPanel1.Controls.Add(this.CB_가이드매매, 0, 14);
+            this.tableLayoutPanel1.Controls.Add(this.BT_가이드매매, 0, 13);
+            this.tableLayoutPanel1.Controls.Add(this.BT_검색식확인, 1, 13);
+            this.tableLayoutPanel1.Controls.Add(this.CB_중간가주문, 0, 11);
+            this.tableLayoutPanel1.Controls.Add(this.CB_ETF매입비제외, 0, 12);
+            this.tableLayoutPanel1.Controls.Add(this.CB_지니64크기고정, 1, 12);
+            this.tableLayoutPanel1.Controls.Add(this.CB_지니64항상위에, 1, 11);
+            this.tableLayoutPanel1.Controls.Add(this.CB_최대화로실행, 1, 10);
+            this.tableLayoutPanel1.Controls.Add(this.CB_NXT, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.CB_NXT_매수금지, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.CB_NXT_손실제한, 1, 6);
             this.tableLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.tableLayoutPanel1.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
@@ -765,25 +1092,6 @@ namespace 지니_64
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(240, 344);
             this.tableLayoutPanel1.TabIndex = 59;
-            // 
-            // CB_NXT
-            // 
-            this.CB_NXT.AutoSize = true;
-            this.CB_NXT.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_NXT.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CB_NXT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CB_NXT.Location = new System.Drawing.Point(117, 231);
-            this.CB_NXT.Margin = new System.Windows.Forms.Padding(0);
-            this.CB_NXT.Name = "CB_NXT";
-            this.CB_NXT.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
-            this.CB_NXT.Size = new System.Drawing.Size(122, 22);
-            this.CB_NXT.TabIndex = 120;
-            this.CB_NXT.TabStop = false;
-            this.CB_NXT.Text = "NXT주문 사용";
-            this.toolTip1.SetToolTip(this.CB_NXT, "실서버만 NXT 주문을 사용할수 있습니다.\r\n※ NXT 주문 간시간은 \r\n※ 8:00:00 ~ 8:50:00 , 15:40 ~ 20:00:00 입" +
-        "니다.\r\n※ NXT 주문 시간에는 지수이평의 일봉만 적용됩니다.");
-            this.CB_NXT.UseVisualStyleBackColor = false;
-            this.CB_NXT.CheckedChanged += new System.EventHandler(this.CB_SOR_CheckedChanged);
             // 
             // CB_하전량청산
             // 
@@ -820,21 +1128,6 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.CB_상전량청산, "# 상한가 이고 수익중 일때 전량청산");
             this.CB_상전량청산.UseVisualStyleBackColor = false;
             this.CB_상전량청산.CheckedChanged += new System.EventHandler(this.Once_CheckedChanged);
-            // 
-            // CB_최대화로실행
-            // 
-            this.CB_최대화로실행.AutoSize = true;
-            this.CB_최대화로실행.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_최대화로실행.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CB_최대화로실행.Location = new System.Drawing.Point(117, 208);
-            this.CB_최대화로실행.Margin = new System.Windows.Forms.Padding(0);
-            this.CB_최대화로실행.Name = "CB_최대화로실행";
-            this.CB_최대화로실행.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
-            this.CB_최대화로실행.Size = new System.Drawing.Size(122, 22);
-            this.CB_최대화로실행.TabIndex = 113;
-            this.CB_최대화로실행.Text = "최대화로 실행 ";
-            this.CB_최대화로실행.UseVisualStyleBackColor = false;
-            this.CB_최대화로실행.CheckedChanged += new System.EventHandler(this.CB_최대화로실행_CheckedChanged);
             // 
             // label5
             // 
@@ -894,21 +1187,6 @@ namespace 지니_64
             this.CB_신규매수정지.UseVisualStyleBackColor = false;
             this.CB_신규매수정지.CheckedChanged += new System.EventHandler(this.Once_CheckedChanged);
             // 
-            // CB_지니_64크기고정
-            // 
-            this.CB_지니_64크기고정.AutoSize = true;
-            this.CB_지니_64크기고정.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_지니_64크기고정.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CB_지니_64크기고정.Location = new System.Drawing.Point(117, 185);
-            this.CB_지니_64크기고정.Margin = new System.Windows.Forms.Padding(0);
-            this.CB_지니_64크기고정.Name = "CB_지니_64크기고정";
-            this.CB_지니_64크기고정.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
-            this.CB_지니_64크기고정.Size = new System.Drawing.Size(122, 22);
-            this.CB_지니_64크기고정.TabIndex = 114;
-            this.CB_지니_64크기고정.Text = "지니_64 크기고정";
-            this.CB_지니_64크기고정.UseVisualStyleBackColor = false;
-            this.CB_지니_64크기고정.CheckedChanged += new System.EventHandler(this.CB_지니_64크기고정_CheckedChanged);
-            // 
             // CB_VI매수취소
             // 
             this.CB_VI매수취소.AutoSize = true;
@@ -927,21 +1205,6 @@ namespace 지니_64
             this.CB_VI매수취소.Text = "VI 매수 취소";
             this.CB_VI매수취소.UseVisualStyleBackColor = false;
             this.CB_VI매수취소.CheckedChanged += new System.EventHandler(this.Once_CheckedChanged);
-            // 
-            // CB_지니_64항상위에
-            // 
-            this.CB_지니_64항상위에.AutoSize = true;
-            this.CB_지니_64항상위에.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_지니_64항상위에.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CB_지니_64항상위에.Location = new System.Drawing.Point(117, 162);
-            this.CB_지니_64항상위에.Margin = new System.Windows.Forms.Padding(0);
-            this.CB_지니_64항상위에.Name = "CB_지니_64항상위에";
-            this.CB_지니_64항상위에.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
-            this.CB_지니_64항상위에.Size = new System.Drawing.Size(122, 22);
-            this.CB_지니_64항상위에.TabIndex = 112;
-            this.CB_지니_64항상위에.Text = "지니_64 항상위에";
-            this.CB_지니_64항상위에.UseVisualStyleBackColor = false;
-            this.CB_지니_64항상위에.CheckedChanged += new System.EventHandler(this.CB_윈도우최상위_CheckedChanged);
             // 
             // CB_음소거
             // 
@@ -1051,49 +1314,6 @@ namespace 지니_64
             this.CB_에러내역보기.UseVisualStyleBackColor = false;
             this.CB_에러내역보기.CheckedChanged += new System.EventHandler(this.Once_CheckedChanged);
             // 
-            // CB_매매엑셀저장
-            // 
-            this.CB_매매엑셀저장.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_매매엑셀저장.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CB_매매엑셀저장.Location = new System.Drawing.Point(117, 93);
-            this.CB_매매엑셀저장.Margin = new System.Windows.Forms.Padding(0);
-            this.CB_매매엑셀저장.Name = "CB_매매엑셀저장";
-            this.CB_매매엑셀저장.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
-            this.CB_매매엑셀저장.Size = new System.Drawing.Size(122, 22);
-            this.CB_매매엑셀저장.TabIndex = 68;
-            this.CB_매매엑셀저장.Text = "매매 엑셀저장";
-            this.toolTip1.SetToolTip(this.CB_매매엑셀저장, "신규매수, 전량매도 엑셀저장");
-            this.CB_매매엑셀저장.UseVisualStyleBackColor = false;
-            this.CB_매매엑셀저장.CheckedChanged += new System.EventHandler(this.Once_CheckedChanged);
-            // 
-            // CB_체결엑셀저장
-            // 
-            this.CB_체결엑셀저장.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_체결엑셀저장.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CB_체결엑셀저장.Location = new System.Drawing.Point(117, 116);
-            this.CB_체결엑셀저장.Margin = new System.Windows.Forms.Padding(0);
-            this.CB_체결엑셀저장.Name = "CB_체결엑셀저장";
-            this.CB_체결엑셀저장.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
-            this.CB_체결엑셀저장.Size = new System.Drawing.Size(122, 22);
-            this.CB_체결엑셀저장.TabIndex = 67;
-            this.CB_체결엑셀저장.Text = "체결 엑셀저장";
-            this.CB_체결엑셀저장.UseVisualStyleBackColor = false;
-            this.CB_체결엑셀저장.CheckedChanged += new System.EventHandler(this.Once_CheckedChanged);
-            // 
-            // CB_주문엑셀저장
-            // 
-            this.CB_주문엑셀저장.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CB_주문엑셀저장.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CB_주문엑셀저장.Location = new System.Drawing.Point(117, 139);
-            this.CB_주문엑셀저장.Margin = new System.Windows.Forms.Padding(0);
-            this.CB_주문엑셀저장.Name = "CB_주문엑셀저장";
-            this.CB_주문엑셀저장.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
-            this.CB_주문엑셀저장.Size = new System.Drawing.Size(122, 22);
-            this.CB_주문엑셀저장.TabIndex = 67;
-            this.CB_주문엑셀저장.Text = "주문 엑셀저장";
-            this.CB_주문엑셀저장.UseVisualStyleBackColor = false;
-            this.CB_주문엑셀저장.CheckedChanged += new System.EventHandler(this.Once_CheckedChanged);
-            // 
             // CB_편입추가
             // 
             this.CB_편입추가.AutoSize = true;
@@ -1108,7 +1328,7 @@ namespace 지니_64
             this.CB_편입추가.TabIndex = 46;
             this.CB_편입추가.TabStop = false;
             this.CB_편입추가.Text = "전 편입추가";
-            this.toolTip1.SetToolTip(this.CB_편입추가, "1. 지니_64 가동전 검색된 종목\r\n2. 동작시간 전에 검색된 종목\r\n1,2 의 종목을 동작시작 시간에 매수신호를 보냅니다.");
+            this.toolTip1.SetToolTip(this.CB_편입추가, "1. 지니64 가동전 검색된 종목\r\n2. 동작시간 전에 검색된 종목\r\n1,2 의 종목을 동작시작 시간에 매수신호를 보냅니다.");
             this.CB_편입추가.UseVisualStyleBackColor = false;
             this.CB_편입추가.CheckedChanged += new System.EventHandler(this.Once_CheckedChanged);
             // 
@@ -1131,6 +1351,44 @@ namespace 지니_64
             this.CB_최종가업데이트.UseVisualStyleBackColor = false;
             this.CB_최종가업데이트.CheckedChanged += new System.EventHandler(this.Once_CheckedChanged);
             // 
+            // CB_기본매매변경
+            // 
+            this.CB_기본매매변경.AutoSize = true;
+            this.CB_기본매매변경.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_기본매매변경.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CB_기본매매변경.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CB_기본매매변경.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CB_기본매매변경.Location = new System.Drawing.Point(117, 323);
+            this.CB_기본매매변경.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_기본매매변경.Name = "CB_기본매매변경";
+            this.CB_기본매매변경.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
+            this.CB_기본매매변경.Size = new System.Drawing.Size(122, 22);
+            this.CB_기본매매변경.TabIndex = 118;
+            this.CB_기본매매변경.TabStop = false;
+            this.CB_기본매매변경.Text = "기본매매 변경";
+            this.toolTip1.SetToolTip(this.CB_기본매매변경, "### 가이드매매 자동적용 일때.\r\n### 계좌설정, 기본매매,\r\n### 기능설정 값을 수정할수 있습니다.");
+            this.CB_기본매매변경.UseVisualStyleBackColor = false;
+            this.CB_기본매매변경.CheckedChanged += new System.EventHandler(this.CB_기본매매변경_CheckedChanged);
+            // 
+            // CB_가이드매매
+            // 
+            this.CB_가이드매매.AutoSize = true;
+            this.CB_가이드매매.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_가이드매매.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CB_가이드매매.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CB_가이드매매.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CB_가이드매매.Location = new System.Drawing.Point(1, 323);
+            this.CB_가이드매매.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_가이드매매.Name = "CB_가이드매매";
+            this.CB_가이드매매.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
+            this.CB_가이드매매.Size = new System.Drawing.Size(115, 22);
+            this.CB_가이드매매.TabIndex = 52;
+            this.CB_가이드매매.TabStop = false;
+            this.CB_가이드매매.Text = "매매 자동적용";
+            this.toolTip1.SetToolTip(this.CB_가이드매매, "### 체크하면 가이드매매로 매매됩니다.\r\n### 세부설정을 변경할수 없습니다.\r\n### 설정 업데이트는 자동으로 적용됩니다.\r\n");
+            this.CB_가이드매매.UseVisualStyleBackColor = false;
+            this.CB_가이드매매.CheckedChanged += new System.EventHandler(this.CB_가이드매매_CheckedChanged);
+            // 
             // BT_가이드매매
             // 
             this.BT_가이드매매.BackColor = System.Drawing.Color.DarkSeaGreen;
@@ -1140,7 +1398,7 @@ namespace 지니_64
             this.BT_가이드매매.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BT_가이드매매.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.BT_가이드매매.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_가이드매매.Location = new System.Drawing.Point(1, 277);
+            this.BT_가이드매매.Location = new System.Drawing.Point(1, 300);
             this.BT_가이드매매.Margin = new System.Windows.Forms.Padding(0);
             this.BT_가이드매매.Name = "BT_가이드매매";
             this.BT_가이드매매.Size = new System.Drawing.Size(115, 22);
@@ -1159,7 +1417,7 @@ namespace 지니_64
             this.BT_검색식확인.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BT_검색식확인.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.BT_검색식확인.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_검색식확인.Location = new System.Drawing.Point(117, 277);
+            this.BT_검색식확인.Location = new System.Drawing.Point(117, 300);
             this.BT_검색식확인.Margin = new System.Windows.Forms.Padding(0);
             this.BT_검색식확인.Name = "BT_검색식확인";
             this.BT_검색식확인.Size = new System.Drawing.Size(122, 22);
@@ -1169,43 +1427,137 @@ namespace 지니_64
             this.BT_검색식확인.UseVisualStyleBackColor = false;
             this.BT_검색식확인.Click += new System.EventHandler(this.BT_검색식확인_Click);
             // 
-            // CB_가이드매매
+            // CB_중간가주문
             // 
-            this.CB_가이드매매.AutoSize = true;
-            this.CB_가이드매매.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_가이드매매.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CB_가이드매매.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CB_가이드매매.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CB_가이드매매.Location = new System.Drawing.Point(1, 300);
-            this.CB_가이드매매.Margin = new System.Windows.Forms.Padding(0);
-            this.CB_가이드매매.Name = "CB_가이드매매";
-            this.CB_가이드매매.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
-            this.CB_가이드매매.Size = new System.Drawing.Size(115, 22);
-            this.CB_가이드매매.TabIndex = 52;
-            this.CB_가이드매매.TabStop = false;
-            this.CB_가이드매매.Text = "매매 자동적용";
-            this.toolTip1.SetToolTip(this.CB_가이드매매, "### 체크하면 가이드매매로 매매됩니다.\r\n### 세부설정을 변경할수 없습니다.\r\n### 설정 업데이트는 자동으로 적용됩니다.\r\n");
-            this.CB_가이드매매.UseVisualStyleBackColor = false;
-            this.CB_가이드매매.CheckedChanged += new System.EventHandler(this.CB_가이드매매_CheckedChanged);
+            this.CB_중간가주문.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_중간가주문.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CB_중간가주문.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CB_중간가주문.Location = new System.Drawing.Point(1, 254);
+            this.CB_중간가주문.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_중간가주문.Name = "CB_중간가주문";
+            this.CB_중간가주문.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
+            this.CB_중간가주문.Size = new System.Drawing.Size(115, 22);
+            this.CB_중간가주문.TabIndex = 123;
+            this.CB_중간가주문.TabStop = false;
+            this.CB_중간가주문.Text = "중간가 주문";
+            this.toolTip1.SetToolTip(this.CB_중간가주문, "# 현재가 주문시 중간가로 주문합니다.");
+            this.CB_중간가주문.UseVisualStyleBackColor = false;
             // 
-            // CB_기본매매변경
+            // CB_ETF매입비제외
             // 
-            this.CB_기본매매변경.AutoSize = true;
-            this.CB_기본매매변경.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_기본매매변경.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CB_기본매매변경.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CB_기본매매변경.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CB_기본매매변경.Location = new System.Drawing.Point(117, 300);
-            this.CB_기본매매변경.Margin = new System.Windows.Forms.Padding(0);
-            this.CB_기본매매변경.Name = "CB_기본매매변경";
-            this.CB_기본매매변경.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
-            this.CB_기본매매변경.Size = new System.Drawing.Size(122, 22);
-            this.CB_기본매매변경.TabIndex = 118;
-            this.CB_기본매매변경.TabStop = false;
-            this.CB_기본매매변경.Text = "기본매매 변경";
-            this.toolTip1.SetToolTip(this.CB_기본매매변경, "### 가이드매매 자동적용 일때.\r\n### 계좌설정, 기본매매,\r\n### 기능설정 값을 수정할수 있습니다.");
-            this.CB_기본매매변경.UseVisualStyleBackColor = false;
-            this.CB_기본매매변경.CheckedChanged += new System.EventHandler(this.CB_기본매매변경_CheckedChanged);
+            this.CB_ETF매입비제외.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_ETF매입비제외.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CB_ETF매입비제외.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CB_ETF매입비제외.Location = new System.Drawing.Point(1, 277);
+            this.CB_ETF매입비제외.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_ETF매입비제외.Name = "CB_ETF매입비제외";
+            this.CB_ETF매입비제외.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
+            this.CB_ETF매입비제외.Size = new System.Drawing.Size(115, 22);
+            this.CB_ETF매입비제외.TabIndex = 121;
+            this.CB_ETF매입비제외.TabStop = false;
+            this.CB_ETF매입비제외.Text = "E 비율 제외";
+            this.toolTip1.SetToolTip(this.CB_ETF매입비제외, "# ETF 종목을 매입비율 계산에서 제외 시킵니다.");
+            this.CB_ETF매입비제외.UseVisualStyleBackColor = false;
+            // 
+            // CB_지니64크기고정
+            // 
+            this.CB_지니64크기고정.AutoSize = true;
+            this.CB_지니64크기고정.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_지니64크기고정.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CB_지니64크기고정.Location = new System.Drawing.Point(117, 277);
+            this.CB_지니64크기고정.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_지니64크기고정.Name = "CB_지니64크기고정";
+            this.CB_지니64크기고정.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
+            this.CB_지니64크기고정.Size = new System.Drawing.Size(122, 22);
+            this.CB_지니64크기고정.TabIndex = 114;
+            this.CB_지니64크기고정.Text = "지니크기고정";
+            this.CB_지니64크기고정.UseVisualStyleBackColor = false;
+            this.CB_지니64크기고정.CheckedChanged += new System.EventHandler(this.CB_지니64크기고정_CheckedChanged);
+            // 
+            // CB_지니64항상위에
+            // 
+            this.CB_지니64항상위에.AutoSize = true;
+            this.CB_지니64항상위에.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_지니64항상위에.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CB_지니64항상위에.Location = new System.Drawing.Point(117, 254);
+            this.CB_지니64항상위에.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_지니64항상위에.Name = "CB_지니64항상위에";
+            this.CB_지니64항상위에.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
+            this.CB_지니64항상위에.Size = new System.Drawing.Size(122, 22);
+            this.CB_지니64항상위에.TabIndex = 112;
+            this.CB_지니64항상위에.Text = "지니 항상위에";
+            this.CB_지니64항상위에.UseVisualStyleBackColor = false;
+            this.CB_지니64항상위에.CheckedChanged += new System.EventHandler(this.CB_윈도우최상위_CheckedChanged);
+            // 
+            // CB_최대화로실행
+            // 
+            this.CB_최대화로실행.AutoSize = true;
+            this.CB_최대화로실행.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_최대화로실행.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CB_최대화로실행.Location = new System.Drawing.Point(117, 231);
+            this.CB_최대화로실행.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_최대화로실행.Name = "CB_최대화로실행";
+            this.CB_최대화로실행.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
+            this.CB_최대화로실행.Size = new System.Drawing.Size(122, 22);
+            this.CB_최대화로실행.TabIndex = 113;
+            this.CB_최대화로실행.Text = "최대화로 실행 ";
+            this.CB_최대화로실행.UseVisualStyleBackColor = false;
+            this.CB_최대화로실행.CheckedChanged += new System.EventHandler(this.CB_최대화로실행_CheckedChanged);
+            // 
+            // CB_NXT
+            // 
+            this.CB_NXT.AutoSize = true;
+            this.CB_NXT.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_NXT.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CB_NXT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CB_NXT.Location = new System.Drawing.Point(117, 93);
+            this.CB_NXT.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_NXT.Name = "CB_NXT";
+            this.CB_NXT.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
+            this.CB_NXT.Size = new System.Drawing.Size(122, 22);
+            this.CB_NXT.TabIndex = 120;
+            this.CB_NXT.TabStop = false;
+            this.CB_NXT.Text = "NXT 주문 사용";
+            this.toolTip1.SetToolTip(this.CB_NXT, "실서버만 NXT 주문을 사용할수 있습니다.\r\n※ NXT 주문 간시간은 \r\n※ 8:00:00 ~ 8:50:00 , 15:40 ~ 20:00:00 입" +
+        "니다.\r\n※ NXT 주문 시간에는 지수이평의 일봉만 적용됩니다.");
+            this.CB_NXT.UseVisualStyleBackColor = false;
+            this.CB_NXT.CheckedChanged += new System.EventHandler(this.CB_SOR_CheckedChanged);
+            // 
+            // CB_NXT_매수금지
+            // 
+            this.CB_NXT_매수금지.AutoSize = true;
+            this.CB_NXT_매수금지.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_NXT_매수금지.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CB_NXT_매수금지.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CB_NXT_매수금지.Location = new System.Drawing.Point(117, 116);
+            this.CB_NXT_매수금지.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_NXT_매수금지.Name = "CB_NXT_매수금지";
+            this.CB_NXT_매수금지.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
+            this.CB_NXT_매수금지.Size = new System.Drawing.Size(122, 22);
+            this.CB_NXT_매수금지.TabIndex = 126;
+            this.CB_NXT_매수금지.TabStop = false;
+            this.CB_NXT_매수금지.Text = "NXT 매수 금지";
+            this.toolTip1.SetToolTip(this.CB_NXT_매수금지, "실서버만 NXT 주문을 사용할수 있습니다.\r\n※ NXT 주문 간시간은 \r\n※ 8:00:00 ~ 8:50:00 , 15:40 ~ 20:00:00 입" +
+        "니다.\r\n※ NXT 주문 시간에는 지수이평의 일봉만 적용됩니다.");
+            this.CB_NXT_매수금지.UseVisualStyleBackColor = false;
+            // 
+            // CB_NXT_손실제한
+            // 
+            this.CB_NXT_손실제한.AutoSize = true;
+            this.CB_NXT_손실제한.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CB_NXT_손실제한.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CB_NXT_손실제한.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CB_NXT_손실제한.Location = new System.Drawing.Point(117, 139);
+            this.CB_NXT_손실제한.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_NXT_손실제한.Name = "CB_NXT_손실제한";
+            this.CB_NXT_손실제한.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
+            this.CB_NXT_손실제한.Size = new System.Drawing.Size(122, 22);
+            this.CB_NXT_손실제한.TabIndex = 127;
+            this.CB_NXT_손실제한.TabStop = false;
+            this.CB_NXT_손실제한.Text = "NXT 손실 제한";
+            this.toolTip1.SetToolTip(this.CB_NXT_손실제한, "실서버만 NXT 주문을 사용할수 있습니다.\r\n※ NXT 주문 간시간은 \r\n※ 8:00:00 ~ 8:50:00 , 15:40 ~ 20:00:00 입" +
+        "니다.\r\n※ NXT 주문 시간에는 지수이평의 일봉만 적용됩니다.");
+            this.CB_NXT_손실제한.UseVisualStyleBackColor = false;
             // 
             // BT_telegram_send
             // 
@@ -1215,7 +1567,7 @@ namespace 지니_64
             this.BT_telegram_send.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BT_telegram_send.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.BT_telegram_send.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_telegram_send.Location = new System.Drawing.Point(490, 47);
+            this.BT_telegram_send.Location = new System.Drawing.Point(731, 47);
             this.BT_telegram_send.Margin = new System.Windows.Forms.Padding(0);
             this.BT_telegram_send.Name = "BT_telegram_send";
             this.BT_telegram_send.Size = new System.Drawing.Size(100, 22);
@@ -1229,7 +1581,7 @@ namespace 지니_64
             this.TB_Record_Run.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.TB_Record_Run.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_Record_Run.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F);
-            this.TB_Record_Run.Location = new System.Drawing.Point(809, 68);
+            this.TB_Record_Run.Location = new System.Drawing.Point(1050, 68);
             this.TB_Record_Run.MaxLength = 8;
             this.TB_Record_Run.Name = "TB_Record_Run";
             this.TB_Record_Run.Size = new System.Drawing.Size(55, 22);
@@ -1237,7 +1589,7 @@ namespace 지니_64
             this.TB_Record_Run.Text = "090000";
             this.TB_Record_Run.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_Record_Run.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Record_Run.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Record_Run.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label1
             // 
@@ -1246,11 +1598,11 @@ namespace 지니_64
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
             this.label1.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(740, 26);
+            this.label1.Location = new System.Drawing.Point(981, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(247, 22);
             this.label1.TabIndex = 0;
-            this.label1.Text = "지니_64 녹화";
+            this.label1.Text = "지니64 녹화";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -1260,7 +1612,7 @@ namespace 지니_64
             this.label3.Cursor = System.Windows.Forms.Cursors.Default;
             this.label3.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(863, 47);
+            this.label3.Location = new System.Drawing.Point(1104, 47);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 22);
             this.label3.TabIndex = 0;
@@ -1274,7 +1626,7 @@ namespace 지니_64
             this.label388.Cursor = System.Windows.Forms.Cursors.Default;
             this.label388.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label388.ForeColor = System.Drawing.Color.Black;
-            this.label388.Location = new System.Drawing.Point(863, 68);
+            this.label388.Location = new System.Drawing.Point(1104, 68);
             this.label388.Name = "label388";
             this.label388.Size = new System.Drawing.Size(70, 22);
             this.label388.TabIndex = 0;
@@ -1286,7 +1638,7 @@ namespace 지니_64
             this.TB_Record_start.BackColor = System.Drawing.SystemColors.ControlLight;
             this.TB_Record_start.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_Record_start.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F);
-            this.TB_Record_start.Location = new System.Drawing.Point(932, 47);
+            this.TB_Record_start.Location = new System.Drawing.Point(1173, 47);
             this.TB_Record_start.MaxLength = 8;
             this.TB_Record_start.Name = "TB_Record_start";
             this.TB_Record_start.Size = new System.Drawing.Size(55, 22);
@@ -1294,7 +1646,7 @@ namespace 지니_64
             this.TB_Record_start.Text = "090000";
             this.TB_Record_start.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_Record_start.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Record_start.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Record_start.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // BT_camRun
             // 
@@ -1303,7 +1655,7 @@ namespace 지니_64
             this.BT_camRun.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BT_camRun.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.MenuHighlight;
             this.BT_camRun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BT_camRun.Location = new System.Drawing.Point(809, 47);
+            this.BT_camRun.Location = new System.Drawing.Point(1050, 47);
             this.BT_camRun.Name = "BT_camRun";
             this.BT_camRun.Size = new System.Drawing.Size(55, 22);
             this.BT_camRun.TabIndex = 105;
@@ -1320,7 +1672,7 @@ namespace 지니_64
             this.CB_Record.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.CB_Record.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.Highlight;
             this.CB_Record.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_Record.Location = new System.Drawing.Point(740, 68);
+            this.CB_Record.Location = new System.Drawing.Point(981, 68);
             this.CB_Record.Name = "CB_Record";
             this.CB_Record.Size = new System.Drawing.Size(70, 22);
             this.CB_Record.TabIndex = 34;
@@ -1333,7 +1685,7 @@ namespace 지니_64
             this.TB_token.BackColor = System.Drawing.SystemColors.ControlLight;
             this.TB_token.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_token.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_token.Location = new System.Drawing.Point(589, 89);
+            this.TB_token.Location = new System.Drawing.Point(830, 89);
             this.TB_token.Margin = new System.Windows.Forms.Padding(0);
             this.TB_token.MaxLength = 100;
             this.TB_token.Name = "TB_token";
@@ -1346,7 +1698,7 @@ namespace 지니_64
             this.TB_Chat_ID.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.TB_Chat_ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_Chat_ID.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Chat_ID.Location = new System.Drawing.Point(589, 68);
+            this.TB_Chat_ID.Location = new System.Drawing.Point(830, 68);
             this.TB_Chat_ID.Margin = new System.Windows.Forms.Padding(0);
             this.TB_Chat_ID.MaxLength = 10;
             this.TB_Chat_ID.Name = "TB_Chat_ID";
@@ -1360,7 +1712,7 @@ namespace 지니_64
             this.TB_telegram_send_ID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_telegram_send_ID.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_telegram_send_ID.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.TB_telegram_send_ID.Location = new System.Drawing.Point(589, 47);
+            this.TB_telegram_send_ID.Location = new System.Drawing.Point(830, 47);
             this.TB_telegram_send_ID.Margin = new System.Windows.Forms.Padding(0);
             this.TB_telegram_send_ID.MaxLength = 20;
             this.TB_telegram_send_ID.Name = "TB_telegram_send_ID";
@@ -1373,7 +1725,7 @@ namespace 지니_64
             this.TB_Record_end.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.TB_Record_end.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_Record_end.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F);
-            this.TB_Record_end.Location = new System.Drawing.Point(932, 68);
+            this.TB_Record_end.Location = new System.Drawing.Point(1173, 68);
             this.TB_Record_end.MaxLength = 8;
             this.TB_Record_end.Name = "TB_Record_end";
             this.TB_Record_end.Size = new System.Drawing.Size(55, 22);
@@ -1381,13 +1733,13 @@ namespace 지니_64
             this.TB_Record_end.Text = "153000";
             this.TB_Record_end.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_Record_end.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Record_end.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Record_end.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label81
             // 
             this.label81.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label81.Location = new System.Drawing.Point(490, 68);
+            this.label81.Location = new System.Drawing.Point(731, 68);
             this.label81.Margin = new System.Windows.Forms.Padding(0);
             this.label81.Name = "label81";
             this.label81.Size = new System.Drawing.Size(100, 22);
@@ -1405,7 +1757,7 @@ namespace 지니_64
             "( X )",
             "Ocam",
             "OBS"});
-            this.CBB_Record.Location = new System.Drawing.Point(740, 47);
+            this.CBB_Record.Location = new System.Drawing.Point(981, 47);
             this.CBB_Record.Name = "CBB_Record";
             this.CBB_Record.Size = new System.Drawing.Size(83, 22);
             this.CBB_Record.TabIndex = 109;
@@ -1421,7 +1773,7 @@ namespace 지니_64
             this.CB_텔레그램사용.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
             this.CB_텔레그램사용.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
             this.CB_텔레그램사용.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_텔레그램사용.Location = new System.Drawing.Point(490, 26);
+            this.CB_텔레그램사용.Location = new System.Drawing.Point(731, 26);
             this.CB_텔레그램사용.Margin = new System.Windows.Forms.Padding(0);
             this.CB_텔레그램사용.Name = "CB_텔레그램사용";
             this.CB_텔레그램사용.Size = new System.Drawing.Size(100, 22);
@@ -1441,7 +1793,7 @@ namespace 지니_64
             this.BT_기능설정저장.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BT_기능설정저장.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.BT_기능설정저장.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BT_기능설정저장.Location = new System.Drawing.Point(490, 2);
+            this.BT_기능설정저장.Location = new System.Drawing.Point(731, 2);
             this.BT_기능설정저장.Margin = new System.Windows.Forms.Padding(0);
             this.BT_기능설정저장.Name = "BT_기능설정저장";
             this.BT_기능설정저장.Size = new System.Drawing.Size(248, 22);
@@ -1459,22 +1811,6 @@ namespace 지니_64
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip1.ToolTipTitle = "사용방법";
             // 
-            // CB_ETF매입비제외
-            // 
-            this.CB_ETF매입비제외.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CB_ETF매입비제외.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CB_ETF매입비제외.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CB_ETF매입비제외.Location = new System.Drawing.Point(1, 254);
-            this.CB_ETF매입비제외.Margin = new System.Windows.Forms.Padding(0);
-            this.CB_ETF매입비제외.Name = "CB_ETF매입비제외";
-            this.CB_ETF매입비제외.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
-            this.CB_ETF매입비제외.Size = new System.Drawing.Size(115, 22);
-            this.CB_ETF매입비제외.TabIndex = 121;
-            this.CB_ETF매입비제외.TabStop = false;
-            this.CB_ETF매입비제외.Text = "E 비율 제외";
-            this.toolTip1.SetToolTip(this.CB_ETF매입비제외, "# ETF 종목을 매입비율 계산에서 제외 시킵니다.");
-            this.CB_ETF매입비제외.UseVisualStyleBackColor = false;
-            // 
             // Form_Function
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1491,6 +1827,8 @@ namespace 지니_64
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Function_FormClosing);
             this.기능설정_P.ResumeLayout(false);
             this.기능설정_P.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -1513,14 +1851,11 @@ namespace 지니_64
         public System.Windows.Forms.CheckBox CB_하매도취소;
         public System.Windows.Forms.CheckBox CB_VI매도취소;
         public System.Windows.Forms.CheckBox CB_동작실시간;
-        public System.Windows.Forms.CheckBox CB_매매엑셀저장;
-        public System.Windows.Forms.CheckBox CB_체결엑셀저장;
-        public System.Windows.Forms.CheckBox CB_주문엑셀저장;
         public System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.ToolTip toolTip1;
-        public System.Windows.Forms.CheckBox CB_지니_64항상위에;
+        public System.Windows.Forms.CheckBox CB_지니64항상위에;
         public System.Windows.Forms.CheckBox CB_최대화로실행;
-        public System.Windows.Forms.CheckBox CB_지니_64크기고정;
+        public System.Windows.Forms.CheckBox CB_지니64크기고정;
         public System.Windows.Forms.CheckBox CB_익절모니터;
         public System.Windows.Forms.CheckBox CB_익회모니터;
         public System.Windows.Forms.CheckBox CB_최종매입가_A;
@@ -1579,5 +1914,26 @@ namespace 지니_64
         public System.Windows.Forms.Button BT_검색식확인;
         public System.Windows.Forms.CheckBox CB_NXT;
         public System.Windows.Forms.CheckBox CB_ETF매입비제외;
+        public System.Windows.Forms.CheckBox CB_중간가주문;
+        public System.Windows.Forms.CheckBox CB_NXT_손실제한;
+        public System.Windows.Forms.CheckBox CB_NXT_매수금지;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        public System.Windows.Forms.CheckBox CB_신용_주문사용;
+        public System.Windows.Forms.CheckBox CB_신용_신용우선사용;
+        public System.Windows.Forms.CheckBox CB_신용_현금우선사용;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Label label_신용;
+        public System.Windows.Forms.TextBox TB_신용_신용증거금비율;
+        public System.Windows.Forms.Label label_신용_1;
+        public System.Windows.Forms.CheckBox CB_신용_현신별도사용;
+        public System.Windows.Forms.Label 경고_6;
+        public System.Windows.Forms.Label 경고_5;
+        public System.Windows.Forms.Label 경고_4;
+        public System.Windows.Forms.Label 경고_3;
+        public System.Windows.Forms.Label 경고_1;
+        public System.Windows.Forms.Label 경고_7;
+        public System.Windows.Forms.Label 경고_2;
+        public System.Windows.Forms.Label label_신용_2;
     }
 }

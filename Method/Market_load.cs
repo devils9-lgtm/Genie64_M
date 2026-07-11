@@ -1,78 +1,99 @@
-﻿using System;
+﻿using Microsoft.Office.Interop.Excel;
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
+using static 지니64.box.Form_Jisu;
 
-namespace 지니_64
+namespace 지니64
 {
-    public class Market_load
+    public class Market_load : Form1
     {
-        public static void play()
+        public static void Loading(string code, string name, string lastPrice, string state, string marketName, string orderWarning, string nxtEnable)
         {
-            var axKHOpenAPI1 = Form1.form1.axKHOpenAPI1;
             var collection = Form1.form1.collection;
 
-            Console.WriteLine("Market loding 시작  :: " + Form1.server + "    " + DateTime.Now.ToString("HH:mm:ss.fff"));
 
-            Form1.동작_Log("Market loding 시작  :: " + Form1.server);
+            string market = "D";
+            if (marketName == "거래소") market = "P";
+            if (marketName == "ETF") market = "E";
 
-            string codeList_0 = axKHOpenAPI1.GetCodeListByMarket("0");
-            string[] codeArray_0 = codeList_0.Split(';');
+            int 종가 = int.Parse(lastPrice);
 
-            for (int i = 0; i < codeArray_0.Length; i++)
+            // [변수 초기화] 일단 안전하게 '신용불가 / 증거금 100%'로 시작
+            bool 신용가능 = false;
+            double 증거금률 = 1.0;
+
+            // =========================================================================
+            // 🛠️ [파싱 로직] state 문자열 분석 (관리/정지/증거금률)
+            // =========================================================================
+            // 1. 위험 종목 확인 (관리, 정지, 정리) -> 포함되면 바로 신용 불가
+            if (state.IndexOf("관리") >= 0 || state.IndexOf("정지") >= 0 || state.IndexOf("정리") >= 0)
             {
-                string Code = codeArray_0[i];
+                신용가능 = false;
+                증거금률 = 1.0;
+            }
+            else
+            {
+                // 2. "증거금" 키워드 위치 찾기
+                int findIndex = state.IndexOf("증거금");
 
-                if (Code.Length > 0)
+                if (findIndex >= 0)
                 {
-                    string market = "P";
-                    string Pname = Form1.form1.axKHOpenAPI1.GetMasterCodeName(Code);
-                    int 종가 = int.Parse(axKHOpenAPI1.GetMasterLastPrice(Code));
+                    // "증거금" 글자수(3) 만큼 뒤로 가서 숫자 읽기
+                    int numIdx = findIndex + 3;
 
-                    if (Stock_Add(Pname))
+                    // 문자열 길이 안전 체크 (숫자 2자리는 있어야 함)
+                    if (state.Length >= numIdx + 2)
                     {
-                        if (!Form1.Market_Item_List.ContainsKey(Code))
+                        // ★ ASCII 코드로 숫자 바로 계산 (Fast!)
+                        int calcRate = (state[numIdx] - '0') * 10 + (state[numIdx + 1] - '0');
+
+                        // 예외처리: "10"으로 읽히면 "100%"로 간주
+                        if (calcRate == 10) calcRate = 100;
+
+                        // 증거금률 설정 (0.4, 0.3, 1.0 등)
+                        증거금률 = (double)calcRate / 100.0;
+
+                        // 3. 신용 가능 여부 최종 판단 (100% 미만일 때만 True)
+                        if (calcRate < 100)
                         {
-                            if (Pname.Contains("KODEX ")) market = "E";
-                            if (Pname.Contains("TIGER ")) market = "E";
-                            if (Pname.Contains("KOSEF ")) market = "E";
-                            if (Pname.Contains("RISE ")) market = "E";
-                            if (Pname.Contains("ACE ")) market = "E";
-                            if (Pname.Contains("SOL ")) market = "E";
-
-                            Form1.Market_Item_List.Add(Code, new Market_Item(true, true, true, true, true, true, Pname, Code, market, 0, 0, 0, 0, 종가, 0, "정상", 0, Form1.timenow, 0, 0, false, 0, 0, Form1.timenow, 0, 0, false, 0, 0, Form1.timenow, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0));
-
-                            collection.Add(Pname);
+                            신용가능 = true;
+                        }
+                        else
+                        {
+                            신용가능 = false; // 증거금 100%는 신용 불가
                         }
                     }
                 }
             }
 
-            string codeList_10 = axKHOpenAPI1.GetCodeListByMarket("10");
-            string[] codeArray_10 = codeList_10.Split(';');
-
-            for (int n = 0; n < codeArray_10.Length; n++)
+            if (Stock_Add())
             {
-                string Code = codeArray_10[n];
-
-                if (Code.Length > 0)
+                Market_Item 신규_아이템 = new Market_Item
                 {
-                    string market = "D";
-                    string Dname = axKHOpenAPI1.GetMasterCodeName(Code);
-                    int 종가 = int.Parse(axKHOpenAPI1.GetMasterLastPrice(Code));
+                    종목명 = name,
+                    state = state,
+                    신용가능 = 신용가능,
+                    증거금률 = 증거금률,
+                    종목코드 = code,
+                    Market = market,
+                    Last_price = 종가,
 
-                    if (Stock_Add(Dname))
-                    {
-                        if (!Form1.Market_Item_List.ContainsKey(Code))
-                        {
-                            Form1.Market_Item_List.Add(Code, new Market_Item(true, true, true, true, true, true, Dname, Code, market, 0, 0, 0, 0, 종가, 0, "정상", 0, Form1.timenow, 0, 0, false, 0, 0, Form1.timenow, 0, 0, false, 0, 0, Form1.timenow, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0));
+                    // 시간 관련 변수들은 필요한 값으로 초기화
+                    도시간 = Get.TimeNow,
+                    수시간_A = Get.TimeNow,
+                    수시간_B = Get.TimeNow
+                };
 
-                            collection.Add(Dname);
-                        }
-                    }
+                if (Form1.Market_Item_List.TryAdd(code, 신규_아이템))
+                {
+                    collection.Add(name);
                 }
             }
 
             Form1.form1.TB_관심그룹_종목명.AutoCompleteCustomSource = collection;
 
-            bool Stock_Add(string name)
+            bool Stock_Add()
             {
                 bool 등록 = true;
 
@@ -115,90 +136,55 @@ namespace 지니_64
                 if (name.Contains("스팩")) 등록 = false;
                 if (name.Contains("한국ANKOR유전")) 등록 = false;
 
-                //   if (등록) Console.WriteLine(" ETF :: " + name);
-
                 return 등록;
             }
 
-            string codeList_NXT = axKHOpenAPI1.GetCodeListByMarket("NXT");
-            string[] codeArray_NXT = codeList_NXT.Split(';');
-
-            for (int n = 0; n < codeArray_NXT.Length; n++)
+            if (nxtEnable.Equals("Y"))
             {
-                string Code = codeArray_NXT[n];
-
-                Form1.NXT_list.Add(new NXT(Code.Trim()));
+                NXT_list.Add(code.Trim());
             }
-
-            Form1.동작_Log("NXT가능종목 불러오기 완료.");
-
-            Console.WriteLine("Market loding 완료  :: " + Form1.server + "    " + DateTime.Now.ToString("HH:mm:ss.fff"));
-            Form1.동작_Log("Market loding 완료  :: " + Form1.server);
-
-         
-
         }
 
-        public static void Add_AVG_jisu()
+        public static void 지수이평추세_초기화()
         {
-            Form1.AVG_jisu.Add(new AVG_jisu(Properties.Settings.Default.CB_kospi_new_stop,
-                                      Properties.Settings.Default.CB_kospi_add_stop,
-                                      Properties.Settings.Default.CB_use_kospi_min_03,
-                                      Properties.Settings.Default.CB_use_kospi_min_05,
-                                      Properties.Settings.Default.CB_use_kospi_min_10,
-                                      Properties.Settings.Default.CB_use_kospi_min_20,
-                                      Properties.Settings.Default.CB_use_kospi_min_30,
-                                      Properties.Settings.Default.CB_use_kospi_min_60,
-                                      Properties.Settings.Default.CB_use_kospi_day_03,
-                                      Properties.Settings.Default.CB_use_kospi_day_05,
-                                      Properties.Settings.Default.CB_use_kospi_day_10,
-                                      Properties.Settings.Default.CB_use_kospi_day_20,
-                                      Properties.Settings.Default.CB_use_kospi_day_40,
-                                      Properties.Settings.Default.CB_use_kospi_day_60,
-                                      Properties.Settings.Default.CB_UD_kospi_min_03,
-                                      Properties.Settings.Default.CB_UD_kospi_min_05,
-                                      Properties.Settings.Default.CB_UD_kospi_min_10,
-                                      Properties.Settings.Default.CB_UD_kospi_min_20,
-                                      Properties.Settings.Default.CB_UD_kospi_min_30,
-                                      Properties.Settings.Default.CB_UD_kospi_min_60,
-                                      Properties.Settings.Default.CB_UD_kospi_day_03,
-                                      Properties.Settings.Default.CB_UD_kospi_day_05,
-                                      Properties.Settings.Default.CB_UD_kospi_day_10,
-                                      Properties.Settings.Default.CB_UD_kospi_day_20,
-                                      Properties.Settings.Default.CB_UD_kospi_day_40,
-                                      Properties.Settings.Default.CB_UD_kospi_day_60,
-                                      true, true, true, true, true, true, true, true, true, true, true, true,
-                                      true, true, true, true, true, true, true, true, true, true, true, true));
+            // 리스트 초기화 (중복 추가 방지)
+            지수이평추세.Clear();
 
-            Form1.AVG_jisu.Add(new AVG_jisu(Properties.Settings.Default.CB_kosdaq_new_stop,
-                                        Properties.Settings.Default.CB_kosdaq_add_stop,
-                                        Properties.Settings.Default.CB_use_kosdaq_min_03,
-                                        Properties.Settings.Default.CB_use_kosdaq_min_05,
-                                        Properties.Settings.Default.CB_use_kosdaq_min_10,
-                                        Properties.Settings.Default.CB_use_kosdaq_min_20,
-                                        Properties.Settings.Default.CB_use_kosdaq_min_30,
-                                        Properties.Settings.Default.CB_use_kosdaq_min_60,
-                                        Properties.Settings.Default.CB_use_kosdaq_day_03,
-                                        Properties.Settings.Default.CB_use_kosdaq_day_05,
-                                        Properties.Settings.Default.CB_use_kosdaq_day_10,
-                                        Properties.Settings.Default.CB_use_kosdaq_day_20,
-                                        Properties.Settings.Default.CB_use_kosdaq_day_40,
-                                        Properties.Settings.Default.CB_use_kosdaq_day_60,
-                                        Properties.Settings.Default.CB_UD_kosdaq_min_03,
-                                        Properties.Settings.Default.CB_UD_kosdaq_min_05,
-                                        Properties.Settings.Default.CB_UD_kosdaq_min_10,
-                                        Properties.Settings.Default.CB_UD_kosdaq_min_20,
-                                        Properties.Settings.Default.CB_UD_kosdaq_min_30,
-                                        Properties.Settings.Default.CB_UD_kosdaq_min_60,
-                                        Properties.Settings.Default.CB_UD_kosdaq_day_03,
-                                        Properties.Settings.Default.CB_UD_kosdaq_day_05,
-                                        Properties.Settings.Default.CB_UD_kosdaq_day_10,
-                                        Properties.Settings.Default.CB_UD_kosdaq_day_20,
-                                        Properties.Settings.Default.CB_UD_kosdaq_day_40,
-                                        Properties.Settings.Default.CB_UD_kosdaq_day_60,
-                                        true, true, true, true, true, true, true, true, true, true, true, true,
-                                        true, true, true, true, true, true, true, true, true, true, true, true));
+            // [1] 코스피 객체 생성 및 설정
+            var kospi = new 지수이평추세
+            {
+                Day_추세_03 = true,
+                Day_추세_05 = true,
+                Day_추세_10 = true,
+                Day_추세_20 = true,
+                Day_추세_40 = true,
+                Day_추세_60 = true,
+                Min_추세_03 = true,
+                Min_추세_05 = true,
+                Min_추세_10 = true,
+                Min_추세_20 = true,
+                Min_추세_30 = true,
+                Min_추세_60 = true,
+            };
+            지수이평추세.Add(kospi); // 0번 인덱스에 추가
 
+            // [2] 코스닥 객체 생성 및 설정
+            var kosdaq = new 지수이평추세
+            {
+                Day_추세_03 = true,
+                Day_추세_05 = true,
+                Day_추세_10 = true,
+                Day_추세_20 = true,
+                Day_추세_40 = true,
+                Day_추세_60 = true,
+                Min_추세_03 = true,
+                Min_추세_05 = true,
+                Min_추세_10 = true,
+                Min_추세_20 = true,
+                Min_추세_30 = true,
+                Min_추세_60 = true,
+            };
+            지수이평추세.Add(kosdaq); // 1번 인덱스에 추가
         }
     }
 }

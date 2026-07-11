@@ -1,6 +1,0 @@
-81111642
-appkey 
-DHZsJIV7wDUqMHmUhVBUory0C-T7IanTV8c-GAQufuM
-
-app secret 
-J8E9UJqUEMlKGj1Mu6EBdtEy8ITCru9DTibkEslfnys

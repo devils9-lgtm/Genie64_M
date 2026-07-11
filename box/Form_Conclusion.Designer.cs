@@ -1,5 +1,5 @@
 ﻿
-namespace 지니_64.box
+namespace 지니64.box
 {
     partial class Form_Conclusion
     {
@@ -130,8 +130,10 @@ namespace 지니_64.box
             this.Conclusion_DataGridView.TabIndex = 68;
             this.Conclusion_DataGridView.TabStop = false;
             this.Conclusion_DataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellClick);
+            this.Conclusion_DataGridView.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.Conclusion_DataGridView_CellPainting);
             this.Conclusion_DataGridView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_CellValueChanged);
-            this.Conclusion_DataGridView.CurrentCellDirtyStateChanged += new System.EventHandler(this.dataGridView_CurrentCellDirtyStateChanged);
+            this.Conclusion_DataGridView.CurrentCellDirtyStateChanged += new System.EventHandler(this.DataGridView_CurrentCellDirtyStateChanged);
+            this.Conclusion_DataGridView.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Conclusion_DataGridView_MouseDown);
             // 
             // Num_체결
             // 
@@ -147,7 +149,7 @@ namespace 지니_64.box
             // 
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.주문유형_체결.DefaultCellStyle = dataGridViewCellStyle4;
-            this.주문유형_체결.HeaderText = "주문유형";
+            this.주문유형_체결.HeaderText = "매수매도";
             this.주문유형_체결.Name = "주문유형_체결";
             this.주문유형_체결.Width = 60;
             // 
@@ -211,7 +213,7 @@ namespace 지니_64.box
             this.체결가_체결.HeaderText = "체결가";
             this.체결가_체결.Name = "체결가_체결";
             this.체결가_체결.ReadOnly = true;
-            this.체결가_체결.Width = 55;
+            this.체결가_체결.Width = 65;
             // 
             // 주문수량_체결
             // 
@@ -259,14 +261,14 @@ namespace 지니_64.box
             this.P현재가_체결.HeaderText = "P현재가";
             this.P현재가_체결.Name = "P현재가_체결";
             this.P현재가_체결.ReadOnly = true;
-            this.P현재가_체결.Width = 55;
+            this.P현재가_체결.Width = 65;
             // 
             // 거래구분_체결
             // 
             this.거래구분_체결.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.거래구분_체결.DefaultCellStyle = dataGridViewCellStyle15;
-            this.거래구분_체결.HeaderText = "거래구분";
+            this.거래구분_체결.HeaderText = "시장가";
             this.거래구분_체결.Name = "거래구분_체결";
             this.거래구분_체결.ReadOnly = true;
             this.거래구분_체결.Width = 65;

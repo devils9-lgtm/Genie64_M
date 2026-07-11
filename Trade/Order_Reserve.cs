@@ -4,12 +4,13 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using 지니64.RESTAPI;
 
-namespace 지니_64
+namespace 지니64
 {
-    public class Order_Reserve
+    public class Order_Reserve : Form1
     {
-        public static int get_예약번호()
+        public static int Get_예약번호()
         {
             int 예약번호 = 10000;
 
@@ -25,7 +26,7 @@ namespace 지니_64
             return 예약번호;
         }
 
-        public static void CBB_예약종류_SelectedIndexChanged(object sender)
+        public static void CBB_예약종류_SelectedIndexChanged()
         {
             if (Form_Special.form.CBB_예약주문_예약종류.SelectedIndex.Equals(0))
             {
@@ -102,14 +103,15 @@ namespace 지니_64
                         if (주문.검색식.Contains(위치))
                         {
                             Market_Item Market = Form1.Market_Item_List[주문.종목코드];
+                            int 현재가 = Method.호가맞추기(Market.현재가, Market.Market);
 
-                            int 기준가 = Market.현재가;
+                            int 기준가 = 현재가;
                             if (Form_Special.form.CBB_예약주문_예약종류.SelectedIndex == 0 || Form_Special.form.CBB_예약주문_예약종류.SelectedIndex == 1)
                             {
                                 기준가 = Market.Last_price;
                             }
 
-                            Form_Special.form.LB_예약리스트.Items.Add(주문.예약번호 + " " + 주문.종목명 + " :: 등록일: " + 주문.등록일 + " " + GET.주문유형(주문.주문유형) + " 주문가격: " + 주문.주문가 + " 주문수량: " + 주문.주문수량 + " 체결수량: " + 주문.체결수량 + " 주문비: " + Math.Round((주문.주문가 - 기준가) / (double)주문.주문가 * 100, 2));
+                            Form_Special.form.LB_예약리스트.Items.Add(주문.예약번호 + " " + 주문.종목명 + " :: 등록일: " + 주문.등록일 + " " + GET.매수매도str(주문.매수매도) + " 주문가격: " + 주문.주문가 + " 주문수량: " + 주문.주문수량 + " 체결수량: " + 주문.체결수량 + " 주문비: " + Math.Round((주문.주문가 - 기준가) / (double)주문.주문가 * 100, 2));
                             Form_Special.form.LB_예약리스트.Items.Add("              :: 종가연동: " + 주문.연동 + " 체결완료삭제: " + 주문.체결완료삭제 + " 전량매도삭제: " + 주문.전량매도삭제 + " " + 주문.검색식);
                         }
                     }
@@ -149,7 +151,7 @@ namespace 지니_64
                                 double 비중 = 장전매수비중;
                                 int 선택 = Form_Special.form.CBB_예약주문_장전매수선택.SelectedIndex;
                                 int 주문가 = int.Parse(Form_Special.form.TB_예약주문_주문가.Text);
-                                int 주문수량 = Method.주문수량계산(잔고, 주문가, 장전매수비중, Form_Special.form.CBB_예약주문_장전매수선택.SelectedIndex, 1);
+                                int 주문수량 = Method.주문수량계산(잔고, 주문가, 장전매수비중, Form_Special.form.CBB_예약주문_장전매수선택.SelectedIndex);
                                 double 주문비 = double.Parse(Form_Special.form.TB_예약주문_주문비계산값.Text);
 
                                 예약실행(위치, 비중, 선택, 주문가, 주문수량, 주문비, Form_Special.form.CB_예약주문_장전연동.Checked, Form_Special.form.CB_예약주문_장전체결삭제.Checked, Form_Special.form.CB_예약주문_장전전량매도삭제.Checked);
@@ -187,7 +189,7 @@ namespace 지니_64
                                 double 비중 = 종가매수비중;
                                 int 선택 = Form_Special.form.CBB_예약주문_종가매수선택.SelectedIndex;
                                 int 주문가 = int.Parse(Form_Special.form.TB_예약주문_주문가.Text);
-                                int 주문수량 = Method.주문수량계산(잔고, 주문가, 종가매수비중, Form_Special.form.CBB_예약주문_종가매수선택.SelectedIndex, 1);
+                                int 주문수량 = Method.주문수량계산(잔고, 주문가, 종가매수비중, Form_Special.form.CBB_예약주문_종가매수선택.SelectedIndex);
                                 double 주문비 = double.Parse(Form_Special.form.TB_예약주문_주문비계산값.Text);
 
                                 예약실행(위치, 비중, 선택, 주문가, 주문수량, 주문비, Form_Special.form.CB_예약주문_종가연동.Checked, Form_Special.form.CB_예약주문_종가체결삭제.Checked, Form_Special.form.CB_예약주문_종가전량매도삭제.Checked);
@@ -225,7 +227,7 @@ namespace 지니_64
                                 double 비중 = 장전매수비중;
                                 int 선택 = Form_Special.form.CBB_예약주문_장전매수선택.SelectedIndex;
                                 int 주문가 = int.Parse(Form_Special.form.TB_예약주문_주문가.Text);
-                                int 주문수량 = Method.주문수량계산(잔고, 주문가, 장전매수비중, Form_Special.form.CBB_예약주문_장전매수선택.SelectedIndex, 1);
+                                int 주문수량 = Method.주문수량계산(잔고, 주문가, 장전매수비중, Form_Special.form.CBB_예약주문_장전매수선택.SelectedIndex);
                                 double 주문비 = double.Parse(Form_Special.form.TB_예약주문_주문비계산값.Text);
 
                                 예약실행(위치, 비중, 선택, 주문가, 주문수량, 주문비, Form_Special.form.CB_예약주문_장전연동.Checked, Form_Special.form.CB_예약주문_장전체결삭제.Checked, Form_Special.form.CB_예약주문_장전전량매도삭제.Checked);
@@ -256,7 +258,7 @@ namespace 지니_64
                                 double 비중 = 장전매도비중;
                                 int 선택 = Form_Special.form.CBB_예약주문_장전매도선택.SelectedIndex;
                                 int 주문가 = int.Parse(Form_Special.form.TB_예약주문_주문가.Text);
-                                int 주문수량 = Method.주문수량계산(잔고, 주문가, 장전매도비중, Form_Special.form.CBB_예약주문_장전매도선택.SelectedIndex, 2);
+                                int 주문수량 = Method.주문수량계산(잔고, 주문가, 장전매도비중, Form_Special.form.CBB_예약주문_장전매도선택.SelectedIndex);
                                 double 주문비 = double.Parse(Form_Special.form.TB_예약주문_주문비계산값.Text);
 
                                 예약실행(위치, 비중, 선택, 주문가, 주문수량, 주문비, Form_Special.form.CB_예약주문_장전연동.Checked, Form_Special.form.CB_예약주문_장전체결삭제.Checked, Form_Special.form.CB_예약주문_장전전량매도삭제.Checked);
@@ -287,7 +289,7 @@ namespace 지니_64
                                 double 비중 = 종가매수비중;
                                 int 선택 = Form_Special.form.CBB_예약주문_종가매수선택.SelectedIndex;
                                 int 주문가 = int.Parse(Form_Special.form.TB_예약주문_주문가.Text);
-                                int 주문수량 = Method.주문수량계산(잔고, 주문가, 종가매수비중, Form_Special.form.CBB_예약주문_종가매수선택.SelectedIndex, 1);
+                                int 주문수량 = Method.주문수량계산(잔고, 주문가, 종가매수비중, Form_Special.form.CBB_예약주문_종가매수선택.SelectedIndex);
                                 double 주문비 = double.Parse(Form_Special.form.TB_예약주문_주문비계산값.Text);
 
                                 예약실행(위치, 비중, 선택, 주문가, 주문수량, 주문비, Form_Special.form.CB_예약주문_종가연동.Checked, Form_Special.form.CB_예약주문_종가체결삭제.Checked, Form_Special.form.CB_예약주문_종가전량매도삭제.Checked);
@@ -318,7 +320,7 @@ namespace 지니_64
                                 double 비중 = 종가매도비중;
                                 int 선택 = Form_Special.form.CBB_예약주문_종가매도선택.SelectedIndex;
                                 int 주문가 = int.Parse(Form_Special.form.TB_예약주문_주문가.Text);
-                                int 주문수량 = Method.주문수량계산(잔고, 주문가, 종가매도비중, Form_Special.form.CBB_예약주문_종가매도선택.SelectedIndex, 2);
+                                int 주문수량 = Method.주문수량계산(잔고, 주문가, 종가매도비중, Form_Special.form.CBB_예약주문_종가매도선택.SelectedIndex);
                                 double 주문비 = double.Parse(Form_Special.form.TB_예약주문_주문비계산값.Text);
 
                                 예약실행(위치, 비중, 선택, 주문가, 주문수량, 주문비, Form_Special.form.CB_예약주문_종가연동.Checked, Form_Special.form.CB_예약주문_종가체결삭제.Checked, Form_Special.form.CB_예약주문_종가전량매도삭제.Checked);
@@ -342,11 +344,11 @@ namespace 지니_64
                         List<주문예약> results = Form1.form1.주문예약_List.FindAll(o => o.종목코드.Equals(Market.종목코드));
                         if (results.Count == 199)
                         {
-                            Form1.알림창("[ 예약주문에러 ]\n\n종목당 예약주문은 최대 200개 까지 등록가능 합니다.", 5, false);
+                            Helper.알림창_멀티("예약주문에러","종목당 예약주문은 최대 200개 까지 등록가능 합니다.", 5, false);
 
-                            Form1.Error_Log(" ");
-                            Form1.Error_Log("[예약주문에러] 종목당 예약주문은 최대 200개 까지 등록가능 합니다.");
-                            Form1.Error_Log(" ");
+                            Log.에러기록(" ");
+                            Log.에러기록("[예약주문에러] 종목당 예약주문은 최대 200개 까지 등록가능 합니다.");
+                            Log.에러기록(" ");
                         }
                         else
                         {
@@ -363,10 +365,10 @@ namespace 지니_64
                         Task Task_Action = new Task(
                         () =>
                         {
-                            string 주문시간 = Properties.Settings.Default.MTB_예약주문_장전주문시간.ToString();
+                            string 주문시간 = GenieConfig.MTB_예약주문_장전주문시간.ToString();
                             if (위치.Contains("종가"))
                             {
-                                주문시간 = Properties.Settings.Default.MTB_예약주문_종가주문시간.ToString();
+                                주문시간 = GenieConfig.MTB_예약주문_종가주문시간.ToString();
                             }
 
                             int 주문유형 = 1;
@@ -375,17 +377,17 @@ namespace 지니_64
                                 주문유형 = 2;
                             }
 
-                            Form_Special.form.Invoke((MethodInvoker)delegate ()
+                            Helper.안전한_UI_업데이트(Form_Special.form, () =>
                             {
                                 using (new CenterWinDialog(Form_Special.form))
                                     if (MessageBox.Show(Form_Special.form.TB_예약주문_종목명.Text + "\n' " + 위치 + " ' 주문가: " + 주문가 + "로 예약 하시겠습니까 ?" + "\n(주문시간 은 " + 주문시간 + " 입니다.)", 위치 + " 추가", MessageBoxButtons.YesNo) == DialogResult.Yes)
                                     {
                                         double 기준가_ = double.Parse(Form_Special.form.TB_예약주문_기준가.Text);
 
-                                        주문예약 주문추가 = new 주문예약(Form1.today, get_예약번호(), "0000", 주문유형, Market.종목코드, Market.종목명, 주문비, 비중, 선택, 주문가, 주문수량, 0, "[예약주문] " + 위치, "++", true, 연동, 체결완료삭제, 전량매도삭제);
+                                        주문예약 주문추가 = new 주문예약(str.today, Get_예약번호(), "0000", 주문유형, Market.종목코드, Market.종목명, 주문비, 비중, 선택, 주문가, 주문수량, 0, "[예약주문] " + 위치, "+++", true, 연동, 체결완료삭제, 전량매도삭제);
                                         Form1.form1.주문예약_List.Add(주문추가);
 
-                                        save_주문예약();
+                                        SaveToFile.주문예약_파일저장();
 
                                         if (위치.Contains("장전'매수'"))
                                         {
@@ -513,7 +515,7 @@ namespace 지니_64
                     Task Task_Action = new Task(
                     () =>
                     {
-                        Form_Special.form.Invoke((MethodInvoker)delegate ()
+                        Helper.안전한_UI_업데이트(Form_Special.form, () =>
                         {
                             int index = Form_Special.form.LB_예약리스트.SelectedIndex;
                             string 종목명 = Form_Special.form.LB_예약리스트.SelectedItem.ToString().Split(' ')[1];
@@ -524,15 +526,14 @@ namespace 지니_64
                                     주문예약 종목 = Form1.form1.주문예약_List.Find(o => o.예약번호.Equals(예약번호));
                                     if (종목 != null)
                                     {
-                                        JumunItem JumunItem = Form1.JumunItem_List.Find(o => o.주문번호.Equals(종목.주문번호));
-                                        if (JumunItem != null)
+                                        if (Form1.JumunItem_List.TryGetValue(종목.주문번호, out JumunItem jumun))
                                         {
                                             using (new CenterWinDialog(Form_Special.form))
-                                                if (MessageBox.Show(JumunItem.종목명 + " 주문번호(" + JumunItem.주문번호 + ") " + GET.주문유형(JumunItem.주문유형) + " 주문이 있습니다. 취소하시겠습니까? ", "주문취소 확인", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                                                if (MessageBox.Show(jumun.종목명 + " 주문번호(" + jumun.주문번호 + ") " + GET.매수매도str(jumun.매수매도) + " 주문이 있습니다. 취소하시겠습니까? ", "주문취소 확인", MessageBoxButtons.YesNo) == DialogResult.Yes)
                                                 {
-                                                    JumunItem.반복횟수 = 0;
-                                                    JumunItem.취소시간 = 0;
-                                                    JumunItem.취소timer = 0;
+                                                    jumun.반복횟수 = 0;
+                                                    jumun.취소시간 = 0;
+                                                    jumun.취소timer = 0;
                                                 }
                                             Run();
                                         }
@@ -545,7 +546,7 @@ namespace 지니_64
                                     void Run()
                                     {
                                         Form1.form1.주문예약_List.Remove(종목);
-                                        save_주문예약();
+                                        SaveToFile.주문예약_파일저장();
 
                                         if (위치.Contains("장전'매수'"))
                                         {
@@ -608,17 +609,36 @@ namespace 지니_64
 
         public static void 종목선택(object sender)
         {
-            Market_Item Market = Form1.Market_Item_List.FirstOrDefault(o => o.Value.종목명.Equals(Form_Special.form.TB_수동주문_종목명.Text.Trim())).Value;
-            if (Market != null)
-            {
-                if (sender.Equals(Form_Special.form.TB_수동주문_종목명))
-                {
-                    수동종목선택(Market);
-                }
+            // [1] sender를 TextBox로 변환 (입력된 텍스트를 바로 가져오기 위함)
+            if (!(sender is TextBox targetBox)) return;
 
-                if (sender.Equals(Form_Special.form.TB_예약주문_종목명))
+            string 입력된_종목명 = targetBox.Text.Trim();
+            if (string.IsNullOrEmpty(입력된_종목명)) return;
+
+            // [2] 최적화: LINQ(.FirstOrDefault) 제거하고 단순 반복문 사용
+            // 딕셔너리의 값(Market_Item)들 중에서 이름이 같은 것을 찾음
+            Market_Item 찾은_종목 = null;
+
+            foreach (var item in Form1.Market_Item_List.Values)
+            {
+                if (item.종목명 == 입력된_종목명)
                 {
-                    예약종목선택(Market);
+                    찾은_종목 = item;
+                    break; // 찾으면 즉시 중단 (CPU 절약)
+                }
+            }
+
+            // [3] 종목을 찾았을 경우 처리
+            if (찾은_종목 != null)
+            {
+                // ReferenceEquals가 .Equals보다 미세하게 더 빠름 (주소값 비교)
+                if (ReferenceEquals(sender, Form_Special.form.TB_수동주문_종목명))
+                {
+                    수동종목선택(찾은_종목);
+                }
+                else if (ReferenceEquals(sender, Form_Special.form.TB_예약주문_종목명))
+                {
+                    예약종목선택(찾은_종목);
                 }
             }
         }
@@ -631,8 +651,9 @@ namespace 지니_64
                 Market_Item Market = Form1.Market_Item_List.FirstOrDefault(o => o.Value.종목명.Equals(Form_Special.form.TB_수동주문_종목명.Text.Trim())).Value;
                 if (Market != null)
                 {
-                    if (Market.현재가 > 1)
-                        수동주문비기준계산(Market.종목코드, Market.현재가, Market.Market);
+                    int 현재가 = Method.호가맞추기(Market.현재가, Market.Market);
+                    if (현재가 > 1)
+                        수동주문비기준계산(Market.종목코드, 현재가);
                 }
             }
 
@@ -641,8 +662,9 @@ namespace 지니_64
                 Market_Item Market = Form1.Market_Item_List.FirstOrDefault(o => o.Value.종목명.Equals(Form_Special.form.TB_예약주문_종목명.Text.Trim())).Value;
                 if (Market != null)
                 {
-                    if (Market.현재가 > 1)
-                        예약주문비기준계산(Market.종목코드, Market.현재가, Market.Last_price, Market.Market);
+                    int 현재가 = Method.호가맞추기(Market.현재가, Market.Market);
+                    if (현재가 > 1)
+                        예약주문비기준계산(Market.종목코드, 현재가, Market.Last_price);
                 }
             }
 
@@ -653,6 +675,7 @@ namespace 지니_64
             Market_Item Market = Form1.Market_Item_List.FirstOrDefault(o => o.Value.종목명.Equals(Form_Special.form.TB_수동주문_종목명.Text.Trim())).Value;
             if (Market != null)
             {
+                int 현재가 = Method.호가맞추기(Market.현재가, Market.Market);
                 if (sender.Equals(Form_Special.form.TB_수동주문_주문가))
                 {
                     int 기준가 = int.Parse(Form_Special.form.TB_수동주문_price.Text);
@@ -712,7 +735,7 @@ namespace 지니_64
                 {
                     if (Form_Special.form.TB_예약주문_종목명.Text.Length > 0)
                     {
-                        if (Market.현재가 > 1)
+                        if (현재가 > 1)
                         {
                             if (Form_Special.form.CBB_예약주문_예약종류.SelectedIndex == 0)
                             {
@@ -835,7 +858,7 @@ namespace 지니_64
                             {
                                 if (기준가 > 주문가)
                                 {
-                                    int 주문가_계산 = Method.예약order_price(-i, 기준가, Market.Market);
+                                    int 주문가_계산 = Method.예약Order_price(-i, 기준가, Market.Market);
 
                                     if (주문가_계산 <= 주문가)
                                     {
@@ -850,7 +873,7 @@ namespace 지니_64
                                 }
                                 else
                                 {
-                                    int 주문가_계산 = Method.예약order_price(i, 기준가, Market.Market);
+                                    int 주문가_계산 = Method.예약Order_price(i, 기준가, Market.Market);
 
                                     if (주문가_계산 >= 주문가)
                                     {
@@ -876,6 +899,7 @@ namespace 지니_64
             Market_Item Market = Form1.Market_Item_List.FirstOrDefault(o => o.Value.종목명.Equals(Form_Special.form.TB_수동주문_종목명.Text.Trim())).Value;
             if (Market != null)
             {
+                int 현재가 = Method.호가맞추기(Market.현재가, Market.Market);
                 if (sender.Equals(Form_Special.form.TB_수동주문_tick))
                 {
                     int 기준가 = int.Parse(Form_Special.form.TB_수동주문_price.Text);
@@ -890,7 +914,7 @@ namespace 지니_64
                         }
                         else
                         {
-                            Form_Special.form.TB_수동주문_주문가.Text = (Method.예약order_price(int.Parse(Form_Special.form.TB_수동주문_tick.Text.Trim()), Market.현재가, Market.Market)).ToString();
+                            Form_Special.form.TB_수동주문_주문가.Text = (Method.예약Order_price(int.Parse(Form_Special.form.TB_수동주문_tick.Text.Trim()), 현재가, Market.Market)).ToString();
 
                             int 주문가 = int.Parse(Form_Special.form.TB_수동주문_주문가.Text);
                             if (주문가 < Method.상한가_하한가_구하기("하", Market.종목코드))
@@ -915,7 +939,7 @@ namespace 지니_64
                         }
                         else
                         {
-                            Form_Special.form.TB_수동주문_주문가.Text = (Method.예약order_price(int.Parse(Form_Special.form.TB_수동주문_tick.Text.Trim()), Market.현재가, Market.Market)).ToString();
+                            Form_Special.form.TB_수동주문_주문가.Text = (Method.예약Order_price(int.Parse(Form_Special.form.TB_수동주문_tick.Text.Trim()), 현재가, Market.Market)).ToString();
 
                             int 주문가 = int.Parse(Form_Special.form.TB_수동주문_주문가.Text);
                             if (주문가 > Method.상한가_하한가_구하기("상", Market.종목코드))
@@ -939,6 +963,7 @@ namespace 지니_64
             Market_Item Market = Form1.Market_Item_List.FirstOrDefault(o => o.Value.종목명.Equals(Form_Special.form.TB_예약주문_종목명.Text.Trim())).Value;
             if (Market != null)
             {
+                int 현재가 = Method.호가맞추기(Market.현재가, Market.Market);
                 if (sender.Equals(Form_Special.form.TB_예약주문_장전매수호가))
                 {
                     if (!Form1.stockBalanceList.ContainsKey(Market.종목코드))
@@ -947,11 +972,11 @@ namespace 지니_64
                         Form_Special.form.CBB_예약주문_예약종류.SelectedIndex = 0;
 
                     int 기준가 = Market.Last_price;
-                    if (Form1.timenow > 90000) 기준가 = Market.현재가;
+                    if (Get.TimeNow > 90000) 기준가 = Market.현재가;
                     int.TryParse(Form_Special.form.TB_예약주문_장전매수호가.Text, out int 장전매수);
                     Form_Special.form.TB_예약주문_장전매수호가.Text = 장전매수.ToString();
 
-                    Form_Special.form.TB_예약주문_주문가.Text = (Method.예약order_price(장전매수, 기준가, Market.Market)).ToString();
+                    Form_Special.form.TB_예약주문_주문가.Text = (Method.예약Order_price(장전매수, 기준가, Market.Market)).ToString();
                     double 주문가 = double.Parse(Form_Special.form.TB_예약주문_주문가.Text);
                     Form_Special.form.TB_예약주문_주문비계산값.Text = Math.Round(((주문가 - 기준가) / 주문가 * 100), 2).ToString();
                 }
@@ -966,7 +991,7 @@ namespace 지니_64
                     int.TryParse(Form_Special.form.TB_예약주문_종가매수호가.Text, out int 종가매수);
                     Form_Special.form.TB_예약주문_종가매수호가.Text = 종가매수.ToString();
 
-                    Form_Special.form.TB_예약주문_주문가.Text = (Method.예약order_price(종가매수, Market.현재가, Market.Market)).ToString();
+                    Form_Special.form.TB_예약주문_주문가.Text = (Method.예약Order_price(종가매수, 현재가, Market.Market)).ToString();
                     double 주문가 = double.Parse(Form_Special.form.TB_예약주문_주문가.Text);
                     Form_Special.form.TB_예약주문_주문비계산값.Text = Math.Round(((주문가 - Market.현재가) / 주문가 * 100), 2).ToString();
                 }
@@ -978,11 +1003,11 @@ namespace 지니_64
                         Form_Special.form.CBB_예약주문_예약종류.SelectedIndex = 1;
 
                         int 기준가 = Market.Last_price;
-                        if (Form1.timenow > 90000) 기준가 = Market.현재가;
+                        if (Get.TimeNow > 90000) 기준가 = Market.현재가;
                         int.TryParse(Form_Special.form.TB_예약주문_장전매도호가.Text, out int 장전매도);
                         Form_Special.form.TB_예약주문_장전매도호가.Text = 장전매도.ToString();
 
-                        Form_Special.form.TB_예약주문_주문가.Text = (Method.예약order_price(장전매도, 기준가, Market.Market)).ToString();
+                        Form_Special.form.TB_예약주문_주문가.Text = (Method.예약Order_price(장전매도, 기준가, Market.Market)).ToString();
                         double 주문가 = double.Parse(Form_Special.form.TB_예약주문_주문가.Text);
                         Form_Special.form.TB_예약주문_주문비계산값.Text = Math.Round(((주문가 - 기준가) / 주문가 * 100), 2).ToString();
                     }
@@ -994,7 +1019,7 @@ namespace 지니_64
                         int.TryParse(Form_Special.form.TB_예약주문_종가매도호가.Text, out int 종가매도);
                         Form_Special.form.TB_예약주문_종가매도호가.Text = 종가매도.ToString();
 
-                        Form_Special.form.TB_예약주문_주문가.Text = (Method.예약order_price(종가매도, Market.현재가, Market.Market)).ToString();
+                        Form_Special.form.TB_예약주문_주문가.Text = (Method.예약Order_price(종가매도, 현재가, Market.Market)).ToString();
                         double 주문가 = double.Parse(Form_Special.form.TB_예약주문_주문가.Text);
                         Form_Special.form.TB_예약주문_주문비계산값.Text = Math.Round(((주문가 - Market.현재가) / 주문가 * 100), 2).ToString();
                     }
@@ -1009,7 +1034,7 @@ namespace 지니_64
             {
                 if (기준가 > 주문가)
                 {
-                    int 주문가_계산 = Method.예약order_price(-i, 기준가, Market);
+                    int 주문가_계산 = Method.예약Order_price(-i, 기준가, Market);
 
                     if (주문가_계산 <= 주문가)
                     {
@@ -1024,7 +1049,7 @@ namespace 지니_64
                 }
                 else
                 {
-                    int 주문가_계산 = Method.예약order_price(i, 기준가, Market);
+                    int 주문가_계산 = Method.예약Order_price(i, 기준가, Market);
 
                     if (주문가_계산 >= 주문가)
                     {
@@ -1041,7 +1066,7 @@ namespace 지니_64
             return num;
         }
 
-        public static void LB_예약리스트_Click(object sender)
+        public static void LB_예약리스트_Click()
         {
             if (Form_Special.form.LB_예약리스트.SelectedItem != null)
             {
@@ -1055,52 +1080,49 @@ namespace 지니_64
             }
         }
 
-        public static void 수동종목선택(Market_Item Market)
+        public static void 수동종목선택(Market_Item 선택된_종목)
         {
-            if (Market.현재가 > 1)
-            {
-                Form_Special.form.TB_수동주문_종목명.Text = Market.종목명;
-                Form_Special.form.TB_수동주문_price.Text = Market.현재가.ToString();
+            // 1. 시장별(코스피/코스닥) 호가 단위에 맞춰 가격 보정
+            int 보정된_현재가 = Method.호가맞추기(선택된_종목.현재가, 선택된_종목.Market);
 
-                수동주문비기준계산(Market.종목코드, Market.현재가, Market.Market);
+            // 2. 유효한 가격인지 확인 (1원보다 커야 함)
+            if (보정된_현재가 > 1)
+            {
+                // [최적화 핵심] 화면에 이미 같은 가격이 적혀있으면 건너뜀 (CPU 절약 & 깜빡임 방지)
+                string 표시할_가격 = 선택된_종목.현재가.ToString();
+
+                Helper.안전한_UI_업데이트(Form1.form1, () =>
+                {
+                    if (Form_Special.form.TB_수동주문_price.Text != 표시할_가격)
+                    {
+                        Form_Special.form.TB_수동주문_price.Text = 표시할_가격;
+                    }
+                });
+
+                // 3. 주문 가능 수량 및 비중 계산
+                수동주문비기준계산(선택된_종목.종목코드, 보정된_현재가);
             }
             else
             {
-                신규조회 중복 = Form1.신규조회_List.Find(o => o.ItemCode.Equals(Market.종목코드));
-                if (중복 == null)
-                {
-                    string para = "수동opt10001^Manual^" + Market.종목명 + "^" + Market.종목코드; // TR요청용 데이터
-
-                    신규조회 Add = new 신규조회(Market.종목코드, para, 0, "수동종목");
-                    Form1.신규조회_List.Add(Add);
-
-                    if (!Form1.TR_catch_Item_List.Contains(Market.종목코드 + ";" + para))
-                        Form1.TR_catch_Item_List.Enqueue(Market.종목코드 + ";" + para);
-                }
+                info.요청(선택된_종목.종목코드, "info_수동종목선택", "", false);
             }
         }
 
         public static void 예약종목선택(Market_Item Market)
         {
-            if (Market.현재가 > 1)
+            int 현재가 = Method.호가맞추기(Market.현재가, Market.Market);
+            if (현재가 > 1)
             {
-                Form_Special.form.TB_예약주문_종목명.Text = Market.종목명;
-                Form_Special.form.TB_예약주문_현재가.Text = Market.현재가.ToString();
-
-                예약주문비기준계산(Market.종목코드, Market.현재가, Market.Last_price, Market.Market);
+                Helper.안전한_UI_업데이트(Form1.form1, () =>
+                {
+                    Form_Special.form.TB_예약주문_종목명.Text = Market.종목명;
+                    Form_Special.form.TB_예약주문_현재가.Text = Market.현재가.ToString();
+                });
+                예약주문비기준계산(Market.종목코드, 현재가, Market.Last_price);
             }
             else
             {
-                신규조회 중복 = Form1.신규조회_List.Find(o => o.ItemCode.Equals(Market.종목코드));
-                if (중복 == null)
-                {
-                    string para = "예약opt10001^Manual^" + Market.종목명 + "^" + Market.종목코드; // TR요청용 데이터
-
-                    신규조회 Add = new 신규조회(Market.종목코드, para, 0, "예약종목");
-                    Form1.신규조회_List.Add(Add);
-
-                    Form1.TR_catch_Item_List.Enqueue(Market.종목코드 + ";" + para);
-                }
+                info.요청(Market.종목코드, "info_예약종목선택", "", false);
             }
         }
 
@@ -1108,10 +1130,12 @@ namespace 지니_64
         {
             if (Form1.form1.CB_특수매매.Checked)
             {
+                종목명 = 종목명.TrimStart('*');
                 Market_Item Market = Form1.Market_Item_List.FirstOrDefault(o => o.Value.종목명.Equals(종목명)).Value;
                 if (Market != null)
                 {
-                    if (Market.현재가 > 1)
+                    int 현재가 = Method.호가맞추기(Market.현재가, Market.Market);
+                    if (현재가 > 1)
                     {
                         Form_Special.form.TB_수동주문_종목명.Text = 종목명;
                         Form_Special.form.TB_수동주문_price.Text = Market.현재가.ToString();
@@ -1119,21 +1143,12 @@ namespace 지니_64
                         Form_Special.form.TB_예약주문_종목명.Text = 종목명;
                         Form_Special.form.TB_예약주문_현재가.Text = Market.현재가.ToString();
 
-                        수동주문비기준계산(Market.종목코드, Market.현재가, Market.Market);
-                        예약주문비기준계산(Market.종목코드, Market.현재가, Market.Last_price, Market.Market);
+                        수동주문비기준계산(Market.종목코드, 현재가);
+                        예약주문비기준계산(Market.종목코드, 현재가, Market.Last_price);
                     }
                     else
                     {
-                        신규조회 중복 = Form1.신규조회_List.Find(o => o.ItemCode.Equals(Market.종목코드));
-                        if (중복 == null)
-                        {
-                            string para = "수동예약opt10001^Manual^" + 종목명 + "^" + Market.종목코드 + "^" + Market.Last_price; // TR요청용 데이터
-
-                            신규조회 Add = new 신규조회(Market.종목코드, para, 0, "종목선택");
-                            Form1.신규조회_List.Add(Add);
-
-                            Form1.TR_catch_Item_List.Enqueue(Market.종목코드 + ";" + para);
-                        }
+                        info.요청(Market.종목코드, "info_종목선택", "", false);
                     }
                 }
             }
@@ -1144,27 +1159,48 @@ namespace 지니_64
             }
         }
 
-        public static void 수동주문비기준계산(string Code, int 현재가, string Market)
+        public static void 수동주문비기준계산(string Code, int 현재가)
         {
-            string 상하 = "상한가";
+            // 1. 텍스트박스 값은 한 번만 읽어오기 (접근 비용 절약)
+            string 입력된_주문비 = Form_Special.form.TB_수동주문_주문비.Text;
 
-            if (Form_Special.form.TB_수동주문_주문비.Text.StartsWith("-"))
+            // 2. 상한가/하한가 판단 (삼항 연산자로 깔끔하게)
+            string 상하 = 입력된_주문비.StartsWith("-") ? "하한가" : "상한가";
+
+            // 3. 숫자 변환
+            double.TryParse(입력된_주문비, out double 주문비);
+
+            // 4. 계산 결과 받아오기
+            string 결과_문자열 = Method.주문가계산(Code, 주문비, 현재가, 현재가, 상하);
+
+            // 5. [핵심 최적화] Split은 딱 한 번만 수행해서 배열에 저장! (속도 UP, 메모리 절약)
+            string[] 결과_배열 = 결과_문자열.Split('&');
+
+            // 6. 배열 길이 확인 (혹시 모를 에러 방지)
+            if (결과_배열.Length >= 3)
             {
-                상하 = "하한가";
+                // 7. 값이 변했을 때만 화면 업데이트 (깜빡임 방지 헬퍼 호출)
+                화면_업데이트(Form_Special.form.TB_수동주문_주문가, 결과_배열[0]);
+                화면_업데이트(Form_Special.form.TB_수동주문_주문비계산값, 결과_배열[1]);
+                화면_업데이트(Form_Special.form.TB_수동주문_tick, 결과_배열[2]);
             }
 
-            double.TryParse(Form_Special.form.TB_수동주문_주문비.Text, out double 주문비);
-            string para = Method.주문가계산(Code, 주문비, 현재가, 현재가, 상하);
-
-            Form_Special.form.TB_수동주문_주문가.Text = para.Split('&')[0];
-            Form_Special.form.TB_수동주문_주문비계산값.Text = para.Split('&')[1];
-            Form_Special.form.TB_수동주문_tick.Text = para.Split('&')[2];
+            void 화면_업데이트(Control 컨트롤, string 새_값)
+            {
+                Helper.안전한_UI_업데이트(Form1.form1, () =>
+                {
+                    if (컨트롤.Text != 새_값)
+                    {
+                        컨트롤.Text = 새_값;
+                    }
+                });
+            }
         }
 
-        public static void 예약주문비기준계산(string Code, int 현재가, int 전일종가, string Market)
+        public static void 예약주문비기준계산(string Code, int 현재가, int 전일종가)
         {
             Form_Special.form.TB_예약주문_현재가.Text = 현재가.ToString();
-            if (Form1.timenow > 90000) 전일종가 = 현재가;
+            if (Get.TimeNow > 90000) 전일종가 = 현재가;
             Form_Special.form.TB_예약주문_기준가.Text = 전일종가.ToString();
             int 기준가 = 전일종가;
             string 상하 = "";
@@ -1212,7 +1248,7 @@ namespace 지니_64
         }
 
 
-        public static void 예약주문실행(bool 장전)
+        public static async Task 예약주문실행(bool 장전)
         {
             if (장전)
             {
@@ -1232,41 +1268,35 @@ namespace 지니_64
                                 Market_Item Market = Form1.Market_Item_List[주문.종목코드];
                                 int 주문가 = 주문.주문가;
                                 int 주문수량 = 주문.주문수량;
-                                int 주문호가 = Method.호가변환(주문.주문비, 주문.종목코드, Market.Last_price, Market.Last_price, Market.Market, 주문.검색식);
-                                int 상한가 = Method.상한가_하한가_구하기("상", 주문.종목코드);
-                                int 하한가 = Method.상한가_하한가_구하기("하", 주문.종목코드);
-                                int 주문유형 = 1;
-
-                                if (주문.검색식.Contains("매도"))
-                                {
-                                    주문유형 = 2;
-                                }
+                                int 주문호가 = Method.호가변환(주문.주문비, 주문.종목코드, Market.Last_price, Market.Last_price, 주문.검색식);
+                                int 상한가 = Method.상한가_하한가_구하기("상", Market.종목코드);
+                                int 하한가 = Method.상한가_하한가_구하기("하", Market.종목코드);
 
                                 if (주문.연동)
                                 {
-                                    주문가 = Method.예약order_price(주문호가, Market.Last_price, Market.Market);
-                                    주문수량 = Method.주문수량계산(Form1.stockBalanceList[주문.종목코드], 주문가, 주문.비중, 주문.선택, 주문유형);
+                                    주문가 = Method.예약Order_price(주문호가, Market.Last_price, Market.Market);
+                                    주문수량 = Method.주문수량계산(Form1.stockBalanceList[주문.종목코드], 주문가, 주문.비중, 주문.선택);
                                 }
 
                                 if (주문가 > 상한가)
                                 {
-                                    Form1.알림창("[ 예약주문 주문가오류 ]\n\n" + 주문.검색식 + " 주문의 " + 주문.종목명 + "\n\n주문가( " + 주문.주문가.ToString("N0") + " ) 가 상한가( " + 상한가.ToString("N0") + " ) 를 초과 하여 주문할수 없습니다. ", 5, false);
+                                    Helper.알림창_멀티("예약주문 주문가오류", $"{주문.검색식} 주문의 {주문.종목명}\n\n주문가( {주문.주문가:N0} ) 가 상한가( {상한가:N0} ) 를 초과 하여 주문할 수 없습니다. ", 5, false);
 
-                                    Form1.Error_Log(" ");
-                                    Form1.Error_Log("[예약주문 주문가오류] " + 주문.검색식 + " 주문의 " + 주문.종목명 + " 주문가( " + 주문.주문가.ToString("N0") + " ) 가 상한가( " + 상한가.ToString("N0") + " ) 를 초과 하여 주문할수 없습니다. ");
-                                    Form1.Error_Log(" ");
+                                    Log.에러기록(" ");
+                                    Log.에러기록($"[예약주문 주문가오류] {주문.검색식} 주문의 {주문.종목명} 주문가( {주문.주문가:N0} ) 가 상한가( {상한가:N0} ) 를 초과 하여 주문할 수 없습니다. ");
+                                    Log.에러기록(" ");
                                 }
                                 else if (주문가 < 하한가)
                                 {
-                                    Form1.알림창("[ 예약주문 주문가오류 ]\n\n" + 주문.검색식 + " 주문의 " + 주문.종목명 + "\n\n주문가( " + 주문.주문가 + " ) 가 하한가( " + 하한가 + " ) 를 미만 이어 주문할수 없습니다. ", 5, false);
+                                    Helper.알림창_멀티("예약주문 주문가오류", $"{주문.검색식} 주문의 {주문.종목명}\n\n주문가( {주문.주문가:N0} ) 가 하한가( {하한가:N0} ) 미만이라 주문할 수 없습니다. ", 5, false);
 
-                                    Form1.Error_Log(" ");
-                                    Form1.Error_Log("[예약주문 주문가오류] " + 주문.검색식 + " 주문의 " + 주문.종목명 + " 주문가( " + 주문.주문가 + " ) 가 하한가( " + 하한가 + " ) 를 미만 이어 주문할수 없습니다. ");
-                                    Form1.Error_Log(" ");
+                                    Log.에러기록(" ");
+                                    Log.에러기록($"[예약주문 주문가오류] {주문.검색식} 주문의 {주문.종목명} 주문가( {주문.주문가:N0} ) 가 하한가( {하한가:N0} ) 미만이라 주문할 수 없습니다. ");
+                                    Log.에러기록(" ");
                                 }
                                 else
                                 {
-                                    예약주문_주문실행(주문, 주문가, 주문수량, 주문호가);
+                                 await   예약주문_주문실행(주문, 주문가, 주문수량, 주문호가);
                                 }
                             }
                         }
@@ -1290,57 +1320,45 @@ namespace 지니_64
                             if (주문.검색식.Contains("종가"))
                             {
                                 Market_Item Market = Form1.Market_Item_List[주문.종목코드];
+                                int 현재가 = Method.호가맞추기(Market.현재가, Market.Market);
                                 int 주문가 = 주문.주문가;
                                 int 주문수량 = 주문.주문수량;
-                                int 주문호가 = Method.호가변환(주문.주문비, 주문.종목코드, Market.현재가, Market.현재가, Market.Market, 주문.검색식);
-                                int 상한가 = Method.상한가_하한가_구하기("상", 주문.종목코드);
-                                int 하한가 = Method.상한가_하한가_구하기("하", 주문.종목코드);
+                                int 주문호가 = Method.호가변환(주문.주문비, 주문.종목코드, 현재가, 현재가, 주문.검색식);
+                                int 상한가 = Method.상한가_하한가_구하기("상", Market.종목코드);
+                                int 하한가 = Method.상한가_하한가_구하기("하", Market.종목코드);
 
                                 if (주문.연동)
                                 {
-                                    if (Market.현재가 > 1)
+                                    if (현재가 > 1)
                                     {
-                                        예약주문_등록(주문.예약번호, Market);
+                                 await       예약주문_등록(주문.예약번호, Market);
                                     }
                                     else
                                     {
-                                        Form1.form1.Invoke((MethodInvoker)delegate ()
-                                        {
-                                            신규조회 중복 = Form1.신규조회_List.Find(o => o.ItemCode.Equals(주문.종목코드));
-                                            if (중복 == null)
-                                            {
-                                                string para = "예약실행opt10001^Manual^" + Market.종목명 + "^" + 주문.종목코드 + "^" + 주문.예약번호; // TR요청용 데이터
-
-                                                신규조회 Add = new 신규조회(주문.종목코드, para, 0, "예약실행");
-                                                Form1.신규조회_List.Add(Add);
-
-                                                if (!Form1.TR_catch_Item_List.Contains(주문.종목코드 + ";" + para))
-                                                    Form1.TR_catch_Item_List.Enqueue(주문.종목코드 + ";" + para);
-                                            }
-                                        });
+                                        info.요청(주문.종목코드, "info_예약주문실행", 주문.예약번호.ToString(), false);
                                     }
                                 }
                                 else
                                 {
                                     if (주문가 > 상한가)
                                     {
-                                        Form1.알림창("[ 예약주문 주문가오류 ]\n\n" + 주문.검색식 + " 주문의 " + 주문.종목명 + "\n\n주문가( " + 주문.주문가.ToString("N0") + " ) 가 상한가( " + 상한가.ToString("N0") + " ) 를 초과 하여 주문할수 없습니다. ", 5, false);
+                                        Helper.알림창_멀티("예약주문 주문가오류", $"{주문.검색식} 주문의 {주문.종목명}\n\n주문가( {주문.주문가:N0} ) 가 상한가( {상한가:N0} ) 를 초과 하여 주문할 수 없습니다. ", 5, false);
 
-                                        Form1.Error_Log(" ");
-                                        Form1.Error_Log("[예약주문 주문가오류] " + 주문.검색식 + " 주문의 " + 주문.종목명 + " 주문가( " + 주문.주문가.ToString("N0") + " ) 가 상한가( " + 상한가.ToString("N0") + " ) 를 초과 하여 주문할수 없습니다. ");
-                                        Form1.Error_Log(" ");
+                                        Log.에러기록(" ");
+                                        Log.에러기록($"[예약주문 주문가오류] {주문.검색식} 주문의 {주문.종목명} 주문가( {주문.주문가:N0} ) 가 상한가( {상한가:N0} ) 를 초과 하여 주문할 수 없습니다. ");
+                                        Log.에러기록(" ");
                                     }
                                     else if (주문가 < 하한가)
                                     {
-                                        Form1.알림창("[ 예약주문 주문가오류 ]\n\n" + 주문.검색식 + " 주문의 " + 주문.종목명 + "\n\n주문가( " + 주문.주문가 + " ) 가 하한가( " + 하한가 + " ) 를 미만 이어 주문할수 없습니다. ", 5, false);
+                                        Helper.알림창_멀티("예약주문 주문가오류", $"{주문.검색식} 주문의 {주문.종목명}\n\n주문가( {주문.주문가:N0} ) 가 하한가( {하한가:N0} ) 미만이라 주문할 수 없습니다. ", 5, false);
 
-                                        Form1.Error_Log(" ");
-                                        Form1.Error_Log("[예약주문 주문가오류] " + 주문.검색식 + " 주문의 " + 주문.종목명 + " 주문가( " + 주문.주문가 + " ) 가 하한가( " + 하한가 + " ) 를 미만 이어 주문할수 없습니다. ");
-                                        Form1.Error_Log(" ");
+                                        Log.에러기록(" ");
+                                        Log.에러기록($"[예약주문 주문가오류] {주문.검색식} 주문의 {주문.종목명} 주문가( {주문.주문가:N0} ) 가 하한가( {하한가:N0} ) 미만이라 주문할 수 없습니다. ");
+                                        Log.에러기록(" ");
                                     }
                                     else
                                     {
-                                        예약주문_주문실행(주문, 주문가, 주문수량, 주문호가);
+                                     await   예약주문_주문실행(주문, 주문가, 주문수량, 주문호가);
                                     }
                                 }
                             }
@@ -1351,36 +1369,36 @@ namespace 지니_64
             }
         }
 
-        public static void 예약주문_등록(int 예약번호, Market_Item Market)
+        public static async Task 예약주문_등록(int 예약번호, Market_Item Market)
         {
             주문예약 주문 = Form1.form1.주문예약_List.Find(o => o.예약번호.Equals(예약번호));
+            int 현재가 = Method.호가맞추기(Market.현재가, Market.Market);
             int 주문가 = 주문.주문가;
             int 주문수량 = 주문.주문수량;
-            int 주문호가 = Method.호가변환(주문.주문비, 주문.종목코드, Market.현재가, Market.현재가, Market.Market, 주문.검색식);
-            int 상한가 = Method.상한가_하한가_구하기("상", 주문.종목코드);
-            int 하한가 = Method.상한가_하한가_구하기("하", 주문.종목코드);
-            int 주문유형 = 1;
+            int 주문호가 = Method.호가변환(주문.주문비, 주문.종목코드, 현재가, 현재가, 주문.검색식);
+            int 상한가 = Method.상한가_하한가_구하기("상", Market.종목코드);
+            int 하한가 = Method.상한가_하한가_구하기("하", Market.종목코드);
             string 상하 = "상한가";
-            if (주문.검색식.Contains("매도")) { 주문유형 = 2; 상하 = "하한가"; }
+            if (주문.검색식.Contains("매도")) { 상하 = "하한가"; }
 
-            string 주문가_계산 = Method.주문가계산(주문.종목코드, 주문.주문비, Market.현재가, Market.현재가, 상하);
+            string 주문가_계산 = Method.주문가계산(주문.종목코드, 주문.주문비, 현재가, 현재가, 상하);
 
             주문가 = int.Parse(주문가_계산.Split('&')[0]);
             주문호가 = int.Parse(주문가_계산.Split('&')[2]);
-            주문수량 = Method.주문수량계산(Form1.stockBalanceList[주문.종목코드], 주문가, 주문.비중, 주문.선택, 주문유형);
+            주문수량 = Method.주문수량계산(Form1.stockBalanceList[주문.종목코드], 주문가, 주문.비중, 주문.선택);
 
-            예약주문_주문실행(주문, 주문가, 주문수량, 주문호가);
+         await   예약주문_주문실행(주문, 주문가, 주문수량, 주문호가);
         }
 
-        public static void 예약주문_주문실행(주문예약 주문, int 주문가격, int 주문수량, double Value)
+        public static async Task 예약주문_주문실행(주문예약 예약주문, int 주문가격, int 주문수량, double Value)
         {
-            Market_Item Market = Form1.Market_Item_List.FirstOrDefault(o => o.Value.종목코드.Equals(주문.종목코드)).Value;
+            Market_Item Market = Form1.Market_Item_List.FirstOrDefault(o => o.Value.종목코드.Equals(예약주문.종목코드)).Value;
             if (Market != null)
             {
                 Stockbalance 잔고 = null;
                 if (Form1.stockBalanceList.TryGetValue(Market.종목코드, out Stockbalance item)) 잔고 = item;
 
-                if (주문.주문유형.Equals(1)) // 매수
+                if (예약주문.매수매도 == 1) // 매수
                 {
                     if (잔고 != null)
                     {
@@ -1388,16 +1406,18 @@ namespace 지니_64
                         {
                             if (Jisu_linkage.업종별지수연동("추매", Market))
                             {
-                                if (Properties.Settings.Default.CB_계좌매입비_매수제한) // 매입비
+                                // [수정] Properties.Settings -> Setting.acc
+                                if (GenieConfig.CB_계좌매입비_매수제한) // 매입비
                                 {
-                                    if (!Method.매입비매수제한(Properties.Settings.Default.CBB_계좌매입비_제한선택).Contains("추매"))
+                                    // [수정] Properties.Settings -> Setting.acc
+                                    if (!Method.매입비매수제한(GenieConfig.CBB_계좌매입비_제한선택).Contains("추매"))
                                     {
-                                        매수진행();
+                                   await     매수진행();
                                     }
                                 }
                                 else
                                 {
-                                    매수진행();
+                                await   매수진행();
                                 }
                             }
                         }
@@ -1406,25 +1426,27 @@ namespace 지니_64
                     {
                         if (Jisu_linkage.업종별지수연동("신규", Market))
                         {
-                            if (Properties.Settings.Default.CB_계좌매입비_매수제한) // 매입비
+                            // [수정] Properties.Settings -> Setting.acc
+                            if (GenieConfig.CB_계좌매입비_매수제한) // 매입비
                             {
-                                if (!Method.매입비매수제한(Properties.Settings.Default.CBB_계좌매입비_제한선택).Contains("신규"))
+                                // [수정] Properties.Settings -> Setting.acc
+                                if (!Method.매입비매수제한(GenieConfig.CBB_계좌매입비_제한선택).Contains("신규"))
                                 {
-                                    매수진행();
+                                 await   매수진행();
                                 }
                             }
                             else
                             {
-                                매수진행();
+                             await   매수진행();
                             }
                         }
                     }
 
-                    void 매수진행()
+                    async Task 매수진행()
                     {
-                        if (Method.매매확인_VI_모투가능확인(Market, 주문.주문유형))
+                        if (Method.매매확인_VI_모투가능확인(Market, 예약주문.매수매도))
                         {
-                            long 추정d2 = (Form1.Acc[0].추정D2 - (주문가격 * 주문수량));
+                            long 추정d2 = (Form1.Acc.추정D2 - (주문가격 * 주문수량));
                             if (추정d2 > 0)
                             {
                                 if (잔고 != null)
@@ -1432,122 +1454,204 @@ namespace 지니_64
                                     주문수량 = Method.최대매수금_주문수량계산(잔고, 주문수량);
                                     if (주문수량 > 0)
                                     {
-                                        매수실행();
+                                   await     매수실행();
                                     }
                                     else
                                     {
-                                        Form1.알림창("[ 최대매수금 초과 ]\n\n종목명: " + 잔고.종목명 + " 주문가격: " + 주문가격.ToString("N0") + "\n\n주문수량: " + 주문수량.ToString("N0") + " 주문금액: " + (주문가격 * 주문수량).ToString("N0") + "\n최대매수금 초과 하여 주문 할수 없습니다.", 5, false);
+                                        // 1. 알림창 출력 (문자열 보간 및 계산식 포함)
+                                        Helper.알림창_멀티("최대매수금 초과", $"종목명: {잔고.종목명} 주문가격: {주문가격:N0}\n\n주문수량: {주문수량:N0} 주문금액: {(주문가격 * 주문수량):N0}\n최대매수금 초과 하여 주문 할 수 없습니다.", 5, false);
 
-                                        Form1.Error_Log(" ");
-                                        Form1.Error_Log("[최대매수금 초과] 종목명: " + 잔고.종목명 + " 주문가격: " + 주문가격.ToString("N0") + " 주문수량: " + 주문수량.ToString("N0") + " 주문금액: " + (주문가격 * 주문수량).ToString("N0") + " 최대매수금 초과 하여 주문 할수 없습니다.");
-                                        Form1.Error_Log(" ");
+                                        // 2. 에러 기록 로그
+                                        Log.에러기록(" ");
+                                        Log.에러기록($"[최대매수금 초과] 종목명: {잔고.종목명} 주문가격: {주문가격:N0} 주문수량: {주문수량:N0} 주문금액: {(주문가격 * 주문수량):N0} 최대매수금 초과 하여 주문 할 수 없습니다.");
+                                        Log.에러기록(" ");
                                     }
                                 }
                                 else
                                 {
-                                    매수실행();
+                                 await   매수실행();
                                 }
 
-                                void 매수실행()
+                                async Task 매수실행()
                                 {
-                                    int ScreenNumber = GET.jumunScreen(Market.종목코드);
-                                    if (ScreenNumber == 1300)
+                                    string Screennum = GET.JumunScreen();
+                                    int Order번호 = GET.Order번호();
+                                    예약주문.스크린번호 = Screennum;
+
+                                    bool 신용주문 = 신용계산.신용주문_해야하나(예약주문.매수매도, 주문수량, Market_Item_List[잔고.종목코드], 잔고, out int 실제주문수량);
+                                    홀딩잔고.예수금업데이트(GET.매수매도str(예약주문.매수매도), 주문가격, 실제주문수량, "주문", Market.종목코드, 신용주문);
+
+                                    int 현재가 = Method.호가맞추기(Market.현재가, Market.Market);
+
+                                    // [지니 최적화] 예약 주문 객체 생성 (명확한 속성 할당)
+                                    JumunItem 새주문 = new JumunItem
                                     {
-                                        Method.주문초과알림(Market.종목명);
-                                    }
-                                    else
-                                    {
-                                        int Order번호 = GET.Order번호();
-                                        주문.스크린번호 = ScreenNumber.ToString();
+                                        신용주문 = 신용주문,
+                                        대출일 = "",
+                                        Deletetimer = 0,
+                                        Screennum = Screennum,
+                                        종목코드 = 예약주문.종목코드,
+                                        종목명 = 예약주문.종목명,
+                                        주문번호 = "+++",
+                                        원주문번호 = "---",
+                                        검색식 = 예약주문.검색식,
+                                        주문값 = Value,             // *주의: 여기 변수명이 'Value'임
+                                        시장가구분 = 3,             // 예약주문은 시장가구분 3 고정
+                                        취소시간 = 99999,           // 예약주문이라 취소시간 길게 설정
+                                        취소N주문 = 0,
+                                        반복횟수 = 0,
+                                        비고 = "예약주문",          // 기존 13번째 인자
+                                        Pos = 예약주문.검색식,          // 기존 14번째 인자 (Pos에 검색식 저장)
+                                        주문수량 = 실제주문수량,
+                                        주문가격 = 주문가격,
+                                        매수매도 = 예약주문.매수매도,
+                                        비중 = 0,
+                                        비중단위 = 0,
+                                        취소timer = 99999,          // 기존 20번째 인자 (취소timer도 길게)
+                                        현재가 = 0,                 // 기존 코드에서 0 대입
+                                        등락률 = 0,                 // 기존 코드에서 0 대입
+                                        주문시간 = Get.TimeNow,
+                                        미체결량 = 실제주문수량,        // 미체결량 초기화
+                                        주문취소 = true,
+                                        가동전 = false,
+                                        Tik_cap = Method.Find_Tik_Cap(Market.현재가, 주문가격, Market.Market),
+                                        Tik_price = 현재가,         // *주의: 28번째 인자에 '현재가' 변수 사용
+                                        수익률 = 0,
+                                        주문동기화 = false,
+                                        감시번호 = 0,
+                                        Order번호 = Order번호,
+                                        수익구분 = 0,
+                                        NXT = NXT_server,
+                                        주문시간_Ticks = DateTime.Now.Ticks
+                                    };
 
-                                        DataManagement.예수금업데이트(GET.주문유형(주문.주문유형), 주문가격, 주문수량, "주문", Market.종목코드);
+                                    // 리스트 추가 등 후속 작업...
+                                await    Jumun.Add(새주문);
 
-
-                                        JumunItem ItemList = new JumunItem(0, 0, ScreenNumber.ToString(), 주문.종목코드, 주문.종목명, "+++", "---", 주문.검색식, Value, 3, 99999, 0, 0, "예약주문", 주문.검색식, 주문수량, 주문가격, 주문.주문유형, 0, 0, 99999, 0, 0,
-                                                                          Form1.timenow, 주문수량, true, false, 0, Method.Find_Tik_Cap(Market.현재가, 주문가격, Market.Market),
-                                                                          Market.현재가, 0, false, 0, Order번호, 0, Form1.NXT_server); // 자동 매도 일때  주문추가 
-                                        Form1.JumunItem_List.Add(ItemList);
-
-                                        Form1.que_order(ScreenNumber.ToString(), 주문.종목명, 주문.주문유형, 주문.종목코드, 주문수량, 주문가격, "00", "+++", 주문.검색식, Order번호);
-                                        주문.등록 = false;
-                                    }
+                                    ExecuteTrade.Que_order(새주문);
+                                    예약주문.등록 = false;
                                 }
                             }
                             else
                             {
-                                Form1.알림창("[ 주문불가알림 ]\n\n종목명: " + 주문.종목명 + " 주문수량: " + 주문수량.ToString("N0") + "\n\n주문가격: " + 주문가격.ToString("N0") + " 주문금액: " + (주문가격 * 주문수량).ToString("N0") + "\n\n주문가능금액이 부족하여 ' 매수 ' 주문 할수 없습니다.", 5, false);
+                                // 1. 알림창 출력 (가독성 업그레이드)
+                                Helper.알림창_멀티("주문불가알림", $"종목명: {예약주문.종목명} 주문수량: {주문수량:N0}\n\n주문가격: {주문가격:N0} 주문금액: {(주문가격 * 주문수량):N0}\n\n주문가능금액이 부족하여 ' 매수 ' 주문 할 수 없습니다.", 5, false);
 
-                                Form1.Error_Log(" ");
-                                Form1.Error_Log("[주문불가알림] 종목명: " + 주문.종목명 + " 주문수량: " + 주문수량.ToString("N0") + " 주문가격: " + 주문가격.ToString("N0") + " 주문금액: " + (주문가격 * 주문수량).ToString("N0") + " 주문가능금액이 부족하여 ' 매수 ' 주문 할수 없습니다.");
-                                Form1.Error_Log(" ");
+                                // 2. 에러 기록 로그
+                                Log.에러기록(" ");
+                                Log.에러기록($"[주문불가알림] 종목명: {예약주문.종목명} 주문수량: {주문수량:N0} 주문가격: {주문가격:N0} 주문금액: {(주문가격 * 주문수량):N0} 주문가능금액이 부족하여 ' 매수 ' 주문 할 수 없습니다.");
+                                Log.에러기록(" ");
                             }
                         }
                     }
                 }
-                else
+                else //매도
                 {
                     if (잔고 != null)
                     {
-                        if (잔고.주문가능수량 > 0)
+                        int 총주문가능수량 = GET.총주문가능수량(잔고);
+
+                        if (총주문가능수량 > 0)
                         {
-                            if (Method.매매확인_VI_모투가능확인(Market, 주문.주문유형))
+                            if (Method.매매확인_VI_모투가능확인(Market, 예약주문.매수매도))
                             {
-                                int ScreenNumber = GET.jumunScreen(Market.종목코드);
-                                if (ScreenNumber == 1300)
+                                if (총주문가능수량 < 주문수량)
                                 {
-                                    Method.주문초과알림(Market.종목명);
+                                    주문수량 = 총주문가능수량;
                                 }
-                                else
+
+                                신용계산.신용주문_분할매도_실행(잔고, 주문수량, async (is신용, 대출일, 수량) =>
                                 {
-                                    if (Form1.stockBalanceList[주문.종목코드].주문가능수량 < 주문수량)
-                                    {
-                                        주문수량 = Form1.stockBalanceList[주문.종목코드].주문가능수량;
-                                    }
-                                    if (주문수량 > 0)
-                                    {
-                                        int Order번호 = GET.Order번호();
-                                        주문.스크린번호 = ScreenNumber.ToString();
+                                  await  주문(is신용, 대출일, 수량);
+                                });
 
-                                        DataManagement.주문가능수업데이트(잔고, "매도", 주문수량, "매도주문");
-
-
-                                        JumunItem ItemList = new JumunItem(0, 0, ScreenNumber.ToString(), 주문.종목코드, 주문.종목명, "+++", "---", 주문.검색식, Value, 3, 99999, 0, 0, "예약주문", 주문.검색식, 주문수량, 주문가격, 주문.주문유형, 0, 0, 99999, 0, 0,
-                                                                           Form1.timenow, 주문수량, true, false, 0, Method.Find_Tik_Cap(잔고.현재가, 주문가격, Market.Market),
-                                                                           잔고.현재가, 잔고.수익률, false, 0, Order번호, 0, Form1.NXT_server); // 자동 매도 일때  주문추가 
-                                        Form1.JumunItem_List.Add(ItemList);
-
-                                        Form1.que_order(ScreenNumber.ToString(), 주문.종목명, 주문.주문유형, 주문.종목코드, 주문수량, 주문가격, "00", "+++", 주문.검색식, Order번호);
-                                    }
-                                    Form1.form1.금액알림 = true;
+                                async Task 주문(bool 신용주문, string 대출일, int 주문수량)
+                                {
+                                    주문예약 주문 = 예약주문;
+                                    string Screennum = GET.JumunScreen();
+                                    int Order번호 = GET.Order번호();
+                                    주문.스크린번호 = Screennum;
                                     주문.등록 = false;
+
+                                    // [지니 최적화] 예약 주문 객체 생성 (명확한 속성 할당)
+                                    JumunItem 새주문 = new JumunItem
+                                    {
+                                        신용주문 = 신용주문,
+                                        Deletetimer = 0,
+                                        Screennum = Screennum,
+                                        종목코드 = 주문.종목코드,
+                                        종목명 = 주문.종목명,
+                                        주문번호 = "+++",
+                                        원주문번호 = "---",
+                                        검색식 = 주문.검색식,
+                                        주문값 = Value,             // *주의: 변수명 'Value' 사용
+                                        시장가구분 = 3,             // 예약주문은 시장가구분 3
+                                        취소시간 = 99999,           // 예약주문이라 취소시간 길게
+                                        취소N주문 = 0,
+                                        반복횟수 = 0,
+                                        비고 = "예약주문",          // 기존 13번째 인자
+                                        Pos = 주문.검색식,          // 기존 14번째 인자 (Pos에 검색식 저장)
+                                        주문수량 = 주문수량,
+                                        주문가격 = 주문가격,
+                                        매수매도 = 주문.매수매도,
+                                        비중 = 0,
+                                        비중단위 = 0,
+                                        취소timer = 99999,          // 기존 20번째 인자
+                                        현재가 = 0,                 // *주의: 21번째 인자 0
+                                        등락률 = 0,                 // *주의: 22번째 인자 0
+                                        주문시간 = Get.TimeNow,
+                                        미체결량 = 주문수량,        // 미체결량 초기화
+                                        주문취소 = true,
+                                        가동전 = false,
+                                        // [중요] 잔고 정보 사용
+                                        Tik_cap = Method.Find_Tik_Cap(잔고.현재가, 주문가격, Market.Market),
+                                        Tik_price = 잔고.현재가,    // *주의: 28번째 인자에 '잔고.현재가' 사용
+                                        수익률 = 잔고.수익률,       // *주의: 29번째 인자에 '잔고.수익률' 사용
+                                        주문동기화 = false,
+                                        감시번호 = 0,
+                                        Order번호 = Order번호,
+                                        수익구분 = 0,
+                                        NXT = NXT_server,
+                                        주문시간_Ticks = DateTime.Now.Ticks
+                                    };
+
+                                  await  Jumun.Add(새주문);
+                                    ExecuteTrade.Que_order(새주문);
                                 }
+
+                                금액알림 = true;
                             }
                         }
                         else
                         {
-                            if (Form1.form1.금액알림)
+                            if (금액알림)
                             {
-                                Form1.form1.금액알림 = false;
+                                금액알림 = false;
 
-                                Form1.알림창("[ 주문불가알림 ]\n\n종목명: " + 주문.종목명 + "\n\n주문가능 수량이 없어  ' 매도 '주문 할수 없습니다.", 5, false);
+                                // 1. 알림창 출력 (문자열 보간 적용)
+                                Helper.알림창_멀티("주문불가알림", $"종목명: {예약주문.종목명}\n주문가능 수량이 없어 ' 매도 ' 주문 할 수 없습니다.", 5, false);
 
-                                Form1.Error_Log(" ");
-                                Form1.Error_Log("[주문불가알림] 종목명: " + 주문.종목명 + " 주문가능 수량이 없어  ' 매도 '주문 할수 없습니다.");
-                                Form1.Error_Log(" ");
+                                // 2. 에러 기록 로그
+                                Log.에러기록(" ");
+                                Log.에러기록($"[주문불가알림] 종목명: {예약주문.종목명} 주문가능 수량이 없어 ' 매도 ' 주문 할 수 없습니다.");
+                                Log.에러기록(" ");
                             }
                         }
                     }
                     else
                     {
-                        Form1.form1.금액알림 = true;
-                        if (Form1.form1.금액알림)
+                        금액알림 = true;
+                        if (금액알림)
                         {
-                            Form1.form1.금액알림 = false;
-                            Form1.알림창("[ 주문불가알림 ]\n\n종목명: " + 주문.종목명 + "\n\n전량매도 되어 ' 매도 '주문 할수 없습니다.", 5, false);
+                            금액알림 = false;
 
-                            Form1.Error_Log(" ");
-                            Form1.Error_Log("[주문불가알림] 종목명: " + 주문.종목명 + " 전량매도 되어 ' 매도 '주문 할수 없습니다.");
-                            Form1.Error_Log(" ");
+                            // 1. 알림창 출력 (가독성 업그레이드)
+                            Helper.알림창_멀티("주문불가알림", $"종목명: {예약주문.종목명}\n전량매도 되어 ' 매도 ' 주문 할 수 없습니다.", 5, false);
+
+                            // 2. 에러 기록 로그
+                            Log.에러기록(" ");
+                            Log.에러기록($"[주문불가알림] 종목명: {예약주문.종목명} 전량매도 되어 ' 매도 ' 주문 할 수 없습니다.");
+                            Log.에러기록(" ");
                         }
                     }
                 }
@@ -1587,12 +1691,13 @@ namespace 지니_64
 
             foreach (var Market in Form1.Market_Item_List.Values)
             {
-                if (Market.종목명.Equals(Form_Special.form.TB_수동주문_종목명.Text.Trim()) && Market.현재가 > 1)
-                    수동주문비기준계산(Market.종목코드, Market.현재가, Market.Market);
+                int 현재가 = Method.호가맞추기(Market.현재가, Market.Market);
+                if (Market.종목명.Equals(Form_Special.form.TB_수동주문_종목명.Text.Trim()) && 현재가 > 1)
+                    수동주문비기준계산(Market.종목코드, 현재가);
             }
         }
 
-        public static void combo_수동주문_choice_DropDownClosed(object sender)
+        public static void Combo_수동주문_choice_DropDownClosed( )
         {
             if (Form_Special.form.combo_수동주문_choice.SelectedIndex.Equals(3))
             {
@@ -1603,7 +1708,7 @@ namespace 지니_64
             }
         }
 
-        public static void BT_수동주문_실행_Click(object sender) // 잔고 수동매매 
+        public static void BT_수동주문_실행_Click( ) // 잔고 수동매매 
         {
             if (Form_Special.form.TB_수동주문_종목명.Text.Length == 0)
             {
@@ -1613,6 +1718,9 @@ namespace 지니_64
             Market_Item Market = Form1.Market_Item_List.FirstOrDefault(o => o.Value.종목명.Equals(Form_Special.form.TB_수동주문_종목명.Text.Trim())).Value;
             if (Market != null)
             {
+                string 종목코드 = Market.종목코드;
+                int 현재가 = Method.호가맞추기(Market.현재가, Market.Market);
+
                 if (GET.Jango_state(Market.종목코드).Contains("거래정지"))
                 {
                     Form1.AutoClosingAlram("[수동 주문 주문불가] 종목:" + Market.종목명 + " 거래정지 상태 입니다.", "거래정지", 10, "에러");
@@ -1626,9 +1734,9 @@ namespace 지니_64
 
                     if (수동주문_cansel_time == 0) 수동주문_cansel_time = 30;
                     if (수동주문_ratio == 0) 수동주문_ratio = 1;
-                    if (수동주문_주문가 == 0) 수동주문_주문가 = Market.현재가;
+                    if (수동주문_주문가 == 0) 수동주문_주문가 = 현재가;
 
-                    Form_Special.form.MTB_수동주문_repeat.Text = 수동주문_cansel_time.ToString();
+                    Form_Special.form.MTB_수동주문_repeat.Text = 수동주문_repeat.ToString();
                     Form_Special.form.MTB_수동주문_cansel_time.Text = 수동주문_cansel_time.ToString();
                     Form_Special.form.TB_수동주문_ratio.Text = 수동주문_ratio.ToString();
                     Form_Special.form.TB_수동주문_주문가.Text = 수동주문_주문가.ToString();
@@ -1642,15 +1750,13 @@ namespace 지니_64
                     int 주문가격 = T_주문가격;
                     int 시장가구분 = 1;
 
-                    string HogaGB = "00";
                     int Value = int.Parse(Form_Special.form.TB_수동주문_tick.Text);
-                    string 시장가 = "보통";
+                    string 매매 = "보통";
 
                     if (Form_Special.form.CB_수동주문_시장가.Checked)// 시장가
                     {
-                        시장가 = "시장가";
-                        HogaGB = "03";
-                        T_주문가격 = Market.현재가;
+                        매매 = "시장가";
+                        T_주문가격 = 현재가;
                         주문가격 = 0;
                         시장가구분 = 0;
                     }
@@ -1658,8 +1764,16 @@ namespace 지니_64
                     int 주문유형 = 2;
                     if (Form_Special.form.RB_매수.Checked) 주문유형 = 1;
 
-                    if (Form1.시장시작 < Form1.timenow && Form1.timenow < Form1.시장종료)
+                    if (Get.시장시작 < Get.TimeNow && Get.TimeNow < Get.시장종료)
                     {
+                        string 주문메세지 = "";
+                        bool 신용주문 = false;
+                        if (Form_Special.form.CB_수동신용.Checked)
+                        {
+                            주문메세지 = "(신용주문)\n";
+                            신용주문 = true;
+                        }
+
                         if (Form_Special.form.RB_매수.Checked)
                         {
                             if (선택 == 3)
@@ -1681,31 +1795,63 @@ namespace 지니_64
                                         Task Task_Action = new Task(
                                         () =>
                                         {
-                                            Form1.form1.Invoke((MethodInvoker)delegate ()
+                                             Helper.안전한_UI_업데이트(Form1.form1, async () =>
                                             {
                                                 using (new CenterWinDialog(Form1.form1))
-                                                    if (MessageBox.Show(Market.종목명 + "\n(" + 시장가 + ") " + T_주문가격 + "원 주문수량: " + 주문수량 + "\n" + "적용금액: " + (T_주문가격 * 주문수량) + "원 으로 '매수' 하시겠습니까 ?", "선택'매수'", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                                                    if (MessageBox.Show(주문메세지 + Market.종목명 + "\n(" + 매매 + ") " + T_주문가격 + "원 주문수량: " + 주문수량 + "\n" + "적용금액: " + (T_주문가격 * 주문수량) + "원 으로 '매수' 하시겠습니까 ?", "선택'매수'", MessageBoxButtons.YesNo) == DialogResult.Yes)
                                                     {
-                                                        int ScreenNumber = GET.jumunScreen(Market.종목코드);
-                                                        if (ScreenNumber == 1300)
+                                                        int Order번호 = GET.Order번호();
+                                                        string 검색식 = "수동매수";
+
+                                                        홀딩잔고.예수금업데이트("매수", T_주문가격, 주문수량, "주문", 종목코드, false);
+
+                                                        int 취소N주문 = 3;
+                                                        int 매수매도 = 1;
+                                                        // [지니 최적화] 명확한 속성 이름으로 매칭하여 가독성 향상
+                                                        JumunItem jumun = new JumunItem
                                                         {
-                                                            Method.주문초과알림(Market.종목명);
-                                                        }
-                                                        else
-                                                        {
-                                                            int Order번호 = GET.Order번호();
-                                                            string 검색식 = "수동매수";
+                                                            신용주문= 신용주문,
+                                                            Deletetimer = 0,
+                                                            Screennum = GET.JumunScreen(),
+                                                            종목코드 = 종목코드,
+                                                            종목명 = Market.종목명,
+                                                            주문번호 = "+++",
+                                                            원주문번호 = "---",
+                                                            검색식 = 검색식,
+                                                            주문값 = Value,             // *주의: 변수명 'Value'
+                                                            시장가구분 = 시장가구분,
+                                                            취소시간 = 반복타임,        // *주의: 10번째 인자 '반복타임'
+                                                            취소N주문 = 취소N주문,
+                                                            반복횟수 = 반복횟수,
+                                                            비고 = "",
+                                                            Pos = 검색식,               // *주의: 14번째 인자에 '검색식' 재사용
+                                                            주문수량 = 주문수량,
+                                                            주문가격 = T_주문가격,      // *주의: 변수명 'T_주문가격'
+                                                            매수매도 = 매수매도,
+                                                            비중 = 비중,
+                                                            비중단위 = 선택,            // *주의: 19번째 인자 변수명 '선택'
+                                                            취소timer = 반복타임,       // *주의: 20번째 인자 '반복타임'
+                                                            현재가 = 현재가,
+                                                            등락률 = 0,
+                                                            주문시간 = Get.TimeNow,
+                                                            미체결량 = 주문수량,        // 미체결량 초기화
+                                                            주문취소 = true,
+                                                            가동전 = false,
+                                                            Tik_cap = Method.Find_Tik_Cap(Market.현재가, T_주문가격, Market.Market),
+                                                            Tik_price = 현재가,         // *주의: 28번째 인자 '현재가'
+                                                            수익률 = 0,
+                                                            주문동기화 = false,
+                                                            감시번호 = 0,
+                                                            Order번호 = Order번호,
+                                                            수익구분 = 0,
+                                                            NXT = NXT_server,
+                                                            주문시간_Ticks = DateTime.Now.Ticks
+                                                        };
 
-                                                            DataManagement.예수금업데이트("매수", T_주문가격, 주문수량, "주문", Market.종목코드);
+                                                        // 리스트 추가
+                                                    await    Jumun.Add(jumun);
 
-
-                                                            JumunItem ItemList = new JumunItem(0, 0, ScreenNumber.ToString(), Market.종목코드, Market.종목명, "++", "---", 검색식, Value, 시장가구분, 반복타임, 3, 반복횟수, "", 검색식, 주문수량, T_주문가격, 1, 비중, 선택, 반복타임, Market.현재가, 0, Form1.timenow,
-                                                                                               주문수량, true, false, 0, Method.Find_Tik_Cap(Market.현재가, T_주문가격, Market.Market),
-                                                                                               Market.현재가, 0, false, 0, Order번호, 0, Form1.NXT_server); // 자동 매도 일때  주문추가 
-                                                            Form1.JumunItem_List.Add(ItemList);
-
-                                                            Form1.que_order(ScreenNumber.ToString(), Market.종목명, 1, Market.종목코드, 주문수량, 주문가격, HogaGB, "++", 검색식, Order번호);
-                                                        }
+                                                        ExecuteTrade.Que_order(jumun);//.종목명, jumun.매수매도, jumun.종목코드, jumun.주문수량, jumun.주문가격, jumun.주문값, jumun.매수매도, jumun.주문번호, jumun.검색식, jumun.Order번호);
                                                     }
                                             });
                                         });
@@ -1716,46 +1862,85 @@ namespace 지니_64
                         }
                         else
                         {
-                            if (Form1.stockBalanceList.TryGetValue(Market.종목코드, out Stockbalance 잔고))
+                            if (Form1.stockBalanceList.TryGetValue(종목코드, out Stockbalance 잔고))
                             {
                                 Task Task_Action = new Task(
                                 () =>
                                 {
-                                    int 주문수량 = Method.주문수량계산(잔고, T_주문가격, 비중, 선택, 주문유형);
+                                    int 주문수량 = Method.주문수량계산(잔고, T_주문가격, 비중, 선택);
 
                                     if (주문수량 > 0)
                                     {
                                         if (Method.매매확인_VI_모투가능확인(Market, 2))
                                         {
-                                            Form1.form1.Invoke((MethodInvoker)delegate ()
+                                             Helper.안전한_UI_업데이트(Form1.form1, () =>
                                             {
                                                 using (new CenterWinDialog(Form1.form1))
-                                                    if (MessageBox.Show(잔고.종목명 + "\n(" + 시장가 + ") " + T_주문가격 + "원 주문수량: " + 주문수량 + "\n" + "적용금액: " + (T_주문가격 * 주문수량) + "원 으로 '매도' 하시겠습니까 ?", "선택'매도'", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                                                    if (MessageBox.Show(주문메세지 + 잔고.종목명 + "\n(" + 매매 + ") " + T_주문가격 + "원 주문수량: " + 주문수량 + "\n" + "적용금액: " + (T_주문가격 * 주문수량) + "원 으로 '매도' 하시겠습니까 ?", "선택'매도'", MessageBoxButtons.YesNo) == DialogResult.Yes)
                                                     {
-                                                        if (주문수량 > 잔고.주문가능수량)
+                                                        int 총주문가능수량 = GET.총주문가능수량(잔고);
+                                                        if (주문수량 > 총주문가능수량)
                                                         {
-                                                            주문수량 = 잔고.주문가능수량;
+                                                            주문수량 = 총주문가능수량;
                                                         }
 
                                                         if (주문수량 > 0)
                                                         {
-                                                            int ScreenNumber = GET.jumunScreen(잔고.종목코드);
-                                                            if (ScreenNumber == 1300)
-                                                            {
-                                                                Method.주문초과알림(잔고.종목명);
-                                                            }
-                                                            else
-                                                            {
-                                                                int Order번호 = GET.Order번호();
-                                                                string 검색식 = "수동매도";
-                                                                DataManagement.주문가능수업데이트(잔고, "매도", 주문수량, "매도주문");
+                                                            int Order번호 = GET.Order번호();
+                                                            string 검색식 = "수동매도";
+                                                            int 매수매도 = 2;
 
-                                                                JumunItem ItemList = new JumunItem(0, 0, ScreenNumber.ToString(), Market.종목코드, 잔고.종목명, "++", "---", 검색식, Value, 시장가구분, 반복타임, 3, 반복횟수, "", 검색식, 주문수량, T_주문가격, 2, 비중, 선택, 반복타임, 잔고.현재가, 0, Form1.timenow,
-                                                                                                   주문수량, true, false, 0, Method.Find_Tik_Cap(잔고.현재가, T_주문가격, Market.Market),
-                                                                                                   잔고.현재가, 잔고.수익률, false, 0, Order번호, 0, Form1.NXT_server); // 자동 매도 일때  주문추가 
-                                                                Form1.JumunItem_List.Add(ItemList);
+                                                            신용계산.신용주문_분할매도_실행(잔고, 주문수량, async (is신용, 대출일, 수량) =>
+                                                            {
+                                                             await   주문(is신용, 대출일, 수량);
+                                                            });
 
-                                                                Form1.que_order(ScreenNumber.ToString(), 잔고.종목명, 2, Market.종목코드, 주문수량, 주문가격, HogaGB, "++", 검색식, Order번호);
+                                                            async Task 주문(bool 신용주문, string 대출일, int 주문수량)
+                                                            {
+                                                                JumunItem 새주문 = new JumunItem
+                                                                {
+                                                                    신용주문 = 신용주문,
+                                                                    대출일 = 대출일,
+                                                                    Deletetimer = 0,
+                                                                    Screennum = GET.JumunScreen(),
+                                                                    종목코드 = 종목코드,
+                                                                    종목명 = 잔고.종목명,
+                                                                    주문번호 = "+++",
+                                                                    원주문번호 = "---",
+                                                                    검색식 = 검색식,
+                                                                    주문값 = Value,             // *주의: 변수명 'Value'
+                                                                    시장가구분 = 시장가구분,     // *주의: 9번째 인자에 '시장가구분' 
+                                                                    취소시간 = 반복타임,        // *주의: 10번째 인자 '반복타임'
+                                                                    취소N주문 = 3,              // 고정값 3
+                                                                    반복횟수 = 반복횟수,
+                                                                    비고 = "",
+                                                                    Pos = 검색식,               // 14번째 인자 (Pos에 검색식 저장)
+                                                                    주문수량 = 주문수량,
+                                                                    주문가격 = T_주문가격,      // *주의: 변수명 'T_주문가격'
+                                                                    매수매도 = 매수매도,        // 17번째 인자
+                                                                    비중 = 비중,
+                                                                    비중단위 = 선택,            // *주의: 19번째 인자 변수명 '선택'
+                                                                    취소timer = 반복타임,       // *주의: 20번째 인자 '반복타임' (재사용)
+                                                                    현재가 = 잔고.현재가,
+                                                                    등락률 = 0,
+                                                                    주문시간 = Get.TimeNow,
+                                                                    미체결량 = 주문수량,        // 미체결량 초기화
+                                                                    주문취소 = true,
+                                                                    가동전 = false,
+                                                                    Tik_cap = Method.Find_Tik_Cap(잔고.현재가, T_주문가격, Market.Market),
+                                                                    Tik_price = 잔고.현재가,
+                                                                    수익률 = 잔고.수익률,
+                                                                    주문동기화 = false,
+                                                                    감시번호 = 0,
+                                                                    Order번호 = Order번호,
+                                                                    수익구분 = 0,
+                                                                    NXT = NXT_server,
+                                                                    주문시간_Ticks = DateTime.Now.Ticks
+                                                                };
+
+                                                                // 리스트 추가
+                                                            await    Jumun.Add(새주문);
+                                                                ExecuteTrade.Que_order(새주문);
                                                             }
                                                         }
                                                         else
@@ -1784,7 +1969,7 @@ namespace 지니_64
                 int 수동주문수량계산(int 주문가, double 비중, int index, int 주문유형)
                 {
                     double 수량 = 0;
-                    long 기준금 = Properties.Settings.Default.MT_buying_standard;
+                    long 기준금 = GenieConfig.MT_buying_standard;
 
                     if (주문유형 == 2) 주문가 = Market.현재가;
 
@@ -1811,44 +1996,16 @@ namespace 지니_64
         {
             if (Form1.FormSpecial_Open)
             {
-                Form_Special.form.Invoke((MethodInvoker)delegate ()
+                Helper.안전한_UI_업데이트(Form_Special.form, () =>
                 {
-                    //if (Market.종목명.Equals(Form_Special.form.TB_수동주문_종목명.Text))
-                    //{
-                    //    Form_Special.form.TB_수동주문_price.Text = Market.현재가.ToString();
-
-                    //    if (!Form_Special.form.CB_수동주문_주문가고정.Checked)
-                    //    {
-                    //        수동주문비기준계산(Market.종목코드, Market.현재가, Market.Market);
-                    //    }
-                    //    else
-                    //    {
-                    //        bool 성공 = int.TryParse(Form_Special.form.TB_수동주문_주문가.Text, out int 주문가);
-                    //        if (성공)
-                    //        {
-                    //            if (주문가 == Market.현재가)
-                    //            {
-                    //                Form_Special.form.TB_수동주문_주문비계산값.Text = "0";
-                    //                Form_Special.form.TB_수동주문_tick.Text = "0";
-                    //            }
-                    //            else
-                    //            {
-                    //                string para = Method.기준가고정_비(주문가, (int)Market.현재가, Market.Market);
-
-                    //                Form_Special.form.TB_수동주문_주문비계산값.Text = double.Parse(para.Split('&')[0]).ToString();
-                    //                Form_Special.form.TB_수동주문_tick.Text = int.Parse(para.Split('&')[1]).ToString();
-                    //            }
-                    //        }
-                    //    }
-                    //}
-
                     if (Market.종목명.Equals(Form_Special.form.TB_예약주문_종목명.Text))
                     {
+                        int 현재가 = Method.호가맞추기(Market.현재가, Market.Market);
                         Form_Special.form.TB_예약주문_현재가.Text = Market.현재가.ToString();
 
                         if (!Form_Special.form.CB_예약주문_주문가고정.Checked)
                         {
-                            예약주문비기준계산(Market.종목코드, Market.현재가, Market.Last_price, Market.Market);
+                            예약주문비기준계산(Market.종목코드, 현재가, Market.Last_price);
                         }
                         else
                         {
@@ -1878,7 +2035,6 @@ namespace 지니_64
 
         }
 
-
         public static void 예약주문동기화()
         {
             foreach (var item in Form1.form1.주문예약_List.ToList())
@@ -1887,7 +2043,7 @@ namespace 지니_64
                 {
                     if (!Form1.stockBalanceList.ContainsKey(item.종목코드))
                     {
-                        Method.실시간시세등록(item.종목코드);
+                        REG.실시간시세등록(item.종목코드);
                     }
                     else
                     {
@@ -1902,88 +2058,12 @@ namespace 지니_64
                     }
                 }
             }
-            save_주문예약();
+         SaveToFile.   주문예약_파일저장();
         }
 
-        public static void save_주문예약() //주문예약 저장 
-        {
-            Task task = new Task(() =>
-            {
-                Form1.form1.account_comboBox.Invoke((MethodInvoker)delegate ()  //      
-                {
-                    if (Form1.form1.account_comboBox.Text.Length > 0)
-                    {
-                        string File_Check = Application.StartupPath + @"\Data\" + Form1.USER_ID + "__" + Properties.Settings.Default.select_account + "__\\주문\\주문예약\\주문예약.txt";
+     
 
-                        using (StreamWriter writer_ = new StreamWriter(File_Check))
-                        {
-                            int i = 1;
-                            foreach (주문예약 name in Form1.form1.주문예약_List)
-                            {
-                                if (i == Form1.form1.주문예약_List.Count)
-                                {
-                                    writer_.Write(name.등록일 + "^" + name.예약번호 + "^" + name.스크린번호 + "^" + name.주문유형 + "^" + name.종목코드 + "^" + name.종목명 + "^" + name.주문비 + "^" + name.비중 + "^" + name.선택 + "^" + name.주문가 + "^" + name.주문수량 + "^" + name.검색식 + "^" + name.연동 + "^" + name.체결완료삭제 + "^" + name.전량매도삭제 + "^" + i);
-                                }
-                                else
-                                {
-                                    writer_.Write(name.등록일 + "^" + name.예약번호 + "^" + name.스크린번호 + "^" + name.주문유형 + "^" + name.종목코드 + "^" + name.종목명 + "^" + name.주문비 + "^" + name.비중 + "^" + name.선택 + "^" + name.주문가 + "^" + name.주문수량 + "^" + name.검색식 + "^" + name.연동 + "^" + name.체결완료삭제 + "^" + name.전량매도삭제 + "^" + i + ";\n");
-                                }
-                                i++;
-                            }
-                        }
-                    }
-                });
-            });
-            Form1.writing_Manager.RequestTrData(task);
-        }
-
-        public static void DataLoad_주문예약(string Account) // 잔고 :: 제외,매수일자,매수검색식, 저장 불러오기
-        {
-            FileInfo File_Check = new FileInfo(Application.StartupPath + @"\Data\" + Form1.USER_ID + "__" + Account + "__\\주문\\주문예약\\주문예약.txt");
-
-            if (File_Check.Exists)
-            {
-                try
-                {
-                    string path = Application.StartupPath + @"\Data\" + Form1.USER_ID + "__" + Account + "__\\주문\\주문예약\\주문예약.txt";
-                    string OptionLists = File.ReadAllText(path);
-
-                    if (OptionLists.Length > 0)
-                    {
-                        string[] full_예약 = OptionLists.Split(';');
-
-                        for (int n = 0; n < full_예약.Length; n++)
-                        {
-                            string[] 예약 = full_예약[n].Split('^');
-
-                            string 등록일 = 예약[0].Trim();
-                            int 예약번호 = int.Parse(예약[1]);
-                            string 스크린번호 = 예약[2];
-                            int 주문유형 = int.Parse(예약[3]);
-                            string 종목코드 = 예약[4];
-                            string 종목명 = 예약[5];
-                            double 주문비 = double.Parse(예약[6]);
-                            double 비중 = double.Parse(예약[7]);
-                            int 선택 = int.Parse(예약[8]);
-                            int 주문가 = int.Parse(예약[9]);
-                            int 주문수량 = int.Parse(예약[10]);
-                            string 검색식 = 예약[11];
-                            bool 연동 = bool.Parse(예약[12]);
-                            bool 체결완료삭제 = bool.Parse(예약[13]);
-                            bool 전량매도삭제 = bool.Parse(예약[14]);
-
-                            주문예약 stock = new 주문예약(등록일, 예약번호, "0000", 주문유형, 종목코드, 종목명, 주문비, 비중, 선택, 주문가, 주문수량, 0, 검색식, "++", true, 연동, 체결완료삭제, 전량매도삭제);
-                            Form1.form1.주문예약_List.Add(stock);
-                        }
-                    }
-                }
-                catch
-                {
-                    Form1.form1.Message_Alram("주문예약.txt 로딩 에러 파일을 확인하세요", "파일에러");
-                    Form1.Error_Log("[에러 확인] 주문예약.txt 로딩 에러");
-                }
-            }
-        }
+      
 
 
     }

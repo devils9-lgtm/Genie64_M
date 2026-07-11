@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using 지니64.RESTAPI;
 
-namespace 지니_64
+namespace 지니64
 {
     class Tab_PriceSearch
     {
@@ -12,216 +13,215 @@ namespace 지니_64
 
         public static void Stock_search_거래대금(string itemcode, string search_현재가, string search_체결시간, string 거래량_구분, string search_누적거래대금)
         {
-            var Task = new Task(() =>
+            // -----------------------------------------------------------------------------------
+            // [1단계: 초고속 필터링] 
+            // 메모리 할당(Queue, Lambda) 전에 조건이 안 맞으면 즉시 리턴하여 CPU를 아낍니다.
+            // -----------------------------------------------------------------------------------
+
+            // 유효성 검사
+            if (string.IsNullOrEmpty(itemcode) || string.IsNullOrEmpty(search_현재가)) return;
+
+            // 누적거래대금 파싱 (가장 중요한 필터)
+            // 조건: 설정된 누적액보다 작으면 아예 로직을 태우지 않음
+            if (!long.TryParse(search_누적거래대금, out long 누적거래대금)) return;
+            if (GenieConfig.TB_accumulate_Price > 누적거래대금) return;
+
+            // 현재가 파싱 (절댓값 처리)
+            if (!int.TryParse(search_현재가, out int rawPrice)) return;
+            int 현재가 = (rawPrice < 0) ? -rawPrice : rawPrice;
+
+            // 거래량 파싱 (문자열 조작 최소화)
+            // 거래량_구분: "+100" or "-100"
+            bool is매수 = true;
+            if (거래량_구분.Length > 0 && 거래량_구분[0] == '-') is매수 = false;
+
+            // TryParse는 부호(+, -)를 자동으로 처리하므로 Substring 없이 바로 파싱
+            long.TryParse(거래량_구분, out long 거래량);
+            거래량 = (거래량 < 0) ? -거래량 : 거래량;
+
+            // 체결시간 파싱
+            if (!int.TryParse(search_체결시간, out int 체결시간)) return;
+
+            // 분 정보 추출 (Substring 없이 수학 연산으로 추출하여 메모리 절약)
+            // 예: 090123 -> 뒤에서 4번째, 3번째 글자
+            int 분 = 0;
+            if (search_체결시간.Length >= 4)
             {
-                if (Form1.Market_Item_List.ContainsKey(itemcode))
+                int len = search_체결시간.Length;
+                // ASCII 코드 값('0')을 빼서 숫자로 변환
+                분 = (search_체결시간[len - 4] - '0') * 10 + (search_체결시간[len - 3] - '0');
+            }
+
+            // -----------------------------------------------------------------------------------
+            // [2단계: 큐 진입] 
+            // 1단계 필터를 통과한 '유의미한 데이터'만 비동기 큐에 넣습니다.
+            // -----------------------------------------------------------------------------------
+            UnifiedDataManager.Instance.RealPrice.Enqueue(async () =>
+            {
+                try
                 {
-                    Market_Item Market = Form1.Market_Item_List[itemcode];
+                    // 종목 데이터 가져오기 (없으면 종료)
+                    if (!Form1.Market_Item_List.TryGetValue(itemcode, out Market_Item Market)) return;
 
-                    string 거래구분 = "매수";
-                    if (거래량_구분.Contains("-")) 거래구분 = "매도";
-                    string search_거래량 = 거래량_구분.Substring(1);
-
-                    int.TryParse(search_현재가, out int _현재가);
-                    int 현재가 = Math.Abs(_현재가);
-                    long.TryParse(search_거래량, out long 거래량);
-                    int.TryParse(search_체결시간, out int 체결시간);
-                    long.TryParse(search_누적거래대금, out long 누적거래대금);
-                    int.TryParse(search_체결시간.Substring(search_체결시간.Length - 4, 2), out int 분);
-
+                    // ---------------------------------------------------------
+                    // [시세 데이터 업데이트]
+                    // ---------------------------------------------------------
                     if (Market.minute != 분)
                     {
                         Market.minute = 분;
                         Market.S_minute = 현재가;
                     }
 
+                    // 초기값 설정 (0일 때만 세팅)
                     if (Market.Buy_현재가_A == 0) Market.Buy_현재가_A = 현재가;
                     if (Market.Buy_현재가_B == 0) Market.Buy_현재가_B = 현재가;
                     if (Market.Sell_현재가 == 0) Market.Sell_현재가 = 현재가;
 
-                    bool 봉확인(int 분봉, int 일봉)
+
+                    // =========================================================
+                    // [로컬 함수 정의] 반복 로직을 함수화하여 성능 및 가독성 향상
+                    // =========================================================
+
+                    bool CheckBong(int bunbong, int ilbong)
                     {
-                        bool result = 일봉확인();
+                        // 일봉 조건 (빠른 리턴 적용)
+                        if (ilbong == 1 && 현재가 < Market.start_price) return false;
+                        if (ilbong == 2 && 현재가 > Market.start_price) return false;
+                        if (ilbong == 3 && 현재가 < Market.Last_price) return false;
+                        if (ilbong == 4 && 현재가 > Market.Last_price) return false;
 
-                        if (분봉 == 1) // 1분봉양봉 일때 확인
-                        {
-                            if (현재가 > Market.S_minute)
-                                result = 일봉확인();
-                        }
-                        else if (분봉 == 2) // 1분봉음봉 일때 확인
-                        {
-                            if (현재가 < Market.S_minute)
-                                result = 일봉확인();
-                        }
+                        // 분봉 조건
+                        if (bunbong == 1 && 현재가 <= Market.S_minute) return false;
+                        if (bunbong == 2 && 현재가 >= Market.S_minute) return false;
 
-                        bool 일봉확인()
-                        {
-                            bool 확인 = true;
-
-                            if (일봉 == 1) // 시가양
-                            {
-                                if (현재가 < Market.start_price) 확인 = false;
-                            }
-                            else if (일봉 == 2) // 시가음
-                            {
-                                if (현재가 > Market.start_price) 확인 = false;
-                            }
-                            else if (일봉 == 3) // 종가양
-                            {
-                                if (현재가 < Market.Last_price) 확인 = false;
-                            }
-                            else if (일봉 == 4) // 종가음
-                            {
-                                if (현재가 > Market.Last_price) 확인 = false;
-                            }
-
-                            return 확인;
-                        }
-
-                        return result;
+                        return true;
                     }
 
-                    if (Properties.Settings.Default.TB_accumulate_Price <= 누적거래대금)
+                    bool CheckTick(int upVal, bool upOpt, int mktUp, int downVal, bool downOpt, int mktDown)
                     {
-                        if (Properties.Settings.Default.CB_매수탐색A)
+                        bool upResult = upOpt ? (upVal <= mktUp) : (upVal >= mktUp);
+                        if (!upResult) return false;
+                        return downOpt ? (downVal <= mktDown) : (downVal >= mktDown);
+                    }
+
+                    double GetTargetMoney(long p1, double m1, long p2, double m2, long p3, double m3,
+                                          long p4, double m4, long p5, double m5, double m6)
+                    {
+                        if (현재가 <= p5) return m5 * 10000;
+                        if (현재가 <= p4) return m4 * 10000;
+                        if (현재가 <= p3) return m3 * 10000;
+                        if (현재가 <= p2) return m2 * 10000;
+                        if (현재가 <= p1) return m1 * 10000;
+                        return m6 * 10000;
+                    }
+
+                    async Task EnterSearch(int durationSeconds, string searchName, bool isNew)
+                    {
+                        // Key 생성 (메모리 효율을 위해 필요한 시점에 생성)
+                        string key = string.Concat(itemcode, "^", searchName);
+
+                        if (Form1.검색이탈_Dic.TryGetValue(key, out 검색이탈 item))
                         {
-                            if (봉확인(Properties.Settings.Default.CBB_Buy_A_분봉, Properties.Settings.Default.CBB_Buy_A_일봉))
-                            {
-                                if (Market.수시간_A + Properties.Settings.Default.TB_Buy_A_기준초 < 체결시간)
-                                {
-                                    Market.수대금_A = 0;
-                                    Market.수시간_A = 체결시간;
-                                    Market.Buy_start_A = 현재가;
-
-                                    Market.Buy_상승카운터_A = 0;
-                                    Market.Buy_하락카운터_A = 0;
-                                }
-
-                                if (거래구분.Equals("매수"))
-                                {
-                                    Market.수대금_A = Market.수대금_A + (현재가 * 거래량);
-                                    Market.Buy_End_A = 현재가;
-
-                                    // 상승 카운터 
-                                    if (Market.Buy_현재가_A < 현재가)
-                                    {
-                                        Market.Buy_상승카운터_A++;
-                                        if (Market.Buy_하락카운터_A > 0) Market.Buy_하락카운터_A--;
-                                    }
-                                    else if (Market.Buy_현재가_A > 현재가)
-                                    {
-                                        if (Market.Buy_상승카운터_A > 0) Market.Buy_상승카운터_A--;
-                                        Market.Buy_하락카운터_A++;
-                                    }
-
-                                    Market.Buy_현재가_A = 현재가;
-                                }
-
-                                double 시장가대금 = Properties.Settings.Default.TB_Buy_A_탐색대금_6 * (double)10000;
-
-                                if (현재가 <= Properties.Settings.Default.TB_Buy_A_탐색주가_5) 시장가대금 = Properties.Settings.Default.TB_Buy_A_탐색대금_5 * 10000;
-                                if (현재가 <= Properties.Settings.Default.TB_Buy_A_탐색주가_4) 시장가대금 = Properties.Settings.Default.TB_Buy_A_탐색대금_4 * 10000;
-                                if (현재가 <= Properties.Settings.Default.TB_Buy_A_탐색주가_3) 시장가대금 = Properties.Settings.Default.TB_Buy_A_탐색대금_3 * 10000;
-                                if (현재가 <= Properties.Settings.Default.TB_Buy_A_탐색주가_2) 시장가대금 = Properties.Settings.Default.TB_Buy_A_탐색대금_2 * 10000;
-                                if (현재가 <= Properties.Settings.Default.TB_Buy_A_탐색주가_1) 시장가대금 = Properties.Settings.Default.TB_Buy_A_탐색대금_1 * 10000;
-
-                                double MS_rate = 1 + (Properties.Settings.Default.TB_Buy_A_탐색rate / 100);
-
-                                int 상승값 = Properties.Settings.Default.TB_Buy_상승카운터_A;
-                                bool 상승옵션 = Properties.Settings.Default.CB_Buy_상승옵션_A;
-                                int Market상승값 = Market.Buy_상승카운터_A;
-                                int 하락값 = Properties.Settings.Default.TB_Buy_하락카운터_A;
-                                bool 하락옵션 = Properties.Settings.Default.CB_Buy_하락옵션_A;
-                                int Market하락값 = Market.Buy_하락카운터_A;
-
-                                if (틱계산(상승값, 상승옵션, Market상승값, 하락값, 하락옵션, Market하락값))
-                                {
-                                    if (Market.수대금_A >= 시장가대금)
-                                    {
-                                        if ((Double)(Market.Buy_start_A * MS_rate) <= (Double)Market.Buy_End_A)
-                                        {
-                                            if (Market.매수가능_A && Market.재매수_A == 0)
-                                            {
-                                                bool New = false;
-                                                if (Properties.Settings.Default.CB_new_A && Properties.Settings.Default.combo_new_condition_A.Equals(Properties.Settings.Default.TB_매수탐색A)) New = true;
-                                                if (Properties.Settings.Default.CB_new_B && Properties.Settings.Default.combo_new_condition_B.Equals(Properties.Settings.Default.TB_매수탐색A)) New = true;
-                                                if (Properties.Settings.Default.CB_new_C && Properties.Settings.Default.combo_new_condition_C.Equals(Properties.Settings.Default.TB_매수탐색A)) New = true;
-
-                                                검색진입(itemcode, Properties.Settings.Default.MTB_M_반복, Properties.Settings.Default.TB_매수탐색A, New);
-
-                                                Market.재매수_A = Properties.Settings.Default.MTB_M_반복;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                            // 이미 있으면 시간 연장
+                            item.ExpireTime = DateTime.Now.AddSeconds(durationSeconds);
+                        }
+                        else
+                        {
+                            // 없으면 추가 (스레드 안전)
+                            item = new 검색이탈(durationSeconds, key, isNew);
+                            Form1.검색이탈_Dic.TryAdd(key, item);
                         }
 
-                        if (Properties.Settings.Default.CB_매수탐색B)
+                        string current_time = Form1.Get.TimeNow.ToString("##:##:##");
+
+                        // 각 탭 로직 호출
+                        if (isNew) await Tab_Basic.New_Buy("I", itemcode, searchName);
+                        Tab_Watch.Watch_In_Out("I", itemcode, searchName, current_time);
+                        Tab_Repeat.Repeat_condition("I", itemcode, searchName);
+                        Tab_AccountManagement.Rebalancing_condition("I", itemcode, searchName);
+                        Tab_AccountManagement.Liquidation_condition("I", itemcode, searchName);
+
+                        Condition_Management.SearchView_add("I", itemcode, searchName, current_time);
+                    }
+
+
+                    // =========================================================
+                    // [A] 매수 탐색 A 로직
+                    // =========================================================
+                    if (GenieConfig.CB_매수탐색A)
+                    {
+                        if (CheckBong(GenieConfig.CBB_Buy_A_분봉, GenieConfig.CBB_Buy_A_일봉))
                         {
-                            if (봉확인(Properties.Settings.Default.CBB_Buy_B_분봉, Properties.Settings.Default.CBB_Buy_B_일봉))
+                            bool resetA = false;
+                            // 시간 기준 초기화
+                            if (GenieConfig.Combo_Buy_A_초회 == 0)
                             {
-                                if (Market.수시간_B + Properties.Settings.Default.TB_Buy_B_기준초 < 체결시간)
+                                if (Market.수시간_A + GenieConfig.TB_Buy_A_기준초 < 체결시간) resetA = true;
+                            }
+                            // 카운트 기준 초기화
+                            else if (GenieConfig.Combo_Buy_A_초회 == 1)
+                            {
+                                if (GenieConfig.TB_Buy_A_기준초 < Form1.Get.매수탐색count_A) resetA = true;
+                                Form1.Get.매수탐색count_A++;
+                            }
+
+                            if (resetA)
+                            {
+                                Market.수대금_A = 0;
+                                Market.수시간_A = 체결시간;
+                                Market.Buy_start_A = 현재가;
+                                Market.Buy_상승카운터_A = 0;
+                                Market.Buy_하락카운터_A = 0;
+                            }
+
+                            // 매수 체결일 때만 카운트 증가
+                            if (is매수)
+                            {
+                                Market.수대금_A += (long)현재가 * 거래량;
+                                Market.Buy_End_A = 현재가;
+
+                                if (Market.Buy_현재가_A < 현재가)
                                 {
-                                    Market.수대금_B = 0;
-                                    Market.수시간_B = 체결시간;
-                                    Market.Buy_start_B = 현재가;
+                                    Market.Buy_상승카운터_A++;
+                                    if (Market.Buy_하락카운터_A > 0) Market.Buy_하락카운터_A--;
                                 }
-
-                                if (거래구분.Equals("매수"))
+                                else if (Market.Buy_현재가_A > 현재가)
                                 {
-                                    Market.수대금_B = Market.수대금_B + (현재가 * 거래량);
-                                    Market.Buy_End_B = 현재가;
-
-                                    // 상승 카운터 
-                                    if (Market.Buy_현재가_B < 현재가)
-                                    {
-                                        Market.Buy_상승카운터_B++;
-                                        if (Market.Buy_하락카운터_B > 0) Market.Buy_하락카운터_B--;
-                                    }
-                                    else if (Market.Buy_현재가_B > 현재가)
-                                    {
-                                        if (Market.Buy_상승카운터_B > 0) Market.Buy_상승카운터_B--;
-                                        Market.Buy_하락카운터_B++;
-                                    }
-
-                                    Market.Buy_현재가_B = 현재가;
+                                    if (Market.Buy_상승카운터_A > 0) Market.Buy_상승카운터_A--;
+                                    Market.Buy_하락카운터_A++;
                                 }
+                                Market.Buy_현재가_A = 현재가;
+                            }
 
-                                double 시장가대금 = Properties.Settings.Default.TB_Buy_B_탐색대금_6 * (double)10000;
+                            // 목표 대금 계산
+                            double targetMoneyA = GetTargetMoney(
+                                GenieConfig.TB_Buy_A_탐색주가_1, GenieConfig.TB_Buy_A_탐색대금_1,
+                                GenieConfig.TB_Buy_A_탐색주가_2, GenieConfig.TB_Buy_A_탐색대금_2,
+                                GenieConfig.TB_Buy_A_탐색주가_3, GenieConfig.TB_Buy_A_탐색대금_3,
+                                GenieConfig.TB_Buy_A_탐색주가_4, GenieConfig.TB_Buy_A_탐색대금_4,
+                                GenieConfig.TB_Buy_A_탐색주가_5, GenieConfig.TB_Buy_A_탐색대금_5,
+                                GenieConfig.TB_Buy_A_탐색대금_6);
 
-                                if (현재가 <= Properties.Settings.Default.TB_Buy_B_탐색주가_5) 시장가대금 = Properties.Settings.Default.TB_Buy_B_탐색대금_5 * 10000;
-                                if (현재가 <= Properties.Settings.Default.TB_Buy_B_탐색주가_4) 시장가대금 = Properties.Settings.Default.TB_Buy_B_탐색대금_4 * 10000;
-                                if (현재가 <= Properties.Settings.Default.TB_Buy_B_탐색주가_3) 시장가대금 = Properties.Settings.Default.TB_Buy_B_탐색대금_3 * 10000;
-                                if (현재가 <= Properties.Settings.Default.TB_Buy_B_탐색주가_2) 시장가대금 = Properties.Settings.Default.TB_Buy_B_탐색대금_2 * 10000;
-                                if (현재가 <= Properties.Settings.Default.TB_Buy_B_탐색주가_1) 시장가대금 = Properties.Settings.Default.TB_Buy_B_탐색대금_1 * 10000;
-
-                                double MS_rate = 1 + (Properties.Settings.Default.TB_Buy_B_탐색rate / 100);
-
-                                int 상승값 = Properties.Settings.Default.TB_Buy_상승카운터_B;
-                                bool 상승옵션 = Properties.Settings.Default.CB_Buy_상승옵션_B;
-                                int Market상승값 = Market.Buy_상승카운터_B;
-                                int 하락값 = Properties.Settings.Default.TB_Buy_하락카운터_B;
-                                bool 하락옵션 = Properties.Settings.Default.CB_Buy_하락옵션_B;
-                                int Market하락값 = Market.Buy_하락카운터_B;
-
-                                if (틱계산(상승값, 상승옵션, Market상승값, 하락값, 하락옵션, Market하락값))
+                            // 틱 조건 및 대금 조건 확인
+                            if (CheckTick(GenieConfig.TB_Buy_상승카운터_A, GenieConfig.CB_Buy_상승옵션_A, Market.Buy_상승카운터_A,
+                                          GenieConfig.TB_Buy_하락카운터_A, GenieConfig.CB_Buy_하락옵션_A, Market.Buy_하락카운터_A))
+                            {
+                                if (Market.수대금_A >= targetMoneyA)
                                 {
-                                    if (Market.수대금_B >= 시장가대금)
+                                    double msRate = 1 + (GenieConfig.TB_Buy_A_탐색rate / 100.0);
+
+                                    if ((Market.Buy_start_A * msRate) <= Market.Buy_End_A)
                                     {
-                                        if ((Double)(Market.Buy_start_B * MS_rate) <= (Double)Market.Buy_End_B)
+                                        if (Market.매수가능_A && Market.재매수_A == 0)
                                         {
-                                            if (Market.매수가능_B && Market.재매수_B == 0)
-                                            {
-                                                bool New = false;
-                                                if (Properties.Settings.Default.CB_new_A && Properties.Settings.Default.combo_new_condition_A.Equals(Properties.Settings.Default.TB_매수탐색B)) New = true;
-                                                if (Properties.Settings.Default.CB_new_B && Properties.Settings.Default.combo_new_condition_B.Equals(Properties.Settings.Default.TB_매수탐색B)) New = true;
-                                                if (Properties.Settings.Default.CB_new_C && Properties.Settings.Default.combo_new_condition_C.Equals(Properties.Settings.Default.TB_매수탐색B)) New = true;
+                                            bool isNew = false;
+                                            // 문자열 비교 최적화
+                                            if (GenieConfig.CB_new_A && Form1.위치별검색식리스트["신규_A"].이름.Equals("매수탐색_A")) isNew = true;
+                                            if (GenieConfig.CB_new_B && Form1.위치별검색식리스트["신규_B"].이름.Equals("매수탐색_A")) isNew = true;
+                                            if (GenieConfig.CB_new_C && Form1.위치별검색식리스트["신규_C"].이름.Equals("매수탐색_A")) isNew = true;
 
-                                                검색진입(itemcode, Properties.Settings.Default.MTB_M_반복_2, Properties.Settings.Default.TB_매수탐색B, New);
-
-                                                Market.재매수_B = Properties.Settings.Default.MTB_M_반복_2;
-                                            }
+                                     await        EnterSearch(GenieConfig.MTB_M_반복, "매수탐색_A", isNew);
+                                            Market.재매수_A = GenieConfig.MTB_M_반복;
                                         }
                                     }
                                 }
@@ -229,26 +229,119 @@ namespace 지니_64
                         }
                     }
 
-                    if (Properties.Settings.Default.CB_매도탐색)
+
+                    // =========================================================
+                    // [B] 매수 탐색 B 로직
+                    // =========================================================
+                    if (GenieConfig.CB_매수탐색B)
                     {
-                        Dictionary<string, Stockbalance> stockBalanceList = Form1.stockBalanceList;   // 잔고 - 보유잔고리스트
-                        if (stockBalanceList.ContainsKey(itemcode))
+                        if (CheckBong(GenieConfig.CBB_Buy_B_분봉, GenieConfig.CBB_Buy_B_일봉))
                         {
-                            if (봉확인(Properties.Settings.Default.CBB_Sell_탐색_분봉, Properties.Settings.Default.CBB_Sell_탐색_일봉))
+                            bool resetB = false;
+                            if (GenieConfig.Combo_Buy_B_초회 == 0)
                             {
-                                if (Market.도시간 + Properties.Settings.Default.TB_Sell_기준초 < 체결시간)
+                                if (Market.수시간_B + GenieConfig.TB_Buy_B_기준초 < 체결시간) resetB = true;
+                            }
+                            else if (GenieConfig.Combo_Buy_B_초회 == 1)
+                            {
+                                if (GenieConfig.TB_Buy_B_기준초 < Form1.Get.매수탐색count_B) resetB = true;
+                                Form1.Get.매수탐색count_B++;
+                            }
+
+                            if (resetB)
+                            {
+                                Market.수대금_B = 0;
+                                Market.수시간_B = 체결시간;
+                                Market.Buy_start_B = 현재가;
+                                Market.Buy_상승카운터_B = 0;
+                                Market.Buy_하락카운터_B = 0;
+                            }
+
+                            if (is매수)
+                            {
+                                Market.수대금_B += (long)현재가 * 거래량;
+                                Market.Buy_End_B = 현재가;
+
+                                if (Market.Buy_현재가_B < 현재가)
+                                {
+                                    Market.Buy_상승카운터_B++;
+                                    if (Market.Buy_하락카운터_B > 0) Market.Buy_하락카운터_B--;
+                                }
+                                else if (Market.Buy_현재가_B > 현재가)
+                                {
+                                    if (Market.Buy_상승카운터_B > 0) Market.Buy_상승카운터_B--;
+                                    Market.Buy_하락카운터_B++;
+                                }
+                                Market.Buy_현재가_B = 현재가;
+                            }
+
+                            double targetMoneyB = GetTargetMoney(
+                                GenieConfig.TB_Buy_B_탐색주가_1, GenieConfig.TB_Buy_B_탐색대금_1,
+                                GenieConfig.TB_Buy_B_탐색주가_2, GenieConfig.TB_Buy_B_탐색대금_2,
+                                GenieConfig.TB_Buy_B_탐색주가_3, GenieConfig.TB_Buy_B_탐색대금_3,
+                                GenieConfig.TB_Buy_B_탐색주가_4, GenieConfig.TB_Buy_B_탐색대금_4,
+                                GenieConfig.TB_Buy_B_탐색주가_5, GenieConfig.TB_Buy_B_탐색대금_5,
+                                GenieConfig.TB_Buy_B_탐색대금_6);
+
+                            if (CheckTick(GenieConfig.TB_Buy_상승카운터_B, GenieConfig.CB_Buy_상승옵션_B, Market.Buy_상승카운터_B,
+                                          GenieConfig.TB_Buy_하락카운터_B, GenieConfig.CB_Buy_하락옵션_B, Market.Buy_하락카운터_B))
+                            {
+                                if (Market.수대금_B >= targetMoneyB)
+                                {
+                                    double msRate = 1 + (GenieConfig.TB_Buy_B_탐색rate / 100.0);
+
+                                    if ((Market.Buy_start_B * msRate) <= Market.Buy_End_B)
+                                    {
+                                        if (Market.매수가능_B && Market.재매수_B == 0)
+                                        {
+                                            bool isNew = false;
+                                            if (GenieConfig.CB_new_A && Form1.위치별검색식리스트["신규_A"].이름.Equals("매수탐색_B")) isNew = true;
+                                            if (GenieConfig.CB_new_B && Form1.위치별검색식리스트["신규_B"].이름.Equals("매수탐색_B")) isNew = true;
+                                            if (GenieConfig.CB_new_C && Form1.위치별검색식리스트["신규_C"].이름.Equals("매수탐색_B")) isNew = true;
+
+                                       await      EnterSearch(GenieConfig.MTB_M_반복_2, "매수탐색_B", isNew);
+                                            Market.재매수_B = GenieConfig.MTB_M_반복_2;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // =========================================================
+                    // [C] 매도 탐색 로직
+                    // =========================================================
+                    if (GenieConfig.CB_매도탐색)
+                    {
+                        if (Form1.stockBalanceList.ContainsKey(itemcode))
+                        {
+                            if (CheckBong(GenieConfig.CBB_Sell_탐색_분봉, GenieConfig.CBB_Sell_탐색_일봉))
+                            {
+                                bool resetSell = false;
+                                if (GenieConfig.Combo_Buy_B_초회 == 0)
+                                {
+                                    if (Market.도시간 + GenieConfig.TB_Sell_기준초 < 체결시간) resetSell = true;
+                                }
+                                else if (GenieConfig.Combo_Buy_B_초회 == 1)
+                                {
+                                    if (GenieConfig.TB_Sell_기준초 < Form1.Get.매도탐색count) resetSell = true;
+                                    Form1.Get.매도탐색count++;
+                                }
+
+                                if (resetSell)
                                 {
                                     Market.도대금 = 0;
                                     Market.도시간 = 체결시간;
                                     Market.Sell_start = 현재가;
+                                    Market.Sell_상승카운터 = 0;
+                                    Market.Sell_하락카운터 = 0;
                                 }
 
-                                if (거래구분.Equals("매도"))
+                                if (!is매수) // 매도 체결일 때
                                 {
-                                    Market.도대금 = Market.도대금 + (현재가 * 거래량);
+                                    Market.도대금 += (long)현재가 * 거래량;
                                     Market.Sell_End = 현재가;
 
-                                    // 상승 카운터 
                                     if (Market.Sell_현재가 < 현재가)
                                     {
                                         Market.Sell_상승카운터++;
@@ -259,35 +352,27 @@ namespace 지니_64
                                         if (Market.Sell_상승카운터 > 0) Market.Sell_상승카운터--;
                                         Market.Sell_하락카운터++;
                                     }
-
                                     Market.Sell_현재가 = 현재가;
                                 }
 
-                                double 시장가대금 = Properties.Settings.Default.TB_Sell_탐색대금_6 * (double)10000;
+                                double targetMoneySell = GetTargetMoney(
+                                    GenieConfig.TB_Sell_탐색주가_1, GenieConfig.TB_Sell_탐색대금_1,
+                                    GenieConfig.TB_Sell_탐색주가_2, GenieConfig.TB_Sell_탐색대금_2,
+                                    GenieConfig.TB_Sell_탐색주가_3, GenieConfig.TB_Sell_탐색대금_3,
+                                    GenieConfig.TB_Sell_탐색주가_4, GenieConfig.TB_Sell_탐색대금_4,
+                                    GenieConfig.TB_Sell_탐색주가_5, GenieConfig.TB_Sell_탐색대금_5,
+                                    GenieConfig.TB_Sell_탐색대금_6);
 
-                                if (현재가 <= Properties.Settings.Default.TB_Sell_탐색주가_6) 시장가대금 = Properties.Settings.Default.TB_Sell_탐색대금_6 * 10000;
-                                if (현재가 <= Properties.Settings.Default.TB_Sell_탐색주가_5) 시장가대금 = Properties.Settings.Default.TB_Sell_탐색대금_5 * 10000;
-                                if (현재가 <= Properties.Settings.Default.TB_Sell_탐색주가_4) 시장가대금 = Properties.Settings.Default.TB_Sell_탐색대금_4 * 10000;
-                                if (현재가 <= Properties.Settings.Default.TB_Sell_탐색주가_3) 시장가대금 = Properties.Settings.Default.TB_Sell_탐색대금_3 * 10000;
-                                if (현재가 <= Properties.Settings.Default.TB_Sell_탐색주가_2) 시장가대금 = Properties.Settings.Default.TB_Sell_탐색대금_2 * 10000;
-                                if (현재가 <= Properties.Settings.Default.TB_Sell_탐색주가_1) 시장가대금 = Properties.Settings.Default.TB_Sell_탐색대금_1 * 10000;
-
-                                double MS_rate = 1 + (Properties.Settings.Default.TB_Sell_탐색rate / 100);
-
-                                int 상승값 = Properties.Settings.Default.TB_Sell_상승카운터;
-                                bool 상승옵션 = Properties.Settings.Default.CB_Sell_상승옵션;
-                                int Market상승값 = Market.Sell_상승카운터;
-                                int 하락값 = Properties.Settings.Default.TB_Sell_하락카운터;
-                                bool 하락옵션 = Properties.Settings.Default.CB_Sell_하락옵션;
-                                int Market하락값 = Market.Sell_하락카운터;
-
-                                if (틱계산(상승값, 상승옵션, Market상승값, 하락값, 하락옵션, Market하락값))
+                                if (CheckTick(GenieConfig.TB_Sell_상승카운터, GenieConfig.CB_Sell_상승옵션, Market.Sell_상승카운터,
+                                              GenieConfig.TB_Sell_하락카운터, GenieConfig.CB_Sell_하락옵션, Market.Sell_하락카운터))
                                 {
-                                    if (Market.도대금 >= 시장가대금)
+                                    if (Market.도대금 >= targetMoneySell)
                                     {
-                                        if ((Double)(Market.Sell_start * MS_rate) >= (Double)Market.Sell_End)
+                                        double sellRate = 1 + (GenieConfig.TB_Sell_탐색rate / 100.0);
+                                        if ((Market.Sell_start * sellRate) >= Market.Sell_End)
                                         {
-                                            검색진입(itemcode, 5, Properties.Settings.Default.TB_매도탐색, false);
+                                            // 매도는 신규 여부 false
+                                          await  EnterSearch(5, "매도탐색", false);
                                         }
                                     }
                                 }
@@ -295,240 +380,137 @@ namespace 지니_64
                         }
                     }
 
-                    void 검색진입(string itemCode, int 타이머, string 검색식, bool 신규)
-                    {
-                        검색이탈 탐색 = Form1.검색이탈_LIST.Find(o => o.코드_검색식.Equals(itemCode + "^" + 검색식));
-
-                        if (탐색 == null)
-                        {
-                            검색이탈 ADD = new 검색이탈(타이머, itemCode + "^" + 검색식, 신규);
-                            Form1.검색이탈_LIST.Add(ADD);
-                        }
-                        else
-                        {
-                            탐색.타이머 = 타이머;
-                        }
-
-                        string time = DateTime.Now.ToString("HH:mm:ss");
-
-                        if (신규) Tab_Basic.New_Buy("I", itemCode, 검색식);
-                        Tab_Watch.Watch_In_Out("I", itemCode, 검색식, time);
-                        Tab_Repeat.Repeat_condition("I", itemCode, 검색식);
-                        Tab_AccountManagement.Rebalancing_condition("I", itemCode, 검색식);
-                        Tab_AccountManagement.Liquidation_condition("I", itemCode, 검색식);
-
-                        Form1.form1.SearchView_add("I", itemCode, 검색식, time);
-                    }
-
-                    bool 틱계산(int 상승값, bool 상승옵션, int Market상승값, int 하락값, bool 하락옵션, int Market하락값)
-                    {
-                        bool result = false;
-
-                        if (상승옵션) //이상
-                        {
-                            if (상승값 <= Market상승값) result = true;
-                        }
-                        else //이하
-                        {
-                            if (상승값 >= Market상승값) result = true;
-                        }
-
-                        if (result)
-                        {
-                            if (하락옵션) //이상
-                            {
-                                if (하락값 <= Market하락값) result = true;
-                            }
-                            else //이하
-                            {
-                                if (하락값 >= Market하락값) result = true;
-                            }
-                        }
-
-                        return result;
-                    }
                 }
+                catch { } // 리얼 데이터 수신 중 오류 발생 시 루프가 멈추지 않도록 예외 무시
             });
-            Form1.Real_price_Manager.RequestTrData(Task);
         }
 
 
-        public static void Stock_search_호가별대금(string Itemcode, string 매도호가2, string 매도호가3, string 매도호가4, string 매도호가5, string 매도호가6, string 매도호가7, string 매도호가8, string 매도호가9, string 매도호가10,
-                                                     string 매수호가2, string 매수호가3, string 매수호가4, string 매수호가5, string 매수호가6, string 매수호가7, string 매수호가8, string 매수호가9, string 매수호가10,
-                                                       string 매도호가수량2, string 매도호가수량3, string 매도호가수량4, string 매도호가수량5, string 매도호가수량6, string 매도호가수량7, string 매도호가수량8, string 매도호가수량9, string 매도호가수량10,
-                                                     string 매수호가수량2, string 매수호가수량3, string 매수호가수량4, string 매수호가수량5, string 매수호가수량6, string 매수호가수량7, string 매수호가수량8, string 매수호가수량9, string 매수호가수량10)
+        public static void Stock_search_호가별대금(string itemcode, string 매도호가2, string 매도호가3, string 매도호가4, string 매도호가5, string 매도호가6, string 매도호가7, string 매도호가8, string 매도호가9, string 매도호가10,
+                                        string 매수호가2, string 매수호가3, string 매수호가4, string 매수호가5, string 매수호가6, string 매수호가7, string 매수호가8, string 매수호가9, string 매수호가10,
+                                        string 매도호가수량2, string 매도호가수량3, string 매도호가수량4, string 매도호가수량5, string 매도호가수량6, string 매도호가수량7, string 매도호가수량8, string 매도호가수량9, string 매도호가수량10,
+                                        string 매수호가수량2, string 매수호가수량3, string 매수호가수량4, string 매수호가수량5, string 매수호가수량6, string 매수호가수량7, string 매수호가수량8, string 매수호가수량9, string 매수호가수량10)
         {
-            var Task = new Task(() =>
+            // [1단계: 사전 필터링]
+            // 종목이 없거나, 호가 탐색 기능(A, B)이 모두 꺼져있으면 큐에 넣지도 않고 종료
+            if (!GenieConfig.CB_매수탐색A && !GenieConfig.CB_매수탐색B) return;
+
+            UnifiedDataManager.Instance.RealHoga.Enqueue(() =>
             {
-                if (Form1.Market_Item_List.ContainsKey(Itemcode))
+                if (!Form1.Market_Item_List.TryGetValue(itemcode, out Market_Item Market)) return;
+
+                // -------------------------------------------------------------
+                // [2단계: 데이터 파싱 및 전처리]
+                // 값을 하나씩 변수에 담지 않고, 배열에 담아 루프 처리가 가능하게 만듭니다.
+                // -------------------------------------------------------------
+
+                // 로컬 함수: 가격과 수량을 받아 '거래대금(절댓값)'과 '총합'을 계산
+                long ParseAndCalc(string sPrice, string sQty, ref long totalSum)
                 {
-                    Market_Item Market = Form1.Market_Item_List[Itemcode];
+                    // TryParse는 실패 시 0을 반환하므로 별도 예외처리 불필요
+                    int.TryParse(sPrice, out int price);
+                    int.TryParse(sQty, out int qty);
 
-                    int.TryParse(매도호가2, out int 매도2);
-                    int.TryParse(매도호가3, out int 매도3);
-                    int.TryParse(매도호가4, out int 매도4);
-                    int.TryParse(매도호가5, out int 매도5);
-                    int.TryParse(매도호가6, out int 매도6);
-                    int.TryParse(매도호가7, out int 매도7);
-                    int.TryParse(매도호가8, out int 매도8);
-                    int.TryParse(매도호가9, out int 매도9);
-                    int.TryParse(매도호가10, out int 매도10);
+                    // 단순 연산 (Math.Abs 호출 비용 절약)
+                    long amount = (long)price * qty;
+                    if (amount < 0) amount = -amount;
 
-                    int.TryParse(매도호가수량2, out int 도수량2);
-                    int.TryParse(매도호가수량3, out int 도수량3);
-                    int.TryParse(매도호가수량4, out int 도수량4);
-                    int.TryParse(매도호가수량5, out int 도수량5);
-                    int.TryParse(매도호가수량6, out int 도수량6);
-                    int.TryParse(매도호가수량7, out int 도수량7);
-                    int.TryParse(매도호가수량8, out int 도수량8);
-                    int.TryParse(매도호가수량9, out int 도수량9);
-                    int.TryParse(매도호가수량10, out int 도수량10);
+                    totalSum += amount; // 총액 누적
+                    return amount;
+                }
 
-                    int.TryParse(매수호가2, out int 매수2);
-                    int.TryParse(매수호가3, out int 매수3);
-                    int.TryParse(매수호가4, out int 매수4);
-                    int.TryParse(매수호가5, out int 매수5);
-                    int.TryParse(매수호가6, out int 매수6);
-                    int.TryParse(매수호가7, out int 매수7);
-                    int.TryParse(매수호가8, out int 매수8);
-                    int.TryParse(매수호가9, out int 매수9);
-                    int.TryParse(매수호가10, out int 매수10);
+                long totalSell = 0; // 총 매도 잔량 대금
+                long totalBuy = 0;  // 총 매수 잔량 대금
 
-                    int.TryParse(매수호가수량2, out int 수수량2);
-                    int.TryParse(매수호가수량3, out int 수수량3);
-                    int.TryParse(매수호가수량4, out int 수수량4);
-                    int.TryParse(매수호가수량5, out int 수수량5);
-                    int.TryParse(매수호가수량6, out int 수수량6);
-                    int.TryParse(매수호가수량7, out int 수수량7);
-                    int.TryParse(매수호가수량8, out int 수수량8);
-                    int.TryParse(매수호가수량9, out int 수수량9);
-                    int.TryParse(매수호가수량10, out int 수수량10);
+                // 배열로 관리 (인덱스 0~8이 호가 2~10에 대응)
+                // 힙 할당 방지를 위해 stackalloc을 쓰면 좋으나 코드가 복잡해지므로 일반 배열 사용
+                // (함수 내 짧은 배열은 GC 부하가 적음)
+                long[] sellAmounts = new long[9];
+                long[] buyAmounts = new long[9];
 
-                    long 도2 = Math.Abs(매도2 * 도수량2);
-                    long 도3 = Math.Abs(매도3 * 도수량3);
-                    long 도4 = Math.Abs(매도4 * 도수량4);
-                    long 도5 = Math.Abs(매도5 * 도수량5);
-                    long 도6 = Math.Abs(매도6 * 도수량6);
-                    long 도7 = Math.Abs(매도7 * 도수량7);
-                    long 도8 = Math.Abs(매도8 * 도수량8);
-                    long 도9 = Math.Abs(매도9 * 도수량9);
-                    long 도10 = Math.Abs(매도10 * 도수량10);
+                // 매도 호가 (2~10) 파싱 및 계산
+                sellAmounts[0] = ParseAndCalc(매도호가2, 매도호가수량2, ref totalSell);
+                sellAmounts[1] = ParseAndCalc(매도호가3, 매도호가수량3, ref totalSell);
+                sellAmounts[2] = ParseAndCalc(매도호가4, 매도호가수량4, ref totalSell);
+                sellAmounts[3] = ParseAndCalc(매도호가5, 매도호가수량5, ref totalSell);
+                sellAmounts[4] = ParseAndCalc(매도호가6, 매도호가수량6, ref totalSell);
+                sellAmounts[5] = ParseAndCalc(매도호가7, 매도호가수량7, ref totalSell);
+                sellAmounts[6] = ParseAndCalc(매도호가8, 매도호가수량8, ref totalSell);
+                sellAmounts[7] = ParseAndCalc(매도호가9, 매도호가수량9, ref totalSell);
+                sellAmounts[8] = ParseAndCalc(매도호가10, 매도호가수량10, ref totalSell);
 
-                    long 수2 = Math.Abs(매수2 * 수수량2);
-                    long 수3 = Math.Abs(매수3 * 수수량3);
-                    long 수4 = Math.Abs(매수4 * 수수량4);
-                    long 수5 = Math.Abs(매수5 * 수수량5);
-                    long 수6 = Math.Abs(매수6 * 수수량6);
-                    long 수7 = Math.Abs(매수7 * 수수량7);
-                    long 수8 = Math.Abs(매수8 * 수수량8);
-                    long 수9 = Math.Abs(매수9 * 수수량9);
-                    long 수10 = Math.Abs(매수10 * 수수량10);
+                // 매수 호가 (2~10) 파싱 및 계산
+                buyAmounts[0] = ParseAndCalc(매수호가2, 매수호가수량2, ref totalBuy);
+                buyAmounts[1] = ParseAndCalc(매수호가3, 매수호가수량3, ref totalBuy);
+                buyAmounts[2] = ParseAndCalc(매수호가4, 매수호가수량4, ref totalBuy);
+                buyAmounts[3] = ParseAndCalc(매수호가5, 매수호가수량5, ref totalBuy);
+                buyAmounts[4] = ParseAndCalc(매수호가6, 매수호가수량6, ref totalBuy);
+                buyAmounts[5] = ParseAndCalc(매수호가7, 매수호가수량7, ref totalBuy);
+                buyAmounts[6] = ParseAndCalc(매수호가8, 매수호가수량8, ref totalBuy);
+                buyAmounts[7] = ParseAndCalc(매수호가9, 매수호가수량9, ref totalBuy);
+                buyAmounts[8] = ParseAndCalc(매수호가10, 매수호가수량10, ref totalBuy);
 
-                    long 매도 = 도2 + 도3 + 도4 + 도5 + 도6 + 도7 + 도8 + 도9 + 도10;
-                    long 매수 = 수2 + 수3 + 수4 + 수5 + 수6 + 수7 + 수8 + 수9 + 수10;
 
-                    if (Properties.Settings.Default.CB_매수탐색A)
+                // =============================================================
+                // [로컬 함수] 매매 가능 여부 판별 (A, B 로직 통합)
+                // =============================================================
+                bool IsConditionMet(double configSellLimit, double configTotalSell, double configBuyLimit, double configTotalBuy, int ratioMode)
+                {
+                    // 1. 기준값 변환 (단위: 백만)
+                    long limitSellEach = (long)(configSellLimit * 1000000.0);
+                    long limitSellTotal = (long)(configTotalSell * 1000000.0);
+                    long limitBuyEach = (long)(configBuyLimit * 1000000.0);
+                    long limitBuyTotal = (long)(configTotalBuy * 1000000.0);
+
+                    // 2. 총액 검사 (Fail-Fast)
+                    if (totalSell < limitSellTotal) return false;
+                    if (totalBuy < limitBuyTotal) return false;
+
+                    // 3. 잔량 비율 검사
+                    // ratioMode: 0(매도<매수면 탈락), 1(매도>매수면 탈락)
+                    if (ratioMode == 0 && totalSell < totalBuy) return false;
+                    if (ratioMode == 1 && totalSell > totalBuy) return false;
+
+                    // 4. 개별 호가 검사 (루프로 처리)
+                    // 하나라도 기준 미달이면 false
+                    for (int i = 0; i < 9; i++)
                     {
-                        Market.매수가능_A = true;
-
-                        long 매도호가별대금 = (long)(Properties.Settings.Default.TB_M_매도호가별대금 * 1000000);
-                        long 매도호가합대금 = (long)(Properties.Settings.Default.TB_M_매도호가합대금 * 1000000);
-
-                        long 매수호가별대금 = (long)(Properties.Settings.Default.TB_M_매수호가별대금 * 1000000);
-                        long 매수호가합대금 = (long)(Properties.Settings.Default.TB_M_매수호가합대금 * 1000000);
-
-                        if (매도 < 매도호가합대금) Market.매수가능_A = false;
-                        if (Market.매수가능_A && 매수 < 매수호가합대금) Market.매수가능_A = false;
-
-                        if (Market.매수가능_A && 도2 < 매도호가별대금) Market.매수가능_A = false;
-                        if (Market.매수가능_A && 도3 < 매도호가별대금) Market.매수가능_A = false;
-                        if (Market.매수가능_A && 도4 < 매도호가별대금) Market.매수가능_A = false;
-                        if (Market.매수가능_A && 도5 < 매도호가별대금) Market.매수가능_A = false;
-                        if (Market.매수가능_A && 도6 < 매도호가별대금) Market.매수가능_A = false;
-                        if (Market.매수가능_A && 도7 < 매도호가별대금) Market.매수가능_A = false;
-                        if (Market.매수가능_A && 도8 < 매도호가별대금) Market.매수가능_A = false;
-                        if (Market.매수가능_A && 도9 < 매도호가별대금) Market.매수가능_A = false;
-                        if (Market.매수가능_A && 도10 < 매도호가별대금) Market.매수가능_A = false;
-
-                        if (Market.매수가능_A && 수2 < 매수호가별대금) Market.매수가능_A = false;
-                        if (Market.매수가능_A && 수3 < 매수호가별대금) Market.매수가능_A = false;
-                        if (Market.매수가능_A && 수4 < 매수호가별대금) Market.매수가능_A = false;
-                        if (Market.매수가능_A && 수5 < 매수호가별대금) Market.매수가능_A = false;
-                        if (Market.매수가능_A && 수6 < 매수호가별대금) Market.매수가능_A = false;
-                        if (Market.매수가능_A && 수7 < 매수호가별대금) Market.매수가능_A = false;
-                        if (Market.매수가능_A && 수8 < 매수호가별대금) Market.매수가능_A = false;
-                        if (Market.매수가능_A && 수9 < 매수호가별대금) Market.매수가능_A = false;
-                        if (Market.매수가능_A && 수10 < 매수호가별대금) Market.매수가능_A = false;
-
-                        if (Market.매수가능_B && Properties.Settings.Default.CBB_M_잔량 == 0)
-                        {
-                            if (매도 < 매수)
-                            {
-                                Market.매수가능_A = false;
-                            }
-                        }
-
-                        if (Market.매수가능_B && Properties.Settings.Default.CBB_M_잔량 == 1)
-                        {
-                            if (매도 > 매수)
-                            {
-                                Market.매수가능_A = false;
-                            }
-                        }
+                        if (sellAmounts[i] < limitSellEach) return false;
+                        if (buyAmounts[i] < limitBuyEach) return false;
                     }
 
-                    if (Properties.Settings.Default.CB_매수탐색B)
-                    {
-                        Market.매수가능_B = true;
+                    return true; // 모든 조건 통과
+                }
 
-                        long 매도호가별대금 = (long)(Properties.Settings.Default.TB_M_매도호가별대금_2 * 1000000);
-                        long 매도호가합대금 = (long)(Properties.Settings.Default.TB_M_매도호가합대금_2 * 1000000);
 
-                        long 매수호가별대금 = (long)(Properties.Settings.Default.TB_M_매수호가별대금_2 * 1000000);
-                        long 매수호가합대금 = (long)(Properties.Settings.Default.TB_M_매수호가합대금_2 * 1000000);
+                // =============================================================
+                // [3단계: 조건 검사 및 결과 적용]
+                // =============================================================
 
-                        if (매도 < 매도호가합대금) Market.매수가능_B = false;
-                        if (Market.매수가능_B && 매수 < 매수호가합대금) Market.매수가능_B = false;
+                // [A] 매수 탐색 A
+                if (GenieConfig.CB_매수탐색A)
+                {
+                    Market.매수가능_A = IsConditionMet(
+                        GenieConfig.TB_M_매도호가별대금,
+                        GenieConfig.TB_M_매도호가합대금,
+                        GenieConfig.TB_M_매수호가별대금,
+                        GenieConfig.TB_M_매수호가합대금,
+                        GenieConfig.CBB_M_잔량
+                    );
+                }
 
-                        if (Market.매수가능_B && 도2 < 매도호가별대금) Market.매수가능_B = false;
-                        if (Market.매수가능_B && 도3 < 매도호가별대금) Market.매수가능_B = false;
-                        if (Market.매수가능_B && 도4 < 매도호가별대금) Market.매수가능_B = false;
-                        if (Market.매수가능_B && 도5 < 매도호가별대금) Market.매수가능_B = false;
-                        if (Market.매수가능_B && 도6 < 매도호가별대금) Market.매수가능_B = false;
-                        if (Market.매수가능_B && 도7 < 매도호가별대금) Market.매수가능_B = false;
-                        if (Market.매수가능_B && 도8 < 매도호가별대금) Market.매수가능_B = false;
-                        if (Market.매수가능_B && 도9 < 매도호가별대금) Market.매수가능_B = false;
-                        if (Market.매수가능_B && 도10 < 매도호가별대금) Market.매수가능_B = false;
-
-                        if (Market.매수가능_B && 수2 < 매수호가별대금) Market.매수가능_B = false;
-                        if (Market.매수가능_B && 수3 < 매수호가별대금) Market.매수가능_B = false;
-                        if (Market.매수가능_B && 수4 < 매수호가별대금) Market.매수가능_B = false;
-                        if (Market.매수가능_B && 수5 < 매수호가별대금) Market.매수가능_B = false;
-                        if (Market.매수가능_B && 수6 < 매수호가별대금) Market.매수가능_B = false;
-                        if (Market.매수가능_B && 수7 < 매수호가별대금) Market.매수가능_B = false;
-                        if (Market.매수가능_B && 수8 < 매수호가별대금) Market.매수가능_B = false;
-                        if (Market.매수가능_B && 수9 < 매수호가별대금) Market.매수가능_B = false;
-                        if (Market.매수가능_B && 수10 < 매수호가별대금) Market.매수가능_B = false;
-
-                        if (Market.매수가능_B && Properties.Settings.Default.CBB_M_잔량_2 == 0)
-                        {
-                            if (매도 < 매수)
-                            {
-                                Market.매수가능_B = false;
-                            }
-                        }
-
-                        if (Market.매수가능_B && Properties.Settings.Default.CBB_M_잔량_2 == 1)
-                        {
-                            if (매도 > 매수)
-                            {
-                                Market.매수가능_B = false;
-                            }
-                        }
-                    }
+                // [B] 매수 탐색 B
+                if (GenieConfig.CB_매수탐색B)
+                {
+                    Market.매수가능_B = IsConditionMet(
+                        GenieConfig.TB_M_매도호가별대금_2,
+                        GenieConfig.TB_M_매도호가합대금_2,
+                        GenieConfig.TB_M_매수호가별대금_2,
+                        GenieConfig.TB_M_매수호가합대금_2,
+                        GenieConfig.CBB_M_잔량_2
+                    );
                 }
             });
-            Form1.Real_Hoga_Manager.RequestTrData(Task);
         }
     }
 }

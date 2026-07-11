@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace 지니_64.Properties {
+namespace 지니64.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -2689,174 +2689,6 @@ namespace 지니_64.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_repeat_condition_A {
-            get {
-                return ((string)(this["combo_repeat_condition_A"]));
-            }
-            set {
-                this["combo_repeat_condition_A"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_repeat_condition_B {
-            get {
-                return ((string)(this["combo_repeat_condition_B"]));
-            }
-            set {
-                this["combo_repeat_condition_B"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_repeat_condition_C {
-            get {
-                return ((string)(this["combo_repeat_condition_C"]));
-            }
-            set {
-                this["combo_repeat_condition_C"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_repeat_condition_D {
-            get {
-                return ((string)(this["combo_repeat_condition_D"]));
-            }
-            set {
-                this["combo_repeat_condition_D"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_repeat_condition_E {
-            get {
-                return ((string)(this["combo_repeat_condition_E"]));
-            }
-            set {
-                this["combo_repeat_condition_E"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_repeat_condition_F {
-            get {
-                return ((string)(this["combo_repeat_condition_F"]));
-            }
-            set {
-                this["combo_repeat_condition_F"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_repeat_condition_G {
-            get {
-                return ((string)(this["combo_repeat_condition_G"]));
-            }
-            set {
-                this["combo_repeat_condition_G"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_repeat_condition_H {
-            get {
-                return ((string)(this["combo_repeat_condition_H"]));
-            }
-            set {
-                this["combo_repeat_condition_H"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_repeat_condition_I {
-            get {
-                return ((string)(this["combo_repeat_condition_I"]));
-            }
-            set {
-                this["combo_repeat_condition_I"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_repeat_condition_J {
-            get {
-                return ((string)(this["combo_repeat_condition_J"]));
-            }
-            set {
-                this["combo_repeat_condition_J"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_repeat_condition_K {
-            get {
-                return ((string)(this["combo_repeat_condition_K"]));
-            }
-            set {
-                this["combo_repeat_condition_K"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_repeat_condition_L {
-            get {
-                return ((string)(this["combo_repeat_condition_L"]));
-            }
-            set {
-                this["combo_repeat_condition_L"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_repeat_condition_M {
-            get {
-                return ((string)(this["combo_repeat_condition_M"]));
-            }
-            set {
-                this["combo_repeat_condition_M"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public string account_comboBox {
-            get {
-                return ((string)(this["account_comboBox"]));
-            }
-            set {
-                this["account_comboBox"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool CB_repeat_use_A {
             get {
@@ -4730,468 +4562,468 @@ namespace 지니_64.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_maemae_1_A {
+        public double TB_Repeat_maemae_1_A {
             get {
-                return ((double)(this["TB_repeat_maemae_1_A"]));
+                return ((double)(this["TB_Repeat_maemae_1_A"]));
             }
             set {
-                this["TB_repeat_maemae_1_A"] = value;
+                this["TB_Repeat_maemae_1_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_maemae_1_B {
+        public double TB_Repeat_maemae_1_B {
             get {
-                return ((double)(this["TB_repeat_maemae_1_B"]));
+                return ((double)(this["TB_Repeat_maemae_1_B"]));
             }
             set {
-                this["TB_repeat_maemae_1_B"] = value;
+                this["TB_Repeat_maemae_1_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_maemae_1_C {
+        public double TB_Repeat_maemae_1_C {
             get {
-                return ((double)(this["TB_repeat_maemae_1_C"]));
+                return ((double)(this["TB_Repeat_maemae_1_C"]));
             }
             set {
-                this["TB_repeat_maemae_1_C"] = value;
+                this["TB_Repeat_maemae_1_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_maemae_1_D {
+        public double TB_Repeat_maemae_1_D {
             get {
-                return ((double)(this["TB_repeat_maemae_1_D"]));
+                return ((double)(this["TB_Repeat_maemae_1_D"]));
             }
             set {
-                this["TB_repeat_maemae_1_D"] = value;
+                this["TB_Repeat_maemae_1_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_maemae_1_E {
+        public double TB_Repeat_maemae_1_E {
             get {
-                return ((double)(this["TB_repeat_maemae_1_E"]));
+                return ((double)(this["TB_Repeat_maemae_1_E"]));
             }
             set {
-                this["TB_repeat_maemae_1_E"] = value;
+                this["TB_Repeat_maemae_1_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_maemae_1_F {
+        public double TB_Repeat_maemae_1_F {
             get {
-                return ((double)(this["TB_repeat_maemae_1_F"]));
+                return ((double)(this["TB_Repeat_maemae_1_F"]));
             }
             set {
-                this["TB_repeat_maemae_1_F"] = value;
+                this["TB_Repeat_maemae_1_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_maemae_1_G {
+        public double TB_Repeat_maemae_1_G {
             get {
-                return ((double)(this["TB_repeat_maemae_1_G"]));
+                return ((double)(this["TB_Repeat_maemae_1_G"]));
             }
             set {
-                this["TB_repeat_maemae_1_G"] = value;
+                this["TB_Repeat_maemae_1_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_maemae_1_H {
+        public double TB_Repeat_maemae_1_H {
             get {
-                return ((double)(this["TB_repeat_maemae_1_H"]));
+                return ((double)(this["TB_Repeat_maemae_1_H"]));
             }
             set {
-                this["TB_repeat_maemae_1_H"] = value;
+                this["TB_Repeat_maemae_1_H"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_maemae_1_I {
+        public double TB_Repeat_maemae_1_I {
             get {
-                return ((double)(this["TB_repeat_maemae_1_I"]));
+                return ((double)(this["TB_Repeat_maemae_1_I"]));
             }
             set {
-                this["TB_repeat_maemae_1_I"] = value;
+                this["TB_Repeat_maemae_1_I"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_maemae_1_J {
+        public double TB_Repeat_maemae_1_J {
             get {
-                return ((double)(this["TB_repeat_maemae_1_J"]));
+                return ((double)(this["TB_Repeat_maemae_1_J"]));
             }
             set {
-                this["TB_repeat_maemae_1_J"] = value;
+                this["TB_Repeat_maemae_1_J"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_maemae_1_K {
+        public double TB_Repeat_maemae_1_K {
             get {
-                return ((double)(this["TB_repeat_maemae_1_K"]));
+                return ((double)(this["TB_Repeat_maemae_1_K"]));
             }
             set {
-                this["TB_repeat_maemae_1_K"] = value;
+                this["TB_Repeat_maemae_1_K"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_maemae_1_L {
+        public double TB_Repeat_maemae_1_L {
             get {
-                return ((double)(this["TB_repeat_maemae_1_L"]));
+                return ((double)(this["TB_Repeat_maemae_1_L"]));
             }
             set {
-                this["TB_repeat_maemae_1_L"] = value;
+                this["TB_Repeat_maemae_1_L"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_maemae_1_M {
+        public double TB_Repeat_maemae_1_M {
             get {
-                return ((double)(this["TB_repeat_maemae_1_M"]));
+                return ((double)(this["TB_Repeat_maemae_1_M"]));
             }
             set {
-                this["TB_repeat_maemae_1_M"] = value;
+                this["TB_Repeat_maemae_1_M"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public double TB_repeat_maemae_2_A {
+        public double TB_Repeat_maemae_2_A {
             get {
-                return ((double)(this["TB_repeat_maemae_2_A"]));
+                return ((double)(this["TB_Repeat_maemae_2_A"]));
             }
             set {
-                this["TB_repeat_maemae_2_A"] = value;
+                this["TB_Repeat_maemae_2_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public double TB_repeat_maemae_2_B {
+        public double TB_Repeat_maemae_2_B {
             get {
-                return ((double)(this["TB_repeat_maemae_2_B"]));
+                return ((double)(this["TB_Repeat_maemae_2_B"]));
             }
             set {
-                this["TB_repeat_maemae_2_B"] = value;
+                this["TB_Repeat_maemae_2_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public double TB_repeat_maemae_2_C {
+        public double TB_Repeat_maemae_2_C {
             get {
-                return ((double)(this["TB_repeat_maemae_2_C"]));
+                return ((double)(this["TB_Repeat_maemae_2_C"]));
             }
             set {
-                this["TB_repeat_maemae_2_C"] = value;
+                this["TB_Repeat_maemae_2_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public double TB_repeat_maemae_2_D {
+        public double TB_Repeat_maemae_2_D {
             get {
-                return ((double)(this["TB_repeat_maemae_2_D"]));
+                return ((double)(this["TB_Repeat_maemae_2_D"]));
             }
             set {
-                this["TB_repeat_maemae_2_D"] = value;
+                this["TB_Repeat_maemae_2_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public double TB_repeat_maemae_2_E {
+        public double TB_Repeat_maemae_2_E {
             get {
-                return ((double)(this["TB_repeat_maemae_2_E"]));
+                return ((double)(this["TB_Repeat_maemae_2_E"]));
             }
             set {
-                this["TB_repeat_maemae_2_E"] = value;
+                this["TB_Repeat_maemae_2_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public double TB_repeat_maemae_2_F {
+        public double TB_Repeat_maemae_2_F {
             get {
-                return ((double)(this["TB_repeat_maemae_2_F"]));
+                return ((double)(this["TB_Repeat_maemae_2_F"]));
             }
             set {
-                this["TB_repeat_maemae_2_F"] = value;
+                this["TB_Repeat_maemae_2_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public double TB_repeat_maemae_2_G {
+        public double TB_Repeat_maemae_2_G {
             get {
-                return ((double)(this["TB_repeat_maemae_2_G"]));
+                return ((double)(this["TB_Repeat_maemae_2_G"]));
             }
             set {
-                this["TB_repeat_maemae_2_G"] = value;
+                this["TB_Repeat_maemae_2_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public double TB_repeat_maemae_2_H {
+        public double TB_Repeat_maemae_2_H {
             get {
-                return ((double)(this["TB_repeat_maemae_2_H"]));
+                return ((double)(this["TB_Repeat_maemae_2_H"]));
             }
             set {
-                this["TB_repeat_maemae_2_H"] = value;
+                this["TB_Repeat_maemae_2_H"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public double TB_repeat_maemae_2_I {
+        public double TB_Repeat_maemae_2_I {
             get {
-                return ((double)(this["TB_repeat_maemae_2_I"]));
+                return ((double)(this["TB_Repeat_maemae_2_I"]));
             }
             set {
-                this["TB_repeat_maemae_2_I"] = value;
+                this["TB_Repeat_maemae_2_I"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public double TB_repeat_maemae_2_J {
+        public double TB_Repeat_maemae_2_J {
             get {
-                return ((double)(this["TB_repeat_maemae_2_J"]));
+                return ((double)(this["TB_Repeat_maemae_2_J"]));
             }
             set {
-                this["TB_repeat_maemae_2_J"] = value;
+                this["TB_Repeat_maemae_2_J"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public double TB_repeat_maemae_2_K {
+        public double TB_Repeat_maemae_2_K {
             get {
-                return ((double)(this["TB_repeat_maemae_2_K"]));
+                return ((double)(this["TB_Repeat_maemae_2_K"]));
             }
             set {
-                this["TB_repeat_maemae_2_K"] = value;
+                this["TB_Repeat_maemae_2_K"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public double TB_repeat_maemae_2_L {
+        public double TB_Repeat_maemae_2_L {
             get {
-                return ((double)(this["TB_repeat_maemae_2_L"]));
+                return ((double)(this["TB_Repeat_maemae_2_L"]));
             }
             set {
-                this["TB_repeat_maemae_2_L"] = value;
+                this["TB_Repeat_maemae_2_L"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public double TB_repeat_maemae_2_M {
+        public double TB_Repeat_maemae_2_M {
             get {
-                return ((double)(this["TB_repeat_maemae_2_M"]));
+                return ((double)(this["TB_Repeat_maemae_2_M"]));
             }
             set {
-                this["TB_repeat_maemae_2_M"] = value;
+                this["TB_Repeat_maemae_2_M"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int combo_repeat_maemae_gubun_A {
+        public int combo_Repeat_maemae_gubun_A {
             get {
-                return ((int)(this["combo_repeat_maemae_gubun_A"]));
+                return ((int)(this["combo_Repeat_maemae_gubun_A"]));
             }
             set {
-                this["combo_repeat_maemae_gubun_A"] = value;
+                this["combo_Repeat_maemae_gubun_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int combo_repeat_maemae_gubun_B {
+        public int combo_Repeat_maemae_gubun_B {
             get {
-                return ((int)(this["combo_repeat_maemae_gubun_B"]));
+                return ((int)(this["combo_Repeat_maemae_gubun_B"]));
             }
             set {
-                this["combo_repeat_maemae_gubun_B"] = value;
+                this["combo_Repeat_maemae_gubun_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int combo_repeat_maemae_gubun_C {
+        public int combo_Repeat_maemae_gubun_C {
             get {
-                return ((int)(this["combo_repeat_maemae_gubun_C"]));
+                return ((int)(this["combo_Repeat_maemae_gubun_C"]));
             }
             set {
-                this["combo_repeat_maemae_gubun_C"] = value;
+                this["combo_Repeat_maemae_gubun_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int combo_repeat_maemae_gubun_D {
+        public int combo_Repeat_maemae_gubun_D {
             get {
-                return ((int)(this["combo_repeat_maemae_gubun_D"]));
+                return ((int)(this["combo_Repeat_maemae_gubun_D"]));
             }
             set {
-                this["combo_repeat_maemae_gubun_D"] = value;
+                this["combo_Repeat_maemae_gubun_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int combo_repeat_maemae_gubun_E {
+        public int combo_Repeat_maemae_gubun_E {
             get {
-                return ((int)(this["combo_repeat_maemae_gubun_E"]));
+                return ((int)(this["combo_Repeat_maemae_gubun_E"]));
             }
             set {
-                this["combo_repeat_maemae_gubun_E"] = value;
+                this["combo_Repeat_maemae_gubun_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int combo_repeat_maemae_gubun_F {
+        public int combo_Repeat_maemae_gubun_F {
             get {
-                return ((int)(this["combo_repeat_maemae_gubun_F"]));
+                return ((int)(this["combo_Repeat_maemae_gubun_F"]));
             }
             set {
-                this["combo_repeat_maemae_gubun_F"] = value;
+                this["combo_Repeat_maemae_gubun_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int combo_repeat_maemae_gubun_G {
+        public int combo_Repeat_maemae_gubun_G {
             get {
-                return ((int)(this["combo_repeat_maemae_gubun_G"]));
+                return ((int)(this["combo_Repeat_maemae_gubun_G"]));
             }
             set {
-                this["combo_repeat_maemae_gubun_G"] = value;
+                this["combo_Repeat_maemae_gubun_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int combo_repeat_maemae_gubun_H {
+        public int combo_Repeat_maemae_gubun_H {
             get {
-                return ((int)(this["combo_repeat_maemae_gubun_H"]));
+                return ((int)(this["combo_Repeat_maemae_gubun_H"]));
             }
             set {
-                this["combo_repeat_maemae_gubun_H"] = value;
+                this["combo_Repeat_maemae_gubun_H"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int combo_repeat_maemae_gubun_I {
+        public int combo_Repeat_maemae_gubun_I {
             get {
-                return ((int)(this["combo_repeat_maemae_gubun_I"]));
+                return ((int)(this["combo_Repeat_maemae_gubun_I"]));
             }
             set {
-                this["combo_repeat_maemae_gubun_I"] = value;
+                this["combo_Repeat_maemae_gubun_I"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int combo_repeat_maemae_gubun_J {
+        public int combo_Repeat_maemae_gubun_J {
             get {
-                return ((int)(this["combo_repeat_maemae_gubun_J"]));
+                return ((int)(this["combo_Repeat_maemae_gubun_J"]));
             }
             set {
-                this["combo_repeat_maemae_gubun_J"] = value;
+                this["combo_Repeat_maemae_gubun_J"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int combo_repeat_maemae_gubun_K {
+        public int combo_Repeat_maemae_gubun_K {
             get {
-                return ((int)(this["combo_repeat_maemae_gubun_K"]));
+                return ((int)(this["combo_Repeat_maemae_gubun_K"]));
             }
             set {
-                this["combo_repeat_maemae_gubun_K"] = value;
+                this["combo_Repeat_maemae_gubun_K"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int combo_repeat_maemae_gubun_L {
+        public int combo_Repeat_maemae_gubun_L {
             get {
-                return ((int)(this["combo_repeat_maemae_gubun_L"]));
+                return ((int)(this["combo_Repeat_maemae_gubun_L"]));
             }
             set {
-                this["combo_repeat_maemae_gubun_L"] = value;
+                this["combo_Repeat_maemae_gubun_L"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int combo_repeat_maemae_gubun_M {
+        public int combo_Repeat_maemae_gubun_M {
             get {
-                return ((int)(this["combo_repeat_maemae_gubun_M"]));
+                return ((int)(this["combo_Repeat_maemae_gubun_M"]));
             }
             set {
-                this["combo_repeat_maemae_gubun_M"] = value;
+                this["combo_Repeat_maemae_gubun_M"] = value;
             }
         }
         
@@ -5246,24 +5078,12 @@ namespace 지니_64.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_watch_condition_A {
+        public string SB {
             get {
-                return ((string)(this["combo_watch_condition_A"]));
+                return ((string)(this["SB"]));
             }
             set {
-                this["combo_watch_condition_A"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_watch_condition_B {
-            get {
-                return ((string)(this["combo_watch_condition_B"]));
-            }
-            set {
-                this["combo_watch_condition_B"] = value;
+                this["SB"] = value;
             }
         }
         
@@ -5276,78 +5096,6 @@ namespace 지니_64.Properties {
             }
             set {
                 this["combo_watch_condition_C"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_watch_condition_D {
-            get {
-                return ((string)(this["combo_watch_condition_D"]));
-            }
-            set {
-                this["combo_watch_condition_D"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_watch_condition_AA {
-            get {
-                return ((string)(this["combo_watch_condition_AA"]));
-            }
-            set {
-                this["combo_watch_condition_AA"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_watch_condition_BB {
-            get {
-                return ((string)(this["combo_watch_condition_BB"]));
-            }
-            set {
-                this["combo_watch_condition_BB"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_watch_condition_CC {
-            get {
-                return ((string)(this["combo_watch_condition_CC"]));
-            }
-            set {
-                this["combo_watch_condition_CC"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_watch_condition_DD {
-            get {
-                return ((string)(this["combo_watch_condition_DD"]));
-            }
-            set {
-                this["combo_watch_condition_DD"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("60")]
-        public int TB_restart {
-            get {
-                return ((int)(this["TB_restart"]));
-            }
-            set {
-                this["TB_restart"] = value;
             }
         }
         
@@ -5581,7 +5329,7 @@ namespace 지니_64.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool CB_TR_A {
             get {
                 return ((bool)(this["CB_TR_A"]));
@@ -5593,7 +5341,7 @@ namespace 지니_64.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool CB_TR_B {
             get {
                 return ((bool)(this["CB_TR_B"]));
@@ -5605,7 +5353,7 @@ namespace 지니_64.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool CB_TR_C {
             get {
                 return ((bool)(this["CB_TR_C"]));
@@ -5617,25 +5365,13 @@ namespace 지니_64.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool CB_TR_D {
             get {
                 return ((bool)(this["CB_TR_D"]));
             }
             set {
                 this["CB_TR_D"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string select_account {
-            get {
-                return ((string)(this["select_account"]));
-            }
-            set {
-                this["select_account"] = value;
             }
         }
         
@@ -5660,42 +5396,6 @@ namespace 지니_64.Properties {
             }
             set {
                 this["MTB_ik_canceltime"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_new_condition_C {
-            get {
-                return ((string)(this["combo_new_condition_C"]));
-            }
-            set {
-                this["combo_new_condition_C"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_new_condition_B {
-            get {
-                return ((string)(this["combo_new_condition_B"]));
-            }
-            set {
-                this["combo_new_condition_B"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_new_condition_A {
-            get {
-                return ((string)(this["combo_new_condition_A"]));
-            }
-            set {
-                this["combo_new_condition_A"] = value;
             }
         }
         
@@ -11557,18 +11257,6 @@ namespace 지니_64.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool CB_Repeat_M_N {
-            get {
-                return ((bool)(this["CB_Repeat_M_N"]));
-            }
-            set {
-                this["CB_Repeat_M_N"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool CB_new_recatch_A {
             get {
@@ -12697,10 +12385,10 @@ namespace 지니_64.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("500")]
-        public int TB_cut_won_A {
+        [global::System.Configuration.DefaultSettingValueAttribute("50")]
+        public double TB_cut_won_A {
             get {
-                return ((int)(this["TB_cut_won_A"]));
+                return ((double)(this["TB_cut_won_A"]));
             }
             set {
                 this["TB_cut_won_A"] = value;
@@ -12709,10 +12397,10 @@ namespace 지니_64.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("500")]
-        public int TB_cut_won_B {
+        [global::System.Configuration.DefaultSettingValueAttribute("50")]
+        public double TB_cut_won_B {
             get {
-                return ((int)(this["TB_cut_won_B"]));
+                return ((double)(this["TB_cut_won_B"]));
             }
             set {
                 this["TB_cut_won_B"] = value;
@@ -12721,10 +12409,10 @@ namespace 지니_64.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("500")]
-        public int TB_cut_won_C {
+        [global::System.Configuration.DefaultSettingValueAttribute("50")]
+        public double TB_cut_won_C {
             get {
-                return ((int)(this["TB_cut_won_C"]));
+                return ((double)(this["TB_cut_won_C"]));
             }
             set {
                 this["TB_cut_won_C"] = value;
@@ -13628,42 +13316,6 @@ namespace 지니_64.Properties {
             }
             set {
                 this["combo_rebalance_use_condition_C"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_rebalance_condition_A {
-            get {
-                return ((string)(this["combo_rebalance_condition_A"]));
-            }
-            set {
-                this["combo_rebalance_condition_A"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_rebalance_condition_B {
-            get {
-                return ((string)(this["combo_rebalance_condition_B"]));
-            }
-            set {
-                this["combo_rebalance_condition_B"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_rebalance_condition_C {
-            get {
-                return ((string)(this["combo_rebalance_condition_C"]));
-            }
-            set {
-                this["combo_rebalance_condition_C"] = value;
             }
         }
         
@@ -15349,18 +15001,6 @@ namespace 지니_64.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string CBB_Liquidation_condition_A {
-            get {
-                return ((string)(this["CBB_Liquidation_condition_A"]));
-            }
-            set {
-                this["CBB_Liquidation_condition_A"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int MTB_Liquidation_delay_A {
             get {
@@ -15572,18 +15212,6 @@ namespace 지니_64.Properties {
             }
             set {
                 this["CBB_Liquidation_use_condition_B"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string CBB_Liquidation_condition_B {
-            get {
-                return ((string)(this["CBB_Liquidation_condition_B"]));
-            }
-            set {
-                this["CBB_Liquidation_condition_B"] = value;
             }
         }
         
@@ -19069,42 +18697,6 @@ namespace 지니_64.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("대금탐색_A")]
-        public string TB_매수탐색A {
-            get {
-                return ((string)(this["TB_매수탐색A"]));
-            }
-            set {
-                this["TB_매수탐색A"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("대금탐색_B")]
-        public string TB_매수탐색B {
-            get {
-                return ((string)(this["TB_매수탐색B"]));
-            }
-            set {
-                this["TB_매수탐색B"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("대금탐색")]
-        public string TB_매도탐색 {
-            get {
-                return ((string)(this["TB_매도탐색"]));
-            }
-            set {
-                this["TB_매도탐색"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100000000")]
         public long TB_월통계기준 {
             get {
@@ -19406,36 +18998,36 @@ namespace 지니_64.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_maemae_1_N {
+        public double TB_Repeat_maemae_1_N {
             get {
-                return ((double)(this["TB_repeat_maemae_1_N"]));
+                return ((double)(this["TB_Repeat_maemae_1_N"]));
             }
             set {
-                this["TB_repeat_maemae_1_N"] = value;
+                this["TB_Repeat_maemae_1_N"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100")]
-        public double TB_repeat_maemae_2_N {
+        public double TB_Repeat_maemae_2_N {
             get {
-                return ((double)(this["TB_repeat_maemae_2_N"]));
+                return ((double)(this["TB_Repeat_maemae_2_N"]));
             }
             set {
-                this["TB_repeat_maemae_2_N"] = value;
+                this["TB_Repeat_maemae_2_N"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int combo_repeat_maemae_gubun_N {
+        public int combo_Repeat_maemae_gubun_N {
             get {
-                return ((int)(this["combo_repeat_maemae_gubun_N"]));
+                return ((int)(this["combo_Repeat_maemae_gubun_N"]));
             }
             set {
-                this["combo_repeat_maemae_gubun_N"] = value;
+                this["combo_Repeat_maemae_gubun_N"] = value;
             }
         }
         
@@ -19508,18 +19100,6 @@ namespace 지니_64.Properties {
             }
             set {
                 this["combo_repeat_use_condition_N"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_repeat_condition_N {
-            get {
-                return ((string)(this["combo_repeat_condition_N"]));
-            }
-            set {
-                this["combo_repeat_condition_N"] = value;
             }
         }
         
@@ -19598,48 +19178,12 @@ namespace 지니_64.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_지니_64종료 {
+        public int CBB_지니64종료 {
             get {
-                return ((int)(this["CBB_지니_64종료"]));
+                return ((int)(this["CBB_지니64종료"]));
             }
             set {
-                this["CBB_지니_64종료"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool CB_주문엑셀저장 {
-            get {
-                return ((bool)(this["CB_주문엑셀저장"]));
-            }
-            set {
-                this["CB_주문엑셀저장"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool CB_체결엑셀저장 {
-            get {
-                return ((bool)(this["CB_체결엑셀저장"]));
-            }
-            set {
-                this["CB_체결엑셀저장"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool CB_매매엑셀저장 {
-            get {
-                return ((bool)(this["CB_매매엑셀저장"]));
-            }
-            set {
-                this["CB_매매엑셀저장"] = value;
+                this["CBB_지니64종료"] = value;
             }
         }
         
@@ -20168,30 +19712,6 @@ namespace 지니_64.Properties {
             }
             set {
                 this["MTB_rebalance_delay_E"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_rebalance_condition_D {
-            get {
-                return ((string)(this["combo_rebalance_condition_D"]));
-            }
-            set {
-                this["combo_rebalance_condition_D"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_rebalance_condition_E {
-            get {
-                return ((string)(this["combo_rebalance_condition_E"]));
-            }
-            set {
-                this["combo_rebalance_condition_E"] = value;
             }
         }
         
@@ -20882,12 +20402,12 @@ namespace 지니_64.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool CB_계좌비공개 {
+        public bool CB_검색보기 {
             get {
-                return ((bool)(this["CB_계좌비공개"]));
+                return ((bool)(this["CB_검색보기"]));
             }
             set {
-                this["CB_계좌비공개"] = value;
+                this["CB_검색보기"] = value;
             }
         }
         
@@ -21637,54 +21157,6 @@ namespace 지니_64.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("^^")]
-        public string 신규검색식 {
-            get {
-                return ((string)(this["신규검색식"]));
-            }
-            set {
-                this["신규검색식"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("^^^^^^^^^^^^^")]
-        public string 반복매매검색식 {
-            get {
-                return ((string)(this["반복매매검색식"]));
-            }
-            set {
-                this["반복매매검색식"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("^^^^^^^^^")]
-        public string 계좌관리검색식 {
-            get {
-                return ((string)(this["계좌관리검색식"]));
-            }
-            set {
-                this["계좌관리검색식"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("^^^^")]
-        public string 와치검색식 {
-            get {
-                return ((string)(this["와치검색식"]));
-            }
-            set {
-                this["와치검색식"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public int CBB_layout {
             get {
@@ -21812,30 +21284,6 @@ namespace 지니_64.Properties {
             }
             set {
                 this["CBB_rebalance_Selltime_G"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_rebalance_condition_F {
-            get {
-                return ((string)(this["combo_rebalance_condition_F"]));
-            }
-            set {
-                this["combo_rebalance_condition_F"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string combo_rebalance_condition_G {
-            get {
-                return ((string)(this["combo_rebalance_condition_G"]));
-            }
-            set {
-                this["combo_rebalance_condition_G"] = value;
             }
         }
         
@@ -22436,18 +21884,6 @@ namespace 지니_64.Properties {
             }
             set {
                 this["CBB_Liquidation_Cancel_C"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string CBB_Liquidation_condition_C {
-            get {
-                return ((string)(this["CBB_Liquidation_condition_C"]));
-            }
-            set {
-                this["CBB_Liquidation_condition_C"] = value;
             }
         }
         
@@ -23822,12 +23258,12 @@ namespace 지니_64.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool CB_지니_64항상위에 {
+        public bool CB_지니64항상위에 {
             get {
-                return ((bool)(this["CB_지니_64항상위에"]));
+                return ((bool)(this["CB_지니64항상위에"]));
             }
             set {
-                this["CB_지니_64항상위에"] = value;
+                this["CB_지니64항상위에"] = value;
             }
         }
         
@@ -24050,168 +23486,168 @@ namespace 지니_64.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_매입금_A {
+        public double TB_Repeat_매입금_A {
             get {
-                return ((double)(this["TB_repeat_매입금_A"]));
+                return ((double)(this["TB_Repeat_매입금_A"]));
             }
             set {
-                this["TB_repeat_매입금_A"] = value;
+                this["TB_Repeat_매입금_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_매입금_B {
+        public double TB_Repeat_매입금_B {
             get {
-                return ((double)(this["TB_repeat_매입금_B"]));
+                return ((double)(this["TB_Repeat_매입금_B"]));
             }
             set {
-                this["TB_repeat_매입금_B"] = value;
+                this["TB_Repeat_매입금_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_매입금_C {
+        public double TB_Repeat_매입금_C {
             get {
-                return ((double)(this["TB_repeat_매입금_C"]));
+                return ((double)(this["TB_Repeat_매입금_C"]));
             }
             set {
-                this["TB_repeat_매입금_C"] = value;
+                this["TB_Repeat_매입금_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_매입금_D {
+        public double TB_Repeat_매입금_D {
             get {
-                return ((double)(this["TB_repeat_매입금_D"]));
+                return ((double)(this["TB_Repeat_매입금_D"]));
             }
             set {
-                this["TB_repeat_매입금_D"] = value;
+                this["TB_Repeat_매입금_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_매입금_E {
+        public double TB_Repeat_매입금_E {
             get {
-                return ((double)(this["TB_repeat_매입금_E"]));
+                return ((double)(this["TB_Repeat_매입금_E"]));
             }
             set {
-                this["TB_repeat_매입금_E"] = value;
+                this["TB_Repeat_매입금_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_매입금_F {
+        public double TB_Repeat_매입금_F {
             get {
-                return ((double)(this["TB_repeat_매입금_F"]));
+                return ((double)(this["TB_Repeat_매입금_F"]));
             }
             set {
-                this["TB_repeat_매입금_F"] = value;
+                this["TB_Repeat_매입금_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_매입금_G {
+        public double TB_Repeat_매입금_G {
             get {
-                return ((double)(this["TB_repeat_매입금_G"]));
+                return ((double)(this["TB_Repeat_매입금_G"]));
             }
             set {
-                this["TB_repeat_매입금_G"] = value;
+                this["TB_Repeat_매입금_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_매입금_H {
+        public double TB_Repeat_매입금_H {
             get {
-                return ((double)(this["TB_repeat_매입금_H"]));
+                return ((double)(this["TB_Repeat_매입금_H"]));
             }
             set {
-                this["TB_repeat_매입금_H"] = value;
+                this["TB_Repeat_매입금_H"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_매입금_I {
+        public double TB_Repeat_매입금_I {
             get {
-                return ((double)(this["TB_repeat_매입금_I"]));
+                return ((double)(this["TB_Repeat_매입금_I"]));
             }
             set {
-                this["TB_repeat_매입금_I"] = value;
+                this["TB_Repeat_매입금_I"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_매입금_J {
+        public double TB_Repeat_매입금_J {
             get {
-                return ((double)(this["TB_repeat_매입금_J"]));
+                return ((double)(this["TB_Repeat_매입금_J"]));
             }
             set {
-                this["TB_repeat_매입금_J"] = value;
+                this["TB_Repeat_매입금_J"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_매입금_K {
+        public double TB_Repeat_매입금_K {
             get {
-                return ((double)(this["TB_repeat_매입금_K"]));
+                return ((double)(this["TB_Repeat_매입금_K"]));
             }
             set {
-                this["TB_repeat_매입금_K"] = value;
+                this["TB_Repeat_매입금_K"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_매입금_L {
+        public double TB_Repeat_매입금_L {
             get {
-                return ((double)(this["TB_repeat_매입금_L"]));
+                return ((double)(this["TB_Repeat_매입금_L"]));
             }
             set {
-                this["TB_repeat_매입금_L"] = value;
+                this["TB_Repeat_매입금_L"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_매입금_M {
+        public double TB_Repeat_매입금_M {
             get {
-                return ((double)(this["TB_repeat_매입금_M"]));
+                return ((double)(this["TB_Repeat_매입금_M"]));
             }
             set {
-                this["TB_repeat_매입금_M"] = value;
+                this["TB_Repeat_매입금_M"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_repeat_매입금_N {
+        public double TB_Repeat_매입금_N {
             get {
-                return ((double)(this["TB_repeat_매입금_N"]));
+                return ((double)(this["TB_Repeat_매입금_N"]));
             }
             set {
-                this["TB_repeat_매입금_N"] = value;
+                this["TB_Repeat_매입금_N"] = value;
             }
         }
         
@@ -24290,12 +23726,12 @@ namespace 지니_64.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool CB_지니_64크기고정 {
+        public bool CB_지니64크기고정 {
             get {
-                return ((bool)(this["CB_지니_64크기고정"]));
+                return ((bool)(this["CB_지니64크기고정"]));
             }
             set {
-                this["CB_지니_64크기고정"] = value;
+                this["CB_지니64크기고정"] = value;
             }
         }
         
@@ -24350,48 +23786,48 @@ namespace 지니_64.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("1000")]
-        public int TB_추매주가이상 {
+        public int TB_리밸_추매주가이상 {
             get {
-                return ((int)(this["TB_추매주가이상"]));
+                return ((int)(this["TB_리밸_추매주가이상"]));
             }
             set {
-                this["TB_추매주가이상"] = value;
+                this["TB_리밸_추매주가이상"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("100000")]
-        public int TB_추매주가이하 {
+        public int TB_리밸_추매주가이하 {
             get {
-                return ((int)(this["TB_추매주가이하"]));
+                return ((int)(this["TB_리밸_추매주가이하"]));
             }
             set {
-                this["TB_추매주가이하"] = value;
+                this["TB_리밸_추매주가이하"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("-5")]
-        public double TB_추매등락률이상 {
+        public double TB_리밸_추매등락률이상 {
             get {
-                return ((double)(this["TB_추매등락률이상"]));
+                return ((double)(this["TB_리밸_추매등락률이상"]));
             }
             set {
-                this["TB_추매등락률이상"] = value;
+                this["TB_리밸_추매등락률이상"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("27")]
-        public double TB_추매등락률이하 {
+        public double TB_리밸_추매등락률이하 {
             get {
-                return ((double)(this["TB_추매등락률이하"]));
+                return ((double)(this["TB_리밸_추매등락률이하"]));
             }
             set {
-                this["TB_추매등락률이하"] = value;
+                this["TB_리밸_추매등락률이하"] = value;
             }
         }
         
@@ -26642,84 +26078,84 @@ namespace 지니_64.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_rebalance_매입금_A {
+        public double TB_Rebalance_매입금_A {
             get {
-                return ((double)(this["TB_rebalance_매입금_A"]));
+                return ((double)(this["TB_Rebalance_매입금_A"]));
             }
             set {
-                this["TB_rebalance_매입금_A"] = value;
+                this["TB_Rebalance_매입금_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_rebalance_매입금_B {
+        public double TB_Rebalance_매입금_B {
             get {
-                return ((double)(this["TB_rebalance_매입금_B"]));
+                return ((double)(this["TB_Rebalance_매입금_B"]));
             }
             set {
-                this["TB_rebalance_매입금_B"] = value;
+                this["TB_Rebalance_매입금_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_rebalance_매입금_C {
+        public double TB_Rebalance_매입금_C {
             get {
-                return ((double)(this["TB_rebalance_매입금_C"]));
+                return ((double)(this["TB_Rebalance_매입금_C"]));
             }
             set {
-                this["TB_rebalance_매입금_C"] = value;
+                this["TB_Rebalance_매입금_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_rebalance_매입금_D {
+        public double TB_Rebalance_매입금_D {
             get {
-                return ((double)(this["TB_rebalance_매입금_D"]));
+                return ((double)(this["TB_Rebalance_매입금_D"]));
             }
             set {
-                this["TB_rebalance_매입금_D"] = value;
+                this["TB_Rebalance_매입금_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_rebalance_매입금_E {
+        public double TB_Rebalance_매입금_E {
             get {
-                return ((double)(this["TB_rebalance_매입금_E"]));
+                return ((double)(this["TB_Rebalance_매입금_E"]));
             }
             set {
-                this["TB_rebalance_매입금_E"] = value;
+                this["TB_Rebalance_매입금_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_rebalance_매입금_F {
+        public double TB_Rebalance_매입금_F {
             get {
-                return ((double)(this["TB_rebalance_매입금_F"]));
+                return ((double)(this["TB_Rebalance_매입금_F"]));
             }
             set {
-                this["TB_rebalance_매입금_F"] = value;
+                this["TB_Rebalance_매입금_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public double TB_rebalance_매입금_G {
+        public double TB_Rebalance_매입금_G {
             get {
-                return ((double)(this["TB_rebalance_매입금_G"]));
+                return ((double)(this["TB_Rebalance_매입금_G"]));
             }
             set {
-                this["TB_rebalance_매입금_G"] = value;
+                this["TB_Rebalance_매입금_G"] = value;
             }
         }
         
@@ -27626,252 +27062,252 @@ namespace 지니_64.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma_A {
+        public int CBB_rebalance_MinMAPeriod1_A {
             get {
-                return ((int)(this["CBB_rebalance_mma_A"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod1_A"]));
             }
             set {
-                this["CBB_rebalance_mma_A"] = value;
+                this["CBB_rebalance_MinMAPeriod1_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma_B {
+        public int CBB_rebalance_MinMAPeriod1_B {
             get {
-                return ((int)(this["CBB_rebalance_mma_B"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod1_B"]));
             }
             set {
-                this["CBB_rebalance_mma_B"] = value;
+                this["CBB_rebalance_MinMAPeriod1_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma_C {
+        public int CBB_rebalance_MinMAPeriod1_C {
             get {
-                return ((int)(this["CBB_rebalance_mma_C"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod1_C"]));
             }
             set {
-                this["CBB_rebalance_mma_C"] = value;
+                this["CBB_rebalance_MinMAPeriod1_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma_D {
+        public int CBB_rebalance_MinMAPeriod1_D {
             get {
-                return ((int)(this["CBB_rebalance_mma_D"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod1_D"]));
             }
             set {
-                this["CBB_rebalance_mma_D"] = value;
+                this["CBB_rebalance_MinMAPeriod1_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma_E {
+        public int CBB_rebalance_MinMAPeriod1_E {
             get {
-                return ((int)(this["CBB_rebalance_mma_E"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod1_E"]));
             }
             set {
-                this["CBB_rebalance_mma_E"] = value;
+                this["CBB_rebalance_MinMAPeriod1_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma_F {
+        public int CBB_rebalance_MinMAPeriod1_F {
             get {
-                return ((int)(this["CBB_rebalance_mma_F"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod1_F"]));
             }
             set {
-                this["CBB_rebalance_mma_F"] = value;
+                this["CBB_rebalance_MinMAPeriod1_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma_G {
+        public int CBB_rebalance_MinMAPeriod1_G {
             get {
-                return ((int)(this["CBB_rebalance_mma_G"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod1_G"]));
             }
             set {
-                this["CBB_rebalance_mma_G"] = value;
+                this["CBB_rebalance_MinMAPeriod1_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_A {
+        public int CBB_repeat_MinMAPeriod1_A {
             get {
-                return ((int)(this["CBB_repeat_mma_A"]));
+                return ((int)(this["CBB_repeat_MinMAPeriod1_A"]));
             }
             set {
-                this["CBB_repeat_mma_A"] = value;
+                this["CBB_repeat_MinMAPeriod1_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_B {
+        public int CBB_repeat_MinMAPeriod1_B {
             get {
-                return ((int)(this["CBB_repeat_mma_B"]));
+                return ((int)(this["CBB_repeat_MinMAPeriod1_B"]));
             }
             set {
-                this["CBB_repeat_mma_B"] = value;
+                this["CBB_repeat_MinMAPeriod1_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_C {
+        public int CBB_repeat_MinMAPeriod1_C {
             get {
-                return ((int)(this["CBB_repeat_mma_C"]));
+                return ((int)(this["CBB_repeat_MinMAPeriod1_C"]));
             }
             set {
-                this["CBB_repeat_mma_C"] = value;
+                this["CBB_repeat_MinMAPeriod1_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_D {
+        public int CBB_repeat_MinMAPeriod1_D {
             get {
-                return ((int)(this["CBB_repeat_mma_D"]));
+                return ((int)(this["CBB_repeat_MinMAPeriod1_D"]));
             }
             set {
-                this["CBB_repeat_mma_D"] = value;
+                this["CBB_repeat_MinMAPeriod1_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_E {
+        public int CBB_repeat_MinMAPeriod1_E {
             get {
-                return ((int)(this["CBB_repeat_mma_E"]));
+                return ((int)(this["CBB_repeat_MinMAPeriod1_E"]));
             }
             set {
-                this["CBB_repeat_mma_E"] = value;
+                this["CBB_repeat_MinMAPeriod1_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_F {
+        public int CBB_repeat_MinMAPeriod1_F {
             get {
-                return ((int)(this["CBB_repeat_mma_F"]));
+                return ((int)(this["CBB_repeat_MinMAPeriod1_F"]));
             }
             set {
-                this["CBB_repeat_mma_F"] = value;
+                this["CBB_repeat_MinMAPeriod1_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_G {
+        public int CBB_repeat_MinMAPeriod1_G {
             get {
-                return ((int)(this["CBB_repeat_mma_G"]));
+                return ((int)(this["CBB_repeat_MinMAPeriod1_G"]));
             }
             set {
-                this["CBB_repeat_mma_G"] = value;
+                this["CBB_repeat_MinMAPeriod1_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_H {
+        public int CBB_repeat_MinMAPeriod1_H {
             get {
-                return ((int)(this["CBB_repeat_mma_H"]));
+                return ((int)(this["CBB_repeat_MinMAPeriod1_H"]));
             }
             set {
-                this["CBB_repeat_mma_H"] = value;
+                this["CBB_repeat_MinMAPeriod1_H"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_I {
+        public int CBB_repeat_MinMAPeriod1_I {
             get {
-                return ((int)(this["CBB_repeat_mma_I"]));
+                return ((int)(this["CBB_repeat_MinMAPeriod1_I"]));
             }
             set {
-                this["CBB_repeat_mma_I"] = value;
+                this["CBB_repeat_MinMAPeriod1_I"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_J {
+        public int CBB_repeat_MinMAPeriod1_J {
             get {
-                return ((int)(this["CBB_repeat_mma_J"]));
+                return ((int)(this["CBB_repeat_MinMAPeriod1_J"]));
             }
             set {
-                this["CBB_repeat_mma_J"] = value;
+                this["CBB_repeat_MinMAPeriod1_J"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_K {
+        public int CBB_repeat_MinMAPeriod1_K {
             get {
-                return ((int)(this["CBB_repeat_mma_K"]));
+                return ((int)(this["CBB_repeat_MinMAPeriod1_K"]));
             }
             set {
-                this["CBB_repeat_mma_K"] = value;
+                this["CBB_repeat_MinMAPeriod1_K"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_L {
+        public int CBB_repeat_MinMAPeriod1_L {
             get {
-                return ((int)(this["CBB_repeat_mma_L"]));
+                return ((int)(this["CBB_repeat_MinMAPeriod1_L"]));
             }
             set {
-                this["CBB_repeat_mma_L"] = value;
+                this["CBB_repeat_MinMAPeriod1_L"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_M {
+        public int CBB_repeat_MinMAPeriod1_M {
             get {
-                return ((int)(this["CBB_repeat_mma_M"]));
+                return ((int)(this["CBB_repeat_MinMAPeriod1_M"]));
             }
             set {
-                this["CBB_repeat_mma_M"] = value;
+                this["CBB_repeat_MinMAPeriod1_M"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_N {
+        public int CBB_repeat_MinMAPeriod1_N {
             get {
-                return ((int)(this["CBB_repeat_mma_N"]));
+                return ((int)(this["CBB_repeat_MinMAPeriod1_N"]));
             }
             set {
-                this["CBB_repeat_mma_N"] = value;
+                this["CBB_repeat_MinMAPeriod1_N"] = value;
             }
         }
         
@@ -28538,324 +27974,324 @@ namespace 지니_64.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_repeat_mma_A {
+        public int TB_repeat_MinMAPeriod1_A {
             get {
-                return ((int)(this["TB_repeat_mma_A"]));
+                return ((int)(this["TB_repeat_MinMAPeriod1_A"]));
             }
             set {
-                this["TB_repeat_mma_A"] = value;
+                this["TB_repeat_MinMAPeriod1_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_repeat_mma_B {
+        public int TB_repeat_MinMAPeriod1_B {
             get {
-                return ((int)(this["TB_repeat_mma_B"]));
+                return ((int)(this["TB_repeat_MinMAPeriod1_B"]));
             }
             set {
-                this["TB_repeat_mma_B"] = value;
+                this["TB_repeat_MinMAPeriod1_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_repeat_mma_C {
+        public int TB_repeat_MinMAPeriod1_C {
             get {
-                return ((int)(this["TB_repeat_mma_C"]));
+                return ((int)(this["TB_repeat_MinMAPeriod1_C"]));
             }
             set {
-                this["TB_repeat_mma_C"] = value;
+                this["TB_repeat_MinMAPeriod1_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_repeat_mma_D {
+        public int TB_repeat_MinMAPeriod1_D {
             get {
-                return ((int)(this["TB_repeat_mma_D"]));
+                return ((int)(this["TB_repeat_MinMAPeriod1_D"]));
             }
             set {
-                this["TB_repeat_mma_D"] = value;
+                this["TB_repeat_MinMAPeriod1_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_repeat_mma_E {
+        public int TB_repeat_MinMAPeriod1_E {
             get {
-                return ((int)(this["TB_repeat_mma_E"]));
+                return ((int)(this["TB_repeat_MinMAPeriod1_E"]));
             }
             set {
-                this["TB_repeat_mma_E"] = value;
+                this["TB_repeat_MinMAPeriod1_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_repeat_mma_F {
+        public int TB_repeat_MinMAPeriod1_F {
             get {
-                return ((int)(this["TB_repeat_mma_F"]));
+                return ((int)(this["TB_repeat_MinMAPeriod1_F"]));
             }
             set {
-                this["TB_repeat_mma_F"] = value;
+                this["TB_repeat_MinMAPeriod1_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_repeat_mma_G {
+        public int TB_repeat_MinMAPeriod1_G {
             get {
-                return ((int)(this["TB_repeat_mma_G"]));
+                return ((int)(this["TB_repeat_MinMAPeriod1_G"]));
             }
             set {
-                this["TB_repeat_mma_G"] = value;
+                this["TB_repeat_MinMAPeriod1_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_repeat_mma_H {
+        public int TB_repeat_MinMAPeriod1_H {
             get {
-                return ((int)(this["TB_repeat_mma_H"]));
+                return ((int)(this["TB_repeat_MinMAPeriod1_H"]));
             }
             set {
-                this["TB_repeat_mma_H"] = value;
+                this["TB_repeat_MinMAPeriod1_H"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_repeat_mma_I {
+        public int TB_repeat_MinMAPeriod1_I {
             get {
-                return ((int)(this["TB_repeat_mma_I"]));
+                return ((int)(this["TB_repeat_MinMAPeriod1_I"]));
             }
             set {
-                this["TB_repeat_mma_I"] = value;
+                this["TB_repeat_MinMAPeriod1_I"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_repeat_mma_J {
+        public int TB_repeat_MinMAPeriod1_J {
             get {
-                return ((int)(this["TB_repeat_mma_J"]));
+                return ((int)(this["TB_repeat_MinMAPeriod1_J"]));
             }
             set {
-                this["TB_repeat_mma_J"] = value;
+                this["TB_repeat_MinMAPeriod1_J"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_repeat_mma_K {
+        public int TB_repeat_MinMAPeriod1_K {
             get {
-                return ((int)(this["TB_repeat_mma_K"]));
+                return ((int)(this["TB_repeat_MinMAPeriod1_K"]));
             }
             set {
-                this["TB_repeat_mma_K"] = value;
+                this["TB_repeat_MinMAPeriod1_K"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_repeat_mma_L {
+        public int TB_repeat_MinMAPeriod1_L {
             get {
-                return ((int)(this["TB_repeat_mma_L"]));
+                return ((int)(this["TB_repeat_MinMAPeriod1_L"]));
             }
             set {
-                this["TB_repeat_mma_L"] = value;
+                this["TB_repeat_MinMAPeriod1_L"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_repeat_mma_M {
+        public int TB_repeat_MinMAPeriod1_M {
             get {
-                return ((int)(this["TB_repeat_mma_M"]));
+                return ((int)(this["TB_repeat_MinMAPeriod1_M"]));
             }
             set {
-                this["TB_repeat_mma_M"] = value;
+                this["TB_repeat_MinMAPeriod1_M"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_repeat_mma_N {
+        public int TB_repeat_MinMAPeriod1_N {
             get {
-                return ((int)(this["TB_repeat_mma_N"]));
+                return ((int)(this["TB_repeat_MinMAPeriod1_N"]));
             }
             set {
-                this["TB_repeat_mma_N"] = value;
+                this["TB_repeat_MinMAPeriod1_N"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_rebalance_mma_A {
+        public int TB_rebalance_MinMAPeriod1_A {
             get {
-                return ((int)(this["TB_rebalance_mma_A"]));
+                return ((int)(this["TB_rebalance_MinMAPeriod1_A"]));
             }
             set {
-                this["TB_rebalance_mma_A"] = value;
+                this["TB_rebalance_MinMAPeriod1_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_rebalance_mma_B {
+        public int TB_rebalance_MinMAPeriod1_B {
             get {
-                return ((int)(this["TB_rebalance_mma_B"]));
+                return ((int)(this["TB_rebalance_MinMAPeriod1_B"]));
             }
             set {
-                this["TB_rebalance_mma_B"] = value;
+                this["TB_rebalance_MinMAPeriod1_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_rebalance_mma_C {
+        public int TB_rebalance_MinMAPeriod1_C {
             get {
-                return ((int)(this["TB_rebalance_mma_C"]));
+                return ((int)(this["TB_rebalance_MinMAPeriod1_C"]));
             }
             set {
-                this["TB_rebalance_mma_C"] = value;
+                this["TB_rebalance_MinMAPeriod1_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_rebalance_mma_D {
+        public int TB_rebalance_MinMAPeriod1_D {
             get {
-                return ((int)(this["TB_rebalance_mma_D"]));
+                return ((int)(this["TB_rebalance_MinMAPeriod1_D"]));
             }
             set {
-                this["TB_rebalance_mma_D"] = value;
+                this["TB_rebalance_MinMAPeriod1_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_rebalance_mma_E {
+        public int TB_rebalance_MinMAPeriod1_E {
             get {
-                return ((int)(this["TB_rebalance_mma_E"]));
+                return ((int)(this["TB_rebalance_MinMAPeriod1_E"]));
             }
             set {
-                this["TB_rebalance_mma_E"] = value;
+                this["TB_rebalance_MinMAPeriod1_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_rebalance_mma_F {
+        public int TB_rebalance_MinMAPeriod1_F {
             get {
-                return ((int)(this["TB_rebalance_mma_F"]));
+                return ((int)(this["TB_rebalance_MinMAPeriod1_F"]));
             }
             set {
-                this["TB_rebalance_mma_F"] = value;
+                this["TB_rebalance_MinMAPeriod1_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("3")]
-        public int TB_rebalance_mma_G {
+        public int TB_rebalance_MinMAPeriod1_G {
             get {
-                return ((int)(this["TB_rebalance_mma_G"]));
+                return ((int)(this["TB_rebalance_MinMAPeriod1_G"]));
             }
             set {
-                this["TB_rebalance_mma_G"] = value;
+                this["TB_rebalance_MinMAPeriod1_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_Liquidation_mma_A {
+        public int TB_Liquidation_MinMAPeriod_A {
             get {
-                return ((int)(this["TB_Liquidation_mma_A"]));
+                return ((int)(this["TB_Liquidation_MinMAPeriod_A"]));
             }
             set {
-                this["TB_Liquidation_mma_A"] = value;
+                this["TB_Liquidation_MinMAPeriod_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_Liquidation_mma_B {
+        public int TB_Liquidation_MinMAPeriod_B {
             get {
-                return ((int)(this["TB_Liquidation_mma_B"]));
+                return ((int)(this["TB_Liquidation_MinMAPeriod_B"]));
             }
             set {
-                this["TB_Liquidation_mma_B"] = value;
+                this["TB_Liquidation_MinMAPeriod_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_Liquidation_mma_C {
+        public int TB_Liquidation_MinMAPeriod_C {
             get {
-                return ((int)(this["TB_Liquidation_mma_C"]));
+                return ((int)(this["TB_Liquidation_MinMAPeriod_C"]));
             }
             set {
-                this["TB_Liquidation_mma_C"] = value;
+                this["TB_Liquidation_MinMAPeriod_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_Liquidation_mma_A {
+        public int CBB_Liquidation_MinMAPeriod_A {
             get {
-                return ((int)(this["CBB_Liquidation_mma_A"]));
+                return ((int)(this["CBB_Liquidation_MinMAPeriod_A"]));
             }
             set {
-                this["CBB_Liquidation_mma_A"] = value;
+                this["CBB_Liquidation_MinMAPeriod_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_Liquidation_mma_B {
+        public int CBB_Liquidation_MinMAPeriod_B {
             get {
-                return ((int)(this["CBB_Liquidation_mma_B"]));
+                return ((int)(this["CBB_Liquidation_MinMAPeriod_B"]));
             }
             set {
-                this["CBB_Liquidation_mma_B"] = value;
+                this["CBB_Liquidation_MinMAPeriod_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_Liquidation_mma_C {
+        public int CBB_Liquidation_MinMAPeriod_C {
             get {
-                return ((int)(this["CBB_Liquidation_mma_C"]));
+                return ((int)(this["CBB_Liquidation_MinMAPeriod_C"]));
             }
             set {
-                this["CBB_Liquidation_mma_C"] = value;
+                this["CBB_Liquidation_MinMAPeriod_C"] = value;
             }
         }
         
@@ -29210,336 +28646,336 @@ namespace 지니_64.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int TB_rebalance_TS_1차_mma_A {
+        public int TB_rebalance_TS_1차_MinMAPeriod_A {
             get {
-                return ((int)(this["TB_rebalance_TS_1차_mma_A"]));
+                return ((int)(this["TB_rebalance_TS_1차_MinMAPeriod_A"]));
             }
             set {
-                this["TB_rebalance_TS_1차_mma_A"] = value;
+                this["TB_rebalance_TS_1차_MinMAPeriod_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int TB_rebalance_TS_1차_mma_B {
+        public int TB_rebalance_TS_1차_MinMAPeriod_B {
             get {
-                return ((int)(this["TB_rebalance_TS_1차_mma_B"]));
+                return ((int)(this["TB_rebalance_TS_1차_MinMAPeriod_B"]));
             }
             set {
-                this["TB_rebalance_TS_1차_mma_B"] = value;
+                this["TB_rebalance_TS_1차_MinMAPeriod_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int TB_rebalance_TS_1차_mma_C {
+        public int TB_rebalance_TS_1차_MinMAPeriod_C {
             get {
-                return ((int)(this["TB_rebalance_TS_1차_mma_C"]));
+                return ((int)(this["TB_rebalance_TS_1차_MinMAPeriod_C"]));
             }
             set {
-                this["TB_rebalance_TS_1차_mma_C"] = value;
+                this["TB_rebalance_TS_1차_MinMAPeriod_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int TB_rebalance_TS_1차_mma_D {
+        public int TB_rebalance_TS_1차_MinMAPeriod_D {
             get {
-                return ((int)(this["TB_rebalance_TS_1차_mma_D"]));
+                return ((int)(this["TB_rebalance_TS_1차_MinMAPeriod_D"]));
             }
             set {
-                this["TB_rebalance_TS_1차_mma_D"] = value;
+                this["TB_rebalance_TS_1차_MinMAPeriod_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int TB_rebalance_TS_1차_mma_E {
+        public int TB_rebalance_TS_1차_MinMAPeriod_E {
             get {
-                return ((int)(this["TB_rebalance_TS_1차_mma_E"]));
+                return ((int)(this["TB_rebalance_TS_1차_MinMAPeriod_E"]));
             }
             set {
-                this["TB_rebalance_TS_1차_mma_E"] = value;
+                this["TB_rebalance_TS_1차_MinMAPeriod_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int TB_rebalance_TS_1차_mma_F {
+        public int TB_rebalance_TS_1차_MinMAPeriod_F {
             get {
-                return ((int)(this["TB_rebalance_TS_1차_mma_F"]));
+                return ((int)(this["TB_rebalance_TS_1차_MinMAPeriod_F"]));
             }
             set {
-                this["TB_rebalance_TS_1차_mma_F"] = value;
+                this["TB_rebalance_TS_1차_MinMAPeriod_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int TB_rebalance_TS_1차_mma_G {
+        public int TB_rebalance_TS_1차_MinMAPeriod_G {
             get {
-                return ((int)(this["TB_rebalance_TS_1차_mma_G"]));
+                return ((int)(this["TB_rebalance_TS_1차_MinMAPeriod_G"]));
             }
             set {
-                this["TB_rebalance_TS_1차_mma_G"] = value;
+                this["TB_rebalance_TS_1차_MinMAPeriod_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int TB_rebalance_TS_2차_mma_A {
+        public int TB_rebalance_TS_2차_MinMAPeriod_A {
             get {
-                return ((int)(this["TB_rebalance_TS_2차_mma_A"]));
+                return ((int)(this["TB_rebalance_TS_2차_MinMAPeriod_A"]));
             }
             set {
-                this["TB_rebalance_TS_2차_mma_A"] = value;
+                this["TB_rebalance_TS_2차_MinMAPeriod_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int TB_rebalance_TS_2차_mma_B {
+        public int TB_rebalance_TS_2차_MinMAPeriod_B {
             get {
-                return ((int)(this["TB_rebalance_TS_2차_mma_B"]));
+                return ((int)(this["TB_rebalance_TS_2차_MinMAPeriod_B"]));
             }
             set {
-                this["TB_rebalance_TS_2차_mma_B"] = value;
+                this["TB_rebalance_TS_2차_MinMAPeriod_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int TB_rebalance_TS_2차_mma_C {
+        public int TB_rebalance_TS_2차_MinMAPeriod_C {
             get {
-                return ((int)(this["TB_rebalance_TS_2차_mma_C"]));
+                return ((int)(this["TB_rebalance_TS_2차_MinMAPeriod_C"]));
             }
             set {
-                this["TB_rebalance_TS_2차_mma_C"] = value;
+                this["TB_rebalance_TS_2차_MinMAPeriod_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int TB_rebalance_TS_2차_mma_D {
+        public int TB_rebalance_TS_2차_MinMAPeriod_D {
             get {
-                return ((int)(this["TB_rebalance_TS_2차_mma_D"]));
+                return ((int)(this["TB_rebalance_TS_2차_MinMAPeriod_D"]));
             }
             set {
-                this["TB_rebalance_TS_2차_mma_D"] = value;
+                this["TB_rebalance_TS_2차_MinMAPeriod_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int TB_rebalance_TS_2차_mma_E {
+        public int TB_rebalance_TS_2차_MinMAPeriod_E {
             get {
-                return ((int)(this["TB_rebalance_TS_2차_mma_E"]));
+                return ((int)(this["TB_rebalance_TS_2차_MinMAPeriod_E"]));
             }
             set {
-                this["TB_rebalance_TS_2차_mma_E"] = value;
+                this["TB_rebalance_TS_2차_MinMAPeriod_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int TB_rebalance_TS_2차_mma_F {
+        public int TB_rebalance_TS_2차_MinMAPeriod_F {
             get {
-                return ((int)(this["TB_rebalance_TS_2차_mma_F"]));
+                return ((int)(this["TB_rebalance_TS_2차_MinMAPeriod_F"]));
             }
             set {
-                this["TB_rebalance_TS_2차_mma_F"] = value;
+                this["TB_rebalance_TS_2차_MinMAPeriod_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int TB_rebalance_TS_2차_mma_G {
+        public int TB_rebalance_TS_2차_MinMAPeriod_G {
             get {
-                return ((int)(this["TB_rebalance_TS_2차_mma_G"]));
+                return ((int)(this["TB_rebalance_TS_2차_MinMAPeriod_G"]));
             }
             set {
-                this["TB_rebalance_TS_2차_mma_G"] = value;
+                this["TB_rebalance_TS_2차_MinMAPeriod_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_TS_1차_mma_A {
+        public int CBB_rebalance_TS_1차_MinMAPeriod_A {
             get {
-                return ((int)(this["CBB_rebalance_TS_1차_mma_A"]));
+                return ((int)(this["CBB_rebalance_TS_1차_MinMAPeriod_A"]));
             }
             set {
-                this["CBB_rebalance_TS_1차_mma_A"] = value;
+                this["CBB_rebalance_TS_1차_MinMAPeriod_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_TS_1차_mma_B {
+        public int CBB_rebalance_TS_1차_MinMAPeriod_B {
             get {
-                return ((int)(this["CBB_rebalance_TS_1차_mma_B"]));
+                return ((int)(this["CBB_rebalance_TS_1차_MinMAPeriod_B"]));
             }
             set {
-                this["CBB_rebalance_TS_1차_mma_B"] = value;
+                this["CBB_rebalance_TS_1차_MinMAPeriod_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_TS_1차_mma_C {
+        public int CBB_rebalance_TS_1차_MinMAPeriod_C {
             get {
-                return ((int)(this["CBB_rebalance_TS_1차_mma_C"]));
+                return ((int)(this["CBB_rebalance_TS_1차_MinMAPeriod_C"]));
             }
             set {
-                this["CBB_rebalance_TS_1차_mma_C"] = value;
+                this["CBB_rebalance_TS_1차_MinMAPeriod_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_TS_1차_mma_D {
+        public int CBB_rebalance_TS_1차_MinMAPeriod_D {
             get {
-                return ((int)(this["CBB_rebalance_TS_1차_mma_D"]));
+                return ((int)(this["CBB_rebalance_TS_1차_MinMAPeriod_D"]));
             }
             set {
-                this["CBB_rebalance_TS_1차_mma_D"] = value;
+                this["CBB_rebalance_TS_1차_MinMAPeriod_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_TS_1차_mma_E {
+        public int CBB_rebalance_TS_1차_MinMAPeriod_E {
             get {
-                return ((int)(this["CBB_rebalance_TS_1차_mma_E"]));
+                return ((int)(this["CBB_rebalance_TS_1차_MinMAPeriod_E"]));
             }
             set {
-                this["CBB_rebalance_TS_1차_mma_E"] = value;
+                this["CBB_rebalance_TS_1차_MinMAPeriod_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_TS_1차_mma_F {
+        public int CBB_rebalance_TS_1차_MinMAPeriod_F {
             get {
-                return ((int)(this["CBB_rebalance_TS_1차_mma_F"]));
+                return ((int)(this["CBB_rebalance_TS_1차_MinMAPeriod_F"]));
             }
             set {
-                this["CBB_rebalance_TS_1차_mma_F"] = value;
+                this["CBB_rebalance_TS_1차_MinMAPeriod_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_TS_1차_mma_G {
+        public int CBB_rebalance_TS_1차_MinMAPeriod_G {
             get {
-                return ((int)(this["CBB_rebalance_TS_1차_mma_G"]));
+                return ((int)(this["CBB_rebalance_TS_1차_MinMAPeriod_G"]));
             }
             set {
-                this["CBB_rebalance_TS_1차_mma_G"] = value;
+                this["CBB_rebalance_TS_1차_MinMAPeriod_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_TS_2차_mma_A {
+        public int CBB_rebalance_TS_2차_MinMAPeriod_A {
             get {
-                return ((int)(this["CBB_rebalance_TS_2차_mma_A"]));
+                return ((int)(this["CBB_rebalance_TS_2차_MinMAPeriod_A"]));
             }
             set {
-                this["CBB_rebalance_TS_2차_mma_A"] = value;
+                this["CBB_rebalance_TS_2차_MinMAPeriod_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_TS_2차_mma_B {
+        public int CBB_rebalance_TS_2차_MinMAPeriod_B {
             get {
-                return ((int)(this["CBB_rebalance_TS_2차_mma_B"]));
+                return ((int)(this["CBB_rebalance_TS_2차_MinMAPeriod_B"]));
             }
             set {
-                this["CBB_rebalance_TS_2차_mma_B"] = value;
+                this["CBB_rebalance_TS_2차_MinMAPeriod_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_TS_2차_mma_C {
+        public int CBB_rebalance_TS_2차_MinMAPeriod_C {
             get {
-                return ((int)(this["CBB_rebalance_TS_2차_mma_C"]));
+                return ((int)(this["CBB_rebalance_TS_2차_MinMAPeriod_C"]));
             }
             set {
-                this["CBB_rebalance_TS_2차_mma_C"] = value;
+                this["CBB_rebalance_TS_2차_MinMAPeriod_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_TS_2차_mma_D {
+        public int CBB_rebalance_TS_2차_MinMAPeriod_D {
             get {
-                return ((int)(this["CBB_rebalance_TS_2차_mma_D"]));
+                return ((int)(this["CBB_rebalance_TS_2차_MinMAPeriod_D"]));
             }
             set {
-                this["CBB_rebalance_TS_2차_mma_D"] = value;
+                this["CBB_rebalance_TS_2차_MinMAPeriod_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_TS_2차_mma_E {
+        public int CBB_rebalance_TS_2차_MinMAPeriod_E {
             get {
-                return ((int)(this["CBB_rebalance_TS_2차_mma_E"]));
+                return ((int)(this["CBB_rebalance_TS_2차_MinMAPeriod_E"]));
             }
             set {
-                this["CBB_rebalance_TS_2차_mma_E"] = value;
+                this["CBB_rebalance_TS_2차_MinMAPeriod_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_TS_2차_mma_F {
+        public int CBB_rebalance_TS_2차_MinMAPeriod_F {
             get {
-                return ((int)(this["CBB_rebalance_TS_2차_mma_F"]));
+                return ((int)(this["CBB_rebalance_TS_2차_MinMAPeriod_F"]));
             }
             set {
-                this["CBB_rebalance_TS_2차_mma_F"] = value;
+                this["CBB_rebalance_TS_2차_MinMAPeriod_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_TS_2차_mma_G {
+        public int CBB_rebalance_TS_2차_MinMAPeriod_G {
             get {
-                return ((int)(this["CBB_rebalance_TS_2차_mma_G"]));
+                return ((int)(this["CBB_rebalance_TS_2차_MinMAPeriod_G"]));
             }
             set {
-                this["CBB_rebalance_TS_2차_mma_G"] = value;
+                this["CBB_rebalance_TS_2차_MinMAPeriod_G"] = value;
             }
         }
         
@@ -29618,72 +29054,72 @@ namespace 지니_64.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_Liquidation_TS_mma_A {
+        public int TB_Liquidation_TS_MinMAPeriod_A {
             get {
-                return ((int)(this["TB_Liquidation_TS_mma_A"]));
+                return ((int)(this["TB_Liquidation_TS_MinMAPeriod_A"]));
             }
             set {
-                this["TB_Liquidation_TS_mma_A"] = value;
+                this["TB_Liquidation_TS_MinMAPeriod_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_Liquidation_TS_mma_B {
+        public int TB_Liquidation_TS_MinMAPeriod_B {
             get {
-                return ((int)(this["TB_Liquidation_TS_mma_B"]));
+                return ((int)(this["TB_Liquidation_TS_MinMAPeriod_B"]));
             }
             set {
-                this["TB_Liquidation_TS_mma_B"] = value;
+                this["TB_Liquidation_TS_MinMAPeriod_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_Liquidation_TS_mma_C {
+        public int TB_Liquidation_TS_MinMAPeriod_C {
             get {
-                return ((int)(this["TB_Liquidation_TS_mma_C"]));
+                return ((int)(this["TB_Liquidation_TS_MinMAPeriod_C"]));
             }
             set {
-                this["TB_Liquidation_TS_mma_C"] = value;
+                this["TB_Liquidation_TS_MinMAPeriod_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_Liquidation_TS_mma_A {
+        public int CBB_Liquidation_TS_MinMAPeriod_A {
             get {
-                return ((int)(this["CBB_Liquidation_TS_mma_A"]));
+                return ((int)(this["CBB_Liquidation_TS_MinMAPeriod_A"]));
             }
             set {
-                this["CBB_Liquidation_TS_mma_A"] = value;
+                this["CBB_Liquidation_TS_MinMAPeriod_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_Liquidation_TS_mma_B {
+        public int CBB_Liquidation_TS_MinMAPeriod_B {
             get {
-                return ((int)(this["CBB_Liquidation_TS_mma_B"]));
+                return ((int)(this["CBB_Liquidation_TS_MinMAPeriod_B"]));
             }
             set {
-                this["CBB_Liquidation_TS_mma_B"] = value;
+                this["CBB_Liquidation_TS_MinMAPeriod_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_Liquidation_TS_mma_C {
+        public int CBB_Liquidation_TS_MinMAPeriod_C {
             get {
-                return ((int)(this["CBB_Liquidation_TS_mma_C"]));
+                return ((int)(this["CBB_Liquidation_TS_MinMAPeriod_C"]));
             }
             set {
-                this["CBB_Liquidation_TS_mma_C"] = value;
+                this["CBB_Liquidation_TS_MinMAPeriod_C"] = value;
             }
         }
         
@@ -29834,2376 +29270,2376 @@ namespace 지니_64.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_매매기간_TS_mma_A {
+        public int TB_매매기간_TS_MinMAPeriod_A {
             get {
-                return ((int)(this["TB_매매기간_TS_mma_A"]));
+                return ((int)(this["TB_매매기간_TS_MinMAPeriod_A"]));
             }
             set {
-                this["TB_매매기간_TS_mma_A"] = value;
+                this["TB_매매기간_TS_MinMAPeriod_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_매매기간_TS_mma_B {
+        public int TB_매매기간_TS_MinMAPeriod_B {
             get {
-                return ((int)(this["TB_매매기간_TS_mma_B"]));
+                return ((int)(this["TB_매매기간_TS_MinMAPeriod_B"]));
             }
             set {
-                this["TB_매매기간_TS_mma_B"] = value;
+                this["TB_매매기간_TS_MinMAPeriod_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_매매기간_TS_mma_C {
+        public int TB_매매기간_TS_MinMAPeriod_C {
             get {
-                return ((int)(this["TB_매매기간_TS_mma_C"]));
+                return ((int)(this["TB_매매기간_TS_MinMAPeriod_C"]));
             }
             set {
-                this["TB_매매기간_TS_mma_C"] = value;
+                this["TB_매매기간_TS_MinMAPeriod_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_매매기간_TS_mma_D {
+        public int TB_매매기간_TS_MinMAPeriod_D {
             get {
-                return ((int)(this["TB_매매기간_TS_mma_D"]));
+                return ((int)(this["TB_매매기간_TS_MinMAPeriod_D"]));
             }
             set {
-                this["TB_매매기간_TS_mma_D"] = value;
+                this["TB_매매기간_TS_MinMAPeriod_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_매매기간_TS_mma_E {
+        public int TB_매매기간_TS_MinMAPeriod_E {
             get {
-                return ((int)(this["TB_매매기간_TS_mma_E"]));
+                return ((int)(this["TB_매매기간_TS_MinMAPeriod_E"]));
             }
             set {
-                this["TB_매매기간_TS_mma_E"] = value;
+                this["TB_매매기간_TS_MinMAPeriod_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_매매기간_TS_mma_F {
+        public int TB_매매기간_TS_MinMAPeriod_F {
             get {
-                return ((int)(this["TB_매매기간_TS_mma_F"]));
+                return ((int)(this["TB_매매기간_TS_MinMAPeriod_F"]));
             }
             set {
-                this["TB_매매기간_TS_mma_F"] = value;
+                this["TB_매매기간_TS_MinMAPeriod_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_매매기간_TS_mma_A {
+        public int CBB_매매기간_TS_MinMAPeriod_A {
             get {
-                return ((int)(this["CBB_매매기간_TS_mma_A"]));
+                return ((int)(this["CBB_매매기간_TS_MinMAPeriod_A"]));
             }
             set {
-                this["CBB_매매기간_TS_mma_A"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_매매기간_TS_mma_B {
-            get {
-                return ((int)(this["CBB_매매기간_TS_mma_B"]));
-            }
-            set {
-                this["CBB_매매기간_TS_mma_B"] = value;
+                this["CBB_매매기간_TS_MinMAPeriod_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_매매기간_TS_mma_C {
+        public int CBB_매매기간_TS_MinMAPeriod_B {
             get {
-                return ((int)(this["CBB_매매기간_TS_mma_C"]));
+                return ((int)(this["CBB_매매기간_TS_MinMAPeriod_B"]));
             }
             set {
-                this["CBB_매매기간_TS_mma_C"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_매매기간_TS_mma_D {
-            get {
-                return ((int)(this["CBB_매매기간_TS_mma_D"]));
-            }
-            set {
-                this["CBB_매매기간_TS_mma_D"] = value;
+                this["CBB_매매기간_TS_MinMAPeriod_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_매매기간_TS_mma_E {
+        public int CBB_매매기간_TS_MinMAPeriod_C {
             get {
-                return ((int)(this["CBB_매매기간_TS_mma_E"]));
+                return ((int)(this["CBB_매매기간_TS_MinMAPeriod_C"]));
             }
             set {
-                this["CBB_매매기간_TS_mma_E"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_매매기간_TS_mma_F {
-            get {
-                return ((int)(this["CBB_매매기간_TS_mma_F"]));
-            }
-            set {
-                this["CBB_매매기간_TS_mma_F"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_Liquidation_TS_dma_A {
-            get {
-                return ((int)(this["TB_Liquidation_TS_dma_A"]));
-            }
-            set {
-                this["TB_Liquidation_TS_dma_A"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_Liquidation_TS_dma_B {
-            get {
-                return ((int)(this["TB_Liquidation_TS_dma_B"]));
-            }
-            set {
-                this["TB_Liquidation_TS_dma_B"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_Liquidation_TS_dma_C {
-            get {
-                return ((int)(this["TB_Liquidation_TS_dma_C"]));
-            }
-            set {
-                this["TB_Liquidation_TS_dma_C"] = value;
+                this["CBB_매매기간_TS_MinMAPeriod_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_Liquidation_TS_dma_A {
+        public int CBB_매매기간_TS_MinMAPeriod_D {
             get {
-                return ((int)(this["CBB_Liquidation_TS_dma_A"]));
+                return ((int)(this["CBB_매매기간_TS_MinMAPeriod_D"]));
             }
             set {
-                this["CBB_Liquidation_TS_dma_A"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_Liquidation_TS_dma_B {
-            get {
-                return ((int)(this["CBB_Liquidation_TS_dma_B"]));
-            }
-            set {
-                this["CBB_Liquidation_TS_dma_B"] = value;
+                this["CBB_매매기간_TS_MinMAPeriod_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_Liquidation_TS_dma_C {
+        public int CBB_매매기간_TS_MinMAPeriod_E {
             get {
-                return ((int)(this["CBB_Liquidation_TS_dma_C"]));
+                return ((int)(this["CBB_매매기간_TS_MinMAPeriod_E"]));
             }
             set {
-                this["CBB_Liquidation_TS_dma_C"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_매매기간_TS_dma_A {
-            get {
-                return ((int)(this["TB_매매기간_TS_dma_A"]));
-            }
-            set {
-                this["TB_매매기간_TS_dma_A"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_매매기간_TS_dma_B {
-            get {
-                return ((int)(this["TB_매매기간_TS_dma_B"]));
-            }
-            set {
-                this["TB_매매기간_TS_dma_B"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_매매기간_TS_dma_C {
-            get {
-                return ((int)(this["TB_매매기간_TS_dma_C"]));
-            }
-            set {
-                this["TB_매매기간_TS_dma_C"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_매매기간_TS_dma_D {
-            get {
-                return ((int)(this["TB_매매기간_TS_dma_D"]));
-            }
-            set {
-                this["TB_매매기간_TS_dma_D"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_매매기간_TS_dma_E {
-            get {
-                return ((int)(this["TB_매매기간_TS_dma_E"]));
-            }
-            set {
-                this["TB_매매기간_TS_dma_E"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_매매기간_TS_dma_F {
-            get {
-                return ((int)(this["TB_매매기간_TS_dma_F"]));
-            }
-            set {
-                this["TB_매매기간_TS_dma_F"] = value;
+                this["CBB_매매기간_TS_MinMAPeriod_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_매매기간_TS_dma_A {
+        public int CBB_매매기간_TS_MinMAPeriod_F {
             get {
-                return ((int)(this["CBB_매매기간_TS_dma_A"]));
+                return ((int)(this["CBB_매매기간_TS_MinMAPeriod_F"]));
             }
             set {
-                this["CBB_매매기간_TS_dma_A"] = value;
+                this["CBB_매매기간_TS_MinMAPeriod_F"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int TB_Liquidation_TS_DayMAPeriod_A {
+            get {
+                return ((int)(this["TB_Liquidation_TS_DayMAPeriod_A"]));
+            }
+            set {
+                this["TB_Liquidation_TS_DayMAPeriod_A"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int TB_Liquidation_TS_DayMAPeriod_B {
+            get {
+                return ((int)(this["TB_Liquidation_TS_DayMAPeriod_B"]));
+            }
+            set {
+                this["TB_Liquidation_TS_DayMAPeriod_B"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int TB_Liquidation_TS_DayMAPeriod_C {
+            get {
+                return ((int)(this["TB_Liquidation_TS_DayMAPeriod_C"]));
+            }
+            set {
+                this["TB_Liquidation_TS_DayMAPeriod_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_매매기간_TS_dma_B {
+        public int CBB_Liquidation_TS_DayMAPeriod_A {
             get {
-                return ((int)(this["CBB_매매기간_TS_dma_B"]));
+                return ((int)(this["CBB_Liquidation_TS_DayMAPeriod_A"]));
             }
             set {
-                this["CBB_매매기간_TS_dma_B"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_매매기간_TS_dma_C {
-            get {
-                return ((int)(this["CBB_매매기간_TS_dma_C"]));
-            }
-            set {
-                this["CBB_매매기간_TS_dma_C"] = value;
+                this["CBB_Liquidation_TS_DayMAPeriod_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_매매기간_TS_dma_D {
+        public int CBB_Liquidation_TS_DayMAPeriod_B {
             get {
-                return ((int)(this["CBB_매매기간_TS_dma_D"]));
+                return ((int)(this["CBB_Liquidation_TS_DayMAPeriod_B"]));
             }
             set {
-                this["CBB_매매기간_TS_dma_D"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_매매기간_TS_dma_E {
-            get {
-                return ((int)(this["CBB_매매기간_TS_dma_E"]));
-            }
-            set {
-                this["CBB_매매기간_TS_dma_E"] = value;
+                this["CBB_Liquidation_TS_DayMAPeriod_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("2")]
-        public int CBB_매매기간_TS_dma_F {
+        public int CBB_Liquidation_TS_DayMAPeriod_C {
             get {
-                return ((int)(this["CBB_매매기간_TS_dma_F"]));
+                return ((int)(this["CBB_Liquidation_TS_DayMAPeriod_C"]));
             }
             set {
-                this["CBB_매매기간_TS_dma_F"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_mma2_A {
-            get {
-                return ((int)(this["TB_repeat_mma2_A"]));
-            }
-            set {
-                this["TB_repeat_mma2_A"] = value;
+                this["CBB_Liquidation_TS_DayMAPeriod_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_mma2_B {
+        public int TB_매매기간_TS_DayMAPeriod_A {
             get {
-                return ((int)(this["TB_repeat_mma2_B"]));
+                return ((int)(this["TB_매매기간_TS_DayMAPeriod_A"]));
             }
             set {
-                this["TB_repeat_mma2_B"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_mma2_C {
-            get {
-                return ((int)(this["TB_repeat_mma2_C"]));
-            }
-            set {
-                this["TB_repeat_mma2_C"] = value;
+                this["TB_매매기간_TS_DayMAPeriod_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_mma2_D {
+        public int TB_매매기간_TS_DayMAPeriod_B {
             get {
-                return ((int)(this["TB_repeat_mma2_D"]));
+                return ((int)(this["TB_매매기간_TS_DayMAPeriod_B"]));
             }
             set {
-                this["TB_repeat_mma2_D"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_mma2_E {
-            get {
-                return ((int)(this["TB_repeat_mma2_E"]));
-            }
-            set {
-                this["TB_repeat_mma2_E"] = value;
+                this["TB_매매기간_TS_DayMAPeriod_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_mma2_F {
+        public int TB_매매기간_TS_DayMAPeriod_C {
             get {
-                return ((int)(this["TB_repeat_mma2_F"]));
+                return ((int)(this["TB_매매기간_TS_DayMAPeriod_C"]));
             }
             set {
-                this["TB_repeat_mma2_F"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_mma2_G {
-            get {
-                return ((int)(this["TB_repeat_mma2_G"]));
-            }
-            set {
-                this["TB_repeat_mma2_G"] = value;
+                this["TB_매매기간_TS_DayMAPeriod_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_mma2_H {
+        public int TB_매매기간_TS_DayMAPeriod_D {
             get {
-                return ((int)(this["TB_repeat_mma2_H"]));
+                return ((int)(this["TB_매매기간_TS_DayMAPeriod_D"]));
             }
             set {
-                this["TB_repeat_mma2_H"] = value;
+                this["TB_매매기간_TS_DayMAPeriod_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_mma2_I {
+        public int TB_매매기간_TS_DayMAPeriod_E {
             get {
-                return ((int)(this["TB_repeat_mma2_I"]));
+                return ((int)(this["TB_매매기간_TS_DayMAPeriod_E"]));
             }
             set {
-                this["TB_repeat_mma2_I"] = value;
+                this["TB_매매기간_TS_DayMAPeriod_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_mma2_J {
+        public int TB_매매기간_TS_DayMAPeriod_F {
             get {
-                return ((int)(this["TB_repeat_mma2_J"]));
+                return ((int)(this["TB_매매기간_TS_DayMAPeriod_F"]));
             }
             set {
-                this["TB_repeat_mma2_J"] = value;
+                this["TB_매매기간_TS_DayMAPeriod_F"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        public int CBB_매매기간_TS_DayMAPeriod_A {
+            get {
+                return ((int)(this["CBB_매매기간_TS_DayMAPeriod_A"]));
+            }
+            set {
+                this["CBB_매매기간_TS_DayMAPeriod_A"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        public int CBB_매매기간_TS_DayMAPeriod_B {
+            get {
+                return ((int)(this["CBB_매매기간_TS_DayMAPeriod_B"]));
+            }
+            set {
+                this["CBB_매매기간_TS_DayMAPeriod_B"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        public int CBB_매매기간_TS_DayMAPeriod_C {
+            get {
+                return ((int)(this["CBB_매매기간_TS_DayMAPeriod_C"]));
+            }
+            set {
+                this["CBB_매매기간_TS_DayMAPeriod_C"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        public int CBB_매매기간_TS_DayMAPeriod_D {
+            get {
+                return ((int)(this["CBB_매매기간_TS_DayMAPeriod_D"]));
+            }
+            set {
+                this["CBB_매매기간_TS_DayMAPeriod_D"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        public int CBB_매매기간_TS_DayMAPeriod_E {
+            get {
+                return ((int)(this["CBB_매매기간_TS_DayMAPeriod_E"]));
+            }
+            set {
+                this["CBB_매매기간_TS_DayMAPeriod_E"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
+        public int CBB_매매기간_TS_DayMAPeriod_F {
+            get {
+                return ((int)(this["CBB_매매기간_TS_DayMAPeriod_F"]));
+            }
+            set {
+                this["CBB_매매기간_TS_DayMAPeriod_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_mma2_K {
+        public int TB_repeat_MinMAPeriod2_A {
             get {
-                return ((int)(this["TB_repeat_mma2_K"]));
+                return ((int)(this["TB_repeat_MinMAPeriod2_A"]));
             }
             set {
-                this["TB_repeat_mma2_K"] = value;
+                this["TB_repeat_MinMAPeriod2_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_mma2_L {
+        public int TB_repeat_MinMAPeriod2_B {
             get {
-                return ((int)(this["TB_repeat_mma2_L"]));
+                return ((int)(this["TB_repeat_MinMAPeriod2_B"]));
             }
             set {
-                this["TB_repeat_mma2_L"] = value;
+                this["TB_repeat_MinMAPeriod2_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_mma2_M {
+        public int TB_repeat_MinMAPeriod2_C {
             get {
-                return ((int)(this["TB_repeat_mma2_M"]));
+                return ((int)(this["TB_repeat_MinMAPeriod2_C"]));
             }
             set {
-                this["TB_repeat_mma2_M"] = value;
+                this["TB_repeat_MinMAPeriod2_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_mma2_N {
+        public int TB_repeat_MinMAPeriod2_D {
             get {
-                return ((int)(this["TB_repeat_mma2_N"]));
+                return ((int)(this["TB_repeat_MinMAPeriod2_D"]));
             }
             set {
-                this["TB_repeat_mma2_N"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma2_A {
-            get {
-                return ((int)(this["CBB_repeat_mma2_A"]));
-            }
-            set {
-                this["CBB_repeat_mma2_A"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma2_B {
-            get {
-                return ((int)(this["CBB_repeat_mma2_B"]));
-            }
-            set {
-                this["CBB_repeat_mma2_B"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma2_C {
-            get {
-                return ((int)(this["CBB_repeat_mma2_C"]));
-            }
-            set {
-                this["CBB_repeat_mma2_C"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma2_D {
-            get {
-                return ((int)(this["CBB_repeat_mma2_D"]));
-            }
-            set {
-                this["CBB_repeat_mma2_D"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma2_E {
-            get {
-                return ((int)(this["CBB_repeat_mma2_E"]));
-            }
-            set {
-                this["CBB_repeat_mma2_E"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma2_F {
-            get {
-                return ((int)(this["CBB_repeat_mma2_F"]));
-            }
-            set {
-                this["CBB_repeat_mma2_F"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma2_G {
-            get {
-                return ((int)(this["CBB_repeat_mma2_G"]));
-            }
-            set {
-                this["CBB_repeat_mma2_G"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma2_H {
-            get {
-                return ((int)(this["CBB_repeat_mma2_H"]));
-            }
-            set {
-                this["CBB_repeat_mma2_H"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma2_I {
-            get {
-                return ((int)(this["CBB_repeat_mma2_I"]));
-            }
-            set {
-                this["CBB_repeat_mma2_I"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma2_J {
-            get {
-                return ((int)(this["CBB_repeat_mma2_J"]));
-            }
-            set {
-                this["CBB_repeat_mma2_J"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma2_K {
-            get {
-                return ((int)(this["CBB_repeat_mma2_K"]));
-            }
-            set {
-                this["CBB_repeat_mma2_K"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma2_L {
-            get {
-                return ((int)(this["CBB_repeat_mma2_L"]));
-            }
-            set {
-                this["CBB_repeat_mma2_L"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma2_M {
-            get {
-                return ((int)(this["CBB_repeat_mma2_M"]));
-            }
-            set {
-                this["CBB_repeat_mma2_M"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma2_N {
-            get {
-                return ((int)(this["CBB_repeat_mma2_N"]));
-            }
-            set {
-                this["CBB_repeat_mma2_N"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_배열_A {
-            get {
-                return ((int)(this["CBB_repeat_mma_배열_A"]));
-            }
-            set {
-                this["CBB_repeat_mma_배열_A"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_배열_B {
-            get {
-                return ((int)(this["CBB_repeat_mma_배열_B"]));
-            }
-            set {
-                this["CBB_repeat_mma_배열_B"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_배열_C {
-            get {
-                return ((int)(this["CBB_repeat_mma_배열_C"]));
-            }
-            set {
-                this["CBB_repeat_mma_배열_C"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_배열_D {
-            get {
-                return ((int)(this["CBB_repeat_mma_배열_D"]));
-            }
-            set {
-                this["CBB_repeat_mma_배열_D"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_배열_E {
-            get {
-                return ((int)(this["CBB_repeat_mma_배열_E"]));
-            }
-            set {
-                this["CBB_repeat_mma_배열_E"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_배열_F {
-            get {
-                return ((int)(this["CBB_repeat_mma_배열_F"]));
-            }
-            set {
-                this["CBB_repeat_mma_배열_F"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_배열_G {
-            get {
-                return ((int)(this["CBB_repeat_mma_배열_G"]));
-            }
-            set {
-                this["CBB_repeat_mma_배열_G"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_배열_H {
-            get {
-                return ((int)(this["CBB_repeat_mma_배열_H"]));
-            }
-            set {
-                this["CBB_repeat_mma_배열_H"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_배열_I {
-            get {
-                return ((int)(this["CBB_repeat_mma_배열_I"]));
-            }
-            set {
-                this["CBB_repeat_mma_배열_I"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_배열_J {
-            get {
-                return ((int)(this["CBB_repeat_mma_배열_J"]));
-            }
-            set {
-                this["CBB_repeat_mma_배열_J"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_배열_K {
-            get {
-                return ((int)(this["CBB_repeat_mma_배열_K"]));
-            }
-            set {
-                this["CBB_repeat_mma_배열_K"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_배열_L {
-            get {
-                return ((int)(this["CBB_repeat_mma_배열_L"]));
-            }
-            set {
-                this["CBB_repeat_mma_배열_L"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_배열_M {
-            get {
-                return ((int)(this["CBB_repeat_mma_배열_M"]));
-            }
-            set {
-                this["CBB_repeat_mma_배열_M"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_mma_배열_N {
-            get {
-                return ((int)(this["CBB_repeat_mma_배열_N"]));
-            }
-            set {
-                this["CBB_repeat_mma_배열_N"] = value;
+                this["TB_repeat_MinMAPeriod2_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_dma1_A {
+        public int TB_repeat_MinMAPeriod2_E {
             get {
-                return ((int)(this["TB_repeat_dma1_A"]));
+                return ((int)(this["TB_repeat_MinMAPeriod2_E"]));
             }
             set {
-                this["TB_repeat_dma1_A"] = value;
+                this["TB_repeat_MinMAPeriod2_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_dma1_B {
+        public int TB_repeat_MinMAPeriod2_F {
             get {
-                return ((int)(this["TB_repeat_dma1_B"]));
+                return ((int)(this["TB_repeat_MinMAPeriod2_F"]));
             }
             set {
-                this["TB_repeat_dma1_B"] = value;
+                this["TB_repeat_MinMAPeriod2_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_dma1_C {
+        public int TB_repeat_MinMAPeriod2_G {
             get {
-                return ((int)(this["TB_repeat_dma1_C"]));
+                return ((int)(this["TB_repeat_MinMAPeriod2_G"]));
             }
             set {
-                this["TB_repeat_dma1_C"] = value;
+                this["TB_repeat_MinMAPeriod2_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_dma1_D {
+        public int TB_repeat_MinMAPeriod2_H {
             get {
-                return ((int)(this["TB_repeat_dma1_D"]));
+                return ((int)(this["TB_repeat_MinMAPeriod2_H"]));
             }
             set {
-                this["TB_repeat_dma1_D"] = value;
+                this["TB_repeat_MinMAPeriod2_H"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_dma1_E {
+        public int TB_repeat_MinMAPeriod2_I {
             get {
-                return ((int)(this["TB_repeat_dma1_E"]));
+                return ((int)(this["TB_repeat_MinMAPeriod2_I"]));
             }
             set {
-                this["TB_repeat_dma1_E"] = value;
+                this["TB_repeat_MinMAPeriod2_I"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_dma1_F {
+        public int TB_repeat_MinMAPeriod2_J {
             get {
-                return ((int)(this["TB_repeat_dma1_F"]));
+                return ((int)(this["TB_repeat_MinMAPeriod2_J"]));
             }
             set {
-                this["TB_repeat_dma1_F"] = value;
+                this["TB_repeat_MinMAPeriod2_J"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_dma1_G {
+        public int TB_repeat_MinMAPeriod2_K {
             get {
-                return ((int)(this["TB_repeat_dma1_G"]));
+                return ((int)(this["TB_repeat_MinMAPeriod2_K"]));
             }
             set {
-                this["TB_repeat_dma1_G"] = value;
+                this["TB_repeat_MinMAPeriod2_K"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_dma1_H {
+        public int TB_repeat_MinMAPeriod2_L {
             get {
-                return ((int)(this["TB_repeat_dma1_H"]));
+                return ((int)(this["TB_repeat_MinMAPeriod2_L"]));
             }
             set {
-                this["TB_repeat_dma1_H"] = value;
+                this["TB_repeat_MinMAPeriod2_L"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_dma1_I {
+        public int TB_repeat_MinMAPeriod2_M {
             get {
-                return ((int)(this["TB_repeat_dma1_I"]));
+                return ((int)(this["TB_repeat_MinMAPeriod2_M"]));
             }
             set {
-                this["TB_repeat_dma1_I"] = value;
+                this["TB_repeat_MinMAPeriod2_M"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_dma1_J {
+        public int TB_repeat_MinMAPeriod2_N {
             get {
-                return ((int)(this["TB_repeat_dma1_J"]));
+                return ((int)(this["TB_repeat_MinMAPeriod2_N"]));
             }
             set {
-                this["TB_repeat_dma1_J"] = value;
+                this["TB_repeat_MinMAPeriod2_N"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod2_A {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod2_A"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod2_A"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod2_B {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod2_B"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod2_B"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod2_C {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod2_C"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod2_C"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod2_D {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod2_D"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod2_D"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod2_E {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod2_E"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod2_E"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod2_F {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod2_F"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod2_F"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod2_G {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod2_G"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod2_G"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod2_H {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod2_H"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod2_H"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod2_I {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod2_I"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod2_I"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod2_J {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod2_J"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod2_J"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod2_K {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod2_K"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod2_K"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod2_L {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod2_L"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod2_L"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod2_M {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod2_M"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod2_M"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod2_N {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod2_N"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod2_N"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod1_배열_A {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod1_배열_A"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod1_배열_A"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod1_배열_B {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod1_배열_B"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod1_배열_B"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod1_배열_C {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod1_배열_C"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod1_배열_C"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod1_배열_D {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod1_배열_D"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod1_배열_D"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod1_배열_E {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod1_배열_E"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod1_배열_E"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod1_배열_F {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod1_배열_F"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod1_배열_F"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod1_배열_G {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod1_배열_G"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod1_배열_G"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod1_배열_H {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod1_배열_H"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod1_배열_H"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod1_배열_I {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod1_배열_I"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod1_배열_I"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod1_배열_J {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod1_배열_J"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod1_배열_J"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod1_배열_K {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod1_배열_K"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod1_배열_K"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod1_배열_L {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod1_배열_L"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod1_배열_L"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod1_배열_M {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod1_배열_M"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod1_배열_M"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int CBB_repeat_MinMAPeriod1_배열_N {
+            get {
+                return ((int)(this["CBB_repeat_MinMAPeriod1_배열_N"]));
+            }
+            set {
+                this["CBB_repeat_MinMAPeriod1_배열_N"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_dma1_K {
+        public int TB_repeat_DayMAPeriod1_A {
             get {
-                return ((int)(this["TB_repeat_dma1_K"]));
+                return ((int)(this["TB_repeat_DayMAPeriod1_A"]));
             }
             set {
-                this["TB_repeat_dma1_K"] = value;
+                this["TB_repeat_DayMAPeriod1_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_dma1_L {
+        public int TB_repeat_DayMAPeriod1_B {
             get {
-                return ((int)(this["TB_repeat_dma1_L"]));
+                return ((int)(this["TB_repeat_DayMAPeriod1_B"]));
             }
             set {
-                this["TB_repeat_dma1_L"] = value;
+                this["TB_repeat_DayMAPeriod1_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_dma1_M {
+        public int TB_repeat_DayMAPeriod1_C {
             get {
-                return ((int)(this["TB_repeat_dma1_M"]));
+                return ((int)(this["TB_repeat_DayMAPeriod1_C"]));
             }
             set {
-                this["TB_repeat_dma1_M"] = value;
+                this["TB_repeat_DayMAPeriod1_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_repeat_dma1_N {
+        public int TB_repeat_DayMAPeriod1_D {
             get {
-                return ((int)(this["TB_repeat_dma1_N"]));
+                return ((int)(this["TB_repeat_DayMAPeriod1_D"]));
             }
             set {
-                this["TB_repeat_dma1_N"] = value;
+                this["TB_repeat_DayMAPeriod1_D"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int TB_repeat_DayMAPeriod1_E {
+            get {
+                return ((int)(this["TB_repeat_DayMAPeriod1_E"]));
+            }
+            set {
+                this["TB_repeat_DayMAPeriod1_E"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int TB_repeat_DayMAPeriod1_F {
+            get {
+                return ((int)(this["TB_repeat_DayMAPeriod1_F"]));
+            }
+            set {
+                this["TB_repeat_DayMAPeriod1_F"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int TB_repeat_DayMAPeriod1_G {
+            get {
+                return ((int)(this["TB_repeat_DayMAPeriod1_G"]));
+            }
+            set {
+                this["TB_repeat_DayMAPeriod1_G"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int TB_repeat_DayMAPeriod1_H {
+            get {
+                return ((int)(this["TB_repeat_DayMAPeriod1_H"]));
+            }
+            set {
+                this["TB_repeat_DayMAPeriod1_H"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int TB_repeat_DayMAPeriod1_I {
+            get {
+                return ((int)(this["TB_repeat_DayMAPeriod1_I"]));
+            }
+            set {
+                this["TB_repeat_DayMAPeriod1_I"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int TB_repeat_DayMAPeriod1_J {
+            get {
+                return ((int)(this["TB_repeat_DayMAPeriod1_J"]));
+            }
+            set {
+                this["TB_repeat_DayMAPeriod1_J"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int TB_repeat_DayMAPeriod1_K {
+            get {
+                return ((int)(this["TB_repeat_DayMAPeriod1_K"]));
+            }
+            set {
+                this["TB_repeat_DayMAPeriod1_K"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int TB_repeat_DayMAPeriod1_L {
+            get {
+                return ((int)(this["TB_repeat_DayMAPeriod1_L"]));
+            }
+            set {
+                this["TB_repeat_DayMAPeriod1_L"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int TB_repeat_DayMAPeriod1_M {
+            get {
+                return ((int)(this["TB_repeat_DayMAPeriod1_M"]));
+            }
+            set {
+                this["TB_repeat_DayMAPeriod1_M"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int TB_repeat_DayMAPeriod1_N {
+            get {
+                return ((int)(this["TB_repeat_DayMAPeriod1_N"]));
+            }
+            set {
+                this["TB_repeat_DayMAPeriod1_N"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma1_A {
+        public int CBB_repeat_DayMAPeriod1_A {
             get {
-                return ((int)(this["CBB_repeat_dma1_A"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod1_A"]));
             }
             set {
-                this["CBB_repeat_dma1_A"] = value;
+                this["CBB_repeat_DayMAPeriod1_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma1_B {
+        public int CBB_repeat_DayMAPeriod1_B {
             get {
-                return ((int)(this["CBB_repeat_dma1_B"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod1_B"]));
             }
             set {
-                this["CBB_repeat_dma1_B"] = value;
+                this["CBB_repeat_DayMAPeriod1_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma1_C {
+        public int CBB_repeat_DayMAPeriod1_C {
             get {
-                return ((int)(this["CBB_repeat_dma1_C"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod1_C"]));
             }
             set {
-                this["CBB_repeat_dma1_C"] = value;
+                this["CBB_repeat_DayMAPeriod1_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma1_D {
+        public int CBB_repeat_DayMAPeriod1_D {
             get {
-                return ((int)(this["CBB_repeat_dma1_D"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod1_D"]));
             }
             set {
-                this["CBB_repeat_dma1_D"] = value;
+                this["CBB_repeat_DayMAPeriod1_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma1_E {
+        public int CBB_repeat_DayMAPeriod1_E {
             get {
-                return ((int)(this["CBB_repeat_dma1_E"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod1_E"]));
             }
             set {
-                this["CBB_repeat_dma1_E"] = value;
+                this["CBB_repeat_DayMAPeriod1_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma1_F {
+        public int CBB_repeat_DayMAPeriod1_F {
             get {
-                return ((int)(this["CBB_repeat_dma1_F"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod1_F"]));
             }
             set {
-                this["CBB_repeat_dma1_F"] = value;
+                this["CBB_repeat_DayMAPeriod1_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma1_G {
+        public int CBB_repeat_DayMAPeriod1_G {
             get {
-                return ((int)(this["CBB_repeat_dma1_G"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod1_G"]));
             }
             set {
-                this["CBB_repeat_dma1_G"] = value;
+                this["CBB_repeat_DayMAPeriod1_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma1_H {
+        public int CBB_repeat_DayMAPeriod1_H {
             get {
-                return ((int)(this["CBB_repeat_dma1_H"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod1_H"]));
             }
             set {
-                this["CBB_repeat_dma1_H"] = value;
+                this["CBB_repeat_DayMAPeriod1_H"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma1_I {
+        public int CBB_repeat_DayMAPeriod1_I {
             get {
-                return ((int)(this["CBB_repeat_dma1_I"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod1_I"]));
             }
             set {
-                this["CBB_repeat_dma1_I"] = value;
+                this["CBB_repeat_DayMAPeriod1_I"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma1_J {
+        public int CBB_repeat_DayMAPeriod1_J {
             get {
-                return ((int)(this["CBB_repeat_dma1_J"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod1_J"]));
             }
             set {
-                this["CBB_repeat_dma1_J"] = value;
+                this["CBB_repeat_DayMAPeriod1_J"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma1_K {
+        public int CBB_repeat_DayMAPeriod1_K {
             get {
-                return ((int)(this["CBB_repeat_dma1_K"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod1_K"]));
             }
             set {
-                this["CBB_repeat_dma1_K"] = value;
+                this["CBB_repeat_DayMAPeriod1_K"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma1_L {
+        public int CBB_repeat_DayMAPeriod1_L {
             get {
-                return ((int)(this["CBB_repeat_dma1_L"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod1_L"]));
             }
             set {
-                this["CBB_repeat_dma1_L"] = value;
+                this["CBB_repeat_DayMAPeriod1_L"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma1_M {
+        public int CBB_repeat_DayMAPeriod1_M {
             get {
-                return ((int)(this["CBB_repeat_dma1_M"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod1_M"]));
             }
             set {
-                this["CBB_repeat_dma1_M"] = value;
+                this["CBB_repeat_DayMAPeriod1_M"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma1_N {
+        public int CBB_repeat_DayMAPeriod1_N {
             get {
-                return ((int)(this["CBB_repeat_dma1_N"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod1_N"]));
             }
             set {
-                this["CBB_repeat_dma1_N"] = value;
+                this["CBB_repeat_DayMAPeriod1_N"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_repeat_dma2_A {
+        public int TB_repeat_DayMAPeriod2_A {
             get {
-                return ((int)(this["TB_repeat_dma2_A"]));
+                return ((int)(this["TB_repeat_DayMAPeriod2_A"]));
             }
             set {
-                this["TB_repeat_dma2_A"] = value;
+                this["TB_repeat_DayMAPeriod2_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_repeat_dma2_B {
+        public int TB_repeat_DayMAPeriod2_B {
             get {
-                return ((int)(this["TB_repeat_dma2_B"]));
+                return ((int)(this["TB_repeat_DayMAPeriod2_B"]));
             }
             set {
-                this["TB_repeat_dma2_B"] = value;
+                this["TB_repeat_DayMAPeriod2_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_repeat_dma2_C {
+        public int TB_repeat_DayMAPeriod2_C {
             get {
-                return ((int)(this["TB_repeat_dma2_C"]));
+                return ((int)(this["TB_repeat_DayMAPeriod2_C"]));
             }
             set {
-                this["TB_repeat_dma2_C"] = value;
+                this["TB_repeat_DayMAPeriod2_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_repeat_dma2_D {
+        public int TB_repeat_DayMAPeriod2_D {
             get {
-                return ((int)(this["TB_repeat_dma2_D"]));
+                return ((int)(this["TB_repeat_DayMAPeriod2_D"]));
             }
             set {
-                this["TB_repeat_dma2_D"] = value;
+                this["TB_repeat_DayMAPeriod2_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_repeat_dma2_E {
+        public int TB_repeat_DayMAPeriod2_E {
             get {
-                return ((int)(this["TB_repeat_dma2_E"]));
+                return ((int)(this["TB_repeat_DayMAPeriod2_E"]));
             }
             set {
-                this["TB_repeat_dma2_E"] = value;
+                this["TB_repeat_DayMAPeriod2_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_repeat_dma2_F {
+        public int TB_repeat_DayMAPeriod2_F {
             get {
-                return ((int)(this["TB_repeat_dma2_F"]));
+                return ((int)(this["TB_repeat_DayMAPeriod2_F"]));
             }
             set {
-                this["TB_repeat_dma2_F"] = value;
+                this["TB_repeat_DayMAPeriod2_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_repeat_dma2_G {
+        public int TB_repeat_DayMAPeriod2_G {
             get {
-                return ((int)(this["TB_repeat_dma2_G"]));
+                return ((int)(this["TB_repeat_DayMAPeriod2_G"]));
             }
             set {
-                this["TB_repeat_dma2_G"] = value;
+                this["TB_repeat_DayMAPeriod2_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_repeat_dma2_H {
+        public int TB_repeat_DayMAPeriod2_H {
             get {
-                return ((int)(this["TB_repeat_dma2_H"]));
+                return ((int)(this["TB_repeat_DayMAPeriod2_H"]));
             }
             set {
-                this["TB_repeat_dma2_H"] = value;
+                this["TB_repeat_DayMAPeriod2_H"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_repeat_dma2_I {
+        public int TB_repeat_DayMAPeriod2_I {
             get {
-                return ((int)(this["TB_repeat_dma2_I"]));
+                return ((int)(this["TB_repeat_DayMAPeriod2_I"]));
             }
             set {
-                this["TB_repeat_dma2_I"] = value;
+                this["TB_repeat_DayMAPeriod2_I"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_repeat_dma2_J {
+        public int TB_repeat_DayMAPeriod2_J {
             get {
-                return ((int)(this["TB_repeat_dma2_J"]));
+                return ((int)(this["TB_repeat_DayMAPeriod2_J"]));
             }
             set {
-                this["TB_repeat_dma2_J"] = value;
+                this["TB_repeat_DayMAPeriod2_J"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_repeat_dma2_K {
+        public int TB_repeat_DayMAPeriod2_K {
             get {
-                return ((int)(this["TB_repeat_dma2_K"]));
+                return ((int)(this["TB_repeat_DayMAPeriod2_K"]));
             }
             set {
-                this["TB_repeat_dma2_K"] = value;
+                this["TB_repeat_DayMAPeriod2_K"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_repeat_dma2_L {
+        public int TB_repeat_DayMAPeriod2_L {
             get {
-                return ((int)(this["TB_repeat_dma2_L"]));
+                return ((int)(this["TB_repeat_DayMAPeriod2_L"]));
             }
             set {
-                this["TB_repeat_dma2_L"] = value;
+                this["TB_repeat_DayMAPeriod2_L"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_repeat_dma2_M {
+        public int TB_repeat_DayMAPeriod2_M {
             get {
-                return ((int)(this["TB_repeat_dma2_M"]));
+                return ((int)(this["TB_repeat_DayMAPeriod2_M"]));
             }
             set {
-                this["TB_repeat_dma2_M"] = value;
+                this["TB_repeat_DayMAPeriod2_M"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_repeat_dma2_N {
+        public int TB_repeat_DayMAPeriod2_N {
             get {
-                return ((int)(this["TB_repeat_dma2_N"]));
+                return ((int)(this["TB_repeat_DayMAPeriod2_N"]));
             }
             set {
-                this["TB_repeat_dma2_N"] = value;
+                this["TB_repeat_DayMAPeriod2_N"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma2_A {
+        public int CBB_repeat_DayMAPeriod2_A {
             get {
-                return ((int)(this["CBB_repeat_dma2_A"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod2_A"]));
             }
             set {
-                this["CBB_repeat_dma2_A"] = value;
+                this["CBB_repeat_DayMAPeriod2_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma2_B {
+        public int CBB_repeat_DayMAPeriod2_B {
             get {
-                return ((int)(this["CBB_repeat_dma2_B"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod2_B"]));
             }
             set {
-                this["CBB_repeat_dma2_B"] = value;
+                this["CBB_repeat_DayMAPeriod2_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma2_C {
+        public int CBB_repeat_DayMAPeriod2_C {
             get {
-                return ((int)(this["CBB_repeat_dma2_C"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod2_C"]));
             }
             set {
-                this["CBB_repeat_dma2_C"] = value;
+                this["CBB_repeat_DayMAPeriod2_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma2_D {
+        public int CBB_repeat_DayMAPeriod2_D {
             get {
-                return ((int)(this["CBB_repeat_dma2_D"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod2_D"]));
             }
             set {
-                this["CBB_repeat_dma2_D"] = value;
+                this["CBB_repeat_DayMAPeriod2_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma2_E {
+        public int CBB_repeat_DayMAPeriod2_E {
             get {
-                return ((int)(this["CBB_repeat_dma2_E"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod2_E"]));
             }
             set {
-                this["CBB_repeat_dma2_E"] = value;
+                this["CBB_repeat_DayMAPeriod2_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma2_F {
+        public int CBB_repeat_DayMAPeriod2_F {
             get {
-                return ((int)(this["CBB_repeat_dma2_F"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod2_F"]));
             }
             set {
-                this["CBB_repeat_dma2_F"] = value;
+                this["CBB_repeat_DayMAPeriod2_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma2_G {
+        public int CBB_repeat_DayMAPeriod2_G {
             get {
-                return ((int)(this["CBB_repeat_dma2_G"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod2_G"]));
             }
             set {
-                this["CBB_repeat_dma2_G"] = value;
+                this["CBB_repeat_DayMAPeriod2_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma2_H {
+        public int CBB_repeat_DayMAPeriod2_H {
             get {
-                return ((int)(this["CBB_repeat_dma2_H"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod2_H"]));
             }
             set {
-                this["CBB_repeat_dma2_H"] = value;
+                this["CBB_repeat_DayMAPeriod2_H"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma2_I {
+        public int CBB_repeat_DayMAPeriod2_I {
             get {
-                return ((int)(this["CBB_repeat_dma2_I"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod2_I"]));
             }
             set {
-                this["CBB_repeat_dma2_I"] = value;
+                this["CBB_repeat_DayMAPeriod2_I"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma2_J {
+        public int CBB_repeat_DayMAPeriod2_J {
             get {
-                return ((int)(this["CBB_repeat_dma2_J"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod2_J"]));
             }
             set {
-                this["CBB_repeat_dma2_J"] = value;
+                this["CBB_repeat_DayMAPeriod2_J"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma2_K {
+        public int CBB_repeat_DayMAPeriod2_K {
             get {
-                return ((int)(this["CBB_repeat_dma2_K"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod2_K"]));
             }
             set {
-                this["CBB_repeat_dma2_K"] = value;
+                this["CBB_repeat_DayMAPeriod2_K"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma2_L {
+        public int CBB_repeat_DayMAPeriod2_L {
             get {
-                return ((int)(this["CBB_repeat_dma2_L"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod2_L"]));
             }
             set {
-                this["CBB_repeat_dma2_L"] = value;
+                this["CBB_repeat_DayMAPeriod2_L"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma2_M {
+        public int CBB_repeat_DayMAPeriod2_M {
             get {
-                return ((int)(this["CBB_repeat_dma2_M"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod2_M"]));
             }
             set {
-                this["CBB_repeat_dma2_M"] = value;
+                this["CBB_repeat_DayMAPeriod2_M"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma2_N {
+        public int CBB_repeat_DayMAPeriod2_N {
             get {
-                return ((int)(this["CBB_repeat_dma2_N"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod2_N"]));
             }
             set {
-                this["CBB_repeat_dma2_N"] = value;
+                this["CBB_repeat_DayMAPeriod2_N"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma_배열_A {
+        public int CBB_repeat_DayMAPeriod_배열_A {
             get {
-                return ((int)(this["CBB_repeat_dma_배열_A"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod_배열_A"]));
             }
             set {
-                this["CBB_repeat_dma_배열_A"] = value;
+                this["CBB_repeat_DayMAPeriod_배열_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma_배열_B {
+        public int CBB_repeat_DayMAPeriod_배열_B {
             get {
-                return ((int)(this["CBB_repeat_dma_배열_B"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod_배열_B"]));
             }
             set {
-                this["CBB_repeat_dma_배열_B"] = value;
+                this["CBB_repeat_DayMAPeriod_배열_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma_배열_C {
+        public int CBB_repeat_DayMAPeriod_배열_C {
             get {
-                return ((int)(this["CBB_repeat_dma_배열_C"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod_배열_C"]));
             }
             set {
-                this["CBB_repeat_dma_배열_C"] = value;
+                this["CBB_repeat_DayMAPeriod_배열_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma_배열_D {
+        public int CBB_repeat_DayMAPeriod_배열_D {
             get {
-                return ((int)(this["CBB_repeat_dma_배열_D"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod_배열_D"]));
             }
             set {
-                this["CBB_repeat_dma_배열_D"] = value;
+                this["CBB_repeat_DayMAPeriod_배열_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma_배열_E {
+        public int CBB_repeat_DayMAPeriod_배열_E {
             get {
-                return ((int)(this["CBB_repeat_dma_배열_E"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod_배열_E"]));
             }
             set {
-                this["CBB_repeat_dma_배열_E"] = value;
+                this["CBB_repeat_DayMAPeriod_배열_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma_배열_F {
+        public int CBB_repeat_DayMAPeriod_배열_F {
             get {
-                return ((int)(this["CBB_repeat_dma_배열_F"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod_배열_F"]));
             }
             set {
-                this["CBB_repeat_dma_배열_F"] = value;
+                this["CBB_repeat_DayMAPeriod_배열_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma_배열_G {
+        public int CBB_repeat_DayMAPeriod_배열_G {
             get {
-                return ((int)(this["CBB_repeat_dma_배열_G"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod_배열_G"]));
             }
             set {
-                this["CBB_repeat_dma_배열_G"] = value;
+                this["CBB_repeat_DayMAPeriod_배열_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma_배열_H {
+        public int CBB_repeat_DayMAPeriod_배열_H {
             get {
-                return ((int)(this["CBB_repeat_dma_배열_H"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod_배열_H"]));
             }
             set {
-                this["CBB_repeat_dma_배열_H"] = value;
+                this["CBB_repeat_DayMAPeriod_배열_H"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma_배열_I {
+        public int CBB_repeat_DayMAPeriod_배열_I {
             get {
-                return ((int)(this["CBB_repeat_dma_배열_I"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod_배열_I"]));
             }
             set {
-                this["CBB_repeat_dma_배열_I"] = value;
+                this["CBB_repeat_DayMAPeriod_배열_I"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma_배열_J {
+        public int CBB_repeat_DayMAPeriod_배열_J {
             get {
-                return ((int)(this["CBB_repeat_dma_배열_J"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod_배열_J"]));
             }
             set {
-                this["CBB_repeat_dma_배열_J"] = value;
+                this["CBB_repeat_DayMAPeriod_배열_J"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma_배열_K {
+        public int CBB_repeat_DayMAPeriod_배열_K {
             get {
-                return ((int)(this["CBB_repeat_dma_배열_K"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod_배열_K"]));
             }
             set {
-                this["CBB_repeat_dma_배열_K"] = value;
+                this["CBB_repeat_DayMAPeriod_배열_K"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma_배열_L {
+        public int CBB_repeat_DayMAPeriod_배열_L {
             get {
-                return ((int)(this["CBB_repeat_dma_배열_L"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod_배열_L"]));
             }
             set {
-                this["CBB_repeat_dma_배열_L"] = value;
+                this["CBB_repeat_DayMAPeriod_배열_L"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma_배열_M {
+        public int CBB_repeat_DayMAPeriod_배열_M {
             get {
-                return ((int)(this["CBB_repeat_dma_배열_M"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod_배열_M"]));
             }
             set {
-                this["CBB_repeat_dma_배열_M"] = value;
+                this["CBB_repeat_DayMAPeriod_배열_M"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_repeat_dma_배열_N {
+        public int CBB_repeat_DayMAPeriod_배열_N {
             get {
-                return ((int)(this["CBB_repeat_dma_배열_N"]));
+                return ((int)(this["CBB_repeat_DayMAPeriod_배열_N"]));
             }
             set {
-                this["CBB_repeat_dma_배열_N"] = value;
+                this["CBB_repeat_DayMAPeriod_배열_N"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_rebalance_mma2_A {
+        public int TB_rebalance_MinMAPeriod2_A {
             get {
-                return ((int)(this["TB_rebalance_mma2_A"]));
+                return ((int)(this["TB_rebalance_MinMAPeriod2_A"]));
             }
             set {
-                this["TB_rebalance_mma2_A"] = value;
+                this["TB_rebalance_MinMAPeriod2_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_rebalance_mma2_B {
+        public int TB_rebalance_MinMAPeriod2_B {
             get {
-                return ((int)(this["TB_rebalance_mma2_B"]));
+                return ((int)(this["TB_rebalance_MinMAPeriod2_B"]));
             }
             set {
-                this["TB_rebalance_mma2_B"] = value;
+                this["TB_rebalance_MinMAPeriod2_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_rebalance_mma2_C {
+        public int TB_rebalance_MinMAPeriod2_C {
             get {
-                return ((int)(this["TB_rebalance_mma2_C"]));
+                return ((int)(this["TB_rebalance_MinMAPeriod2_C"]));
             }
             set {
-                this["TB_rebalance_mma2_C"] = value;
+                this["TB_rebalance_MinMAPeriod2_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_rebalance_mma2_D {
+        public int TB_rebalance_MinMAPeriod2_D {
             get {
-                return ((int)(this["TB_rebalance_mma2_D"]));
+                return ((int)(this["TB_rebalance_MinMAPeriod2_D"]));
             }
             set {
-                this["TB_rebalance_mma2_D"] = value;
+                this["TB_rebalance_MinMAPeriod2_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_rebalance_mma2_E {
+        public int TB_rebalance_MinMAPeriod2_E {
             get {
-                return ((int)(this["TB_rebalance_mma2_E"]));
+                return ((int)(this["TB_rebalance_MinMAPeriod2_E"]));
             }
             set {
-                this["TB_rebalance_mma2_E"] = value;
+                this["TB_rebalance_MinMAPeriod2_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_rebalance_mma2_F {
+        public int TB_rebalance_MinMAPeriod2_F {
             get {
-                return ((int)(this["TB_rebalance_mma2_F"]));
+                return ((int)(this["TB_rebalance_MinMAPeriod2_F"]));
             }
             set {
-                this["TB_rebalance_mma2_F"] = value;
+                this["TB_rebalance_MinMAPeriod2_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_rebalance_mma2_G {
+        public int TB_rebalance_MinMAPeriod2_G {
             get {
-                return ((int)(this["TB_rebalance_mma2_G"]));
+                return ((int)(this["TB_rebalance_MinMAPeriod2_G"]));
             }
             set {
-                this["TB_rebalance_mma2_G"] = value;
+                this["TB_rebalance_MinMAPeriod2_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma2_A {
+        public int CBB_rebalance_MinMAPeriod2_A {
             get {
-                return ((int)(this["CBB_rebalance_mma2_A"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod2_A"]));
             }
             set {
-                this["CBB_rebalance_mma2_A"] = value;
+                this["CBB_rebalance_MinMAPeriod2_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma2_B {
+        public int CBB_rebalance_MinMAPeriod2_B {
             get {
-                return ((int)(this["CBB_rebalance_mma2_B"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod2_B"]));
             }
             set {
-                this["CBB_rebalance_mma2_B"] = value;
+                this["CBB_rebalance_MinMAPeriod2_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma2_C {
+        public int CBB_rebalance_MinMAPeriod2_C {
             get {
-                return ((int)(this["CBB_rebalance_mma2_C"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod2_C"]));
             }
             set {
-                this["CBB_rebalance_mma2_C"] = value;
+                this["CBB_rebalance_MinMAPeriod2_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma2_D {
+        public int CBB_rebalance_MinMAPeriod2_D {
             get {
-                return ((int)(this["CBB_rebalance_mma2_D"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod2_D"]));
             }
             set {
-                this["CBB_rebalance_mma2_D"] = value;
+                this["CBB_rebalance_MinMAPeriod2_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma2_E {
+        public int CBB_rebalance_MinMAPeriod2_E {
             get {
-                return ((int)(this["CBB_rebalance_mma2_E"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod2_E"]));
             }
             set {
-                this["CBB_rebalance_mma2_E"] = value;
+                this["CBB_rebalance_MinMAPeriod2_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma2_F {
+        public int CBB_rebalance_MinMAPeriod2_F {
             get {
-                return ((int)(this["CBB_rebalance_mma2_F"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod2_F"]));
             }
             set {
-                this["CBB_rebalance_mma2_F"] = value;
+                this["CBB_rebalance_MinMAPeriod2_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma2_G {
+        public int CBB_rebalance_MinMAPeriod2_G {
             get {
-                return ((int)(this["CBB_rebalance_mma2_G"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod2_G"]));
             }
             set {
-                this["CBB_rebalance_mma2_G"] = value;
+                this["CBB_rebalance_MinMAPeriod2_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma_배열_A {
+        public int CBB_rebalance_MinMAPeriod1_배열_A {
             get {
-                return ((int)(this["CBB_rebalance_mma_배열_A"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod1_배열_A"]));
             }
             set {
-                this["CBB_rebalance_mma_배열_A"] = value;
+                this["CBB_rebalance_MinMAPeriod1_배열_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma_배열_B {
+        public int CBB_rebalance_MinMAPeriod1_배열_B {
             get {
-                return ((int)(this["CBB_rebalance_mma_배열_B"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod1_배열_B"]));
             }
             set {
-                this["CBB_rebalance_mma_배열_B"] = value;
+                this["CBB_rebalance_MinMAPeriod1_배열_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma_배열_C {
+        public int CBB_rebalance_MinMAPeriod1_배열_C {
             get {
-                return ((int)(this["CBB_rebalance_mma_배열_C"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod1_배열_C"]));
             }
             set {
-                this["CBB_rebalance_mma_배열_C"] = value;
+                this["CBB_rebalance_MinMAPeriod1_배열_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma_배열_D {
+        public int CBB_rebalance_MinMAPeriod1_배열_D {
             get {
-                return ((int)(this["CBB_rebalance_mma_배열_D"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod1_배열_D"]));
             }
             set {
-                this["CBB_rebalance_mma_배열_D"] = value;
+                this["CBB_rebalance_MinMAPeriod1_배열_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma_배열_E {
+        public int CBB_rebalance_MinMAPeriod1_배열_E {
             get {
-                return ((int)(this["CBB_rebalance_mma_배열_E"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod1_배열_E"]));
             }
             set {
-                this["CBB_rebalance_mma_배열_E"] = value;
+                this["CBB_rebalance_MinMAPeriod1_배열_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma_배열_F {
+        public int CBB_rebalance_MinMAPeriod1_배열_F {
             get {
-                return ((int)(this["CBB_rebalance_mma_배열_F"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod1_배열_F"]));
             }
             set {
-                this["CBB_rebalance_mma_배열_F"] = value;
+                this["CBB_rebalance_MinMAPeriod1_배열_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_mma_배열_G {
+        public int CBB_rebalance_MinMAPeriod1_배열_G {
             get {
-                return ((int)(this["CBB_rebalance_mma_배열_G"]));
+                return ((int)(this["CBB_rebalance_MinMAPeriod1_배열_G"]));
             }
             set {
-                this["CBB_rebalance_mma_배열_G"] = value;
+                this["CBB_rebalance_MinMAPeriod1_배열_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_rebalance_dma1_A {
+        public int TB_rebalance_DayMAPeriod1_A {
             get {
-                return ((int)(this["TB_rebalance_dma1_A"]));
+                return ((int)(this["TB_rebalance_DayMAPeriod1_A"]));
             }
             set {
-                this["TB_rebalance_dma1_A"] = value;
+                this["TB_rebalance_DayMAPeriod1_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_rebalance_dma1_B {
+        public int TB_rebalance_DayMAPeriod1_B {
             get {
-                return ((int)(this["TB_rebalance_dma1_B"]));
+                return ((int)(this["TB_rebalance_DayMAPeriod1_B"]));
             }
             set {
-                this["TB_rebalance_dma1_B"] = value;
+                this["TB_rebalance_DayMAPeriod1_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_rebalance_dma1_C {
+        public int TB_rebalance_DayMAPeriod1_C {
             get {
-                return ((int)(this["TB_rebalance_dma1_C"]));
+                return ((int)(this["TB_rebalance_DayMAPeriod1_C"]));
             }
             set {
-                this["TB_rebalance_dma1_C"] = value;
+                this["TB_rebalance_DayMAPeriod1_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_rebalance_dma1_D {
+        public int TB_rebalance_DayMAPeriod1_D {
             get {
-                return ((int)(this["TB_rebalance_dma1_D"]));
+                return ((int)(this["TB_rebalance_DayMAPeriod1_D"]));
             }
             set {
-                this["TB_rebalance_dma1_D"] = value;
+                this["TB_rebalance_DayMAPeriod1_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_rebalance_dma1_E {
+        public int TB_rebalance_DayMAPeriod1_E {
             get {
-                return ((int)(this["TB_rebalance_dma1_E"]));
+                return ((int)(this["TB_rebalance_DayMAPeriod1_E"]));
             }
             set {
-                this["TB_rebalance_dma1_E"] = value;
+                this["TB_rebalance_DayMAPeriod1_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_rebalance_dma1_F {
+        public int TB_rebalance_DayMAPeriod1_F {
             get {
-                return ((int)(this["TB_rebalance_dma1_F"]));
+                return ((int)(this["TB_rebalance_DayMAPeriod1_F"]));
             }
             set {
-                this["TB_rebalance_dma1_F"] = value;
+                this["TB_rebalance_DayMAPeriod1_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public int TB_rebalance_dma1_G {
+        public int TB_rebalance_DayMAPeriod1_G {
             get {
-                return ((int)(this["TB_rebalance_dma1_G"]));
+                return ((int)(this["TB_rebalance_DayMAPeriod1_G"]));
             }
             set {
-                this["TB_rebalance_dma1_G"] = value;
+                this["TB_rebalance_DayMAPeriod1_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma1_A {
+        public int CBB_rebalance_DayMAPeriod1_A {
             get {
-                return ((int)(this["CBB_rebalance_dma1_A"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod1_A"]));
             }
             set {
-                this["CBB_rebalance_dma1_A"] = value;
+                this["CBB_rebalance_DayMAPeriod1_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma1_B {
+        public int CBB_rebalance_DayMAPeriod1_B {
             get {
-                return ((int)(this["CBB_rebalance_dma1_B"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod1_B"]));
             }
             set {
-                this["CBB_rebalance_dma1_B"] = value;
+                this["CBB_rebalance_DayMAPeriod1_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma1_C {
+        public int CBB_rebalance_DayMAPeriod1_C {
             get {
-                return ((int)(this["CBB_rebalance_dma1_C"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod1_C"]));
             }
             set {
-                this["CBB_rebalance_dma1_C"] = value;
+                this["CBB_rebalance_DayMAPeriod1_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma1_D {
+        public int CBB_rebalance_DayMAPeriod1_D {
             get {
-                return ((int)(this["CBB_rebalance_dma1_D"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod1_D"]));
             }
             set {
-                this["CBB_rebalance_dma1_D"] = value;
+                this["CBB_rebalance_DayMAPeriod1_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma1_E {
+        public int CBB_rebalance_DayMAPeriod1_E {
             get {
-                return ((int)(this["CBB_rebalance_dma1_E"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod1_E"]));
             }
             set {
-                this["CBB_rebalance_dma1_E"] = value;
+                this["CBB_rebalance_DayMAPeriod1_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma1_F {
+        public int CBB_rebalance_DayMAPeriod1_F {
             get {
-                return ((int)(this["CBB_rebalance_dma1_F"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod1_F"]));
             }
             set {
-                this["CBB_rebalance_dma1_F"] = value;
+                this["CBB_rebalance_DayMAPeriod1_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma1_G {
+        public int CBB_rebalance_DayMAPeriod1_G {
             get {
-                return ((int)(this["CBB_rebalance_dma1_G"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod1_G"]));
             }
             set {
-                this["CBB_rebalance_dma1_G"] = value;
+                this["CBB_rebalance_DayMAPeriod1_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_rebalance_dma2_A {
+        public int TB_rebalance_DayMAPeriod2_A {
             get {
-                return ((int)(this["TB_rebalance_dma2_A"]));
+                return ((int)(this["TB_rebalance_DayMAPeriod2_A"]));
             }
             set {
-                this["TB_rebalance_dma2_A"] = value;
+                this["TB_rebalance_DayMAPeriod2_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_rebalance_dma2_B {
+        public int TB_rebalance_DayMAPeriod2_B {
             get {
-                return ((int)(this["TB_rebalance_dma2_B"]));
+                return ((int)(this["TB_rebalance_DayMAPeriod2_B"]));
             }
             set {
-                this["TB_rebalance_dma2_B"] = value;
+                this["TB_rebalance_DayMAPeriod2_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_rebalance_dma2_C {
+        public int TB_rebalance_DayMAPeriod2_C {
             get {
-                return ((int)(this["TB_rebalance_dma2_C"]));
+                return ((int)(this["TB_rebalance_DayMAPeriod2_C"]));
             }
             set {
-                this["TB_rebalance_dma2_C"] = value;
+                this["TB_rebalance_DayMAPeriod2_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_rebalance_dma2_D {
+        public int TB_rebalance_DayMAPeriod2_D {
             get {
-                return ((int)(this["TB_rebalance_dma2_D"]));
+                return ((int)(this["TB_rebalance_DayMAPeriod2_D"]));
             }
             set {
-                this["TB_rebalance_dma2_D"] = value;
+                this["TB_rebalance_DayMAPeriod2_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_rebalance_dma2_E {
+        public int TB_rebalance_DayMAPeriod2_E {
             get {
-                return ((int)(this["TB_rebalance_dma2_E"]));
+                return ((int)(this["TB_rebalance_DayMAPeriod2_E"]));
             }
             set {
-                this["TB_rebalance_dma2_E"] = value;
+                this["TB_rebalance_DayMAPeriod2_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_rebalance_dma2_F {
+        public int TB_rebalance_DayMAPeriod2_F {
             get {
-                return ((int)(this["TB_rebalance_dma2_F"]));
+                return ((int)(this["TB_rebalance_DayMAPeriod2_F"]));
             }
             set {
-                this["TB_rebalance_dma2_F"] = value;
+                this["TB_rebalance_DayMAPeriod2_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("20")]
-        public int TB_rebalance_dma2_G {
+        public int TB_rebalance_DayMAPeriod2_G {
             get {
-                return ((int)(this["TB_rebalance_dma2_G"]));
+                return ((int)(this["TB_rebalance_DayMAPeriod2_G"]));
             }
             set {
-                this["TB_rebalance_dma2_G"] = value;
+                this["TB_rebalance_DayMAPeriod2_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma2_A {
+        public int CBB_rebalance_DayMAPeriod2_A {
             get {
-                return ((int)(this["CBB_rebalance_dma2_A"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod2_A"]));
             }
             set {
-                this["CBB_rebalance_dma2_A"] = value;
+                this["CBB_rebalance_DayMAPeriod2_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma2_B {
+        public int CBB_rebalance_DayMAPeriod2_B {
             get {
-                return ((int)(this["CBB_rebalance_dma2_B"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod2_B"]));
             }
             set {
-                this["CBB_rebalance_dma2_B"] = value;
+                this["CBB_rebalance_DayMAPeriod2_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma2_C {
+        public int CBB_rebalance_DayMAPeriod2_C {
             get {
-                return ((int)(this["CBB_rebalance_dma2_C"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod2_C"]));
             }
             set {
-                this["CBB_rebalance_dma2_C"] = value;
+                this["CBB_rebalance_DayMAPeriod2_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma2_D {
+        public int CBB_rebalance_DayMAPeriod2_D {
             get {
-                return ((int)(this["CBB_rebalance_dma2_D"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod2_D"]));
             }
             set {
-                this["CBB_rebalance_dma2_D"] = value;
+                this["CBB_rebalance_DayMAPeriod2_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma2_E {
+        public int CBB_rebalance_DayMAPeriod2_E {
             get {
-                return ((int)(this["CBB_rebalance_dma2_E"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod2_E"]));
             }
             set {
-                this["CBB_rebalance_dma2_E"] = value;
+                this["CBB_rebalance_DayMAPeriod2_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma2_F {
+        public int CBB_rebalance_DayMAPeriod2_F {
             get {
-                return ((int)(this["CBB_rebalance_dma2_F"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod2_F"]));
             }
             set {
-                this["CBB_rebalance_dma2_F"] = value;
+                this["CBB_rebalance_DayMAPeriod2_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma2_G {
+        public int CBB_rebalance_DayMAPeriod2_G {
             get {
-                return ((int)(this["CBB_rebalance_dma2_G"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod2_G"]));
             }
             set {
-                this["CBB_rebalance_dma2_G"] = value;
+                this["CBB_rebalance_DayMAPeriod2_G"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma_배열_A {
+        public int CBB_rebalance_DayMAPeriod_배열_A {
             get {
-                return ((int)(this["CBB_rebalance_dma_배열_A"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod_배열_A"]));
             }
             set {
-                this["CBB_rebalance_dma_배열_A"] = value;
+                this["CBB_rebalance_DayMAPeriod_배열_A"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma_배열_B {
+        public int CBB_rebalance_DayMAPeriod_배열_B {
             get {
-                return ((int)(this["CBB_rebalance_dma_배열_B"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod_배열_B"]));
             }
             set {
-                this["CBB_rebalance_dma_배열_B"] = value;
+                this["CBB_rebalance_DayMAPeriod_배열_B"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma_배열_C {
+        public int CBB_rebalance_DayMAPeriod_배열_C {
             get {
-                return ((int)(this["CBB_rebalance_dma_배열_C"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod_배열_C"]));
             }
             set {
-                this["CBB_rebalance_dma_배열_C"] = value;
+                this["CBB_rebalance_DayMAPeriod_배열_C"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma_배열_D {
+        public int CBB_rebalance_DayMAPeriod_배열_D {
             get {
-                return ((int)(this["CBB_rebalance_dma_배열_D"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod_배열_D"]));
             }
             set {
-                this["CBB_rebalance_dma_배열_D"] = value;
+                this["CBB_rebalance_DayMAPeriod_배열_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma_배열_E {
+        public int CBB_rebalance_DayMAPeriod_배열_E {
             get {
-                return ((int)(this["CBB_rebalance_dma_배열_E"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod_배열_E"]));
             }
             set {
-                this["CBB_rebalance_dma_배열_E"] = value;
+                this["CBB_rebalance_DayMAPeriod_배열_E"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma_배열_F {
+        public int CBB_rebalance_DayMAPeriod_배열_F {
             get {
-                return ((int)(this["CBB_rebalance_dma_배열_F"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod_배열_F"]));
             }
             set {
-                this["CBB_rebalance_dma_배열_F"] = value;
+                this["CBB_rebalance_DayMAPeriod_배열_F"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int CBB_rebalance_dma_배열_G {
+        public int CBB_rebalance_DayMAPeriod_배열_G {
             get {
-                return ((int)(this["CBB_rebalance_dma_배열_G"]));
+                return ((int)(this["CBB_rebalance_DayMAPeriod_배열_G"]));
             }
             set {
-                this["CBB_rebalance_dma_배열_G"] = value;
+                this["CBB_rebalance_DayMAPeriod_배열_G"] = value;
             }
         }
         
@@ -32221,37 +31657,169 @@ namespace 지니_64.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string appKey {
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool CB_신용주문 {
             get {
-                return ((string)(this["appKey"]));
+                return ((bool)(this["CB_신용주문"]));
             }
             set {
-                this["appKey"] = value;
+                this["CB_신용주문"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string appsecret {
+        public string watch_condition_A {
             get {
-                return ((string)(this["appsecret"]));
+                return ((string)(this["watch_condition_A"]));
             }
             set {
-                this["appsecret"] = value;
+                this["watch_condition_A"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string watch_condition_B {
+            get {
+                return ((string)(this["watch_condition_B"]));
+            }
+            set {
+                this["watch_condition_B"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string watch_condition_C {
+            get {
+                return ((string)(this["watch_condition_C"]));
+            }
+            set {
+                this["watch_condition_C"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string watch_condition_D {
+            get {
+                return ((string)(this["watch_condition_D"]));
+            }
+            set {
+                this["watch_condition_D"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool checkBox_mockapi {
+        public bool CB_중간가주문 {
             get {
-                return ((bool)(this["checkBox_mockapi"]));
+                return ((bool)(this["CB_중간가주문"]));
             }
             set {
-                this["checkBox_mockapi"] = value;
+                this["CB_중간가주문"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool CB_수동주문_중간가 {
+            get {
+                return ((bool)(this["CB_수동주문_중간가"]));
+            }
+            set {
+                this["CB_수동주문_중간가"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("-10")]
+        public double TB_반복_추매등락률이상 {
+            get {
+                return ((double)(this["TB_반복_추매등락률이상"]));
+            }
+            set {
+                this["TB_반복_추매등락률이상"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("20")]
+        public double TB_반복_추매등락률이하 {
+            get {
+                return ((double)(this["TB_반복_추매등락률이하"]));
+            }
+            set {
+                this["TB_반복_추매등락률이하"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1000")]
+        public int TB_반복_추매주가이상 {
+            get {
+                return ((int)(this["TB_반복_추매주가이상"]));
+            }
+            set {
+                this["TB_반복_추매주가이상"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1000000")]
+        public int TB_반복_추매주가이하 {
+            get {
+                return ((int)(this["TB_반복_추매주가이하"]));
+            }
+            set {
+                this["TB_반복_추매주가이하"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Combo_Buy_A_초회 {
+            get {
+                return ((int)(this["Combo_Buy_A_초회"]));
+            }
+            set {
+                this["Combo_Buy_A_초회"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Combo_Buy_B_초회 {
+            get {
+                return ((int)(this["Combo_Buy_B_초회"]));
+            }
+            set {
+                this["Combo_Buy_B_초회"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int combo_Sell_초회 {
+            get {
+                return ((int)(this["combo_Sell_초회"]));
+            }
+            set {
+                this["combo_Sell_초회"] = value;
             }
         }
     }

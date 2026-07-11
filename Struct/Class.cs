@@ -1,48 +1,18 @@
 ﻿using System;
 
-namespace 지니_64
+namespace 지니64
 {
-    public class Order
-    {
-        public string screennum { get; set; }
-        public int 주문유형 { get; set; }
-        public string 종목코드 { get; set; }
-        public int 주문수량 { get; set; }
-        public int 주문가 { get; set; }
-        public string 거래구분 { get; set; }
-        public string 원주문번호 { get; set; }
-        public string 검색식 { get; set; }
-        public string 종목명 { get; set; }
-        public int Order번호 { get; set; }
-        public bool 서버전달 { get; set; }
-
-
-        public Order(string screennum, int 주문유형, string 종목코드, int 주문수량, int 주문가, string 거래구분, string 원주문번호, string 검색식, string 종목명, int Order번호, bool 서버전달)
-        {
-            this.screennum = screennum;
-            this.주문유형 = 주문유형;
-            this.종목코드 = 종목코드;
-            this.주문수량 = 주문수량;
-            this.주문가 = 주문가;
-            this.거래구분 = 거래구분;
-            this.원주문번호 = 원주문번호;
-            this.검색식 = 검색식;
-            this.종목명 = 종목명;
-            this.Order번호 = Order번호;
-            this.서버전달 = 서버전달;
-        }
-    }
-
+    
     public class 신규조회
     {
-        public string ItemCode { get; set; }
-        public string Para { get; set; }
+        public string itemcode { get; set; }
+        public string where { get; set; }
         public int timer { get; set; }
         public string 검색식 { get; set; }
-        public 신규조회(string ItemCode, string Para, int timer, string 검색식)
+        public 신규조회(string itemcode, string where, int timer, string 검색식)
         {
-            this.ItemCode = ItemCode;
-            this.Para = Para;
+            this.itemcode = itemcode;
+            this.where = where;
             this.timer = timer;
             this.검색식 = 검색식;
         }
@@ -50,12 +20,12 @@ namespace 지니_64
 
     public class 재매수
     {
-        public string ItemCode { get; set; }
+        public string Itemcode { get; set; }
         public string ItemName { get; set; }
         public string 결과 { get; set; }
-        public 재매수(string ItemCode, string ItemName, string 결과)
+        public 재매수(string Itemcode, string ItemName, string 결과)
         {
-            this.ItemCode = ItemCode;
+            this.Itemcode = Itemcode;
             this.ItemName = ItemName;
             this.결과 = 결과;
         }
@@ -66,113 +36,28 @@ namespace 지니_64
     {
         public string 코드 { get; set; }
         public string 이름 { get; set; }
-        public int 시간 { get; set; }
-        public 보정(string 코드, string 이름, int 시간)
+        public bool 요청 { get; set; }
+        public 보정(string 코드, string 이름, bool 요청)
         {
             this.코드 = 코드;
             this.이름 = 이름;
-            this.시간 = 시간;
+            this.요청 = 요청;
         }
     }
 
 
     public class 최종매입가
     {
-        public string 종목코드 { get; set; }
-        public string 위치 { get; set; }
+        public string 종목명 { get; set; } = "";
+        public string 종목코드 { get; set; } = "";
+        public string 위치 { get; set; } = "";
         public int 번호 { get; set; }
         public int 매입가 { get; set; }
-        public 최종매입가(string 종목코드, string 위치, int 번호, int 매입가)
-        {
-            this.종목코드 = 종목코드;
-            this.위치 = 위치;
-            this.번호 = 번호;
-            this.매입가 = 매입가;
-        }
+
+        // [1] JSON 로딩을 위한 빈 생성자 (필수)
+        public 최종매입가() { }
     }
 
-
-    public class JumunItem
-    {
-        public int 재주문timer { get; set; }
-        public int 재주문count { get; set; }
-        public string screennum { get; set; }
-        public string 종목코드 { get; set; }
-        public string 종목명 { get; set; }
-        public string 주문번호 { get; set; }
-        public string 원주문번호 { get; set; }
-        public string 검색식 { get; set; }
-        public double 주문값 { get; set; }
-        public int 주문구분 { get; set; }
-        public int 취소시간 { get; set; }
-        public int 취소N주문 { get; set; }
-        public int 반복횟수 { get; set; }
-        public string 비고 { get; set; }
-        public string location { get; set; }
-        public int 주문수량 { get; set; }
-        public int 주문가격 { get; set; }
-        public int 주문유형 { get; set; }
-        public double 비중 { get; set; }
-        public int 비중단위 { get; set; }
-        public int 취소timer { get; set; }
-        public int 현재가 { get; set; }
-        public double 등락률 { get; set; }
-        public int 주문시간 { get; set; }
-        public int 미체결량 { get; set; }
-        public bool 주문취소 { get; set; }
-        public bool 가동전 { get; set; }
-        public int Order_count { get; set; }
-        public int Tik_cap { get; set; }
-        public int Tik_price { get; set; }
-        public double 수익률 { get; set; }
-        public bool 주문동기화 { get; set; }
-        public int 감시번호 { get; set; }
-        public int Order번호 { get; set; }
-        public int 수익구분 { get; set; }
-        public bool NXT { get; set; }
-
-        public JumunItem(int 재주문timer, int 재주문count, string screennum, string 종목코드, string 종목명, string 주문번호, string 원주문번호, string 검색식, double 주문값, int 주문구분, int 취소시간, int 취소N주문,
-            int 반복횟수, string 비고, string location, int 주문수량, int 주문가격, int 주문유형, double 비중, int 비중단위, int 취소timer, int 현재가, double 등락률, int 주문시간, int 미체결량,
-            bool 주문취소, bool 가동전, int Order_count, int Tik_cap, int Tik_price, double 수익률, bool 주문동기화, int 감시번호, int Order번호, int 수익구분, bool NXT)
-        {
-            this.재주문timer = 재주문timer;
-            this.재주문count = 재주문count;
-            this.screennum = screennum;
-            this.종목코드 = 종목코드;
-            this.종목명 = 종목명;
-            this.주문번호 = 주문번호;
-            this.원주문번호 = 원주문번호;
-            this.검색식 = 검색식;
-            this.주문값 = 주문값;
-            this.주문구분 = 주문구분;
-            this.취소시간 = 취소시간;
-            this.취소N주문 = 취소N주문;
-            this.반복횟수 = 반복횟수;
-            this.비고 = 비고;
-            this.location = location;
-            this.주문수량 = 주문수량;
-            this.주문가격 = 주문가격;
-            this.주문유형 = 주문유형;
-            this.비중 = 비중;
-            this.비중단위 = 비중단위;
-            this.취소timer = 취소timer;
-            this.현재가 = 현재가;
-            this.등락률 = 등락률;
-            this.주문시간 = 주문시간;
-            this.미체결량 = 미체결량;
-            this.주문취소 = 주문취소;
-            this.가동전 = 가동전;
-            this.Order_count = Order_count;
-            this.Tik_cap = Tik_cap;
-            this.Tik_price = Tik_price;
-            this.수익률 = 수익률;
-            this.주문동기화 = 주문동기화;
-            this.감시번호 = 감시번호;
-            this.Order번호 = Order번호;
-            this.수익구분 = 수익구분;
-            this.NXT = NXT;
-        }
-    }
 
     public class 체결
     {
@@ -180,7 +65,7 @@ namespace 지니_64
         public string 주문N체결시간 { get; set; }
         public string 종목명 { get; set; }
         public string 체결검색식 { get; set; }
-        public string 주문유형 { get; set; }
+        public string 주문 { get; set; }
         public string 거래구분 { get; set; }
         public string 수익률 { get; set; }
         public string 체결가 { get; set; }
@@ -190,13 +75,13 @@ namespace 지니_64
         public string 등락률 { get; set; }
         public string 주문번호 { get; set; }
         public string 종목코드 { get; set; }
-        public 체결(string con_num, string 주문N체결시간, string 종목명, string 체결검색식, string 주문유형, string 거래구분, string 수익률, string 체결가, string 주문수량, string 체결량, string 현재가, string 등락률, string 주문번호, string 종목코드)
+        public 체결(string con_num, string 주문N체결시간, string 종목명, string 체결검색식, string 주문, string 거래구분, string 수익률, string 체결가, string 주문수량, string 체결량, string 현재가, string 등락률, string 주문번호, string 종목코드)
         {
             this.con_num = con_num;
             this.주문N체결시간 = 주문N체결시간;
             this.종목명 = 종목명;
             this.체결검색식 = 체결검색식;
-            this.주문유형 = 주문유형;
+            this.주문 = 주문;
             this.거래구분 = 거래구분;
             this.수익률 = 수익률;
             this.체결가 = 체결가;
@@ -214,7 +99,7 @@ namespace 지니_64
         public string 등록일 { get; set; }
         public int 예약번호 { get; set; }
         public string 스크린번호 { get; set; }
-        public int 주문유형 { get; set; }
+        public int 매수매도 { get; set; }
         public string 종목코드 { get; set; }
         public string 종목명 { get; set; }
         public double 주문비 { get; set; } // 주문비율 변경
@@ -230,12 +115,12 @@ namespace 지니_64
         public bool 체결완료삭제 { get; set; }
         public bool 전량매도삭제 { get; set; }
 
-        public 주문예약(string 등록일, int 예약번호, string 스크린번호, int 주문유형, string 종목코드, string 종목명, double 주문비, double 비중, int 선택, int 주문가, int 주문수량, int 체결수량, string 검색식, string 주문번호, bool 등록, bool 연동, bool 체결완료삭제, bool 전량매도삭제)
+        public 주문예약(string 등록일, int 예약번호, string 스크린번호, int 매수매도, string 종목코드, string 종목명, double 주문비, double 비중, int 선택, int 주문가, int 주문수량, int 체결수량, string 검색식, string 주문번호, bool 등록, bool 연동, bool 체결완료삭제, bool 전량매도삭제)
         {
             this.등록일 = 등록일;
             this.예약번호 = 예약번호;
             this.스크린번호 = 스크린번호;
-            this.주문유형 = 주문유형;
+            this.매수매도 = 매수매도;
             this.종목코드 = 종목코드;
             this.종목명 = 종목명;
             this.주문비 = 주문비;
@@ -253,16 +138,18 @@ namespace 지니_64
         }
     }
 
-    public class NewCatch_A
+    public class Newstock
     {
+        public string Pos { get; set; }
         public string condition { get; set; }
         public string code { get; set; }
         public string state { get; set; }
         public int timer { get; set; }
         public DateTime CatchTime { get; set; }
 
-        public NewCatch_A(string condition, string code, string state, int timer, DateTime CatchTime)
+        public Newstock(string Pos, string condition, string code, string state, int timer, DateTime CatchTime)
         {
+            this.Pos = Pos;
             this.condition = condition;
             this.code = code;
             this.state = state;
@@ -271,309 +158,24 @@ namespace 지니_64
         }
     }
 
-    public class NewCatch_B
+    public class ABC
     {
-        public string condition { get; set; }
-        public string code { get; set; }
-        public string state { get; set; }
-        public int timer { get; set; }
-        public DateTime CatchTime { get; set; }
+        public string Code { get; set; }
+        public string Loc { get; set; }
 
-        public NewCatch_B(string condition, string code, string state, int timer, DateTime CatchTime)
+        public ABC(string Code, string Loc)
         {
-            this.condition = condition;
-            this.code = code;
-            this.state = state;
-            this.timer = timer;
-            this.CatchTime = CatchTime;
+            this.Code = Code;
+            this.Loc = Loc;
         }
     }
 
-    public class NewCatch_C
-    {
-        public string condition { get; set; }
-        public string code { get; set; }
-        public string state { get; set; }
-        public int timer { get; set; }
-        public DateTime CatchTime { get; set; }
-
-        public NewCatch_C(string condition, string code, string state, int timer, DateTime CatchTime)
-        {
-            this.condition = condition;
-            this.code = code;
-            this.state = state;
-            this.timer = timer;
-            this.CatchTime = CatchTime;
-        }
-    }
-
-    public class Repeat_condition_A
+    public class Catch_stock
     {
         public string code { get; set; }
         public int timer { get; set; }
 
-        public Repeat_condition_A(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-
-    public class Repeat_condition_B
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Repeat_condition_B(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-    public class Repeat_condition_C
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-        public Repeat_condition_C(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-    public class Repeat_condition_D
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Repeat_condition_D(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-    public class Repeat_condition_E
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-        public Repeat_condition_E(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-    public class Repeat_condition_F
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Repeat_condition_F(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-    public class Repeat_condition_G
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Repeat_condition_G(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-    public class Repeat_condition_H
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-        public Repeat_condition_H(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-    public class Repeat_condition_I
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Repeat_condition_I(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-    public class Repeat_condition_J
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Repeat_condition_J(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-    public class Repeat_condition_K
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Repeat_condition_K(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-
-
-    public class Repeat_condition_L
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Repeat_condition_L(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-
-    public class Repeat_condition_M
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Repeat_condition_M(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-    public class Repeat_condition_N
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Repeat_condition_N(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-
-    public class Rebal_condition_A
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Rebal_condition_A(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-
-    public class Rebal_condition_B
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Rebal_condition_B(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-
-    public class Rebal_condition_C
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Rebal_condition_C(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-    public class Rebal_condition_D
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Rebal_condition_D(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-
-    public class Rebal_condition_E
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Rebal_condition_E(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-    public class Rebal_condition_F
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Rebal_condition_F(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-    public class Rebal_condition_G
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Rebal_condition_G(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-
-    public class Liquidation_condition_A
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Liquidation_condition_A(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-
-    public class Liquidation_condition_B
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Liquidation_condition_B(string code, int timer)
-        {
-            this.code = code;
-            this.timer = timer;
-        }
-    }
-
-    public class Liquidation_condition_C
-    {
-        public string code { get; set; }
-        public int timer { get; set; }
-
-        public Liquidation_condition_C(string code, int timer)
+        public Catch_stock(string code, int timer)
         {
             this.code = code;
             this.timer = timer;
@@ -582,20 +184,20 @@ namespace 지니_64
 
     public class Rebal_Sell
     {
-        public string location { get; set; }
-        public string code { get; set; }
-        public string screennum { get; set; }
+        public string 위치 { get; set; }
+        public string 종목코드 { get; set; }
+        public string Screennum { get; set; }
         public string 주문번호 { get; set; }
         public int _1차수량 { get; set; }
         public int _2차수량 { get; set; }
         public int 체결가격 { get; set; }
         public int 수익구분 { get; set; }
 
-        public Rebal_Sell(string location, string code, string screennum, string 주문번호, int _1차수량, int _2차수량, int 체결가격, int 수익구분)
+        public Rebal_Sell(string 위치, string 종목코드, string Screennum, string 주문번호, int _1차수량, int _2차수량, int 체결가격, int 수익구분)
         {
-            this.location = location;
-            this.code = code;
-            this.screennum = screennum;
+            this.위치 = 위치;
+            this.종목코드 = 종목코드;
+            this.Screennum = Screennum;
             this.주문번호 = 주문번호;
             this._1차수량 = _1차수량;
             this._2차수량 = _2차수량;
@@ -609,7 +211,7 @@ namespace 지니_64
     {
         public string 검색식 { get; set; }
         public string 코드 { get; set; }
-        public string 화면번호 { get; set; }
+        public string Screennum { get; set; }
         public int 수량A { get; set; }
         public int 수량B { get; set; }
         public int 수량C { get; set; }
@@ -620,11 +222,11 @@ namespace 지니_64
         public int 수량H { get; set; }
         public int 수량I { get; set; }
 
-        public Scalping(string 검색식, string 코드, string 화면번호, int 수량A, int 수량B, int 수량C, int 수량D, int 수량E, int 수량F, int 수량G, int 수량H, int 수량I)
+        public Scalping(string 검색식, string 코드, string Screennum, int 수량A, int 수량B, int 수량C, int 수량D, int 수량E, int 수량F, int 수량G, int 수량H, int 수량I)
         {
             this.검색식 = 검색식;
             this.코드 = 코드;
-            this.화면번호 = 화면번호;
+            this.Screennum = Screennum;
             this.수량A = 수량A;
             this.수량B = 수량B;
             this.수량C = 수량C;
@@ -641,45 +243,55 @@ namespace 지니_64
     {
         public string Code { get; set; }
         public string Name { get; set; }
-        public string date { get; set; }
+        public string AddedDate { get; set; }
         public string Title { get; set; }
         public bool 시세등록 { get; set; }
 
-        public Interest_stock(string Code, string Name, string date, string Title, bool 시세등록)
-        {
-            this.Code = Code;
-            this.Name = Name;
-            this.date = date;
-            this.Title = Title;
-            this.시세등록 = 시세등록;
-        }
+        public Interest_stock () {}
     }
 
-    public class trading_item
+    public class Trading_item
     {
-        public string Code { get; set; }
-        public string location { get; set; }
-        public int timer { get; set; }
+        // [C# 7.0+] Auto-Property Initializer: 기본값 안전 설정 (Null 방지)
+        public bool IsActive { get; set; } = false;
+        public string Code { get; set; } = string.Empty;     // null 대신 빈 문자열
+        public string Location { get; set; } = string.Empty; // null 대신 빈 문자열
+        public int Timer { get; set; } = 0;
 
-        public trading_item(string Code, string location, int timer)
+        // 1. 기본 생성자
+        // (풀링 시스템에서 빈 객체를 미리 만들어둘 때 필요합니다)
+        public Trading_item() { }
+
+        // 2. 값 주입 생성자 (신규 생성 시 편의용)
+        // 내부적으로 Initialize를 호출하여 코드를 통일합니다.
+        public Trading_item(string code, string location, int timer)
         {
-            this.Code = Code;
-            this.location = location;
-            this.timer = timer;
+            Initialize(code, location, timer);
+        }
+
+        // 3. [★핵심] 재사용 초기화 메서드
+        // 대기열에서 꺼낸 '헌 객체'를 '새 객체'처럼 값을 채워주는 함수입니다.
+        public void Initialize(string code, string location, int timer)
+        {
+            this.Code = code;
+            this.Location = location;
+            this.Timer = timer;
+            this.IsActive = true; // 값을 채웠으니 자동으로 활성화
         }
     }
+
     public class 감시주문
     {
+        public string 종목명 { get; set; }
         public string 종목코드 { get; set; }
         public int 주문수량 { get; set; }
         public int 주문체결가격 { get; set; }
         public int 감시주문가격 { get; set; }
         public int 손절주문가격 { get; set; }
         public double 감시_주문값 { get; set; }
-        public int 감시_주문구분 { get; set; }
+        public int 감시_시장가구분 { get; set; }
         public string 원주문번호 { get; set; }
         public string 검색식 { get; set; }
-        public string 종목명 { get; set; }
         public string 감시일 { get; set; }
         public string 주문일 { get; set; }
         public int 감시번호 { get; set; }
@@ -687,7 +299,7 @@ namespace 지니_64
         public string 주문시간 { get; set; }
         public bool 단위_기준 { get; set; }
         public double 차수주문값 { get; set; }
-        public int 차수주문구분 { get; set; }
+        public int 차수기준 { get; set; }
         public int 취소시간 { get; set; }
         public int 수익구분 { get; set; }
         public int 최종번호 { get; set; }
@@ -698,37 +310,8 @@ namespace 지니_64
         public int TS_이평 { get; set; }
         public int CBB_TS_이평 { get; set; }
 
-        public 감시주문(string 종목코드, int 주문수량, int 주문체결가격, int 감시주문가격, int 손절주문가격, double 감시_주문값, int 감시_주문구분, string 원주문번호, string 검색식, string 종목명, string 감시일, string 주문일, int 감시번호, int 연동감시번호,
-                       string 주문시간, bool 단위_기준, double 차수주문값, int 차수주문구분, int 취소시간, int 수익구분, int 최종번호, string 리밸매도기준, bool TS, int TS_high, double TS_down, int TS_이평, int CBB_TS_이평)
-        {
-            this.종목코드 = 종목코드;
-            this.주문수량 = 주문수량;
-            this.주문체결가격 = 주문체결가격;
-            this.감시주문가격 = 감시주문가격;
-            this.손절주문가격 = 손절주문가격;
-            this.감시_주문값 = 감시_주문값;
-            this.감시_주문구분 = 감시_주문구분;
-            this.원주문번호 = 원주문번호;
-            this.검색식 = 검색식;
-            this.종목명 = 종목명;
-            this.감시일 = 감시일;
-            this.주문일 = 주문일;
-            this.감시번호 = 감시번호;
-            this.연동감시번호 = 연동감시번호;
-            this.주문시간 = 주문시간;
-            this.단위_기준 = 단위_기준;
-            this.차수주문값 = 차수주문값;
-            this.차수주문구분 = 차수주문구분;
-            this.취소시간 = 취소시간;
-            this.수익구분 = 수익구분;
-            this.최종번호 = 최종번호;
-            this.리밸매도기준 = 리밸매도기준;
-            this.TS = TS;
-            this.TS_high = TS_high;
-            this.TS_down = TS_down;
-            this.TS_이평 = TS_이평;
-            this.CBB_TS_이평 = CBB_TS_이평;
-        }
+        // 생성자는 이거 하나만 있으면 돼!
+        public 감시주문() { }
     }
 
 
@@ -746,15 +329,26 @@ namespace 지니_64
 
     public class 검색이탈
     {
-        public int 타이머 { get; set; }
+        // 타이머(int) 대신 종료 예정 시간(DateTime) 사용 -> CPU 연산 제거
+        public DateTime ExpireTime { get; set; }
+
         public string 코드_검색식 { get; set; }
         public bool 신규 { get; set; }
 
-        public 검색이탈(int 타이머, string 코드_검색식, bool 신규)
+        // [최적화] 자주 쓰는 값 미리 파싱해둠 (Split 비용 제거)
+        public string 종목코드 { get; set; }
+        public string 검색식 { get; set; }
+
+        public 검색이탈(int durationSeconds, string key, bool isNew)
         {
-            this.타이머 = 타이머;
-            this.코드_검색식 = 코드_검색식;
-            this.신규 = 신규;
+            this.ExpireTime = DateTime.Now.AddSeconds(durationSeconds);
+            this.코드_검색식 = key;
+            this.신규 = isNew;
+
+            // 생성 시 1회만 Split 수행
+            var parts = key.Split('^');
+            this.종목코드 = parts.Length > 0 ? parts[0] : "";
+            this.검색식 = parts.Length > 1 ? parts[1] : "";
         }
     }
 

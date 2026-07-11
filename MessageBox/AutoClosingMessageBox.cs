@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Drawing;
+using System.Linq;
+using System.Media;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Windows.Forms;
 
-namespace 지니_64
+namespace 지니64
 {
     class AutoClosingMessageBox
     {
@@ -23,30 +26,132 @@ namespace 지니_64
         AutoClosingMessageBox(string text, string title, int timeout)
         {
             this._caption = title;
+
+            // 타이머 시작 (지정된 시간 후 닫기 시도)
             _timeoutTimer = new System.Threading.Timer(OnTimerElapsed, null, timeout, System.Threading.Timeout.Infinite);
 
-            Point point = new Point(0, 0);
+            // [지니 최적화] 위치 계산을 위해 가짜 폼(Mbox)을 만들 필요가 없습니다.
+            // 이미 구현하신 'MessageBoxCenter'는 넘겨받은 주인(Owner) 폼의 중앙을 자동으로 계산합니다.
+            // 따라서 'Form1.form1'을 직접 넘겨주기만 하면 됩니다.
 
-            Form1.form1.Invoke((MethodInvoker)delegate ()
+            // UI 스레드에서 안전하게 실행 (Hook킹 및 모달 창 처리를 위해 필수)
+            Helper.안전한_UI_업데이트(Form1.form1, () =>
             {
-                point = Form1.form1.Location;
+                try
+                {
+                    // Mbox 대신 Form1.form1을 주인으로 전달 -> 폼 중앙에 뜸
+                    MessageBoxCenter.Show(Form1.form1, text, title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                catch
+                {
+                    // 에러 무시
+                }
             });
-
-            Form Mbox = new Form { };
-            Mbox.StartPosition = FormStartPosition.Manual;
-            Mbox.Location = point;
-            Mbox.Size = new Size(1936, 760);
-            Mbox.TopMost = true;
-            Mbox.TopLevel = true;
-
-            MessageBoxCenter.Show(Mbox, text, title, MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
         }
 
-        //   생성자 함수
+        private const string POPUP_NAME = "Genie_AutoClose_Popup";
+
         public static void Show(string text, string title, int timeout)
         {
-            new AutoClosingMessageBox(text, title, timeout);
+            Helper.안전한_UI_업데이트(Form1.form1, () =>
+            {
+                CreateAndShowForm(text, title, timeout);
+            });
+        }
+        private static void CreateAndShowForm(string text, string title, int timeout)
+        {
+            // 1. 기본 폼 설정
+            Form popup = new Form();
+            popup.Name = POPUP_NAME;
+            popup.Text = title;
+            popup.FormBorderStyle = FormBorderStyle.FixedDialog;
+            popup.MaximizeBox = false;
+            popup.MinimizeBox = false;
+            popup.BackColor = Color.White;
+            popup.ShowIcon = false;
+            popup.TopMost = true;
+            popup.StartPosition = FormStartPosition.Manual;
+
+            int clientWidth = 400;
+            popup.ClientSize = new Size(clientWidth, 150);
+
+            // 2. 아이콘
+            PictureBox iconBox = new PictureBox();
+            iconBox.Image = SystemIcons.Warning.ToBitmap();
+            iconBox.Size = new Size(32, 32);
+            iconBox.Location = new Point(20, 20);
+            iconBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            popup.Controls.Add(iconBox);
+
+            // 3. 라벨
+            Label lbl = new Label();
+            lbl.Text = text;
+            lbl.Location = new Point(70, 20);
+            lbl.MaximumSize = new Size(clientWidth - 90, 0);
+            lbl.AutoSize = true;
+            lbl.Font = new Font("맑은 고딕", 9, FontStyle.Regular);
+            popup.Controls.Add(lbl);
+
+            // 4. 버튼
+            Button btn = new Button();
+            btn.Text = "확인";
+            btn.Size = new Size(80, 28);
+            btn.UseVisualStyleBackColor = true;
+            btn.Click += (s, e) => { popup.Close(); };
+            popup.Controls.Add(btn);
+
+            // [높이 자동 계산]
+            int requiredHeight = 20 + lbl.Height + 20 + btn.Height + 20;
+            int finalHeight = Math.Max(requiredHeight, 130);
+            popup.ClientSize = new Size(clientWidth, finalHeight);
+            btn.Location = new Point((clientWidth - btn.Width) / 2, finalHeight - btn.Height - 20);
+
+            // -----------------------------------------------------------
+            // 5. [핵심 수정] 위치 계산 (대각선 계단식 정렬)
+            // -----------------------------------------------------------
+
+            // (1) 현재 떠 있는 팝업 개수 확인
+            int currentCount = Application.OpenForms.OfType<Form>()
+                                          .Count(f => f.Name == POPUP_NAME);
+
+            // (2) 메인 폼 정중앙 좌표 계산
+            int startX = Form1.form1.Location.X + (Form1.form1.Width - popup.Width) / 2;
+            int startY = Form1.form1.Location.Y + (Form1.form1.Height - popup.Height) / 2;
+
+            // (3) 요청하신 옵셋 적용 (개수 * 25px)
+            int step = 25;
+            int offsetX = currentCount * step;
+            int offsetY = currentCount * step;
+
+            // (4) 화면 밖으로 나가는지 체크 (모니터 해상도 기준)
+            // 너무 많이 떠서 화면 밖으로 나가면 다시 중앙(0,0)부터 시작
+            Rectangle screenRect = Screen.FromControl(Form1.form1).WorkingArea;
+
+            if (startX + offsetX + popup.Width > screenRect.Right ||
+                startY + offsetY + popup.Height > screenRect.Bottom)
+            {
+                offsetX = 0;
+                offsetY = 0;
+            }
+
+            // (5) 최종 위치 적용
+            popup.Location = new Point(startX + offsetX, startY + offsetY);
+
+            // -----------------------------------------------------------
+
+            // 6. 타이머 및 실행
+            System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+            timer.Interval = timeout;
+            timer.Tick += (s, e) =>
+            {
+                timer.Stop();
+                timer.Dispose();
+                if (!popup.IsDisposed) popup.Close();
+            };
+            timer.Start();
+
+            SystemSounds.Exclamation.Play();
+            popup.Show(Form1.form1);
         }
 
         //    시간이 다되면 close 메세지를 보냄

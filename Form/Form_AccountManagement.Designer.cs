@@ -1,5 +1,5 @@
 ﻿
-namespace 지니_64
+namespace 지니64
 {
     partial class Form_AccountManagement
     {
@@ -218,13 +218,13 @@ namespace 지니_64
             this.TB_rebalance_sellcancel2_F = new System.Windows.Forms.MaskedTextBox();
             this.TB_rebalance_sellcancel2_E = new System.Windows.Forms.MaskedTextBox();
             this.TB_rebalance_sellcancel2_D = new System.Windows.Forms.MaskedTextBox();
-            this.TB_rebalance_매입금_F = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_매입금_C = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_매입금_G = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_매입금_E = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_매입금_B = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_매입금_D = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_매입금_A = new System.Windows.Forms.TextBox();
+            this.TB_Rebalance_매입금_F = new System.Windows.Forms.TextBox();
+            this.TB_Rebalance_매입금_C = new System.Windows.Forms.TextBox();
+            this.TB_Rebalance_매입금_G = new System.Windows.Forms.TextBox();
+            this.TB_Rebalance_매입금_E = new System.Windows.Forms.TextBox();
+            this.TB_Rebalance_매입금_B = new System.Windows.Forms.TextBox();
+            this.TB_Rebalance_매입금_D = new System.Windows.Forms.TextBox();
+            this.TB_Rebalance_매입금_A = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -261,27 +261,27 @@ namespace 지니_64
             this.L_잔고청산매매범위_C = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label221 = new System.Windows.Forms.Label();
-            this.CBB_rebalance_mma_D = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma_A = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma_E = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma_B = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma_F = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma_C = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma_G = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod1_D = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod1_A = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod1_E = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod1_B = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod1_F = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod1_C = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod1_G = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.TB_Liquidation_mma_B = new System.Windows.Forms.TextBox();
-            this.TB_Liquidation_mma_C = new System.Windows.Forms.TextBox();
-            this.TB_Liquidation_mma_A = new System.Windows.Forms.TextBox();
-            this.CBB_Liquidation_mma_C = new System.Windows.Forms.ComboBox();
-            this.CBB_Liquidation_mma_B = new System.Windows.Forms.ComboBox();
-            this.CBB_Liquidation_mma_A = new System.Windows.Forms.ComboBox();
-            this.TB_rebalance_mma_A = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_mma_C = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_mma_B = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_mma_D = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_mma_F = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_mma_E = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_mma_G = new System.Windows.Forms.TextBox();
+            this.TB_Liquidation_MinMAPeriod_B = new System.Windows.Forms.TextBox();
+            this.TB_Liquidation_MinMAPeriod_C = new System.Windows.Forms.TextBox();
+            this.TB_Liquidation_MinMAPeriod_A = new System.Windows.Forms.TextBox();
+            this.CBB_Liquidation_MinMAPeriod_C = new System.Windows.Forms.ComboBox();
+            this.CBB_Liquidation_MinMAPeriod_B = new System.Windows.Forms.ComboBox();
+            this.CBB_Liquidation_MinMAPeriod_A = new System.Windows.Forms.ComboBox();
+            this.TB_rebalance_MinMAPeriod1_A = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_MinMAPeriod1_C = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_MinMAPeriod1_B = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_MinMAPeriod1_D = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_MinMAPeriod1_F = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_MinMAPeriod1_E = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_MinMAPeriod1_G = new System.Windows.Forms.TextBox();
             this.CB_리밸TS_1 = new System.Windows.Forms.CheckBox();
             this.TB_rebalance_TS_1차_down_E = new System.Windows.Forms.TextBox();
             this.TB_rebalance_TS_1차_down_C = new System.Windows.Forms.TextBox();
@@ -321,71 +321,71 @@ namespace 지니_64
             this.label68 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
-            this.TB_rebalance_dma2_F = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_dma1_F = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_mma2_F = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_dma2_D = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_mma2_D = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_dma1_D = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_dma2_E = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_mma2_E = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_mma2_G = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_dma1_E = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_dma1_G = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_dma2_B = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_dma2_G = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_dma1_A = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_dma1_B = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_mma2_A = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_mma2_B = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_dma2_A = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_dma2_C = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_dma1_C = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_mma2_C = new System.Windows.Forms.TextBox();
-            this.CBB_rebalance_mma_배열_D = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma_배열_A = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma_배열_E = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma_배열_B = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma_배열_F = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma_배열_C = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma_배열_G = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma2_D = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma2_A = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma2_E = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma2_B = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma2_F = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma2_C = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_mma2_G = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma1_D = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma1_A = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma1_E = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma1_B = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma1_F = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma1_C = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma1_G = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma_배열_D = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma_배열_A = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma_배열_E = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma_배열_B = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma_배열_F = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma_배열_C = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma_배열_G = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma2_D = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma2_A = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma2_E = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma2_B = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma2_F = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma2_C = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_dma2_G = new System.Windows.Forms.ComboBox();
+            this.TB_rebalance_DayMAPeriod2_F = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_DayMAPeriod1_F = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_MinMAPeriod2_F = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_DayMAPeriod2_D = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_MinMAPeriod2_D = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_DayMAPeriod1_D = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_DayMAPeriod2_E = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_MinMAPeriod2_E = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_MinMAPeriod2_G = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_DayMAPeriod1_E = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_DayMAPeriod1_G = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_DayMAPeriod2_B = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_DayMAPeriod2_G = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_DayMAPeriod1_A = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_DayMAPeriod1_B = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_MinMAPeriod2_A = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_MinMAPeriod2_B = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_DayMAPeriod2_A = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_DayMAPeriod2_C = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_DayMAPeriod1_C = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_MinMAPeriod2_C = new System.Windows.Forms.TextBox();
+            this.CBB_rebalance_MinMAPeriod1_배열_D = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod1_배열_A = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod1_배열_E = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod1_배열_B = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod1_배열_F = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod1_배열_C = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod1_배열_G = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod2_D = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod2_A = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod2_E = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod2_B = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod2_F = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod2_C = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_MinMAPeriod2_G = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod1_D = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod1_A = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod1_E = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod1_B = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod1_F = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod1_C = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod1_G = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod_배열_D = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod_배열_A = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod_배열_E = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod_배열_B = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod_배열_F = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod_배열_C = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod_배열_G = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod2_D = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod2_A = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod2_E = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod2_B = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod2_F = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod2_C = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_DayMAPeriod2_G = new System.Windows.Forms.ComboBox();
             this.label57 = new System.Windows.Forms.Label();
             this.TB_Liquidation_TS_down_A = new System.Windows.Forms.TextBox();
             this.CB_리밸TS_2 = new System.Windows.Forms.CheckBox();
-            this.TB_Liquidation_TS_dma_B = new System.Windows.Forms.TextBox();
-            this.TB_Liquidation_TS_mma_B = new System.Windows.Forms.TextBox();
-            this.TB_Liquidation_TS_dma_C = new System.Windows.Forms.TextBox();
-            this.TB_Liquidation_TS_mma_C = new System.Windows.Forms.TextBox();
-            this.TB_Liquidation_TS_dma_A = new System.Windows.Forms.TextBox();
-            this.TB_Liquidation_TS_mma_A = new System.Windows.Forms.TextBox();
+            this.TB_Liquidation_TS_DayMAPeriod_B = new System.Windows.Forms.TextBox();
+            this.TB_Liquidation_TS_MinMAPeriod_B = new System.Windows.Forms.TextBox();
+            this.TB_Liquidation_TS_DayMAPeriod_C = new System.Windows.Forms.TextBox();
+            this.TB_Liquidation_TS_MinMAPeriod_C = new System.Windows.Forms.TextBox();
+            this.TB_Liquidation_TS_DayMAPeriod_A = new System.Windows.Forms.TextBox();
+            this.TB_Liquidation_TS_MinMAPeriod_A = new System.Windows.Forms.TextBox();
             this.TB_Liquidation_TS_down_C = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -416,18 +416,18 @@ namespace 지니_64
             this.label379 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
-            this.TB_추매주가이상 = new System.Windows.Forms.TextBox();
+            this.TB_리밸_추매주가이상 = new System.Windows.Forms.TextBox();
             this.label59 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
-            this.CBB_Liquidation_TS_dma_C = new System.Windows.Forms.ComboBox();
-            this.CBB_Liquidation_TS_mma_C = new System.Windows.Forms.ComboBox();
-            this.CBB_Liquidation_TS_dma_B = new System.Windows.Forms.ComboBox();
-            this.CBB_Liquidation_TS_mma_B = new System.Windows.Forms.ComboBox();
-            this.CBB_Liquidation_TS_dma_A = new System.Windows.Forms.ComboBox();
-            this.CBB_Liquidation_TS_mma_A = new System.Windows.Forms.ComboBox();
-            this.TB_추매주가이하 = new System.Windows.Forms.TextBox();
-            this.TB_추매등락률이상 = new System.Windows.Forms.TextBox();
-            this.TB_추매등락률이하 = new System.Windows.Forms.TextBox();
+            this.CBB_Liquidation_TS_DayMAPeriod_C = new System.Windows.Forms.ComboBox();
+            this.CBB_Liquidation_TS_MinMAPeriod_C = new System.Windows.Forms.ComboBox();
+            this.CBB_Liquidation_TS_DayMAPeriod_B = new System.Windows.Forms.ComboBox();
+            this.CBB_Liquidation_TS_MinMAPeriod_B = new System.Windows.Forms.ComboBox();
+            this.CBB_Liquidation_TS_DayMAPeriod_A = new System.Windows.Forms.ComboBox();
+            this.CBB_Liquidation_TS_MinMAPeriod_A = new System.Windows.Forms.ComboBox();
+            this.TB_리밸_추매주가이하 = new System.Windows.Forms.TextBox();
+            this.TB_리밸_추매등락률이상 = new System.Windows.Forms.TextBox();
+            this.TB_리밸_추매등락률이하 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -639,16 +639,16 @@ namespace 지니_64
             this.combo_rebalance_jumun_D = new System.Windows.Forms.ComboBox();
             this.combo_rebalance_감시_jumun_G = new System.Windows.Forms.ComboBox();
             this.combo_rebalance_감시_jumun_F = new System.Windows.Forms.ComboBox();
-            this.combo_rebalance_condition_C = new System.Windows.Forms.ComboBox();
-            this.combo_rebalance_condition_G = new System.Windows.Forms.ComboBox();
-            this.combo_rebalance_condition_F = new System.Windows.Forms.ComboBox();
-            this.combo_rebalance_condition_B = new System.Windows.Forms.ComboBox();
-            this.combo_rebalance_condition_E = new System.Windows.Forms.ComboBox();
-            this.combo_rebalance_condition_A = new System.Windows.Forms.ComboBox();
-            this.combo_rebalance_condition_D = new System.Windows.Forms.ComboBox();
-            this.CBB_Liquidation_condition_C = new System.Windows.Forms.ComboBox();
-            this.CBB_Liquidation_condition_A = new System.Windows.Forms.ComboBox();
-            this.CBB_Liquidation_condition_B = new System.Windows.Forms.ComboBox();
+            this.리밸_C = new System.Windows.Forms.ComboBox();
+            this.리밸_G = new System.Windows.Forms.ComboBox();
+            this.리밸_F = new System.Windows.Forms.ComboBox();
+            this.리밸_B = new System.Windows.Forms.ComboBox();
+            this.리밸_E = new System.Windows.Forms.ComboBox();
+            this.리밸_A = new System.Windows.Forms.ComboBox();
+            this.리밸_D = new System.Windows.Forms.ComboBox();
+            this.청산_C = new System.Windows.Forms.ComboBox();
+            this.청산_A = new System.Windows.Forms.ComboBox();
+            this.청산_B = new System.Windows.Forms.ComboBox();
             this.CB_Liquidation_C = new System.Windows.Forms.CheckBox();
             this.CB_Liquidation_A = new System.Windows.Forms.CheckBox();
             this.CB_Liquidation_B = new System.Windows.Forms.CheckBox();
@@ -702,13 +702,13 @@ namespace 지니_64
             this.L_잔고청산매입금_B = new System.Windows.Forms.Label();
             this.L_잔고청산매입금_A = new System.Windows.Forms.Label();
             this.panel_리밸TS_2 = new System.Windows.Forms.Panel();
-            this.TB_rebalance_TS_2차_mma_E = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_TS_2차_mma_B = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_TS_2차_mma_G = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_TS_2차_mma_F = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_TS_2차_mma_D = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_TS_2차_mma_C = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_TS_2차_mma_A = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_TS_2차_MinMAPeriod_E = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_TS_2차_MinMAPeriod_B = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_TS_2차_MinMAPeriod_G = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_TS_2차_MinMAPeriod_F = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_TS_2차_MinMAPeriod_D = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_TS_2차_MinMAPeriod_C = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_TS_2차_MinMAPeriod_A = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
@@ -723,13 +723,13 @@ namespace 지니_64
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.CBB_rebalance_TS_2차_mma_G = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_TS_2차_mma_C = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_TS_2차_mma_F = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_TS_2차_mma_B = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_TS_2차_mma_E = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_TS_2차_mma_D = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_TS_2차_mma_A = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_TS_2차_MinMAPeriod_G = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_TS_2차_MinMAPeriod_C = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_TS_2차_MinMAPeriod_F = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_TS_2차_MinMAPeriod_B = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_TS_2차_MinMAPeriod_E = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_TS_2차_MinMAPeriod_D = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_TS_2차_MinMAPeriod_A = new System.Windows.Forms.ComboBox();
             this.panel_리밸TS_1 = new System.Windows.Forms.Panel();
             this.label42 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
@@ -740,25 +740,25 @@ namespace 지니_64
             this.label347 = new System.Windows.Forms.Label();
             this.label336 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.TB_rebalance_TS_1차_mma_E = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_TS_1차_MinMAPeriod_E = new System.Windows.Forms.TextBox();
             this.label339 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.TB_rebalance_TS_1차_mma_B = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_TS_1차_MinMAPeriod_B = new System.Windows.Forms.TextBox();
             this.label346 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.TB_rebalance_TS_1차_mma_G = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_TS_1차_MinMAPeriod_G = new System.Windows.Forms.TextBox();
             this.label334 = new System.Windows.Forms.Label();
-            this.TB_rebalance_TS_1차_mma_F = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_TS_1차_mma_D = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_TS_1차_mma_C = new System.Windows.Forms.TextBox();
-            this.TB_rebalance_TS_1차_mma_A = new System.Windows.Forms.TextBox();
-            this.CBB_rebalance_TS_1차_mma_A = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_TS_1차_mma_D = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_TS_1차_mma_E = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_TS_1차_mma_B = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_TS_1차_mma_F = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_TS_1차_mma_C = new System.Windows.Forms.ComboBox();
-            this.CBB_rebalance_TS_1차_mma_G = new System.Windows.Forms.ComboBox();
+            this.TB_rebalance_TS_1차_MinMAPeriod_F = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_TS_1차_MinMAPeriod_D = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_TS_1차_MinMAPeriod_C = new System.Windows.Forms.TextBox();
+            this.TB_rebalance_TS_1차_MinMAPeriod_A = new System.Windows.Forms.TextBox();
+            this.CBB_rebalance_TS_1차_MinMAPeriod_A = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_TS_1차_MinMAPeriod_D = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_TS_1차_MinMAPeriod_E = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_TS_1차_MinMAPeriod_B = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_TS_1차_MinMAPeriod_F = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_TS_1차_MinMAPeriod_C = new System.Windows.Forms.ComboBox();
+            this.CBB_rebalance_TS_1차_MinMAPeriod_G = new System.Windows.Forms.ComboBox();
             this.계좌관리_P.SuspendLayout();
             this.panel_mma.SuspendLayout();
             this.panel_리밸TS_2.SuspendLayout();
@@ -1096,7 +1096,7 @@ namespace 지니_64
             this.TB_Liquidation_value_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Liquidation_value_B, "*주문가격*");
             this.TB_Liquidation_value_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_Liquidation_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Liquidation_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label211
             // 
@@ -1128,7 +1128,7 @@ namespace 지니_64
             this.TB_Liquidation_maemae_2_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_Liquidation_maemae_2_C, "# 매매 범위\r\n주문가능 수량의 대한 비율");
             this.TB_Liquidation_maemae_2_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Liquidation_maemae_2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Liquidation_maemae_2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_Liquidation_maemae_2_A
             // 
@@ -1145,7 +1145,7 @@ namespace 지니_64
             this.TB_Liquidation_maemae_2_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_Liquidation_maemae_2_A, "# 매매 범위\r\n주문가능 수량의 대한 비율");
             this.TB_Liquidation_maemae_2_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Liquidation_maemae_2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Liquidation_maemae_2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label217
             // 
@@ -1176,7 +1176,7 @@ namespace 지니_64
             this.TB_Liquidation_sell_ratio_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Liquidation_sell_ratio_C, resources.GetString("TB_Liquidation_sell_ratio_C.ToolTip"));
             this.TB_Liquidation_sell_ratio_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Liquidation_sell_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Liquidation_sell_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_Liquidation_sell_ratio_A
             // 
@@ -1192,7 +1192,7 @@ namespace 지니_64
             this.TB_Liquidation_sell_ratio_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Liquidation_sell_ratio_A, resources.GetString("TB_Liquidation_sell_ratio_A.ToolTip"));
             this.TB_Liquidation_sell_ratio_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Liquidation_sell_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Liquidation_sell_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label272
             // 
@@ -1224,7 +1224,7 @@ namespace 지니_64
             this.TB_Liquidation_maemae_1_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_Liquidation_maemae_1_C, "# 매매 범위\r\n주문가능 수량의 대한 비율");
             this.TB_Liquidation_maemae_1_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Liquidation_maemae_1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Liquidation_maemae_1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_Liquidation_maemae_1_A
             // 
@@ -1241,7 +1241,7 @@ namespace 지니_64
             this.TB_Liquidation_maemae_1_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_Liquidation_maemae_1_A, "# 매매 범위\r\n주문가능 수량의 대한 비율");
             this.TB_Liquidation_maemae_1_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Liquidation_maemae_1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Liquidation_maemae_1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_Liquidation_value_C
             // 
@@ -1257,7 +1257,7 @@ namespace 지니_64
             this.TB_Liquidation_value_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Liquidation_value_C, "*주문가격*");
             this.TB_Liquidation_value_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_Liquidation_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Liquidation_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_Liquidation_value_A
             // 
@@ -1273,7 +1273,7 @@ namespace 지니_64
             this.TB_Liquidation_value_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Liquidation_value_A, "*주문가격*");
             this.TB_Liquidation_value_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_Liquidation_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Liquidation_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_cut_ratio_C
             // 
@@ -1292,7 +1292,7 @@ namespace 지니_64
         " %\r\n4. 만/평단 : 만원 / 평균단가\r\n5. 기/평단  :  기준금대비% / 평균단가\r\n6. 만/기준  :  기준금대비% / 기준가(잔고설" +
         "정값)\r\n7. 기/기준  :  기준금대비% / 기준가(잔고설정값)\r\n");
             this.TB_cut_ratio_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_cut_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_cut_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label330
             // 
@@ -1324,7 +1324,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_rebalance_sell_ratio_C, "0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주문가능수 대비" +
         " %\r\n");
             this.TB_rebalance_sell_ratio_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_sell_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_sell_ratio_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_cut_ratio_B
             // 
@@ -1343,7 +1343,7 @@ namespace 지니_64
         " %\r\n4. 만/평단 : 만원 / 평균단가\r\n5. 기/평단  :  기준금대비% / 평균단가\r\n6. 만/기준  :  기준금대비% / 기준가(잔고설" +
         "정값)\r\n7. 기/기준  :  기준금대비% / 기준가(잔고설정값)\r\n");
             this.TB_cut_ratio_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_cut_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_cut_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_Liquidation_sell_ratio_B
             // 
@@ -1359,7 +1359,7 @@ namespace 지니_64
             this.TB_Liquidation_sell_ratio_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Liquidation_sell_ratio_B, resources.GetString("TB_Liquidation_sell_ratio_B.ToolTip"));
             this.TB_Liquidation_sell_ratio_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Liquidation_sell_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Liquidation_sell_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label439
             // 
@@ -1374,7 +1374,7 @@ namespace 지니_64
             this.label439.TabIndex = 0;
             this.label439.Text = "도X";
             this.label439.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.toolTip1.SetToolTip(this.label439, "# 매도 정지\r\n잔고의 매도를 중단합니다. \r\n매수는 진행 됩니다. \r\n지니_64 재 시작시 매도는 다시 시작 됩니다.");
+            this.toolTip1.SetToolTip(this.label439, "# 매도 정지\r\n잔고의 매도를 중단합니다. \r\n매수는 진행 됩니다. \r\n지니64 재 시작시 매도는 다시 시작 됩니다.");
             // 
             // TB_rebalance_sell_ratio_B
             // 
@@ -1391,7 +1391,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_rebalance_sell_ratio_B, "0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주문가능수 대비" +
         " %\r\n");
             this.TB_rebalance_sell_ratio_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_sell_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_sell_ratio_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_Liquidation_maemae_2_B
             // 
@@ -1408,7 +1408,7 @@ namespace 지니_64
             this.TB_Liquidation_maemae_2_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_Liquidation_maemae_2_B, "# 매매 범위\r\n주문가능 수량의 대한 비율");
             this.TB_Liquidation_maemae_2_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Liquidation_maemae_2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Liquidation_maemae_2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_Liquidation_기준금
             // 
@@ -1445,7 +1445,7 @@ namespace 지니_64
             this.TB_Liquidation_maemae_1_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_Liquidation_maemae_1_B, "# 매매 범위\r\n주문가능 수량의 대한 비율");
             this.TB_Liquidation_maemae_1_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Liquidation_maemae_1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Liquidation_maemae_1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_cut_ratio_A
             // 
@@ -1464,7 +1464,7 @@ namespace 지니_64
         " %\r\n4. 만/평단 : 만원 / 평균단가\r\n5. 기/평단  :  기준금대비% / 평균단가\r\n6. 만/기준  :  기준금대비% / 기준가(잔고설" +
         "정값)\r\n7. 기/기준  :  기준금대비% / 기준가(잔고설정값)\r\n");
             this.TB_cut_ratio_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_cut_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_cut_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_sell_ratio_A
             // 
@@ -1481,7 +1481,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_rebalance_sell_ratio_A, "0. 주 : 주문수\r\n1. 만원 :  만원 / 주문가격\r\n2. 기준금(%) :  기준금대비% / 주문가격\r\n3. 보유주(%) :  주문가능수 대비" +
         " %\r\n");
             this.TB_rebalance_sell_ratio_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_sell_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_sell_ratio_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label372
             // 
@@ -1666,7 +1666,7 @@ namespace 지니_64
             this.TB_Liquidation_suik_2_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Liquidation_suik_2_B, resources.GetString("TB_Liquidation_suik_2_B.ToolTip"));
             this.TB_Liquidation_suik_2_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_Liquidation_suik_2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Liquidation_suik_2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CB_매수기준
             // 
@@ -1723,7 +1723,7 @@ namespace 지니_64
             this.TB_Liquidation_suik_2_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Liquidation_suik_2_C, resources.GetString("TB_Liquidation_suik_2_C.ToolTip"));
             this.TB_Liquidation_suik_2_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_Liquidation_suik_2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Liquidation_suik_2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_Liquidation_suik_2_A
             // 
@@ -1739,7 +1739,7 @@ namespace 지니_64
             this.TB_Liquidation_suik_2_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Liquidation_suik_2_A, resources.GetString("TB_Liquidation_suik_2_A.ToolTip"));
             this.TB_Liquidation_suik_2_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_Liquidation_suik_2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Liquidation_suik_2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TT_Liquidation_B
             // 
@@ -1904,7 +1904,7 @@ namespace 지니_64
             this.TB_Liquidation_suik_1_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Liquidation_suik_1_B, resources.GetString("TB_Liquidation_suik_1_B.ToolTip"));
             this.TB_Liquidation_suik_1_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_Liquidation_suik_1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Liquidation_suik_1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_Liquidation_suik_1_C
             // 
@@ -1920,7 +1920,7 @@ namespace 지니_64
             this.TB_Liquidation_suik_1_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Liquidation_suik_1_C, resources.GetString("TB_Liquidation_suik_1_C.ToolTip"));
             this.TB_Liquidation_suik_1_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_Liquidation_suik_1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Liquidation_suik_1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_Liquidation_suik_1_A
             // 
@@ -1936,7 +1936,7 @@ namespace 지니_64
             this.TB_Liquidation_suik_1_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Liquidation_suik_1_A, resources.GetString("TB_Liquidation_suik_1_A.ToolTip"));
             this.TB_Liquidation_suik_1_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_Liquidation_suik_1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Liquidation_suik_1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_sellcancel1_B
             // 
@@ -2193,7 +2193,7 @@ namespace 지니_64
             this.TB_rebalance_sellratio2_A.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_rebalance_sellratio2_A.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.TB_rebalance_sellratio2_A.Location = new System.Drawing.Point(1556, 41);
-            this.TB_rebalance_sellratio2_A.MaxLength = 6;
+            this.TB_rebalance_sellratio2_A.MaxLength = 5;
             this.TB_rebalance_sellratio2_A.Name = "TB_rebalance_sellratio2_A";
             this.TB_rebalance_sellratio2_A.Size = new System.Drawing.Size(48, 21);
             this.TB_rebalance_sellratio2_A.TabIndex = 62;
@@ -2202,7 +2202,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_rebalance_sellratio2_A, "매도수익률 : %\r\n잔고수익률 : %\r\n기준수익률 : %\r\n평가손익금 : 만원 or 기준금대비 비율\r\n예상손익금 : 만원 or 기준금대비 비율\r\n" +
         "");
             this.TB_rebalance_sellratio2_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_sellratio2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_sellratio2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CBB_Liquidation_suik_gubun_B
             // 
@@ -2256,7 +2256,7 @@ namespace 지니_64
             this.TB_rebalance_sellratio2_B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_rebalance_sellratio2_B.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.TB_rebalance_sellratio2_B.Location = new System.Drawing.Point(1556, 61);
-            this.TB_rebalance_sellratio2_B.MaxLength = 6;
+            this.TB_rebalance_sellratio2_B.MaxLength = 5;
             this.TB_rebalance_sellratio2_B.Name = "TB_rebalance_sellratio2_B";
             this.TB_rebalance_sellratio2_B.Size = new System.Drawing.Size(48, 21);
             this.TB_rebalance_sellratio2_B.TabIndex = 62;
@@ -2265,7 +2265,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_rebalance_sellratio2_B, "매도수익률 : %\r\n잔고수익률 : %\r\n기준수익률 : %\r\n평가손익금 : 만원 or 기준금대비 비율\r\n예상손익금 : 만원 or 기준금대비 비율\r\n" +
         "");
             this.TB_rebalance_sellratio2_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_sellratio2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_sellratio2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CBB_Liquidation_jumun_A
             // 
@@ -2297,7 +2297,7 @@ namespace 지니_64
             this.TB_rebalance_sellratio2_D.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_rebalance_sellratio2_D.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.TB_rebalance_sellratio2_D.Location = new System.Drawing.Point(1556, 101);
-            this.TB_rebalance_sellratio2_D.MaxLength = 6;
+            this.TB_rebalance_sellratio2_D.MaxLength = 5;
             this.TB_rebalance_sellratio2_D.Name = "TB_rebalance_sellratio2_D";
             this.TB_rebalance_sellratio2_D.Size = new System.Drawing.Size(48, 21);
             this.TB_rebalance_sellratio2_D.TabIndex = 62;
@@ -2306,7 +2306,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_rebalance_sellratio2_D, "매도수익률 : %\r\n잔고수익률 : %\r\n기준수익률 : %\r\n평가손익금 : 만원 or 기준금대비 비율\r\n예상손익금 : 만원 or 기준금대비 비율\r\n" +
         "");
             this.TB_rebalance_sellratio2_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_sellratio2_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_sellratio2_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_sellratio2_C
             // 
@@ -2315,7 +2315,7 @@ namespace 지니_64
             this.TB_rebalance_sellratio2_C.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_rebalance_sellratio2_C.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.TB_rebalance_sellratio2_C.Location = new System.Drawing.Point(1556, 81);
-            this.TB_rebalance_sellratio2_C.MaxLength = 6;
+            this.TB_rebalance_sellratio2_C.MaxLength = 5;
             this.TB_rebalance_sellratio2_C.Name = "TB_rebalance_sellratio2_C";
             this.TB_rebalance_sellratio2_C.Size = new System.Drawing.Size(48, 21);
             this.TB_rebalance_sellratio2_C.TabIndex = 62;
@@ -2324,7 +2324,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_rebalance_sellratio2_C, "매도수익률 : %\r\n잔고수익률 : %\r\n기준수익률 : %\r\n평가손익금 : 만원 or 기준금대비 비율\r\n예상손익금 : 만원 or 기준금대비 비율\r\n" +
         "");
             this.TB_rebalance_sellratio2_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_sellratio2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_sellratio2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_sellratio2_E
             // 
@@ -2333,7 +2333,7 @@ namespace 지니_64
             this.TB_rebalance_sellratio2_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_rebalance_sellratio2_E.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.TB_rebalance_sellratio2_E.Location = new System.Drawing.Point(1556, 121);
-            this.TB_rebalance_sellratio2_E.MaxLength = 6;
+            this.TB_rebalance_sellratio2_E.MaxLength = 5;
             this.TB_rebalance_sellratio2_E.Name = "TB_rebalance_sellratio2_E";
             this.TB_rebalance_sellratio2_E.Size = new System.Drawing.Size(48, 21);
             this.TB_rebalance_sellratio2_E.TabIndex = 62;
@@ -2342,7 +2342,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_rebalance_sellratio2_E, "매도수익률 : %\r\n잔고수익률 : %\r\n기준수익률 : %\r\n평가손익금 : 만원 or 기준금대비 비율\r\n예상손익금 : 만원 or 기준금대비 비율\r\n" +
         "");
             this.TB_rebalance_sellratio2_E.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_sellratio2_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_sellratio2_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // L_잔고청산매매범위_A
             // 
@@ -2438,7 +2438,7 @@ namespace 지니_64
             this.CBB_Liquidation_Cancel_B.Size = new System.Drawing.Size(65, 21);
             this.CBB_Liquidation_Cancel_B.TabIndex = 29;
             this.toolTip1.SetToolTip(this.CBB_Liquidation_Cancel_B, "*취소후 주문*");
-            this.CBB_Liquidation_Cancel_B.SelectedIndexChanged += new System.EventHandler(this.combo_cancel_SelectedIndexChanged);
+            this.CBB_Liquidation_Cancel_B.SelectedIndexChanged += new System.EventHandler(this.Combo_cancel_SelectedIndexChanged);
             this.CBB_Liquidation_Cancel_B.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
             // 
             // TB_rebalance_sellratio1_E
@@ -2448,7 +2448,7 @@ namespace 지니_64
             this.TB_rebalance_sellratio1_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_rebalance_sellratio1_E.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.TB_rebalance_sellratio1_E.Location = new System.Drawing.Point(1344, 121);
-            this.TB_rebalance_sellratio1_E.MaxLength = 6;
+            this.TB_rebalance_sellratio1_E.MaxLength = 5;
             this.TB_rebalance_sellratio1_E.Name = "TB_rebalance_sellratio1_E";
             this.TB_rebalance_sellratio1_E.Size = new System.Drawing.Size(48, 21);
             this.TB_rebalance_sellratio1_E.TabIndex = 62;
@@ -2457,7 +2457,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_rebalance_sellratio1_E, "매도수익률 : %\r\n잔고수익률 : %\r\n기준수익률 : %\r\n평가손익금 : 만원 or 기준금대비 비율\r\n예상손익금 : 만원 or 기준금대비 비율\r\n" +
         "");
             this.TB_rebalance_sellratio1_E.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_sellratio1_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_sellratio1_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CBB_Liquidation_Cancel_C
             // 
@@ -2476,7 +2476,7 @@ namespace 지니_64
             this.CBB_Liquidation_Cancel_C.Size = new System.Drawing.Size(65, 21);
             this.CBB_Liquidation_Cancel_C.TabIndex = 29;
             this.toolTip1.SetToolTip(this.CBB_Liquidation_Cancel_C, "*취소후 주문*");
-            this.CBB_Liquidation_Cancel_C.SelectedIndexChanged += new System.EventHandler(this.combo_cancel_SelectedIndexChanged);
+            this.CBB_Liquidation_Cancel_C.SelectedIndexChanged += new System.EventHandler(this.Combo_cancel_SelectedIndexChanged);
             this.CBB_Liquidation_Cancel_C.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
             // 
             // CBB_Liquidation_Cancel_A
@@ -2496,7 +2496,7 @@ namespace 지니_64
             this.CBB_Liquidation_Cancel_A.Size = new System.Drawing.Size(65, 21);
             this.CBB_Liquidation_Cancel_A.TabIndex = 29;
             this.toolTip1.SetToolTip(this.CBB_Liquidation_Cancel_A, "*취소후 주문*");
-            this.CBB_Liquidation_Cancel_A.SelectedIndexChanged += new System.EventHandler(this.combo_cancel_SelectedIndexChanged);
+            this.CBB_Liquidation_Cancel_A.SelectedIndexChanged += new System.EventHandler(this.Combo_cancel_SelectedIndexChanged);
             this.CBB_Liquidation_Cancel_A.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
             // 
             // TB_rebalance_sellratio1_C
@@ -2506,7 +2506,7 @@ namespace 지니_64
             this.TB_rebalance_sellratio1_C.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_rebalance_sellratio1_C.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.TB_rebalance_sellratio1_C.Location = new System.Drawing.Point(1344, 81);
-            this.TB_rebalance_sellratio1_C.MaxLength = 6;
+            this.TB_rebalance_sellratio1_C.MaxLength = 5;
             this.TB_rebalance_sellratio1_C.Name = "TB_rebalance_sellratio1_C";
             this.TB_rebalance_sellratio1_C.Size = new System.Drawing.Size(48, 21);
             this.TB_rebalance_sellratio1_C.TabIndex = 62;
@@ -2515,7 +2515,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_rebalance_sellratio1_C, "매도수익률 : %\r\n잔고수익률 : %\r\n기준수익률 : %\r\n평가손익금 : 만원 or 기준금대비 비율\r\n예상손익금 : 만원 or 기준금대비 비율\r\n" +
         "");
             this.TB_rebalance_sellratio1_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_sellratio1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_sellratio1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_sellratio1_D
             // 
@@ -2524,7 +2524,7 @@ namespace 지니_64
             this.TB_rebalance_sellratio1_D.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_rebalance_sellratio1_D.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.TB_rebalance_sellratio1_D.Location = new System.Drawing.Point(1344, 101);
-            this.TB_rebalance_sellratio1_D.MaxLength = 6;
+            this.TB_rebalance_sellratio1_D.MaxLength = 5;
             this.TB_rebalance_sellratio1_D.Name = "TB_rebalance_sellratio1_D";
             this.TB_rebalance_sellratio1_D.Size = new System.Drawing.Size(48, 21);
             this.TB_rebalance_sellratio1_D.TabIndex = 62;
@@ -2533,7 +2533,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_rebalance_sellratio1_D, "매도수익률 : %\r\n잔고수익률 : %\r\n기준수익률 : %\r\n평가손익금 : 만원 or 기준금대비 비율\r\n예상손익금 : 만원 or 기준금대비 비율\r\n" +
         "");
             this.TB_rebalance_sellratio1_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_sellratio1_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_sellratio1_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_sellratio1_B
             // 
@@ -2542,7 +2542,7 @@ namespace 지니_64
             this.TB_rebalance_sellratio1_B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_rebalance_sellratio1_B.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.TB_rebalance_sellratio1_B.Location = new System.Drawing.Point(1344, 61);
-            this.TB_rebalance_sellratio1_B.MaxLength = 6;
+            this.TB_rebalance_sellratio1_B.MaxLength = 5;
             this.TB_rebalance_sellratio1_B.Name = "TB_rebalance_sellratio1_B";
             this.TB_rebalance_sellratio1_B.Size = new System.Drawing.Size(48, 21);
             this.TB_rebalance_sellratio1_B.TabIndex = 62;
@@ -2551,7 +2551,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_rebalance_sellratio1_B, "매도수익률 : %\r\n잔고수익률 : %\r\n기준수익률 : %\r\n평가손익금 : 만원 or 기준금대비 비율\r\n예상손익금 : 만원 or 기준금대비 비율\r\n" +
         "");
             this.TB_rebalance_sellratio1_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_sellratio1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_sellratio1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_sellratio1_A
             // 
@@ -2560,7 +2560,7 @@ namespace 지니_64
             this.TB_rebalance_sellratio1_A.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_rebalance_sellratio1_A.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.TB_rebalance_sellratio1_A.Location = new System.Drawing.Point(1344, 41);
-            this.TB_rebalance_sellratio1_A.MaxLength = 6;
+            this.TB_rebalance_sellratio1_A.MaxLength = 5;
             this.TB_rebalance_sellratio1_A.Name = "TB_rebalance_sellratio1_A";
             this.TB_rebalance_sellratio1_A.Size = new System.Drawing.Size(48, 21);
             this.TB_rebalance_sellratio1_A.TabIndex = 62;
@@ -2568,7 +2568,7 @@ namespace 지니_64
             this.TB_rebalance_sellratio1_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_sellratio1_A, "매도수익률 : %\r\n잔고수익률 : %\r\n기준수익률 : %\r\n평가손익금 : 만원 or 기준금대비 비율\r\n예상손익금 : 만원 or 기준금대비 비율");
             this.TB_rebalance_sellratio1_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_sellratio1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_sellratio1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CBB_rebalance_1A
             // 
@@ -2986,8 +2986,7 @@ namespace 지니_64
             this.CBB_Liquidation_use_condition_B.Size = new System.Drawing.Size(50, 21);
             this.CBB_Liquidation_use_condition_B.TabIndex = 66;
             this.toolTip1.SetToolTip(this.CBB_Liquidation_use_condition_B, "*검색식사용*");
-            this.CBB_Liquidation_use_condition_B.SelectedIndexChanged += new System.EventHandler(this.combo_use_condition_SelectedIndexChanged);
-            this.CBB_Liquidation_use_condition_B.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.CBB_Liquidation_use_condition_B.SelectedIndexChanged += new System.EventHandler(this.Combo_use_condition_SelectedIndexChanged);
             // 
             // CBB_Liquidation_use_condition_C
             // 
@@ -3006,8 +3005,7 @@ namespace 지니_64
             this.CBB_Liquidation_use_condition_C.Size = new System.Drawing.Size(50, 21);
             this.CBB_Liquidation_use_condition_C.TabIndex = 66;
             this.toolTip1.SetToolTip(this.CBB_Liquidation_use_condition_C, "*검색식사용*");
-            this.CBB_Liquidation_use_condition_C.SelectedIndexChanged += new System.EventHandler(this.combo_use_condition_SelectedIndexChanged);
-            this.CBB_Liquidation_use_condition_C.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.CBB_Liquidation_use_condition_C.SelectedIndexChanged += new System.EventHandler(this.Combo_use_condition_SelectedIndexChanged);
             // 
             // CBB_Liquidation_use_condition_A
             // 
@@ -3026,8 +3024,7 @@ namespace 지니_64
             this.CBB_Liquidation_use_condition_A.Size = new System.Drawing.Size(50, 21);
             this.CBB_Liquidation_use_condition_A.TabIndex = 66;
             this.toolTip1.SetToolTip(this.CBB_Liquidation_use_condition_A, "*검색식사용*");
-            this.CBB_Liquidation_use_condition_A.SelectedIndexChanged += new System.EventHandler(this.combo_use_condition_SelectedIndexChanged);
-            this.CBB_Liquidation_use_condition_A.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.CBB_Liquidation_use_condition_A.SelectedIndexChanged += new System.EventHandler(this.Combo_use_condition_SelectedIndexChanged);
             // 
             // BT_계좌관리저장
             // 
@@ -3311,7 +3308,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_잔고청산_매입금1_C, "매입금 : 매수기준금액 대비 잔고 매입금  \r\n ex) 매수기준금 10,000,000 일때 \r\n       매입금   0  →  50 이면\r\n  " +
         "     매입금 0 원 에서 500만원 사이의 잔고만 동작 합니다.\r\n");
             this.TB_잔고청산_매입금1_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_잔고청산_매입금1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_잔고청산_매입금1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_잔고청산_매입금1_B
             // 
@@ -3330,7 +3327,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_잔고청산_매입금1_B, "매입금 : 매수기준금액 대비 잔고 매입금  \r\n ex) 매수기준금 10,000,000 일때 \r\n       매입금   0  →  50 이면\r\n  " +
         "     매입금 0 원 에서 500만원 사이의 잔고만 동작 합니다.\r\n");
             this.TB_잔고청산_매입금1_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_잔고청산_매입금1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_잔고청산_매입금1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_잔고청산_매입금1_A
             // 
@@ -3349,7 +3346,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_잔고청산_매입금1_A, "매입금 : 매수기준금액 대비 잔고 매입금  \r\n ex) 매수기준금 10,000,000 일때 \r\n       매입금   0  →  50 이면\r\n  " +
         "     매입금 0 원 에서 500만원 사이의 잔고만 동작 합니다.\r\n");
             this.TB_잔고청산_매입금1_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_잔고청산_매입금1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_잔고청산_매입금1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label436
             // 
@@ -3382,7 +3379,7 @@ namespace 지니_64
             this.TB_rebalance_sellvolume1_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_sellvolume1_G, "#추가매수된 체결수량의 대한 1차 매도 비율 이며 100%를 넘을수 없습니다.");
             this.TB_rebalance_sellvolume1_G.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_sellvolume1_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_sellvolume1_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_sellvolume1_F
             // 
@@ -3400,7 +3397,7 @@ namespace 지니_64
             this.TB_rebalance_sellvolume1_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_sellvolume1_F, "#추가매수된 체결수량의 대한 1차 매도 비율 이며 100%를 넘을수 없습니다.");
             this.TB_rebalance_sellvolume1_F.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_sellvolume1_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_sellvolume1_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_sellvolume1_E
             // 
@@ -3418,7 +3415,7 @@ namespace 지니_64
             this.TB_rebalance_sellvolume1_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_sellvolume1_E, "#추가매수된 체결수량의 대한 1차 매도 비율 이며 100%를 넘을수 없습니다.");
             this.TB_rebalance_sellvolume1_E.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_sellvolume1_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_sellvolume1_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_sellvolume1_C
             // 
@@ -3436,7 +3433,7 @@ namespace 지니_64
             this.TB_rebalance_sellvolume1_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_sellvolume1_C, "#추가매수된 체결수량의 대한 1차 매도 비율 이며 100%를 넘을수 없습니다.");
             this.TB_rebalance_sellvolume1_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_sellvolume1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_sellvolume1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_sellvolume1_D
             // 
@@ -3454,7 +3451,7 @@ namespace 지니_64
             this.TB_rebalance_sellvolume1_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_sellvolume1_D, "#추가매수된 체결수량의 대한 1차 매도 비율 이며 100%를 넘을수 없습니다.");
             this.TB_rebalance_sellvolume1_D.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_sellvolume1_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_sellvolume1_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_sellvolume1_B
             // 
@@ -3472,7 +3469,7 @@ namespace 지니_64
             this.TB_rebalance_sellvolume1_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_sellvolume1_B, "#추가매수된 체결수량의 대한 1차 매도 비율 이며 100%를 넘을수 없습니다.");
             this.TB_rebalance_sellvolume1_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_sellvolume1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_sellvolume1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_sellvolume1_A
             // 
@@ -3490,7 +3487,7 @@ namespace 지니_64
             this.TB_rebalance_sellvolume1_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_sellvolume1_A, "#추가매수된 체결수량의 대한 1차 매도 비율 이며 100%를 넘을수 없습니다.");
             this.TB_rebalance_sellvolume1_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_sellvolume1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_sellvolume1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_sellvolume2_A
             // 
@@ -3508,7 +3505,7 @@ namespace 지니_64
             this.TB_rebalance_sellvolume2_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_sellvolume2_A, "#추가매수된 체결수량의 대한 2차 매도 비율 이며 \r\n( 1차 매도 비율 + 2차매도 비율 ) 100%를 넘을수 없습니다.");
             this.TB_rebalance_sellvolume2_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_sellvolume2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_sellvolume2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_sellvolume2_B
             // 
@@ -3526,7 +3523,7 @@ namespace 지니_64
             this.TB_rebalance_sellvolume2_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_sellvolume2_B, "#추가매수된 체결수량의 대한 2차 매도 비율 이며 \r\n( 1차 매도 비율 + 2차매도 비율 ) 100%를 넘을수 없습니다.");
             this.TB_rebalance_sellvolume2_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_sellvolume2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_sellvolume2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_sellvolume2_C
             // 
@@ -3544,7 +3541,7 @@ namespace 지니_64
             this.TB_rebalance_sellvolume2_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_sellvolume2_C, "#추가매수된 체결수량의 대한 2차 매도 비율 이며 \r\n( 1차 매도 비율 + 2차매도 비율 ) 100%를 넘을수 없습니다.");
             this.TB_rebalance_sellvolume2_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_sellvolume2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_sellvolume2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_sellvolume2_D
             // 
@@ -3562,7 +3559,7 @@ namespace 지니_64
             this.TB_rebalance_sellvolume2_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_sellvolume2_D, "#추가매수된 체결수량의 대한 2차 매도 비율 이며 \r\n( 1차 매도 비율 + 2차매도 비율 ) 100%를 넘을수 없습니다.");
             this.TB_rebalance_sellvolume2_D.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_sellvolume2_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_sellvolume2_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_sellvolume2_G
             // 
@@ -3580,7 +3577,7 @@ namespace 지니_64
             this.TB_rebalance_sellvolume2_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_sellvolume2_G, "#추가매수된 체결수량의 대한 2차 매도 비율 이며 \r\n( 1차 매도 비율 + 2차매도 비율 ) 100%를 넘을수 없습니다.");
             this.TB_rebalance_sellvolume2_G.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_sellvolume2_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_sellvolume2_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_sellvolume2_F
             // 
@@ -3598,7 +3595,7 @@ namespace 지니_64
             this.TB_rebalance_sellvolume2_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_sellvolume2_F, "#추가매수된 체결수량의 대한 2차 매도 비율 이며 \r\n( 1차 매도 비율 + 2차매도 비율 ) 100%를 넘을수 없습니다.");
             this.TB_rebalance_sellvolume2_F.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_sellvolume2_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_sellvolume2_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_sellvolume2_E
             // 
@@ -3616,7 +3613,7 @@ namespace 지니_64
             this.TB_rebalance_sellvolume2_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_sellvolume2_E, "#추가매수된 체결수량의 대한 2차 매도 비율 이며 \r\n( 1차 매도 비율 + 2차매도 비율 ) 100%를 넘을수 없습니다.");
             this.TB_rebalance_sellvolume2_E.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_sellvolume2_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_sellvolume2_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // CB_추매금지_Liquidation_B
             // 
@@ -3809,7 +3806,7 @@ namespace 지니_64
             this.TB_총매수금.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_총매수금, "#매수기준금 대비 비율");
             this.TB_총매수금.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_총매수금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_총매수금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_일매수제한금
             // 
@@ -3826,7 +3823,7 @@ namespace 지니_64
             this.TB_일매수제한금.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_일매수제한금, "#매수기준금 대비 비율");
             this.TB_일매수제한금.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_일매수제한금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_일매수제한금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // CBB_Liquidation_sell_gubun_C
             // 
@@ -3966,7 +3963,7 @@ namespace 지니_64
             this.TB_rebalance_suik_1_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_suik_1_A, resources.GetString("TB_rebalance_suik_1_A.ToolTip"));
             this.TB_rebalance_suik_1_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_suik_1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_suik_1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_suik_2_A
             // 
@@ -3982,7 +3979,7 @@ namespace 지니_64
             this.TB_rebalance_suik_2_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_suik_2_A, resources.GetString("TB_rebalance_suik_2_A.ToolTip"));
             this.TB_rebalance_suik_2_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_suik_2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_suik_2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_suik_2_G
             // 
@@ -3998,7 +3995,7 @@ namespace 지니_64
             this.TB_rebalance_suik_2_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_suik_2_G, resources.GetString("TB_rebalance_suik_2_G.ToolTip"));
             this.TB_rebalance_suik_2_G.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_suik_2_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_suik_2_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_suik_2_F
             // 
@@ -4014,7 +4011,7 @@ namespace 지니_64
             this.TB_rebalance_suik_2_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_suik_2_F, resources.GetString("TB_rebalance_suik_2_F.ToolTip"));
             this.TB_rebalance_suik_2_F.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_suik_2_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_suik_2_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_suik_2_E
             // 
@@ -4030,7 +4027,7 @@ namespace 지니_64
             this.TB_rebalance_suik_2_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_suik_2_E, resources.GetString("TB_rebalance_suik_2_E.ToolTip"));
             this.TB_rebalance_suik_2_E.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_suik_2_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_suik_2_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_suik_2_C
             // 
@@ -4046,7 +4043,7 @@ namespace 지니_64
             this.TB_rebalance_suik_2_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_suik_2_C, resources.GetString("TB_rebalance_suik_2_C.ToolTip"));
             this.TB_rebalance_suik_2_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_suik_2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_suik_2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_suik_2_D
             // 
@@ -4062,7 +4059,7 @@ namespace 지니_64
             this.TB_rebalance_suik_2_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_suik_2_D, resources.GetString("TB_rebalance_suik_2_D.ToolTip"));
             this.TB_rebalance_suik_2_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_suik_2_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_suik_2_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_suik_2_B
             // 
@@ -4078,7 +4075,7 @@ namespace 지니_64
             this.TB_rebalance_suik_2_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_suik_2_B, resources.GetString("TB_rebalance_suik_2_B.ToolTip"));
             this.TB_rebalance_suik_2_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_suik_2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_suik_2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_suik_1_G
             // 
@@ -4094,7 +4091,7 @@ namespace 지니_64
             this.TB_rebalance_suik_1_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_suik_1_G, resources.GetString("TB_rebalance_suik_1_G.ToolTip"));
             this.TB_rebalance_suik_1_G.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_suik_1_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_suik_1_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_suik_1_F
             // 
@@ -4110,7 +4107,7 @@ namespace 지니_64
             this.TB_rebalance_suik_1_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_suik_1_F, resources.GetString("TB_rebalance_suik_1_F.ToolTip"));
             this.TB_rebalance_suik_1_F.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_suik_1_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_suik_1_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_suik_1_E
             // 
@@ -4126,7 +4123,7 @@ namespace 지니_64
             this.TB_rebalance_suik_1_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_suik_1_E, resources.GetString("TB_rebalance_suik_1_E.ToolTip"));
             this.TB_rebalance_suik_1_E.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_suik_1_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_suik_1_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_suik_1_C
             // 
@@ -4142,7 +4139,7 @@ namespace 지니_64
             this.TB_rebalance_suik_1_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_suik_1_C, resources.GetString("TB_rebalance_suik_1_C.ToolTip"));
             this.TB_rebalance_suik_1_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_suik_1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_suik_1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_suik_1_D
             // 
@@ -4158,7 +4155,7 @@ namespace 지니_64
             this.TB_rebalance_suik_1_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_suik_1_D, resources.GetString("TB_rebalance_suik_1_D.ToolTip"));
             this.TB_rebalance_suik_1_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_suik_1_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_suik_1_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_suik_1_B
             // 
@@ -4174,7 +4171,7 @@ namespace 지니_64
             this.TB_rebalance_suik_1_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_suik_1_B, resources.GetString("TB_rebalance_suik_1_B.ToolTip"));
             this.TB_rebalance_suik_1_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_suik_1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_suik_1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // L_잔고청산매매범위_B
             // 
@@ -4325,138 +4322,138 @@ namespace 지니_64
             this.TB_rebalance_sellcancel2_D.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.toolTip1.SetToolTip(this.TB_rebalance_sellcancel2_D, "# 취소시간(초) ");
             // 
-            // TB_rebalance_매입금_F
+            // TB_Rebalance_매입금_F
             // 
-            this.TB_rebalance_매입금_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_매입금_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_매입금_F.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_매입금_F.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_매입금_F.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_rebalance_매입금_F.Location = new System.Drawing.Point(386, 141);
-            this.TB_rebalance_매입금_F.MaxLength = 5;
-            this.TB_rebalance_매입금_F.Name = "TB_rebalance_매입금_F";
-            this.TB_rebalance_매입금_F.Size = new System.Drawing.Size(60, 21);
-            this.TB_rebalance_매입금_F.TabIndex = 109;
-            this.TB_rebalance_매입금_F.Text = "0";
-            this.TB_rebalance_매입금_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_rebalance_매입금_F, "1. 매입금 : 매수기준금액 대비 잔고 매입금  \r\n          ex) 매수기준금 10,000,000 일때 매입금 20 이면  \r\n     " +
+            this.TB_Rebalance_매입금_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_Rebalance_매입금_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Rebalance_매입금_F.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Rebalance_매입금_F.ForeColor = System.Drawing.Color.Black;
+            this.TB_Rebalance_매입금_F.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_Rebalance_매입금_F.Location = new System.Drawing.Point(386, 141);
+            this.TB_Rebalance_매입금_F.MaxLength = 5;
+            this.TB_Rebalance_매입금_F.Name = "TB_Rebalance_매입금_F";
+            this.TB_Rebalance_매입금_F.Size = new System.Drawing.Size(60, 21);
+            this.TB_Rebalance_매입금_F.TabIndex = 109;
+            this.TB_Rebalance_매입금_F.Text = "0";
+            this.TB_Rebalance_매입금_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_Rebalance_매입금_F, "1. 매입금 : 매수기준금액 대비 잔고 매입금  \r\n          ex) 매수기준금 10,000,000 일때 매입금 20 이면  \r\n     " +
         "  잔고의 총 매입금액 이 200만원 이상일때 동작 한다.");
-            this.TB_rebalance_매입금_F.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_매입금_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Rebalance_매입금_F.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
+            this.TB_Rebalance_매입금_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
-            // TB_rebalance_매입금_C
+            // TB_Rebalance_매입금_C
             // 
-            this.TB_rebalance_매입금_C.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_매입금_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_매입금_C.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_매입금_C.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_매입금_C.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_rebalance_매입금_C.Location = new System.Drawing.Point(386, 81);
-            this.TB_rebalance_매입금_C.MaxLength = 5;
-            this.TB_rebalance_매입금_C.Name = "TB_rebalance_매입금_C";
-            this.TB_rebalance_매입금_C.Size = new System.Drawing.Size(60, 21);
-            this.TB_rebalance_매입금_C.TabIndex = 109;
-            this.TB_rebalance_매입금_C.Text = "0";
-            this.TB_rebalance_매입금_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_rebalance_매입금_C, "1. 매입금 : 매수기준금액 대비 잔고 매입금  \r\n          ex) 매수기준금 10,000,000 일때 매입금 20 이면  \r\n     " +
+            this.TB_Rebalance_매입금_C.BackColor = System.Drawing.Color.OldLace;
+            this.TB_Rebalance_매입금_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Rebalance_매입금_C.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Rebalance_매입금_C.ForeColor = System.Drawing.Color.Black;
+            this.TB_Rebalance_매입금_C.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_Rebalance_매입금_C.Location = new System.Drawing.Point(386, 81);
+            this.TB_Rebalance_매입금_C.MaxLength = 5;
+            this.TB_Rebalance_매입금_C.Name = "TB_Rebalance_매입금_C";
+            this.TB_Rebalance_매입금_C.Size = new System.Drawing.Size(60, 21);
+            this.TB_Rebalance_매입금_C.TabIndex = 109;
+            this.TB_Rebalance_매입금_C.Text = "0";
+            this.TB_Rebalance_매입금_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_Rebalance_매입금_C, "1. 매입금 : 매수기준금액 대비 잔고 매입금  \r\n          ex) 매수기준금 10,000,000 일때 매입금 20 이면  \r\n     " +
         "  잔고의 총 매입금액 이 200만원 이상일때 동작 한다.");
-            this.TB_rebalance_매입금_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_매입금_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Rebalance_매입금_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
+            this.TB_Rebalance_매입금_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
-            // TB_rebalance_매입금_G
+            // TB_Rebalance_매입금_G
             // 
-            this.TB_rebalance_매입금_G.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_매입금_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_매입금_G.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_매입금_G.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_매입금_G.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_rebalance_매입금_G.Location = new System.Drawing.Point(386, 161);
-            this.TB_rebalance_매입금_G.MaxLength = 5;
-            this.TB_rebalance_매입금_G.Name = "TB_rebalance_매입금_G";
-            this.TB_rebalance_매입금_G.Size = new System.Drawing.Size(60, 21);
-            this.TB_rebalance_매입금_G.TabIndex = 110;
-            this.TB_rebalance_매입금_G.Text = "0";
-            this.TB_rebalance_매입금_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_rebalance_매입금_G, "1. 매입금 : 매수기준금액 대비 잔고 매입금  \r\n          ex) 매수기준금 10,000,000 일때 매입금 20 이면  \r\n     " +
+            this.TB_Rebalance_매입금_G.BackColor = System.Drawing.Color.OldLace;
+            this.TB_Rebalance_매입금_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Rebalance_매입금_G.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Rebalance_매입금_G.ForeColor = System.Drawing.Color.Black;
+            this.TB_Rebalance_매입금_G.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_Rebalance_매입금_G.Location = new System.Drawing.Point(386, 161);
+            this.TB_Rebalance_매입금_G.MaxLength = 5;
+            this.TB_Rebalance_매입금_G.Name = "TB_Rebalance_매입금_G";
+            this.TB_Rebalance_매입금_G.Size = new System.Drawing.Size(60, 21);
+            this.TB_Rebalance_매입금_G.TabIndex = 110;
+            this.TB_Rebalance_매입금_G.Text = "0";
+            this.TB_Rebalance_매입금_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_Rebalance_매입금_G, "1. 매입금 : 매수기준금액 대비 잔고 매입금  \r\n          ex) 매수기준금 10,000,000 일때 매입금 20 이면  \r\n     " +
         "  잔고의 총 매입금액 이 200만원 이상일때 동작 한다.");
-            this.TB_rebalance_매입금_G.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_매입금_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Rebalance_매입금_G.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
+            this.TB_Rebalance_매입금_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
-            // TB_rebalance_매입금_E
+            // TB_Rebalance_매입금_E
             // 
-            this.TB_rebalance_매입금_E.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_매입금_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_매입금_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_매입금_E.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_매입금_E.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_rebalance_매입금_E.Location = new System.Drawing.Point(386, 121);
-            this.TB_rebalance_매입금_E.MaxLength = 5;
-            this.TB_rebalance_매입금_E.Name = "TB_rebalance_매입금_E";
-            this.TB_rebalance_매입금_E.Size = new System.Drawing.Size(60, 21);
-            this.TB_rebalance_매입금_E.TabIndex = 110;
-            this.TB_rebalance_매입금_E.Text = "0";
-            this.TB_rebalance_매입금_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_rebalance_매입금_E, "1. 매입금 : 매수기준금액 대비 잔고 매입금  \r\n          ex) 매수기준금 10,000,000 일때 매입금 20 이면  \r\n     " +
+            this.TB_Rebalance_매입금_E.BackColor = System.Drawing.Color.OldLace;
+            this.TB_Rebalance_매입금_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Rebalance_매입금_E.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Rebalance_매입금_E.ForeColor = System.Drawing.Color.Black;
+            this.TB_Rebalance_매입금_E.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_Rebalance_매입금_E.Location = new System.Drawing.Point(386, 121);
+            this.TB_Rebalance_매입금_E.MaxLength = 5;
+            this.TB_Rebalance_매입금_E.Name = "TB_Rebalance_매입금_E";
+            this.TB_Rebalance_매입금_E.Size = new System.Drawing.Size(60, 21);
+            this.TB_Rebalance_매입금_E.TabIndex = 110;
+            this.TB_Rebalance_매입금_E.Text = "0";
+            this.TB_Rebalance_매입금_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_Rebalance_매입금_E, "1. 매입금 : 매수기준금액 대비 잔고 매입금  \r\n          ex) 매수기준금 10,000,000 일때 매입금 20 이면  \r\n     " +
         "  잔고의 총 매입금액 이 200만원 이상일때 동작 한다.");
-            this.TB_rebalance_매입금_E.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_매입금_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Rebalance_매입금_E.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
+            this.TB_Rebalance_매입금_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
-            // TB_rebalance_매입금_B
+            // TB_Rebalance_매입금_B
             // 
-            this.TB_rebalance_매입금_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_매입금_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_매입금_B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_매입금_B.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_매입금_B.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_rebalance_매입금_B.Location = new System.Drawing.Point(386, 61);
-            this.TB_rebalance_매입금_B.MaxLength = 5;
-            this.TB_rebalance_매입금_B.Name = "TB_rebalance_매입금_B";
-            this.TB_rebalance_매입금_B.Size = new System.Drawing.Size(60, 21);
-            this.TB_rebalance_매입금_B.TabIndex = 110;
-            this.TB_rebalance_매입금_B.Text = "0";
-            this.TB_rebalance_매입금_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_rebalance_매입금_B, "1. 매입금 : 매수기준금액 대비 잔고 매입금  \r\n          ex) 매수기준금 10,000,000 일때 매입금 20 이면  \r\n     " +
+            this.TB_Rebalance_매입금_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_Rebalance_매입금_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Rebalance_매입금_B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Rebalance_매입금_B.ForeColor = System.Drawing.Color.Black;
+            this.TB_Rebalance_매입금_B.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_Rebalance_매입금_B.Location = new System.Drawing.Point(386, 61);
+            this.TB_Rebalance_매입금_B.MaxLength = 5;
+            this.TB_Rebalance_매입금_B.Name = "TB_Rebalance_매입금_B";
+            this.TB_Rebalance_매입금_B.Size = new System.Drawing.Size(60, 21);
+            this.TB_Rebalance_매입금_B.TabIndex = 110;
+            this.TB_Rebalance_매입금_B.Text = "0";
+            this.TB_Rebalance_매입금_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_Rebalance_매입금_B, "1. 매입금 : 매수기준금액 대비 잔고 매입금  \r\n          ex) 매수기준금 10,000,000 일때 매입금 20 이면  \r\n     " +
         "  잔고의 총 매입금액 이 200만원 이상일때 동작 한다.");
-            this.TB_rebalance_매입금_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_매입금_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Rebalance_매입금_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
+            this.TB_Rebalance_매입금_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
-            // TB_rebalance_매입금_D
+            // TB_Rebalance_매입금_D
             // 
-            this.TB_rebalance_매입금_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_매입금_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_매입금_D.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_매입금_D.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_매입금_D.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_rebalance_매입금_D.Location = new System.Drawing.Point(386, 101);
-            this.TB_rebalance_매입금_D.MaxLength = 5;
-            this.TB_rebalance_매입금_D.Name = "TB_rebalance_매입금_D";
-            this.TB_rebalance_매입금_D.Size = new System.Drawing.Size(60, 21);
-            this.TB_rebalance_매입금_D.TabIndex = 111;
-            this.TB_rebalance_매입금_D.Text = "0";
-            this.TB_rebalance_매입금_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_rebalance_매입금_D, "1. 매입금 : 매수기준금액 대비 잔고 매입금  \r\n          ex) 매수기준금 10,000,000 일때 매입금 20 이면  \r\n     " +
+            this.TB_Rebalance_매입금_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_Rebalance_매입금_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Rebalance_매입금_D.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Rebalance_매입금_D.ForeColor = System.Drawing.Color.Black;
+            this.TB_Rebalance_매입금_D.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_Rebalance_매입금_D.Location = new System.Drawing.Point(386, 101);
+            this.TB_Rebalance_매입금_D.MaxLength = 5;
+            this.TB_Rebalance_매입금_D.Name = "TB_Rebalance_매입금_D";
+            this.TB_Rebalance_매입금_D.Size = new System.Drawing.Size(60, 21);
+            this.TB_Rebalance_매입금_D.TabIndex = 111;
+            this.TB_Rebalance_매입금_D.Text = "0";
+            this.TB_Rebalance_매입금_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_Rebalance_매입금_D, "1. 매입금 : 매수기준금액 대비 잔고 매입금  \r\n          ex) 매수기준금 10,000,000 일때 매입금 20 이면  \r\n     " +
         "  잔고의 총 매입금액 이 200만원 이상일때 동작 한다.");
-            this.TB_rebalance_매입금_D.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_매입금_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Rebalance_매입금_D.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
+            this.TB_Rebalance_매입금_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
-            // TB_rebalance_매입금_A
+            // TB_Rebalance_매입금_A
             // 
-            this.TB_rebalance_매입금_A.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_매입금_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_매입금_A.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_매입금_A.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_매입금_A.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.TB_rebalance_매입금_A.Location = new System.Drawing.Point(386, 41);
-            this.TB_rebalance_매입금_A.MaxLength = 5;
-            this.TB_rebalance_매입금_A.Name = "TB_rebalance_매입금_A";
-            this.TB_rebalance_매입금_A.Size = new System.Drawing.Size(60, 21);
-            this.TB_rebalance_매입금_A.TabIndex = 111;
-            this.TB_rebalance_매입금_A.Text = "0";
-            this.TB_rebalance_매입금_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_rebalance_매입금_A, "1. 매입금 : 매수기준금액 대비 잔고 매입금  \r\n          ex) 매수기준금 10,000,000 일때 매입금 20 이면  \r\n     " +
+            this.TB_Rebalance_매입금_A.BackColor = System.Drawing.Color.OldLace;
+            this.TB_Rebalance_매입금_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Rebalance_매입금_A.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Rebalance_매입금_A.ForeColor = System.Drawing.Color.Black;
+            this.TB_Rebalance_매입금_A.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.TB_Rebalance_매입금_A.Location = new System.Drawing.Point(386, 41);
+            this.TB_Rebalance_매입금_A.MaxLength = 5;
+            this.TB_Rebalance_매입금_A.Name = "TB_Rebalance_매입금_A";
+            this.TB_Rebalance_매입금_A.Size = new System.Drawing.Size(60, 21);
+            this.TB_Rebalance_매입금_A.TabIndex = 111;
+            this.TB_Rebalance_매입금_A.Text = "0";
+            this.TB_Rebalance_매입금_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_Rebalance_매입금_A, "1. 매입금 : 매수기준금액 대비 잔고 매입금  \r\n          ex) 매수기준금 10,000,000 일때 매입금 20 이면  \r\n     " +
         "  잔고의 총 매입금액 이 200만원 이상일때 동작 한다.");
-            this.TB_rebalance_매입금_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_매입금_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Rebalance_매입금_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
+            this.TB_Rebalance_매입금_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label11
             // 
@@ -4518,7 +4515,7 @@ namespace 지니_64
             this.TB_rebalance_누적거래량_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_누적거래량_F, "#잔고 종목의 당일 누적거래량");
             this.TB_rebalance_누적거래량_F.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_rebalance_누적거래량_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_누적거래량_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_누적거래량_D
             // 
@@ -4535,7 +4532,7 @@ namespace 지니_64
             this.TB_rebalance_누적거래량_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_누적거래량_D, "#잔고 종목의 당일 누적거래량");
             this.TB_rebalance_누적거래량_D.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_rebalance_누적거래량_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_누적거래량_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_누적거래량_E
             // 
@@ -4552,7 +4549,7 @@ namespace 지니_64
             this.TB_rebalance_누적거래량_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_누적거래량_E, "#잔고 종목의 당일 누적거래량");
             this.TB_rebalance_누적거래량_E.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_rebalance_누적거래량_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_누적거래량_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_누적거래량_C
             // 
@@ -4569,7 +4566,7 @@ namespace 지니_64
             this.TB_rebalance_누적거래량_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_누적거래량_C, "#잔고 종목의 당일 누적거래량");
             this.TB_rebalance_누적거래량_C.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_rebalance_누적거래량_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_누적거래량_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_누적거래대금_F
             // 
@@ -4586,7 +4583,7 @@ namespace 지니_64
             this.TB_rebalance_누적거래대금_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_누적거래대금_F, "#잔고 종목의 당일 누적거래대금");
             this.TB_rebalance_누적거래대금_F.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_rebalance_누적거래대금_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_누적거래대금_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_누적거래량_B
             // 
@@ -4603,7 +4600,7 @@ namespace 지니_64
             this.TB_rebalance_누적거래량_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_누적거래량_B, "#잔고 종목의 당일 누적거래량");
             this.TB_rebalance_누적거래량_B.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_rebalance_누적거래량_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_누적거래량_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_누적거래대금_D
             // 
@@ -4620,7 +4617,7 @@ namespace 지니_64
             this.TB_rebalance_누적거래대금_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_누적거래대금_D, "#잔고 종목의 당일 누적거래대금");
             this.TB_rebalance_누적거래대금_D.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_rebalance_누적거래대금_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_누적거래대금_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_누적거래량_A
             // 
@@ -4637,7 +4634,7 @@ namespace 지니_64
             this.TB_rebalance_누적거래량_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_누적거래량_A, "#잔고 종목의 당일 누적거래량");
             this.TB_rebalance_누적거래량_A.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_rebalance_누적거래량_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_누적거래량_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_누적거래대금_E
             // 
@@ -4654,7 +4651,7 @@ namespace 지니_64
             this.TB_rebalance_누적거래대금_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_누적거래대금_E, "#잔고 종목의 당일 누적거래대금");
             this.TB_rebalance_누적거래대금_E.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_rebalance_누적거래대금_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_누적거래대금_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_누적거래대금_B
             // 
@@ -4671,7 +4668,7 @@ namespace 지니_64
             this.TB_rebalance_누적거래대금_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_누적거래대금_B, "#잔고 종목의 당일 누적거래대금");
             this.TB_rebalance_누적거래대금_B.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_rebalance_누적거래대금_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_누적거래대금_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_누적거래대금_C
             // 
@@ -4688,7 +4685,7 @@ namespace 지니_64
             this.TB_rebalance_누적거래대금_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_누적거래대금_C, "#잔고 종목의 당일 누적거래대금");
             this.TB_rebalance_누적거래대금_C.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_rebalance_누적거래대금_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_누적거래대금_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_누적거래량_G
             // 
@@ -4705,7 +4702,7 @@ namespace 지니_64
             this.TB_rebalance_누적거래량_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_누적거래량_G, "#잔고 종목의 당일 누적거래량");
             this.TB_rebalance_누적거래량_G.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_rebalance_누적거래량_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_누적거래량_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_누적거래대금_A
             // 
@@ -4722,7 +4719,7 @@ namespace 지니_64
             this.TB_rebalance_누적거래대금_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_누적거래대금_A, "#잔고 종목의 당일 누적거래대금");
             this.TB_rebalance_누적거래대금_A.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_rebalance_누적거래대금_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_누적거래대금_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_누적거래대금_G
             // 
@@ -4739,7 +4736,7 @@ namespace 지니_64
             this.TB_rebalance_누적거래대금_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.toolTip1.SetToolTip(this.TB_rebalance_누적거래대금_G, "#잔고 종목의 당일 누적거래대금");
             this.TB_rebalance_누적거래대금_G.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_rebalance_누적거래대금_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_누적거래대금_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // CB_rebalance_매도체크_A
             // 
@@ -4912,7 +4909,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_잔고청산_매입금2_C, "매입금 : 매수기준금액 대비 잔고 매입금  \r\n ex) 매수기준금 10,000,000 일때 \r\n       매입금   0  →  50 이면\r\n  " +
         "     매입금 0 원 에서 500만원 사이의 잔고만 동작 합니다.\r\n");
             this.TB_잔고청산_매입금2_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_잔고청산_매입금2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_잔고청산_매입금2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_잔고청산_매입금2_B
             // 
@@ -4931,7 +4928,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_잔고청산_매입금2_B, "매입금 : 매수기준금액 대비 잔고 매입금  \r\n ex) 매수기준금 10,000,000 일때 \r\n       매입금   0  →  50 이면\r\n  " +
         "     매입금 0 원 에서 500만원 사이의 잔고만 동작 합니다.\r\n");
             this.TB_잔고청산_매입금2_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_잔고청산_매입금2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_잔고청산_매입금2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_잔고청산_매입금2_A
             // 
@@ -4950,7 +4947,7 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.TB_잔고청산_매입금2_A, "매입금 : 매수기준금액 대비 잔고 매입금  \r\n ex) 매수기준금 10,000,000 일때 \r\n       매입금   0  →  50 이면\r\n  " +
         "     매입금 0 원 에서 500만원 사이의 잔고만 동작 합니다.\r\n");
             this.TB_잔고청산_매입금2_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_잔고청산_매입금2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_잔고청산_매입금2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_Liquidation_강제매도_B
             // 
@@ -5091,139 +5088,139 @@ namespace 지니_64
             this.label221.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.toolTip1.SetToolTip(this.label221, "# 1회 매도 비중");
             // 
-            // CBB_rebalance_mma_D
+            // CBB_rebalance_MinMAPeriod1_D
             // 
-            this.CBB_rebalance_mma_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_mma_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma_D.DropDownWidth = 50;
-            this.CBB_rebalance_mma_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma_D.FormattingEnabled = true;
-            this.CBB_rebalance_mma_D.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod1_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_MinMAPeriod1_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod1_D.DropDownWidth = 50;
+            this.CBB_rebalance_MinMAPeriod1_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod1_D.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod1_D.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_mma_D.Location = new System.Drawing.Point(621, 101);
-            this.CBB_rebalance_mma_D.Name = "CBB_rebalance_mma_D";
-            this.CBB_rebalance_mma_D.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_mma_D.TabIndex = 66;
-            this.toolTip1.SetToolTip(this.CBB_rebalance_mma_D, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.CBB_rebalance_MinMAPeriod1_D.Location = new System.Drawing.Point(621, 101);
+            this.CBB_rebalance_MinMAPeriod1_D.Name = "CBB_rebalance_MinMAPeriod1_D";
+            this.CBB_rebalance_MinMAPeriod1_D.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_MinMAPeriod1_D.TabIndex = 66;
+            this.toolTip1.SetToolTip(this.CBB_rebalance_MinMAPeriod1_D, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
-            this.CBB_rebalance_mma_D.DropDownClosed += new System.EventHandler(this.CBB_mma_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod1_D.DropDownClosed += new System.EventHandler(this.CBB_mma_DropDownClosed);
             // 
-            // CBB_rebalance_mma_A
+            // CBB_rebalance_MinMAPeriod1_A
             // 
-            this.CBB_rebalance_mma_A.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_mma_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma_A.DropDownWidth = 45;
-            this.CBB_rebalance_mma_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma_A.FormattingEnabled = true;
-            this.CBB_rebalance_mma_A.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod1_A.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_MinMAPeriod1_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod1_A.DropDownWidth = 45;
+            this.CBB_rebalance_MinMAPeriod1_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod1_A.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod1_A.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_mma_A.Location = new System.Drawing.Point(621, 41);
-            this.CBB_rebalance_mma_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.CBB_rebalance_mma_A.Name = "CBB_rebalance_mma_A";
-            this.CBB_rebalance_mma_A.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_mma_A.TabIndex = 66;
-            this.toolTip1.SetToolTip(this.CBB_rebalance_mma_A, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.CBB_rebalance_MinMAPeriod1_A.Location = new System.Drawing.Point(621, 41);
+            this.CBB_rebalance_MinMAPeriod1_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.CBB_rebalance_MinMAPeriod1_A.Name = "CBB_rebalance_MinMAPeriod1_A";
+            this.CBB_rebalance_MinMAPeriod1_A.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_MinMAPeriod1_A.TabIndex = 66;
+            this.toolTip1.SetToolTip(this.CBB_rebalance_MinMAPeriod1_A, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
-            this.CBB_rebalance_mma_A.DropDownClosed += new System.EventHandler(this.CBB_mma_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod1_A.DropDownClosed += new System.EventHandler(this.CBB_mma_DropDownClosed);
             // 
-            // CBB_rebalance_mma_E
+            // CBB_rebalance_MinMAPeriod1_E
             // 
-            this.CBB_rebalance_mma_E.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_mma_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma_E.DropDownWidth = 50;
-            this.CBB_rebalance_mma_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma_E.FormattingEnabled = true;
-            this.CBB_rebalance_mma_E.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod1_E.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_MinMAPeriod1_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod1_E.DropDownWidth = 50;
+            this.CBB_rebalance_MinMAPeriod1_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod1_E.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod1_E.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_mma_E.Location = new System.Drawing.Point(621, 121);
-            this.CBB_rebalance_mma_E.Name = "CBB_rebalance_mma_E";
-            this.CBB_rebalance_mma_E.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_mma_E.TabIndex = 66;
-            this.toolTip1.SetToolTip(this.CBB_rebalance_mma_E, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.CBB_rebalance_MinMAPeriod1_E.Location = new System.Drawing.Point(621, 121);
+            this.CBB_rebalance_MinMAPeriod1_E.Name = "CBB_rebalance_MinMAPeriod1_E";
+            this.CBB_rebalance_MinMAPeriod1_E.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_MinMAPeriod1_E.TabIndex = 66;
+            this.toolTip1.SetToolTip(this.CBB_rebalance_MinMAPeriod1_E, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
-            this.CBB_rebalance_mma_E.DropDownClosed += new System.EventHandler(this.CBB_mma_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod1_E.DropDownClosed += new System.EventHandler(this.CBB_mma_DropDownClosed);
             // 
-            // CBB_rebalance_mma_B
+            // CBB_rebalance_MinMAPeriod1_B
             // 
-            this.CBB_rebalance_mma_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_mma_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma_B.DropDownWidth = 50;
-            this.CBB_rebalance_mma_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma_B.FormattingEnabled = true;
-            this.CBB_rebalance_mma_B.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod1_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_MinMAPeriod1_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod1_B.DropDownWidth = 50;
+            this.CBB_rebalance_MinMAPeriod1_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod1_B.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod1_B.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_mma_B.Location = new System.Drawing.Point(621, 61);
-            this.CBB_rebalance_mma_B.Name = "CBB_rebalance_mma_B";
-            this.CBB_rebalance_mma_B.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_mma_B.TabIndex = 66;
-            this.toolTip1.SetToolTip(this.CBB_rebalance_mma_B, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.CBB_rebalance_MinMAPeriod1_B.Location = new System.Drawing.Point(621, 61);
+            this.CBB_rebalance_MinMAPeriod1_B.Name = "CBB_rebalance_MinMAPeriod1_B";
+            this.CBB_rebalance_MinMAPeriod1_B.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_MinMAPeriod1_B.TabIndex = 66;
+            this.toolTip1.SetToolTip(this.CBB_rebalance_MinMAPeriod1_B, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
-            this.CBB_rebalance_mma_B.DropDownClosed += new System.EventHandler(this.CBB_mma_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod1_B.DropDownClosed += new System.EventHandler(this.CBB_mma_DropDownClosed);
             // 
-            // CBB_rebalance_mma_F
+            // CBB_rebalance_MinMAPeriod1_F
             // 
-            this.CBB_rebalance_mma_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_mma_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma_F.DropDownWidth = 50;
-            this.CBB_rebalance_mma_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma_F.FormattingEnabled = true;
-            this.CBB_rebalance_mma_F.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod1_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_MinMAPeriod1_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod1_F.DropDownWidth = 50;
+            this.CBB_rebalance_MinMAPeriod1_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod1_F.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod1_F.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_mma_F.Location = new System.Drawing.Point(621, 141);
-            this.CBB_rebalance_mma_F.Name = "CBB_rebalance_mma_F";
-            this.CBB_rebalance_mma_F.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_mma_F.TabIndex = 66;
-            this.toolTip1.SetToolTip(this.CBB_rebalance_mma_F, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.CBB_rebalance_MinMAPeriod1_F.Location = new System.Drawing.Point(621, 141);
+            this.CBB_rebalance_MinMAPeriod1_F.Name = "CBB_rebalance_MinMAPeriod1_F";
+            this.CBB_rebalance_MinMAPeriod1_F.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_MinMAPeriod1_F.TabIndex = 66;
+            this.toolTip1.SetToolTip(this.CBB_rebalance_MinMAPeriod1_F, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
-            this.CBB_rebalance_mma_F.DropDownClosed += new System.EventHandler(this.CBB_mma_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod1_F.DropDownClosed += new System.EventHandler(this.CBB_mma_DropDownClosed);
             // 
-            // CBB_rebalance_mma_C
+            // CBB_rebalance_MinMAPeriod1_C
             // 
-            this.CBB_rebalance_mma_C.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_mma_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma_C.DropDownWidth = 55;
-            this.CBB_rebalance_mma_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma_C.FormattingEnabled = true;
-            this.CBB_rebalance_mma_C.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod1_C.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_MinMAPeriod1_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod1_C.DropDownWidth = 55;
+            this.CBB_rebalance_MinMAPeriod1_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod1_C.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod1_C.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_mma_C.Location = new System.Drawing.Point(621, 81);
-            this.CBB_rebalance_mma_C.Name = "CBB_rebalance_mma_C";
-            this.CBB_rebalance_mma_C.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_mma_C.TabIndex = 66;
-            this.toolTip1.SetToolTip(this.CBB_rebalance_mma_C, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.CBB_rebalance_MinMAPeriod1_C.Location = new System.Drawing.Point(621, 81);
+            this.CBB_rebalance_MinMAPeriod1_C.Name = "CBB_rebalance_MinMAPeriod1_C";
+            this.CBB_rebalance_MinMAPeriod1_C.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_MinMAPeriod1_C.TabIndex = 66;
+            this.toolTip1.SetToolTip(this.CBB_rebalance_MinMAPeriod1_C, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
-            this.CBB_rebalance_mma_C.DropDownClosed += new System.EventHandler(this.CBB_mma_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod1_C.DropDownClosed += new System.EventHandler(this.CBB_mma_DropDownClosed);
             // 
-            // CBB_rebalance_mma_G
+            // CBB_rebalance_MinMAPeriod1_G
             // 
-            this.CBB_rebalance_mma_G.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_mma_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma_G.DropDownWidth = 50;
-            this.CBB_rebalance_mma_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma_G.FormattingEnabled = true;
-            this.CBB_rebalance_mma_G.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod1_G.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_MinMAPeriod1_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod1_G.DropDownWidth = 50;
+            this.CBB_rebalance_MinMAPeriod1_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod1_G.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod1_G.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_mma_G.Location = new System.Drawing.Point(621, 161);
-            this.CBB_rebalance_mma_G.Name = "CBB_rebalance_mma_G";
-            this.CBB_rebalance_mma_G.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_mma_G.TabIndex = 66;
-            this.toolTip1.SetToolTip(this.CBB_rebalance_mma_G, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.CBB_rebalance_MinMAPeriod1_G.Location = new System.Drawing.Point(621, 161);
+            this.CBB_rebalance_MinMAPeriod1_G.Name = "CBB_rebalance_MinMAPeriod1_G";
+            this.CBB_rebalance_MinMAPeriod1_G.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_MinMAPeriod1_G.TabIndex = 66;
+            this.toolTip1.SetToolTip(this.CBB_rebalance_MinMAPeriod1_G, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
-            this.CBB_rebalance_mma_G.DropDownClosed += new System.EventHandler(this.CBB_mma_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod1_G.DropDownClosed += new System.EventHandler(this.CBB_mma_DropDownClosed);
             // 
             // label26
             // 
@@ -5240,240 +5237,240 @@ namespace 지니_64
             this.toolTip1.SetToolTip(this.label26, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
             // 
-            // TB_Liquidation_mma_B
+            // TB_Liquidation_MinMAPeriod_B
             // 
-            this.TB_Liquidation_mma_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_Liquidation_mma_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_Liquidation_mma_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Liquidation_mma_B.ForeColor = System.Drawing.Color.Black;
-            this.TB_Liquidation_mma_B.Location = new System.Drawing.Point(541, 223);
-            this.TB_Liquidation_mma_B.MaxLength = 2;
-            this.TB_Liquidation_mma_B.Name = "TB_Liquidation_mma_B";
-            this.TB_Liquidation_mma_B.Size = new System.Drawing.Size(20, 21);
-            this.TB_Liquidation_mma_B.TabIndex = 142;
-            this.TB_Liquidation_mma_B.Text = "5";
-            this.TB_Liquidation_mma_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_Liquidation_mma_B, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.TB_Liquidation_MinMAPeriod_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_Liquidation_MinMAPeriod_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Liquidation_MinMAPeriod_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Liquidation_MinMAPeriod_B.ForeColor = System.Drawing.Color.Black;
+            this.TB_Liquidation_MinMAPeriod_B.Location = new System.Drawing.Point(541, 223);
+            this.TB_Liquidation_MinMAPeriod_B.MaxLength = 2;
+            this.TB_Liquidation_MinMAPeriod_B.Name = "TB_Liquidation_MinMAPeriod_B";
+            this.TB_Liquidation_MinMAPeriod_B.Size = new System.Drawing.Size(20, 21);
+            this.TB_Liquidation_MinMAPeriod_B.TabIndex = 142;
+            this.TB_Liquidation_MinMAPeriod_B.Text = "5";
+            this.TB_Liquidation_MinMAPeriod_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_Liquidation_MinMAPeriod_B, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
-            this.TB_Liquidation_mma_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Liquidation_mma_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Liquidation_MinMAPeriod_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_Liquidation_MinMAPeriod_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_Liquidation_mma_C
+            // TB_Liquidation_MinMAPeriod_C
             // 
-            this.TB_Liquidation_mma_C.BackColor = System.Drawing.Color.OldLace;
-            this.TB_Liquidation_mma_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_Liquidation_mma_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Liquidation_mma_C.ForeColor = System.Drawing.Color.Black;
-            this.TB_Liquidation_mma_C.Location = new System.Drawing.Point(541, 243);
-            this.TB_Liquidation_mma_C.MaxLength = 2;
-            this.TB_Liquidation_mma_C.Name = "TB_Liquidation_mma_C";
-            this.TB_Liquidation_mma_C.Size = new System.Drawing.Size(20, 21);
-            this.TB_Liquidation_mma_C.TabIndex = 143;
-            this.TB_Liquidation_mma_C.Text = "5";
-            this.TB_Liquidation_mma_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_Liquidation_mma_C, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.TB_Liquidation_MinMAPeriod_C.BackColor = System.Drawing.Color.OldLace;
+            this.TB_Liquidation_MinMAPeriod_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Liquidation_MinMAPeriod_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Liquidation_MinMAPeriod_C.ForeColor = System.Drawing.Color.Black;
+            this.TB_Liquidation_MinMAPeriod_C.Location = new System.Drawing.Point(541, 243);
+            this.TB_Liquidation_MinMAPeriod_C.MaxLength = 2;
+            this.TB_Liquidation_MinMAPeriod_C.Name = "TB_Liquidation_MinMAPeriod_C";
+            this.TB_Liquidation_MinMAPeriod_C.Size = new System.Drawing.Size(20, 21);
+            this.TB_Liquidation_MinMAPeriod_C.TabIndex = 143;
+            this.TB_Liquidation_MinMAPeriod_C.Text = "5";
+            this.TB_Liquidation_MinMAPeriod_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_Liquidation_MinMAPeriod_C, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
-            this.TB_Liquidation_mma_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Liquidation_mma_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Liquidation_MinMAPeriod_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_Liquidation_MinMAPeriod_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_Liquidation_mma_A
+            // TB_Liquidation_MinMAPeriod_A
             // 
-            this.TB_Liquidation_mma_A.BackColor = System.Drawing.Color.OldLace;
-            this.TB_Liquidation_mma_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_Liquidation_mma_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Liquidation_mma_A.ForeColor = System.Drawing.Color.Black;
-            this.TB_Liquidation_mma_A.Location = new System.Drawing.Point(541, 203);
-            this.TB_Liquidation_mma_A.MaxLength = 2;
-            this.TB_Liquidation_mma_A.Name = "TB_Liquidation_mma_A";
-            this.TB_Liquidation_mma_A.Size = new System.Drawing.Size(20, 21);
-            this.TB_Liquidation_mma_A.TabIndex = 144;
-            this.TB_Liquidation_mma_A.Text = "5";
-            this.TB_Liquidation_mma_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_Liquidation_mma_A, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.TB_Liquidation_MinMAPeriod_A.BackColor = System.Drawing.Color.OldLace;
+            this.TB_Liquidation_MinMAPeriod_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Liquidation_MinMAPeriod_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Liquidation_MinMAPeriod_A.ForeColor = System.Drawing.Color.Black;
+            this.TB_Liquidation_MinMAPeriod_A.Location = new System.Drawing.Point(541, 203);
+            this.TB_Liquidation_MinMAPeriod_A.MaxLength = 2;
+            this.TB_Liquidation_MinMAPeriod_A.Name = "TB_Liquidation_MinMAPeriod_A";
+            this.TB_Liquidation_MinMAPeriod_A.Size = new System.Drawing.Size(20, 21);
+            this.TB_Liquidation_MinMAPeriod_A.TabIndex = 144;
+            this.TB_Liquidation_MinMAPeriod_A.Text = "5";
+            this.TB_Liquidation_MinMAPeriod_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_Liquidation_MinMAPeriod_A, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
-            this.TB_Liquidation_mma_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Liquidation_mma_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Liquidation_MinMAPeriod_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_Liquidation_MinMAPeriod_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // CBB_Liquidation_mma_C
+            // CBB_Liquidation_MinMAPeriod_C
             // 
-            this.CBB_Liquidation_mma_C.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_Liquidation_mma_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_Liquidation_mma_C.DropDownWidth = 55;
-            this.CBB_Liquidation_mma_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_Liquidation_mma_C.FormattingEnabled = true;
-            this.CBB_Liquidation_mma_C.Items.AddRange(new object[] {
+            this.CBB_Liquidation_MinMAPeriod_C.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_Liquidation_MinMAPeriod_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_Liquidation_MinMAPeriod_C.DropDownWidth = 55;
+            this.CBB_Liquidation_MinMAPeriod_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_Liquidation_MinMAPeriod_C.FormattingEnabled = true;
+            this.CBB_Liquidation_MinMAPeriod_C.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_Liquidation_mma_C.Location = new System.Drawing.Point(560, 243);
-            this.CBB_Liquidation_mma_C.Name = "CBB_Liquidation_mma_C";
-            this.CBB_Liquidation_mma_C.Size = new System.Drawing.Size(35, 21);
-            this.CBB_Liquidation_mma_C.TabIndex = 145;
-            this.toolTip1.SetToolTip(this.CBB_Liquidation_mma_C, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.CBB_Liquidation_MinMAPeriod_C.Location = new System.Drawing.Point(560, 243);
+            this.CBB_Liquidation_MinMAPeriod_C.Name = "CBB_Liquidation_MinMAPeriod_C";
+            this.CBB_Liquidation_MinMAPeriod_C.Size = new System.Drawing.Size(35, 21);
+            this.CBB_Liquidation_MinMAPeriod_C.TabIndex = 145;
+            this.toolTip1.SetToolTip(this.CBB_Liquidation_MinMAPeriod_C, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
             // 
-            // CBB_Liquidation_mma_B
+            // CBB_Liquidation_MinMAPeriod_B
             // 
-            this.CBB_Liquidation_mma_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_Liquidation_mma_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_Liquidation_mma_B.DropDownWidth = 50;
-            this.CBB_Liquidation_mma_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_Liquidation_mma_B.FormattingEnabled = true;
-            this.CBB_Liquidation_mma_B.Items.AddRange(new object[] {
+            this.CBB_Liquidation_MinMAPeriod_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_Liquidation_MinMAPeriod_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_Liquidation_MinMAPeriod_B.DropDownWidth = 50;
+            this.CBB_Liquidation_MinMAPeriod_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_Liquidation_MinMAPeriod_B.FormattingEnabled = true;
+            this.CBB_Liquidation_MinMAPeriod_B.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_Liquidation_mma_B.Location = new System.Drawing.Point(560, 223);
-            this.CBB_Liquidation_mma_B.Name = "CBB_Liquidation_mma_B";
-            this.CBB_Liquidation_mma_B.Size = new System.Drawing.Size(35, 21);
-            this.CBB_Liquidation_mma_B.TabIndex = 146;
-            this.toolTip1.SetToolTip(this.CBB_Liquidation_mma_B, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.CBB_Liquidation_MinMAPeriod_B.Location = new System.Drawing.Point(560, 223);
+            this.CBB_Liquidation_MinMAPeriod_B.Name = "CBB_Liquidation_MinMAPeriod_B";
+            this.CBB_Liquidation_MinMAPeriod_B.Size = new System.Drawing.Size(35, 21);
+            this.CBB_Liquidation_MinMAPeriod_B.TabIndex = 146;
+            this.toolTip1.SetToolTip(this.CBB_Liquidation_MinMAPeriod_B, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
             // 
-            // CBB_Liquidation_mma_A
+            // CBB_Liquidation_MinMAPeriod_A
             // 
-            this.CBB_Liquidation_mma_A.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_Liquidation_mma_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_Liquidation_mma_A.DropDownWidth = 45;
-            this.CBB_Liquidation_mma_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_Liquidation_mma_A.FormattingEnabled = true;
-            this.CBB_Liquidation_mma_A.Items.AddRange(new object[] {
+            this.CBB_Liquidation_MinMAPeriod_A.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_Liquidation_MinMAPeriod_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_Liquidation_MinMAPeriod_A.DropDownWidth = 45;
+            this.CBB_Liquidation_MinMAPeriod_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_Liquidation_MinMAPeriod_A.FormattingEnabled = true;
+            this.CBB_Liquidation_MinMAPeriod_A.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_Liquidation_mma_A.Location = new System.Drawing.Point(560, 203);
-            this.CBB_Liquidation_mma_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.CBB_Liquidation_mma_A.Name = "CBB_Liquidation_mma_A";
-            this.CBB_Liquidation_mma_A.Size = new System.Drawing.Size(35, 21);
-            this.CBB_Liquidation_mma_A.TabIndex = 147;
-            this.toolTip1.SetToolTip(this.CBB_Liquidation_mma_A, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.CBB_Liquidation_MinMAPeriod_A.Location = new System.Drawing.Point(560, 203);
+            this.CBB_Liquidation_MinMAPeriod_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.CBB_Liquidation_MinMAPeriod_A.Name = "CBB_Liquidation_MinMAPeriod_A";
+            this.CBB_Liquidation_MinMAPeriod_A.Size = new System.Drawing.Size(35, 21);
+            this.CBB_Liquidation_MinMAPeriod_A.TabIndex = 147;
+            this.toolTip1.SetToolTip(this.CBB_Liquidation_MinMAPeriod_A, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
             // 
-            // TB_rebalance_mma_A
+            // TB_rebalance_MinMAPeriod1_A
             // 
-            this.TB_rebalance_mma_A.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_mma_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_mma_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_mma_A.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_mma_A.Location = new System.Drawing.Point(599, 41);
-            this.TB_rebalance_mma_A.MaxLength = 3;
-            this.TB_rebalance_mma_A.Name = "TB_rebalance_mma_A";
-            this.TB_rebalance_mma_A.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_mma_A.TabIndex = 144;
-            this.TB_rebalance_mma_A.Text = "5";
-            this.TB_rebalance_mma_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_rebalance_mma_A, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.TB_rebalance_MinMAPeriod1_A.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_MinMAPeriod1_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_MinMAPeriod1_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_MinMAPeriod1_A.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_MinMAPeriod1_A.Location = new System.Drawing.Point(599, 41);
+            this.TB_rebalance_MinMAPeriod1_A.MaxLength = 3;
+            this.TB_rebalance_MinMAPeriod1_A.Name = "TB_rebalance_MinMAPeriod1_A";
+            this.TB_rebalance_MinMAPeriod1_A.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_MinMAPeriod1_A.TabIndex = 144;
+            this.TB_rebalance_MinMAPeriod1_A.Text = "5";
+            this.TB_rebalance_MinMAPeriod1_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_rebalance_MinMAPeriod1_A, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
-            this.TB_rebalance_mma_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_mma_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_MinMAPeriod1_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_MinMAPeriod1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_mma_C
+            // TB_rebalance_MinMAPeriod1_C
             // 
-            this.TB_rebalance_mma_C.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_mma_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_mma_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_mma_C.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_mma_C.Location = new System.Drawing.Point(599, 81);
-            this.TB_rebalance_mma_C.MaxLength = 3;
-            this.TB_rebalance_mma_C.Name = "TB_rebalance_mma_C";
-            this.TB_rebalance_mma_C.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_mma_C.TabIndex = 143;
-            this.TB_rebalance_mma_C.Text = "5";
-            this.TB_rebalance_mma_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_rebalance_mma_C, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.TB_rebalance_MinMAPeriod1_C.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_MinMAPeriod1_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_MinMAPeriod1_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_MinMAPeriod1_C.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_MinMAPeriod1_C.Location = new System.Drawing.Point(599, 81);
+            this.TB_rebalance_MinMAPeriod1_C.MaxLength = 3;
+            this.TB_rebalance_MinMAPeriod1_C.Name = "TB_rebalance_MinMAPeriod1_C";
+            this.TB_rebalance_MinMAPeriod1_C.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_MinMAPeriod1_C.TabIndex = 143;
+            this.TB_rebalance_MinMAPeriod1_C.Text = "5";
+            this.TB_rebalance_MinMAPeriod1_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_rebalance_MinMAPeriod1_C, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
-            this.TB_rebalance_mma_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_mma_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_MinMAPeriod1_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_MinMAPeriod1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_mma_B
+            // TB_rebalance_MinMAPeriod1_B
             // 
-            this.TB_rebalance_mma_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_mma_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_mma_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_mma_B.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_mma_B.Location = new System.Drawing.Point(599, 61);
-            this.TB_rebalance_mma_B.MaxLength = 3;
-            this.TB_rebalance_mma_B.Name = "TB_rebalance_mma_B";
-            this.TB_rebalance_mma_B.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_mma_B.TabIndex = 142;
-            this.TB_rebalance_mma_B.Text = "5";
-            this.TB_rebalance_mma_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_rebalance_mma_B, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.TB_rebalance_MinMAPeriod1_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_MinMAPeriod1_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_MinMAPeriod1_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_MinMAPeriod1_B.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_MinMAPeriod1_B.Location = new System.Drawing.Point(599, 61);
+            this.TB_rebalance_MinMAPeriod1_B.MaxLength = 3;
+            this.TB_rebalance_MinMAPeriod1_B.Name = "TB_rebalance_MinMAPeriod1_B";
+            this.TB_rebalance_MinMAPeriod1_B.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_MinMAPeriod1_B.TabIndex = 142;
+            this.TB_rebalance_MinMAPeriod1_B.Text = "5";
+            this.TB_rebalance_MinMAPeriod1_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_rebalance_MinMAPeriod1_B, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
-            this.TB_rebalance_mma_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_mma_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_MinMAPeriod1_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_MinMAPeriod1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_mma_D
+            // TB_rebalance_MinMAPeriod1_D
             // 
-            this.TB_rebalance_mma_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_mma_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_mma_D.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_mma_D.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_mma_D.Location = new System.Drawing.Point(599, 101);
-            this.TB_rebalance_mma_D.MaxLength = 3;
-            this.TB_rebalance_mma_D.Name = "TB_rebalance_mma_D";
-            this.TB_rebalance_mma_D.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_mma_D.TabIndex = 144;
-            this.TB_rebalance_mma_D.Text = "5";
-            this.TB_rebalance_mma_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_rebalance_mma_D, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.TB_rebalance_MinMAPeriod1_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_MinMAPeriod1_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_MinMAPeriod1_D.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_MinMAPeriod1_D.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_MinMAPeriod1_D.Location = new System.Drawing.Point(599, 101);
+            this.TB_rebalance_MinMAPeriod1_D.MaxLength = 3;
+            this.TB_rebalance_MinMAPeriod1_D.Name = "TB_rebalance_MinMAPeriod1_D";
+            this.TB_rebalance_MinMAPeriod1_D.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_MinMAPeriod1_D.TabIndex = 144;
+            this.TB_rebalance_MinMAPeriod1_D.Text = "5";
+            this.TB_rebalance_MinMAPeriod1_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_rebalance_MinMAPeriod1_D, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
-            this.TB_rebalance_mma_D.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_mma_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_MinMAPeriod1_D.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_MinMAPeriod1_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_mma_F
+            // TB_rebalance_MinMAPeriod1_F
             // 
-            this.TB_rebalance_mma_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_mma_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_mma_F.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_mma_F.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_mma_F.Location = new System.Drawing.Point(599, 141);
-            this.TB_rebalance_mma_F.MaxLength = 3;
-            this.TB_rebalance_mma_F.Name = "TB_rebalance_mma_F";
-            this.TB_rebalance_mma_F.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_mma_F.TabIndex = 143;
-            this.TB_rebalance_mma_F.Text = "5";
-            this.TB_rebalance_mma_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_rebalance_mma_F, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.TB_rebalance_MinMAPeriod1_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_MinMAPeriod1_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_MinMAPeriod1_F.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_MinMAPeriod1_F.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_MinMAPeriod1_F.Location = new System.Drawing.Point(599, 141);
+            this.TB_rebalance_MinMAPeriod1_F.MaxLength = 3;
+            this.TB_rebalance_MinMAPeriod1_F.Name = "TB_rebalance_MinMAPeriod1_F";
+            this.TB_rebalance_MinMAPeriod1_F.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_MinMAPeriod1_F.TabIndex = 143;
+            this.TB_rebalance_MinMAPeriod1_F.Text = "5";
+            this.TB_rebalance_MinMAPeriod1_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_rebalance_MinMAPeriod1_F, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
-            this.TB_rebalance_mma_F.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_mma_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_MinMAPeriod1_F.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_MinMAPeriod1_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_mma_E
+            // TB_rebalance_MinMAPeriod1_E
             // 
-            this.TB_rebalance_mma_E.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_mma_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_mma_E.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_mma_E.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_mma_E.Location = new System.Drawing.Point(599, 121);
-            this.TB_rebalance_mma_E.MaxLength = 3;
-            this.TB_rebalance_mma_E.Name = "TB_rebalance_mma_E";
-            this.TB_rebalance_mma_E.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_mma_E.TabIndex = 142;
-            this.TB_rebalance_mma_E.Text = "5";
-            this.TB_rebalance_mma_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_rebalance_mma_E, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.TB_rebalance_MinMAPeriod1_E.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_MinMAPeriod1_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_MinMAPeriod1_E.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_MinMAPeriod1_E.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_MinMAPeriod1_E.Location = new System.Drawing.Point(599, 121);
+            this.TB_rebalance_MinMAPeriod1_E.MaxLength = 3;
+            this.TB_rebalance_MinMAPeriod1_E.Name = "TB_rebalance_MinMAPeriod1_E";
+            this.TB_rebalance_MinMAPeriod1_E.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_MinMAPeriod1_E.TabIndex = 142;
+            this.TB_rebalance_MinMAPeriod1_E.Text = "5";
+            this.TB_rebalance_MinMAPeriod1_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_rebalance_MinMAPeriod1_E, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
-            this.TB_rebalance_mma_E.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_mma_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_MinMAPeriod1_E.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_MinMAPeriod1_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_mma_G
+            // TB_rebalance_MinMAPeriod1_G
             // 
-            this.TB_rebalance_mma_G.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_mma_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_mma_G.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_mma_G.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_mma_G.Location = new System.Drawing.Point(599, 161);
-            this.TB_rebalance_mma_G.MaxLength = 3;
-            this.TB_rebalance_mma_G.Name = "TB_rebalance_mma_G";
-            this.TB_rebalance_mma_G.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_mma_G.TabIndex = 143;
-            this.TB_rebalance_mma_G.Text = "5";
-            this.TB_rebalance_mma_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_rebalance_mma_G, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
+            this.TB_rebalance_MinMAPeriod1_G.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_MinMAPeriod1_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_MinMAPeriod1_G.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_MinMAPeriod1_G.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_MinMAPeriod1_G.Location = new System.Drawing.Point(599, 161);
+            this.TB_rebalance_MinMAPeriod1_G.MaxLength = 3;
+            this.TB_rebalance_MinMAPeriod1_G.Name = "TB_rebalance_MinMAPeriod1_G";
+            this.TB_rebalance_MinMAPeriod1_G.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_MinMAPeriod1_G.TabIndex = 143;
+            this.TB_rebalance_MinMAPeriod1_G.Text = "5";
+            this.TB_rebalance_MinMAPeriod1_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTip1.SetToolTip(this.TB_rebalance_MinMAPeriod1_G, "#  이평 \r\n- 분이평선(60분 선까지 사용)\r\n Ｘ : 사용 안함\r\n ▲ : 현재가격이 이평 초과 일때 동작\r\n ▼ : 현재가격이 이평 이하 " +
         "일때 동작\r\n");
-            this.TB_rebalance_mma_G.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_mma_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_MinMAPeriod1_G.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_MinMAPeriod1_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // CB_리밸TS_1
             // 
@@ -5512,7 +5509,7 @@ namespace 지니_64
             this.TB_rebalance_TS_1차_down_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_TS_1차_down_E, "#스탑 값");
             this.TB_rebalance_TS_1차_down_E.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_rebalance_TS_1차_down_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_TS_1차_down_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_TS_1차_down_C
             // 
@@ -5530,7 +5527,7 @@ namespace 지니_64
             this.TB_rebalance_TS_1차_down_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_TS_1차_down_C, "#스탑 값");
             this.TB_rebalance_TS_1차_down_C.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_rebalance_TS_1차_down_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_TS_1차_down_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_TS_1차_down_A
             // 
@@ -5548,7 +5545,7 @@ namespace 지니_64
             this.TB_rebalance_TS_1차_down_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_TS_1차_down_A, "#스탑 값");
             this.TB_rebalance_TS_1차_down_A.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_rebalance_TS_1차_down_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_TS_1차_down_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_TS_1차_down_G
             // 
@@ -5566,7 +5563,7 @@ namespace 지니_64
             this.TB_rebalance_TS_1차_down_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_TS_1차_down_G, "#스탑 값");
             this.TB_rebalance_TS_1차_down_G.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_rebalance_TS_1차_down_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_TS_1차_down_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_TS_1차_down_D
             // 
@@ -5584,7 +5581,7 @@ namespace 지니_64
             this.TB_rebalance_TS_1차_down_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_TS_1차_down_D, "#스탑 값");
             this.TB_rebalance_TS_1차_down_D.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_rebalance_TS_1차_down_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_TS_1차_down_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_TS_1차_down_B
             // 
@@ -5602,7 +5599,7 @@ namespace 지니_64
             this.TB_rebalance_TS_1차_down_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_TS_1차_down_B, "#스탑 값");
             this.TB_rebalance_TS_1차_down_B.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_rebalance_TS_1차_down_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_TS_1차_down_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_TS_1차_down_F
             // 
@@ -5620,7 +5617,7 @@ namespace 지니_64
             this.TB_rebalance_TS_1차_down_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_TS_1차_down_F, "#스탑 값");
             this.TB_rebalance_TS_1차_down_F.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_rebalance_TS_1차_down_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_TS_1차_down_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CB_rebalance_TS_1차_B
             // 
@@ -5772,7 +5769,7 @@ namespace 지니_64
             this.TB_rebalance_TS_2차_down_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_TS_2차_down_E, "#스탑 값");
             this.TB_rebalance_TS_2차_down_E.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_rebalance_TS_2차_down_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_TS_2차_down_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_TS_2차_down_C
             // 
@@ -5790,7 +5787,7 @@ namespace 지니_64
             this.TB_rebalance_TS_2차_down_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_TS_2차_down_C, "#스탑 값");
             this.TB_rebalance_TS_2차_down_C.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_rebalance_TS_2차_down_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_TS_2차_down_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_TS_2차_down_A
             // 
@@ -5808,7 +5805,7 @@ namespace 지니_64
             this.TB_rebalance_TS_2차_down_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_TS_2차_down_A, "#스탑 값");
             this.TB_rebalance_TS_2차_down_A.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_rebalance_TS_2차_down_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_TS_2차_down_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_TS_2차_down_G
             // 
@@ -5826,7 +5823,7 @@ namespace 지니_64
             this.TB_rebalance_TS_2차_down_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_TS_2차_down_G, "#스탑 값");
             this.TB_rebalance_TS_2차_down_G.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_rebalance_TS_2차_down_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_TS_2차_down_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_TS_2차_down_D
             // 
@@ -5844,7 +5841,7 @@ namespace 지니_64
             this.TB_rebalance_TS_2차_down_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_TS_2차_down_D, "#스탑 값");
             this.TB_rebalance_TS_2차_down_D.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_rebalance_TS_2차_down_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_TS_2차_down_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_TS_2차_down_B
             // 
@@ -5862,7 +5859,7 @@ namespace 지니_64
             this.TB_rebalance_TS_2차_down_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_TS_2차_down_B, "#스탑 값");
             this.TB_rebalance_TS_2차_down_B.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_rebalance_TS_2차_down_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_TS_2차_down_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_TS_2차_down_F
             // 
@@ -5880,7 +5877,7 @@ namespace 지니_64
             this.TB_rebalance_TS_2차_down_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_rebalance_TS_2차_down_F, "#스탑 값");
             this.TB_rebalance_TS_2차_down_F.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_rebalance_TS_2차_down_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_TS_2차_down_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CB_rebalance_TS_2차_B
             // 
@@ -6057,20 +6054,20 @@ namespace 지니_64
             this.계좌관리_P.Controls.Add(this.label57);
             this.계좌관리_P.Controls.Add(this.TB_Liquidation_TS_down_A);
             this.계좌관리_P.Controls.Add(this.CB_리밸TS_2);
-            this.계좌관리_P.Controls.Add(this.TB_Liquidation_TS_dma_B);
-            this.계좌관리_P.Controls.Add(this.TB_Liquidation_TS_mma_B);
+            this.계좌관리_P.Controls.Add(this.TB_Liquidation_TS_DayMAPeriod_B);
+            this.계좌관리_P.Controls.Add(this.TB_Liquidation_TS_MinMAPeriod_B);
             this.계좌관리_P.Controls.Add(this.CB_리밸TS_1);
-            this.계좌관리_P.Controls.Add(this.TB_rebalance_mma_E);
-            this.계좌관리_P.Controls.Add(this.TB_rebalance_mma_B);
-            this.계좌관리_P.Controls.Add(this.TB_rebalance_mma_G);
-            this.계좌관리_P.Controls.Add(this.TB_Liquidation_TS_dma_C);
-            this.계좌관리_P.Controls.Add(this.TB_Liquidation_TS_mma_C);
-            this.계좌관리_P.Controls.Add(this.TB_rebalance_mma_F);
-            this.계좌관리_P.Controls.Add(this.TB_Liquidation_TS_dma_A);
-            this.계좌관리_P.Controls.Add(this.TB_Liquidation_TS_mma_A);
-            this.계좌관리_P.Controls.Add(this.TB_rebalance_mma_D);
-            this.계좌관리_P.Controls.Add(this.TB_rebalance_mma_C);
-            this.계좌관리_P.Controls.Add(this.TB_rebalance_mma_A);
+            this.계좌관리_P.Controls.Add(this.TB_rebalance_MinMAPeriod1_E);
+            this.계좌관리_P.Controls.Add(this.TB_rebalance_MinMAPeriod1_B);
+            this.계좌관리_P.Controls.Add(this.TB_rebalance_MinMAPeriod1_G);
+            this.계좌관리_P.Controls.Add(this.TB_Liquidation_TS_DayMAPeriod_C);
+            this.계좌관리_P.Controls.Add(this.TB_Liquidation_TS_MinMAPeriod_C);
+            this.계좌관리_P.Controls.Add(this.TB_rebalance_MinMAPeriod1_F);
+            this.계좌관리_P.Controls.Add(this.TB_Liquidation_TS_DayMAPeriod_A);
+            this.계좌관리_P.Controls.Add(this.TB_Liquidation_TS_MinMAPeriod_A);
+            this.계좌관리_P.Controls.Add(this.TB_rebalance_MinMAPeriod1_D);
+            this.계좌관리_P.Controls.Add(this.TB_rebalance_MinMAPeriod1_C);
+            this.계좌관리_P.Controls.Add(this.TB_rebalance_MinMAPeriod1_A);
             this.계좌관리_P.Controls.Add(this.TB_Liquidation_TS_down_C);
             this.계좌관리_P.Controls.Add(this.label26);
             this.계좌관리_P.Controls.Add(this.label15);
@@ -6107,22 +6104,22 @@ namespace 지니_64
             this.계좌관리_P.Controls.Add(this.label379);
             this.계좌관리_P.Controls.Add(this.label51);
             this.계좌관리_P.Controls.Add(this.label62);
-            this.계좌관리_P.Controls.Add(this.TB_추매주가이상);
+            this.계좌관리_P.Controls.Add(this.TB_리밸_추매주가이상);
             this.계좌관리_P.Controls.Add(this.label59);
             this.계좌관리_P.Controls.Add(this.label50);
             this.계좌관리_P.Controls.Add(this.TB_rebalance_누적거래량_F);
-            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_TS_dma_C);
+            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_TS_DayMAPeriod_C);
             this.계좌관리_P.Controls.Add(this.TB_rebalance_누적거래량_D);
-            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_TS_mma_C);
+            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_TS_MinMAPeriod_C);
             this.계좌관리_P.Controls.Add(this.TB_rebalance_누적거래량_E);
-            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_TS_dma_B);
+            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_TS_DayMAPeriod_B);
             this.계좌관리_P.Controls.Add(this.TB_rebalance_누적거래량_C);
-            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_TS_mma_B);
+            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_TS_MinMAPeriod_B);
             this.계좌관리_P.Controls.Add(this.TB_rebalance_누적거래대금_F);
             this.계좌관리_P.Controls.Add(this.TB_rebalance_누적거래량_B);
-            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_TS_dma_A);
+            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_TS_DayMAPeriod_A);
             this.계좌관리_P.Controls.Add(this.TB_rebalance_누적거래대금_D);
-            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_TS_mma_A);
+            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_TS_MinMAPeriod_A);
             this.계좌관리_P.Controls.Add(this.TB_rebalance_누적거래량_A);
             this.계좌관리_P.Controls.Add(this.TB_rebalance_누적거래대금_E);
             this.계좌관리_P.Controls.Add(this.TB_rebalance_누적거래대금_B);
@@ -6130,16 +6127,16 @@ namespace 지니_64
             this.계좌관리_P.Controls.Add(this.TB_rebalance_누적거래량_G);
             this.계좌관리_P.Controls.Add(this.TB_rebalance_누적거래대금_A);
             this.계좌관리_P.Controls.Add(this.TB_rebalance_누적거래대금_G);
-            this.계좌관리_P.Controls.Add(this.TB_추매주가이하);
-            this.계좌관리_P.Controls.Add(this.TB_추매등락률이상);
-            this.계좌관리_P.Controls.Add(this.TB_추매등락률이하);
-            this.계좌관리_P.Controls.Add(this.TB_rebalance_매입금_F);
-            this.계좌관리_P.Controls.Add(this.TB_rebalance_매입금_C);
-            this.계좌관리_P.Controls.Add(this.TB_rebalance_매입금_G);
-            this.계좌관리_P.Controls.Add(this.TB_rebalance_매입금_E);
-            this.계좌관리_P.Controls.Add(this.TB_rebalance_매입금_B);
-            this.계좌관리_P.Controls.Add(this.TB_rebalance_매입금_D);
-            this.계좌관리_P.Controls.Add(this.TB_rebalance_매입금_A);
+            this.계좌관리_P.Controls.Add(this.TB_리밸_추매주가이하);
+            this.계좌관리_P.Controls.Add(this.TB_리밸_추매등락률이상);
+            this.계좌관리_P.Controls.Add(this.TB_리밸_추매등락률이하);
+            this.계좌관리_P.Controls.Add(this.TB_Rebalance_매입금_F);
+            this.계좌관리_P.Controls.Add(this.TB_Rebalance_매입금_C);
+            this.계좌관리_P.Controls.Add(this.TB_Rebalance_매입금_G);
+            this.계좌관리_P.Controls.Add(this.TB_Rebalance_매입금_E);
+            this.계좌관리_P.Controls.Add(this.TB_Rebalance_매입금_B);
+            this.계좌관리_P.Controls.Add(this.TB_Rebalance_매입금_D);
+            this.계좌관리_P.Controls.Add(this.TB_Rebalance_매입금_A);
             this.계좌관리_P.Controls.Add(this.label19);
             this.계좌관리_P.Controls.Add(this.label22);
             this.계좌관리_P.Controls.Add(this.label21);
@@ -6535,36 +6532,36 @@ namespace 지니_64
             this.계좌관리_P.Controls.Add(this.combo_rebalance_감시_jumun_D);
             this.계좌관리_P.Controls.Add(this.combo_rebalance_감시_jumun_G);
             this.계좌관리_P.Controls.Add(this.combo_rebalance_감시_jumun_F);
-            this.계좌관리_P.Controls.Add(this.combo_rebalance_condition_C);
+            this.계좌관리_P.Controls.Add(this.리밸_C);
             this.계좌관리_P.Controls.Add(this.combo_rebalance_감시_jumun_E);
-            this.계좌관리_P.Controls.Add(this.combo_rebalance_condition_G);
-            this.계좌관리_P.Controls.Add(this.combo_rebalance_condition_F);
-            this.계좌관리_P.Controls.Add(this.combo_rebalance_condition_B);
-            this.계좌관리_P.Controls.Add(this.combo_rebalance_condition_E);
-            this.계좌관리_P.Controls.Add(this.combo_rebalance_condition_A);
-            this.계좌관리_P.Controls.Add(this.combo_rebalance_condition_D);
+            this.계좌관리_P.Controls.Add(this.리밸_G);
+            this.계좌관리_P.Controls.Add(this.리밸_F);
+            this.계좌관리_P.Controls.Add(this.리밸_B);
+            this.계좌관리_P.Controls.Add(this.리밸_E);
+            this.계좌관리_P.Controls.Add(this.리밸_A);
+            this.계좌관리_P.Controls.Add(this.리밸_D);
             this.계좌관리_P.Controls.Add(this.CBB_Liquidation_suik_gubun_C);
             this.계좌관리_P.Controls.Add(this.CBB_Liquidation_suik_gubun_A);
-            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_condition_C);
-            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_condition_A);
-            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_condition_B);
+            this.계좌관리_P.Controls.Add(this.청산_C);
+            this.계좌관리_P.Controls.Add(this.청산_A);
+            this.계좌관리_P.Controls.Add(this.청산_B);
             this.계좌관리_P.Controls.Add(this.CBB_Liquidation_use_condition_B);
             this.계좌관리_P.Controls.Add(this.CBB_Liquidation_use_condition_C);
             this.계좌관리_P.Controls.Add(this.CBB_Liquidation_use_condition_A);
             this.계좌관리_P.Controls.Add(this.CB_Liquidation_C);
             this.계좌관리_P.Controls.Add(this.CB_Liquidation_A);
             this.계좌관리_P.Controls.Add(this.CB_Liquidation_B);
-            this.계좌관리_P.Controls.Add(this.CBB_rebalance_mma_G);
+            this.계좌관리_P.Controls.Add(this.CBB_rebalance_MinMAPeriod1_G);
             this.계좌관리_P.Controls.Add(this.combo_rebalance_use_condition_G);
-            this.계좌관리_P.Controls.Add(this.CBB_rebalance_mma_C);
+            this.계좌관리_P.Controls.Add(this.CBB_rebalance_MinMAPeriod1_C);
             this.계좌관리_P.Controls.Add(this.combo_rebalance_use_condition_C);
-            this.계좌관리_P.Controls.Add(this.CBB_rebalance_mma_F);
+            this.계좌관리_P.Controls.Add(this.CBB_rebalance_MinMAPeriod1_F);
             this.계좌관리_P.Controls.Add(this.combo_rebalance_use_condition_F);
-            this.계좌관리_P.Controls.Add(this.CBB_rebalance_mma_B);
+            this.계좌관리_P.Controls.Add(this.CBB_rebalance_MinMAPeriod1_B);
             this.계좌관리_P.Controls.Add(this.combo_rebalance_use_condition_B);
-            this.계좌관리_P.Controls.Add(this.CBB_rebalance_mma_E);
+            this.계좌관리_P.Controls.Add(this.CBB_rebalance_MinMAPeriod1_E);
             this.계좌관리_P.Controls.Add(this.combo_rebalance_use_condition_E);
-            this.계좌관리_P.Controls.Add(this.CBB_rebalance_mma_D);
+            this.계좌관리_P.Controls.Add(this.CBB_rebalance_MinMAPeriod1_D);
             this.계좌관리_P.Controls.Add(this.combo_rebalance_use_condition_A);
             this.계좌관리_P.Controls.Add(this.combo_rebalance_use_condition_D);
             this.계좌관리_P.Controls.Add(this.L_리밸매매범위_G);
@@ -6621,17 +6618,17 @@ namespace 지니_64
             this.계좌관리_P.Controls.Add(this.L_잔고청산매입금_C);
             this.계좌관리_P.Controls.Add(this.L_잔고청산매입금_B);
             this.계좌관리_P.Controls.Add(this.L_잔고청산매입금_A);
-            this.계좌관리_P.Controls.Add(this.TB_Liquidation_mma_B);
-            this.계좌관리_P.Controls.Add(this.TB_Liquidation_mma_C);
-            this.계좌관리_P.Controls.Add(this.TB_Liquidation_mma_A);
-            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_mma_C);
-            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_mma_B);
-            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_mma_A);
+            this.계좌관리_P.Controls.Add(this.TB_Liquidation_MinMAPeriod_B);
+            this.계좌관리_P.Controls.Add(this.TB_Liquidation_MinMAPeriod_C);
+            this.계좌관리_P.Controls.Add(this.TB_Liquidation_MinMAPeriod_A);
+            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_MinMAPeriod_C);
+            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_MinMAPeriod_B);
+            this.계좌관리_P.Controls.Add(this.CBB_Liquidation_MinMAPeriod_A);
             this.계좌관리_P.Controls.Add(this.CBB_rebalance_2B);
             this.계좌관리_P.Controls.Add(this.CBB_rebalance_2A);
             this.계좌관리_P.Controls.Add(this.panel_리밸TS_2);
             this.계좌관리_P.Controls.Add(this.panel_리밸TS_1);
-            this.계좌관리_P.Controls.Add(this.CBB_rebalance_mma_A);
+            this.계좌관리_P.Controls.Add(this.CBB_rebalance_MinMAPeriod1_A);
             this.계좌관리_P.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.계좌관리_P.Location = new System.Drawing.Point(0, 0);
             this.계좌관리_P.Name = "계좌관리_P";
@@ -6666,62 +6663,62 @@ namespace 지니_64
             this.panel_mma.Controls.Add(this.label68);
             this.panel_mma.Controls.Add(this.label69);
             this.panel_mma.Controls.Add(this.label70);
-            this.panel_mma.Controls.Add(this.TB_rebalance_dma2_F);
-            this.panel_mma.Controls.Add(this.TB_rebalance_dma1_F);
-            this.panel_mma.Controls.Add(this.TB_rebalance_mma2_F);
-            this.panel_mma.Controls.Add(this.TB_rebalance_dma2_D);
-            this.panel_mma.Controls.Add(this.TB_rebalance_mma2_D);
-            this.panel_mma.Controls.Add(this.TB_rebalance_dma1_D);
-            this.panel_mma.Controls.Add(this.TB_rebalance_dma2_E);
-            this.panel_mma.Controls.Add(this.TB_rebalance_mma2_E);
-            this.panel_mma.Controls.Add(this.TB_rebalance_mma2_G);
-            this.panel_mma.Controls.Add(this.TB_rebalance_dma1_E);
-            this.panel_mma.Controls.Add(this.TB_rebalance_dma1_G);
-            this.panel_mma.Controls.Add(this.TB_rebalance_dma2_B);
-            this.panel_mma.Controls.Add(this.TB_rebalance_dma2_G);
-            this.panel_mma.Controls.Add(this.TB_rebalance_dma1_A);
-            this.panel_mma.Controls.Add(this.TB_rebalance_dma1_B);
-            this.panel_mma.Controls.Add(this.TB_rebalance_mma2_A);
-            this.panel_mma.Controls.Add(this.TB_rebalance_mma2_B);
-            this.panel_mma.Controls.Add(this.TB_rebalance_dma2_A);
-            this.panel_mma.Controls.Add(this.TB_rebalance_dma2_C);
-            this.panel_mma.Controls.Add(this.TB_rebalance_dma1_C);
-            this.panel_mma.Controls.Add(this.TB_rebalance_mma2_C);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_mma_배열_D);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_mma_배열_A);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_mma_배열_E);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_mma_배열_B);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_mma_배열_F);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_mma_배열_C);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_mma_배열_G);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_mma2_D);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_mma2_A);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_mma2_E);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_mma2_B);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_mma2_F);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_mma2_C);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_mma2_G);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma1_D);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma1_A);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma1_E);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma1_B);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma1_F);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma1_C);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma1_G);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma_배열_D);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma_배열_A);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma_배열_E);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma_배열_B);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma_배열_F);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma_배열_C);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma_배열_G);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma2_D);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma2_A);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma2_E);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma2_B);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma2_F);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma2_C);
-            this.panel_mma.Controls.Add(this.CBB_rebalance_dma2_G);
+            this.panel_mma.Controls.Add(this.TB_rebalance_DayMAPeriod2_F);
+            this.panel_mma.Controls.Add(this.TB_rebalance_DayMAPeriod1_F);
+            this.panel_mma.Controls.Add(this.TB_rebalance_MinMAPeriod2_F);
+            this.panel_mma.Controls.Add(this.TB_rebalance_DayMAPeriod2_D);
+            this.panel_mma.Controls.Add(this.TB_rebalance_MinMAPeriod2_D);
+            this.panel_mma.Controls.Add(this.TB_rebalance_DayMAPeriod1_D);
+            this.panel_mma.Controls.Add(this.TB_rebalance_DayMAPeriod2_E);
+            this.panel_mma.Controls.Add(this.TB_rebalance_MinMAPeriod2_E);
+            this.panel_mma.Controls.Add(this.TB_rebalance_MinMAPeriod2_G);
+            this.panel_mma.Controls.Add(this.TB_rebalance_DayMAPeriod1_E);
+            this.panel_mma.Controls.Add(this.TB_rebalance_DayMAPeriod1_G);
+            this.panel_mma.Controls.Add(this.TB_rebalance_DayMAPeriod2_B);
+            this.panel_mma.Controls.Add(this.TB_rebalance_DayMAPeriod2_G);
+            this.panel_mma.Controls.Add(this.TB_rebalance_DayMAPeriod1_A);
+            this.panel_mma.Controls.Add(this.TB_rebalance_DayMAPeriod1_B);
+            this.panel_mma.Controls.Add(this.TB_rebalance_MinMAPeriod2_A);
+            this.panel_mma.Controls.Add(this.TB_rebalance_MinMAPeriod2_B);
+            this.panel_mma.Controls.Add(this.TB_rebalance_DayMAPeriod2_A);
+            this.panel_mma.Controls.Add(this.TB_rebalance_DayMAPeriod2_C);
+            this.panel_mma.Controls.Add(this.TB_rebalance_DayMAPeriod1_C);
+            this.panel_mma.Controls.Add(this.TB_rebalance_MinMAPeriod2_C);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_MinMAPeriod1_배열_D);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_MinMAPeriod1_배열_A);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_MinMAPeriod1_배열_E);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_MinMAPeriod1_배열_B);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_MinMAPeriod1_배열_F);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_MinMAPeriod1_배열_C);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_MinMAPeriod1_배열_G);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_MinMAPeriod2_D);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_MinMAPeriod2_A);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_MinMAPeriod2_E);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_MinMAPeriod2_B);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_MinMAPeriod2_F);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_MinMAPeriod2_C);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_MinMAPeriod2_G);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod1_D);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod1_A);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod1_E);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod1_B);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod1_F);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod1_C);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod1_G);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod_배열_D);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod_배열_A);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod_배열_E);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod_배열_B);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod_배열_F);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod_배열_C);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod_배열_G);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod2_D);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod2_A);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod2_E);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod2_B);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod2_F);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod2_C);
+            this.panel_mma.Controls.Add(this.CBB_rebalance_DayMAPeriod2_G);
             this.panel_mma.Location = new System.Drawing.Point(638, 22);
             this.panel_mma.Name = "panel_mma";
             this.panel_mma.Size = new System.Drawing.Size(187, 160);
@@ -6797,941 +6794,941 @@ namespace 지니_64
             this.label70.Text = "일이 1";
             this.label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TB_rebalance_dma2_F
+            // TB_rebalance_DayMAPeriod2_F
             // 
-            this.TB_rebalance_dma2_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_dma2_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_dma2_F.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_dma2_F.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_dma2_F.Location = new System.Drawing.Point(113, 118);
-            this.TB_rebalance_dma2_F.MaxLength = 3;
-            this.TB_rebalance_dma2_F.Name = "TB_rebalance_dma2_F";
-            this.TB_rebalance_dma2_F.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_dma2_F.TabIndex = 116;
-            this.TB_rebalance_dma2_F.Text = "3";
-            this.TB_rebalance_dma2_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_dma2_F.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_dma2_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_DayMAPeriod2_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_DayMAPeriod2_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_DayMAPeriod2_F.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_DayMAPeriod2_F.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_DayMAPeriod2_F.Location = new System.Drawing.Point(113, 118);
+            this.TB_rebalance_DayMAPeriod2_F.MaxLength = 3;
+            this.TB_rebalance_DayMAPeriod2_F.Name = "TB_rebalance_DayMAPeriod2_F";
+            this.TB_rebalance_DayMAPeriod2_F.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_DayMAPeriod2_F.TabIndex = 116;
+            this.TB_rebalance_DayMAPeriod2_F.Text = "3";
+            this.TB_rebalance_DayMAPeriod2_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_DayMAPeriod2_F.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_DayMAPeriod2_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_dma1_F
+            // TB_rebalance_DayMAPeriod1_F
             // 
-            this.TB_rebalance_dma1_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_dma1_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_dma1_F.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_dma1_F.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_dma1_F.Location = new System.Drawing.Point(72, 118);
-            this.TB_rebalance_dma1_F.MaxLength = 3;
-            this.TB_rebalance_dma1_F.Name = "TB_rebalance_dma1_F";
-            this.TB_rebalance_dma1_F.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_dma1_F.TabIndex = 116;
-            this.TB_rebalance_dma1_F.Text = "3";
-            this.TB_rebalance_dma1_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_dma1_F.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_dma1_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_DayMAPeriod1_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_DayMAPeriod1_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_DayMAPeriod1_F.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_DayMAPeriod1_F.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_DayMAPeriod1_F.Location = new System.Drawing.Point(72, 118);
+            this.TB_rebalance_DayMAPeriod1_F.MaxLength = 3;
+            this.TB_rebalance_DayMAPeriod1_F.Name = "TB_rebalance_DayMAPeriod1_F";
+            this.TB_rebalance_DayMAPeriod1_F.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_DayMAPeriod1_F.TabIndex = 116;
+            this.TB_rebalance_DayMAPeriod1_F.Text = "3";
+            this.TB_rebalance_DayMAPeriod1_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_DayMAPeriod1_F.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_DayMAPeriod1_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_mma2_F
+            // TB_rebalance_MinMAPeriod2_F
             // 
-            this.TB_rebalance_mma2_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_mma2_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_mma2_F.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_mma2_F.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_mma2_F.Location = new System.Drawing.Point(-1, 118);
-            this.TB_rebalance_mma2_F.MaxLength = 3;
-            this.TB_rebalance_mma2_F.Name = "TB_rebalance_mma2_F";
-            this.TB_rebalance_mma2_F.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_mma2_F.TabIndex = 116;
-            this.TB_rebalance_mma2_F.Text = "3";
-            this.TB_rebalance_mma2_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_mma2_F.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_mma2_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_MinMAPeriod2_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_MinMAPeriod2_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_MinMAPeriod2_F.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_MinMAPeriod2_F.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_MinMAPeriod2_F.Location = new System.Drawing.Point(-1, 118);
+            this.TB_rebalance_MinMAPeriod2_F.MaxLength = 3;
+            this.TB_rebalance_MinMAPeriod2_F.Name = "TB_rebalance_MinMAPeriod2_F";
+            this.TB_rebalance_MinMAPeriod2_F.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_MinMAPeriod2_F.TabIndex = 116;
+            this.TB_rebalance_MinMAPeriod2_F.Text = "3";
+            this.TB_rebalance_MinMAPeriod2_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_MinMAPeriod2_F.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_MinMAPeriod2_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_dma2_D
+            // TB_rebalance_DayMAPeriod2_D
             // 
-            this.TB_rebalance_dma2_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_dma2_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_dma2_D.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_dma2_D.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_dma2_D.Location = new System.Drawing.Point(113, 78);
-            this.TB_rebalance_dma2_D.MaxLength = 3;
-            this.TB_rebalance_dma2_D.Name = "TB_rebalance_dma2_D";
-            this.TB_rebalance_dma2_D.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_dma2_D.TabIndex = 116;
-            this.TB_rebalance_dma2_D.Text = "3";
-            this.TB_rebalance_dma2_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_dma2_D.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_dma2_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_DayMAPeriod2_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_DayMAPeriod2_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_DayMAPeriod2_D.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_DayMAPeriod2_D.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_DayMAPeriod2_D.Location = new System.Drawing.Point(113, 78);
+            this.TB_rebalance_DayMAPeriod2_D.MaxLength = 3;
+            this.TB_rebalance_DayMAPeriod2_D.Name = "TB_rebalance_DayMAPeriod2_D";
+            this.TB_rebalance_DayMAPeriod2_D.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_DayMAPeriod2_D.TabIndex = 116;
+            this.TB_rebalance_DayMAPeriod2_D.Text = "3";
+            this.TB_rebalance_DayMAPeriod2_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_DayMAPeriod2_D.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_DayMAPeriod2_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_mma2_D
+            // TB_rebalance_MinMAPeriod2_D
             // 
-            this.TB_rebalance_mma2_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_mma2_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_mma2_D.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_mma2_D.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_mma2_D.Location = new System.Drawing.Point(-1, 78);
-            this.TB_rebalance_mma2_D.MaxLength = 3;
-            this.TB_rebalance_mma2_D.Name = "TB_rebalance_mma2_D";
-            this.TB_rebalance_mma2_D.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_mma2_D.TabIndex = 116;
-            this.TB_rebalance_mma2_D.Text = "3";
-            this.TB_rebalance_mma2_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_mma2_D.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_mma2_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_MinMAPeriod2_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_MinMAPeriod2_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_MinMAPeriod2_D.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_MinMAPeriod2_D.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_MinMAPeriod2_D.Location = new System.Drawing.Point(-1, 78);
+            this.TB_rebalance_MinMAPeriod2_D.MaxLength = 3;
+            this.TB_rebalance_MinMAPeriod2_D.Name = "TB_rebalance_MinMAPeriod2_D";
+            this.TB_rebalance_MinMAPeriod2_D.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_MinMAPeriod2_D.TabIndex = 116;
+            this.TB_rebalance_MinMAPeriod2_D.Text = "3";
+            this.TB_rebalance_MinMAPeriod2_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_MinMAPeriod2_D.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_MinMAPeriod2_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_dma1_D
+            // TB_rebalance_DayMAPeriod1_D
             // 
-            this.TB_rebalance_dma1_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_dma1_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_dma1_D.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_dma1_D.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_dma1_D.Location = new System.Drawing.Point(72, 78);
-            this.TB_rebalance_dma1_D.MaxLength = 3;
-            this.TB_rebalance_dma1_D.Name = "TB_rebalance_dma1_D";
-            this.TB_rebalance_dma1_D.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_dma1_D.TabIndex = 116;
-            this.TB_rebalance_dma1_D.Text = "3";
-            this.TB_rebalance_dma1_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_dma1_D.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_dma1_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_DayMAPeriod1_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_DayMAPeriod1_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_DayMAPeriod1_D.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_DayMAPeriod1_D.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_DayMAPeriod1_D.Location = new System.Drawing.Point(72, 78);
+            this.TB_rebalance_DayMAPeriod1_D.MaxLength = 3;
+            this.TB_rebalance_DayMAPeriod1_D.Name = "TB_rebalance_DayMAPeriod1_D";
+            this.TB_rebalance_DayMAPeriod1_D.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_DayMAPeriod1_D.TabIndex = 116;
+            this.TB_rebalance_DayMAPeriod1_D.Text = "3";
+            this.TB_rebalance_DayMAPeriod1_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_DayMAPeriod1_D.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_DayMAPeriod1_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_dma2_E
+            // TB_rebalance_DayMAPeriod2_E
             // 
-            this.TB_rebalance_dma2_E.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_dma2_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_dma2_E.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_dma2_E.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_dma2_E.Location = new System.Drawing.Point(113, 98);
-            this.TB_rebalance_dma2_E.MaxLength = 3;
-            this.TB_rebalance_dma2_E.Name = "TB_rebalance_dma2_E";
-            this.TB_rebalance_dma2_E.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_dma2_E.TabIndex = 116;
-            this.TB_rebalance_dma2_E.Text = "3";
-            this.TB_rebalance_dma2_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_dma2_E.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_dma2_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_DayMAPeriod2_E.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_DayMAPeriod2_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_DayMAPeriod2_E.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_DayMAPeriod2_E.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_DayMAPeriod2_E.Location = new System.Drawing.Point(113, 98);
+            this.TB_rebalance_DayMAPeriod2_E.MaxLength = 3;
+            this.TB_rebalance_DayMAPeriod2_E.Name = "TB_rebalance_DayMAPeriod2_E";
+            this.TB_rebalance_DayMAPeriod2_E.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_DayMAPeriod2_E.TabIndex = 116;
+            this.TB_rebalance_DayMAPeriod2_E.Text = "3";
+            this.TB_rebalance_DayMAPeriod2_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_DayMAPeriod2_E.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_DayMAPeriod2_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_mma2_E
+            // TB_rebalance_MinMAPeriod2_E
             // 
-            this.TB_rebalance_mma2_E.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_mma2_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_mma2_E.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_mma2_E.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_mma2_E.Location = new System.Drawing.Point(-1, 98);
-            this.TB_rebalance_mma2_E.MaxLength = 3;
-            this.TB_rebalance_mma2_E.Name = "TB_rebalance_mma2_E";
-            this.TB_rebalance_mma2_E.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_mma2_E.TabIndex = 116;
-            this.TB_rebalance_mma2_E.Text = "3";
-            this.TB_rebalance_mma2_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_mma2_E.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_mma2_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_MinMAPeriod2_E.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_MinMAPeriod2_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_MinMAPeriod2_E.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_MinMAPeriod2_E.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_MinMAPeriod2_E.Location = new System.Drawing.Point(-1, 98);
+            this.TB_rebalance_MinMAPeriod2_E.MaxLength = 3;
+            this.TB_rebalance_MinMAPeriod2_E.Name = "TB_rebalance_MinMAPeriod2_E";
+            this.TB_rebalance_MinMAPeriod2_E.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_MinMAPeriod2_E.TabIndex = 116;
+            this.TB_rebalance_MinMAPeriod2_E.Text = "3";
+            this.TB_rebalance_MinMAPeriod2_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_MinMAPeriod2_E.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_MinMAPeriod2_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_mma2_G
+            // TB_rebalance_MinMAPeriod2_G
             // 
-            this.TB_rebalance_mma2_G.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_mma2_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_mma2_G.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_mma2_G.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_mma2_G.Location = new System.Drawing.Point(-1, 138);
-            this.TB_rebalance_mma2_G.MaxLength = 3;
-            this.TB_rebalance_mma2_G.Name = "TB_rebalance_mma2_G";
-            this.TB_rebalance_mma2_G.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_mma2_G.TabIndex = 116;
-            this.TB_rebalance_mma2_G.Text = "3";
-            this.TB_rebalance_mma2_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_mma2_G.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_mma2_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_MinMAPeriod2_G.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_MinMAPeriod2_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_MinMAPeriod2_G.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_MinMAPeriod2_G.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_MinMAPeriod2_G.Location = new System.Drawing.Point(-1, 138);
+            this.TB_rebalance_MinMAPeriod2_G.MaxLength = 3;
+            this.TB_rebalance_MinMAPeriod2_G.Name = "TB_rebalance_MinMAPeriod2_G";
+            this.TB_rebalance_MinMAPeriod2_G.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_MinMAPeriod2_G.TabIndex = 116;
+            this.TB_rebalance_MinMAPeriod2_G.Text = "3";
+            this.TB_rebalance_MinMAPeriod2_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_MinMAPeriod2_G.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_MinMAPeriod2_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_dma1_E
+            // TB_rebalance_DayMAPeriod1_E
             // 
-            this.TB_rebalance_dma1_E.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_dma1_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_dma1_E.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_dma1_E.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_dma1_E.Location = new System.Drawing.Point(72, 98);
-            this.TB_rebalance_dma1_E.MaxLength = 3;
-            this.TB_rebalance_dma1_E.Name = "TB_rebalance_dma1_E";
-            this.TB_rebalance_dma1_E.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_dma1_E.TabIndex = 116;
-            this.TB_rebalance_dma1_E.Text = "3";
-            this.TB_rebalance_dma1_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_dma1_E.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_dma1_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_DayMAPeriod1_E.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_DayMAPeriod1_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_DayMAPeriod1_E.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_DayMAPeriod1_E.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_DayMAPeriod1_E.Location = new System.Drawing.Point(72, 98);
+            this.TB_rebalance_DayMAPeriod1_E.MaxLength = 3;
+            this.TB_rebalance_DayMAPeriod1_E.Name = "TB_rebalance_DayMAPeriod1_E";
+            this.TB_rebalance_DayMAPeriod1_E.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_DayMAPeriod1_E.TabIndex = 116;
+            this.TB_rebalance_DayMAPeriod1_E.Text = "3";
+            this.TB_rebalance_DayMAPeriod1_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_DayMAPeriod1_E.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_DayMAPeriod1_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_dma1_G
+            // TB_rebalance_DayMAPeriod1_G
             // 
-            this.TB_rebalance_dma1_G.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_dma1_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_dma1_G.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_dma1_G.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_dma1_G.Location = new System.Drawing.Point(72, 138);
-            this.TB_rebalance_dma1_G.MaxLength = 3;
-            this.TB_rebalance_dma1_G.Name = "TB_rebalance_dma1_G";
-            this.TB_rebalance_dma1_G.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_dma1_G.TabIndex = 116;
-            this.TB_rebalance_dma1_G.Text = "3";
-            this.TB_rebalance_dma1_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_dma1_G.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_dma1_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_DayMAPeriod1_G.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_DayMAPeriod1_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_DayMAPeriod1_G.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_DayMAPeriod1_G.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_DayMAPeriod1_G.Location = new System.Drawing.Point(72, 138);
+            this.TB_rebalance_DayMAPeriod1_G.MaxLength = 3;
+            this.TB_rebalance_DayMAPeriod1_G.Name = "TB_rebalance_DayMAPeriod1_G";
+            this.TB_rebalance_DayMAPeriod1_G.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_DayMAPeriod1_G.TabIndex = 116;
+            this.TB_rebalance_DayMAPeriod1_G.Text = "3";
+            this.TB_rebalance_DayMAPeriod1_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_DayMAPeriod1_G.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_DayMAPeriod1_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_dma2_B
+            // TB_rebalance_DayMAPeriod2_B
             // 
-            this.TB_rebalance_dma2_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_dma2_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_dma2_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_dma2_B.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_dma2_B.Location = new System.Drawing.Point(113, 38);
-            this.TB_rebalance_dma2_B.MaxLength = 3;
-            this.TB_rebalance_dma2_B.Name = "TB_rebalance_dma2_B";
-            this.TB_rebalance_dma2_B.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_dma2_B.TabIndex = 116;
-            this.TB_rebalance_dma2_B.Text = "3";
-            this.TB_rebalance_dma2_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_dma2_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_dma2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_DayMAPeriod2_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_DayMAPeriod2_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_DayMAPeriod2_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_DayMAPeriod2_B.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_DayMAPeriod2_B.Location = new System.Drawing.Point(113, 38);
+            this.TB_rebalance_DayMAPeriod2_B.MaxLength = 3;
+            this.TB_rebalance_DayMAPeriod2_B.Name = "TB_rebalance_DayMAPeriod2_B";
+            this.TB_rebalance_DayMAPeriod2_B.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_DayMAPeriod2_B.TabIndex = 116;
+            this.TB_rebalance_DayMAPeriod2_B.Text = "3";
+            this.TB_rebalance_DayMAPeriod2_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_DayMAPeriod2_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_DayMAPeriod2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_dma2_G
+            // TB_rebalance_DayMAPeriod2_G
             // 
-            this.TB_rebalance_dma2_G.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_dma2_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_dma2_G.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_dma2_G.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_dma2_G.Location = new System.Drawing.Point(113, 138);
-            this.TB_rebalance_dma2_G.MaxLength = 3;
-            this.TB_rebalance_dma2_G.Name = "TB_rebalance_dma2_G";
-            this.TB_rebalance_dma2_G.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_dma2_G.TabIndex = 116;
-            this.TB_rebalance_dma2_G.Text = "3";
-            this.TB_rebalance_dma2_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_dma2_G.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_dma2_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_DayMAPeriod2_G.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_DayMAPeriod2_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_DayMAPeriod2_G.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_DayMAPeriod2_G.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_DayMAPeriod2_G.Location = new System.Drawing.Point(113, 138);
+            this.TB_rebalance_DayMAPeriod2_G.MaxLength = 3;
+            this.TB_rebalance_DayMAPeriod2_G.Name = "TB_rebalance_DayMAPeriod2_G";
+            this.TB_rebalance_DayMAPeriod2_G.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_DayMAPeriod2_G.TabIndex = 116;
+            this.TB_rebalance_DayMAPeriod2_G.Text = "3";
+            this.TB_rebalance_DayMAPeriod2_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_DayMAPeriod2_G.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_DayMAPeriod2_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_dma1_A
+            // TB_rebalance_DayMAPeriod1_A
             // 
-            this.TB_rebalance_dma1_A.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_dma1_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_dma1_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_dma1_A.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_dma1_A.Location = new System.Drawing.Point(72, 18);
-            this.TB_rebalance_dma1_A.MaxLength = 3;
-            this.TB_rebalance_dma1_A.Name = "TB_rebalance_dma1_A";
-            this.TB_rebalance_dma1_A.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_dma1_A.TabIndex = 116;
-            this.TB_rebalance_dma1_A.Text = "300";
-            this.TB_rebalance_dma1_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_dma1_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_dma1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_DayMAPeriod1_A.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_DayMAPeriod1_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_DayMAPeriod1_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_DayMAPeriod1_A.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_DayMAPeriod1_A.Location = new System.Drawing.Point(72, 18);
+            this.TB_rebalance_DayMAPeriod1_A.MaxLength = 3;
+            this.TB_rebalance_DayMAPeriod1_A.Name = "TB_rebalance_DayMAPeriod1_A";
+            this.TB_rebalance_DayMAPeriod1_A.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_DayMAPeriod1_A.TabIndex = 116;
+            this.TB_rebalance_DayMAPeriod1_A.Text = "300";
+            this.TB_rebalance_DayMAPeriod1_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_DayMAPeriod1_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_DayMAPeriod1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_dma1_B
+            // TB_rebalance_DayMAPeriod1_B
             // 
-            this.TB_rebalance_dma1_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_dma1_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_dma1_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_dma1_B.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_dma1_B.Location = new System.Drawing.Point(72, 38);
-            this.TB_rebalance_dma1_B.MaxLength = 3;
-            this.TB_rebalance_dma1_B.Name = "TB_rebalance_dma1_B";
-            this.TB_rebalance_dma1_B.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_dma1_B.TabIndex = 116;
-            this.TB_rebalance_dma1_B.Text = "3";
-            this.TB_rebalance_dma1_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_dma1_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_dma1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_DayMAPeriod1_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_DayMAPeriod1_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_DayMAPeriod1_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_DayMAPeriod1_B.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_DayMAPeriod1_B.Location = new System.Drawing.Point(72, 38);
+            this.TB_rebalance_DayMAPeriod1_B.MaxLength = 3;
+            this.TB_rebalance_DayMAPeriod1_B.Name = "TB_rebalance_DayMAPeriod1_B";
+            this.TB_rebalance_DayMAPeriod1_B.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_DayMAPeriod1_B.TabIndex = 116;
+            this.TB_rebalance_DayMAPeriod1_B.Text = "3";
+            this.TB_rebalance_DayMAPeriod1_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_DayMAPeriod1_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_DayMAPeriod1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_mma2_A
+            // TB_rebalance_MinMAPeriod2_A
             // 
-            this.TB_rebalance_mma2_A.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_mma2_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_mma2_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_mma2_A.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_mma2_A.Location = new System.Drawing.Point(-1, 18);
-            this.TB_rebalance_mma2_A.MaxLength = 3;
-            this.TB_rebalance_mma2_A.Name = "TB_rebalance_mma2_A";
-            this.TB_rebalance_mma2_A.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_mma2_A.TabIndex = 116;
-            this.TB_rebalance_mma2_A.Text = "300";
-            this.TB_rebalance_mma2_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_mma2_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_mma2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_MinMAPeriod2_A.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_MinMAPeriod2_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_MinMAPeriod2_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_MinMAPeriod2_A.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_MinMAPeriod2_A.Location = new System.Drawing.Point(-1, 18);
+            this.TB_rebalance_MinMAPeriod2_A.MaxLength = 3;
+            this.TB_rebalance_MinMAPeriod2_A.Name = "TB_rebalance_MinMAPeriod2_A";
+            this.TB_rebalance_MinMAPeriod2_A.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_MinMAPeriod2_A.TabIndex = 116;
+            this.TB_rebalance_MinMAPeriod2_A.Text = "300";
+            this.TB_rebalance_MinMAPeriod2_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_MinMAPeriod2_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_MinMAPeriod2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_mma2_B
+            // TB_rebalance_MinMAPeriod2_B
             // 
-            this.TB_rebalance_mma2_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_mma2_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_mma2_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_mma2_B.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_mma2_B.Location = new System.Drawing.Point(-1, 38);
-            this.TB_rebalance_mma2_B.MaxLength = 3;
-            this.TB_rebalance_mma2_B.Name = "TB_rebalance_mma2_B";
-            this.TB_rebalance_mma2_B.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_mma2_B.TabIndex = 116;
-            this.TB_rebalance_mma2_B.Text = "3";
-            this.TB_rebalance_mma2_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_mma2_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_mma2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_MinMAPeriod2_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_MinMAPeriod2_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_MinMAPeriod2_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_MinMAPeriod2_B.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_MinMAPeriod2_B.Location = new System.Drawing.Point(-1, 38);
+            this.TB_rebalance_MinMAPeriod2_B.MaxLength = 3;
+            this.TB_rebalance_MinMAPeriod2_B.Name = "TB_rebalance_MinMAPeriod2_B";
+            this.TB_rebalance_MinMAPeriod2_B.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_MinMAPeriod2_B.TabIndex = 116;
+            this.TB_rebalance_MinMAPeriod2_B.Text = "3";
+            this.TB_rebalance_MinMAPeriod2_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_MinMAPeriod2_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_MinMAPeriod2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_dma2_A
+            // TB_rebalance_DayMAPeriod2_A
             // 
-            this.TB_rebalance_dma2_A.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_dma2_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_dma2_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_dma2_A.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_dma2_A.Location = new System.Drawing.Point(113, 18);
-            this.TB_rebalance_dma2_A.MaxLength = 3;
-            this.TB_rebalance_dma2_A.Name = "TB_rebalance_dma2_A";
-            this.TB_rebalance_dma2_A.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_dma2_A.TabIndex = 116;
-            this.TB_rebalance_dma2_A.Text = "300";
-            this.TB_rebalance_dma2_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_dma2_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_dma2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_DayMAPeriod2_A.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_DayMAPeriod2_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_DayMAPeriod2_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_DayMAPeriod2_A.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_DayMAPeriod2_A.Location = new System.Drawing.Point(113, 18);
+            this.TB_rebalance_DayMAPeriod2_A.MaxLength = 3;
+            this.TB_rebalance_DayMAPeriod2_A.Name = "TB_rebalance_DayMAPeriod2_A";
+            this.TB_rebalance_DayMAPeriod2_A.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_DayMAPeriod2_A.TabIndex = 116;
+            this.TB_rebalance_DayMAPeriod2_A.Text = "300";
+            this.TB_rebalance_DayMAPeriod2_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_DayMAPeriod2_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_DayMAPeriod2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_dma2_C
+            // TB_rebalance_DayMAPeriod2_C
             // 
-            this.TB_rebalance_dma2_C.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_dma2_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_dma2_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_dma2_C.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_dma2_C.Location = new System.Drawing.Point(113, 58);
-            this.TB_rebalance_dma2_C.MaxLength = 3;
-            this.TB_rebalance_dma2_C.Name = "TB_rebalance_dma2_C";
-            this.TB_rebalance_dma2_C.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_dma2_C.TabIndex = 116;
-            this.TB_rebalance_dma2_C.Text = "3";
-            this.TB_rebalance_dma2_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_dma2_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_dma2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_DayMAPeriod2_C.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_DayMAPeriod2_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_DayMAPeriod2_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_DayMAPeriod2_C.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_DayMAPeriod2_C.Location = new System.Drawing.Point(113, 58);
+            this.TB_rebalance_DayMAPeriod2_C.MaxLength = 3;
+            this.TB_rebalance_DayMAPeriod2_C.Name = "TB_rebalance_DayMAPeriod2_C";
+            this.TB_rebalance_DayMAPeriod2_C.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_DayMAPeriod2_C.TabIndex = 116;
+            this.TB_rebalance_DayMAPeriod2_C.Text = "3";
+            this.TB_rebalance_DayMAPeriod2_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_DayMAPeriod2_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_DayMAPeriod2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_dma1_C
+            // TB_rebalance_DayMAPeriod1_C
             // 
-            this.TB_rebalance_dma1_C.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_dma1_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_dma1_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_dma1_C.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_dma1_C.Location = new System.Drawing.Point(72, 58);
-            this.TB_rebalance_dma1_C.MaxLength = 3;
-            this.TB_rebalance_dma1_C.Name = "TB_rebalance_dma1_C";
-            this.TB_rebalance_dma1_C.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_dma1_C.TabIndex = 116;
-            this.TB_rebalance_dma1_C.Text = "3";
-            this.TB_rebalance_dma1_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_dma1_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_dma1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_DayMAPeriod1_C.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_DayMAPeriod1_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_DayMAPeriod1_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_DayMAPeriod1_C.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_DayMAPeriod1_C.Location = new System.Drawing.Point(72, 58);
+            this.TB_rebalance_DayMAPeriod1_C.MaxLength = 3;
+            this.TB_rebalance_DayMAPeriod1_C.Name = "TB_rebalance_DayMAPeriod1_C";
+            this.TB_rebalance_DayMAPeriod1_C.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_DayMAPeriod1_C.TabIndex = 116;
+            this.TB_rebalance_DayMAPeriod1_C.Text = "3";
+            this.TB_rebalance_DayMAPeriod1_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_DayMAPeriod1_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_DayMAPeriod1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_mma2_C
+            // TB_rebalance_MinMAPeriod2_C
             // 
-            this.TB_rebalance_mma2_C.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_mma2_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_mma2_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_mma2_C.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_mma2_C.Location = new System.Drawing.Point(-1, 58);
-            this.TB_rebalance_mma2_C.MaxLength = 3;
-            this.TB_rebalance_mma2_C.Name = "TB_rebalance_mma2_C";
-            this.TB_rebalance_mma2_C.Size = new System.Drawing.Size(25, 21);
-            this.TB_rebalance_mma2_C.TabIndex = 116;
-            this.TB_rebalance_mma2_C.Text = "3";
-            this.TB_rebalance_mma2_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_mma2_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_mma2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_MinMAPeriod2_C.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_MinMAPeriod2_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_MinMAPeriod2_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_MinMAPeriod2_C.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_MinMAPeriod2_C.Location = new System.Drawing.Point(-1, 58);
+            this.TB_rebalance_MinMAPeriod2_C.MaxLength = 3;
+            this.TB_rebalance_MinMAPeriod2_C.Name = "TB_rebalance_MinMAPeriod2_C";
+            this.TB_rebalance_MinMAPeriod2_C.Size = new System.Drawing.Size(25, 21);
+            this.TB_rebalance_MinMAPeriod2_C.TabIndex = 116;
+            this.TB_rebalance_MinMAPeriod2_C.Text = "3";
+            this.TB_rebalance_MinMAPeriod2_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_MinMAPeriod2_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_MinMAPeriod2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // CBB_rebalance_mma_배열_D
+            // CBB_rebalance_MinMAPeriod1_배열_D
             // 
-            this.CBB_rebalance_mma_배열_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_mma_배열_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma_배열_D.DropDownWidth = 50;
-            this.CBB_rebalance_mma_배열_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma_배열_D.FormattingEnabled = true;
-            this.CBB_rebalance_mma_배열_D.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod1_배열_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_MinMAPeriod1_배열_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod1_배열_D.DropDownWidth = 50;
+            this.CBB_rebalance_MinMAPeriod1_배열_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod1_배열_D.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod1_배열_D.Items.AddRange(new object[] {
             " Ｘ",
             "1>2",
             "1<2"});
-            this.CBB_rebalance_mma_배열_D.Location = new System.Drawing.Point(41, 78);
-            this.CBB_rebalance_mma_배열_D.Name = "CBB_rebalance_mma_배열_D";
-            this.CBB_rebalance_mma_배열_D.Size = new System.Drawing.Size(45, 21);
-            this.CBB_rebalance_mma_배열_D.TabIndex = 66;
-            this.CBB_rebalance_mma_배열_D.DropDownClosed += new System.EventHandler(this.CBB_mma_배열_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod1_배열_D.Location = new System.Drawing.Point(41, 78);
+            this.CBB_rebalance_MinMAPeriod1_배열_D.Name = "CBB_rebalance_MinMAPeriod1_배열_D";
+            this.CBB_rebalance_MinMAPeriod1_배열_D.Size = new System.Drawing.Size(45, 21);
+            this.CBB_rebalance_MinMAPeriod1_배열_D.TabIndex = 66;
+            this.CBB_rebalance_MinMAPeriod1_배열_D.DropDownClosed += new System.EventHandler(this.CBB_mma_배열_DropDownClosed);
             // 
-            // CBB_rebalance_mma_배열_A
+            // CBB_rebalance_MinMAPeriod1_배열_A
             // 
-            this.CBB_rebalance_mma_배열_A.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_mma_배열_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma_배열_A.DropDownWidth = 45;
-            this.CBB_rebalance_mma_배열_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma_배열_A.FormattingEnabled = true;
-            this.CBB_rebalance_mma_배열_A.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod1_배열_A.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_MinMAPeriod1_배열_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod1_배열_A.DropDownWidth = 45;
+            this.CBB_rebalance_MinMAPeriod1_배열_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod1_배열_A.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod1_배열_A.Items.AddRange(new object[] {
             " Ｘ",
             "1>2",
             "1<2"});
-            this.CBB_rebalance_mma_배열_A.Location = new System.Drawing.Point(41, 18);
-            this.CBB_rebalance_mma_배열_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.CBB_rebalance_mma_배열_A.Name = "CBB_rebalance_mma_배열_A";
-            this.CBB_rebalance_mma_배열_A.Size = new System.Drawing.Size(45, 21);
-            this.CBB_rebalance_mma_배열_A.TabIndex = 66;
-            this.CBB_rebalance_mma_배열_A.DropDownClosed += new System.EventHandler(this.CBB_mma_배열_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod1_배열_A.Location = new System.Drawing.Point(41, 18);
+            this.CBB_rebalance_MinMAPeriod1_배열_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.CBB_rebalance_MinMAPeriod1_배열_A.Name = "CBB_rebalance_MinMAPeriod1_배열_A";
+            this.CBB_rebalance_MinMAPeriod1_배열_A.Size = new System.Drawing.Size(45, 21);
+            this.CBB_rebalance_MinMAPeriod1_배열_A.TabIndex = 66;
+            this.CBB_rebalance_MinMAPeriod1_배열_A.DropDownClosed += new System.EventHandler(this.CBB_mma_배열_DropDownClosed);
             // 
-            // CBB_rebalance_mma_배열_E
+            // CBB_rebalance_MinMAPeriod1_배열_E
             // 
-            this.CBB_rebalance_mma_배열_E.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_mma_배열_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma_배열_E.DropDownWidth = 50;
-            this.CBB_rebalance_mma_배열_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma_배열_E.FormattingEnabled = true;
-            this.CBB_rebalance_mma_배열_E.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod1_배열_E.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_MinMAPeriod1_배열_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod1_배열_E.DropDownWidth = 50;
+            this.CBB_rebalance_MinMAPeriod1_배열_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod1_배열_E.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod1_배열_E.Items.AddRange(new object[] {
             " Ｘ",
             "1>2",
             "1<2"});
-            this.CBB_rebalance_mma_배열_E.Location = new System.Drawing.Point(41, 98);
-            this.CBB_rebalance_mma_배열_E.Name = "CBB_rebalance_mma_배열_E";
-            this.CBB_rebalance_mma_배열_E.Size = new System.Drawing.Size(45, 21);
-            this.CBB_rebalance_mma_배열_E.TabIndex = 66;
-            this.CBB_rebalance_mma_배열_E.DropDownClosed += new System.EventHandler(this.CBB_mma_배열_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod1_배열_E.Location = new System.Drawing.Point(41, 98);
+            this.CBB_rebalance_MinMAPeriod1_배열_E.Name = "CBB_rebalance_MinMAPeriod1_배열_E";
+            this.CBB_rebalance_MinMAPeriod1_배열_E.Size = new System.Drawing.Size(45, 21);
+            this.CBB_rebalance_MinMAPeriod1_배열_E.TabIndex = 66;
+            this.CBB_rebalance_MinMAPeriod1_배열_E.DropDownClosed += new System.EventHandler(this.CBB_mma_배열_DropDownClosed);
             // 
-            // CBB_rebalance_mma_배열_B
+            // CBB_rebalance_MinMAPeriod1_배열_B
             // 
-            this.CBB_rebalance_mma_배열_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_mma_배열_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma_배열_B.DropDownWidth = 50;
-            this.CBB_rebalance_mma_배열_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma_배열_B.FormattingEnabled = true;
-            this.CBB_rebalance_mma_배열_B.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod1_배열_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_MinMAPeriod1_배열_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod1_배열_B.DropDownWidth = 50;
+            this.CBB_rebalance_MinMAPeriod1_배열_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod1_배열_B.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod1_배열_B.Items.AddRange(new object[] {
             " Ｘ",
             "1>2",
             "1<2"});
-            this.CBB_rebalance_mma_배열_B.Location = new System.Drawing.Point(41, 38);
-            this.CBB_rebalance_mma_배열_B.Name = "CBB_rebalance_mma_배열_B";
-            this.CBB_rebalance_mma_배열_B.Size = new System.Drawing.Size(45, 21);
-            this.CBB_rebalance_mma_배열_B.TabIndex = 66;
-            this.CBB_rebalance_mma_배열_B.DropDownClosed += new System.EventHandler(this.CBB_mma_배열_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod1_배열_B.Location = new System.Drawing.Point(41, 38);
+            this.CBB_rebalance_MinMAPeriod1_배열_B.Name = "CBB_rebalance_MinMAPeriod1_배열_B";
+            this.CBB_rebalance_MinMAPeriod1_배열_B.Size = new System.Drawing.Size(45, 21);
+            this.CBB_rebalance_MinMAPeriod1_배열_B.TabIndex = 66;
+            this.CBB_rebalance_MinMAPeriod1_배열_B.DropDownClosed += new System.EventHandler(this.CBB_mma_배열_DropDownClosed);
             // 
-            // CBB_rebalance_mma_배열_F
+            // CBB_rebalance_MinMAPeriod1_배열_F
             // 
-            this.CBB_rebalance_mma_배열_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_mma_배열_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma_배열_F.DropDownWidth = 50;
-            this.CBB_rebalance_mma_배열_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma_배열_F.FormattingEnabled = true;
-            this.CBB_rebalance_mma_배열_F.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod1_배열_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_MinMAPeriod1_배열_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod1_배열_F.DropDownWidth = 50;
+            this.CBB_rebalance_MinMAPeriod1_배열_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod1_배열_F.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod1_배열_F.Items.AddRange(new object[] {
             " Ｘ",
             "1>2",
             "1<2"});
-            this.CBB_rebalance_mma_배열_F.Location = new System.Drawing.Point(41, 118);
-            this.CBB_rebalance_mma_배열_F.Name = "CBB_rebalance_mma_배열_F";
-            this.CBB_rebalance_mma_배열_F.Size = new System.Drawing.Size(45, 21);
-            this.CBB_rebalance_mma_배열_F.TabIndex = 66;
-            this.CBB_rebalance_mma_배열_F.DropDownClosed += new System.EventHandler(this.CBB_mma_배열_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod1_배열_F.Location = new System.Drawing.Point(41, 118);
+            this.CBB_rebalance_MinMAPeriod1_배열_F.Name = "CBB_rebalance_MinMAPeriod1_배열_F";
+            this.CBB_rebalance_MinMAPeriod1_배열_F.Size = new System.Drawing.Size(45, 21);
+            this.CBB_rebalance_MinMAPeriod1_배열_F.TabIndex = 66;
+            this.CBB_rebalance_MinMAPeriod1_배열_F.DropDownClosed += new System.EventHandler(this.CBB_mma_배열_DropDownClosed);
             // 
-            // CBB_rebalance_mma_배열_C
+            // CBB_rebalance_MinMAPeriod1_배열_C
             // 
-            this.CBB_rebalance_mma_배열_C.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_mma_배열_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma_배열_C.DropDownWidth = 55;
-            this.CBB_rebalance_mma_배열_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma_배열_C.FormattingEnabled = true;
-            this.CBB_rebalance_mma_배열_C.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod1_배열_C.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_MinMAPeriod1_배열_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod1_배열_C.DropDownWidth = 55;
+            this.CBB_rebalance_MinMAPeriod1_배열_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod1_배열_C.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod1_배열_C.Items.AddRange(new object[] {
             " Ｘ",
             "1>2",
             "1<2"});
-            this.CBB_rebalance_mma_배열_C.Location = new System.Drawing.Point(41, 58);
-            this.CBB_rebalance_mma_배열_C.Name = "CBB_rebalance_mma_배열_C";
-            this.CBB_rebalance_mma_배열_C.Size = new System.Drawing.Size(45, 21);
-            this.CBB_rebalance_mma_배열_C.TabIndex = 66;
-            this.CBB_rebalance_mma_배열_C.DropDownClosed += new System.EventHandler(this.CBB_mma_배열_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod1_배열_C.Location = new System.Drawing.Point(41, 58);
+            this.CBB_rebalance_MinMAPeriod1_배열_C.Name = "CBB_rebalance_MinMAPeriod1_배열_C";
+            this.CBB_rebalance_MinMAPeriod1_배열_C.Size = new System.Drawing.Size(45, 21);
+            this.CBB_rebalance_MinMAPeriod1_배열_C.TabIndex = 66;
+            this.CBB_rebalance_MinMAPeriod1_배열_C.DropDownClosed += new System.EventHandler(this.CBB_mma_배열_DropDownClosed);
             // 
-            // CBB_rebalance_mma_배열_G
+            // CBB_rebalance_MinMAPeriod1_배열_G
             // 
-            this.CBB_rebalance_mma_배열_G.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_mma_배열_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma_배열_G.DropDownWidth = 50;
-            this.CBB_rebalance_mma_배열_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma_배열_G.FormattingEnabled = true;
-            this.CBB_rebalance_mma_배열_G.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod1_배열_G.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_MinMAPeriod1_배열_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod1_배열_G.DropDownWidth = 50;
+            this.CBB_rebalance_MinMAPeriod1_배열_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod1_배열_G.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod1_배열_G.Items.AddRange(new object[] {
             " Ｘ",
             "1>2",
             "1<2"});
-            this.CBB_rebalance_mma_배열_G.Location = new System.Drawing.Point(41, 138);
-            this.CBB_rebalance_mma_배열_G.Name = "CBB_rebalance_mma_배열_G";
-            this.CBB_rebalance_mma_배열_G.Size = new System.Drawing.Size(45, 21);
-            this.CBB_rebalance_mma_배열_G.TabIndex = 66;
-            this.CBB_rebalance_mma_배열_G.DropDownClosed += new System.EventHandler(this.CBB_mma_배열_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod1_배열_G.Location = new System.Drawing.Point(41, 138);
+            this.CBB_rebalance_MinMAPeriod1_배열_G.Name = "CBB_rebalance_MinMAPeriod1_배열_G";
+            this.CBB_rebalance_MinMAPeriod1_배열_G.Size = new System.Drawing.Size(45, 21);
+            this.CBB_rebalance_MinMAPeriod1_배열_G.TabIndex = 66;
+            this.CBB_rebalance_MinMAPeriod1_배열_G.DropDownClosed += new System.EventHandler(this.CBB_mma_배열_DropDownClosed);
             // 
-            // CBB_rebalance_mma2_D
+            // CBB_rebalance_MinMAPeriod2_D
             // 
-            this.CBB_rebalance_mma2_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_mma2_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma2_D.DropDownWidth = 50;
-            this.CBB_rebalance_mma2_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma2_D.FormattingEnabled = true;
-            this.CBB_rebalance_mma2_D.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod2_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_MinMAPeriod2_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod2_D.DropDownWidth = 50;
+            this.CBB_rebalance_MinMAPeriod2_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod2_D.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod2_D.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_mma2_D.Location = new System.Drawing.Point(23, 78);
-            this.CBB_rebalance_mma2_D.Name = "CBB_rebalance_mma2_D";
-            this.CBB_rebalance_mma2_D.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_mma2_D.TabIndex = 66;
-            this.CBB_rebalance_mma2_D.DropDownClosed += new System.EventHandler(this.CBB_mma2_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod2_D.Location = new System.Drawing.Point(23, 78);
+            this.CBB_rebalance_MinMAPeriod2_D.Name = "CBB_rebalance_MinMAPeriod2_D";
+            this.CBB_rebalance_MinMAPeriod2_D.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_MinMAPeriod2_D.TabIndex = 66;
+            this.CBB_rebalance_MinMAPeriod2_D.DropDownClosed += new System.EventHandler(this.CBB_mma2_DropDownClosed);
             // 
-            // CBB_rebalance_mma2_A
+            // CBB_rebalance_MinMAPeriod2_A
             // 
-            this.CBB_rebalance_mma2_A.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_mma2_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma2_A.DropDownWidth = 45;
-            this.CBB_rebalance_mma2_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma2_A.FormattingEnabled = true;
-            this.CBB_rebalance_mma2_A.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod2_A.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_MinMAPeriod2_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod2_A.DropDownWidth = 45;
+            this.CBB_rebalance_MinMAPeriod2_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod2_A.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod2_A.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_mma2_A.Location = new System.Drawing.Point(23, 18);
-            this.CBB_rebalance_mma2_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.CBB_rebalance_mma2_A.Name = "CBB_rebalance_mma2_A";
-            this.CBB_rebalance_mma2_A.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_mma2_A.TabIndex = 66;
-            this.CBB_rebalance_mma2_A.DropDownClosed += new System.EventHandler(this.CBB_mma2_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod2_A.Location = new System.Drawing.Point(23, 18);
+            this.CBB_rebalance_MinMAPeriod2_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.CBB_rebalance_MinMAPeriod2_A.Name = "CBB_rebalance_MinMAPeriod2_A";
+            this.CBB_rebalance_MinMAPeriod2_A.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_MinMAPeriod2_A.TabIndex = 66;
+            this.CBB_rebalance_MinMAPeriod2_A.DropDownClosed += new System.EventHandler(this.CBB_mma2_DropDownClosed);
             // 
-            // CBB_rebalance_mma2_E
+            // CBB_rebalance_MinMAPeriod2_E
             // 
-            this.CBB_rebalance_mma2_E.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_mma2_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma2_E.DropDownWidth = 50;
-            this.CBB_rebalance_mma2_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma2_E.FormattingEnabled = true;
-            this.CBB_rebalance_mma2_E.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod2_E.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_MinMAPeriod2_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod2_E.DropDownWidth = 50;
+            this.CBB_rebalance_MinMAPeriod2_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod2_E.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod2_E.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_mma2_E.Location = new System.Drawing.Point(23, 98);
-            this.CBB_rebalance_mma2_E.Name = "CBB_rebalance_mma2_E";
-            this.CBB_rebalance_mma2_E.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_mma2_E.TabIndex = 66;
-            this.CBB_rebalance_mma2_E.DropDownClosed += new System.EventHandler(this.CBB_mma2_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod2_E.Location = new System.Drawing.Point(23, 98);
+            this.CBB_rebalance_MinMAPeriod2_E.Name = "CBB_rebalance_MinMAPeriod2_E";
+            this.CBB_rebalance_MinMAPeriod2_E.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_MinMAPeriod2_E.TabIndex = 66;
+            this.CBB_rebalance_MinMAPeriod2_E.DropDownClosed += new System.EventHandler(this.CBB_mma2_DropDownClosed);
             // 
-            // CBB_rebalance_mma2_B
+            // CBB_rebalance_MinMAPeriod2_B
             // 
-            this.CBB_rebalance_mma2_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_mma2_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma2_B.DropDownWidth = 50;
-            this.CBB_rebalance_mma2_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma2_B.FormattingEnabled = true;
-            this.CBB_rebalance_mma2_B.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod2_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_MinMAPeriod2_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod2_B.DropDownWidth = 50;
+            this.CBB_rebalance_MinMAPeriod2_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod2_B.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod2_B.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_mma2_B.Location = new System.Drawing.Point(23, 38);
-            this.CBB_rebalance_mma2_B.Name = "CBB_rebalance_mma2_B";
-            this.CBB_rebalance_mma2_B.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_mma2_B.TabIndex = 66;
-            this.CBB_rebalance_mma2_B.DropDownClosed += new System.EventHandler(this.CBB_mma2_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod2_B.Location = new System.Drawing.Point(23, 38);
+            this.CBB_rebalance_MinMAPeriod2_B.Name = "CBB_rebalance_MinMAPeriod2_B";
+            this.CBB_rebalance_MinMAPeriod2_B.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_MinMAPeriod2_B.TabIndex = 66;
+            this.CBB_rebalance_MinMAPeriod2_B.DropDownClosed += new System.EventHandler(this.CBB_mma2_DropDownClosed);
             // 
-            // CBB_rebalance_mma2_F
+            // CBB_rebalance_MinMAPeriod2_F
             // 
-            this.CBB_rebalance_mma2_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_mma2_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma2_F.DropDownWidth = 50;
-            this.CBB_rebalance_mma2_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma2_F.FormattingEnabled = true;
-            this.CBB_rebalance_mma2_F.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod2_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_MinMAPeriod2_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod2_F.DropDownWidth = 50;
+            this.CBB_rebalance_MinMAPeriod2_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod2_F.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod2_F.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_mma2_F.Location = new System.Drawing.Point(23, 118);
-            this.CBB_rebalance_mma2_F.Name = "CBB_rebalance_mma2_F";
-            this.CBB_rebalance_mma2_F.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_mma2_F.TabIndex = 66;
-            this.CBB_rebalance_mma2_F.DropDownClosed += new System.EventHandler(this.CBB_mma2_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod2_F.Location = new System.Drawing.Point(23, 118);
+            this.CBB_rebalance_MinMAPeriod2_F.Name = "CBB_rebalance_MinMAPeriod2_F";
+            this.CBB_rebalance_MinMAPeriod2_F.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_MinMAPeriod2_F.TabIndex = 66;
+            this.CBB_rebalance_MinMAPeriod2_F.DropDownClosed += new System.EventHandler(this.CBB_mma2_DropDownClosed);
             // 
-            // CBB_rebalance_mma2_C
+            // CBB_rebalance_MinMAPeriod2_C
             // 
-            this.CBB_rebalance_mma2_C.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_mma2_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma2_C.DropDownWidth = 55;
-            this.CBB_rebalance_mma2_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma2_C.FormattingEnabled = true;
-            this.CBB_rebalance_mma2_C.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod2_C.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_MinMAPeriod2_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod2_C.DropDownWidth = 55;
+            this.CBB_rebalance_MinMAPeriod2_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod2_C.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod2_C.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_mma2_C.Location = new System.Drawing.Point(23, 58);
-            this.CBB_rebalance_mma2_C.Name = "CBB_rebalance_mma2_C";
-            this.CBB_rebalance_mma2_C.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_mma2_C.TabIndex = 66;
-            this.CBB_rebalance_mma2_C.DropDownClosed += new System.EventHandler(this.CBB_mma2_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod2_C.Location = new System.Drawing.Point(23, 58);
+            this.CBB_rebalance_MinMAPeriod2_C.Name = "CBB_rebalance_MinMAPeriod2_C";
+            this.CBB_rebalance_MinMAPeriod2_C.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_MinMAPeriod2_C.TabIndex = 66;
+            this.CBB_rebalance_MinMAPeriod2_C.DropDownClosed += new System.EventHandler(this.CBB_mma2_DropDownClosed);
             // 
-            // CBB_rebalance_mma2_G
+            // CBB_rebalance_MinMAPeriod2_G
             // 
-            this.CBB_rebalance_mma2_G.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_mma2_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_mma2_G.DropDownWidth = 50;
-            this.CBB_rebalance_mma2_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_mma2_G.FormattingEnabled = true;
-            this.CBB_rebalance_mma2_G.Items.AddRange(new object[] {
+            this.CBB_rebalance_MinMAPeriod2_G.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_MinMAPeriod2_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_MinMAPeriod2_G.DropDownWidth = 50;
+            this.CBB_rebalance_MinMAPeriod2_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_MinMAPeriod2_G.FormattingEnabled = true;
+            this.CBB_rebalance_MinMAPeriod2_G.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_mma2_G.Location = new System.Drawing.Point(23, 138);
-            this.CBB_rebalance_mma2_G.Name = "CBB_rebalance_mma2_G";
-            this.CBB_rebalance_mma2_G.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_mma2_G.TabIndex = 66;
-            this.CBB_rebalance_mma2_G.DropDownClosed += new System.EventHandler(this.CBB_mma2_DropDownClosed);
+            this.CBB_rebalance_MinMAPeriod2_G.Location = new System.Drawing.Point(23, 138);
+            this.CBB_rebalance_MinMAPeriod2_G.Name = "CBB_rebalance_MinMAPeriod2_G";
+            this.CBB_rebalance_MinMAPeriod2_G.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_MinMAPeriod2_G.TabIndex = 66;
+            this.CBB_rebalance_MinMAPeriod2_G.DropDownClosed += new System.EventHandler(this.CBB_mma2_DropDownClosed);
             // 
-            // CBB_rebalance_dma1_D
+            // CBB_rebalance_DayMAPeriod1_D
             // 
-            this.CBB_rebalance_dma1_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_dma1_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma1_D.DropDownWidth = 50;
-            this.CBB_rebalance_dma1_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma1_D.FormattingEnabled = true;
-            this.CBB_rebalance_dma1_D.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod1_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_DayMAPeriod1_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod1_D.DropDownWidth = 50;
+            this.CBB_rebalance_DayMAPeriod1_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod1_D.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod1_D.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_dma1_D.Location = new System.Drawing.Point(96, 78);
-            this.CBB_rebalance_dma1_D.Name = "CBB_rebalance_dma1_D";
-            this.CBB_rebalance_dma1_D.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_dma1_D.TabIndex = 66;
-            this.CBB_rebalance_dma1_D.DropDownClosed += new System.EventHandler(this.CBB_dma1_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod1_D.Location = new System.Drawing.Point(96, 78);
+            this.CBB_rebalance_DayMAPeriod1_D.Name = "CBB_rebalance_DayMAPeriod1_D";
+            this.CBB_rebalance_DayMAPeriod1_D.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_DayMAPeriod1_D.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod1_D.DropDownClosed += new System.EventHandler(this.CBB_dma1_DropDownClosed);
             // 
-            // CBB_rebalance_dma1_A
+            // CBB_rebalance_DayMAPeriod1_A
             // 
-            this.CBB_rebalance_dma1_A.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_dma1_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma1_A.DropDownWidth = 45;
-            this.CBB_rebalance_dma1_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma1_A.FormattingEnabled = true;
-            this.CBB_rebalance_dma1_A.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod1_A.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_DayMAPeriod1_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod1_A.DropDownWidth = 45;
+            this.CBB_rebalance_DayMAPeriod1_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod1_A.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod1_A.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_dma1_A.Location = new System.Drawing.Point(96, 18);
-            this.CBB_rebalance_dma1_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.CBB_rebalance_dma1_A.Name = "CBB_rebalance_dma1_A";
-            this.CBB_rebalance_dma1_A.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_dma1_A.TabIndex = 66;
-            this.CBB_rebalance_dma1_A.DropDownClosed += new System.EventHandler(this.CBB_dma1_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod1_A.Location = new System.Drawing.Point(96, 18);
+            this.CBB_rebalance_DayMAPeriod1_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.CBB_rebalance_DayMAPeriod1_A.Name = "CBB_rebalance_DayMAPeriod1_A";
+            this.CBB_rebalance_DayMAPeriod1_A.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_DayMAPeriod1_A.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod1_A.DropDownClosed += new System.EventHandler(this.CBB_dma1_DropDownClosed);
             // 
-            // CBB_rebalance_dma1_E
+            // CBB_rebalance_DayMAPeriod1_E
             // 
-            this.CBB_rebalance_dma1_E.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_dma1_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma1_E.DropDownWidth = 50;
-            this.CBB_rebalance_dma1_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma1_E.FormattingEnabled = true;
-            this.CBB_rebalance_dma1_E.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod1_E.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_DayMAPeriod1_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod1_E.DropDownWidth = 50;
+            this.CBB_rebalance_DayMAPeriod1_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod1_E.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod1_E.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_dma1_E.Location = new System.Drawing.Point(96, 98);
-            this.CBB_rebalance_dma1_E.Name = "CBB_rebalance_dma1_E";
-            this.CBB_rebalance_dma1_E.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_dma1_E.TabIndex = 66;
-            this.CBB_rebalance_dma1_E.DropDownClosed += new System.EventHandler(this.CBB_dma1_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod1_E.Location = new System.Drawing.Point(96, 98);
+            this.CBB_rebalance_DayMAPeriod1_E.Name = "CBB_rebalance_DayMAPeriod1_E";
+            this.CBB_rebalance_DayMAPeriod1_E.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_DayMAPeriod1_E.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod1_E.DropDownClosed += new System.EventHandler(this.CBB_dma1_DropDownClosed);
             // 
-            // CBB_rebalance_dma1_B
+            // CBB_rebalance_DayMAPeriod1_B
             // 
-            this.CBB_rebalance_dma1_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_dma1_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma1_B.DropDownWidth = 50;
-            this.CBB_rebalance_dma1_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma1_B.FormattingEnabled = true;
-            this.CBB_rebalance_dma1_B.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod1_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_DayMAPeriod1_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod1_B.DropDownWidth = 50;
+            this.CBB_rebalance_DayMAPeriod1_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod1_B.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod1_B.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_dma1_B.Location = new System.Drawing.Point(96, 38);
-            this.CBB_rebalance_dma1_B.Name = "CBB_rebalance_dma1_B";
-            this.CBB_rebalance_dma1_B.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_dma1_B.TabIndex = 66;
-            this.CBB_rebalance_dma1_B.DropDownClosed += new System.EventHandler(this.CBB_dma1_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod1_B.Location = new System.Drawing.Point(96, 38);
+            this.CBB_rebalance_DayMAPeriod1_B.Name = "CBB_rebalance_DayMAPeriod1_B";
+            this.CBB_rebalance_DayMAPeriod1_B.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_DayMAPeriod1_B.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod1_B.DropDownClosed += new System.EventHandler(this.CBB_dma1_DropDownClosed);
             // 
-            // CBB_rebalance_dma1_F
+            // CBB_rebalance_DayMAPeriod1_F
             // 
-            this.CBB_rebalance_dma1_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_dma1_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma1_F.DropDownWidth = 50;
-            this.CBB_rebalance_dma1_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma1_F.FormattingEnabled = true;
-            this.CBB_rebalance_dma1_F.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod1_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_DayMAPeriod1_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod1_F.DropDownWidth = 50;
+            this.CBB_rebalance_DayMAPeriod1_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod1_F.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod1_F.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_dma1_F.Location = new System.Drawing.Point(96, 118);
-            this.CBB_rebalance_dma1_F.Name = "CBB_rebalance_dma1_F";
-            this.CBB_rebalance_dma1_F.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_dma1_F.TabIndex = 66;
-            this.CBB_rebalance_dma1_F.DropDownClosed += new System.EventHandler(this.CBB_dma1_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod1_F.Location = new System.Drawing.Point(96, 118);
+            this.CBB_rebalance_DayMAPeriod1_F.Name = "CBB_rebalance_DayMAPeriod1_F";
+            this.CBB_rebalance_DayMAPeriod1_F.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_DayMAPeriod1_F.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod1_F.DropDownClosed += new System.EventHandler(this.CBB_dma1_DropDownClosed);
             // 
-            // CBB_rebalance_dma1_C
+            // CBB_rebalance_DayMAPeriod1_C
             // 
-            this.CBB_rebalance_dma1_C.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_dma1_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma1_C.DropDownWidth = 55;
-            this.CBB_rebalance_dma1_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma1_C.FormattingEnabled = true;
-            this.CBB_rebalance_dma1_C.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod1_C.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_DayMAPeriod1_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod1_C.DropDownWidth = 55;
+            this.CBB_rebalance_DayMAPeriod1_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod1_C.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod1_C.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_dma1_C.Location = new System.Drawing.Point(96, 58);
-            this.CBB_rebalance_dma1_C.Name = "CBB_rebalance_dma1_C";
-            this.CBB_rebalance_dma1_C.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_dma1_C.TabIndex = 66;
-            this.CBB_rebalance_dma1_C.DropDownClosed += new System.EventHandler(this.CBB_dma1_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod1_C.Location = new System.Drawing.Point(96, 58);
+            this.CBB_rebalance_DayMAPeriod1_C.Name = "CBB_rebalance_DayMAPeriod1_C";
+            this.CBB_rebalance_DayMAPeriod1_C.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_DayMAPeriod1_C.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod1_C.DropDownClosed += new System.EventHandler(this.CBB_dma1_DropDownClosed);
             // 
-            // CBB_rebalance_dma1_G
+            // CBB_rebalance_DayMAPeriod1_G
             // 
-            this.CBB_rebalance_dma1_G.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_dma1_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma1_G.DropDownWidth = 50;
-            this.CBB_rebalance_dma1_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma1_G.FormattingEnabled = true;
-            this.CBB_rebalance_dma1_G.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod1_G.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_DayMAPeriod1_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod1_G.DropDownWidth = 50;
+            this.CBB_rebalance_DayMAPeriod1_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod1_G.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod1_G.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_dma1_G.Location = new System.Drawing.Point(96, 138);
-            this.CBB_rebalance_dma1_G.Name = "CBB_rebalance_dma1_G";
-            this.CBB_rebalance_dma1_G.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_dma1_G.TabIndex = 66;
-            this.CBB_rebalance_dma1_G.DropDownClosed += new System.EventHandler(this.CBB_dma1_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod1_G.Location = new System.Drawing.Point(96, 138);
+            this.CBB_rebalance_DayMAPeriod1_G.Name = "CBB_rebalance_DayMAPeriod1_G";
+            this.CBB_rebalance_DayMAPeriod1_G.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_DayMAPeriod1_G.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod1_G.DropDownClosed += new System.EventHandler(this.CBB_dma1_DropDownClosed);
             // 
-            // CBB_rebalance_dma_배열_D
+            // CBB_rebalance_DayMAPeriod_배열_D
             // 
-            this.CBB_rebalance_dma_배열_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_dma_배열_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma_배열_D.DropDownWidth = 50;
-            this.CBB_rebalance_dma_배열_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma_배열_D.FormattingEnabled = true;
-            this.CBB_rebalance_dma_배열_D.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod_배열_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_DayMAPeriod_배열_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod_배열_D.DropDownWidth = 50;
+            this.CBB_rebalance_DayMAPeriod_배열_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod_배열_D.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod_배열_D.Items.AddRange(new object[] {
             " Ｘ",
             "1>2",
             "1<2"});
-            this.CBB_rebalance_dma_배열_D.Location = new System.Drawing.Point(155, 78);
-            this.CBB_rebalance_dma_배열_D.Name = "CBB_rebalance_dma_배열_D";
-            this.CBB_rebalance_dma_배열_D.Size = new System.Drawing.Size(45, 21);
-            this.CBB_rebalance_dma_배열_D.TabIndex = 66;
-            this.CBB_rebalance_dma_배열_D.DropDownClosed += new System.EventHandler(this.CBB_dma_배열_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod_배열_D.Location = new System.Drawing.Point(155, 78);
+            this.CBB_rebalance_DayMAPeriod_배열_D.Name = "CBB_rebalance_DayMAPeriod_배열_D";
+            this.CBB_rebalance_DayMAPeriod_배열_D.Size = new System.Drawing.Size(45, 21);
+            this.CBB_rebalance_DayMAPeriod_배열_D.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod_배열_D.DropDownClosed += new System.EventHandler(this.CBB_dma_배열_DropDownClosed);
             // 
-            // CBB_rebalance_dma_배열_A
+            // CBB_rebalance_DayMAPeriod_배열_A
             // 
-            this.CBB_rebalance_dma_배열_A.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_dma_배열_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma_배열_A.DropDownWidth = 45;
-            this.CBB_rebalance_dma_배열_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma_배열_A.FormattingEnabled = true;
-            this.CBB_rebalance_dma_배열_A.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod_배열_A.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_DayMAPeriod_배열_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod_배열_A.DropDownWidth = 45;
+            this.CBB_rebalance_DayMAPeriod_배열_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod_배열_A.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod_배열_A.Items.AddRange(new object[] {
             " Ｘ",
             "1>2",
             "1<2"});
-            this.CBB_rebalance_dma_배열_A.Location = new System.Drawing.Point(155, 18);
-            this.CBB_rebalance_dma_배열_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.CBB_rebalance_dma_배열_A.Name = "CBB_rebalance_dma_배열_A";
-            this.CBB_rebalance_dma_배열_A.Size = new System.Drawing.Size(45, 21);
-            this.CBB_rebalance_dma_배열_A.TabIndex = 66;
-            this.CBB_rebalance_dma_배열_A.DropDownClosed += new System.EventHandler(this.CBB_dma_배열_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod_배열_A.Location = new System.Drawing.Point(155, 18);
+            this.CBB_rebalance_DayMAPeriod_배열_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.CBB_rebalance_DayMAPeriod_배열_A.Name = "CBB_rebalance_DayMAPeriod_배열_A";
+            this.CBB_rebalance_DayMAPeriod_배열_A.Size = new System.Drawing.Size(45, 21);
+            this.CBB_rebalance_DayMAPeriod_배열_A.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod_배열_A.DropDownClosed += new System.EventHandler(this.CBB_dma_배열_DropDownClosed);
             // 
-            // CBB_rebalance_dma_배열_E
+            // CBB_rebalance_DayMAPeriod_배열_E
             // 
-            this.CBB_rebalance_dma_배열_E.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_dma_배열_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma_배열_E.DropDownWidth = 50;
-            this.CBB_rebalance_dma_배열_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma_배열_E.FormattingEnabled = true;
-            this.CBB_rebalance_dma_배열_E.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod_배열_E.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_DayMAPeriod_배열_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod_배열_E.DropDownWidth = 50;
+            this.CBB_rebalance_DayMAPeriod_배열_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod_배열_E.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod_배열_E.Items.AddRange(new object[] {
             " Ｘ",
             "1>2",
             "1<2"});
-            this.CBB_rebalance_dma_배열_E.Location = new System.Drawing.Point(155, 98);
-            this.CBB_rebalance_dma_배열_E.Name = "CBB_rebalance_dma_배열_E";
-            this.CBB_rebalance_dma_배열_E.Size = new System.Drawing.Size(45, 21);
-            this.CBB_rebalance_dma_배열_E.TabIndex = 66;
-            this.CBB_rebalance_dma_배열_E.DropDownClosed += new System.EventHandler(this.CBB_dma_배열_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod_배열_E.Location = new System.Drawing.Point(155, 98);
+            this.CBB_rebalance_DayMAPeriod_배열_E.Name = "CBB_rebalance_DayMAPeriod_배열_E";
+            this.CBB_rebalance_DayMAPeriod_배열_E.Size = new System.Drawing.Size(45, 21);
+            this.CBB_rebalance_DayMAPeriod_배열_E.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod_배열_E.DropDownClosed += new System.EventHandler(this.CBB_dma_배열_DropDownClosed);
             // 
-            // CBB_rebalance_dma_배열_B
+            // CBB_rebalance_DayMAPeriod_배열_B
             // 
-            this.CBB_rebalance_dma_배열_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_dma_배열_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma_배열_B.DropDownWidth = 50;
-            this.CBB_rebalance_dma_배열_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma_배열_B.FormattingEnabled = true;
-            this.CBB_rebalance_dma_배열_B.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod_배열_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_DayMAPeriod_배열_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod_배열_B.DropDownWidth = 50;
+            this.CBB_rebalance_DayMAPeriod_배열_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod_배열_B.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod_배열_B.Items.AddRange(new object[] {
             " Ｘ",
             "1>2",
             "1<2"});
-            this.CBB_rebalance_dma_배열_B.Location = new System.Drawing.Point(155, 38);
-            this.CBB_rebalance_dma_배열_B.Name = "CBB_rebalance_dma_배열_B";
-            this.CBB_rebalance_dma_배열_B.Size = new System.Drawing.Size(45, 21);
-            this.CBB_rebalance_dma_배열_B.TabIndex = 66;
-            this.CBB_rebalance_dma_배열_B.DropDownClosed += new System.EventHandler(this.CBB_dma_배열_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod_배열_B.Location = new System.Drawing.Point(155, 38);
+            this.CBB_rebalance_DayMAPeriod_배열_B.Name = "CBB_rebalance_DayMAPeriod_배열_B";
+            this.CBB_rebalance_DayMAPeriod_배열_B.Size = new System.Drawing.Size(45, 21);
+            this.CBB_rebalance_DayMAPeriod_배열_B.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod_배열_B.DropDownClosed += new System.EventHandler(this.CBB_dma_배열_DropDownClosed);
             // 
-            // CBB_rebalance_dma_배열_F
+            // CBB_rebalance_DayMAPeriod_배열_F
             // 
-            this.CBB_rebalance_dma_배열_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_dma_배열_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma_배열_F.DropDownWidth = 50;
-            this.CBB_rebalance_dma_배열_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma_배열_F.FormattingEnabled = true;
-            this.CBB_rebalance_dma_배열_F.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod_배열_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_DayMAPeriod_배열_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod_배열_F.DropDownWidth = 50;
+            this.CBB_rebalance_DayMAPeriod_배열_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod_배열_F.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod_배열_F.Items.AddRange(new object[] {
             " Ｘ",
             "1>2",
             "1<2"});
-            this.CBB_rebalance_dma_배열_F.Location = new System.Drawing.Point(155, 118);
-            this.CBB_rebalance_dma_배열_F.Name = "CBB_rebalance_dma_배열_F";
-            this.CBB_rebalance_dma_배열_F.Size = new System.Drawing.Size(45, 21);
-            this.CBB_rebalance_dma_배열_F.TabIndex = 66;
-            this.CBB_rebalance_dma_배열_F.DropDownClosed += new System.EventHandler(this.CBB_dma_배열_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod_배열_F.Location = new System.Drawing.Point(155, 118);
+            this.CBB_rebalance_DayMAPeriod_배열_F.Name = "CBB_rebalance_DayMAPeriod_배열_F";
+            this.CBB_rebalance_DayMAPeriod_배열_F.Size = new System.Drawing.Size(45, 21);
+            this.CBB_rebalance_DayMAPeriod_배열_F.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod_배열_F.DropDownClosed += new System.EventHandler(this.CBB_dma_배열_DropDownClosed);
             // 
-            // CBB_rebalance_dma_배열_C
+            // CBB_rebalance_DayMAPeriod_배열_C
             // 
-            this.CBB_rebalance_dma_배열_C.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_dma_배열_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma_배열_C.DropDownWidth = 55;
-            this.CBB_rebalance_dma_배열_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma_배열_C.FormattingEnabled = true;
-            this.CBB_rebalance_dma_배열_C.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod_배열_C.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_DayMAPeriod_배열_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod_배열_C.DropDownWidth = 55;
+            this.CBB_rebalance_DayMAPeriod_배열_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod_배열_C.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod_배열_C.Items.AddRange(new object[] {
             " Ｘ",
             "1>2",
             "1<2"});
-            this.CBB_rebalance_dma_배열_C.Location = new System.Drawing.Point(155, 58);
-            this.CBB_rebalance_dma_배열_C.Name = "CBB_rebalance_dma_배열_C";
-            this.CBB_rebalance_dma_배열_C.Size = new System.Drawing.Size(45, 21);
-            this.CBB_rebalance_dma_배열_C.TabIndex = 66;
-            this.CBB_rebalance_dma_배열_C.DropDownClosed += new System.EventHandler(this.CBB_dma_배열_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod_배열_C.Location = new System.Drawing.Point(155, 58);
+            this.CBB_rebalance_DayMAPeriod_배열_C.Name = "CBB_rebalance_DayMAPeriod_배열_C";
+            this.CBB_rebalance_DayMAPeriod_배열_C.Size = new System.Drawing.Size(45, 21);
+            this.CBB_rebalance_DayMAPeriod_배열_C.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod_배열_C.DropDownClosed += new System.EventHandler(this.CBB_dma_배열_DropDownClosed);
             // 
-            // CBB_rebalance_dma_배열_G
+            // CBB_rebalance_DayMAPeriod_배열_G
             // 
-            this.CBB_rebalance_dma_배열_G.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_dma_배열_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma_배열_G.DropDownWidth = 50;
-            this.CBB_rebalance_dma_배열_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma_배열_G.FormattingEnabled = true;
-            this.CBB_rebalance_dma_배열_G.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod_배열_G.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_DayMAPeriod_배열_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod_배열_G.DropDownWidth = 50;
+            this.CBB_rebalance_DayMAPeriod_배열_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod_배열_G.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod_배열_G.Items.AddRange(new object[] {
             " Ｘ",
             "1>2",
             "1<2"});
-            this.CBB_rebalance_dma_배열_G.Location = new System.Drawing.Point(155, 138);
-            this.CBB_rebalance_dma_배열_G.Name = "CBB_rebalance_dma_배열_G";
-            this.CBB_rebalance_dma_배열_G.Size = new System.Drawing.Size(45, 21);
-            this.CBB_rebalance_dma_배열_G.TabIndex = 66;
-            this.CBB_rebalance_dma_배열_G.DropDownClosed += new System.EventHandler(this.CBB_dma_배열_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod_배열_G.Location = new System.Drawing.Point(155, 138);
+            this.CBB_rebalance_DayMAPeriod_배열_G.Name = "CBB_rebalance_DayMAPeriod_배열_G";
+            this.CBB_rebalance_DayMAPeriod_배열_G.Size = new System.Drawing.Size(45, 21);
+            this.CBB_rebalance_DayMAPeriod_배열_G.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod_배열_G.DropDownClosed += new System.EventHandler(this.CBB_dma_배열_DropDownClosed);
             // 
-            // CBB_rebalance_dma2_D
+            // CBB_rebalance_DayMAPeriod2_D
             // 
-            this.CBB_rebalance_dma2_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_dma2_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma2_D.DropDownWidth = 50;
-            this.CBB_rebalance_dma2_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma2_D.FormattingEnabled = true;
-            this.CBB_rebalance_dma2_D.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod2_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_DayMAPeriod2_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod2_D.DropDownWidth = 50;
+            this.CBB_rebalance_DayMAPeriod2_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod2_D.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod2_D.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_dma2_D.Location = new System.Drawing.Point(137, 78);
-            this.CBB_rebalance_dma2_D.Name = "CBB_rebalance_dma2_D";
-            this.CBB_rebalance_dma2_D.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_dma2_D.TabIndex = 66;
-            this.CBB_rebalance_dma2_D.DropDownClosed += new System.EventHandler(this.CBB_dma2_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod2_D.Location = new System.Drawing.Point(137, 78);
+            this.CBB_rebalance_DayMAPeriod2_D.Name = "CBB_rebalance_DayMAPeriod2_D";
+            this.CBB_rebalance_DayMAPeriod2_D.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_DayMAPeriod2_D.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod2_D.DropDownClosed += new System.EventHandler(this.CBB_dma2_DropDownClosed);
             // 
-            // CBB_rebalance_dma2_A
+            // CBB_rebalance_DayMAPeriod2_A
             // 
-            this.CBB_rebalance_dma2_A.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_dma2_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma2_A.DropDownWidth = 45;
-            this.CBB_rebalance_dma2_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma2_A.FormattingEnabled = true;
-            this.CBB_rebalance_dma2_A.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod2_A.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_DayMAPeriod2_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod2_A.DropDownWidth = 45;
+            this.CBB_rebalance_DayMAPeriod2_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod2_A.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod2_A.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_dma2_A.Location = new System.Drawing.Point(137, 18);
-            this.CBB_rebalance_dma2_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.CBB_rebalance_dma2_A.Name = "CBB_rebalance_dma2_A";
-            this.CBB_rebalance_dma2_A.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_dma2_A.TabIndex = 66;
-            this.CBB_rebalance_dma2_A.DropDownClosed += new System.EventHandler(this.CBB_dma2_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod2_A.Location = new System.Drawing.Point(137, 18);
+            this.CBB_rebalance_DayMAPeriod2_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.CBB_rebalance_DayMAPeriod2_A.Name = "CBB_rebalance_DayMAPeriod2_A";
+            this.CBB_rebalance_DayMAPeriod2_A.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_DayMAPeriod2_A.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod2_A.DropDownClosed += new System.EventHandler(this.CBB_dma2_DropDownClosed);
             // 
-            // CBB_rebalance_dma2_E
+            // CBB_rebalance_DayMAPeriod2_E
             // 
-            this.CBB_rebalance_dma2_E.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_dma2_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma2_E.DropDownWidth = 50;
-            this.CBB_rebalance_dma2_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma2_E.FormattingEnabled = true;
-            this.CBB_rebalance_dma2_E.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod2_E.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_DayMAPeriod2_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod2_E.DropDownWidth = 50;
+            this.CBB_rebalance_DayMAPeriod2_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod2_E.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod2_E.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_dma2_E.Location = new System.Drawing.Point(137, 98);
-            this.CBB_rebalance_dma2_E.Name = "CBB_rebalance_dma2_E";
-            this.CBB_rebalance_dma2_E.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_dma2_E.TabIndex = 66;
-            this.CBB_rebalance_dma2_E.DropDownClosed += new System.EventHandler(this.CBB_dma2_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod2_E.Location = new System.Drawing.Point(137, 98);
+            this.CBB_rebalance_DayMAPeriod2_E.Name = "CBB_rebalance_DayMAPeriod2_E";
+            this.CBB_rebalance_DayMAPeriod2_E.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_DayMAPeriod2_E.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod2_E.DropDownClosed += new System.EventHandler(this.CBB_dma2_DropDownClosed);
             // 
-            // CBB_rebalance_dma2_B
+            // CBB_rebalance_DayMAPeriod2_B
             // 
-            this.CBB_rebalance_dma2_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_dma2_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma2_B.DropDownWidth = 50;
-            this.CBB_rebalance_dma2_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma2_B.FormattingEnabled = true;
-            this.CBB_rebalance_dma2_B.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod2_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_DayMAPeriod2_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod2_B.DropDownWidth = 50;
+            this.CBB_rebalance_DayMAPeriod2_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod2_B.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod2_B.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_dma2_B.Location = new System.Drawing.Point(137, 38);
-            this.CBB_rebalance_dma2_B.Name = "CBB_rebalance_dma2_B";
-            this.CBB_rebalance_dma2_B.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_dma2_B.TabIndex = 66;
-            this.CBB_rebalance_dma2_B.DropDownClosed += new System.EventHandler(this.CBB_dma2_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod2_B.Location = new System.Drawing.Point(137, 38);
+            this.CBB_rebalance_DayMAPeriod2_B.Name = "CBB_rebalance_DayMAPeriod2_B";
+            this.CBB_rebalance_DayMAPeriod2_B.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_DayMAPeriod2_B.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod2_B.DropDownClosed += new System.EventHandler(this.CBB_dma2_DropDownClosed);
             // 
-            // CBB_rebalance_dma2_F
+            // CBB_rebalance_DayMAPeriod2_F
             // 
-            this.CBB_rebalance_dma2_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_dma2_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma2_F.DropDownWidth = 50;
-            this.CBB_rebalance_dma2_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma2_F.FormattingEnabled = true;
-            this.CBB_rebalance_dma2_F.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod2_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_DayMAPeriod2_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod2_F.DropDownWidth = 50;
+            this.CBB_rebalance_DayMAPeriod2_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod2_F.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod2_F.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_dma2_F.Location = new System.Drawing.Point(137, 118);
-            this.CBB_rebalance_dma2_F.Name = "CBB_rebalance_dma2_F";
-            this.CBB_rebalance_dma2_F.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_dma2_F.TabIndex = 66;
-            this.CBB_rebalance_dma2_F.DropDownClosed += new System.EventHandler(this.CBB_dma2_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod2_F.Location = new System.Drawing.Point(137, 118);
+            this.CBB_rebalance_DayMAPeriod2_F.Name = "CBB_rebalance_DayMAPeriod2_F";
+            this.CBB_rebalance_DayMAPeriod2_F.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_DayMAPeriod2_F.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod2_F.DropDownClosed += new System.EventHandler(this.CBB_dma2_DropDownClosed);
             // 
-            // CBB_rebalance_dma2_C
+            // CBB_rebalance_DayMAPeriod2_C
             // 
-            this.CBB_rebalance_dma2_C.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_dma2_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma2_C.DropDownWidth = 55;
-            this.CBB_rebalance_dma2_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma2_C.FormattingEnabled = true;
-            this.CBB_rebalance_dma2_C.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod2_C.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_DayMAPeriod2_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod2_C.DropDownWidth = 55;
+            this.CBB_rebalance_DayMAPeriod2_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod2_C.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod2_C.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_dma2_C.Location = new System.Drawing.Point(137, 58);
-            this.CBB_rebalance_dma2_C.Name = "CBB_rebalance_dma2_C";
-            this.CBB_rebalance_dma2_C.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_dma2_C.TabIndex = 66;
-            this.CBB_rebalance_dma2_C.DropDownClosed += new System.EventHandler(this.CBB_dma2_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod2_C.Location = new System.Drawing.Point(137, 58);
+            this.CBB_rebalance_DayMAPeriod2_C.Name = "CBB_rebalance_DayMAPeriod2_C";
+            this.CBB_rebalance_DayMAPeriod2_C.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_DayMAPeriod2_C.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod2_C.DropDownClosed += new System.EventHandler(this.CBB_dma2_DropDownClosed);
             // 
-            // CBB_rebalance_dma2_G
+            // CBB_rebalance_DayMAPeriod2_G
             // 
-            this.CBB_rebalance_dma2_G.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_dma2_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_dma2_G.DropDownWidth = 50;
-            this.CBB_rebalance_dma2_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_dma2_G.FormattingEnabled = true;
-            this.CBB_rebalance_dma2_G.Items.AddRange(new object[] {
+            this.CBB_rebalance_DayMAPeriod2_G.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_DayMAPeriod2_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_DayMAPeriod2_G.DropDownWidth = 50;
+            this.CBB_rebalance_DayMAPeriod2_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_DayMAPeriod2_G.FormattingEnabled = true;
+            this.CBB_rebalance_DayMAPeriod2_G.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_dma2_G.Location = new System.Drawing.Point(137, 138);
-            this.CBB_rebalance_dma2_G.Name = "CBB_rebalance_dma2_G";
-            this.CBB_rebalance_dma2_G.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_dma2_G.TabIndex = 66;
-            this.CBB_rebalance_dma2_G.DropDownClosed += new System.EventHandler(this.CBB_dma2_DropDownClosed);
+            this.CBB_rebalance_DayMAPeriod2_G.Location = new System.Drawing.Point(137, 138);
+            this.CBB_rebalance_DayMAPeriod2_G.Name = "CBB_rebalance_DayMAPeriod2_G";
+            this.CBB_rebalance_DayMAPeriod2_G.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_DayMAPeriod2_G.TabIndex = 66;
+            this.CBB_rebalance_DayMAPeriod2_G.DropDownClosed += new System.EventHandler(this.CBB_dma2_DropDownClosed);
             // 
             // label57
             // 
@@ -7762,7 +7759,7 @@ namespace 지니_64
             this.TB_Liquidation_TS_down_A.TabIndex = 28;
             this.TB_Liquidation_TS_down_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Liquidation_TS_down_A.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_Liquidation_TS_down_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Liquidation_TS_down_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // CB_리밸TS_2
             // 
@@ -7784,101 +7781,101 @@ namespace 지니_64
             this.CB_리밸TS_2.UseVisualStyleBackColor = false;
             this.CB_리밸TS_2.CheckedChanged += new System.EventHandler(this.CB_리밸TS_2_CheckedChanged);
             // 
-            // TB_Liquidation_TS_dma_B
+            // TB_Liquidation_TS_DayMAPeriod_B
             // 
-            this.TB_Liquidation_TS_dma_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_Liquidation_TS_dma_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_Liquidation_TS_dma_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Liquidation_TS_dma_B.ForeColor = System.Drawing.Color.Black;
-            this.TB_Liquidation_TS_dma_B.Location = new System.Drawing.Point(1862, 223);
-            this.TB_Liquidation_TS_dma_B.MaxLength = 2;
-            this.TB_Liquidation_TS_dma_B.Name = "TB_Liquidation_TS_dma_B";
-            this.TB_Liquidation_TS_dma_B.Size = new System.Drawing.Size(20, 21);
-            this.TB_Liquidation_TS_dma_B.TabIndex = 142;
-            this.TB_Liquidation_TS_dma_B.Text = "5";
-            this.TB_Liquidation_TS_dma_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_Liquidation_TS_dma_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Liquidation_TS_dma_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Liquidation_TS_DayMAPeriod_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_Liquidation_TS_DayMAPeriod_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Liquidation_TS_DayMAPeriod_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Liquidation_TS_DayMAPeriod_B.ForeColor = System.Drawing.Color.Black;
+            this.TB_Liquidation_TS_DayMAPeriod_B.Location = new System.Drawing.Point(1862, 223);
+            this.TB_Liquidation_TS_DayMAPeriod_B.MaxLength = 2;
+            this.TB_Liquidation_TS_DayMAPeriod_B.Name = "TB_Liquidation_TS_DayMAPeriod_B";
+            this.TB_Liquidation_TS_DayMAPeriod_B.Size = new System.Drawing.Size(20, 21);
+            this.TB_Liquidation_TS_DayMAPeriod_B.TabIndex = 142;
+            this.TB_Liquidation_TS_DayMAPeriod_B.Text = "5";
+            this.TB_Liquidation_TS_DayMAPeriod_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_Liquidation_TS_DayMAPeriod_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_Liquidation_TS_DayMAPeriod_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_Liquidation_TS_mma_B
+            // TB_Liquidation_TS_MinMAPeriod_B
             // 
-            this.TB_Liquidation_TS_mma_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_Liquidation_TS_mma_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_Liquidation_TS_mma_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Liquidation_TS_mma_B.ForeColor = System.Drawing.Color.Black;
-            this.TB_Liquidation_TS_mma_B.Location = new System.Drawing.Point(1781, 223);
-            this.TB_Liquidation_TS_mma_B.MaxLength = 2;
-            this.TB_Liquidation_TS_mma_B.Name = "TB_Liquidation_TS_mma_B";
-            this.TB_Liquidation_TS_mma_B.Size = new System.Drawing.Size(20, 21);
-            this.TB_Liquidation_TS_mma_B.TabIndex = 142;
-            this.TB_Liquidation_TS_mma_B.Text = "5";
-            this.TB_Liquidation_TS_mma_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_Liquidation_TS_mma_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Liquidation_TS_mma_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Liquidation_TS_MinMAPeriod_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_Liquidation_TS_MinMAPeriod_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Liquidation_TS_MinMAPeriod_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Liquidation_TS_MinMAPeriod_B.ForeColor = System.Drawing.Color.Black;
+            this.TB_Liquidation_TS_MinMAPeriod_B.Location = new System.Drawing.Point(1781, 223);
+            this.TB_Liquidation_TS_MinMAPeriod_B.MaxLength = 2;
+            this.TB_Liquidation_TS_MinMAPeriod_B.Name = "TB_Liquidation_TS_MinMAPeriod_B";
+            this.TB_Liquidation_TS_MinMAPeriod_B.Size = new System.Drawing.Size(20, 21);
+            this.TB_Liquidation_TS_MinMAPeriod_B.TabIndex = 142;
+            this.TB_Liquidation_TS_MinMAPeriod_B.Text = "5";
+            this.TB_Liquidation_TS_MinMAPeriod_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_Liquidation_TS_MinMAPeriod_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_Liquidation_TS_MinMAPeriod_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_Liquidation_TS_dma_C
+            // TB_Liquidation_TS_DayMAPeriod_C
             // 
-            this.TB_Liquidation_TS_dma_C.BackColor = System.Drawing.Color.OldLace;
-            this.TB_Liquidation_TS_dma_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_Liquidation_TS_dma_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Liquidation_TS_dma_C.ForeColor = System.Drawing.Color.Black;
-            this.TB_Liquidation_TS_dma_C.Location = new System.Drawing.Point(1862, 243);
-            this.TB_Liquidation_TS_dma_C.MaxLength = 2;
-            this.TB_Liquidation_TS_dma_C.Name = "TB_Liquidation_TS_dma_C";
-            this.TB_Liquidation_TS_dma_C.Size = new System.Drawing.Size(20, 21);
-            this.TB_Liquidation_TS_dma_C.TabIndex = 143;
-            this.TB_Liquidation_TS_dma_C.Text = "5";
-            this.TB_Liquidation_TS_dma_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_Liquidation_TS_dma_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Liquidation_TS_dma_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Liquidation_TS_DayMAPeriod_C.BackColor = System.Drawing.Color.OldLace;
+            this.TB_Liquidation_TS_DayMAPeriod_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Liquidation_TS_DayMAPeriod_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Liquidation_TS_DayMAPeriod_C.ForeColor = System.Drawing.Color.Black;
+            this.TB_Liquidation_TS_DayMAPeriod_C.Location = new System.Drawing.Point(1862, 243);
+            this.TB_Liquidation_TS_DayMAPeriod_C.MaxLength = 2;
+            this.TB_Liquidation_TS_DayMAPeriod_C.Name = "TB_Liquidation_TS_DayMAPeriod_C";
+            this.TB_Liquidation_TS_DayMAPeriod_C.Size = new System.Drawing.Size(20, 21);
+            this.TB_Liquidation_TS_DayMAPeriod_C.TabIndex = 143;
+            this.TB_Liquidation_TS_DayMAPeriod_C.Text = "5";
+            this.TB_Liquidation_TS_DayMAPeriod_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_Liquidation_TS_DayMAPeriod_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_Liquidation_TS_DayMAPeriod_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_Liquidation_TS_mma_C
+            // TB_Liquidation_TS_MinMAPeriod_C
             // 
-            this.TB_Liquidation_TS_mma_C.BackColor = System.Drawing.Color.OldLace;
-            this.TB_Liquidation_TS_mma_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_Liquidation_TS_mma_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Liquidation_TS_mma_C.ForeColor = System.Drawing.Color.Black;
-            this.TB_Liquidation_TS_mma_C.Location = new System.Drawing.Point(1781, 243);
-            this.TB_Liquidation_TS_mma_C.MaxLength = 2;
-            this.TB_Liquidation_TS_mma_C.Name = "TB_Liquidation_TS_mma_C";
-            this.TB_Liquidation_TS_mma_C.Size = new System.Drawing.Size(20, 21);
-            this.TB_Liquidation_TS_mma_C.TabIndex = 143;
-            this.TB_Liquidation_TS_mma_C.Text = "5";
-            this.TB_Liquidation_TS_mma_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_Liquidation_TS_mma_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Liquidation_TS_mma_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Liquidation_TS_MinMAPeriod_C.BackColor = System.Drawing.Color.OldLace;
+            this.TB_Liquidation_TS_MinMAPeriod_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Liquidation_TS_MinMAPeriod_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Liquidation_TS_MinMAPeriod_C.ForeColor = System.Drawing.Color.Black;
+            this.TB_Liquidation_TS_MinMAPeriod_C.Location = new System.Drawing.Point(1781, 243);
+            this.TB_Liquidation_TS_MinMAPeriod_C.MaxLength = 2;
+            this.TB_Liquidation_TS_MinMAPeriod_C.Name = "TB_Liquidation_TS_MinMAPeriod_C";
+            this.TB_Liquidation_TS_MinMAPeriod_C.Size = new System.Drawing.Size(20, 21);
+            this.TB_Liquidation_TS_MinMAPeriod_C.TabIndex = 143;
+            this.TB_Liquidation_TS_MinMAPeriod_C.Text = "5";
+            this.TB_Liquidation_TS_MinMAPeriod_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_Liquidation_TS_MinMAPeriod_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_Liquidation_TS_MinMAPeriod_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_Liquidation_TS_dma_A
+            // TB_Liquidation_TS_DayMAPeriod_A
             // 
-            this.TB_Liquidation_TS_dma_A.BackColor = System.Drawing.Color.OldLace;
-            this.TB_Liquidation_TS_dma_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_Liquidation_TS_dma_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Liquidation_TS_dma_A.ForeColor = System.Drawing.Color.Black;
-            this.TB_Liquidation_TS_dma_A.Location = new System.Drawing.Point(1862, 203);
-            this.TB_Liquidation_TS_dma_A.MaxLength = 2;
-            this.TB_Liquidation_TS_dma_A.Name = "TB_Liquidation_TS_dma_A";
-            this.TB_Liquidation_TS_dma_A.Size = new System.Drawing.Size(20, 21);
-            this.TB_Liquidation_TS_dma_A.TabIndex = 144;
-            this.TB_Liquidation_TS_dma_A.Text = "5";
-            this.TB_Liquidation_TS_dma_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_Liquidation_TS_dma_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Liquidation_TS_dma_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Liquidation_TS_DayMAPeriod_A.BackColor = System.Drawing.Color.OldLace;
+            this.TB_Liquidation_TS_DayMAPeriod_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Liquidation_TS_DayMAPeriod_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Liquidation_TS_DayMAPeriod_A.ForeColor = System.Drawing.Color.Black;
+            this.TB_Liquidation_TS_DayMAPeriod_A.Location = new System.Drawing.Point(1862, 203);
+            this.TB_Liquidation_TS_DayMAPeriod_A.MaxLength = 2;
+            this.TB_Liquidation_TS_DayMAPeriod_A.Name = "TB_Liquidation_TS_DayMAPeriod_A";
+            this.TB_Liquidation_TS_DayMAPeriod_A.Size = new System.Drawing.Size(20, 21);
+            this.TB_Liquidation_TS_DayMAPeriod_A.TabIndex = 144;
+            this.TB_Liquidation_TS_DayMAPeriod_A.Text = "5";
+            this.TB_Liquidation_TS_DayMAPeriod_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_Liquidation_TS_DayMAPeriod_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_Liquidation_TS_DayMAPeriod_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_Liquidation_TS_mma_A
+            // TB_Liquidation_TS_MinMAPeriod_A
             // 
-            this.TB_Liquidation_TS_mma_A.BackColor = System.Drawing.Color.OldLace;
-            this.TB_Liquidation_TS_mma_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_Liquidation_TS_mma_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Liquidation_TS_mma_A.ForeColor = System.Drawing.Color.Black;
-            this.TB_Liquidation_TS_mma_A.Location = new System.Drawing.Point(1781, 203);
-            this.TB_Liquidation_TS_mma_A.MaxLength = 2;
-            this.TB_Liquidation_TS_mma_A.Name = "TB_Liquidation_TS_mma_A";
-            this.TB_Liquidation_TS_mma_A.Size = new System.Drawing.Size(20, 21);
-            this.TB_Liquidation_TS_mma_A.TabIndex = 144;
-            this.TB_Liquidation_TS_mma_A.Text = "5";
-            this.TB_Liquidation_TS_mma_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_Liquidation_TS_mma_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Liquidation_TS_mma_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Liquidation_TS_MinMAPeriod_A.BackColor = System.Drawing.Color.OldLace;
+            this.TB_Liquidation_TS_MinMAPeriod_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_Liquidation_TS_MinMAPeriod_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Liquidation_TS_MinMAPeriod_A.ForeColor = System.Drawing.Color.Black;
+            this.TB_Liquidation_TS_MinMAPeriod_A.Location = new System.Drawing.Point(1781, 203);
+            this.TB_Liquidation_TS_MinMAPeriod_A.MaxLength = 2;
+            this.TB_Liquidation_TS_MinMAPeriod_A.Name = "TB_Liquidation_TS_MinMAPeriod_A";
+            this.TB_Liquidation_TS_MinMAPeriod_A.Size = new System.Drawing.Size(20, 21);
+            this.TB_Liquidation_TS_MinMAPeriod_A.TabIndex = 144;
+            this.TB_Liquidation_TS_MinMAPeriod_A.Text = "5";
+            this.TB_Liquidation_TS_MinMAPeriod_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_Liquidation_TS_MinMAPeriod_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_Liquidation_TS_MinMAPeriod_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_Liquidation_TS_down_C
             // 
@@ -7895,7 +7892,7 @@ namespace 지니_64
             this.TB_Liquidation_TS_down_C.TabIndex = 26;
             this.TB_Liquidation_TS_down_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Liquidation_TS_down_C.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_Liquidation_TS_down_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Liquidation_TS_down_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label15
             // 
@@ -7980,7 +7977,7 @@ namespace 지니_64
             this.TB_Liquidation_TS_down_B.TabIndex = 24;
             this.TB_Liquidation_TS_down_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Liquidation_TS_down_B.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_Liquidation_TS_down_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Liquidation_TS_down_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label284
             // 
@@ -8122,7 +8119,7 @@ namespace 지니_64
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(302, 20);
             this.label5.TabIndex = 117;
-            this.label5.Text = "- 추가 매수 조건 -";
+            this.label5.Text = "- 리밸 추가 매수 조건 -";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CB_Liquidation_TS_A
@@ -8309,21 +8306,21 @@ namespace 지니_64
             this.label62.Text = "분이평";
             this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TB_추매주가이상
+            // TB_리밸_추매주가이상
             // 
-            this.TB_추매주가이상.BackColor = System.Drawing.Color.OldLace;
-            this.TB_추매주가이상.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_추매주가이상.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_추매주가이상.ForeColor = System.Drawing.Color.Black;
-            this.TB_추매주가이상.Location = new System.Drawing.Point(1013, 285);
-            this.TB_추매주가이상.MaxLength = 10;
-            this.TB_추매주가이상.Name = "TB_추매주가이상";
-            this.TB_추매주가이상.Size = new System.Drawing.Size(81, 21);
-            this.TB_추매주가이상.TabIndex = 113;
-            this.TB_추매주가이상.Text = "10,000,000";
-            this.TB_추매주가이상.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_추매주가이상.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_추매주가이상.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_리밸_추매주가이상.BackColor = System.Drawing.Color.OldLace;
+            this.TB_리밸_추매주가이상.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_리밸_추매주가이상.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_리밸_추매주가이상.ForeColor = System.Drawing.Color.Black;
+            this.TB_리밸_추매주가이상.Location = new System.Drawing.Point(1013, 285);
+            this.TB_리밸_추매주가이상.MaxLength = 10;
+            this.TB_리밸_추매주가이상.Name = "TB_리밸_추매주가이상";
+            this.TB_리밸_추매주가이상.Size = new System.Drawing.Size(81, 21);
+            this.TB_리밸_추매주가이상.TabIndex = 113;
+            this.TB_리밸_추매주가이상.Text = "10,000,000";
+            this.TB_리밸_추매주가이상.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_리밸_추매주가이상.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
+            this.TB_리밸_추매주가이상.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label59
             // 
@@ -8351,151 +8348,151 @@ namespace 지니_64
             this.label50.Text = "% 하락";
             this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CBB_Liquidation_TS_dma_C
+            // CBB_Liquidation_TS_DayMAPeriod_C
             // 
-            this.CBB_Liquidation_TS_dma_C.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_Liquidation_TS_dma_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_Liquidation_TS_dma_C.DropDownWidth = 55;
-            this.CBB_Liquidation_TS_dma_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_Liquidation_TS_dma_C.FormattingEnabled = true;
-            this.CBB_Liquidation_TS_dma_C.Items.AddRange(new object[] {
+            this.CBB_Liquidation_TS_DayMAPeriod_C.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_Liquidation_TS_DayMAPeriod_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_Liquidation_TS_DayMAPeriod_C.DropDownWidth = 55;
+            this.CBB_Liquidation_TS_DayMAPeriod_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_Liquidation_TS_DayMAPeriod_C.FormattingEnabled = true;
+            this.CBB_Liquidation_TS_DayMAPeriod_C.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_Liquidation_TS_dma_C.Location = new System.Drawing.Point(1881, 243);
-            this.CBB_Liquidation_TS_dma_C.Name = "CBB_Liquidation_TS_dma_C";
-            this.CBB_Liquidation_TS_dma_C.Size = new System.Drawing.Size(35, 21);
-            this.CBB_Liquidation_TS_dma_C.TabIndex = 66;
+            this.CBB_Liquidation_TS_DayMAPeriod_C.Location = new System.Drawing.Point(1881, 243);
+            this.CBB_Liquidation_TS_DayMAPeriod_C.Name = "CBB_Liquidation_TS_DayMAPeriod_C";
+            this.CBB_Liquidation_TS_DayMAPeriod_C.Size = new System.Drawing.Size(35, 21);
+            this.CBB_Liquidation_TS_DayMAPeriod_C.TabIndex = 66;
             // 
-            // CBB_Liquidation_TS_mma_C
+            // CBB_Liquidation_TS_MinMAPeriod_C
             // 
-            this.CBB_Liquidation_TS_mma_C.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_Liquidation_TS_mma_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_Liquidation_TS_mma_C.DropDownWidth = 55;
-            this.CBB_Liquidation_TS_mma_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_Liquidation_TS_mma_C.FormattingEnabled = true;
-            this.CBB_Liquidation_TS_mma_C.Items.AddRange(new object[] {
+            this.CBB_Liquidation_TS_MinMAPeriod_C.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_Liquidation_TS_MinMAPeriod_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_Liquidation_TS_MinMAPeriod_C.DropDownWidth = 55;
+            this.CBB_Liquidation_TS_MinMAPeriod_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_Liquidation_TS_MinMAPeriod_C.FormattingEnabled = true;
+            this.CBB_Liquidation_TS_MinMAPeriod_C.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_Liquidation_TS_mma_C.Location = new System.Drawing.Point(1800, 243);
-            this.CBB_Liquidation_TS_mma_C.Name = "CBB_Liquidation_TS_mma_C";
-            this.CBB_Liquidation_TS_mma_C.Size = new System.Drawing.Size(35, 21);
-            this.CBB_Liquidation_TS_mma_C.TabIndex = 66;
+            this.CBB_Liquidation_TS_MinMAPeriod_C.Location = new System.Drawing.Point(1800, 243);
+            this.CBB_Liquidation_TS_MinMAPeriod_C.Name = "CBB_Liquidation_TS_MinMAPeriod_C";
+            this.CBB_Liquidation_TS_MinMAPeriod_C.Size = new System.Drawing.Size(35, 21);
+            this.CBB_Liquidation_TS_MinMAPeriod_C.TabIndex = 66;
             // 
-            // CBB_Liquidation_TS_dma_B
+            // CBB_Liquidation_TS_DayMAPeriod_B
             // 
-            this.CBB_Liquidation_TS_dma_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_Liquidation_TS_dma_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_Liquidation_TS_dma_B.DropDownWidth = 50;
-            this.CBB_Liquidation_TS_dma_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_Liquidation_TS_dma_B.FormattingEnabled = true;
-            this.CBB_Liquidation_TS_dma_B.Items.AddRange(new object[] {
+            this.CBB_Liquidation_TS_DayMAPeriod_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_Liquidation_TS_DayMAPeriod_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_Liquidation_TS_DayMAPeriod_B.DropDownWidth = 50;
+            this.CBB_Liquidation_TS_DayMAPeriod_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_Liquidation_TS_DayMAPeriod_B.FormattingEnabled = true;
+            this.CBB_Liquidation_TS_DayMAPeriod_B.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_Liquidation_TS_dma_B.Location = new System.Drawing.Point(1881, 223);
-            this.CBB_Liquidation_TS_dma_B.Name = "CBB_Liquidation_TS_dma_B";
-            this.CBB_Liquidation_TS_dma_B.Size = new System.Drawing.Size(35, 21);
-            this.CBB_Liquidation_TS_dma_B.TabIndex = 66;
+            this.CBB_Liquidation_TS_DayMAPeriod_B.Location = new System.Drawing.Point(1881, 223);
+            this.CBB_Liquidation_TS_DayMAPeriod_B.Name = "CBB_Liquidation_TS_DayMAPeriod_B";
+            this.CBB_Liquidation_TS_DayMAPeriod_B.Size = new System.Drawing.Size(35, 21);
+            this.CBB_Liquidation_TS_DayMAPeriod_B.TabIndex = 66;
             // 
-            // CBB_Liquidation_TS_mma_B
+            // CBB_Liquidation_TS_MinMAPeriod_B
             // 
-            this.CBB_Liquidation_TS_mma_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_Liquidation_TS_mma_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_Liquidation_TS_mma_B.DropDownWidth = 50;
-            this.CBB_Liquidation_TS_mma_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_Liquidation_TS_mma_B.FormattingEnabled = true;
-            this.CBB_Liquidation_TS_mma_B.Items.AddRange(new object[] {
+            this.CBB_Liquidation_TS_MinMAPeriod_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_Liquidation_TS_MinMAPeriod_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_Liquidation_TS_MinMAPeriod_B.DropDownWidth = 50;
+            this.CBB_Liquidation_TS_MinMAPeriod_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_Liquidation_TS_MinMAPeriod_B.FormattingEnabled = true;
+            this.CBB_Liquidation_TS_MinMAPeriod_B.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_Liquidation_TS_mma_B.Location = new System.Drawing.Point(1800, 223);
-            this.CBB_Liquidation_TS_mma_B.Name = "CBB_Liquidation_TS_mma_B";
-            this.CBB_Liquidation_TS_mma_B.Size = new System.Drawing.Size(35, 21);
-            this.CBB_Liquidation_TS_mma_B.TabIndex = 66;
+            this.CBB_Liquidation_TS_MinMAPeriod_B.Location = new System.Drawing.Point(1800, 223);
+            this.CBB_Liquidation_TS_MinMAPeriod_B.Name = "CBB_Liquidation_TS_MinMAPeriod_B";
+            this.CBB_Liquidation_TS_MinMAPeriod_B.Size = new System.Drawing.Size(35, 21);
+            this.CBB_Liquidation_TS_MinMAPeriod_B.TabIndex = 66;
             // 
-            // CBB_Liquidation_TS_dma_A
+            // CBB_Liquidation_TS_DayMAPeriod_A
             // 
-            this.CBB_Liquidation_TS_dma_A.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_Liquidation_TS_dma_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_Liquidation_TS_dma_A.DropDownWidth = 45;
-            this.CBB_Liquidation_TS_dma_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_Liquidation_TS_dma_A.FormattingEnabled = true;
-            this.CBB_Liquidation_TS_dma_A.Items.AddRange(new object[] {
+            this.CBB_Liquidation_TS_DayMAPeriod_A.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_Liquidation_TS_DayMAPeriod_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_Liquidation_TS_DayMAPeriod_A.DropDownWidth = 45;
+            this.CBB_Liquidation_TS_DayMAPeriod_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_Liquidation_TS_DayMAPeriod_A.FormattingEnabled = true;
+            this.CBB_Liquidation_TS_DayMAPeriod_A.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_Liquidation_TS_dma_A.Location = new System.Drawing.Point(1881, 203);
-            this.CBB_Liquidation_TS_dma_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.CBB_Liquidation_TS_dma_A.Name = "CBB_Liquidation_TS_dma_A";
-            this.CBB_Liquidation_TS_dma_A.Size = new System.Drawing.Size(35, 21);
-            this.CBB_Liquidation_TS_dma_A.TabIndex = 66;
+            this.CBB_Liquidation_TS_DayMAPeriod_A.Location = new System.Drawing.Point(1881, 203);
+            this.CBB_Liquidation_TS_DayMAPeriod_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.CBB_Liquidation_TS_DayMAPeriod_A.Name = "CBB_Liquidation_TS_DayMAPeriod_A";
+            this.CBB_Liquidation_TS_DayMAPeriod_A.Size = new System.Drawing.Size(35, 21);
+            this.CBB_Liquidation_TS_DayMAPeriod_A.TabIndex = 66;
             // 
-            // CBB_Liquidation_TS_mma_A
+            // CBB_Liquidation_TS_MinMAPeriod_A
             // 
-            this.CBB_Liquidation_TS_mma_A.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_Liquidation_TS_mma_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_Liquidation_TS_mma_A.DropDownWidth = 45;
-            this.CBB_Liquidation_TS_mma_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_Liquidation_TS_mma_A.FormattingEnabled = true;
-            this.CBB_Liquidation_TS_mma_A.Items.AddRange(new object[] {
+            this.CBB_Liquidation_TS_MinMAPeriod_A.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_Liquidation_TS_MinMAPeriod_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_Liquidation_TS_MinMAPeriod_A.DropDownWidth = 45;
+            this.CBB_Liquidation_TS_MinMAPeriod_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_Liquidation_TS_MinMAPeriod_A.FormattingEnabled = true;
+            this.CBB_Liquidation_TS_MinMAPeriod_A.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_Liquidation_TS_mma_A.Location = new System.Drawing.Point(1800, 203);
-            this.CBB_Liquidation_TS_mma_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.CBB_Liquidation_TS_mma_A.Name = "CBB_Liquidation_TS_mma_A";
-            this.CBB_Liquidation_TS_mma_A.Size = new System.Drawing.Size(35, 21);
-            this.CBB_Liquidation_TS_mma_A.TabIndex = 66;
+            this.CBB_Liquidation_TS_MinMAPeriod_A.Location = new System.Drawing.Point(1800, 203);
+            this.CBB_Liquidation_TS_MinMAPeriod_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.CBB_Liquidation_TS_MinMAPeriod_A.Name = "CBB_Liquidation_TS_MinMAPeriod_A";
+            this.CBB_Liquidation_TS_MinMAPeriod_A.Size = new System.Drawing.Size(35, 21);
+            this.CBB_Liquidation_TS_MinMAPeriod_A.TabIndex = 66;
             // 
-            // TB_추매주가이하
+            // TB_리밸_추매주가이하
             // 
-            this.TB_추매주가이하.BackColor = System.Drawing.Color.OldLace;
-            this.TB_추매주가이하.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_추매주가이하.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_추매주가이하.ForeColor = System.Drawing.Color.Black;
-            this.TB_추매주가이하.Location = new System.Drawing.Point(1133, 285);
-            this.TB_추매주가이하.MaxLength = 10;
-            this.TB_추매주가이하.Name = "TB_추매주가이하";
-            this.TB_추매주가이하.Size = new System.Drawing.Size(81, 21);
-            this.TB_추매주가이하.TabIndex = 114;
-            this.TB_추매주가이하.Text = "5000000";
-            this.TB_추매주가이하.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_추매주가이하.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_추매주가이하.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_리밸_추매주가이하.BackColor = System.Drawing.Color.OldLace;
+            this.TB_리밸_추매주가이하.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_리밸_추매주가이하.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_리밸_추매주가이하.ForeColor = System.Drawing.Color.Black;
+            this.TB_리밸_추매주가이하.Location = new System.Drawing.Point(1133, 285);
+            this.TB_리밸_추매주가이하.MaxLength = 10;
+            this.TB_리밸_추매주가이하.Name = "TB_리밸_추매주가이하";
+            this.TB_리밸_추매주가이하.Size = new System.Drawing.Size(81, 21);
+            this.TB_리밸_추매주가이하.TabIndex = 114;
+            this.TB_리밸_추매주가이하.Text = "5000000";
+            this.TB_리밸_추매주가이하.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_리밸_추매주가이하.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
+            this.TB_리밸_추매주가이하.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_추매등락률이상
+            // TB_리밸_추매등락률이상
             // 
-            this.TB_추매등락률이상.BackColor = System.Drawing.Color.OldLace;
-            this.TB_추매등락률이상.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_추매등락률이상.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_추매등락률이상.ForeColor = System.Drawing.Color.Red;
-            this.TB_추매등락률이상.Location = new System.Drawing.Point(1013, 305);
-            this.TB_추매등락률이상.MaxLength = 7;
-            this.TB_추매등락률이상.Name = "TB_추매등락률이상";
-            this.TB_추매등락률이상.Size = new System.Drawing.Size(81, 21);
-            this.TB_추매등락률이상.TabIndex = 115;
-            this.TB_추매등락률이상.Text = "-120.99";
-            this.TB_추매등락률이상.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_추매등락률이상.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_추매등락률이상.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_리밸_추매등락률이상.BackColor = System.Drawing.Color.OldLace;
+            this.TB_리밸_추매등락률이상.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_리밸_추매등락률이상.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_리밸_추매등락률이상.ForeColor = System.Drawing.Color.Red;
+            this.TB_리밸_추매등락률이상.Location = new System.Drawing.Point(1013, 305);
+            this.TB_리밸_추매등락률이상.MaxLength = 7;
+            this.TB_리밸_추매등락률이상.Name = "TB_리밸_추매등락률이상";
+            this.TB_리밸_추매등락률이상.Size = new System.Drawing.Size(81, 21);
+            this.TB_리밸_추매등락률이상.TabIndex = 115;
+            this.TB_리밸_추매등락률이상.Text = "-120.99";
+            this.TB_리밸_추매등락률이상.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_리밸_추매등락률이상.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
+            this.TB_리밸_추매등락률이상.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
-            // TB_추매등락률이하
+            // TB_리밸_추매등락률이하
             // 
-            this.TB_추매등락률이하.BackColor = System.Drawing.Color.OldLace;
-            this.TB_추매등락률이하.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_추매등락률이하.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_추매등락률이하.ForeColor = System.Drawing.Color.Red;
-            this.TB_추매등락률이하.Location = new System.Drawing.Point(1133, 305);
-            this.TB_추매등락률이하.MaxLength = 7;
-            this.TB_추매등락률이하.Name = "TB_추매등락률이하";
-            this.TB_추매등락률이하.Size = new System.Drawing.Size(81, 21);
-            this.TB_추매등락률이하.TabIndex = 116;
-            this.TB_추매등락률이하.Text = "20.99";
-            this.TB_추매등락률이하.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_추매등락률이하.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_추매등락률이하.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_리밸_추매등락률이하.BackColor = System.Drawing.Color.OldLace;
+            this.TB_리밸_추매등락률이하.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_리밸_추매등락률이하.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_리밸_추매등락률이하.ForeColor = System.Drawing.Color.Red;
+            this.TB_리밸_추매등락률이하.Location = new System.Drawing.Point(1133, 305);
+            this.TB_리밸_추매등락률이하.MaxLength = 7;
+            this.TB_리밸_추매등락률이하.Name = "TB_리밸_추매등락률이하";
+            this.TB_리밸_추매등락률이하.Size = new System.Drawing.Size(81, 21);
+            this.TB_리밸_추매등락률이하.TabIndex = 116;
+            this.TB_리밸_추매등락률이하.Text = "20.99";
+            this.TB_리밸_추매등락률이하.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_리밸_추매등락률이하.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
+            this.TB_리밸_추매등락률이하.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label22
             // 
@@ -8619,7 +8616,7 @@ namespace 지니_64
             this.TB_rebalance_sell_ratio_F.TabIndex = 36;
             this.TB_rebalance_sell_ratio_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_sell_ratio_F.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_sell_ratio_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_sell_ratio_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label201
             // 
@@ -8704,7 +8701,7 @@ namespace 지니_64
             this.TB_cut_won_C.TabIndex = 57;
             this.TB_cut_won_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_cut_won_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_cut_won_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_cut_won_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label13
             // 
@@ -8745,7 +8742,7 @@ namespace 지니_64
             this.label473.Name = "label473";
             this.label473.Size = new System.Drawing.Size(37, 20);
             this.label473.TabIndex = 58;
-            this.label473.Text = "수량";
+            this.label473.Text = "비중";
             this.label473.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CB_회수제한
@@ -8782,7 +8779,7 @@ namespace 지니_64
             this.TB_cut_won_B.TabIndex = 57;
             this.TB_cut_won_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_cut_won_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_cut_won_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_cut_won_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_cut_P_C
             // 
@@ -8798,7 +8795,7 @@ namespace 지니_64
             this.TB_cut_P_C.TabIndex = 56;
             this.TB_cut_P_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_cut_P_C.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_cut_P_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_cut_P_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_회수제한
             // 
@@ -8813,7 +8810,7 @@ namespace 지니_64
             this.TB_회수제한.TabIndex = 57;
             this.TB_회수제한.Text = "1234567";
             this.TB_회수제한.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_회수제한.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_회수제한.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // L_실손담보수익금_C
             // 
@@ -8884,7 +8881,7 @@ namespace 지니_64
             this.TB_cut_value_C.TabIndex = 102;
             this.TB_cut_value_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_cut_value_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_cut_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_cut_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_분할간격_B
             // 
@@ -8899,7 +8896,7 @@ namespace 지니_64
             this.TB_분할간격_B.TabIndex = 57;
             this.TB_분할간격_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_분할간격_B.TextChanged += new System.EventHandler(this.TextBox_빨파검);
-            this.TB_분할간격_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수실수_키프레스);
+            this.TB_분할간격_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수실수_키프레스_);
             // 
             // TB_cut_value_B
             // 
@@ -8914,7 +8911,7 @@ namespace 지니_64
             this.TB_cut_value_B.TabIndex = 102;
             this.TB_cut_value_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_cut_value_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_cut_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_cut_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_분할간격_C
             // 
@@ -8929,7 +8926,7 @@ namespace 지니_64
             this.TB_분할간격_C.TabIndex = 57;
             this.TB_분할간격_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_분할간격_C.TextChanged += new System.EventHandler(this.TextBox_빨파검);
-            this.TB_분할간격_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수실수_키프레스);
+            this.TB_분할간격_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수실수_키프레스_);
             // 
             // TB_cut_value_A
             // 
@@ -8944,7 +8941,7 @@ namespace 지니_64
             this.TB_cut_value_A.TabIndex = 102;
             this.TB_cut_value_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_cut_value_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_cut_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_cut_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label283
             // 
@@ -8986,7 +8983,7 @@ namespace 지니_64
             this.TB_분할횟수_B.TabIndex = 57;
             this.TB_분할횟수_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_분할횟수_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_분할횟수_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_분할횟수_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_분할횟수_C
             // 
@@ -9001,7 +8998,7 @@ namespace 지니_64
             this.TB_분할횟수_C.TabIndex = 57;
             this.TB_분할횟수_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_분할횟수_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_분할횟수_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_분할횟수_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_cut_P_B
             // 
@@ -9017,7 +9014,7 @@ namespace 지니_64
             this.TB_cut_P_B.TabIndex = 56;
             this.TB_cut_P_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_cut_P_B.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_cut_P_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_cut_P_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_sell_ratio_E
             // 
@@ -9032,7 +9029,7 @@ namespace 지니_64
             this.TB_rebalance_sell_ratio_E.TabIndex = 36;
             this.TB_rebalance_sell_ratio_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_sell_ratio_E.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_sell_ratio_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_sell_ratio_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_rebalance_value_E
             // 
@@ -9047,7 +9044,7 @@ namespace 지니_64
             this.TB_rebalance_value_E.TabIndex = 102;
             this.TB_rebalance_value_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_value_E.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_value_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_value_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // MTB_cut_time_C
             // 
@@ -9067,6 +9064,8 @@ namespace 지니_64
             this.MTB_cut_time_C.Text = "151500";
             this.MTB_cut_time_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MTB_cut_time_C.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.MTB_cut_time_C.TextChanged += new System.EventHandler(this.MTB_cut_time_TextChanged);
+            this.MTB_cut_time_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_value_C
             // 
@@ -9081,7 +9080,7 @@ namespace 지니_64
             this.TB_rebalance_value_C.TabIndex = 102;
             this.TB_rebalance_value_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_value_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // MTB_cut_time_B
             // 
@@ -9101,6 +9100,8 @@ namespace 지니_64
             this.MTB_cut_time_B.Text = "151500";
             this.MTB_cut_time_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MTB_cut_time_B.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.MTB_cut_time_B.TextChanged += new System.EventHandler(this.MTB_cut_time_TextChanged);
+            this.MTB_cut_time_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_maemae_2_G
             // 
@@ -9116,7 +9117,7 @@ namespace 지니_64
             this.TB_rebalance_maemae_2_G.Text = "100";
             this.TB_rebalance_maemae_2_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_maemae_2_G.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_maemae_2_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_maemae_2_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_rebalance_maemae_2_F
             // 
@@ -9132,7 +9133,7 @@ namespace 지니_64
             this.TB_rebalance_maemae_2_F.Text = "100";
             this.TB_rebalance_maemae_2_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_maemae_2_F.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_maemae_2_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_maemae_2_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_rebalance_maemae_2_E
             // 
@@ -9148,7 +9149,7 @@ namespace 지니_64
             this.TB_rebalance_maemae_2_E.Text = "100";
             this.TB_rebalance_maemae_2_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_maemae_2_E.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_maemae_2_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_maemae_2_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_cut_남길퍼_B
             // 
@@ -9163,7 +9164,7 @@ namespace 지니_64
             this.TB_cut_남길퍼_B.TabIndex = 29;
             this.TB_cut_남길퍼_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_cut_남길퍼_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_cut_남길퍼_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_cut_남길퍼_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_rebalance_maemae_2_C
             // 
@@ -9179,7 +9180,7 @@ namespace 지니_64
             this.TB_rebalance_maemae_2_C.Text = "100";
             this.TB_rebalance_maemae_2_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_maemae_2_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_maemae_2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_maemae_2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_cut_won_A
             // 
@@ -9194,7 +9195,7 @@ namespace 지니_64
             this.TB_cut_won_A.TabIndex = 57;
             this.TB_cut_won_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_cut_won_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_cut_won_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_cut_won_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_value_D
             // 
@@ -9209,7 +9210,7 @@ namespace 지니_64
             this.TB_rebalance_value_D.TabIndex = 102;
             this.TB_rebalance_value_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_value_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_value_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_value_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_value_B
             // 
@@ -9224,7 +9225,7 @@ namespace 지니_64
             this.TB_rebalance_value_B.TabIndex = 102;
             this.TB_rebalance_value_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_value_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_maemae_1_G
             // 
@@ -9240,7 +9241,7 @@ namespace 지니_64
             this.TB_rebalance_maemae_1_G.Text = "0";
             this.TB_rebalance_maemae_1_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_maemae_1_G.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_maemae_1_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_maemae_1_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_rebalance_maemae_1_F
             // 
@@ -9256,7 +9257,7 @@ namespace 지니_64
             this.TB_rebalance_maemae_1_F.Text = "0";
             this.TB_rebalance_maemae_1_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_maemae_1_F.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_maemae_1_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_maemae_1_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_rebalance_maemae_1_E
             // 
@@ -9272,7 +9273,7 @@ namespace 지니_64
             this.TB_rebalance_maemae_1_E.Text = "0";
             this.TB_rebalance_maemae_1_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_maemae_1_E.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_maemae_1_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_maemae_1_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label375
             // 
@@ -9302,7 +9303,7 @@ namespace 지니_64
             this.TB_rebalance_maemae_1_C.Text = "0";
             this.TB_rebalance_maemae_1_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_maemae_1_C.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_maemae_1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_maemae_1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_분할간격_A
             // 
@@ -9317,7 +9318,7 @@ namespace 지니_64
             this.TB_분할간격_A.TabIndex = 57;
             this.TB_분할간격_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_분할간격_A.TextChanged += new System.EventHandler(this.TextBox_빨파검);
-            this.TB_분할간격_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수실수_키프레스);
+            this.TB_분할간격_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수실수_키프레스_);
             // 
             // TB_분할횟수_A
             // 
@@ -9332,7 +9333,7 @@ namespace 지니_64
             this.TB_분할횟수_A.TabIndex = 57;
             this.TB_분할횟수_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_분할횟수_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_분할횟수_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_분할횟수_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_감시_value_G
             // 
@@ -9348,7 +9349,7 @@ namespace 지니_64
             this.TB_rebalance_감시_value_G.Text = "100.00";
             this.TB_rebalance_감시_value_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_감시_value_G.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_감시_value_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_감시_value_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_감시_value_F
             // 
@@ -9364,7 +9365,7 @@ namespace 지니_64
             this.TB_rebalance_감시_value_F.Text = "100.00";
             this.TB_rebalance_감시_value_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_감시_value_F.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_감시_value_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_감시_value_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_감시_value_E
             // 
@@ -9380,7 +9381,7 @@ namespace 지니_64
             this.TB_rebalance_감시_value_E.Text = "100.00";
             this.TB_rebalance_감시_value_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_감시_value_E.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_감시_value_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_감시_value_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label58
             // 
@@ -9438,7 +9439,7 @@ namespace 지니_64
             this.TB_rebalance_감시_value_C.Text = "100.00";
             this.TB_rebalance_감시_value_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_감시_value_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_감시_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_감시_value_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_cut_P_A
             // 
@@ -9454,7 +9455,7 @@ namespace 지니_64
             this.TB_cut_P_A.TabIndex = 56;
             this.TB_cut_P_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_cut_P_A.TextChanged += new System.EventHandler(this.TextBox_음수만입력_소수2자리제한);
-            this.TB_cut_P_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_cut_P_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_감시_value_D
             // 
@@ -9470,7 +9471,7 @@ namespace 지니_64
             this.TB_rebalance_감시_value_D.Text = "100.00";
             this.TB_rebalance_감시_value_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_감시_value_D.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_감시_value_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_감시_value_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label329
             // 
@@ -9500,7 +9501,7 @@ namespace 지니_64
             this.TB_rebalance_감시_value_B.Text = "100.00";
             this.TB_rebalance_감시_value_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_감시_value_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_감시_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_감시_value_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_sell_ratio_D
             // 
@@ -9515,7 +9516,7 @@ namespace 지니_64
             this.TB_rebalance_sell_ratio_D.TabIndex = 36;
             this.TB_rebalance_sell_ratio_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_sell_ratio_D.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_sell_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_sell_ratio_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label328
             // 
@@ -9544,7 +9545,7 @@ namespace 지니_64
             this.TB_손익기준.TabIndex = 57;
             this.TB_손익기준.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_손익기준.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_손익기준.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_손익기준.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_cut_수익금2_A
             // 
@@ -9560,7 +9561,7 @@ namespace 지니_64
             this.TB_cut_수익금2_A.TabIndex = 29;
             this.TB_cut_수익금2_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_cut_수익금2_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_cut_수익금2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_cut_수익금2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_cut_수익금1_A
             // 
@@ -9576,7 +9577,7 @@ namespace 지니_64
             this.TB_cut_수익금1_A.TabIndex = 29;
             this.TB_cut_수익금1_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_cut_수익금1_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_cut_수익금1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_cut_수익금1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_rebalance_감시_value_A
             // 
@@ -9592,7 +9593,7 @@ namespace 지니_64
             this.TB_rebalance_감시_value_A.Text = "100.00";
             this.TB_rebalance_감시_value_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_감시_value_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_감시_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_감시_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_cut_수익금2_C
             // 
@@ -9608,7 +9609,7 @@ namespace 지니_64
             this.TB_cut_수익금2_C.TabIndex = 29;
             this.TB_cut_수익금2_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_cut_수익금2_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_cut_수익금2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_cut_수익금2_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_손익비율
             // 
@@ -9623,7 +9624,7 @@ namespace 지니_64
             this.TB_손익비율.TabIndex = 57;
             this.TB_손익비율.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_손익비율.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_손익비율.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_손익비율.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_cut_수익금1_C
             // 
@@ -9639,7 +9640,7 @@ namespace 지니_64
             this.TB_cut_수익금1_C.TabIndex = 29;
             this.TB_cut_수익금1_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_cut_수익금1_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_cut_수익금1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_cut_수익금1_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_rebalance_value_A
             // 
@@ -9654,7 +9655,7 @@ namespace 지니_64
             this.TB_rebalance_value_A.TabIndex = 102;
             this.TB_rebalance_value_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_value_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_value_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_cut_남길퍼_C
             // 
@@ -9669,7 +9670,7 @@ namespace 지니_64
             this.TB_cut_남길퍼_C.TabIndex = 29;
             this.TB_cut_남길퍼_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_cut_남길퍼_C.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_cut_남길퍼_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_cut_남길퍼_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_rebalance_maemae_2_D
             // 
@@ -9685,7 +9686,7 @@ namespace 지니_64
             this.TB_rebalance_maemae_2_D.Text = "100";
             this.TB_rebalance_maemae_2_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_maemae_2_D.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_maemae_2_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_maemae_2_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_cut_남길퍼_A
             // 
@@ -9700,7 +9701,7 @@ namespace 지니_64
             this.TB_cut_남길퍼_A.TabIndex = 29;
             this.TB_cut_남길퍼_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_cut_남길퍼_A.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_cut_남길퍼_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_cut_남길퍼_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_rebalance_maemae_2_B
             // 
@@ -9716,7 +9717,7 @@ namespace 지니_64
             this.TB_rebalance_maemae_2_B.Text = "100";
             this.TB_rebalance_maemae_2_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_maemae_2_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_maemae_2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_maemae_2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label371
             // 
@@ -9760,7 +9761,7 @@ namespace 지니_64
             this.TB_cut_수익금2_B.TabIndex = 29;
             this.TB_cut_수익금2_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_cut_수익금2_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_cut_수익금2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_cut_수익금2_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_rebalance_maemae_1_D
             // 
@@ -9776,7 +9777,7 @@ namespace 지니_64
             this.TB_rebalance_maemae_1_D.Text = "0";
             this.TB_rebalance_maemae_1_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_maemae_1_D.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_maemae_1_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_maemae_1_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_cut_수익금1_B
             // 
@@ -9792,7 +9793,7 @@ namespace 지니_64
             this.TB_cut_수익금1_B.TabIndex = 29;
             this.TB_cut_수익금1_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_cut_수익금1_B.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_cut_수익금1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_cut_수익금1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_rebalance_maemae_1_B
             // 
@@ -9808,7 +9809,7 @@ namespace 지니_64
             this.TB_rebalance_maemae_1_B.Text = "0";
             this.TB_rebalance_maemae_1_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_maemae_1_B.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_maemae_1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_maemae_1_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // MTB_cut_time_A
             // 
@@ -9828,6 +9829,8 @@ namespace 지니_64
             this.MTB_cut_time_A.Text = "151500";
             this.MTB_cut_time_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.MTB_cut_time_A.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.MTB_cut_time_A.TextChanged += new System.EventHandler(this.MTB_cut_time_TextChanged);
+            this.MTB_cut_time_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_매수기준
             // 
@@ -9842,7 +9845,7 @@ namespace 지니_64
             this.TB_매수기준.TabIndex = 57;
             this.TB_매수기준.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_매수기준.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_매수기준.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_매수기준.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_rebalance_maemae_2_A
             // 
@@ -9858,7 +9861,7 @@ namespace 지니_64
             this.TB_rebalance_maemae_2_A.Text = "100";
             this.TB_rebalance_maemae_2_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_maemae_2_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_maemae_2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_maemae_2_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label205
             // 
@@ -9888,7 +9891,7 @@ namespace 지니_64
             this.TB_rebalance_maemae_1_A.Text = "0";
             this.TB_rebalance_maemae_1_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_maemae_1_A.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_maemae_1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_maemae_1_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_매수비율
             // 
@@ -9903,7 +9906,7 @@ namespace 지니_64
             this.TB_매수비율.TabIndex = 57;
             this.TB_매수비율.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_매수비율.TextChanged += new System.EventHandler(this.TextBox_소수자리제한);
-            this.TB_매수비율.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_매수비율.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // CB_cut_LB_C
             // 
@@ -11064,14 +11067,14 @@ namespace 지니_64
             this.TB_rebalance_sellratio2_G.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_rebalance_sellratio2_G.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.TB_rebalance_sellratio2_G.Location = new System.Drawing.Point(1556, 161);
-            this.TB_rebalance_sellratio2_G.MaxLength = 6;
+            this.TB_rebalance_sellratio2_G.MaxLength = 5;
             this.TB_rebalance_sellratio2_G.Name = "TB_rebalance_sellratio2_G";
             this.TB_rebalance_sellratio2_G.Size = new System.Drawing.Size(48, 21);
             this.TB_rebalance_sellratio2_G.TabIndex = 62;
             this.TB_rebalance_sellratio2_G.Text = "123456";
             this.TB_rebalance_sellratio2_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_sellratio2_G.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_sellratio2_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_sellratio2_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_sellratio2_F
             // 
@@ -11080,14 +11083,14 @@ namespace 지니_64
             this.TB_rebalance_sellratio2_F.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_rebalance_sellratio2_F.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.TB_rebalance_sellratio2_F.Location = new System.Drawing.Point(1556, 141);
-            this.TB_rebalance_sellratio2_F.MaxLength = 6;
+            this.TB_rebalance_sellratio2_F.MaxLength = 5;
             this.TB_rebalance_sellratio2_F.Name = "TB_rebalance_sellratio2_F";
             this.TB_rebalance_sellratio2_F.Size = new System.Drawing.Size(48, 21);
             this.TB_rebalance_sellratio2_F.TabIndex = 62;
             this.TB_rebalance_sellratio2_F.Text = "123456";
             this.TB_rebalance_sellratio2_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_sellratio2_F.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_sellratio2_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_sellratio2_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // label469
             // 
@@ -11441,14 +11444,14 @@ namespace 지니_64
             this.TB_rebalance_sellratio1_G.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_rebalance_sellratio1_G.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.TB_rebalance_sellratio1_G.Location = new System.Drawing.Point(1344, 161);
-            this.TB_rebalance_sellratio1_G.MaxLength = 6;
+            this.TB_rebalance_sellratio1_G.MaxLength = 5;
             this.TB_rebalance_sellratio1_G.Name = "TB_rebalance_sellratio1_G";
             this.TB_rebalance_sellratio1_G.Size = new System.Drawing.Size(48, 21);
             this.TB_rebalance_sellratio1_G.TabIndex = 62;
             this.TB_rebalance_sellratio1_G.Text = "13.12";
             this.TB_rebalance_sellratio1_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_sellratio1_G.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_sellratio1_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_sellratio1_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_sellratio1_F
             // 
@@ -11457,14 +11460,14 @@ namespace 지니_64
             this.TB_rebalance_sellratio1_F.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_rebalance_sellratio1_F.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.TB_rebalance_sellratio1_F.Location = new System.Drawing.Point(1344, 141);
-            this.TB_rebalance_sellratio1_F.MaxLength = 6;
+            this.TB_rebalance_sellratio1_F.MaxLength = 5;
             this.TB_rebalance_sellratio1_F.Name = "TB_rebalance_sellratio1_F";
             this.TB_rebalance_sellratio1_F.Size = new System.Drawing.Size(48, 21);
             this.TB_rebalance_sellratio1_F.TabIndex = 62;
             this.TB_rebalance_sellratio1_F.Text = "13.12";
             this.TB_rebalance_sellratio1_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_rebalance_sellratio1_F.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_sellratio1_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_sellratio1_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // MT_rebalance_repeat_time_D
             // 
@@ -11593,7 +11596,7 @@ namespace 지니_64
             this.label468.Name = "label468";
             this.label468.Size = new System.Drawing.Size(37, 20);
             this.label468.TabIndex = 58;
-            this.label468.Text = "수량";
+            this.label468.Text = "비중";
             this.label468.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // L_리밸시간_C
@@ -11953,215 +11956,215 @@ namespace 지니_64
             this.combo_rebalance_감시_jumun_F.SelectedIndexChanged += new System.EventHandler(this.CBB_jumun_SelectedIndexChanged);
             this.combo_rebalance_감시_jumun_F.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
             // 
-            // combo_rebalance_condition_C
+            // 리밸_C
             // 
-            this.combo_rebalance_condition_C.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.combo_rebalance_condition_C.DropDownHeight = 600;
-            this.combo_rebalance_condition_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_rebalance_condition_C.DropDownWidth = 200;
-            this.combo_rebalance_condition_C.Enabled = false;
-            this.combo_rebalance_condition_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_rebalance_condition_C.FormattingEnabled = true;
-            this.combo_rebalance_condition_C.IntegralHeight = false;
-            this.combo_rebalance_condition_C.Location = new System.Drawing.Point(230, 81);
-            this.combo_rebalance_condition_C.MaxLength = 22;
-            this.combo_rebalance_condition_C.Name = "combo_rebalance_condition_C";
-            this.combo_rebalance_condition_C.Size = new System.Drawing.Size(155, 21);
-            this.combo_rebalance_condition_C.TabIndex = 65;
-            this.combo_rebalance_condition_C.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.combo_rebalance_condition_C.SelectedIndexChanged += new System.EventHandler(this.combo_condition_SelectedIndexChanged);
-            this.combo_rebalance_condition_C.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.combo_rebalance_condition_C.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
-            this.combo_rebalance_condition_C.MouseHover += new System.EventHandler(this.combo_condition_MouseHover);
+            this.리밸_C.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.리밸_C.DropDownHeight = 600;
+            this.리밸_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.리밸_C.DropDownWidth = 200;
+            this.리밸_C.Enabled = false;
+            this.리밸_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.리밸_C.FormattingEnabled = true;
+            this.리밸_C.IntegralHeight = false;
+            this.리밸_C.Location = new System.Drawing.Point(230, 81);
+            this.리밸_C.MaxLength = 22;
+            this.리밸_C.Name = "리밸_C";
+            this.리밸_C.Size = new System.Drawing.Size(155, 21);
+            this.리밸_C.TabIndex = 65;
+            this.리밸_C.DropDown += new System.EventHandler(this.Combo_Condition_Add);
+            this.리밸_C.SelectedIndexChanged += new System.EventHandler(this.Combo_condition_SelectedIndexChanged);
+            this.리밸_C.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.리밸_C.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
+            this.리밸_C.MouseHover += new System.EventHandler(this.Combo_condition_MouseHover);
             // 
-            // combo_rebalance_condition_G
+            // 리밸_G
             // 
-            this.combo_rebalance_condition_G.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.combo_rebalance_condition_G.DropDownHeight = 600;
-            this.combo_rebalance_condition_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_rebalance_condition_G.DropDownWidth = 200;
-            this.combo_rebalance_condition_G.Enabled = false;
-            this.combo_rebalance_condition_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_rebalance_condition_G.FormattingEnabled = true;
-            this.combo_rebalance_condition_G.IntegralHeight = false;
-            this.combo_rebalance_condition_G.Location = new System.Drawing.Point(230, 161);
-            this.combo_rebalance_condition_G.MaxLength = 22;
-            this.combo_rebalance_condition_G.Name = "combo_rebalance_condition_G";
-            this.combo_rebalance_condition_G.Size = new System.Drawing.Size(155, 21);
-            this.combo_rebalance_condition_G.TabIndex = 65;
-            this.combo_rebalance_condition_G.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.combo_rebalance_condition_G.SelectedIndexChanged += new System.EventHandler(this.combo_condition_SelectedIndexChanged);
-            this.combo_rebalance_condition_G.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.combo_rebalance_condition_G.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
-            this.combo_rebalance_condition_G.MouseHover += new System.EventHandler(this.combo_condition_MouseHover);
+            this.리밸_G.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.리밸_G.DropDownHeight = 600;
+            this.리밸_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.리밸_G.DropDownWidth = 200;
+            this.리밸_G.Enabled = false;
+            this.리밸_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.리밸_G.FormattingEnabled = true;
+            this.리밸_G.IntegralHeight = false;
+            this.리밸_G.Location = new System.Drawing.Point(230, 161);
+            this.리밸_G.MaxLength = 22;
+            this.리밸_G.Name = "리밸_G";
+            this.리밸_G.Size = new System.Drawing.Size(155, 21);
+            this.리밸_G.TabIndex = 65;
+            this.리밸_G.DropDown += new System.EventHandler(this.Combo_Condition_Add);
+            this.리밸_G.SelectedIndexChanged += new System.EventHandler(this.Combo_condition_SelectedIndexChanged);
+            this.리밸_G.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.리밸_G.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
+            this.리밸_G.MouseHover += new System.EventHandler(this.Combo_condition_MouseHover);
             // 
-            // combo_rebalance_condition_F
+            // 리밸_F
             // 
-            this.combo_rebalance_condition_F.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.combo_rebalance_condition_F.DropDownHeight = 600;
-            this.combo_rebalance_condition_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_rebalance_condition_F.DropDownWidth = 200;
-            this.combo_rebalance_condition_F.Enabled = false;
-            this.combo_rebalance_condition_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_rebalance_condition_F.FormattingEnabled = true;
-            this.combo_rebalance_condition_F.IntegralHeight = false;
-            this.combo_rebalance_condition_F.Location = new System.Drawing.Point(230, 141);
-            this.combo_rebalance_condition_F.MaxLength = 22;
-            this.combo_rebalance_condition_F.Name = "combo_rebalance_condition_F";
-            this.combo_rebalance_condition_F.Size = new System.Drawing.Size(155, 21);
-            this.combo_rebalance_condition_F.TabIndex = 65;
-            this.combo_rebalance_condition_F.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.combo_rebalance_condition_F.SelectedIndexChanged += new System.EventHandler(this.combo_condition_SelectedIndexChanged);
-            this.combo_rebalance_condition_F.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.combo_rebalance_condition_F.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
-            this.combo_rebalance_condition_F.MouseHover += new System.EventHandler(this.combo_condition_MouseHover);
+            this.리밸_F.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.리밸_F.DropDownHeight = 600;
+            this.리밸_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.리밸_F.DropDownWidth = 200;
+            this.리밸_F.Enabled = false;
+            this.리밸_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.리밸_F.FormattingEnabled = true;
+            this.리밸_F.IntegralHeight = false;
+            this.리밸_F.Location = new System.Drawing.Point(230, 141);
+            this.리밸_F.MaxLength = 22;
+            this.리밸_F.Name = "리밸_F";
+            this.리밸_F.Size = new System.Drawing.Size(155, 21);
+            this.리밸_F.TabIndex = 65;
+            this.리밸_F.DropDown += new System.EventHandler(this.Combo_Condition_Add);
+            this.리밸_F.SelectedIndexChanged += new System.EventHandler(this.Combo_condition_SelectedIndexChanged);
+            this.리밸_F.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.리밸_F.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
+            this.리밸_F.MouseHover += new System.EventHandler(this.Combo_condition_MouseHover);
             // 
-            // combo_rebalance_condition_B
+            // 리밸_B
             // 
-            this.combo_rebalance_condition_B.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.combo_rebalance_condition_B.DropDownHeight = 600;
-            this.combo_rebalance_condition_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_rebalance_condition_B.DropDownWidth = 200;
-            this.combo_rebalance_condition_B.Enabled = false;
-            this.combo_rebalance_condition_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_rebalance_condition_B.FormattingEnabled = true;
-            this.combo_rebalance_condition_B.IntegralHeight = false;
-            this.combo_rebalance_condition_B.Location = new System.Drawing.Point(230, 61);
-            this.combo_rebalance_condition_B.MaxLength = 22;
-            this.combo_rebalance_condition_B.Name = "combo_rebalance_condition_B";
-            this.combo_rebalance_condition_B.Size = new System.Drawing.Size(155, 21);
-            this.combo_rebalance_condition_B.TabIndex = 65;
-            this.combo_rebalance_condition_B.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.combo_rebalance_condition_B.SelectedIndexChanged += new System.EventHandler(this.combo_condition_SelectedIndexChanged);
-            this.combo_rebalance_condition_B.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.combo_rebalance_condition_B.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
-            this.combo_rebalance_condition_B.MouseHover += new System.EventHandler(this.combo_condition_MouseHover);
+            this.리밸_B.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.리밸_B.DropDownHeight = 600;
+            this.리밸_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.리밸_B.DropDownWidth = 200;
+            this.리밸_B.Enabled = false;
+            this.리밸_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.리밸_B.FormattingEnabled = true;
+            this.리밸_B.IntegralHeight = false;
+            this.리밸_B.Location = new System.Drawing.Point(230, 61);
+            this.리밸_B.MaxLength = 22;
+            this.리밸_B.Name = "리밸_B";
+            this.리밸_B.Size = new System.Drawing.Size(155, 21);
+            this.리밸_B.TabIndex = 65;
+            this.리밸_B.DropDown += new System.EventHandler(this.Combo_Condition_Add);
+            this.리밸_B.SelectedIndexChanged += new System.EventHandler(this.Combo_condition_SelectedIndexChanged);
+            this.리밸_B.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.리밸_B.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
+            this.리밸_B.MouseHover += new System.EventHandler(this.Combo_condition_MouseHover);
             // 
-            // combo_rebalance_condition_E
+            // 리밸_E
             // 
-            this.combo_rebalance_condition_E.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.combo_rebalance_condition_E.DropDownHeight = 600;
-            this.combo_rebalance_condition_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_rebalance_condition_E.DropDownWidth = 200;
-            this.combo_rebalance_condition_E.Enabled = false;
-            this.combo_rebalance_condition_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_rebalance_condition_E.FormattingEnabled = true;
-            this.combo_rebalance_condition_E.IntegralHeight = false;
-            this.combo_rebalance_condition_E.Location = new System.Drawing.Point(230, 121);
-            this.combo_rebalance_condition_E.MaxLength = 22;
-            this.combo_rebalance_condition_E.Name = "combo_rebalance_condition_E";
-            this.combo_rebalance_condition_E.Size = new System.Drawing.Size(155, 21);
-            this.combo_rebalance_condition_E.TabIndex = 65;
-            this.combo_rebalance_condition_E.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.combo_rebalance_condition_E.SelectedIndexChanged += new System.EventHandler(this.combo_condition_SelectedIndexChanged);
-            this.combo_rebalance_condition_E.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.combo_rebalance_condition_E.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
-            this.combo_rebalance_condition_E.MouseHover += new System.EventHandler(this.combo_condition_MouseHover);
+            this.리밸_E.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.리밸_E.DropDownHeight = 600;
+            this.리밸_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.리밸_E.DropDownWidth = 200;
+            this.리밸_E.Enabled = false;
+            this.리밸_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.리밸_E.FormattingEnabled = true;
+            this.리밸_E.IntegralHeight = false;
+            this.리밸_E.Location = new System.Drawing.Point(230, 121);
+            this.리밸_E.MaxLength = 22;
+            this.리밸_E.Name = "리밸_E";
+            this.리밸_E.Size = new System.Drawing.Size(155, 21);
+            this.리밸_E.TabIndex = 65;
+            this.리밸_E.DropDown += new System.EventHandler(this.Combo_Condition_Add);
+            this.리밸_E.SelectedIndexChanged += new System.EventHandler(this.Combo_condition_SelectedIndexChanged);
+            this.리밸_E.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.리밸_E.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
+            this.리밸_E.MouseHover += new System.EventHandler(this.Combo_condition_MouseHover);
             // 
-            // combo_rebalance_condition_A
+            // 리밸_A
             // 
-            this.combo_rebalance_condition_A.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.combo_rebalance_condition_A.DropDownHeight = 600;
-            this.combo_rebalance_condition_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_rebalance_condition_A.DropDownWidth = 200;
-            this.combo_rebalance_condition_A.Enabled = false;
-            this.combo_rebalance_condition_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_rebalance_condition_A.FormattingEnabled = true;
-            this.combo_rebalance_condition_A.IntegralHeight = false;
-            this.combo_rebalance_condition_A.Location = new System.Drawing.Point(230, 41);
-            this.combo_rebalance_condition_A.MaxLength = 22;
-            this.combo_rebalance_condition_A.Name = "combo_rebalance_condition_A";
-            this.combo_rebalance_condition_A.Size = new System.Drawing.Size(155, 21);
-            this.combo_rebalance_condition_A.TabIndex = 65;
-            this.combo_rebalance_condition_A.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.combo_rebalance_condition_A.SelectedIndexChanged += new System.EventHandler(this.combo_condition_SelectedIndexChanged);
-            this.combo_rebalance_condition_A.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.combo_rebalance_condition_A.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
-            this.combo_rebalance_condition_A.MouseHover += new System.EventHandler(this.combo_condition_MouseHover);
+            this.리밸_A.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.리밸_A.DropDownHeight = 600;
+            this.리밸_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.리밸_A.DropDownWidth = 200;
+            this.리밸_A.Enabled = false;
+            this.리밸_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.리밸_A.FormattingEnabled = true;
+            this.리밸_A.IntegralHeight = false;
+            this.리밸_A.Location = new System.Drawing.Point(230, 41);
+            this.리밸_A.MaxLength = 22;
+            this.리밸_A.Name = "리밸_A";
+            this.리밸_A.Size = new System.Drawing.Size(155, 21);
+            this.리밸_A.TabIndex = 65;
+            this.리밸_A.DropDown += new System.EventHandler(this.Combo_Condition_Add);
+            this.리밸_A.SelectedIndexChanged += new System.EventHandler(this.Combo_condition_SelectedIndexChanged);
+            this.리밸_A.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.리밸_A.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
+            this.리밸_A.MouseHover += new System.EventHandler(this.Combo_condition_MouseHover);
             // 
-            // combo_rebalance_condition_D
+            // 리밸_D
             // 
-            this.combo_rebalance_condition_D.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.combo_rebalance_condition_D.DropDownHeight = 600;
-            this.combo_rebalance_condition_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_rebalance_condition_D.DropDownWidth = 200;
-            this.combo_rebalance_condition_D.Enabled = false;
-            this.combo_rebalance_condition_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.combo_rebalance_condition_D.FormattingEnabled = true;
-            this.combo_rebalance_condition_D.IntegralHeight = false;
-            this.combo_rebalance_condition_D.Location = new System.Drawing.Point(230, 101);
-            this.combo_rebalance_condition_D.MaxLength = 22;
-            this.combo_rebalance_condition_D.Name = "combo_rebalance_condition_D";
-            this.combo_rebalance_condition_D.Size = new System.Drawing.Size(155, 21);
-            this.combo_rebalance_condition_D.TabIndex = 65;
-            this.combo_rebalance_condition_D.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.combo_rebalance_condition_D.SelectedIndexChanged += new System.EventHandler(this.combo_condition_SelectedIndexChanged);
-            this.combo_rebalance_condition_D.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.combo_rebalance_condition_D.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
-            this.combo_rebalance_condition_D.MouseHover += new System.EventHandler(this.combo_condition_MouseHover);
+            this.리밸_D.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.리밸_D.DropDownHeight = 600;
+            this.리밸_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.리밸_D.DropDownWidth = 200;
+            this.리밸_D.Enabled = false;
+            this.리밸_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.리밸_D.FormattingEnabled = true;
+            this.리밸_D.IntegralHeight = false;
+            this.리밸_D.Location = new System.Drawing.Point(230, 101);
+            this.리밸_D.MaxLength = 22;
+            this.리밸_D.Name = "리밸_D";
+            this.리밸_D.Size = new System.Drawing.Size(155, 21);
+            this.리밸_D.TabIndex = 65;
+            this.리밸_D.DropDown += new System.EventHandler(this.Combo_Condition_Add);
+            this.리밸_D.SelectedIndexChanged += new System.EventHandler(this.Combo_condition_SelectedIndexChanged);
+            this.리밸_D.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.리밸_D.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
+            this.리밸_D.MouseHover += new System.EventHandler(this.Combo_condition_MouseHover);
             // 
-            // CBB_Liquidation_condition_C
+            // 청산_C
             // 
-            this.CBB_Liquidation_condition_C.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CBB_Liquidation_condition_C.DropDownHeight = 600;
-            this.CBB_Liquidation_condition_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_Liquidation_condition_C.DropDownWidth = 200;
-            this.CBB_Liquidation_condition_C.Enabled = false;
-            this.CBB_Liquidation_condition_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_Liquidation_condition_C.FormattingEnabled = true;
-            this.CBB_Liquidation_condition_C.IntegralHeight = false;
-            this.CBB_Liquidation_condition_C.Location = new System.Drawing.Point(230, 243);
-            this.CBB_Liquidation_condition_C.MaxLength = 22;
-            this.CBB_Liquidation_condition_C.Name = "CBB_Liquidation_condition_C";
-            this.CBB_Liquidation_condition_C.Size = new System.Drawing.Size(155, 21);
-            this.CBB_Liquidation_condition_C.TabIndex = 65;
-            this.CBB_Liquidation_condition_C.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.CBB_Liquidation_condition_C.SelectedIndexChanged += new System.EventHandler(this.combo_condition_SelectedIndexChanged);
-            this.CBB_Liquidation_condition_C.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.CBB_Liquidation_condition_C.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
-            this.CBB_Liquidation_condition_C.MouseHover += new System.EventHandler(this.combo_condition_MouseHover);
+            this.청산_C.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.청산_C.DropDownHeight = 600;
+            this.청산_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.청산_C.DropDownWidth = 200;
+            this.청산_C.Enabled = false;
+            this.청산_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.청산_C.FormattingEnabled = true;
+            this.청산_C.IntegralHeight = false;
+            this.청산_C.Location = new System.Drawing.Point(230, 243);
+            this.청산_C.MaxLength = 22;
+            this.청산_C.Name = "청산_C";
+            this.청산_C.Size = new System.Drawing.Size(155, 21);
+            this.청산_C.TabIndex = 65;
+            this.청산_C.DropDown += new System.EventHandler(this.Combo_Condition_Add);
+            this.청산_C.SelectedIndexChanged += new System.EventHandler(this.Combo_condition_SelectedIndexChanged);
+            this.청산_C.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.청산_C.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
+            this.청산_C.MouseHover += new System.EventHandler(this.Combo_condition_MouseHover);
             // 
-            // CBB_Liquidation_condition_A
+            // 청산_A
             // 
-            this.CBB_Liquidation_condition_A.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.CBB_Liquidation_condition_A.DropDownHeight = 600;
-            this.CBB_Liquidation_condition_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_Liquidation_condition_A.DropDownWidth = 200;
-            this.CBB_Liquidation_condition_A.Enabled = false;
-            this.CBB_Liquidation_condition_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_Liquidation_condition_A.FormattingEnabled = true;
-            this.CBB_Liquidation_condition_A.IntegralHeight = false;
-            this.CBB_Liquidation_condition_A.Location = new System.Drawing.Point(230, 203);
-            this.CBB_Liquidation_condition_A.MaxLength = 22;
-            this.CBB_Liquidation_condition_A.Name = "CBB_Liquidation_condition_A";
-            this.CBB_Liquidation_condition_A.Size = new System.Drawing.Size(155, 21);
-            this.CBB_Liquidation_condition_A.TabIndex = 65;
-            this.CBB_Liquidation_condition_A.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.CBB_Liquidation_condition_A.SelectedIndexChanged += new System.EventHandler(this.combo_condition_SelectedIndexChanged);
-            this.CBB_Liquidation_condition_A.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.CBB_Liquidation_condition_A.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
-            this.CBB_Liquidation_condition_A.MouseHover += new System.EventHandler(this.combo_condition_MouseHover);
+            this.청산_A.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.청산_A.DropDownHeight = 600;
+            this.청산_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.청산_A.DropDownWidth = 200;
+            this.청산_A.Enabled = false;
+            this.청산_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.청산_A.FormattingEnabled = true;
+            this.청산_A.IntegralHeight = false;
+            this.청산_A.Location = new System.Drawing.Point(230, 203);
+            this.청산_A.MaxLength = 22;
+            this.청산_A.Name = "청산_A";
+            this.청산_A.Size = new System.Drawing.Size(155, 21);
+            this.청산_A.TabIndex = 65;
+            this.청산_A.DropDown += new System.EventHandler(this.Combo_Condition_Add);
+            this.청산_A.SelectedIndexChanged += new System.EventHandler(this.Combo_condition_SelectedIndexChanged);
+            this.청산_A.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.청산_A.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
+            this.청산_A.MouseHover += new System.EventHandler(this.Combo_condition_MouseHover);
             // 
-            // CBB_Liquidation_condition_B
+            // 청산_B
             // 
-            this.CBB_Liquidation_condition_B.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.CBB_Liquidation_condition_B.DropDownHeight = 600;
-            this.CBB_Liquidation_condition_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_Liquidation_condition_B.DropDownWidth = 200;
-            this.CBB_Liquidation_condition_B.Enabled = false;
-            this.CBB_Liquidation_condition_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_Liquidation_condition_B.FormattingEnabled = true;
-            this.CBB_Liquidation_condition_B.IntegralHeight = false;
-            this.CBB_Liquidation_condition_B.Location = new System.Drawing.Point(230, 223);
-            this.CBB_Liquidation_condition_B.MaxLength = 22;
-            this.CBB_Liquidation_condition_B.Name = "CBB_Liquidation_condition_B";
-            this.CBB_Liquidation_condition_B.Size = new System.Drawing.Size(155, 21);
-            this.CBB_Liquidation_condition_B.TabIndex = 65;
-            this.CBB_Liquidation_condition_B.DropDown += new System.EventHandler(this.combo_Condition_Add);
-            this.CBB_Liquidation_condition_B.SelectedIndexChanged += new System.EventHandler(this.combo_condition_SelectedIndexChanged);
-            this.CBB_Liquidation_condition_B.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
-            this.CBB_Liquidation_condition_B.TextChanged += new System.EventHandler(this.combo_Condition_TextChanged);
-            this.CBB_Liquidation_condition_B.MouseHover += new System.EventHandler(this.combo_condition_MouseHover);
+            this.청산_B.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.청산_B.DropDownHeight = 600;
+            this.청산_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.청산_B.DropDownWidth = 200;
+            this.청산_B.Enabled = false;
+            this.청산_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.청산_B.FormattingEnabled = true;
+            this.청산_B.IntegralHeight = false;
+            this.청산_B.Location = new System.Drawing.Point(230, 223);
+            this.청산_B.MaxLength = 22;
+            this.청산_B.Name = "청산_B";
+            this.청산_B.Size = new System.Drawing.Size(155, 21);
+            this.청산_B.TabIndex = 65;
+            this.청산_B.DropDown += new System.EventHandler(this.Combo_Condition_Add);
+            this.청산_B.SelectedIndexChanged += new System.EventHandler(this.Combo_condition_SelectedIndexChanged);
+            this.청산_B.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.청산_B.TextChanged += new System.EventHandler(this.Combo_Condition_TextChanged);
+            this.청산_B.MouseHover += new System.EventHandler(this.Combo_condition_MouseHover);
             // 
             // CB_Liquidation_C
             // 
@@ -12233,8 +12236,7 @@ namespace 지니_64
             this.combo_rebalance_use_condition_G.Name = "combo_rebalance_use_condition_G";
             this.combo_rebalance_use_condition_G.Size = new System.Drawing.Size(50, 21);
             this.combo_rebalance_use_condition_G.TabIndex = 66;
-            this.combo_rebalance_use_condition_G.SelectedIndexChanged += new System.EventHandler(this.combo_use_condition_SelectedIndexChanged);
-            this.combo_rebalance_use_condition_G.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.combo_rebalance_use_condition_G.SelectedIndexChanged += new System.EventHandler(this.Combo_use_condition_SelectedIndexChanged);
             // 
             // combo_rebalance_use_condition_C
             // 
@@ -12252,8 +12254,7 @@ namespace 지니_64
             this.combo_rebalance_use_condition_C.Name = "combo_rebalance_use_condition_C";
             this.combo_rebalance_use_condition_C.Size = new System.Drawing.Size(50, 21);
             this.combo_rebalance_use_condition_C.TabIndex = 66;
-            this.combo_rebalance_use_condition_C.SelectedIndexChanged += new System.EventHandler(this.combo_use_condition_SelectedIndexChanged);
-            this.combo_rebalance_use_condition_C.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.combo_rebalance_use_condition_C.SelectedIndexChanged += new System.EventHandler(this.Combo_use_condition_SelectedIndexChanged);
             // 
             // combo_rebalance_use_condition_F
             // 
@@ -12271,8 +12272,7 @@ namespace 지니_64
             this.combo_rebalance_use_condition_F.Name = "combo_rebalance_use_condition_F";
             this.combo_rebalance_use_condition_F.Size = new System.Drawing.Size(50, 21);
             this.combo_rebalance_use_condition_F.TabIndex = 66;
-            this.combo_rebalance_use_condition_F.SelectedIndexChanged += new System.EventHandler(this.combo_use_condition_SelectedIndexChanged);
-            this.combo_rebalance_use_condition_F.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.combo_rebalance_use_condition_F.SelectedIndexChanged += new System.EventHandler(this.Combo_use_condition_SelectedIndexChanged);
             // 
             // combo_rebalance_use_condition_B
             // 
@@ -12290,8 +12290,7 @@ namespace 지니_64
             this.combo_rebalance_use_condition_B.Name = "combo_rebalance_use_condition_B";
             this.combo_rebalance_use_condition_B.Size = new System.Drawing.Size(50, 21);
             this.combo_rebalance_use_condition_B.TabIndex = 66;
-            this.combo_rebalance_use_condition_B.SelectedIndexChanged += new System.EventHandler(this.combo_use_condition_SelectedIndexChanged);
-            this.combo_rebalance_use_condition_B.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.combo_rebalance_use_condition_B.SelectedIndexChanged += new System.EventHandler(this.Combo_use_condition_SelectedIndexChanged);
             // 
             // combo_rebalance_use_condition_E
             // 
@@ -12309,8 +12308,7 @@ namespace 지니_64
             this.combo_rebalance_use_condition_E.Name = "combo_rebalance_use_condition_E";
             this.combo_rebalance_use_condition_E.Size = new System.Drawing.Size(50, 21);
             this.combo_rebalance_use_condition_E.TabIndex = 66;
-            this.combo_rebalance_use_condition_E.SelectedIndexChanged += new System.EventHandler(this.combo_use_condition_SelectedIndexChanged);
-            this.combo_rebalance_use_condition_E.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.combo_rebalance_use_condition_E.SelectedIndexChanged += new System.EventHandler(this.Combo_use_condition_SelectedIndexChanged);
             // 
             // combo_rebalance_use_condition_A
             // 
@@ -12328,8 +12326,7 @@ namespace 지니_64
             this.combo_rebalance_use_condition_A.Name = "combo_rebalance_use_condition_A";
             this.combo_rebalance_use_condition_A.Size = new System.Drawing.Size(50, 21);
             this.combo_rebalance_use_condition_A.TabIndex = 66;
-            this.combo_rebalance_use_condition_A.SelectedIndexChanged += new System.EventHandler(this.combo_use_condition_SelectedIndexChanged);
-            this.combo_rebalance_use_condition_A.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.combo_rebalance_use_condition_A.SelectedIndexChanged += new System.EventHandler(this.Combo_use_condition_SelectedIndexChanged);
             // 
             // combo_rebalance_use_condition_D
             // 
@@ -12347,8 +12344,7 @@ namespace 지니_64
             this.combo_rebalance_use_condition_D.Name = "combo_rebalance_use_condition_D";
             this.combo_rebalance_use_condition_D.Size = new System.Drawing.Size(50, 21);
             this.combo_rebalance_use_condition_D.TabIndex = 66;
-            this.combo_rebalance_use_condition_D.SelectedIndexChanged += new System.EventHandler(this.combo_use_condition_SelectedIndexChanged);
-            this.combo_rebalance_use_condition_D.DropDownClosed += new System.EventHandler(this.CBB_DropDownClosed);
+            this.combo_rebalance_use_condition_D.SelectedIndexChanged += new System.EventHandler(this.Combo_use_condition_SelectedIndexChanged);
             // 
             // L_리밸매매범위_G
             // 
@@ -12644,7 +12640,7 @@ namespace 지니_64
             this.TB_rebalance_value_G.TabIndex = 102;
             this.TB_rebalance_value_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_value_G.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_value_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_value_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_rebalance_value_F
             // 
@@ -12659,7 +12655,7 @@ namespace 지니_64
             this.TB_rebalance_value_F.TabIndex = 102;
             this.TB_rebalance_value_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_value_F.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_rebalance_value_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_rebalance_value_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // combo_rebalance_jumun_G
             // 
@@ -12712,7 +12708,7 @@ namespace 지니_64
             this.TB_rebalance_sell_ratio_G.TabIndex = 36;
             this.TB_rebalance_sell_ratio_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_rebalance_sell_ratio_G.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_rebalance_sell_ratio_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_rebalance_sell_ratio_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // combo_rebalance_sell_gubun_G
             // 
@@ -12998,13 +12994,13 @@ namespace 지니_64
             // 
             this.panel_리밸TS_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel_리밸TS_2.Controls.Add(this.TB_rebalance_TS_2차_down_A);
-            this.panel_리밸TS_2.Controls.Add(this.TB_rebalance_TS_2차_mma_E);
-            this.panel_리밸TS_2.Controls.Add(this.TB_rebalance_TS_2차_mma_B);
-            this.panel_리밸TS_2.Controls.Add(this.TB_rebalance_TS_2차_mma_G);
-            this.panel_리밸TS_2.Controls.Add(this.TB_rebalance_TS_2차_mma_F);
-            this.panel_리밸TS_2.Controls.Add(this.TB_rebalance_TS_2차_mma_D);
-            this.panel_리밸TS_2.Controls.Add(this.TB_rebalance_TS_2차_mma_C);
-            this.panel_리밸TS_2.Controls.Add(this.TB_rebalance_TS_2차_mma_A);
+            this.panel_리밸TS_2.Controls.Add(this.TB_rebalance_TS_2차_MinMAPeriod_E);
+            this.panel_리밸TS_2.Controls.Add(this.TB_rebalance_TS_2차_MinMAPeriod_B);
+            this.panel_리밸TS_2.Controls.Add(this.TB_rebalance_TS_2차_MinMAPeriod_G);
+            this.panel_리밸TS_2.Controls.Add(this.TB_rebalance_TS_2차_MinMAPeriod_F);
+            this.panel_리밸TS_2.Controls.Add(this.TB_rebalance_TS_2차_MinMAPeriod_D);
+            this.panel_리밸TS_2.Controls.Add(this.TB_rebalance_TS_2차_MinMAPeriod_C);
+            this.panel_리밸TS_2.Controls.Add(this.TB_rebalance_TS_2차_MinMAPeriod_A);
             this.panel_리밸TS_2.Controls.Add(this.label49);
             this.panel_리밸TS_2.Controls.Add(this.TB_rebalance_TS_2차_down_E);
             this.panel_리밸TS_2.Controls.Add(this.label48);
@@ -13032,129 +13028,129 @@ namespace 지니_64
             this.panel_리밸TS_2.Controls.Add(this.CB_rebalance_TS_2차_C);
             this.panel_리밸TS_2.Controls.Add(this.label29);
             this.panel_리밸TS_2.Controls.Add(this.label27);
-            this.panel_리밸TS_2.Controls.Add(this.CBB_rebalance_TS_2차_mma_G);
-            this.panel_리밸TS_2.Controls.Add(this.CBB_rebalance_TS_2차_mma_C);
-            this.panel_리밸TS_2.Controls.Add(this.CBB_rebalance_TS_2차_mma_F);
-            this.panel_리밸TS_2.Controls.Add(this.CBB_rebalance_TS_2차_mma_B);
-            this.panel_리밸TS_2.Controls.Add(this.CBB_rebalance_TS_2차_mma_E);
-            this.panel_리밸TS_2.Controls.Add(this.CBB_rebalance_TS_2차_mma_D);
-            this.panel_리밸TS_2.Controls.Add(this.CBB_rebalance_TS_2차_mma_A);
+            this.panel_리밸TS_2.Controls.Add(this.CBB_rebalance_TS_2차_MinMAPeriod_G);
+            this.panel_리밸TS_2.Controls.Add(this.CBB_rebalance_TS_2차_MinMAPeriod_C);
+            this.panel_리밸TS_2.Controls.Add(this.CBB_rebalance_TS_2차_MinMAPeriod_F);
+            this.panel_리밸TS_2.Controls.Add(this.CBB_rebalance_TS_2차_MinMAPeriod_B);
+            this.panel_리밸TS_2.Controls.Add(this.CBB_rebalance_TS_2차_MinMAPeriod_E);
+            this.panel_리밸TS_2.Controls.Add(this.CBB_rebalance_TS_2차_MinMAPeriod_D);
+            this.panel_리밸TS_2.Controls.Add(this.CBB_rebalance_TS_2차_MinMAPeriod_A);
             this.panel_리밸TS_2.Location = new System.Drawing.Point(1556, 41);
             this.panel_리밸TS_2.Name = "panel_리밸TS_2";
             this.panel_리밸TS_2.Size = new System.Drawing.Size(364, 141);
             this.panel_리밸TS_2.TabIndex = 150;
             // 
-            // TB_rebalance_TS_2차_mma_E
+            // TB_rebalance_TS_2차_MinMAPeriod_E
             // 
-            this.TB_rebalance_TS_2차_mma_E.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_TS_2차_mma_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_TS_2차_mma_E.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_TS_2차_mma_E.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_TS_2차_mma_E.Location = new System.Drawing.Point(236, 79);
-            this.TB_rebalance_TS_2차_mma_E.MaxLength = 2;
-            this.TB_rebalance_TS_2차_mma_E.Name = "TB_rebalance_TS_2차_mma_E";
-            this.TB_rebalance_TS_2차_mma_E.Size = new System.Drawing.Size(20, 21);
-            this.TB_rebalance_TS_2차_mma_E.TabIndex = 142;
-            this.TB_rebalance_TS_2차_mma_E.Text = "5";
-            this.TB_rebalance_TS_2차_mma_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_TS_2차_mma_E.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_TS_2차_mma_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_TS_2차_MinMAPeriod_E.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_TS_2차_MinMAPeriod_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_TS_2차_MinMAPeriod_E.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_TS_2차_MinMAPeriod_E.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_TS_2차_MinMAPeriod_E.Location = new System.Drawing.Point(236, 79);
+            this.TB_rebalance_TS_2차_MinMAPeriod_E.MaxLength = 2;
+            this.TB_rebalance_TS_2차_MinMAPeriod_E.Name = "TB_rebalance_TS_2차_MinMAPeriod_E";
+            this.TB_rebalance_TS_2차_MinMAPeriod_E.Size = new System.Drawing.Size(20, 21);
+            this.TB_rebalance_TS_2차_MinMAPeriod_E.TabIndex = 142;
+            this.TB_rebalance_TS_2차_MinMAPeriod_E.Text = "5";
+            this.TB_rebalance_TS_2차_MinMAPeriod_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_TS_2차_MinMAPeriod_E.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_TS_2차_MinMAPeriod_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_TS_2차_mma_B
+            // TB_rebalance_TS_2차_MinMAPeriod_B
             // 
-            this.TB_rebalance_TS_2차_mma_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_TS_2차_mma_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_TS_2차_mma_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_TS_2차_mma_B.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_TS_2차_mma_B.Location = new System.Drawing.Point(236, 19);
-            this.TB_rebalance_TS_2차_mma_B.MaxLength = 2;
-            this.TB_rebalance_TS_2차_mma_B.Name = "TB_rebalance_TS_2차_mma_B";
-            this.TB_rebalance_TS_2차_mma_B.Size = new System.Drawing.Size(20, 21);
-            this.TB_rebalance_TS_2차_mma_B.TabIndex = 142;
-            this.TB_rebalance_TS_2차_mma_B.Text = "5";
-            this.TB_rebalance_TS_2차_mma_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_TS_2차_mma_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_TS_2차_mma_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_TS_2차_MinMAPeriod_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_TS_2차_MinMAPeriod_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_TS_2차_MinMAPeriod_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_TS_2차_MinMAPeriod_B.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_TS_2차_MinMAPeriod_B.Location = new System.Drawing.Point(236, 19);
+            this.TB_rebalance_TS_2차_MinMAPeriod_B.MaxLength = 2;
+            this.TB_rebalance_TS_2차_MinMAPeriod_B.Name = "TB_rebalance_TS_2차_MinMAPeriod_B";
+            this.TB_rebalance_TS_2차_MinMAPeriod_B.Size = new System.Drawing.Size(20, 21);
+            this.TB_rebalance_TS_2차_MinMAPeriod_B.TabIndex = 142;
+            this.TB_rebalance_TS_2차_MinMAPeriod_B.Text = "5";
+            this.TB_rebalance_TS_2차_MinMAPeriod_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_TS_2차_MinMAPeriod_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_TS_2차_MinMAPeriod_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_TS_2차_mma_G
+            // TB_rebalance_TS_2차_MinMAPeriod_G
             // 
-            this.TB_rebalance_TS_2차_mma_G.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_TS_2차_mma_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_TS_2차_mma_G.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_TS_2차_mma_G.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_TS_2차_mma_G.Location = new System.Drawing.Point(236, 119);
-            this.TB_rebalance_TS_2차_mma_G.MaxLength = 2;
-            this.TB_rebalance_TS_2차_mma_G.Name = "TB_rebalance_TS_2차_mma_G";
-            this.TB_rebalance_TS_2차_mma_G.Size = new System.Drawing.Size(20, 21);
-            this.TB_rebalance_TS_2차_mma_G.TabIndex = 143;
-            this.TB_rebalance_TS_2차_mma_G.Text = "5";
-            this.TB_rebalance_TS_2차_mma_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_TS_2차_mma_G.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_TS_2차_mma_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_TS_2차_MinMAPeriod_G.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_TS_2차_MinMAPeriod_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_TS_2차_MinMAPeriod_G.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_TS_2차_MinMAPeriod_G.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_TS_2차_MinMAPeriod_G.Location = new System.Drawing.Point(236, 119);
+            this.TB_rebalance_TS_2차_MinMAPeriod_G.MaxLength = 2;
+            this.TB_rebalance_TS_2차_MinMAPeriod_G.Name = "TB_rebalance_TS_2차_MinMAPeriod_G";
+            this.TB_rebalance_TS_2차_MinMAPeriod_G.Size = new System.Drawing.Size(20, 21);
+            this.TB_rebalance_TS_2차_MinMAPeriod_G.TabIndex = 143;
+            this.TB_rebalance_TS_2차_MinMAPeriod_G.Text = "5";
+            this.TB_rebalance_TS_2차_MinMAPeriod_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_TS_2차_MinMAPeriod_G.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_TS_2차_MinMAPeriod_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_TS_2차_mma_F
+            // TB_rebalance_TS_2차_MinMAPeriod_F
             // 
-            this.TB_rebalance_TS_2차_mma_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_TS_2차_mma_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_TS_2차_mma_F.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_TS_2차_mma_F.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_TS_2차_mma_F.Location = new System.Drawing.Point(236, 99);
-            this.TB_rebalance_TS_2차_mma_F.MaxLength = 2;
-            this.TB_rebalance_TS_2차_mma_F.Name = "TB_rebalance_TS_2차_mma_F";
-            this.TB_rebalance_TS_2차_mma_F.Size = new System.Drawing.Size(20, 21);
-            this.TB_rebalance_TS_2차_mma_F.TabIndex = 143;
-            this.TB_rebalance_TS_2차_mma_F.Text = "5";
-            this.TB_rebalance_TS_2차_mma_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_TS_2차_mma_F.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_TS_2차_mma_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_TS_2차_MinMAPeriod_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_TS_2차_MinMAPeriod_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_TS_2차_MinMAPeriod_F.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_TS_2차_MinMAPeriod_F.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_TS_2차_MinMAPeriod_F.Location = new System.Drawing.Point(236, 99);
+            this.TB_rebalance_TS_2차_MinMAPeriod_F.MaxLength = 2;
+            this.TB_rebalance_TS_2차_MinMAPeriod_F.Name = "TB_rebalance_TS_2차_MinMAPeriod_F";
+            this.TB_rebalance_TS_2차_MinMAPeriod_F.Size = new System.Drawing.Size(20, 21);
+            this.TB_rebalance_TS_2차_MinMAPeriod_F.TabIndex = 143;
+            this.TB_rebalance_TS_2차_MinMAPeriod_F.Text = "5";
+            this.TB_rebalance_TS_2차_MinMAPeriod_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_TS_2차_MinMAPeriod_F.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_TS_2차_MinMAPeriod_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_TS_2차_mma_D
+            // TB_rebalance_TS_2차_MinMAPeriod_D
             // 
-            this.TB_rebalance_TS_2차_mma_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_TS_2차_mma_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_TS_2차_mma_D.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_TS_2차_mma_D.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_TS_2차_mma_D.Location = new System.Drawing.Point(236, 59);
-            this.TB_rebalance_TS_2차_mma_D.MaxLength = 2;
-            this.TB_rebalance_TS_2차_mma_D.Name = "TB_rebalance_TS_2차_mma_D";
-            this.TB_rebalance_TS_2차_mma_D.Size = new System.Drawing.Size(20, 21);
-            this.TB_rebalance_TS_2차_mma_D.TabIndex = 144;
-            this.TB_rebalance_TS_2차_mma_D.Text = "5";
-            this.TB_rebalance_TS_2차_mma_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_TS_2차_mma_D.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_TS_2차_mma_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_TS_2차_MinMAPeriod_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_TS_2차_MinMAPeriod_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_TS_2차_MinMAPeriod_D.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_TS_2차_MinMAPeriod_D.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_TS_2차_MinMAPeriod_D.Location = new System.Drawing.Point(236, 59);
+            this.TB_rebalance_TS_2차_MinMAPeriod_D.MaxLength = 2;
+            this.TB_rebalance_TS_2차_MinMAPeriod_D.Name = "TB_rebalance_TS_2차_MinMAPeriod_D";
+            this.TB_rebalance_TS_2차_MinMAPeriod_D.Size = new System.Drawing.Size(20, 21);
+            this.TB_rebalance_TS_2차_MinMAPeriod_D.TabIndex = 144;
+            this.TB_rebalance_TS_2차_MinMAPeriod_D.Text = "5";
+            this.TB_rebalance_TS_2차_MinMAPeriod_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_TS_2차_MinMAPeriod_D.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_TS_2차_MinMAPeriod_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_TS_2차_mma_C
+            // TB_rebalance_TS_2차_MinMAPeriod_C
             // 
-            this.TB_rebalance_TS_2차_mma_C.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_TS_2차_mma_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_TS_2차_mma_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_TS_2차_mma_C.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_TS_2차_mma_C.Location = new System.Drawing.Point(236, 39);
-            this.TB_rebalance_TS_2차_mma_C.MaxLength = 2;
-            this.TB_rebalance_TS_2차_mma_C.Name = "TB_rebalance_TS_2차_mma_C";
-            this.TB_rebalance_TS_2차_mma_C.Size = new System.Drawing.Size(20, 21);
-            this.TB_rebalance_TS_2차_mma_C.TabIndex = 143;
-            this.TB_rebalance_TS_2차_mma_C.Text = "5";
-            this.TB_rebalance_TS_2차_mma_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_TS_2차_mma_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_TS_2차_mma_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_TS_2차_MinMAPeriod_C.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_TS_2차_MinMAPeriod_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_TS_2차_MinMAPeriod_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_TS_2차_MinMAPeriod_C.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_TS_2차_MinMAPeriod_C.Location = new System.Drawing.Point(236, 39);
+            this.TB_rebalance_TS_2차_MinMAPeriod_C.MaxLength = 2;
+            this.TB_rebalance_TS_2차_MinMAPeriod_C.Name = "TB_rebalance_TS_2차_MinMAPeriod_C";
+            this.TB_rebalance_TS_2차_MinMAPeriod_C.Size = new System.Drawing.Size(20, 21);
+            this.TB_rebalance_TS_2차_MinMAPeriod_C.TabIndex = 143;
+            this.TB_rebalance_TS_2차_MinMAPeriod_C.Text = "5";
+            this.TB_rebalance_TS_2차_MinMAPeriod_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_TS_2차_MinMAPeriod_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_TS_2차_MinMAPeriod_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_TS_2차_mma_A
+            // TB_rebalance_TS_2차_MinMAPeriod_A
             // 
-            this.TB_rebalance_TS_2차_mma_A.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_TS_2차_mma_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_TS_2차_mma_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_TS_2차_mma_A.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_TS_2차_mma_A.Location = new System.Drawing.Point(236, -1);
-            this.TB_rebalance_TS_2차_mma_A.MaxLength = 2;
-            this.TB_rebalance_TS_2차_mma_A.Name = "TB_rebalance_TS_2차_mma_A";
-            this.TB_rebalance_TS_2차_mma_A.Size = new System.Drawing.Size(20, 21);
-            this.TB_rebalance_TS_2차_mma_A.TabIndex = 144;
-            this.TB_rebalance_TS_2차_mma_A.Text = "5";
-            this.TB_rebalance_TS_2차_mma_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_TS_2차_mma_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_TS_2차_mma_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_TS_2차_MinMAPeriod_A.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_TS_2차_MinMAPeriod_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_TS_2차_MinMAPeriod_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_TS_2차_MinMAPeriod_A.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_TS_2차_MinMAPeriod_A.Location = new System.Drawing.Point(236, -1);
+            this.TB_rebalance_TS_2차_MinMAPeriod_A.MaxLength = 2;
+            this.TB_rebalance_TS_2차_MinMAPeriod_A.Name = "TB_rebalance_TS_2차_MinMAPeriod_A";
+            this.TB_rebalance_TS_2차_MinMAPeriod_A.Size = new System.Drawing.Size(20, 21);
+            this.TB_rebalance_TS_2차_MinMAPeriod_A.TabIndex = 144;
+            this.TB_rebalance_TS_2차_MinMAPeriod_A.Text = "5";
+            this.TB_rebalance_TS_2차_MinMAPeriod_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_TS_2차_MinMAPeriod_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_TS_2차_MinMAPeriod_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label49
             // 
@@ -13338,118 +13334,118 @@ namespace 지니_64
             this.label27.Text = "% 하락  분이평";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // CBB_rebalance_TS_2차_mma_G
+            // CBB_rebalance_TS_2차_MinMAPeriod_G
             // 
-            this.CBB_rebalance_TS_2차_mma_G.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_TS_2차_mma_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_TS_2차_mma_G.DropDownWidth = 50;
-            this.CBB_rebalance_TS_2차_mma_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_TS_2차_mma_G.FormattingEnabled = true;
-            this.CBB_rebalance_TS_2차_mma_G.Items.AddRange(new object[] {
+            this.CBB_rebalance_TS_2차_MinMAPeriod_G.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_G.DropDownWidth = 50;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_TS_2차_MinMAPeriod_G.FormattingEnabled = true;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_G.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_TS_2차_mma_G.Location = new System.Drawing.Point(255, 119);
-            this.CBB_rebalance_TS_2차_mma_G.Name = "CBB_rebalance_TS_2차_mma_G";
-            this.CBB_rebalance_TS_2차_mma_G.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_TS_2차_mma_G.TabIndex = 66;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_G.Location = new System.Drawing.Point(255, 119);
+            this.CBB_rebalance_TS_2차_MinMAPeriod_G.Name = "CBB_rebalance_TS_2차_MinMAPeriod_G";
+            this.CBB_rebalance_TS_2차_MinMAPeriod_G.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_TS_2차_MinMAPeriod_G.TabIndex = 66;
             // 
-            // CBB_rebalance_TS_2차_mma_C
+            // CBB_rebalance_TS_2차_MinMAPeriod_C
             // 
-            this.CBB_rebalance_TS_2차_mma_C.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_TS_2차_mma_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_TS_2차_mma_C.DropDownWidth = 55;
-            this.CBB_rebalance_TS_2차_mma_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_TS_2차_mma_C.FormattingEnabled = true;
-            this.CBB_rebalance_TS_2차_mma_C.Items.AddRange(new object[] {
+            this.CBB_rebalance_TS_2차_MinMAPeriod_C.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_C.DropDownWidth = 55;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_TS_2차_MinMAPeriod_C.FormattingEnabled = true;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_C.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_TS_2차_mma_C.Location = new System.Drawing.Point(255, 39);
-            this.CBB_rebalance_TS_2차_mma_C.Name = "CBB_rebalance_TS_2차_mma_C";
-            this.CBB_rebalance_TS_2차_mma_C.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_TS_2차_mma_C.TabIndex = 66;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_C.Location = new System.Drawing.Point(255, 39);
+            this.CBB_rebalance_TS_2차_MinMAPeriod_C.Name = "CBB_rebalance_TS_2차_MinMAPeriod_C";
+            this.CBB_rebalance_TS_2차_MinMAPeriod_C.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_TS_2차_MinMAPeriod_C.TabIndex = 66;
             // 
-            // CBB_rebalance_TS_2차_mma_F
+            // CBB_rebalance_TS_2차_MinMAPeriod_F
             // 
-            this.CBB_rebalance_TS_2차_mma_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_TS_2차_mma_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_TS_2차_mma_F.DropDownWidth = 50;
-            this.CBB_rebalance_TS_2차_mma_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_TS_2차_mma_F.FormattingEnabled = true;
-            this.CBB_rebalance_TS_2차_mma_F.Items.AddRange(new object[] {
+            this.CBB_rebalance_TS_2차_MinMAPeriod_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_F.DropDownWidth = 50;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_TS_2차_MinMAPeriod_F.FormattingEnabled = true;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_F.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_TS_2차_mma_F.Location = new System.Drawing.Point(255, 99);
-            this.CBB_rebalance_TS_2차_mma_F.Name = "CBB_rebalance_TS_2차_mma_F";
-            this.CBB_rebalance_TS_2차_mma_F.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_TS_2차_mma_F.TabIndex = 66;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_F.Location = new System.Drawing.Point(255, 99);
+            this.CBB_rebalance_TS_2차_MinMAPeriod_F.Name = "CBB_rebalance_TS_2차_MinMAPeriod_F";
+            this.CBB_rebalance_TS_2차_MinMAPeriod_F.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_TS_2차_MinMAPeriod_F.TabIndex = 66;
             // 
-            // CBB_rebalance_TS_2차_mma_B
+            // CBB_rebalance_TS_2차_MinMAPeriod_B
             // 
-            this.CBB_rebalance_TS_2차_mma_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_TS_2차_mma_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_TS_2차_mma_B.DropDownWidth = 50;
-            this.CBB_rebalance_TS_2차_mma_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_TS_2차_mma_B.FormattingEnabled = true;
-            this.CBB_rebalance_TS_2차_mma_B.Items.AddRange(new object[] {
+            this.CBB_rebalance_TS_2차_MinMAPeriod_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_B.DropDownWidth = 50;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_TS_2차_MinMAPeriod_B.FormattingEnabled = true;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_B.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_TS_2차_mma_B.Location = new System.Drawing.Point(255, 19);
-            this.CBB_rebalance_TS_2차_mma_B.Name = "CBB_rebalance_TS_2차_mma_B";
-            this.CBB_rebalance_TS_2차_mma_B.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_TS_2차_mma_B.TabIndex = 66;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_B.Location = new System.Drawing.Point(255, 19);
+            this.CBB_rebalance_TS_2차_MinMAPeriod_B.Name = "CBB_rebalance_TS_2차_MinMAPeriod_B";
+            this.CBB_rebalance_TS_2차_MinMAPeriod_B.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_TS_2차_MinMAPeriod_B.TabIndex = 66;
             // 
-            // CBB_rebalance_TS_2차_mma_E
+            // CBB_rebalance_TS_2차_MinMAPeriod_E
             // 
-            this.CBB_rebalance_TS_2차_mma_E.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_TS_2차_mma_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_TS_2차_mma_E.DropDownWidth = 50;
-            this.CBB_rebalance_TS_2차_mma_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_TS_2차_mma_E.FormattingEnabled = true;
-            this.CBB_rebalance_TS_2차_mma_E.Items.AddRange(new object[] {
+            this.CBB_rebalance_TS_2차_MinMAPeriod_E.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_E.DropDownWidth = 50;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_TS_2차_MinMAPeriod_E.FormattingEnabled = true;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_E.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_TS_2차_mma_E.Location = new System.Drawing.Point(255, 79);
-            this.CBB_rebalance_TS_2차_mma_E.Name = "CBB_rebalance_TS_2차_mma_E";
-            this.CBB_rebalance_TS_2차_mma_E.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_TS_2차_mma_E.TabIndex = 66;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_E.Location = new System.Drawing.Point(255, 79);
+            this.CBB_rebalance_TS_2차_MinMAPeriod_E.Name = "CBB_rebalance_TS_2차_MinMAPeriod_E";
+            this.CBB_rebalance_TS_2차_MinMAPeriod_E.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_TS_2차_MinMAPeriod_E.TabIndex = 66;
             // 
-            // CBB_rebalance_TS_2차_mma_D
+            // CBB_rebalance_TS_2차_MinMAPeriod_D
             // 
-            this.CBB_rebalance_TS_2차_mma_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_TS_2차_mma_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_TS_2차_mma_D.DropDownWidth = 50;
-            this.CBB_rebalance_TS_2차_mma_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_TS_2차_mma_D.FormattingEnabled = true;
-            this.CBB_rebalance_TS_2차_mma_D.Items.AddRange(new object[] {
+            this.CBB_rebalance_TS_2차_MinMAPeriod_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_D.DropDownWidth = 50;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_TS_2차_MinMAPeriod_D.FormattingEnabled = true;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_D.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_TS_2차_mma_D.Location = new System.Drawing.Point(255, 59);
-            this.CBB_rebalance_TS_2차_mma_D.Name = "CBB_rebalance_TS_2차_mma_D";
-            this.CBB_rebalance_TS_2차_mma_D.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_TS_2차_mma_D.TabIndex = 66;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_D.Location = new System.Drawing.Point(255, 59);
+            this.CBB_rebalance_TS_2차_MinMAPeriod_D.Name = "CBB_rebalance_TS_2차_MinMAPeriod_D";
+            this.CBB_rebalance_TS_2차_MinMAPeriod_D.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_TS_2차_MinMAPeriod_D.TabIndex = 66;
             // 
-            // CBB_rebalance_TS_2차_mma_A
+            // CBB_rebalance_TS_2차_MinMAPeriod_A
             // 
-            this.CBB_rebalance_TS_2차_mma_A.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_TS_2차_mma_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_TS_2차_mma_A.DropDownWidth = 45;
-            this.CBB_rebalance_TS_2차_mma_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_TS_2차_mma_A.FormattingEnabled = true;
-            this.CBB_rebalance_TS_2차_mma_A.Items.AddRange(new object[] {
+            this.CBB_rebalance_TS_2차_MinMAPeriod_A.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_A.DropDownWidth = 45;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_TS_2차_MinMAPeriod_A.FormattingEnabled = true;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_A.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_TS_2차_mma_A.Location = new System.Drawing.Point(255, -1);
-            this.CBB_rebalance_TS_2차_mma_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.CBB_rebalance_TS_2차_mma_A.Name = "CBB_rebalance_TS_2차_mma_A";
-            this.CBB_rebalance_TS_2차_mma_A.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_TS_2차_mma_A.TabIndex = 66;
+            this.CBB_rebalance_TS_2차_MinMAPeriod_A.Location = new System.Drawing.Point(255, -1);
+            this.CBB_rebalance_TS_2차_MinMAPeriod_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.CBB_rebalance_TS_2차_MinMAPeriod_A.Name = "CBB_rebalance_TS_2차_MinMAPeriod_A";
+            this.CBB_rebalance_TS_2차_MinMAPeriod_A.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_TS_2차_MinMAPeriod_A.TabIndex = 66;
             // 
             // panel_리밸TS_1
             // 
@@ -13463,21 +13459,21 @@ namespace 지니_64
             this.panel_리밸TS_1.Controls.Add(this.label347);
             this.panel_리밸TS_1.Controls.Add(this.label336);
             this.panel_리밸TS_1.Controls.Add(this.label38);
-            this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_mma_E);
+            this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_MinMAPeriod_E);
             this.panel_리밸TS_1.Controls.Add(this.label339);
             this.panel_리밸TS_1.Controls.Add(this.label37);
-            this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_mma_B);
+            this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_MinMAPeriod_B);
             this.panel_리밸TS_1.Controls.Add(this.label346);
             this.panel_리밸TS_1.Controls.Add(this.label35);
-            this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_mma_G);
+            this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_MinMAPeriod_G);
             this.panel_리밸TS_1.Controls.Add(this.label334);
-            this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_mma_F);
+            this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_MinMAPeriod_F);
             this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_down_E);
-            this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_mma_D);
+            this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_MinMAPeriod_D);
             this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_down_C);
-            this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_mma_C);
+            this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_MinMAPeriod_C);
             this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_down_A);
-            this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_mma_A);
+            this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_MinMAPeriod_A);
             this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_down_G);
             this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_down_D);
             this.panel_리밸TS_1.Controls.Add(this.TB_rebalance_TS_1차_down_B);
@@ -13487,13 +13483,13 @@ namespace 지니_64
             this.panel_리밸TS_1.Controls.Add(this.CB_rebalance_TS_1차_D);
             this.panel_리밸TS_1.Controls.Add(this.CB_rebalance_TS_1차_F);
             this.panel_리밸TS_1.Controls.Add(this.CB_rebalance_TS_1차_C);
-            this.panel_리밸TS_1.Controls.Add(this.CBB_rebalance_TS_1차_mma_A);
-            this.panel_리밸TS_1.Controls.Add(this.CBB_rebalance_TS_1차_mma_D);
-            this.panel_리밸TS_1.Controls.Add(this.CBB_rebalance_TS_1차_mma_E);
-            this.panel_리밸TS_1.Controls.Add(this.CBB_rebalance_TS_1차_mma_B);
-            this.panel_리밸TS_1.Controls.Add(this.CBB_rebalance_TS_1차_mma_F);
-            this.panel_리밸TS_1.Controls.Add(this.CBB_rebalance_TS_1차_mma_C);
-            this.panel_리밸TS_1.Controls.Add(this.CBB_rebalance_TS_1차_mma_G);
+            this.panel_리밸TS_1.Controls.Add(this.CBB_rebalance_TS_1차_MinMAPeriod_A);
+            this.panel_리밸TS_1.Controls.Add(this.CBB_rebalance_TS_1차_MinMAPeriod_D);
+            this.panel_리밸TS_1.Controls.Add(this.CBB_rebalance_TS_1차_MinMAPeriod_E);
+            this.panel_리밸TS_1.Controls.Add(this.CBB_rebalance_TS_1차_MinMAPeriod_B);
+            this.panel_리밸TS_1.Controls.Add(this.CBB_rebalance_TS_1차_MinMAPeriod_F);
+            this.panel_리밸TS_1.Controls.Add(this.CBB_rebalance_TS_1차_MinMAPeriod_C);
+            this.panel_리밸TS_1.Controls.Add(this.CBB_rebalance_TS_1차_MinMAPeriod_G);
             this.panel_리밸TS_1.Controls.Add(this.CB_rebalance_TS_1차_B);
             this.panel_리밸TS_1.Controls.Add(this.CB_rebalance_TS_1차_A);
             this.panel_리밸TS_1.Location = new System.Drawing.Point(1556, 41);
@@ -13618,21 +13614,21 @@ namespace 지니_64
             this.label38.Text = "일떄 주문실행";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TB_rebalance_TS_1차_mma_E
+            // TB_rebalance_TS_1차_MinMAPeriod_E
             // 
-            this.TB_rebalance_TS_1차_mma_E.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_TS_1차_mma_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_TS_1차_mma_E.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_TS_1차_mma_E.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_TS_1차_mma_E.Location = new System.Drawing.Point(236, 79);
-            this.TB_rebalance_TS_1차_mma_E.MaxLength = 2;
-            this.TB_rebalance_TS_1차_mma_E.Name = "TB_rebalance_TS_1차_mma_E";
-            this.TB_rebalance_TS_1차_mma_E.Size = new System.Drawing.Size(20, 21);
-            this.TB_rebalance_TS_1차_mma_E.TabIndex = 142;
-            this.TB_rebalance_TS_1차_mma_E.Text = "5";
-            this.TB_rebalance_TS_1차_mma_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_TS_1차_mma_E.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_TS_1차_mma_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_TS_1차_MinMAPeriod_E.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_TS_1차_MinMAPeriod_E.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_TS_1차_MinMAPeriod_E.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_TS_1차_MinMAPeriod_E.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_TS_1차_MinMAPeriod_E.Location = new System.Drawing.Point(236, 79);
+            this.TB_rebalance_TS_1차_MinMAPeriod_E.MaxLength = 2;
+            this.TB_rebalance_TS_1차_MinMAPeriod_E.Name = "TB_rebalance_TS_1차_MinMAPeriod_E";
+            this.TB_rebalance_TS_1차_MinMAPeriod_E.Size = new System.Drawing.Size(20, 21);
+            this.TB_rebalance_TS_1차_MinMAPeriod_E.TabIndex = 142;
+            this.TB_rebalance_TS_1차_MinMAPeriod_E.Text = "5";
+            this.TB_rebalance_TS_1차_MinMAPeriod_E.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_TS_1차_MinMAPeriod_E.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_TS_1차_MinMAPeriod_E.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label339
             // 
@@ -13660,21 +13656,21 @@ namespace 지니_64
             this.label37.Text = "일떄 주문실행";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TB_rebalance_TS_1차_mma_B
+            // TB_rebalance_TS_1차_MinMAPeriod_B
             // 
-            this.TB_rebalance_TS_1차_mma_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_TS_1차_mma_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_TS_1차_mma_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_TS_1차_mma_B.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_TS_1차_mma_B.Location = new System.Drawing.Point(236, 19);
-            this.TB_rebalance_TS_1차_mma_B.MaxLength = 2;
-            this.TB_rebalance_TS_1차_mma_B.Name = "TB_rebalance_TS_1차_mma_B";
-            this.TB_rebalance_TS_1차_mma_B.Size = new System.Drawing.Size(20, 21);
-            this.TB_rebalance_TS_1차_mma_B.TabIndex = 142;
-            this.TB_rebalance_TS_1차_mma_B.Text = "5";
-            this.TB_rebalance_TS_1차_mma_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_TS_1차_mma_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_TS_1차_mma_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_TS_1차_MinMAPeriod_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_TS_1차_MinMAPeriod_B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_TS_1차_MinMAPeriod_B.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_TS_1차_MinMAPeriod_B.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_TS_1차_MinMAPeriod_B.Location = new System.Drawing.Point(236, 19);
+            this.TB_rebalance_TS_1차_MinMAPeriod_B.MaxLength = 2;
+            this.TB_rebalance_TS_1차_MinMAPeriod_B.Name = "TB_rebalance_TS_1차_MinMAPeriod_B";
+            this.TB_rebalance_TS_1차_MinMAPeriod_B.Size = new System.Drawing.Size(20, 21);
+            this.TB_rebalance_TS_1차_MinMAPeriod_B.TabIndex = 142;
+            this.TB_rebalance_TS_1차_MinMAPeriod_B.Text = "5";
+            this.TB_rebalance_TS_1차_MinMAPeriod_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_TS_1차_MinMAPeriod_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_TS_1차_MinMAPeriod_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label346
             // 
@@ -13702,21 +13698,21 @@ namespace 지니_64
             this.label35.Text = "일떄 주문실행";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TB_rebalance_TS_1차_mma_G
+            // TB_rebalance_TS_1차_MinMAPeriod_G
             // 
-            this.TB_rebalance_TS_1차_mma_G.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_TS_1차_mma_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_TS_1차_mma_G.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_TS_1차_mma_G.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_TS_1차_mma_G.Location = new System.Drawing.Point(236, 119);
-            this.TB_rebalance_TS_1차_mma_G.MaxLength = 2;
-            this.TB_rebalance_TS_1차_mma_G.Name = "TB_rebalance_TS_1차_mma_G";
-            this.TB_rebalance_TS_1차_mma_G.Size = new System.Drawing.Size(20, 21);
-            this.TB_rebalance_TS_1차_mma_G.TabIndex = 143;
-            this.TB_rebalance_TS_1차_mma_G.Text = "5";
-            this.TB_rebalance_TS_1차_mma_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_TS_1차_mma_G.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_TS_1차_mma_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_TS_1차_MinMAPeriod_G.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_TS_1차_MinMAPeriod_G.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_TS_1차_MinMAPeriod_G.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_TS_1차_MinMAPeriod_G.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_TS_1차_MinMAPeriod_G.Location = new System.Drawing.Point(236, 119);
+            this.TB_rebalance_TS_1차_MinMAPeriod_G.MaxLength = 2;
+            this.TB_rebalance_TS_1차_MinMAPeriod_G.Name = "TB_rebalance_TS_1차_MinMAPeriod_G";
+            this.TB_rebalance_TS_1차_MinMAPeriod_G.Size = new System.Drawing.Size(20, 21);
+            this.TB_rebalance_TS_1차_MinMAPeriod_G.TabIndex = 143;
+            this.TB_rebalance_TS_1차_MinMAPeriod_G.Text = "5";
+            this.TB_rebalance_TS_1차_MinMAPeriod_G.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_TS_1차_MinMAPeriod_G.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_TS_1차_MinMAPeriod_G.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label334
             // 
@@ -13731,182 +13727,182 @@ namespace 지니_64
             this.label334.Text = "% 하락  분이평";
             this.label334.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TB_rebalance_TS_1차_mma_F
+            // TB_rebalance_TS_1차_MinMAPeriod_F
             // 
-            this.TB_rebalance_TS_1차_mma_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_TS_1차_mma_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_TS_1차_mma_F.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_TS_1차_mma_F.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_TS_1차_mma_F.Location = new System.Drawing.Point(236, 99);
-            this.TB_rebalance_TS_1차_mma_F.MaxLength = 2;
-            this.TB_rebalance_TS_1차_mma_F.Name = "TB_rebalance_TS_1차_mma_F";
-            this.TB_rebalance_TS_1차_mma_F.Size = new System.Drawing.Size(20, 21);
-            this.TB_rebalance_TS_1차_mma_F.TabIndex = 143;
-            this.TB_rebalance_TS_1차_mma_F.Text = "5";
-            this.TB_rebalance_TS_1차_mma_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_TS_1차_mma_F.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_TS_1차_mma_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_TS_1차_MinMAPeriod_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_TS_1차_MinMAPeriod_F.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_TS_1차_MinMAPeriod_F.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_TS_1차_MinMAPeriod_F.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_TS_1차_MinMAPeriod_F.Location = new System.Drawing.Point(236, 99);
+            this.TB_rebalance_TS_1차_MinMAPeriod_F.MaxLength = 2;
+            this.TB_rebalance_TS_1차_MinMAPeriod_F.Name = "TB_rebalance_TS_1차_MinMAPeriod_F";
+            this.TB_rebalance_TS_1차_MinMAPeriod_F.Size = new System.Drawing.Size(20, 21);
+            this.TB_rebalance_TS_1차_MinMAPeriod_F.TabIndex = 143;
+            this.TB_rebalance_TS_1차_MinMAPeriod_F.Text = "5";
+            this.TB_rebalance_TS_1차_MinMAPeriod_F.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_TS_1차_MinMAPeriod_F.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_TS_1차_MinMAPeriod_F.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_TS_1차_mma_D
+            // TB_rebalance_TS_1차_MinMAPeriod_D
             // 
-            this.TB_rebalance_TS_1차_mma_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TB_rebalance_TS_1차_mma_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_TS_1차_mma_D.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_TS_1차_mma_D.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_TS_1차_mma_D.Location = new System.Drawing.Point(236, 59);
-            this.TB_rebalance_TS_1차_mma_D.MaxLength = 2;
-            this.TB_rebalance_TS_1차_mma_D.Name = "TB_rebalance_TS_1차_mma_D";
-            this.TB_rebalance_TS_1차_mma_D.Size = new System.Drawing.Size(20, 21);
-            this.TB_rebalance_TS_1차_mma_D.TabIndex = 144;
-            this.TB_rebalance_TS_1차_mma_D.Text = "5";
-            this.TB_rebalance_TS_1차_mma_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_TS_1차_mma_D.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_TS_1차_mma_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_TS_1차_MinMAPeriod_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TB_rebalance_TS_1차_MinMAPeriod_D.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_TS_1차_MinMAPeriod_D.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_TS_1차_MinMAPeriod_D.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_TS_1차_MinMAPeriod_D.Location = new System.Drawing.Point(236, 59);
+            this.TB_rebalance_TS_1차_MinMAPeriod_D.MaxLength = 2;
+            this.TB_rebalance_TS_1차_MinMAPeriod_D.Name = "TB_rebalance_TS_1차_MinMAPeriod_D";
+            this.TB_rebalance_TS_1차_MinMAPeriod_D.Size = new System.Drawing.Size(20, 21);
+            this.TB_rebalance_TS_1차_MinMAPeriod_D.TabIndex = 144;
+            this.TB_rebalance_TS_1차_MinMAPeriod_D.Text = "5";
+            this.TB_rebalance_TS_1차_MinMAPeriod_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_TS_1차_MinMAPeriod_D.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_TS_1차_MinMAPeriod_D.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_TS_1차_mma_C
+            // TB_rebalance_TS_1차_MinMAPeriod_C
             // 
-            this.TB_rebalance_TS_1차_mma_C.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_TS_1차_mma_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_TS_1차_mma_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_TS_1차_mma_C.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_TS_1차_mma_C.Location = new System.Drawing.Point(236, 39);
-            this.TB_rebalance_TS_1차_mma_C.MaxLength = 2;
-            this.TB_rebalance_TS_1차_mma_C.Name = "TB_rebalance_TS_1차_mma_C";
-            this.TB_rebalance_TS_1차_mma_C.Size = new System.Drawing.Size(20, 21);
-            this.TB_rebalance_TS_1차_mma_C.TabIndex = 143;
-            this.TB_rebalance_TS_1차_mma_C.Text = "5";
-            this.TB_rebalance_TS_1차_mma_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_TS_1차_mma_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_TS_1차_mma_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_TS_1차_MinMAPeriod_C.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_TS_1차_MinMAPeriod_C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_TS_1차_MinMAPeriod_C.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_TS_1차_MinMAPeriod_C.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_TS_1차_MinMAPeriod_C.Location = new System.Drawing.Point(236, 39);
+            this.TB_rebalance_TS_1차_MinMAPeriod_C.MaxLength = 2;
+            this.TB_rebalance_TS_1차_MinMAPeriod_C.Name = "TB_rebalance_TS_1차_MinMAPeriod_C";
+            this.TB_rebalance_TS_1차_MinMAPeriod_C.Size = new System.Drawing.Size(20, 21);
+            this.TB_rebalance_TS_1차_MinMAPeriod_C.TabIndex = 143;
+            this.TB_rebalance_TS_1차_MinMAPeriod_C.Text = "5";
+            this.TB_rebalance_TS_1차_MinMAPeriod_C.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_TS_1차_MinMAPeriod_C.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_TS_1차_MinMAPeriod_C.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // TB_rebalance_TS_1차_mma_A
+            // TB_rebalance_TS_1차_MinMAPeriod_A
             // 
-            this.TB_rebalance_TS_1차_mma_A.BackColor = System.Drawing.Color.OldLace;
-            this.TB_rebalance_TS_1차_mma_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_rebalance_TS_1차_mma_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_rebalance_TS_1차_mma_A.ForeColor = System.Drawing.Color.Black;
-            this.TB_rebalance_TS_1차_mma_A.Location = new System.Drawing.Point(236, -1);
-            this.TB_rebalance_TS_1차_mma_A.MaxLength = 2;
-            this.TB_rebalance_TS_1차_mma_A.Name = "TB_rebalance_TS_1차_mma_A";
-            this.TB_rebalance_TS_1차_mma_A.Size = new System.Drawing.Size(20, 21);
-            this.TB_rebalance_TS_1차_mma_A.TabIndex = 144;
-            this.TB_rebalance_TS_1차_mma_A.Text = "5";
-            this.TB_rebalance_TS_1차_mma_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TB_rebalance_TS_1차_mma_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_rebalance_TS_1차_mma_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_rebalance_TS_1차_MinMAPeriod_A.BackColor = System.Drawing.Color.OldLace;
+            this.TB_rebalance_TS_1차_MinMAPeriod_A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TB_rebalance_TS_1차_MinMAPeriod_A.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_rebalance_TS_1차_MinMAPeriod_A.ForeColor = System.Drawing.Color.Black;
+            this.TB_rebalance_TS_1차_MinMAPeriod_A.Location = new System.Drawing.Point(236, -1);
+            this.TB_rebalance_TS_1차_MinMAPeriod_A.MaxLength = 2;
+            this.TB_rebalance_TS_1차_MinMAPeriod_A.Name = "TB_rebalance_TS_1차_MinMAPeriod_A";
+            this.TB_rebalance_TS_1차_MinMAPeriod_A.Size = new System.Drawing.Size(20, 21);
+            this.TB_rebalance_TS_1차_MinMAPeriod_A.TabIndex = 144;
+            this.TB_rebalance_TS_1차_MinMAPeriod_A.Text = "5";
+            this.TB_rebalance_TS_1차_MinMAPeriod_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TB_rebalance_TS_1차_MinMAPeriod_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
+            this.TB_rebalance_TS_1차_MinMAPeriod_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
-            // CBB_rebalance_TS_1차_mma_A
+            // CBB_rebalance_TS_1차_MinMAPeriod_A
             // 
-            this.CBB_rebalance_TS_1차_mma_A.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_TS_1차_mma_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_TS_1차_mma_A.DropDownWidth = 45;
-            this.CBB_rebalance_TS_1차_mma_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_TS_1차_mma_A.FormattingEnabled = true;
-            this.CBB_rebalance_TS_1차_mma_A.Items.AddRange(new object[] {
+            this.CBB_rebalance_TS_1차_MinMAPeriod_A.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_A.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_A.DropDownWidth = 45;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_A.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_TS_1차_MinMAPeriod_A.FormattingEnabled = true;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_A.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_TS_1차_mma_A.Location = new System.Drawing.Point(255, -1);
-            this.CBB_rebalance_TS_1차_mma_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-            this.CBB_rebalance_TS_1차_mma_A.Name = "CBB_rebalance_TS_1차_mma_A";
-            this.CBB_rebalance_TS_1차_mma_A.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_TS_1차_mma_A.TabIndex = 66;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_A.Location = new System.Drawing.Point(255, -1);
+            this.CBB_rebalance_TS_1차_MinMAPeriod_A.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
+            this.CBB_rebalance_TS_1차_MinMAPeriod_A.Name = "CBB_rebalance_TS_1차_MinMAPeriod_A";
+            this.CBB_rebalance_TS_1차_MinMAPeriod_A.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_TS_1차_MinMAPeriod_A.TabIndex = 66;
             // 
-            // CBB_rebalance_TS_1차_mma_D
+            // CBB_rebalance_TS_1차_MinMAPeriod_D
             // 
-            this.CBB_rebalance_TS_1차_mma_D.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_TS_1차_mma_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_TS_1차_mma_D.DropDownWidth = 50;
-            this.CBB_rebalance_TS_1차_mma_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_TS_1차_mma_D.FormattingEnabled = true;
-            this.CBB_rebalance_TS_1차_mma_D.Items.AddRange(new object[] {
+            this.CBB_rebalance_TS_1차_MinMAPeriod_D.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_D.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_D.DropDownWidth = 50;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_D.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_TS_1차_MinMAPeriod_D.FormattingEnabled = true;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_D.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_TS_1차_mma_D.Location = new System.Drawing.Point(255, 59);
-            this.CBB_rebalance_TS_1차_mma_D.Name = "CBB_rebalance_TS_1차_mma_D";
-            this.CBB_rebalance_TS_1차_mma_D.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_TS_1차_mma_D.TabIndex = 66;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_D.Location = new System.Drawing.Point(255, 59);
+            this.CBB_rebalance_TS_1차_MinMAPeriod_D.Name = "CBB_rebalance_TS_1차_MinMAPeriod_D";
+            this.CBB_rebalance_TS_1차_MinMAPeriod_D.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_TS_1차_MinMAPeriod_D.TabIndex = 66;
             // 
-            // CBB_rebalance_TS_1차_mma_E
+            // CBB_rebalance_TS_1차_MinMAPeriod_E
             // 
-            this.CBB_rebalance_TS_1차_mma_E.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_TS_1차_mma_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_TS_1차_mma_E.DropDownWidth = 50;
-            this.CBB_rebalance_TS_1차_mma_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_TS_1차_mma_E.FormattingEnabled = true;
-            this.CBB_rebalance_TS_1차_mma_E.Items.AddRange(new object[] {
+            this.CBB_rebalance_TS_1차_MinMAPeriod_E.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_E.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_E.DropDownWidth = 50;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_E.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_TS_1차_MinMAPeriod_E.FormattingEnabled = true;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_E.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_TS_1차_mma_E.Location = new System.Drawing.Point(255, 79);
-            this.CBB_rebalance_TS_1차_mma_E.Name = "CBB_rebalance_TS_1차_mma_E";
-            this.CBB_rebalance_TS_1차_mma_E.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_TS_1차_mma_E.TabIndex = 66;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_E.Location = new System.Drawing.Point(255, 79);
+            this.CBB_rebalance_TS_1차_MinMAPeriod_E.Name = "CBB_rebalance_TS_1차_MinMAPeriod_E";
+            this.CBB_rebalance_TS_1차_MinMAPeriod_E.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_TS_1차_MinMAPeriod_E.TabIndex = 66;
             // 
-            // CBB_rebalance_TS_1차_mma_B
+            // CBB_rebalance_TS_1차_MinMAPeriod_B
             // 
-            this.CBB_rebalance_TS_1차_mma_B.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_TS_1차_mma_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_TS_1차_mma_B.DropDownWidth = 50;
-            this.CBB_rebalance_TS_1차_mma_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_TS_1차_mma_B.FormattingEnabled = true;
-            this.CBB_rebalance_TS_1차_mma_B.Items.AddRange(new object[] {
+            this.CBB_rebalance_TS_1차_MinMAPeriod_B.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_B.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_B.DropDownWidth = 50;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_B.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_TS_1차_MinMAPeriod_B.FormattingEnabled = true;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_B.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_TS_1차_mma_B.Location = new System.Drawing.Point(255, 19);
-            this.CBB_rebalance_TS_1차_mma_B.Name = "CBB_rebalance_TS_1차_mma_B";
-            this.CBB_rebalance_TS_1차_mma_B.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_TS_1차_mma_B.TabIndex = 66;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_B.Location = new System.Drawing.Point(255, 19);
+            this.CBB_rebalance_TS_1차_MinMAPeriod_B.Name = "CBB_rebalance_TS_1차_MinMAPeriod_B";
+            this.CBB_rebalance_TS_1차_MinMAPeriod_B.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_TS_1차_MinMAPeriod_B.TabIndex = 66;
             // 
-            // CBB_rebalance_TS_1차_mma_F
+            // CBB_rebalance_TS_1차_MinMAPeriod_F
             // 
-            this.CBB_rebalance_TS_1차_mma_F.BackColor = System.Drawing.Color.PapayaWhip;
-            this.CBB_rebalance_TS_1차_mma_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_TS_1차_mma_F.DropDownWidth = 50;
-            this.CBB_rebalance_TS_1차_mma_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_TS_1차_mma_F.FormattingEnabled = true;
-            this.CBB_rebalance_TS_1차_mma_F.Items.AddRange(new object[] {
+            this.CBB_rebalance_TS_1차_MinMAPeriod_F.BackColor = System.Drawing.Color.PapayaWhip;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_F.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_F.DropDownWidth = 50;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_F.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_TS_1차_MinMAPeriod_F.FormattingEnabled = true;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_F.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_TS_1차_mma_F.Location = new System.Drawing.Point(255, 99);
-            this.CBB_rebalance_TS_1차_mma_F.Name = "CBB_rebalance_TS_1차_mma_F";
-            this.CBB_rebalance_TS_1차_mma_F.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_TS_1차_mma_F.TabIndex = 66;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_F.Location = new System.Drawing.Point(255, 99);
+            this.CBB_rebalance_TS_1차_MinMAPeriod_F.Name = "CBB_rebalance_TS_1차_MinMAPeriod_F";
+            this.CBB_rebalance_TS_1차_MinMAPeriod_F.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_TS_1차_MinMAPeriod_F.TabIndex = 66;
             // 
-            // CBB_rebalance_TS_1차_mma_C
+            // CBB_rebalance_TS_1차_MinMAPeriod_C
             // 
-            this.CBB_rebalance_TS_1차_mma_C.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_TS_1차_mma_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_TS_1차_mma_C.DropDownWidth = 55;
-            this.CBB_rebalance_TS_1차_mma_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_TS_1차_mma_C.FormattingEnabled = true;
-            this.CBB_rebalance_TS_1차_mma_C.Items.AddRange(new object[] {
+            this.CBB_rebalance_TS_1차_MinMAPeriod_C.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_C.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_C.DropDownWidth = 55;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_C.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_TS_1차_MinMAPeriod_C.FormattingEnabled = true;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_C.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_TS_1차_mma_C.Location = new System.Drawing.Point(255, 39);
-            this.CBB_rebalance_TS_1차_mma_C.Name = "CBB_rebalance_TS_1차_mma_C";
-            this.CBB_rebalance_TS_1차_mma_C.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_TS_1차_mma_C.TabIndex = 66;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_C.Location = new System.Drawing.Point(255, 39);
+            this.CBB_rebalance_TS_1차_MinMAPeriod_C.Name = "CBB_rebalance_TS_1차_MinMAPeriod_C";
+            this.CBB_rebalance_TS_1차_MinMAPeriod_C.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_TS_1차_MinMAPeriod_C.TabIndex = 66;
             // 
-            // CBB_rebalance_TS_1차_mma_G
+            // CBB_rebalance_TS_1차_MinMAPeriod_G
             // 
-            this.CBB_rebalance_TS_1차_mma_G.BackColor = System.Drawing.Color.OldLace;
-            this.CBB_rebalance_TS_1차_mma_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBB_rebalance_TS_1차_mma_G.DropDownWidth = 50;
-            this.CBB_rebalance_TS_1차_mma_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.CBB_rebalance_TS_1차_mma_G.FormattingEnabled = true;
-            this.CBB_rebalance_TS_1차_mma_G.Items.AddRange(new object[] {
+            this.CBB_rebalance_TS_1차_MinMAPeriod_G.BackColor = System.Drawing.Color.OldLace;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_G.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_G.DropDownWidth = 50;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_G.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB_rebalance_TS_1차_MinMAPeriod_G.FormattingEnabled = true;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_G.Items.AddRange(new object[] {
             "Ｘ",
             "▲",
             "▼"});
-            this.CBB_rebalance_TS_1차_mma_G.Location = new System.Drawing.Point(255, 119);
-            this.CBB_rebalance_TS_1차_mma_G.Name = "CBB_rebalance_TS_1차_mma_G";
-            this.CBB_rebalance_TS_1차_mma_G.Size = new System.Drawing.Size(35, 21);
-            this.CBB_rebalance_TS_1차_mma_G.TabIndex = 66;
+            this.CBB_rebalance_TS_1차_MinMAPeriod_G.Location = new System.Drawing.Point(255, 119);
+            this.CBB_rebalance_TS_1차_MinMAPeriod_G.Name = "CBB_rebalance_TS_1차_MinMAPeriod_G";
+            this.CBB_rebalance_TS_1차_MinMAPeriod_G.Size = new System.Drawing.Size(35, 21);
+            this.CBB_rebalance_TS_1차_MinMAPeriod_G.TabIndex = 66;
             // 
             // Form_AccountManagement
             // 
@@ -13914,7 +13910,6 @@ namespace 지니_64
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1920, 350);
             this.Controls.Add(this.계좌관리_P);
-            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -14310,19 +14305,19 @@ namespace 지니_64
         public System.Windows.Forms.ComboBox combo_rebalance_감시_jumun_D;
         public System.Windows.Forms.ComboBox combo_rebalance_감시_jumun_G;
         public System.Windows.Forms.ComboBox combo_rebalance_감시_jumun_F;
-        public System.Windows.Forms.ComboBox combo_rebalance_condition_C;
+        public System.Windows.Forms.ComboBox 리밸_C;
         public System.Windows.Forms.ComboBox combo_rebalance_감시_jumun_E;
-        public System.Windows.Forms.ComboBox combo_rebalance_condition_G;
-        public System.Windows.Forms.ComboBox combo_rebalance_condition_F;
-        public System.Windows.Forms.ComboBox combo_rebalance_condition_B;
-        public System.Windows.Forms.ComboBox combo_rebalance_condition_E;
-        public System.Windows.Forms.ComboBox combo_rebalance_condition_A;
-        public System.Windows.Forms.ComboBox combo_rebalance_condition_D;
+        public System.Windows.Forms.ComboBox 리밸_G;
+        public System.Windows.Forms.ComboBox 리밸_F;
+        public System.Windows.Forms.ComboBox 리밸_B;
+        public System.Windows.Forms.ComboBox 리밸_E;
+        public System.Windows.Forms.ComboBox 리밸_A;
+        public System.Windows.Forms.ComboBox 리밸_D;
         public System.Windows.Forms.ComboBox CBB_Liquidation_suik_gubun_C;
         public System.Windows.Forms.ComboBox CBB_Liquidation_suik_gubun_A;
-        public System.Windows.Forms.ComboBox CBB_Liquidation_condition_C;
-        public System.Windows.Forms.ComboBox CBB_Liquidation_condition_A;
-        public System.Windows.Forms.ComboBox CBB_Liquidation_condition_B;
+        public System.Windows.Forms.ComboBox 청산_C;
+        public System.Windows.Forms.ComboBox 청산_A;
+        public System.Windows.Forms.ComboBox 청산_B;
         public System.Windows.Forms.ComboBox CBB_Liquidation_use_condition_B;
         public System.Windows.Forms.ComboBox CBB_Liquidation_use_condition_C;
         public System.Windows.Forms.ComboBox CBB_Liquidation_use_condition_A;
@@ -14389,10 +14384,10 @@ namespace 지니_64
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label379;
-        public System.Windows.Forms.TextBox TB_추매주가이상;
-        public System.Windows.Forms.TextBox TB_추매주가이하;
-        public System.Windows.Forms.TextBox TB_추매등락률이상;
-        public System.Windows.Forms.TextBox TB_추매등락률이하;
+        public System.Windows.Forms.TextBox TB_리밸_추매주가이상;
+        public System.Windows.Forms.TextBox TB_리밸_추매주가이하;
+        public System.Windows.Forms.TextBox TB_리밸_추매등락률이상;
+        public System.Windows.Forms.TextBox TB_리밸_추매등락률이하;
         public System.Windows.Forms.Button BT_손익기준금적용;
         public System.Windows.Forms.Button BT_최종매입가감시주문;
         public System.Windows.Forms.Button BT_최종매입가;
@@ -14425,13 +14420,13 @@ namespace 지니_64
         public System.Windows.Forms.Label label1;
         public System.Windows.Forms.Label label9;
         public System.Windows.Forms.Label label441;
-        public System.Windows.Forms.TextBox TB_rebalance_매입금_F;
-        public System.Windows.Forms.TextBox TB_rebalance_매입금_C;
-        public System.Windows.Forms.TextBox TB_rebalance_매입금_G;
-        public System.Windows.Forms.TextBox TB_rebalance_매입금_E;
-        public System.Windows.Forms.TextBox TB_rebalance_매입금_B;
-        public System.Windows.Forms.TextBox TB_rebalance_매입금_D;
-        public System.Windows.Forms.TextBox TB_rebalance_매입금_A;
+        public System.Windows.Forms.TextBox TB_Rebalance_매입금_F;
+        public System.Windows.Forms.TextBox TB_Rebalance_매입금_C;
+        public System.Windows.Forms.TextBox TB_Rebalance_매입금_G;
+        public System.Windows.Forms.TextBox TB_Rebalance_매입금_E;
+        public System.Windows.Forms.TextBox TB_Rebalance_매입금_B;
+        public System.Windows.Forms.TextBox TB_Rebalance_매입금_D;
+        public System.Windows.Forms.TextBox TB_Rebalance_매입금_A;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label23;
         public System.Windows.Forms.Label label24;
@@ -14460,27 +14455,27 @@ namespace 지니_64
         public System.Windows.Forms.TextBox TB_cut_수익금2_C;
         public System.Windows.Forms.TextBox TB_cut_수익금2_B;
         public System.Windows.Forms.TextBox TB_rebalance_sellvolume1_A;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma_G;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma_C;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma_F;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma_B;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma_E;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma_A;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma_D;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod1_G;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod1_C;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod1_F;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod1_B;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod1_E;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod1_A;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod1_D;
         public System.Windows.Forms.Label label26;
-        public System.Windows.Forms.TextBox TB_rebalance_mma_E;
-        public System.Windows.Forms.TextBox TB_rebalance_mma_B;
-        public System.Windows.Forms.TextBox TB_rebalance_mma_G;
-        public System.Windows.Forms.TextBox TB_rebalance_mma_F;
-        public System.Windows.Forms.TextBox TB_rebalance_mma_D;
-        public System.Windows.Forms.TextBox TB_rebalance_mma_C;
-        public System.Windows.Forms.TextBox TB_rebalance_mma_A;
-        public System.Windows.Forms.TextBox TB_Liquidation_mma_B;
-        public System.Windows.Forms.TextBox TB_Liquidation_mma_C;
-        public System.Windows.Forms.TextBox TB_Liquidation_mma_A;
-        public System.Windows.Forms.ComboBox CBB_Liquidation_mma_C;
-        public System.Windows.Forms.ComboBox CBB_Liquidation_mma_B;
-        public System.Windows.Forms.ComboBox CBB_Liquidation_mma_A;
+        public System.Windows.Forms.TextBox TB_rebalance_MinMAPeriod1_E;
+        public System.Windows.Forms.TextBox TB_rebalance_MinMAPeriod1_B;
+        public System.Windows.Forms.TextBox TB_rebalance_MinMAPeriod1_G;
+        public System.Windows.Forms.TextBox TB_rebalance_MinMAPeriod1_F;
+        public System.Windows.Forms.TextBox TB_rebalance_MinMAPeriod1_D;
+        public System.Windows.Forms.TextBox TB_rebalance_MinMAPeriod1_C;
+        public System.Windows.Forms.TextBox TB_rebalance_MinMAPeriod1_A;
+        public System.Windows.Forms.TextBox TB_Liquidation_MinMAPeriod_B;
+        public System.Windows.Forms.TextBox TB_Liquidation_MinMAPeriod_C;
+        public System.Windows.Forms.TextBox TB_Liquidation_MinMAPeriod_A;
+        public System.Windows.Forms.ComboBox CBB_Liquidation_MinMAPeriod_C;
+        public System.Windows.Forms.ComboBox CBB_Liquidation_MinMAPeriod_B;
+        public System.Windows.Forms.ComboBox CBB_Liquidation_MinMAPeriod_A;
         public System.Windows.Forms.CheckBox CB_리밸TS_1;
         private System.Windows.Forms.Panel panel_리밸TS_1;
         public System.Windows.Forms.CheckBox CB_리밸TS_2;
@@ -14520,27 +14515,27 @@ namespace 지니_64
         public System.Windows.Forms.CheckBox CB_rebalance_TS_2차_D;
         public System.Windows.Forms.CheckBox CB_rebalance_TS_2차_F;
         public System.Windows.Forms.CheckBox CB_rebalance_TS_2차_C;
-        public System.Windows.Forms.TextBox TB_rebalance_TS_1차_mma_E;
-        public System.Windows.Forms.TextBox TB_rebalance_TS_1차_mma_B;
-        public System.Windows.Forms.TextBox TB_rebalance_TS_1차_mma_G;
-        public System.Windows.Forms.TextBox TB_rebalance_TS_1차_mma_F;
-        public System.Windows.Forms.TextBox TB_rebalance_TS_1차_mma_D;
-        public System.Windows.Forms.TextBox TB_rebalance_TS_1차_mma_C;
-        public System.Windows.Forms.TextBox TB_rebalance_TS_1차_mma_A;
-        public System.Windows.Forms.ComboBox CBB_rebalance_TS_1차_mma_A;
-        public System.Windows.Forms.ComboBox CBB_rebalance_TS_1차_mma_D;
-        public System.Windows.Forms.ComboBox CBB_rebalance_TS_1차_mma_E;
-        public System.Windows.Forms.ComboBox CBB_rebalance_TS_1차_mma_B;
-        public System.Windows.Forms.ComboBox CBB_rebalance_TS_1차_mma_F;
-        public System.Windows.Forms.ComboBox CBB_rebalance_TS_1차_mma_C;
-        public System.Windows.Forms.ComboBox CBB_rebalance_TS_1차_mma_G;
-        public System.Windows.Forms.TextBox TB_rebalance_TS_2차_mma_E;
-        public System.Windows.Forms.TextBox TB_rebalance_TS_2차_mma_B;
-        public System.Windows.Forms.TextBox TB_rebalance_TS_2차_mma_G;
-        public System.Windows.Forms.TextBox TB_rebalance_TS_2차_mma_F;
-        public System.Windows.Forms.TextBox TB_rebalance_TS_2차_mma_D;
-        public System.Windows.Forms.TextBox TB_rebalance_TS_2차_mma_C;
-        public System.Windows.Forms.TextBox TB_rebalance_TS_2차_mma_A;
+        public System.Windows.Forms.TextBox TB_rebalance_TS_1차_MinMAPeriod_E;
+        public System.Windows.Forms.TextBox TB_rebalance_TS_1차_MinMAPeriod_B;
+        public System.Windows.Forms.TextBox TB_rebalance_TS_1차_MinMAPeriod_G;
+        public System.Windows.Forms.TextBox TB_rebalance_TS_1차_MinMAPeriod_F;
+        public System.Windows.Forms.TextBox TB_rebalance_TS_1차_MinMAPeriod_D;
+        public System.Windows.Forms.TextBox TB_rebalance_TS_1차_MinMAPeriod_C;
+        public System.Windows.Forms.TextBox TB_rebalance_TS_1차_MinMAPeriod_A;
+        public System.Windows.Forms.ComboBox CBB_rebalance_TS_1차_MinMAPeriod_A;
+        public System.Windows.Forms.ComboBox CBB_rebalance_TS_1차_MinMAPeriod_D;
+        public System.Windows.Forms.ComboBox CBB_rebalance_TS_1차_MinMAPeriod_E;
+        public System.Windows.Forms.ComboBox CBB_rebalance_TS_1차_MinMAPeriod_B;
+        public System.Windows.Forms.ComboBox CBB_rebalance_TS_1차_MinMAPeriod_F;
+        public System.Windows.Forms.ComboBox CBB_rebalance_TS_1차_MinMAPeriod_C;
+        public System.Windows.Forms.ComboBox CBB_rebalance_TS_1차_MinMAPeriod_G;
+        public System.Windows.Forms.TextBox TB_rebalance_TS_2차_MinMAPeriod_E;
+        public System.Windows.Forms.TextBox TB_rebalance_TS_2차_MinMAPeriod_B;
+        public System.Windows.Forms.TextBox TB_rebalance_TS_2차_MinMAPeriod_G;
+        public System.Windows.Forms.TextBox TB_rebalance_TS_2차_MinMAPeriod_F;
+        public System.Windows.Forms.TextBox TB_rebalance_TS_2차_MinMAPeriod_D;
+        public System.Windows.Forms.TextBox TB_rebalance_TS_2차_MinMAPeriod_C;
+        public System.Windows.Forms.TextBox TB_rebalance_TS_2차_MinMAPeriod_A;
         public System.Windows.Forms.Label label49;
         public System.Windows.Forms.Label label48;
         public System.Windows.Forms.Label label47;
@@ -14555,13 +14550,13 @@ namespace 지니_64
         public System.Windows.Forms.Label label30;
         public System.Windows.Forms.Label label29;
         public System.Windows.Forms.Label label27;
-        public System.Windows.Forms.ComboBox CBB_rebalance_TS_2차_mma_G;
-        public System.Windows.Forms.ComboBox CBB_rebalance_TS_2차_mma_C;
-        public System.Windows.Forms.ComboBox CBB_rebalance_TS_2차_mma_F;
-        public System.Windows.Forms.ComboBox CBB_rebalance_TS_2차_mma_B;
-        public System.Windows.Forms.ComboBox CBB_rebalance_TS_2차_mma_E;
-        public System.Windows.Forms.ComboBox CBB_rebalance_TS_2차_mma_D;
-        public System.Windows.Forms.ComboBox CBB_rebalance_TS_2차_mma_A;
+        public System.Windows.Forms.ComboBox CBB_rebalance_TS_2차_MinMAPeriod_G;
+        public System.Windows.Forms.ComboBox CBB_rebalance_TS_2차_MinMAPeriod_C;
+        public System.Windows.Forms.ComboBox CBB_rebalance_TS_2차_MinMAPeriod_F;
+        public System.Windows.Forms.ComboBox CBB_rebalance_TS_2차_MinMAPeriod_B;
+        public System.Windows.Forms.ComboBox CBB_rebalance_TS_2차_MinMAPeriod_E;
+        public System.Windows.Forms.ComboBox CBB_rebalance_TS_2차_MinMAPeriod_D;
+        public System.Windows.Forms.ComboBox CBB_rebalance_TS_2차_MinMAPeriod_A;
         public System.Windows.Forms.Label label42;
         public System.Windows.Forms.Label label41;
         public System.Windows.Forms.Label label40;
@@ -14570,9 +14565,9 @@ namespace 지니_64
         public System.Windows.Forms.Label label37;
         public System.Windows.Forms.Label label35;
         public System.Windows.Forms.TextBox TB_Liquidation_TS_down_A;
-        public System.Windows.Forms.TextBox TB_Liquidation_TS_mma_B;
-        public System.Windows.Forms.TextBox TB_Liquidation_TS_mma_C;
-        public System.Windows.Forms.TextBox TB_Liquidation_TS_mma_A;
+        public System.Windows.Forms.TextBox TB_Liquidation_TS_MinMAPeriod_B;
+        public System.Windows.Forms.TextBox TB_Liquidation_TS_MinMAPeriod_C;
+        public System.Windows.Forms.TextBox TB_Liquidation_TS_MinMAPeriod_A;
         public System.Windows.Forms.TextBox TB_Liquidation_TS_down_C;
         public System.Windows.Forms.Label label55;
         public System.Windows.Forms.TextBox TB_Liquidation_TS_down_B;
@@ -14584,86 +14579,86 @@ namespace 지니_64
         public System.Windows.Forms.CheckBox CB_Liquidation_TS_C;
         public System.Windows.Forms.Label label51;
         public System.Windows.Forms.Label label50;
-        public System.Windows.Forms.ComboBox CBB_Liquidation_TS_mma_C;
-        public System.Windows.Forms.ComboBox CBB_Liquidation_TS_mma_B;
-        public System.Windows.Forms.ComboBox CBB_Liquidation_TS_mma_A;
+        public System.Windows.Forms.ComboBox CBB_Liquidation_TS_MinMAPeriod_C;
+        public System.Windows.Forms.ComboBox CBB_Liquidation_TS_MinMAPeriod_B;
+        public System.Windows.Forms.ComboBox CBB_Liquidation_TS_MinMAPeriod_A;
         public System.Windows.Forms.Label label57;
         public System.Windows.Forms.Label label58;
         public System.Windows.Forms.Label label56;
-        public System.Windows.Forms.TextBox TB_Liquidation_TS_dma_B;
-        public System.Windows.Forms.TextBox TB_Liquidation_TS_dma_C;
-        public System.Windows.Forms.TextBox TB_Liquidation_TS_dma_A;
+        public System.Windows.Forms.TextBox TB_Liquidation_TS_DayMAPeriod_B;
+        public System.Windows.Forms.TextBox TB_Liquidation_TS_DayMAPeriod_C;
+        public System.Windows.Forms.TextBox TB_Liquidation_TS_DayMAPeriod_A;
         public System.Windows.Forms.Label label64;
         public System.Windows.Forms.Label label61;
         public System.Windows.Forms.Label label63;
         public System.Windows.Forms.Label label60;
         public System.Windows.Forms.Label label62;
         public System.Windows.Forms.Label label59;
-        public System.Windows.Forms.ComboBox CBB_Liquidation_TS_dma_C;
-        public System.Windows.Forms.ComboBox CBB_Liquidation_TS_dma_B;
-        public System.Windows.Forms.ComboBox CBB_Liquidation_TS_dma_A;
+        public System.Windows.Forms.ComboBox CBB_Liquidation_TS_DayMAPeriod_C;
+        public System.Windows.Forms.ComboBox CBB_Liquidation_TS_DayMAPeriod_B;
+        public System.Windows.Forms.ComboBox CBB_Liquidation_TS_DayMAPeriod_A;
         private System.Windows.Forms.Panel panel_mma;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label70;
-        public System.Windows.Forms.TextBox TB_rebalance_dma2_F;
-        public System.Windows.Forms.TextBox TB_rebalance_dma1_F;
-        public System.Windows.Forms.TextBox TB_rebalance_mma2_F;
-        public System.Windows.Forms.TextBox TB_rebalance_dma2_D;
-        public System.Windows.Forms.TextBox TB_rebalance_mma2_D;
-        public System.Windows.Forms.TextBox TB_rebalance_dma1_D;
-        public System.Windows.Forms.TextBox TB_rebalance_dma2_E;
-        public System.Windows.Forms.TextBox TB_rebalance_mma2_E;
-        public System.Windows.Forms.TextBox TB_rebalance_mma2_G;
-        public System.Windows.Forms.TextBox TB_rebalance_dma1_E;
-        public System.Windows.Forms.TextBox TB_rebalance_dma1_G;
-        public System.Windows.Forms.TextBox TB_rebalance_dma2_B;
-        public System.Windows.Forms.TextBox TB_rebalance_dma2_G;
-        public System.Windows.Forms.TextBox TB_rebalance_dma1_A;
-        public System.Windows.Forms.TextBox TB_rebalance_dma1_B;
-        public System.Windows.Forms.TextBox TB_rebalance_mma2_A;
-        public System.Windows.Forms.TextBox TB_rebalance_mma2_B;
-        public System.Windows.Forms.TextBox TB_rebalance_dma2_A;
-        public System.Windows.Forms.TextBox TB_rebalance_dma2_C;
-        public System.Windows.Forms.TextBox TB_rebalance_dma1_C;
-        public System.Windows.Forms.TextBox TB_rebalance_mma2_C;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma_배열_D;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma_배열_A;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma_배열_E;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma_배열_B;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma_배열_F;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma_배열_C;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma_배열_G;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma2_D;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma2_A;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma2_E;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma2_B;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma2_F;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma2_C;
-        public System.Windows.Forms.ComboBox CBB_rebalance_mma2_G;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma1_D;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma1_A;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma1_E;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma1_B;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma1_F;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma1_C;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma1_G;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma_배열_D;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma_배열_A;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma_배열_E;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma_배열_B;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma_배열_F;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma_배열_C;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma_배열_G;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma2_D;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma2_A;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma2_E;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma2_B;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma2_F;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma2_C;
-        public System.Windows.Forms.ComboBox CBB_rebalance_dma2_G;
+        public System.Windows.Forms.TextBox TB_rebalance_DayMAPeriod2_F;
+        public System.Windows.Forms.TextBox TB_rebalance_DayMAPeriod1_F;
+        public System.Windows.Forms.TextBox TB_rebalance_MinMAPeriod2_F;
+        public System.Windows.Forms.TextBox TB_rebalance_DayMAPeriod2_D;
+        public System.Windows.Forms.TextBox TB_rebalance_MinMAPeriod2_D;
+        public System.Windows.Forms.TextBox TB_rebalance_DayMAPeriod1_D;
+        public System.Windows.Forms.TextBox TB_rebalance_DayMAPeriod2_E;
+        public System.Windows.Forms.TextBox TB_rebalance_MinMAPeriod2_E;
+        public System.Windows.Forms.TextBox TB_rebalance_MinMAPeriod2_G;
+        public System.Windows.Forms.TextBox TB_rebalance_DayMAPeriod1_E;
+        public System.Windows.Forms.TextBox TB_rebalance_DayMAPeriod1_G;
+        public System.Windows.Forms.TextBox TB_rebalance_DayMAPeriod2_B;
+        public System.Windows.Forms.TextBox TB_rebalance_DayMAPeriod2_G;
+        public System.Windows.Forms.TextBox TB_rebalance_DayMAPeriod1_A;
+        public System.Windows.Forms.TextBox TB_rebalance_DayMAPeriod1_B;
+        public System.Windows.Forms.TextBox TB_rebalance_MinMAPeriod2_A;
+        public System.Windows.Forms.TextBox TB_rebalance_MinMAPeriod2_B;
+        public System.Windows.Forms.TextBox TB_rebalance_DayMAPeriod2_A;
+        public System.Windows.Forms.TextBox TB_rebalance_DayMAPeriod2_C;
+        public System.Windows.Forms.TextBox TB_rebalance_DayMAPeriod1_C;
+        public System.Windows.Forms.TextBox TB_rebalance_MinMAPeriod2_C;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod1_배열_D;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod1_배열_A;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod1_배열_E;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod1_배열_B;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod1_배열_F;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod1_배열_C;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod1_배열_G;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod2_D;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod2_A;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod2_E;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod2_B;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod2_F;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod2_C;
+        public System.Windows.Forms.ComboBox CBB_rebalance_MinMAPeriod2_G;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod1_D;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod1_A;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod1_E;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod1_B;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod1_F;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod1_C;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod1_G;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod_배열_D;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod_배열_A;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod_배열_E;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod_배열_B;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod_배열_F;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod_배열_C;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod_배열_G;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod2_D;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod2_A;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod2_E;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod2_B;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod2_F;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod2_C;
+        public System.Windows.Forms.ComboBox CBB_rebalance_DayMAPeriod2_G;
         public System.Windows.Forms.CheckBox CB_mma;
     }
 }

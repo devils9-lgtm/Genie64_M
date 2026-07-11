@@ -1,5 +1,5 @@
 ﻿
-namespace 지니_64
+namespace 지니64
 {
     partial class Form_PriceSearch
     {
@@ -32,9 +32,6 @@ namespace 지니_64
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_PriceSearch));
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.TB_매도탐색 = new System.Windows.Forms.TextBox();
-            this.TB_매수탐색A = new System.Windows.Forms.TextBox();
-            this.TB_매수탐색B = new System.Windows.Forms.TextBox();
             this.MTB_M_반복 = new System.Windows.Forms.MaskedTextBox();
             this.label275 = new System.Windows.Forms.Label();
             this.BT_대금탐색저장 = new System.Windows.Forms.Button();
@@ -125,7 +122,6 @@ namespace 지니_64
             this.label292 = new System.Windows.Forms.Label();
             this.label312 = new System.Windows.Forms.Label();
             this.TB_Buy_B_탐색대금_3 = new System.Windows.Forms.TextBox();
-            this.label332 = new System.Windows.Forms.Label();
             this.label298 = new System.Windows.Forms.Label();
             this.TB_accumulate_Price = new System.Windows.Forms.TextBox();
             this.TB_Sell_기준초 = new System.Windows.Forms.TextBox();
@@ -141,7 +137,6 @@ namespace 지니_64
             this.label366 = new System.Windows.Forms.Label();
             this.label318 = new System.Windows.Forms.Label();
             this.label314 = new System.Windows.Forms.Label();
-            this.label331 = new System.Windows.Forms.Label();
             this.TB_Sell_상승카운터 = new System.Windows.Forms.TextBox();
             this.TB_Buy_상승카운터_B = new System.Windows.Forms.TextBox();
             this.label352 = new System.Windows.Forms.Label();
@@ -179,7 +174,6 @@ namespace 지니_64
             this.label399 = new System.Windows.Forms.Label();
             this.label408 = new System.Windows.Forms.Label();
             this.label400 = new System.Windows.Forms.Label();
-            this.label407 = new System.Windows.Forms.Label();
             this.label302 = new System.Windows.Forms.Label();
             this.TB_Buy_A_탐색주가_1 = new System.Windows.Forms.TextBox();
             this.label401 = new System.Windows.Forms.Label();
@@ -195,6 +189,9 @@ namespace 지니_64
             this.CBB_M_잔량 = new System.Windows.Forms.ComboBox();
             this.label70 = new System.Windows.Forms.Label();
             this.CBB_M_잔량_2 = new System.Windows.Forms.ComboBox();
+            this.combo_Sell_초회 = new System.Windows.Forms.ComboBox();
+            this.Combo_Buy_A_초회 = new System.Windows.Forms.ComboBox();
+            this.Combo_Buy_B_초회 = new System.Windows.Forms.ComboBox();
             this.TS대금탐색_P.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -206,52 +203,6 @@ namespace 지니_64
             this.toolTip1.ReshowDelay = 100;
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip1.ToolTipTitle = "사용방법";
-            // 
-            // TB_매도탐색
-            // 
-            this.TB_매도탐색.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.TB_매도탐색.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_매도탐색.Cursor = System.Windows.Forms.Cursors.Default;
-            this.TB_매도탐색.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.TB_매도탐색.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.TB_매도탐색.Location = new System.Drawing.Point(96, 246);
-            this.TB_매도탐색.MaxLength = 10;
-            this.TB_매도탐색.Name = "TB_매도탐색";
-            this.TB_매도탐색.Size = new System.Drawing.Size(103, 21);
-            this.TB_매도탐색.TabIndex = 60;
-            this.TB_매도탐색.Text = "매도 대금 탐색";
-            this.TB_매도탐색.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_매도탐색, "이름을 바꿀수 있습니다.");
-            // 
-            // TB_매수탐색A
-            // 
-            this.TB_매수탐색A.BackColor = System.Drawing.Color.DarkSalmon;
-            this.TB_매수탐색A.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_매수탐색A.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.TB_매수탐색A.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.TB_매수탐색A.Location = new System.Drawing.Point(96, 62);
-            this.TB_매수탐색A.MaxLength = 10;
-            this.TB_매수탐색A.Name = "TB_매수탐색A";
-            this.TB_매수탐색A.Size = new System.Drawing.Size(103, 21);
-            this.TB_매수탐색A.TabIndex = 60;
-            this.TB_매수탐색A.Text = "매수 대금 탐색 A";
-            this.TB_매수탐색A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_매수탐색A, "이름을 바꿀수 있습니다.");
-            // 
-            // TB_매수탐색B
-            // 
-            this.TB_매수탐색B.BackColor = System.Drawing.Color.DarkSalmon;
-            this.TB_매수탐색B.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_매수탐색B.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.TB_매수탐색B.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.TB_매수탐색B.Location = new System.Drawing.Point(444, 62);
-            this.TB_매수탐색B.MaxLength = 10;
-            this.TB_매수탐색B.Name = "TB_매수탐색B";
-            this.TB_매수탐색B.Size = new System.Drawing.Size(103, 21);
-            this.TB_매수탐색B.TabIndex = 60;
-            this.TB_매수탐색B.Text = "매수 대금 탐색 B";
-            this.TB_매수탐색B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.toolTip1.SetToolTip(this.TB_매수탐색B, "이름을 바꿀수 있습니다.");
             // 
             // MTB_M_반복
             // 
@@ -321,7 +272,7 @@ namespace 지니_64
             this.TB_Sell_탐색대금_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Sell_탐색대금_2, "탐색대금_2");
             this.TB_Sell_탐색대금_2.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Sell_탐색대금_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Sell_탐색대금_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_Sell_탐색대금_3
             // 
@@ -338,7 +289,7 @@ namespace 지니_64
             this.TB_Sell_탐색대금_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Sell_탐색대금_3, "탐색대금_3");
             this.TB_Sell_탐색대금_3.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Sell_탐색대금_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Sell_탐색대금_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_Sell_탐색대금_5
             // 
@@ -355,7 +306,7 @@ namespace 지니_64
             this.TB_Sell_탐색대금_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Sell_탐색대금_5, "탐색대금_5");
             this.TB_Sell_탐색대금_5.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Sell_탐색대금_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Sell_탐색대금_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_Sell_탐색대금_6
             // 
@@ -372,7 +323,7 @@ namespace 지니_64
             this.TB_Sell_탐색대금_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Sell_탐색대금_6, "탐색대금_6");
             this.TB_Sell_탐색대금_6.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Sell_탐색대금_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Sell_탐색대금_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_Sell_탐색대금_4
             // 
@@ -389,7 +340,7 @@ namespace 지니_64
             this.TB_Sell_탐색대금_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Sell_탐색대금_4, "탐색대금_4");
             this.TB_Sell_탐색대금_4.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Sell_탐색대금_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Sell_탐색대금_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_Sell_탐색주가_5
             // 
@@ -406,7 +357,7 @@ namespace 지니_64
             this.TB_Sell_탐색주가_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Sell_탐색주가_5, "탐색주가_5");
             this.TB_Sell_탐색주가_5.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Sell_탐색주가_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Sell_탐색주가_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_Sell_탐색주가_3
             // 
@@ -423,7 +374,7 @@ namespace 지니_64
             this.TB_Sell_탐색주가_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Sell_탐색주가_3, "탐색주가_3");
             this.TB_Sell_탐색주가_3.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Sell_탐색주가_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Sell_탐색주가_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_Sell_탐색주가_1
             // 
@@ -440,7 +391,7 @@ namespace 지니_64
             this.TB_Sell_탐색주가_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Sell_탐색주가_1, "탐색주가_1");
             this.TB_Sell_탐색주가_1.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Sell_탐색주가_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Sell_탐색주가_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_Sell_탐색대금_1
             // 
@@ -457,7 +408,7 @@ namespace 지니_64
             this.TB_Sell_탐색대금_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Sell_탐색대금_1, "탐색대금_1");
             this.TB_Sell_탐색대금_1.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Sell_탐색대금_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Sell_탐색대금_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label361
             // 
@@ -516,7 +467,7 @@ namespace 지니_64
             this.TB_Sell_탐색주가_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Sell_탐색주가_6, "탐색주가_6");
             this.TB_Sell_탐색주가_6.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Sell_탐색주가_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Sell_탐색주가_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_Sell_탐색주가_4
             // 
@@ -533,7 +484,7 @@ namespace 지니_64
             this.TB_Sell_탐색주가_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Sell_탐색주가_4, "탐색주가_4");
             this.TB_Sell_탐색주가_4.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Sell_탐색주가_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Sell_탐색주가_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_Sell_탐색주가_2
             // 
@@ -550,7 +501,7 @@ namespace 지니_64
             this.TB_Sell_탐색주가_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.toolTip1.SetToolTip(this.TB_Sell_탐색주가_2, "탐색주가_2");
             this.TB_Sell_탐색주가_2.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Sell_탐색주가_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Sell_탐색주가_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // CBB_Buy_B_분봉
             // 
@@ -738,9 +689,6 @@ namespace 지니_64
             this.TS대금탐색_P.Controls.Add(this.CB_Buy_하락옵션_A);
             this.TS대금탐색_P.Controls.Add(this.CB_Buy_상승옵션_A);
             this.TS대금탐색_P.Controls.Add(this.CB_매수탐색A);
-            this.TS대금탐색_P.Controls.Add(this.TB_매도탐색);
-            this.TS대금탐색_P.Controls.Add(this.TB_매수탐색A);
-            this.TS대금탐색_P.Controls.Add(this.TB_매수탐색B);
             this.TS대금탐색_P.Controls.Add(this.CB_매수탐색B);
             this.TS대금탐색_P.Controls.Add(this.label418);
             this.TS대금탐색_P.Controls.Add(this.label313);
@@ -808,7 +756,6 @@ namespace 지니_64
             this.TS대금탐색_P.Controls.Add(this.label292);
             this.TS대금탐색_P.Controls.Add(this.label312);
             this.TS대금탐색_P.Controls.Add(this.TB_Buy_B_탐색대금_3);
-            this.TS대금탐색_P.Controls.Add(this.label332);
             this.TS대금탐색_P.Controls.Add(this.label298);
             this.TS대금탐색_P.Controls.Add(this.TB_accumulate_Price);
             this.TS대금탐색_P.Controls.Add(this.TB_Sell_기준초);
@@ -826,7 +773,6 @@ namespace 지니_64
             this.TS대금탐색_P.Controls.Add(this.label366);
             this.TS대금탐색_P.Controls.Add(this.label318);
             this.TS대금탐색_P.Controls.Add(this.label314);
-            this.TS대금탐색_P.Controls.Add(this.label331);
             this.TS대금탐색_P.Controls.Add(this.TB_Sell_탐색주가_6);
             this.TS대금탐색_P.Controls.Add(this.TB_Sell_상승카운터);
             this.TS대금탐색_P.Controls.Add(this.TB_Sell_탐색주가_4);
@@ -867,7 +813,6 @@ namespace 지니_64
             this.TS대금탐색_P.Controls.Add(this.label399);
             this.TS대금탐색_P.Controls.Add(this.label408);
             this.TS대금탐색_P.Controls.Add(this.label400);
-            this.TS대금탐색_P.Controls.Add(this.label407);
             this.TS대금탐색_P.Controls.Add(this.label302);
             this.TS대금탐색_P.Controls.Add(this.TB_Buy_A_탐색주가_1);
             this.TS대금탐색_P.Controls.Add(this.label401);
@@ -885,6 +830,9 @@ namespace 지니_64
             this.TS대금탐색_P.Controls.Add(this.CBB_M_잔량);
             this.TS대금탐색_P.Controls.Add(this.label70);
             this.TS대금탐색_P.Controls.Add(this.CBB_M_잔량_2);
+            this.TS대금탐색_P.Controls.Add(this.combo_Sell_초회);
+            this.TS대금탐색_P.Controls.Add(this.Combo_Buy_A_초회);
+            this.TS대금탐색_P.Controls.Add(this.Combo_Buy_B_초회);
             this.TS대금탐색_P.Font = new System.Drawing.Font("굴림체", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.TS대금탐색_P.Location = new System.Drawing.Point(-1, 0);
             this.TS대금탐색_P.Name = "TS대금탐색_P";
@@ -1000,7 +948,7 @@ namespace 지니_64
             this.CB_매도탐색.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_매도탐색.Location = new System.Drawing.Point(3, 246);
             this.CB_매도탐색.Name = "CB_매도탐색";
-            this.CB_매도탐색.Size = new System.Drawing.Size(94, 21);
+            this.CB_매도탐색.Size = new System.Drawing.Size(196, 21);
             this.CB_매도탐색.TabIndex = 71;
             this.CB_매도탐색.TabStop = false;
             this.CB_매도탐색.Text = "□ 매도 탐색";
@@ -1020,10 +968,10 @@ namespace 지니_64
             this.CB_매수탐색A.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_매수탐색A.Location = new System.Drawing.Point(3, 62);
             this.CB_매수탐색A.Name = "CB_매수탐색A";
-            this.CB_매수탐색A.Size = new System.Drawing.Size(94, 21);
+            this.CB_매수탐색A.Size = new System.Drawing.Size(196, 21);
             this.CB_매수탐색A.TabIndex = 70;
             this.CB_매수탐색A.TabStop = false;
-            this.CB_매수탐색A.Text = "□  A매수탐색";
+            this.CB_매수탐색A.Text = "□  매수탐색_A";
             this.CB_매수탐색A.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CB_매수탐색A.UseVisualStyleBackColor = false;
             this.CB_매수탐색A.CheckedChanged += new System.EventHandler(this.CB_매수탐색A_CheckedChanged);
@@ -1040,10 +988,10 @@ namespace 지니_64
             this.CB_매수탐색B.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_매수탐색B.Location = new System.Drawing.Point(348, 62);
             this.CB_매수탐색B.Name = "CB_매수탐색B";
-            this.CB_매수탐색B.Size = new System.Drawing.Size(97, 21);
+            this.CB_매수탐색B.Size = new System.Drawing.Size(199, 21);
             this.CB_매수탐색B.TabIndex = 70;
             this.CB_매수탐색B.TabStop = false;
-            this.CB_매수탐색B.Text = "□  B매수탐색";
+            this.CB_매수탐색B.Text = "□  매수탐색_B";
             this.CB_매수탐색B.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CB_매수탐색B.UseVisualStyleBackColor = false;
             this.CB_매수탐색B.CheckedChanged += new System.EventHandler(this.CB_매수탐색A_CheckedChanged);
@@ -1174,7 +1122,7 @@ namespace 지니_64
             this.TB_Sell_하락카운터.Text = "1";
             this.TB_Sell_하락카운터.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_Sell_하락카운터.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Sell_하락카운터.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Sell_하락카운터.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label309
             // 
@@ -1203,7 +1151,7 @@ namespace 지니_64
             this.TB_Buy_하락카운터_B.Text = "1";
             this.TB_Buy_하락카운터_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_Buy_하락카운터_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Buy_하락카운터_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_하락카운터_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_Buy_하락카운터_A
             // 
@@ -1219,7 +1167,7 @@ namespace 지니_64
             this.TB_Buy_하락카운터_A.Text = "1";
             this.TB_Buy_하락카운터_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_Buy_하락카운터_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Buy_하락카운터_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_하락카운터_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_Sell_탐색rate
             // 
@@ -1235,7 +1183,7 @@ namespace 지니_64
             this.TB_Sell_탐색rate.Text = "1";
             this.TB_Sell_탐색rate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_Sell_탐색rate.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_Sell_탐색rate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Sell_탐색rate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_Buy_A_탐색rate
             // 
@@ -1251,7 +1199,7 @@ namespace 지니_64
             this.TB_Buy_A_탐색rate.Text = "1";
             this.TB_Buy_A_탐색rate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_Buy_A_탐색rate.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_Buy_A_탐색rate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Buy_A_탐색rate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_M_매수호가합대금_2
             // 
@@ -1267,7 +1215,7 @@ namespace 지니_64
             this.TB_M_매수호가합대금_2.Text = "123456";
             this.TB_M_매수호가합대금_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_M_매수호가합대금_2.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_M_매수호가합대금_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_M_매수호가합대금_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_M_매수호가합대금
             // 
@@ -1283,7 +1231,7 @@ namespace 지니_64
             this.TB_M_매수호가합대금.Text = "123456";
             this.TB_M_매수호가합대금.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_M_매수호가합대금.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_M_매수호가합대금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_M_매수호가합대금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label394
             // 
@@ -1312,7 +1260,7 @@ namespace 지니_64
             this.TB_M_매수호가별대금_2.Text = "1234567";
             this.TB_M_매수호가별대금_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_M_매수호가별대금_2.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_M_매수호가별대금_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_M_매수호가별대금_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_Buy_B_탐색rate
             // 
@@ -1328,7 +1276,7 @@ namespace 지니_64
             this.TB_Buy_B_탐색rate.Text = "1";
             this.TB_Buy_B_탐색rate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_Buy_B_탐색rate.TextChanged += new System.EventHandler(this.TextBox_빨파검_소수2자리제한);
-            this.TB_Buy_B_탐색rate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수음수소수_키프레스);
+            this.TB_Buy_B_탐색rate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수음수소수_키프레스_);
             // 
             // TB_M_매수호가별대금
             // 
@@ -1344,7 +1292,7 @@ namespace 지니_64
             this.TB_M_매수호가별대금.Text = "1234567";
             this.TB_M_매수호가별대금.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_M_매수호가별대금.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_M_매수호가별대금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_M_매수호가별대금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label404
             // 
@@ -1412,7 +1360,7 @@ namespace 지니_64
             this.TB_Buy_A_탐색대금_4.Text = "20000";
             this.TB_Buy_A_탐색대금_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_A_탐색대금_4.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Buy_A_탐색대금_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Buy_A_탐색대금_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label396
             // 
@@ -1441,7 +1389,7 @@ namespace 지니_64
             this.TB_Buy_A_탐색대금_2.Text = "5000";
             this.TB_Buy_A_탐색대금_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_A_탐색대금_2.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Buy_A_탐색대금_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Buy_A_탐색대금_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label397
             // 
@@ -1470,7 +1418,7 @@ namespace 지니_64
             this.TB_Buy_A_탐색대금_3.Text = "10000";
             this.TB_Buy_A_탐색대금_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_A_탐색대금_3.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Buy_A_탐색대금_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Buy_A_탐색대금_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_Buy_B_탐색대금_6
             // 
@@ -1486,7 +1434,7 @@ namespace 지니_64
             this.TB_Buy_B_탐색대금_6.Text = "30000";
             this.TB_Buy_B_탐색대금_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_B_탐색대금_6.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Buy_B_탐색대금_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Buy_B_탐색대금_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_Buy_B_탐색대금_4
             // 
@@ -1502,7 +1450,7 @@ namespace 지니_64
             this.TB_Buy_B_탐색대금_4.Text = "20000";
             this.TB_Buy_B_탐색대금_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_B_탐색대금_4.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Buy_B_탐색대금_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Buy_B_탐색대금_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_M_매도호가합대금_2
             // 
@@ -1518,7 +1466,7 @@ namespace 지니_64
             this.TB_M_매도호가합대금_2.Text = "123456";
             this.TB_M_매도호가합대금_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_M_매도호가합대금_2.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_M_매도호가합대금_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_M_매도호가합대금_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_M_매도호가합대금
             // 
@@ -1534,7 +1482,7 @@ namespace 지니_64
             this.TB_M_매도호가합대금.Text = "123456";
             this.TB_M_매도호가합대금.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_M_매도호가합대금.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_M_매도호가합대금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_M_매도호가합대금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label273
             // 
@@ -1563,7 +1511,7 @@ namespace 지니_64
             this.TB_M_매도호가별대금_2.Text = "12345";
             this.TB_M_매도호가별대금_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_M_매도호가별대금_2.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_M_매도호가별대금_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_M_매도호가별대금_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label304
             // 
@@ -1605,7 +1553,7 @@ namespace 지니_64
             this.TB_Buy_A_탐색주가_6.Text = "500000";
             this.TB_Buy_A_탐색주가_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_A_탐색주가_6.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Buy_A_탐색주가_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_A_탐색주가_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label325
             // 
@@ -1634,7 +1582,7 @@ namespace 지니_64
             this.TB_Buy_B_탐색대금_2.Text = "5000";
             this.TB_Buy_B_탐색대금_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_B_탐색대금_2.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Buy_B_탐색대금_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Buy_B_탐색대금_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label358
             // 
@@ -1663,7 +1611,7 @@ namespace 지니_64
             this.TB_M_매도호가별대금.Text = "12345";
             this.TB_M_매도호가별대금.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_M_매도호가별대금.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_M_매도호가별대금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_M_매도호가별대금.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label323
             // 
@@ -1692,7 +1640,7 @@ namespace 지니_64
             this.TB_Buy_B_탐색주가_6.Text = "500000";
             this.TB_Buy_B_탐색주가_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_B_탐색주가_6.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Buy_B_탐색주가_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_B_탐색주가_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label321
             // 
@@ -1760,7 +1708,7 @@ namespace 지니_64
             this.TB_Buy_A_탐색대금_5.Text = "1234567";
             this.TB_Buy_A_탐색대금_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_A_탐색대금_5.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Buy_A_탐색대금_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Buy_A_탐색대금_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label421
             // 
@@ -1815,21 +1763,7 @@ namespace 지니_64
             this.TB_Buy_B_탐색대금_3.Text = "10000";
             this.TB_Buy_B_탐색대금_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_B_탐색대금_3.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Buy_B_탐색대금_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
-            // 
-            // label332
-            // 
-            this.label332.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label332.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label332.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label332.Font = new System.Drawing.Font("굴림체", 9F);
-            this.label332.ForeColor = System.Drawing.Color.Black;
-            this.label332.Location = new System.Drawing.Point(253, 246);
-            this.label332.Name = "label332";
-            this.label332.Size = new System.Drawing.Size(65, 21);
-            this.label332.TabIndex = 34;
-            this.label332.Text = "초|등락률";
-            this.label332.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TB_Buy_B_탐색대금_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label298
             // 
@@ -1858,7 +1792,7 @@ namespace 지니_64
             this.TB_accumulate_Price.Text = "1000000000";
             this.TB_accumulate_Price.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_accumulate_Price.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_accumulate_Price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_accumulate_Price.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // TB_Sell_기준초
             // 
@@ -1874,7 +1808,7 @@ namespace 지니_64
             this.TB_Sell_기준초.Text = "2";
             this.TB_Sell_기준초.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_Sell_기준초.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Sell_기준초.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Sell_기준초.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label291
             // 
@@ -1903,7 +1837,7 @@ namespace 지니_64
             this.TB_Buy_A_탐색대금_6.Text = "1234567";
             this.TB_Buy_A_탐색대금_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_A_탐색대금_6.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Buy_A_탐색대금_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Buy_A_탐색대금_6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label316
             // 
@@ -1997,7 +1931,7 @@ namespace 지니_64
             this.TB_Buy_B_탐색대금_5.Text = "30000";
             this.TB_Buy_B_탐색대금_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_B_탐색대금_5.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Buy_B_탐색대금_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Buy_B_탐색대금_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label366
             // 
@@ -2038,20 +1972,6 @@ namespace 지니_64
             this.label314.Text = "주가";
             this.label314.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label331
-            // 
-            this.label331.BackColor = System.Drawing.Color.DarkSalmon;
-            this.label331.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label331.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label331.Font = new System.Drawing.Font("굴림체", 9F);
-            this.label331.ForeColor = System.Drawing.Color.Black;
-            this.label331.Location = new System.Drawing.Point(253, 62);
-            this.label331.Name = "label331";
-            this.label331.Size = new System.Drawing.Size(65, 21);
-            this.label331.TabIndex = 34;
-            this.label331.Text = "초|등락률";
-            this.label331.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // TB_Sell_상승카운터
             // 
             this.TB_Sell_상승카운터.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -2066,7 +1986,7 @@ namespace 지니_64
             this.TB_Sell_상승카운터.Text = "2";
             this.TB_Sell_상승카운터.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_Sell_상승카운터.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Sell_상승카운터.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Sell_상승카운터.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_Buy_상승카운터_B
             // 
@@ -2082,7 +2002,7 @@ namespace 지니_64
             this.TB_Buy_상승카운터_B.Text = "2";
             this.TB_Buy_상승카운터_B.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_Buy_상승카운터_B.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Buy_상승카운터_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_상승카운터_B.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label352
             // 
@@ -2111,7 +2031,7 @@ namespace 지니_64
             this.TB_Buy_상승카운터_A.Text = "2";
             this.TB_Buy_상승카운터_A.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_Buy_상승카운터_A.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Buy_상승카운터_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_상승카운터_A.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label322
             // 
@@ -2140,7 +2060,7 @@ namespace 지니_64
             this.TB_Buy_A_기준초.Text = "2";
             this.TB_Buy_A_기준초.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_Buy_A_기준초.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Buy_A_기준초.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_A_기준초.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label299
             // 
@@ -2234,7 +2154,7 @@ namespace 지니_64
             this.TB_Buy_A_탐색대금_1.Text = "3000";
             this.TB_Buy_A_탐색대금_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_A_탐색대금_1.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Buy_A_탐색대금_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Buy_A_탐색대금_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label324
             // 
@@ -2289,7 +2209,7 @@ namespace 지니_64
             this.TB_Buy_A_탐색주가_4.Text = "200000";
             this.TB_Buy_A_탐색주가_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_A_탐색주가_4.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Buy_A_탐색주가_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_A_탐색주가_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label307
             // 
@@ -2331,7 +2251,7 @@ namespace 지니_64
             this.TB_Buy_B_탐색주가_3.Text = "50000";
             this.TB_Buy_B_탐색주가_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_B_탐색주가_3.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Buy_B_탐색주가_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_B_탐색주가_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label412
             // 
@@ -2360,7 +2280,7 @@ namespace 지니_64
             this.TB_Buy_B_탐색주가_2.Text = "20000";
             this.TB_Buy_B_탐색주가_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_B_탐색주가_2.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Buy_B_탐색주가_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_B_탐색주가_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_Buy_A_탐색주가_2
             // 
@@ -2376,7 +2296,7 @@ namespace 지니_64
             this.TB_Buy_A_탐색주가_2.Text = "20000";
             this.TB_Buy_A_탐색주가_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_A_탐색주가_2.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Buy_A_탐색주가_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_A_탐색주가_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label411
             // 
@@ -2405,7 +2325,7 @@ namespace 지니_64
             this.TB_Buy_B_탐색주가_5.Text = "500000";
             this.TB_Buy_B_탐색주가_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_B_탐색주가_5.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Buy_B_탐색주가_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_B_탐색주가_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label353
             // 
@@ -2447,7 +2367,7 @@ namespace 지니_64
             this.TB_Buy_B_탐색주가_1.Text = "5000";
             this.TB_Buy_B_탐색주가_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_B_탐색주가_1.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Buy_B_탐색주가_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_B_탐색주가_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_Buy_A_탐색주가_3
             // 
@@ -2463,7 +2383,7 @@ namespace 지니_64
             this.TB_Buy_A_탐색주가_3.Text = "50000";
             this.TB_Buy_A_탐색주가_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_A_탐색주가_3.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Buy_A_탐색주가_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_A_탐색주가_3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label398
             // 
@@ -2505,7 +2425,7 @@ namespace 지니_64
             this.TB_Buy_B_탐색주가_4.Text = "200000";
             this.TB_Buy_B_탐색주가_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_B_탐색주가_4.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Buy_B_탐색주가_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_B_탐색주가_4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_Buy_B_기준초
             // 
@@ -2521,7 +2441,7 @@ namespace 지니_64
             this.TB_Buy_B_기준초.Text = "2";
             this.TB_Buy_B_기준초.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.TB_Buy_B_기준초.TextChanged += new System.EventHandler(this.TextBox_양실수만);
-            this.TB_Buy_B_기준초.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_B_기준초.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // TB_Buy_A_탐색주가_5
             // 
@@ -2537,7 +2457,7 @@ namespace 지니_64
             this.TB_Buy_A_탐색주가_5.Text = "500000";
             this.TB_Buy_A_탐색주가_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_A_탐색주가_5.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Buy_A_탐색주가_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_A_탐색주가_5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label399
             // 
@@ -2578,20 +2498,6 @@ namespace 지니_64
             this.label400.Text = "이하 => 거래대금";
             this.label400.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label407
-            // 
-            this.label407.BackColor = System.Drawing.Color.DarkSalmon;
-            this.label407.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label407.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label407.Font = new System.Drawing.Font("굴림체", 9F);
-            this.label407.ForeColor = System.Drawing.Color.Black;
-            this.label407.Location = new System.Drawing.Point(600, 62);
-            this.label407.Name = "label407";
-            this.label407.Size = new System.Drawing.Size(65, 21);
-            this.label407.TabIndex = 34;
-            this.label407.Text = "초|등락률";
-            this.label407.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label302
             // 
             this.label302.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -2619,7 +2525,7 @@ namespace 지니_64
             this.TB_Buy_A_탐색주가_1.Text = "9,000,000";
             this.TB_Buy_A_탐색주가_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_A_탐색주가_1.TextChanged += new System.EventHandler(this.숫자콤마넣기_TextChanged);
-            this.TB_Buy_A_탐색주가_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수실수_키프레스);
+            this.TB_Buy_A_탐색주가_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수실수_키프레스_);
             // 
             // label401
             // 
@@ -2674,7 +2580,7 @@ namespace 지니_64
             this.TB_Buy_B_탐색대금_1.Text = "3000";
             this.TB_Buy_B_탐색대금_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TB_Buy_B_탐색대금_1.TextChanged += new System.EventHandler(this.TextBox_양수소수자리제한);
-            this.TB_Buy_B_탐색대금_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._양수소수_키프레스);
+            this.TB_Buy_B_탐색대금_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.양수소수_키프레스_);
             // 
             // label405
             // 
@@ -2809,6 +2715,48 @@ namespace 지니_64
             this.CBB_M_잔량_2.TabIndex = 63;
             this.CBB_M_잔량_2.DropDownClosed += new System.EventHandler(this.버튼음_DropDownClosed);
             // 
+            // combo_Sell_초회
+            // 
+            this.combo_Sell_초회.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.combo_Sell_초회.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_Sell_초회.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.combo_Sell_초회.FormattingEnabled = true;
+            this.combo_Sell_초회.Items.AddRange(new object[] {
+            "초| 등락",
+            "회| 등락"});
+            this.combo_Sell_초회.Location = new System.Drawing.Point(252, 246);
+            this.combo_Sell_초회.Name = "combo_Sell_초회";
+            this.combo_Sell_초회.Size = new System.Drawing.Size(83, 21);
+            this.combo_Sell_초회.TabIndex = 75;
+            // 
+            // Combo_Buy_A_초회
+            // 
+            this.Combo_Buy_A_초회.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Combo_Buy_A_초회.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Combo_Buy_A_초회.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Combo_Buy_A_초회.FormattingEnabled = true;
+            this.Combo_Buy_A_초회.Items.AddRange(new object[] {
+            "초| 등락",
+            "회| 등락"});
+            this.Combo_Buy_A_초회.Location = new System.Drawing.Point(252, 62);
+            this.Combo_Buy_A_초회.Name = "Combo_Buy_A_초회";
+            this.Combo_Buy_A_초회.Size = new System.Drawing.Size(83, 21);
+            this.Combo_Buy_A_초회.TabIndex = 76;
+            // 
+            // Combo_Buy_B_초회
+            // 
+            this.Combo_Buy_B_초회.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.Combo_Buy_B_초회.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Combo_Buy_B_초회.Font = new System.Drawing.Font("굴림체", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Combo_Buy_B_초회.FormattingEnabled = true;
+            this.Combo_Buy_B_초회.Items.AddRange(new object[] {
+            "초| 등락",
+            "회| 등락"});
+            this.Combo_Buy_B_초회.Location = new System.Drawing.Point(599, 62);
+            this.Combo_Buy_B_초회.Name = "Combo_Buy_B_초회";
+            this.Combo_Buy_B_초회.Size = new System.Drawing.Size(83, 21);
+            this.Combo_Buy_B_초회.TabIndex = 77;
+            // 
             // Form_PriceSearch
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -2836,9 +2784,6 @@ namespace 지니_64
         private System.Windows.Forms.Panel TS대금탐색_P;
         public System.Windows.Forms.CheckBox CB_매도탐색;
         public System.Windows.Forms.CheckBox CB_매수탐색A;
-        public System.Windows.Forms.TextBox TB_매도탐색;
-        public System.Windows.Forms.TextBox TB_매수탐색A;
-        public System.Windows.Forms.TextBox TB_매수탐색B;
         public System.Windows.Forms.CheckBox CB_매수탐색B;
         private System.Windows.Forms.Label label418;
         private System.Windows.Forms.Label label313;
@@ -2904,7 +2849,6 @@ namespace 지니_64
         private System.Windows.Forms.Label label292;
         private System.Windows.Forms.Label label312;
         public System.Windows.Forms.TextBox TB_Buy_B_탐색대금_3;
-        private System.Windows.Forms.Label label332;
         private System.Windows.Forms.Label label298;
         public System.Windows.Forms.TextBox TB_accumulate_Price;
         public System.Windows.Forms.TextBox TB_Sell_기준초;
@@ -2922,7 +2866,6 @@ namespace 지니_64
         private System.Windows.Forms.Label label366;
         private System.Windows.Forms.Label label318;
         private System.Windows.Forms.Label label314;
-        private System.Windows.Forms.Label label331;
         public System.Windows.Forms.TextBox TB_Sell_탐색주가_6;
         public System.Windows.Forms.TextBox TB_Sell_탐색주가_4;
         private System.Windows.Forms.Label label352;
@@ -2960,7 +2903,6 @@ namespace 지니_64
         private System.Windows.Forms.Label label399;
         private System.Windows.Forms.Label label408;
         private System.Windows.Forms.Label label400;
-        private System.Windows.Forms.Label label407;
         private System.Windows.Forms.Label label302;
         public System.Windows.Forms.TextBox TB_Buy_A_탐색주가_1;
         private System.Windows.Forms.Label label401;
@@ -2996,5 +2938,8 @@ namespace 지니_64
         public System.Windows.Forms.CheckBox CB_Buy_상승옵션_A;
         private System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.Button BT_대금탐색저장;
+        public System.Windows.Forms.ComboBox combo_Sell_초회;
+        public System.Windows.Forms.ComboBox Combo_Buy_A_초회;
+        public System.Windows.Forms.ComboBox Combo_Buy_B_초회;
     }
 }

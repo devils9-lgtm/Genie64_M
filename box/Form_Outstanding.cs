@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
 
-namespace 지니_64.box
+namespace 지니64.box
 {
     public partial class Form_Outstanding : UserControl
     {
@@ -30,34 +31,55 @@ namespace 지니_64.box
 
         private void CBB_미체결종목_DropDown(object sender, EventArgs e)
         {
-            form.CBB_미체결종목.Items.Clear();
-            form.CBB_미체결종목.Items.Add("( ALL )");
-            foreach (var Item in Form1.JumunItem_List.ToList())
+            ComboBox targetComboBox = form.CBB_미체결종목;
+           
+            targetComboBox.Items.Clear();
+            targetComboBox.Items.Add("( ALL )");
+
+            IEnumerable<string> distinctStockNames = Form1.JumunItem_List.Values
+            .Select(item => item.종목명) // 모든 항목에서 종목명만 선택
+            .Distinct();                // 중복되는 종목명 제거 (O(N) 효율)
+
+            foreach (string stockName in distinctStockNames)
             {
-                if (!form.CBB_미체결종목.Items.Contains(Item.종목명)) form.CBB_미체결종목.Items.Add(Item.종목명);
+                targetComboBox.Items.Add(stockName);
             }
         }
 
         private void CBB_미체결종목_SelectedIndexChanged(object sender, EventArgs e)
         {
-            form.Outstanding_DataGridView.Rows.Clear();
-            if (form.CBB_미체결종목.SelectedIndex > 0)
+            // DataGridView 초기화
+            form.Outstanding_DataGridView.Rows.Clear();  Method.SortClear(form.Outstanding_DataGridView);
+
+            int selectedIndex = form.CBB_미체결종목.SelectedIndex;
+
+            // 인덱스 0("( ALL )")은 제외하고 특정 종목이 선택된 경우에만 처리 (기존 로직 유지)
+            if (selectedIndex > 0)
             {
+                // 1. 선택된 종목명 가져오기
+                object selectedStock = form.CBB_미체결종목.SelectedItem;
                 int row = 0;
-                foreach (var JumunItem in Form1.JumunItem_List.ToList())
+
+                // 2. [필터링] 딕셔너리의 '값(Value)' 컬렉션에서 선택된 종목과 일치하는 주문만 필터링합니다.
+                // 불필요한 ToList() 호출을 제거하고 LINQ Where를 사용합니다.
+                IEnumerable<JumunItem> filteredOrders = Form1.JumunItem_List.Values
+                    .Where(jumun => selectedStock.Equals(jumun.종목명));
+
+                // 3. 필터링된 주문 목록을 순회하며 DataGridView에 출력합니다.
+                foreach (var jumun in filteredOrders)
                 {
-                    if (form.CBB_미체결종목.SelectedItem.Equals(JumunItem.종목명))
+                    // GridView 출력 조건 검사 (기존 로직 유지)
+                    if (GridView_Print.Find_OutstandingStock(jumun))
                     {
-                        if (GridView_Print.find_OutstandingStock(JumunItem))
-                        {
-                            GridView_Print.Outstanding_insert(JumunItem, row); // 종목선택 정렬
-                            row++;
-                        }
+                        // UI 업데이트
+                        GridView_Print.Outstanding_insert(jumun, row); // 종목선택 정렬
+                        row++;
                     }
                 }
             }
 
-            Form1.form1.미체결종목_index = form.CBB_미체결종목.SelectedIndex;
+            // 4. 선택된 인덱스를 전역 변수에 저장 (기존 로직 유지)
+            Form1.Get.미체결종목_index = selectedIndex;
         }
 
         private void CBB_미체결종목_DropDownClosed(object sender, EventArgs e)
@@ -66,7 +88,7 @@ namespace 지니_64.box
 
             if (form.CBB_미체결종목.SelectedIndex == -1)
             {
-                form.CBB_미체결종목.SelectedIndex = Form1.form1.미체결종목_index;
+                form.CBB_미체결종목.SelectedIndex = Form1.Get.미체결종목_index;
             }
         }
 
@@ -96,21 +118,25 @@ namespace 지니_64.box
                 {
                     try
                     {
-                        DataGridViewCell cell_구분 = view["주문유형_미체결", e.RowIndex];
+                        DataGridViewCell cell_구분 = view["매수매도", e.RowIndex];
                         string text_구분 = cell_구분.FormattedValue.ToString();
 
-                        if (text_구분 == "매수")
+                        if (text_구분.Contains("매수"))
                         {
                             cell_구분.Style.ForeColor = Color.Red;
                         }
-                        else if (text_구분 == "매도")
+                        else if (text_구분.Contains("매도"))
                         {
                             cell_구분.Style.ForeColor = Color.Blue;
                         }
-                        Form_Outstanding.form.Outstanding_DataGridView["검색식_미체결", e.RowIndex].Style.ForeColor = cell_구분.Style.ForeColor;
-                        Form_Outstanding.form.Outstanding_DataGridView["적용금액_미체결", e.RowIndex].Style.ForeColor = cell_구분.Style.ForeColor;
+                        else if (text_구분.Contains("취소"))
+                        {
+                            cell_구분.Style.ForeColor = Color.Black;
+                        }
+                        form.Outstanding_DataGridView["검색식", e.RowIndex].Style.ForeColor = cell_구분.Style.ForeColor;
+                        form.Outstanding_DataGridView["적용금액", e.RowIndex].Style.ForeColor = cell_구분.Style.ForeColor;
 
-                        DataGridViewCell cell_틱차이 = view["틱차이_미체결", e.RowIndex];
+                        DataGridViewCell cell_틱차이 = view["틱차이", e.RowIndex];
                         string text_틱차이 = cell_틱차이.FormattedValue.ToString();
 
                         if (text_틱차이.Equals("0 틱"))
@@ -128,33 +154,32 @@ namespace 지니_64.box
                                 cell_틱차이.Style.ForeColor = Color.Red;
                             }
                         }
-                        Form_Outstanding.form.Outstanding_DataGridView["주문가격_미체결", e.RowIndex].Style.ForeColor = cell_틱차이.Style.ForeColor;
+                        form.Outstanding_DataGridView["주문가격", e.RowIndex].Style.ForeColor = cell_틱차이.Style.ForeColor;
 
-
-                        DataGridViewCell cell_수익률 = view["수익률_미체결", e.RowIndex];
+                        DataGridViewCell cell_수익률 = view["수익률", e.RowIndex];
                         Form1.form1.DGV_color(cell_수익률);
 
-                        DataGridViewCell cell_등락률 = view["등락률_미체결", e.RowIndex];
+                        DataGridViewCell cell_등락률 = view["등락률", e.RowIndex];
                         Form1.form1.DGV_color(cell_등락률);
-                        Form_Outstanding.form.Outstanding_DataGridView["현재가_미체결", e.RowIndex].Style.ForeColor = cell_등락률.Style.ForeColor;
+                        Form_Outstanding.form.Outstanding_DataGridView["현재가", e.RowIndex].Style.ForeColor = cell_등락률.Style.ForeColor;
                     }
                     catch
                     {
-                        Form1.Error_Log("Outstanding_DataGridView_A  에러:: 메세지 _Grid_CellValueChanged 에러");
+                        Log.에러기록("Outstanding_DataGridView_A  에러:: 메세지 _Grid_CellValueChanged 에러");
                     }
                 }
             }
         }
 
-        private void dataGridView_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)             // 원하는 칼럼에 자동 번호 매기기
+        private void DataGridView_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)             // 원하는 칼럼에 자동 번호 매기기
         {
             if (sender.Equals(Form_Outstanding.form.Outstanding_DataGridView))
             {
-                Form_Outstanding.form.Outstanding_DataGridView.Rows[e.RowIndex].Cells["Num_미체결"].Value = Form_Outstanding.form.Outstanding_DataGridView.Rows.Count - (e.RowIndex + 1) + 1;
+                Form_Outstanding.form.Outstanding_DataGridView.Rows[e.RowIndex].Cells["Num"].Value = Form_Outstanding.form.Outstanding_DataGridView.Rows.Count - (e.RowIndex + 1) + 1;
             }
         }
 
-        private void DataGridView_CellClick(object sender, DataGridViewCellEventArgs e) // 잔고 선택 체크박스 동작
+        private void DataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             this.ActiveControl = null;
 
@@ -166,47 +191,52 @@ namespace 지니_64.box
             {
                 if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
                 {
-                    if (e.ColumnIndex == Form_Outstanding.form.Outstanding_DataGridView.Columns["주문취소_미체결"].Index)
+                    if (e.ColumnIndex == Form_Outstanding.form.Outstanding_DataGridView.Columns["주문취소"].Index)
                     {
-                        string 주문번호 = Form_Outstanding.form.Outstanding_DataGridView["주문번호_미체결", e.RowIndex].Value.ToString();
+                        string 주문번호 = Form_Outstanding.form.Outstanding_DataGridView["주문번호", e.RowIndex].Value.ToString();
 
-                        JumunItem JumunItem = Form1.JumunItem_List.Find(o => o.주문번호.Equals(주문번호));
-
-                        if (JumunItem != null)
+                        if (Form1.JumunItem_List.TryGetValue(주문번호, out JumunItem jumun))
                         {
-                            if (JumunItem.취소timer > 0 || (JumunItem.취소timer == 0 && JumunItem.반복횟수 > 0))
+                            if (jumun.취소timer > 0 || (jumun.취소timer == 0 && jumun.반복횟수 > 0))
                             {
                                 var thread = new Thread(
-                                 () =>
-                                 {
-                                     Form1.form1.Invoke((MethodInvoker)delegate ()
-                                     {
-                                         using (new CenterWinDialog(Form1.form1))
-                                             if (MessageBox.Show(JumunItem.종목명 + "\n 주문유형: " + GET.주문유형(JumunItem.주문유형) + " 수량: " + JumunItem.미체결량 + "을 '취소' 하시겠습니까 ?", "취소알림", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                                             {
-                                                 if (JumunItem.검색식.Contains("신규_") && JumunItem.주문수량 == JumunItem.미체결량)
-                                                 {
-                                                     Properties.Settings.Default.신규횟수--;
-                                                     Form1.신규count--;
-                                                 }
-
-                                                 JumunItem.비고 = "'취소'버튼클릭";
-                                                 JumunItem.반복횟수 = 0;
-                                                 JumunItem.취소시간 = 0;
-                                                 JumunItem.취소timer = 0;
-
-                                                 Form1.동작_Log(" ");
-                                                 Form1.동작_Log("[주문취소] 종목명:" + JumunItem.종목명 + " 주문유형:" + GET.주문유형(JumunItem.주문유형) + " 수량: " + JumunItem.미체결량 + " 주문을 취소 하였습니다.");
-                                                 Form1.동작_Log(" ");
-                                             }
-                                     });
-                                 });
+                                () =>
+                                {
+                                    Helper.안전한_UI_업데이트(Form1.form1, () =>
+                                    {
+                                        using (new CenterWinDialog(Form1.form1))
+                                        {
+                                            // [문자열 보간 적용] 메시지 박스 내용 정리
+                                            string 질문 = $"{jumun.종목명}\n 주문유형: {GET.매수매도str(jumun.매수매도)} 수량: {jumun.미체결량:N0}을 '취소' 하시겠습니까 ?";
+                               
+                                            if (MessageBox.Show(질문, "취소알림", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                                            {
+                                                if (jumun.검색식.Contains("신규_") && jumun.주문수량 == jumun.미체결량)
+                                                {
+                                                    GenieConfig.신규횟수--;
+                                                }
+                               
+                                                jumun.비고 = "'취소'버튼클릭";
+                                                jumun.반복횟수 = 0;
+                                                jumun.취소시간 = 0;
+                                                jumun.취소timer = 0;
+                               
+                                                // [문자열 보간 적용] 로그 메시지 통합 및 최적화
+                                                string 취소로그 = $"[주문취소] 종목명:{jumun.종목명} 주문유형:{GET.매수매도str(jumun.매수매도)} 수량: {jumun.미체결량:N0} 주문을 취소 하였습니다.";
+                               
+                                                Log.동작기록(" ");
+                                                Log.동작기록(취소로그);
+                                                Log.동작기록(" ");
+                                            }
+                                        }
+                                    });
+                                });
                                 thread.Start();
                             }
                         }
                     }
 
-                    Order_Reserve.종목선택(Form_Outstanding.form.Outstanding_DataGridView["종목명_미체결", e.RowIndex].Value.ToString());
+                    Order_Reserve.종목선택(Form_Outstanding.form.Outstanding_DataGridView["종목명", e.RowIndex].Value.ToString());
 
                     DataGridViewCell cell_color = view[e.ColumnIndex, e.RowIndex];
                     Form_Outstanding.form.Outstanding_DataGridView[e.ColumnIndex, e.RowIndex].Style.SelectionForeColor = cell_color.Style.ForeColor;
@@ -215,7 +245,7 @@ namespace 지니_64.box
         }
 
 
-        private void dataGridView_CurrentCellDirtyStateChanged(object sender, EventArgs e) // 데이터그리드뷰 동작 속도 올리기
+        private void DataGridView_CurrentCellDirtyStateChanged(object sender, EventArgs e) // 데이터그리드뷰 동작 속도 올리기
         {
             if (Form_Outstanding.form.Outstanding_DataGridView.CurrentCell is DataGridViewCheckBoxCell)
             {
@@ -223,5 +253,49 @@ namespace 지니_64.box
             }
         }
 
+        private void Outstanding_DataGridView_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            Front_End.DataGridView_CellPainting(sender, e);
+        }
+
+        private void label_미체결내역_MouseDown(object sender, MouseEventArgs e)
+        {
+            DGV_sell_null();
+        }
+
+        private void Form_Outstanding_MouseDown(object sender, MouseEventArgs e)
+        {
+            DGV_sell_null();
+        }
+
+        private void L_미체결row_MouseDown(object sender, MouseEventArgs e)
+        {
+            DGV_sell_null();
+        }
+
+        private void LB_미체결주문_MouseDown(object sender, MouseEventArgs e)
+        {
+            DGV_sell_null();
+        }
+
+        private void DGV_sell_null()
+        {
+            DataGridView dgv = Form_Outstanding.form.Outstanding_DataGridView;
+
+            if (dgv.CurrentCell != null)
+            {
+                dgv.CurrentCell = null; // 현재 셀 선택 해제
+            }
+
+            foreach (DataGridViewRow row in dgv.SelectedRows)
+            {
+                row.Selected = false;
+            }
+        }
+
+        private void Outstanding_DataGridView_MouseDown(object sender, MouseEventArgs e)
+        {
+            Front_End.DataGridView_MouseDown_(sender, e);
+        }
     }
 }

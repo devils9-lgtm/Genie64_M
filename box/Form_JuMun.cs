@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace 지니_64.box
+namespace 지니64.box
 {
     public partial class Form_JuMun : UserControl
     {
@@ -39,26 +39,43 @@ namespace 지니_64.box
                         {
                             cell_구분.Style.ForeColor = Color.Green;
                         }
-                        else if (text_구분 == "매수")
+                        else if (text_구분 == "매수" || text_구분 == "매수신용")
                         {
                             cell_구분.Style.ForeColor = Color.Red;
                         }
-                        else if (text_구분 == "매도")
+                        else if (text_구분 == "매도" || text_구분 == "매도신용")
                         {
                             cell_구분.Style.ForeColor = Color.Blue;
                         }
-                        Form_JuMun.form.JuMun_dataGridView["검색식_주문A", e.RowIndex].Style.ForeColor = cell_구분.Style.ForeColor;
-                        Form_JuMun.form.JuMun_dataGridView["적용금액_주문A", e.RowIndex].Style.ForeColor = cell_구분.Style.ForeColor;
+                        form.JuMun_dataGridView["검색식_주문A", e.RowIndex].Style.ForeColor = cell_구분.Style.ForeColor;
+                        form.JuMun_dataGridView["적용금액_주문A", e.RowIndex].Style.ForeColor = cell_구분.Style.ForeColor;
+
 
                         DataGridViewCell cell_수익률 = view["수익률_주문A", e.RowIndex];
                         Form1.form1.DGV_color(cell_수익률);
 
+                        //form.JuMun_dataGridView["검색식_주문A", e.RowIndex].Style.ForeColor = cell_수익률.Style.ForeColor;
+                        //form.JuMun_dataGridView["적용금액_주문A", e.RowIndex].Style.ForeColor = cell_수익률.Style.ForeColor;
+                        //form.JuMun_dataGridView["종목명_주문A", e.RowIndex].Style.ForeColor = cell_수익률.Style.ForeColor;
+
+
                         DataGridViewCell cell_등락률 = view["P등락률_주문A", e.RowIndex];
                         Form1.form1.DGV_color(cell_등락률);
+
+                        if (text_구분.Contains("취소"))
+                        {
+                            cell_구분.Style.ForeColor = Color.Black;
+
+                            form.JuMun_dataGridView["검색식_주문A", e.RowIndex].Style.ForeColor = cell_구분.Style.ForeColor;
+                            form.JuMun_dataGridView["적용금액_주문A", e.RowIndex].Style.ForeColor = cell_구분.Style.ForeColor;
+                            form.JuMun_dataGridView["종목명_주문A", e.RowIndex].Style.ForeColor = cell_구분.Style.ForeColor;
+                            form.JuMun_dataGridView["P등락률_주문A", e.RowIndex].Style.ForeColor = cell_구분.Style.ForeColor;
+                            form.JuMun_dataGridView["수익률_주문A", e.RowIndex].Style.ForeColor = cell_구분.Style.ForeColor;
+                        }
                     }
                     catch
                     {
-                        Form1.Error_Log("JuMun_dataGridView_A  에러:: 메세지 _Grid_CellValueChanged 에러");
+                        Log.에러기록("JuMun_dataGridView_A  에러:: 메세지 _Grid_CellValueChanged 에러");
                     }
                 }
 
@@ -88,7 +105,7 @@ namespace 지니_64.box
         }
 
 
-        private void dataGridView_CurrentCellDirtyStateChanged(object sender, EventArgs e) // 데이터그리드뷰 동작 속도 올리기
+        private void DataGridView_CurrentCellDirtyStateChanged(object sender, EventArgs e) // 데이터그리드뷰 동작 속도 올리기
         {
             if (Form_JuMun.form.JuMun_dataGridView.CurrentCell is DataGridViewCheckBoxCell)
             {
@@ -96,7 +113,14 @@ namespace 지니_64.box
             }
         }
 
+        private void JuMun_DataGridView_CellPainting(object sender, DataGridViewCellPaintingEventArgs e)
+        {
+            Front_End.DataGridView_CellPainting(sender, e);
+        }
 
-
+        private void JuMun_dataGridView_MouseDown(object sender, MouseEventArgs e)
+        {
+            Front_End.DataGridView_MouseDown_(sender, e);
+        }
     }
 }
