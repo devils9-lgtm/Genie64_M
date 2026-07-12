@@ -744,6 +744,8 @@ namespace 지니64
 
             if (통계체크.Checked)
             {
+                Form1.form1.CB_세로보기.Enabled = false;
+
                 if (Form1.ON_LINE)
                 {
                     Statistical_chart.매매내역확인();
@@ -769,6 +771,8 @@ namespace 지니64
             }
             else
             {
+                Form1.form1.CB_세로보기.Enabled = true;
+
                 GenieConfig.Sub_layout = 통계진입전_기존레이아웃;
 
                 if (GenieConfig.Sub_layout == "A") CB_Layout_A.Checked = true;
