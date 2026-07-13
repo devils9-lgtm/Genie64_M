@@ -27,6 +27,7 @@ namespace 지니64
         // =================================================================================
         public static void 업데이트_및_신규추가(JsonElement item, string 종목코드, Market_Item Market, List<string> 기존잔고_추적, List<string> 신규잔고_추적)
         {
+            string 증권사 = "키움";
             // 1. [변수 초기화]
             bool 선택 = false; int 그룹 = 0; long 누적손익 = 0; long 금일매도금 = 0;
             int 매수횟수 = 0; int 매도횟수 = 0; DateTime 초기매수일 = DateTime.Now;
@@ -126,7 +127,7 @@ namespace 지니64
 
                 if (!Form1.로딩완료)
                 {
-                  
+                    잔고.증권사 = 증권사; 
                     잔고.종목명 = itemName;
                     잔고.매매가능 = 매매_가능;
                     잔고.종목상태 = 종목상태;
@@ -240,6 +241,7 @@ namespace 지니64
                     신용_평균단가 = _신용_평균단가,
                     신용_수익률 = _신용_수익률,
 
+                    증권사 = 증권사,
                     Today = Form1.str.today,
                     매수제한 = false,
                     전량매도 = false,

@@ -146,6 +146,7 @@ namespace 지니64
         public int 신용_평균단가 { get; set; }
         public double 신용_수익률 { get; set; }
         
+        public string 증권사 { get; set; }
         public string Today { get; set; }
         public bool 매수제한 { get; set; }
         public bool 전량매도 { get; set; }

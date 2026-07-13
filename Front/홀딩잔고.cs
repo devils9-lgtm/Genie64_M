@@ -416,6 +416,11 @@ namespace 지니64
         // 1. 선택 여부
         UpdateCellValue("선택_잔고", 잔고.선택);
 
+            if(Form1.VIP_mode)
+            {
+                UpdateCellValue("증권사", 잔고.증권사);
+            }
+
             // DataGridViewComboBoxCell 처리 (문자열 비교 및 인덱스 안전 처리)
             var cbx = (DataGridViewComboBoxCell)dgvRow.Cells["그룹_잔고"];
 

@@ -428,6 +428,8 @@
     <Compile Include="Trade\Trade_tasks.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="VIP_mode\로그인\Vip_login.cs" />
+    <Compile Include="VIP_mode\모드변경\모드변경.cs" />
     <Compile Include="Watch\Tab_Watch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -450,7 +452,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Watch\훔치기.cs" />
-    <Compile Include="한투\로그인\Han_Get_token.cs" />
     <EmbeddedResource Include="box\Form_Conclusion.resx">
       <DependentUpon>Form_Conclusion.cs</DependentUpon>
     </EmbeddedResource>
