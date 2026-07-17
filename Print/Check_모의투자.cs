@@ -31,6 +31,7 @@ namespace 지니64
                 GenieConfig.CB_신용_현금우선사용 = false;
                 GenieConfig.CB_신용_신용우선사용 = false;
                 GenieConfig.CB_신용_현신별도사용 = false;
+                GenieConfig.CB_신용_가능만매수 = false;
                 GenieConfig.TB_신용_신용증거금비율 = 100;
             }
 
@@ -69,6 +70,7 @@ namespace 지니64
                     Form_Function.form.CB_신용_현금우선사용.Enabled = false;
                     Form_Function.form.CB_신용_신용우선사용.Enabled = false;
                     Form_Function.form.CB_신용_현신별도사용.Enabled = false;
+                    Form_Function.form.CB_신용_가능만매수.Enabled = false;
                     Form_Function.form.TB_신용_신용증거금비율.Enabled = false;
 
                     Form_Function.form.label_신용.Enabled = false;
@@ -98,6 +100,7 @@ namespace 지니64
                 Form_Function.form.CB_신용_현금우선사용.Checked = GenieConfig.CB_신용_현금우선사용;
                 Form_Function.form.CB_신용_신용우선사용.Checked = GenieConfig.CB_신용_신용우선사용;
                 Form_Function.form.CB_신용_현신별도사용.Checked = GenieConfig.CB_신용_현신별도사용;
+                Form_Function.form.CB_신용_가능만매수.Checked = GenieConfig.CB_신용_가능만매수;
                 Form_Function.form.TB_신용_신용증거금비율.Text = $"{GenieConfig.TB_신용_신용증거금비율} %";
             }
         }

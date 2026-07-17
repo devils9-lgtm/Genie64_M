@@ -127,6 +127,7 @@ namespace 지니64
             this.CB_텔레그램사용 = new System.Windows.Forms.CheckBox();
             this.BT_기능설정저장 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.CB_신용_가능만매수 = new System.Windows.Forms.CheckBox();
             this.기능설정_P.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -174,6 +175,7 @@ namespace 지니64
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 115F));
+            this.tableLayoutPanel3.Controls.Add(this.CB_신용_가능만매수, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.경고_2, 1, 7);
             this.tableLayoutPanel3.Controls.Add(this.label_신용_2, 1, 6);
             this.tableLayoutPanel3.Controls.Add(this.경고_7, 0, 10);
@@ -1811,6 +1813,22 @@ namespace 지니64
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTip1.ToolTipTitle = "사용방법";
             // 
+            // CB_신용_가능만매수
+            // 
+            this.CB_신용_가능만매수.AutoSize = true;
+            this.CB_신용_가능만매수.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.CB_신용_가능만매수.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CB_신용_가능만매수.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CB_신용_가능만매수.Location = new System.Drawing.Point(117, 24);
+            this.CB_신용_가능만매수.Margin = new System.Windows.Forms.Padding(0);
+            this.CB_신용_가능만매수.Name = "CB_신용_가능만매수";
+            this.CB_신용_가능만매수.Padding = new System.Windows.Forms.Padding(5, 2, 0, 0);
+            this.CB_신용_가능만매수.Size = new System.Drawing.Size(122, 22);
+            this.CB_신용_가능만매수.TabIndex = 145;
+            this.CB_신용_가능만매수.TabStop = false;
+            this.CB_신용_가능만매수.Text = "신용가능만매수";
+            this.CB_신용_가능만매수.UseVisualStyleBackColor = false;
+            // 
             // Form_Function
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1935,5 +1953,6 @@ namespace 지니64
         public System.Windows.Forms.Label 경고_7;
         public System.Windows.Forms.Label 경고_2;
         public System.Windows.Forms.Label label_신용_2;
+        public System.Windows.Forms.CheckBox CB_신용_가능만매수;
     }
 }

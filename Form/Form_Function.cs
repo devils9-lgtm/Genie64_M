@@ -35,6 +35,7 @@ namespace 지니64
             CB_신용_현금우선사용.Checked = GenieConfig.CB_신용_현금우선사용;
             CB_신용_신용우선사용.Checked = GenieConfig.CB_신용_신용우선사용;
             CB_신용_현신별도사용.Checked = GenieConfig.CB_신용_현신별도사용;
+            CB_신용_가능만매수.Checked = GenieConfig.CB_신용_가능만매수;
 
             CB_에러내역보기.Checked = GenieConfig.CB_에러내역보기;
             CB_신규매수정지.Checked = GenieConfig.CB_신규매수정지;
@@ -168,6 +169,7 @@ namespace 지니64
             GenieConfig.CB_신용_현금우선사용 = form.CB_신용_현금우선사용.Checked;
             GenieConfig.CB_신용_신용우선사용 = form.CB_신용_신용우선사용.Checked;
             GenieConfig.CB_신용_현신별도사용 = form.CB_신용_현신별도사용.Checked;
+            GenieConfig.CB_신용_가능만매수 = form.CB_신용_가능만매수.Checked;
 
 
             Form1.form1.label_ONLINE.Text = "ON LINE";
@@ -1010,7 +1012,7 @@ namespace 지니64
                 // 2. 하위 4개가 모두 꺼져 있다면 (신용만 옵션 추가)
                 if (!CB_신용_현금우선사용.Checked &&
                     !CB_신용_신용우선사용.Checked &&
-                    !CB_신용_현신별도사용.Checked)
+                    !CB_신용_현신별도사용.Checked )
                 {
                     // 3. 강제로 '현금우선사용'을 기본값으로 켭니다!
                     // (만약 기본값을 '신용만'으로 하고 싶으시면 이 줄을 수정하시면 됩니다)

@@ -19,6 +19,7 @@ namespace 지니64.box
         {
             Form1.음소거 = true;
 
+            CB_지수이평_그외.Checked = true;
             CB_지수이평_신규.Checked = true; // 기본값으로 "신규" 그룹 선택
 
             // [기능 및 기타 설정] -> Setting.function 사용

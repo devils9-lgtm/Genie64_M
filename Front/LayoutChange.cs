@@ -1040,9 +1040,10 @@ namespace 지니64
                 if (GenieConfig.지수이평 == "지수이평설정")
                 {
                     Form1.form1.Controls.Add(Form1.form1.Jisu_Form);
-                    Form_Jisu.form.Jisu_Form_Load();
                     Form_Jisu.form.Location = new Point(791, 20);
                     Form_Jisu.form.BringToFront();
+                    
+                    Form_Jisu.form.Jisu_Form_Load();
                     Form_Jisu.form.Show();
                     Form1.FormJisu_Open = true;
                 }
@@ -1082,6 +1083,7 @@ namespace 지니64
                     else CBB_layout_SelectedIndex(GenieConfig.CBB_layout);
 
                     Form1.FormBasic_Open = true;
+                    Form_Basic.form.Form_Basic_Load();
                     Form_Basic.form.Show();
                 }
                 else
@@ -1110,6 +1112,7 @@ namespace 지니64
                     else CBB_layout_SelectedIndex(GenieConfig.CBB_layout);
 
                     Form1.FormRepeat_Open = true;
+                    Form_Repeat.form.Form_Repeat_Load();
                     Form_Repeat.form.Show();
                 }
                 else
@@ -1139,6 +1142,7 @@ namespace 지니64
                     else CBB_layout_SelectedIndex(GenieConfig.CBB_layout);
 
                     Form1.FormAccountManagement_Open = true;
+                    Form_AccountManagement.form.Form_AccountManagement_Load();
                     Form_AccountManagement.form.Show();
 
                 }
@@ -1168,6 +1172,7 @@ namespace 지니64
                     else CBB_layout_SelectedIndex(GenieConfig.CBB_layout);
 
                     Form1.FormSpecial_Open = true;
+                    Form_Special.form.Form_Special_Load();
                     Form_Special.form.Show();
                     Form_Special.form.TB_수동주문_종목명.AutoCompleteCustomSource = Form1.form1.collection;
                     Form_Special.form.TB_예약주문_종목명.AutoCompleteCustomSource = Form1.form1.collection;
@@ -1259,6 +1264,7 @@ namespace 지니64
                     else CBB_layout_SelectedIndex(GenieConfig.CBB_layout);
 
                     Form1.FormPriceSearch_Open = true;
+                    Form_PriceSearch.form.Form_PriceSearch_Load();
                     Form_PriceSearch.form.Show();
                 }
                 else
@@ -1288,6 +1294,7 @@ namespace 지니64
                     else CBB_layout_SelectedIndex(GenieConfig.CBB_layout);
 
                     Form1.FormTradeGroup_Open = true;
+                    Form_TradeGroup.form.Form_TradeGroup_Load();
                     Form_TradeGroup.form.Show();
                 }
                 else
@@ -1316,6 +1323,7 @@ namespace 지니64
                     else CBB_layout_SelectedIndex(GenieConfig.CBB_layout);
 
                     Form1.FormFunction_Open = true;
+                    Form_Function.form.Form_Function_Load();
                     Form_Function.form.Show();
                 }
                 else
@@ -1347,7 +1355,6 @@ namespace 지니64
                     Form_Basic.form.MaximumSize = new Size(1936, 389);
                     Form_Basic.form.MinimumSize = new Size(1936, 389);
                     Form_Basic.form.Size = new Size(1936, 389);
-                    Form_Basic.form.Form_Basic_Load();
 
                     Form_Basic.form.Opacity = 0;
                     Form_Basic.form.Show();
@@ -1367,7 +1374,6 @@ namespace 지니64
                     Form_Repeat.form.MaximumSize = new Size(1936, 389);
                     Form_Repeat.form.MinimumSize = new Size(1936, 389);
                     Form_Repeat.form.Size = new Size(1936, 389);
-                    Form_Repeat.form.Form_Repeat_Load();
 
                     Form_Repeat.form.Opacity = 0;
                     Form_Repeat.form.Show();
@@ -1405,7 +1411,6 @@ namespace 지니64
                     Form_Special.form.MaximumSize = new Size(1936, 389);
                     Form_Special.form.MinimumSize = new Size(1936, 389);
                     Form_Special.form.Size = new Size(1936, 389);
-                    Form_Special.form.Form_Special_Load();
 
                     Form_Special.form.Opacity = 0;
                     Form_Special.form.Show();
@@ -1424,7 +1429,6 @@ namespace 지니64
                     Form_PriceSearch.form.MaximumSize = new Size(1936, 389);
                     Form_PriceSearch.form.MinimumSize = new Size(1936, 389);
                     Form_PriceSearch.form.Size = new Size(1936, 389);
-                    Form_PriceSearch.form.Form_PriceSearch_Load();
 
                     Form_PriceSearch.form.Opacity = 0;
                     Form_PriceSearch.form.Show();
@@ -1443,7 +1447,6 @@ namespace 지니64
                     Form_TradeGroup.form.MaximumSize = new Size(1936, 674);
                     Form_TradeGroup.form.MinimumSize = new Size(1936, 674);
                     Form_TradeGroup.form.Size = new Size(1936, 674);
-                    Form_TradeGroup.form.Form_TradeGroup_Load();
 
                     Form_TradeGroup.form.Opacity = 0;
                     Form_TradeGroup.form.Show();
@@ -1462,7 +1465,6 @@ namespace 지니64
                     Form_Function.form.MaximumSize = new Size(1936, 389);
                     Form_Function.form.MinimumSize = new Size(1936, 389);
                     Form_Function.form.Size = new Size(1936, 389);
-                    Form_Function.form.Form_Function_Load();
 
                     Form_Function.form.Opacity = 0;
                     Form_Function.form.Show();
