@@ -184,7 +184,7 @@ namespace 지니64
                         Log.동작기록("코스닥 시세 확인.");
                         Form1.매매시작 = "Loding_05_코스피분봉조회요청";
                     }
-                    Form1.TR유량제한 = false;
+                    Form1.키움_TR유량제한 = false;
                 }
                 else
                 {
@@ -196,7 +196,7 @@ namespace 지니64
                 string msg = GetSafeString(root, "return_msg");
                 Form1.Console_print($"[DEBUG] ka20001 실패. 메세지: {msg}");
 
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
                 if (inds_cd == "001") TR_loding.코스피현재가요청(true);
                 if (inds_cd == "101") TR_loding.코스닥현재가요청(true);
             }
@@ -238,7 +238,7 @@ namespace 지니64
                             }
                         }
                     }
-                    Form1.TR유량제한 = false;
+                    Form1.키움_TR유량제한 = false;
                 }
                 else
                 {
@@ -250,7 +250,7 @@ namespace 지니64
                 string msg = GetSafeString(root, "return_msg");
                 Form1.Console_print($"[DEBUG] ka10051 실패. 메세지: {msg}");
 
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
                 if (req_mrkt_tp == "0") TR_요청.코스피투자자순매수요청(true);
                 if (req_mrkt_tp == "1") TR_요청.코스닥투자자순매수요청(true);
             }
@@ -261,7 +261,7 @@ namespace 지니64
         // =========================================================================
         private static void 업종_재요청(string tr_id, string req_inds_cd, string req_mrkt_tp)
         {
-            Form1.TR유량제한 = true;
+            Form1.키움_TR유량제한 = true;
 
             if (tr_id.Equals("ka20001"))
             {

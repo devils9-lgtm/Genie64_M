@@ -499,7 +499,7 @@ namespace 지니64.box
                             break;
                         case "BT_미체결요청":
                             _ = Helper.미체결내역동기화(false);
-                            TR_요청.계좌요청_분기발행("Y", "", false);
+                            TR_요청.계좌평가현황요청("Y", "", false);
                             break;
                         case "Watch_Save":
                             Set_default.Watch_save();

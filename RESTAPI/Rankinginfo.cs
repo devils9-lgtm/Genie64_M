@@ -179,7 +179,7 @@ namespace 지니64
 
             if (returnCode == "0")
             {
-                Form1.TR유량제한 = false;
+                Form1.키움_TR유량제한 = false;
 
                 if (root.TryGetProperty("pred_pre_flu_rt_upper", out JsonElement listElement) && listElement.ValueKind == JsonValueKind.Array)
                 {
@@ -236,7 +236,7 @@ namespace 지니64
             else
             {
                 Form1.Console_print($"[오류 ka10027] 조회 실패 msg: {return_msg}");
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
                 // 재요청 로직이 있다면 여기서 호출
             }
         }
@@ -248,7 +248,7 @@ namespace 지니64
 
             if (returnCode == "0")
             {
-                Form1.TR유량제한 = false;
+                Form1.키움_TR유량제한 = false;
 
                 if (root.TryGetProperty("trde_prica_upper", out JsonElement listElement) && listElement.ValueKind == JsonValueKind.Array)
                 {
@@ -297,7 +297,7 @@ namespace 지니64
             else
             {
                 Form1.Console_print($"[오류 ka10032] 조회 실패 msg: {return_msg}");
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
                 // 재요청 로직
             }
         }

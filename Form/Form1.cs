@@ -27,12 +27,12 @@ namespace 지니64
         public static Order_Scheduler order_scheduler = new Order_Scheduler();
 
         // 처음에는 null로 비워두어 스레드가 백그라운드에서 돌지 않도록 합니다.
-        public static 한국투자_TR_스케줄러 한투_스케줄러 = null;
-        public static LS_TR_스케줄러 ls_스케줄러 = null;
+        public static 한투_TR스케줄러 한투_스케줄러 = null;
+        public static LS_TR스케줄러 LS_스케줄러 = null;
 
         // 새롭게 추가되는 한투/LS 전용 주문 스케줄러 (null로 초기화)
-        public static 한국투자_주문_스케줄러 한투_주문스케줄러 = null;
-        public static LS_주문_스케줄러 ls_주문스케줄러 = null;
+        public static 한투_주문스케줄러 한투_주문스케줄러 = null;
+        public static LS_주문스케줄러 LS_주문스케줄러 = null;
 
         public static string serverIp = "";
 
@@ -52,15 +52,29 @@ namespace 지니64
         public static string 한투_WS_approval_key = "";
         public static string LS_API_token = "";
 
+        public static string 한투_앱키 = "";
+        public static string 한투_시크릿키 = "";
+        public static string 한투_CANO = "";
+        public static string 한투_ACNT_PRDT_CD = "";
+
+        public static string LS_앱키 = "";
+        public static string LS_시크릿키 = "";
+
         public static bool 중복접속 = false;
 
         public static WebSocketClient websocketClient;
-        public static bool TR유량제한 = false;
-        public static bool 주문유량제한 = false;
+        public static bool 키움_TR유량제한 = false;
+        public static bool 한투_TR유량제한 = false;
+        public static bool LS_TR유량제한 = false;
+        public static bool 키움_주문유량제한 = false;
+        public static bool 한투_주문유량제한 = false;
+        public static bool LS_주문유량제한 = false;
+
         public static string 미수금정리 = "대기";
         public static string 매매시작 = "";
         public static bool 내아이디 = false;
         public static bool VIP_mode = false;
+        public static int 차트로딩_남은수 = 0;
 
         public static Uri uri;
 
@@ -2048,6 +2062,50 @@ namespace 지니64
         }
 
 
+        //// DataGridView의 CellMouseClick 이벤트에 연결해야 합니다.
+        //private void DataGridView_JanGo_A_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        //{
+        //    // 잔고A 그리드뷰의 첫 번째 컬럼 헤더에만 적용
+        //    if (e.ColumnIndex == 0 && e.RowIndex == -1)
+        //    {
+        //        // 클릭 위치가 계산된 체크박스 영역 내인지 확인
+        //        if (_headerCheckBoxArea.Contains(e.Location))
+        //        {
+        //            // 헤더 체크박스 상태 반전
+        //            _headerCheckBoxChecked = !_headerCheckBoxChecked;
+
+        //            // 전체 행의 체크박스(선택_잔고) 상태 변경
+        //            ToggleAllRowsSelection(_headerCheckBoxChecked);
+
+        //            // 헤더 셀 다시 그리기 (체크박스 상태 업데이트)
+        //            ((DataGridView)sender).InvalidateCell(e.ColumnIndex, e.RowIndex);
+        //        }
+        //    }
+        //}
+
+
+        //private void ToggleAllRowsSelection(bool isChecked) // 잔고A 그리드뷰 전체선택/해제 로직
+        //{
+        //    foreach (DataGridViewRow Row in JanGo_dataGridView.Rows)
+        //    {
+        //        // DGV의 행에 있는 '선택_잔고' 셀의 값을 헤더 체크박스 상태와 동기화
+        //        Row.Cells["선택_잔고"].Value = isChecked;
+        //  //      Row.Cells["추매_정지"].Value = isChecked;
+
+
+
+        //        // stockBalanceList 딕셔너리의 잔고 객체도 업데이트
+        //        if (stockBalanceList.TryGetValue(Row.Cells["코드_잔고"].Value.ToString(), out Stockbalance 잔고))
+        //        {
+        //            // 잔고 객체의 '선택' 속성도 업데이트
+        //            잔고.선택 = isChecked;
+        //        }
+        //    }
+
+        //    // 변경 사항을 반영하기 위해 그리드뷰 강제 새로고침
+        //    JanGo_dataGridView.Refresh();
+        //}
+
         // DataGridView의 CellMouseClick 이벤트에 연결해야 합니다.
         private void DataGridView_JanGo_A_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -2072,22 +2130,42 @@ namespace 지니64
 
         private void ToggleAllRowsSelection(bool isChecked) // 잔고A 그리드뷰 전체선택/해제 로직
         {
+            // 저사양 PC 최적화: 대량의 행 갱신 시 UI 스레드 오버헤드 및 화면 깜빡임 최소화
+            JanGo_dataGridView.SuspendLayout();
+
+            // 성능 최적화: 루프 내부에서 문자열 인덱서로 매번 검색하는 비용을 줄이기 위해 컬럼 인덱스를 미리 캐싱
+            int selectIdx = JanGo_dataGridView.Columns["선택_잔고"].Index;
+            int stopIdx = JanGo_dataGridView.Columns["추매_정지"].Index;
+            int codeIdx = JanGo_dataGridView.Columns["코드_잔고"].Index;
+
             foreach (DataGridViewRow Row in JanGo_dataGridView.Rows)
             {
-                // DGV의 행에 있는 '선택_잔고' 셀의 값을 헤더 체크박스 상태와 동기화
-                Row.Cells["선택_잔고"].Value = isChecked;
+                // 가상 행(신규 행 추가용 빈 행)인 경우 건너뛰어 에러 예방 및 속도 향상
+                if (Row.IsNewRow) continue;
 
-                // stockBalanceList 딕셔너리의 잔고 객체도 업데이트
-                if (stockBalanceList.TryGetValue(Row.Cells["코드_잔고"].Value.ToString(), out Stockbalance 잔고))
+                // DGV의 행에 있는 '선택_잔고' 및 '추매_정지' 셀의 값을 헤더 체크박스 상태와 동기화
+                Row.Cells[selectIdx].Value = isChecked;
+                Row.Cells[stopIdx].Value = isChecked;
+
+                // 성능 최적화: 셀 값이 null일 수 있으므로 안전하게 참조
+                object codeValue = Row.Cells[codeIdx].Value;
+                if (codeValue != null)
                 {
-                    // 잔고 객체의 '선택' 속성도 업데이트
-                    잔고.선택 = isChecked;
+                    // stockBalanceList 딕셔너리의 잔고 객체도 업데이트
+                    if (stockBalanceList.TryGetValue(codeValue.ToString(), out Stockbalance 잔고))
+                    {
+                        // 잔고 객체의 '선택' 및 '추매정지' 속성도 업데이트
+                        잔고.선택 = isChecked;
+                        잔고.추매정지 = isChecked;
+                    }
                 }
             }
 
-            // 변경 사항을 반영하기 위해 그리드뷰 강제 새로고침
+            // 레이아웃 로직 재개 및 변경 사항을 반영하기 위해 그리드뷰 강제 새로고침
+            JanGo_dataGridView.ResumeLayout();
             JanGo_dataGridView.Refresh();
         }
+
 
         // 이 함수 하나만 모든 DataGridView의 CurrentCellDirtyStateChanged 이벤트에 연결하면 돼!
         private void DataGridView_CurrentCellDirtyStateChanged(object sender, EventArgs e)
@@ -3173,15 +3251,13 @@ namespace 지니64
         }
 
 
-        // 버튼 하나로 통합 랭킹 조회 (async 필수!)
         private async void Button1_Click(object sender, EventArgs e)
         {
             Form1.Console_print("\n====== [Button1_Click] ======");
 
-            //  훔치기.수동스캔_마켓중심();
-
+            // 비동기로 스케줄러 혹은 요청이 처리되도록 await 구조로 실행 유도
+            await Task.Run(() => 한투_TR요청.한투_주식잔고조회(null, null, "", true));
         }
-
 
 
         private async void Button2_Click(object sender, EventArgs e)

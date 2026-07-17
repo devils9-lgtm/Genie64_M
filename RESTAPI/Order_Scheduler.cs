@@ -478,21 +478,21 @@ namespace 지니64
     // =========================================================
     // 2. 한국투자증권 주문 스케줄러 (모의 1건/초, 실전 18건/초)
     // =========================================================
-    public class 한국투자_주문_스케줄러
+    public class 한투_주문스케줄러
     {
         private readonly ConcurrentQueue<Func<Task>> _주문_대기_큐 = new ConcurrentQueue<Func<Task>>();
         private readonly SemaphoreSlim _신호_세마포어 = new SemaphoreSlim(0);
         private readonly CancellationTokenSource _취소_토큰_소스 = new CancellationTokenSource();
         private Task _주문_처리_스레드;
 
-        public 한국투자_주문_스케줄러()
+        public 한투_주문스케줄러()
         {
             _주문_처리_스레드 = Task.Run(() => 주문_처리_루프(_취소_토큰_소스.Token));
         }
 
-        public void 주문_요청_추가(Func<Task> 한국투자_주문_작업)
+        public void 주문_요청_추가(Func<Task> 한투_주문_작업)
         {
-            _주문_대기_큐.Enqueue(한국투자_주문_작업);
+            _주문_대기_큐.Enqueue(한투_주문_작업);
             _신호_세마포어.Release();
         }
 
@@ -541,7 +541,7 @@ namespace 지니64
         public Func<Task> TaskToRun { get; set; }
     }
 
-    public class LS_주문_스케줄러
+    public class LS_주문스케줄러
     {
         private readonly ConcurrentQueue<LS_Order_Request> _주문_대기_큐 = new ConcurrentQueue<LS_Order_Request>();
         private readonly SemaphoreSlim _신호_세마포어 = new SemaphoreSlim(0);
@@ -556,7 +556,7 @@ namespace 지니64
             {"CSPAT00801", 350}  // 취소 현물 주문: 초당 3건 (약 333ms + 17ms 마진)
         };
 
-        public LS_주문_스케줄러()
+        public LS_주문스케줄러()
         {
             _주문_처리_스레드 = Task.Run(() => 주문_모니터링_루프(_중단_토큰_소스.Token));
         }

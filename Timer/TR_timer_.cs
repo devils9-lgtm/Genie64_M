@@ -108,7 +108,7 @@ namespace 지니64.Timer
                 TR_요청.미체결요청("Y", "", false);
             }
 
-            if (Form1.매매시작.Equals("Loding_12_계좌요청_분기발행"))
+            if (Form1.매매시작.Equals("Loding_12_계좌평가현황요청"))
             {
                 Helper.안전한_UI_업데이트(Form1.form1, () =>
                 {
@@ -127,9 +127,9 @@ namespace 지니64.Timer
                 LoadFromFile.관심그룹_Title_파일로딩();
                 LoadFromFile.리밸감시주문_파일로딩();
 
-                Console_print("Loding_12_계좌요청_분기발행 TR_timer_ Tick " + DateTime.Now.ToString("HH:mm:ss.fff"));
-                Form1.매매시작 = "계좌요청_분기발행";
-                TR_요청.계좌요청_분기발행("Y", "", false);
+                Console_print("Loding_12_계좌평가현황요청 TR_timer_ Tick " + DateTime.Now.ToString("HH:mm:ss.fff"));
+                Form1.매매시작 = "계좌평가현황요청";
+                TR_요청.계좌평가현황요청("Y", "", false);
             }
         
             if (Form1.매매시작.Equals("Loding_13_일자별실현손익요청"))
@@ -154,12 +154,12 @@ namespace 지니64.Timer
                 TR_요청.계좌수익률요청("Y", "", false);
             }
 
-            if (Form1.매매시작.Equals("Loding_16_신용융자가능종목요청"))
-            {
-                Console_print("Loding_16_신용융자가능종목요청 TR_timer_ Tick " + DateTime.Now.ToString("HH:mm:ss.fff"));
-                Form1.매매시작 = "신용융자가능종목요청";
-                TR_요청.신용융자가능종목요청("N", "", false);
-            }
+            //if (Form1.매매시작.Equals("Loding_16_신용융자가능종목요청"))
+            //{
+            //    Console_print("Loding_16_신용융자가능종목요청 TR_timer_ Tick " + DateTime.Now.ToString("HH:mm:ss.fff"));
+            //    Form1.매매시작 = "신용융자가능종목요청";
+            //    TR_요청.신용융자가능종목요청("N", "", false);
+            //}
 
             if (!Form1.매매시작.Equals("매매시작"))
             {

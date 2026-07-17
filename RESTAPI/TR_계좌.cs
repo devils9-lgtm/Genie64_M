@@ -118,9 +118,6 @@ namespace 지니64
             }
         }
 
-
-
-
         // =================================================================================
         // 2. ka10074 (일자별실현손익요청_통계)
         // =================================================================================
@@ -159,11 +156,11 @@ namespace 지니64
                 }
 
                 Helper.안전한_UI_업데이트(Form1.form1, () => { Form1.form1.CBB_통계.SelectedIndex = 0; });
-                Form1.TR유량제한 = false;
+                Form1.키움_TR유량제한 = false;
             }
             else
             {
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
                 TR_요청.일자별실현손익요청_통계(cont_yn, next_key, true);
             }
         }
@@ -192,11 +189,11 @@ namespace 지니64
                     Console_print(GenieConfig.textBox_계좌번호 + " 실현손익요청 조회 완료");
                     Form1.매매시작 = "Loding_14_계좌평가잔고내역요청"; 
                 }
-                Form1.TR유량제한 = false;
+                Form1.키움_TR유량제한 = false;
             }
             else
             {
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
                 TR_요청.실현손익요청(cont_yn, next_key, true);
             }
         }
@@ -250,7 +247,7 @@ namespace 지니64
 
                 if (cont_yn == "Y")
                 {
-                    Form1.TR유량제한 = true;
+                    Form1.키움_TR유량제한 = true;
                     if (where == "당일실현손익요청") TR_요청.당일실현손익요청(cont_yn, next_key, true);
                     else TR_요청.일자별종목별실현손익요청_통계(cont_yn, next_key, tr_.Split('_')[2], true);
                     return;
@@ -258,7 +255,7 @@ namespace 지니64
 
                 if (cont_yn == "N")
                 {
-                    Form1.TR유량제한 = false;
+                    Form1.키움_TR유량제한 = false;
                     if (where == "당일실현손익요청" && !Form1.매매시작.Equals("매매시작"))
                     {
                         Log.동작기록(GenieConfig.textBox_계좌번호 + " 당일실현손익요청 조회 완료");
@@ -278,7 +275,7 @@ namespace 지니64
             }
             else
             {
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
                 Console_print("return_code: " + returnCode);
                 Console_print("return_message: " + GetSafeString(root, "return_msg"));
                 Console_print($"실패 tr_ [{tr_}]");
@@ -397,7 +394,7 @@ namespace 지니64
                 // ==========================================================
                 if (cont_yn == "Y")
                 {
-                    Form1.TR유량제한 = true;
+                    Form1.키움_TR유량제한 = true;
                     TR_요청.미체결요청(cont_yn, next_key, true);
                     return; // 다음 페이지가 있으므로 락을 유지한 채로 리턴
                 }
@@ -405,7 +402,7 @@ namespace 지니64
                 // 다음 페이지가 없거나(N) 값이 없으면(단건) 최종 완료 처리
                 if (cont_yn == "N" || string.IsNullOrEmpty(cont_yn))
                 {
-                    Form1.TR유량제한 = false;
+                    Form1.키움_TR유량제한 = false;
 
                     // ==========================================================
                     // [장부 동기화 상태 확인 로그] 삭제 전 모든 리스트 점검
@@ -455,13 +452,13 @@ namespace 지니64
 
                         Console_print(GenieConfig.textBox_계좌번호 + " 주문접수내역 조회완료");
                         Log.동작기록(GenieConfig.textBox_계좌번호 + " 주문접수내역 조회완료");
-                        Form1.매매시작 = "Loding_12_계좌요청_분기발행";
+                        Form1.매매시작 = "Loding_12_계좌평가현황요청";
                     }
                 }
             }
             else
             {
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
                 TR_요청.미체결요청(cont_yn, next_key, true);
             }
         }
@@ -653,18 +650,18 @@ namespace 지니64
                     });
                 }
 
-                if (Form1.매매시작 == "계좌요청_분기발행")
+                if (Form1.매매시작 == "계좌평가현황요청")
                 {
                     Log.동작기록(GenieConfig.textBox_계좌번호 + " 예수금 조회 완료");
                     Form1.Console_print(GenieConfig.textBox_계좌번호 + " 예수금 조회 완료");
                     Form1.매매시작 = "Loding_13_일자별실현손익요청";
                 }
-                Form1.TR유량제한 = false;
+                Form1.키움_TR유량제한 = false;
             }
             else
             {
-                Form1.TR유량제한 = true;
-                TR_요청.계좌요청_분기발행("Y", "", true);
+                Form1.키움_TR유량제한 = true;
+                TR_요청.계좌평가현황요청("Y", "", true);
             }
         }
         // =================================================================================
@@ -749,18 +746,18 @@ namespace 지니64
 
                     if (cont_yn == "Y")
                     {
-                        Form1.TR유량제한 = true;
+                        Form1.키움_TR유량제한 = true;
                         TR_요청.계좌평가잔고내역요청(cont_yn, next_key, true);
                         return;
                     }
 
                     if (cont_yn == "N")
                     {
-                        Form1.TR유량제한 = false;
+                        Form1.키움_TR유량제한 = false;
 
                         if (!Form1.로딩완료)
                         {
-                            Form1.TR유량제한 = false;
+                            Form1.키움_TR유량제한 = false;
 
                             Log.동작기록(GenieConfig.textBox_계좌번호 + " 계좌평가잔고내역 조회 완료");
                             Console_print(GenieConfig.textBox_계좌번호 + " 계좌평가잔고내역 조회 완료");
@@ -775,7 +772,7 @@ namespace 지니64
             }
             else
             {
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
                 TR_요청.계좌평가잔고내역요청(cont_yn, next_key, true);
             }
         }
@@ -973,7 +970,7 @@ namespace 지니64
 
                 if (cont_yn == "Y")
                 {
-                    Form1.TR유량제한 = true;
+                    Form1.키움_TR유량제한 = true;
                     TR_요청.계좌수익률요청(cont_yn, next_key, true);
 
                     Console_print($"[잔고갱신 추가요청] cont_yn: {cont_yn} next_key: {next_key}");
@@ -982,7 +979,7 @@ namespace 지니64
 
                 if (cont_yn == "N")
                 {
-                    Form1.TR유량제한 = false;
+                    Form1.키움_TR유량제한 = false;
 
                     //foreach (var 잔고 in Form1.stockBalanceList.Values)
                     //{
@@ -1033,7 +1030,17 @@ namespace 지니64
 
                         Log.동작기록(GenieConfig.textBox_계좌번호 + " 계좌수익률요청 조회 완료");
                         Console_print(GenieConfig.textBox_계좌번호 + " 계좌수익률요청 조회 완료");
-                        Form1.매매시작 = "Loding_16_신용융자가능종목요청";
+                        
+                        if(매매시작 == "계좌수익률요청")
+                        {
+                            TelegramMessenger.Telegram_alram("logIn_user");
+                            Trade_tasks.잔고_매매();
+                            Form1.매매시작 = "Load_completion";
+
+                            TR_요청.신용융자가능종목요청("N", "", false);
+                        }
+
+                        //    Form1.매매시작 = "Loding_16_신용융자가능종목요청";
                     }
                     else
                     {
@@ -1044,13 +1051,15 @@ namespace 지니64
             }
             else
             {
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
                 TR_요청.계좌수익률요청(cont_yn, next_key, true);
                 Console_print($"[계좌수익률요청 실패] 코드: {returnCode} | 메시지: {returnMsg}");
             }
         }
 
 
+
+  
     }
 }
 

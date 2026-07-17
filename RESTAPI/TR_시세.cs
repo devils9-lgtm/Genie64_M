@@ -184,11 +184,11 @@ namespace 지니64
                         }
                     }
                 }
-                Form1.TR유량제한 = false;
+                Form1.키움_TR유량제한 = false;
             }
             else
             {
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
 
                 if (req_mrkt_tp == "P001_AL01") TR_요청.코스피_프로그램매매추이요청시간대별(true);
                 if (req_mrkt_tp == "P101_AL02") TR_요청.코스닥_프로그램매매추이요청시간대별(true);
@@ -220,11 +220,11 @@ namespace 지니64
                                    GetSafeString(root, "sel_7th_pre_req")      // 매도7잔량
                                );
                 }
-                Form1.TR유량제한 = false;
+                Form1.키움_TR유량제한 = false;
             }
             else
             {
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
 
                 // 💡 [안전장치] 만약 딕셔너리에 없는 이상한 종목코드가 들어와도 프로그램이 뻗지 않게 보호합니다.
                 string 종목명 = "알수없음";
@@ -251,7 +251,7 @@ namespace 지니64
         // =========================================================================
         private static void 시세_재요청(string tr_id, string req_mrkt_tp, string req_stk_cd)
         {
-            Form1.TR유량제한 = true;
+            Form1.키움_TR유량제한 = true;
 
             if (tr_id.Equals("ka90005"))
             {

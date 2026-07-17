@@ -336,11 +336,11 @@ namespace 지니64
 
                     if ((string)json_Object["return_code"] == "0")
                     {
-                        Form1.Console_print("[API_LOGIN] expires_dt : " + json_Object["expires_dt"]);
-                        Form1.Console_print("[API_LOGIN] token_type : " + json_Object["token_type"]);
-                        Form1.Console_print("[API_LOGIN] token : " + json_Object["token"]);
-                        Form1.Console_print("[API_LOGIN] return_code : " + json_Object["return_code"]);
-                        Form1.Console_print("[API_LOGIN] return_msg : " + json_Object["return_msg"]);
+                        Form1.Console_print("[키움 API_LOGIN] expires_dt : " + json_Object["expires_dt"]);
+                        Form1.Console_print("[키움 API_LOGIN] token_type : " + json_Object["token_type"]);
+                        Form1.Console_print("[키움 API_LOGIN] token : " + json_Object["token"]);
+                        Form1.Console_print("[키움 API_LOGIN] return_code : " + json_Object["return_code"]);
+                        Form1.Console_print("[키움 API_LOGIN] return_msg : " + json_Object["return_msg"]);
 
                         Form1.API_token = json_Object["token"].ToString();
                         Form1.ON_LINE = true;

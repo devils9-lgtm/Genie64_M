@@ -234,12 +234,17 @@ namespace 지니64
                             잔고.분_리스트 = sb.ToString();
                             MA.Get_Min_Moving_Average(잔고);
                         }
+
+                    if (Form1.차트로딩_남은수 > 0)
+                    {
+                        Form1.차트로딩_남은수--; // ◀ 처리 완료 후 1 감소
+                    }
                 }
-                Form1.TR유량제한 = false;
+                Form1.키움_TR유량제한 = false;
             }
             else
             {
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
                 var options = new JsonSerializerOptions
                 {
                     WriteIndented = true,
@@ -257,7 +262,7 @@ namespace 지니64
         {
             if (IsReturnCodeSuccess(root))
             {
-                Form1.TR유량제한 = false;
+                Form1.키움_TR유량제한 = false;
 
                 if (root.TryGetProperty("stk_dt_pole_chart_qry", out JsonElement chartArray) &&
                     chartArray.ValueKind == JsonValueKind.Array &&
@@ -326,11 +331,16 @@ namespace 지니64
                         잔고.일_리스트 = sb.ToString();
                         MA.Get_Day_Moving_Average(잔고);
                     }
+
+                    if (Form1.차트로딩_남은수 > 0)
+                    {
+                        Form1.차트로딩_남은수--; // ◀ 처리 완료 후 1 감소
+                    }
                 }
             }
             else
             {
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
                 string rawCode = req_stk_cd;
                 if (root.TryGetProperty("stk_cd", out JsonElement cdEl)) rawCode = cdEl.GetString();
                 if (!string.IsNullOrEmpty(rawCode))
@@ -384,11 +394,11 @@ namespace 지니64
                     if (itemcode.Equals("001")) Form1.매매시작 = "Loding_06_코스피일봉조회요청";
                     if (itemcode.Equals("101")) Form1.매매시작 = "Loding_08_코스닥일봉조회요청";
                 }
-                Form1.TR유량제한 = false;
+                Form1.키움_TR유량제한 = false;
             }
             else
             {
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
                 var options = new JsonSerializerOptions
                 {
                     WriteIndented = true,
@@ -458,11 +468,11 @@ namespace 지니64
                         Form1.매매시작 = "Loding_07_코스닥분봉조회요청";
                     }
                 }
-                Form1.TR유량제한 = false;
+                Form1.키움_TR유량제한 = false;
             }
             else
             {
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
                 var options = new JsonSerializerOptions
                 {
                     WriteIndented = true,
@@ -478,7 +488,7 @@ namespace 지니64
         // =========================================================================
         private static void 차트_재요청(string tr_id, string req_stk_cd, string req_inds_cd)
         {
-            Form1.TR유량제한 = true;
+            Form1.키움_TR유량제한 = true;
 
             if (tr_id.Equals("ka10080"))
             {

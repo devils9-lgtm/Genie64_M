@@ -95,6 +95,7 @@ namespace 지니64
             }
         }
 
+       
         // 로딩 절차를 깔끔하게 분리
         private static async Task ProcessLoadingStep()
         {
@@ -130,9 +131,25 @@ namespace 지니64
                     // ToList()를 한 번만 호출하여 변수에 담고 사용 (또는 Values 사용)
                     var currentStockList = stockBalanceList.Values; // 수정 불가피한 경우에만 ToList
 
-                    foreach (var 잔고 in currentStockList) REG.실시간시세등록(잔고.종목코드);
-                    foreach (var 잔고 in currentStockList) TR_요청.주식분봉차트조회요청(잔고.종목코드, false);
-                    foreach (var 잔고 in currentStockList) TR_요청.주식일봉차트조회요청(잔고.종목코드, false);
+                    foreach (var 잔고 in currentStockList)
+                    {
+                        REG.실시간시세등록(잔고.종목코드);
+                    }
+
+                    foreach (var 잔고 in currentStockList)
+                    {
+                      Form1.차트로딩_남은수++; // ◀ 요청하기 직전에 1 증가
+                        TR_요청.주식분봉차트조회요청(잔고.종목코드, false);
+                    }
+
+                    foreach (var 잔고 in currentStockList)
+                    {
+                        Form1.차트로딩_남은수++; // ◀ 요청하기 직전에 1 증가
+                        TR_요청.주식일봉차트조회요청(잔고.종목코드, false);
+                    }
+                    //foreach (var 잔고 in currentStockList) REG.실시간시세등록(잔고.종목코드);
+                    //foreach (var 잔고 in currentStockList) TR_요청.주식분봉차트조회요청(잔고.종목코드, false);
+                    //foreach (var 잔고 in currentStockList) TR_요청.주식일봉차트조회요청(잔고.종목코드, false);
 
                     매매시작 = "차트조회요청";
                     break;
@@ -154,10 +171,35 @@ namespace 지니64
                     매매시작 = "실시간등록";
                     break;
 
-                case "실시간등록":
-                    int count = tr_scheduler.QueueCount;
+                //case "실시간등록":
+                //    int count = tr_scheduler.QueueCount;
 
-                    if(Helper.IsDebugMode)
+                //    if(Helper.IsDebugMode)
+                //    {
+                //        count = 0;
+                //    }
+
+                //    Helper.안전한_UI_업데이트(form1, () =>
+                //    {
+                //        Console_print("#####  차트로딩 중: " + DateTime.Now.ToString("HH:mm:ss.ffff") + " 남은수 : " + count);
+                //        form1.LB_Log.Items.Insert(0, DateTime.Now.ToString("HH:mm:ss :: ") + "차트로딩 중 - " + count);
+                //    });
+
+                //    if (count == 0)
+                //    {
+                //        매매시작 = "주문로딩완료";
+                //        int.TryParse(DateTime.Now.ToString("HHmmss"), out int Time);
+                //        Get.로딩완료타임 = Time;
+                //    }
+
+                //    break;
+
+                case "실시간등록":
+                    // 수정 전: int count = tr_scheduler.QueueCount;
+                    // 수정 후: 백그라운드 TR과 무관하게 차트 남은 수만 체크합니다.
+                    int count = Form1.차트로딩_남은수;
+
+                    if (Helper.IsDebugMode)
                     {
                         count = 0;
                     }
@@ -173,6 +215,9 @@ namespace 지니64
                         매매시작 = "주문로딩완료";
                         int.TryParse(DateTime.Now.ToString("HHmmss"), out int Time);
                         Get.로딩완료타임 = Time;
+
+                        // (선택) 로딩 완료 로그 추가
+                        Console_print("#####  차트 로딩 완료. 메인 프로세스 시작.");
                     }
 
                     break;
@@ -532,7 +577,7 @@ namespace 지니64
                 if (Jumun.메인장부_중복_검사(종목코드, "유휴자금관리_매수", null)) return;
 
                 // --- [진짜 D+2 요청 구간] 매수 상황에 딱 한 번만 실행됨 ---
-                TR_요청.계좌요청_분기발행("Y", "", false);
+                TR_요청.계좌평가현황요청("Y", "", false);
                 await Task.Delay(5000);
                 현재예수금 = Form1.Acc.D2; // 서버에서 받은 진짜 최신 돈으로 덮어쓰기
                 // -------------------------------------------------------------
@@ -608,7 +653,7 @@ namespace 지니64
                     ExecuteTrade.Que_order(새주문);
 
                     await Task.Delay(3000);
-                    TR_요청.계좌요청_분기발행("Y", "", false);
+                    TR_요청.계좌평가현황요청("Y", "", false);
                 }
             }
             // =========================================================================
@@ -657,7 +702,7 @@ namespace 지니64
                 );
 
                 await Task.Delay(3000);
-                TR_요청.계좌요청_분기발행("Y", "", false);
+                TR_요청.계좌평가현황요청("Y", "", false);
             }
         }
 

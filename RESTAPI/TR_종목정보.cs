@@ -168,7 +168,7 @@ namespace 지니64
             if (tr_id == "ka10100")
             {
                 // 단일 종목 정보 조회 (종목코드 필요)
-               TR_요청. 종목정보조회(req_stk_cd, true);
+               TR_요청.종목정보조회(req_stk_cd, true);
             }
             else if (tr_id == "ka10099")
             {
@@ -230,7 +230,7 @@ namespace 지니64
                         Form1.NXT_list.Add(itemcode);
                     }
                 }
-                Form1.TR유량제한 = false;
+                Form1.키움_TR유량제한 = false;
 
 
                 // =========================================================================
@@ -258,7 +258,7 @@ namespace 지니64
             }
             else
             {
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
                 Form1.Console_print($"종목정보 조회 실패 ({req_stk_cd}): {GetSafeString(root, "return_msg")}");
                 TR_요청.종목정보조회(req_stk_cd, true); // 재요청
             }
@@ -302,12 +302,12 @@ namespace 지니64
                         Log.동작기록("종목정보 리스트 불러오기 완료 - " + Form1.server);
                         Form1.매매시작 = "Loding_03_코스피현재가요청";
                     }
-                    Form1.TR유량제한 = false;
+                    Form1.키움_TR유량제한 = false;
                 }
             }
             else
             {
-                Form1.TR유량제한 = true;
+                Form1.키움_TR유량제한 = true;
                 Form1.Console_print($"종목정보리스트 조회 실패: {GetSafeString(root, "return_msg")}");
                 TR_loding.종목정보리스트(req_mrkt_tp, true); // 재요청
             }
@@ -319,7 +319,7 @@ namespace 지니64
 
             if (returnCode == "0")
             {
-                Form1.TR유량제한 = false;
+                Form1.키움_TR유량제한 = false;
                 if (root.TryGetProperty("item_inq_rank", out JsonElement listElement) && listElement.ValueKind == JsonValueKind.Array)
                 {
                     int 출력갯수 = 0;
@@ -358,8 +358,8 @@ namespace 지니64
             else
             {
                 Form1.Console_print($"실시간종목조회순위 실패: {GetSafeString(root, "return_msg")}");
-                Form1.TR유량제한 = true;
-                Rankinginfo.실시간종목조회순위(Form1.TR유량제한); // 재요청
+                Form1.키움_TR유량제한 = true;
+                Rankinginfo.실시간종목조회순위(Form1.키움_TR유량제한); // 재요청
             }
         }
 
@@ -372,7 +372,7 @@ namespace 지니64
 
             if (returnCode == "0") // 정상 처리 완료
             {
-                Form1.TR유량제한 = false;
+                Form1.키움_TR유량제한 = false;
                 
                 if (root.TryGetProperty("crd_loan_pos_stk", out JsonElement stkList) && stkList.ValueKind == JsonValueKind.Array)
                 {
@@ -418,15 +418,15 @@ namespace 지니64
                     // 현재 시간과 마지막 로그 시간을 비교해서 5초(5000밀리초) 이상 차이가 나면 출력
                     if ((DateTime.Now - 마지막로그시간).TotalSeconds >= 5)
                     {
-                        Log.동작기록($"신용융자 가능종목 요청 중... (현재 {conut}페이지 남음)");
-                        Form1.Console_print($"신용융자 가능종목 요청 중... (현재 {conut}페이지 남음)");
+                   //     Log.동작기록($"신용융자 가능종목 요청 중... (현재 {conut}페이지 남음)");
+                        Form1.Console_print($"(백그라운드 실행) 신용융자 가능종목 요청 중... (현재 {conut}페이지 남음)");
 
                         // 출력했으니 마지막 로그 시간을 지금 시간으로 갱신
                         마지막로그시간 = DateTime.Now;
                     }
 
-                    Form1.TR유량제한 = true;
-                    TR_요청.신용융자가능종목요청(cont_yn, next_key, true);
+                    Form1.키움_TR유량제한 = true;
+                    TR_요청.신용융자가능종목요청(cont_yn, next_key, false);
 
                     conut--;
                     return;
@@ -438,20 +438,20 @@ namespace 지니64
                     conut = 0;
                     마지막로그시간 = DateTime.MinValue;
 
-                    Form1.Console_print("신용가능여부 조회 완료 - " + Form1.server + "    " + DateTime.Now.ToString("HH:mm:ss.fff"));
-                    Log.동작기록("신용가능여부 조회 완료 - " + Form1.server);
+                    Form1.Console_print("(백그라운드 실행) 신용가능여부 조회 완료 - " + Form1.server + "    " + DateTime.Now.ToString("HH:mm:ss.fff"));
+                  //  Log.동작기록("신용가능여부 조회 완료 - " + Form1.server);
 
-                    로그인완료();
+                  //  로그인완료();
 				}
             }
             else // 오류 발생 또는 TR 과부하
             {
-                Form1.Console_print($"신용가능여부 실패 (코드:{returnCode}): {GetSafeString(root, "return_msg")}");
+                Form1.Console_print($"(백그라운드 실행) 신용가능여부 실패 (코드:{returnCode}): {GetSafeString(root, "return_msg")}");
                 
                 if(returnCode == "5") // TR 과부하로 인한 실패
                 {
-                    Form1.TR유량제한 = true;
-                    TR_요청.신용융자가능종목요청(cont_yn, next_key, true);
+                    Form1.키움_TR유량제한 = true;
+                    TR_요청.신용융자가능종목요청(cont_yn, next_key, false);
                 }
                 else if (returnCode == "20") 
                 {
@@ -459,7 +459,7 @@ namespace 지니64
                     {
                         Form1.Console_print($"[알림] 모의투자에서는 신용가능여부 조회가 제공되지 않습니다. 시뮬레이션 모드에서는 이 TR을 건너뛰고 다음 단계로 진행합니다.");
 
-                        로그인완료();
+                     //   로그인완료();
                     }
                 }
             }

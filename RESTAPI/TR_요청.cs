@@ -75,11 +75,6 @@ namespace 지니64
             }
         }
 
-        public static void 계좌요청_분기발행(string cont_yn, string next_key, bool Priority)
-        {
-            계좌평가현황요청(cont_yn, next_key, Priority);
-        }
-
         internal static void 계좌평가현황요청(string cont_yn, string next_key, bool Priority) //예수금조회_3
         {
             if (Priority)
@@ -120,50 +115,6 @@ namespace 지니64
                 }
             }
         }
-
-
-        //internal static void 체결잔고요청(string cont_yn, string next_key, bool Priority) // 기존 kt00004(예수금조회_3) 완전 대체
-        //{
-        //    if (Priority)
-        //    {
-        //        Form1.tr_scheduler.EnqueuePriorityRequest("kt00005", 요청);
-        //    }
-        //    else
-        //    {
-        //        Form1.tr_scheduler.EnqueueRequest("kt00005", 요청);
-        //    }
-
-        //    async Task 요청()
-        //    {
-        //        try
-        //        {
-        //            // 1. 토큰 설정
-        //            string MY_ACCESS_TOKEN = Form1.API_token; // 접근 토큰
-
-        //            string 거래소 = "KRX"; // 거래소구분 KRX:한국거래소, NXT:넥스트트레이드
-        //            if (Form1.NXT_server)
-        //            {
-        //                거래소 = "NXT";
-        //            }
-
-        //            // 2. 요청 데이터 (kt00005 규격 적용)
-        //            // >> 주의: 키움증권 kt00005 공식 매뉴얼상 추가로 필요한 파라미터가 있다면 이곳에 쉼표로 연결하여 추가해 주십시오.
-        //            // (일반적으로 kt00004와 동일하게 qry_tp, dmst_stex_tp를 사용합니다)
-        //            var paramsData = new
-        //            {
-        //                dmst_stex_tp = 거래소 // 거래소구분 KRX:한국거래소,NXT:넥스트트레이드
-        //            };
-
-        //            // 3. API 실행 (식별자를 kt00005로 명시하여 넘김)
-        //            await TR_계좌.계좌(MY_ACCESS_TOKEN, paramsData, "kt00005_체결잔고요청", cont_yn, next_key);
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            Form1.Console_print("체결잔고요청(kt00005) 요청 실패: " + ex.Message);
-        //        }
-        //    }
-        //}
-
 
         internal static void 계좌평가잔고내역요청(string cont_yn, string next_key, bool Priority) //잔고요청_5
         {

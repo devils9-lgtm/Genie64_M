@@ -109,7 +109,7 @@ namespace 지니64.RESTAPI
                             // ==========================================================
                             if (isSuccess)
                             {
-                                Form1.주문유량제한 = false;
+                                Form1.키움_주문유량제한 = false;
                                 // 매수/매도 TR일 경우에만 주문번호 갱신 (현금 00/01, 신용 06/07)
                                 if (tr_id.Equals("kt10000") || tr_id.Equals("kt10001") || tr_id.Equals("kt10006") || tr_id.Equals("kt10007"))
                                 {
@@ -207,7 +207,7 @@ namespace 지니64.RESTAPI
                                 // (2) 유량 제한 ("5") - 스위치(switch)문으로 완벽한 분기 처리
                                 if (returnCodeStr == "5" && returnMsg.Contains("허용된 요청 개수를 초과"))
                                 {
-                                    Form1.주문유량제한 = true;
+                                    Form1.키움_주문유량제한 = true;
 
                                     switch (tr_id)
                                     {

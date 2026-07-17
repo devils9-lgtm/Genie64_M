@@ -543,7 +543,7 @@ namespace 지니64
     // =========================================================
     // 2. 한국투자증권 스케줄러 (실전 18건/초, 모의 1건/초)
     // =========================================================
-    public class 한국투자_TR_스케줄러
+    public class 한투_TR스케줄러
     {
         private readonly ConcurrentQueue<Func<Task>> _우선_요청_큐 = new ConcurrentQueue<Func<Task>>();
         private readonly ConcurrentQueue<Func<Task>> _일반_요청_큐 = new ConcurrentQueue<Func<Task>>();
@@ -552,20 +552,20 @@ namespace 지니64
         private readonly CancellationTokenSource _취소_토큰_소스 = new CancellationTokenSource();
         private Task _작업_스레드;
 
-        public 한국투자_TR_스케줄러()
+        public 한투_TR스케줄러()
         {
             _작업_스레드 = Task.Run(() => 스케줄러_루프_시작(_취소_토큰_소스.Token));
         }
 
-        public void 요청_추가(Func<Task> 한국투자_API_작업)
+        public void 요청_추가(Func<Task> 한투_TR_작업)
         {
-            _일반_요청_큐.Enqueue(한국투자_API_작업);
+            _일반_요청_큐.Enqueue(한투_TR_작업);
             _신호_세마포어.Release();
         }
 
-        public void 우선_요청_추가(Func<Task> 한국투자_우선_API_작업)
+        public void 우선_요청_추가(Func<Task> 한투_우선_TR_작업)
         {
-            _우선_요청_큐.Enqueue(한국투자_우선_API_작업);
+            _우선_요청_큐.Enqueue(한투_우선_TR_작업);
             _신호_세마포어.Release();
         }
 
@@ -619,7 +619,7 @@ namespace 지니64
         public Func<Task> TaskToRun { get; set; }
     }
 
-    public class LS_TR_스케줄러
+    public class LS_TR스케줄러
     {
         private readonly ConcurrentQueue<LS_Request> _긴급_요청_큐 = new ConcurrentQueue<LS_Request>();
         private readonly ConcurrentQueue<LS_Request> _일반_요청_큐 = new ConcurrentQueue<LS_Request>();
@@ -643,7 +643,7 @@ namespace 지니64
             {"CSPAQ12200", 1050}, {"CDPCQ04700", 1050}, {"t8408", 1050}
         };
 
-        public LS_TR_스케줄러()
+        public LS_TR스케줄러()
         {
             _소비_프로세스 = Task.Run(() => 큐_모니터링_루프(_중단_토큰_소스.Token));
         }
