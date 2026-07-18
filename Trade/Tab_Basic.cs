@@ -516,6 +516,15 @@ namespace 지니64
                     //    (기존의 느린 예수금확인() 함수를 완벽히 대체합니다.)
                     bool 신용주문 = 신용계산.신용주문_해야하나(1, 주문수량, market_Item, null, out int 실제주문수량);
 
+                    if (GenieConfig.CB_신용_주문사용 && GenieConfig.CB_신용_가능만매수)
+                    {
+                        if (!market_Item.신용가능)
+                        {
+                            매매거부_메세지출력(종목명, "[신규매수 제한 '신용불가'] " + 시장 + "ㆍ" + 종목명 + "ㆍ" + 검색식);
+                            return;
+                        }
+                    }
+
                     // 실제 주문할 수 있는 수량이 1주라도 있어야만 다음 단계를 진행합니다.
                     if (실제주문수량 >= 1)
                     {
@@ -673,59 +682,6 @@ namespace 지니64
                 Form1.form1.신규거부로그_List.Add(종목명);
             }
         }
-
-
-
-        //public static bool 신규주문중복확인(string 코드, string 검색식)
-        //{
-        //    bool result = false;
-
-        //    bool CB_recatch = GenieConfig.CB_new_recatch_A;
-        //    bool CB_익절재매수 = GenieConfig.CB_익절재매수A;
-        //    string New_condition = Form1.위치별검색식리스트["신규_A"].name;
-
-        //    if (검색식.Contains("신규_B"))
-        //    {
-        //        CB_recatch = GenieConfig.CB_new_recatch_B;
-        //        CB_익절재매수 = GenieConfig.CB_익절재매수B;
-        //        New_condition = Form1.위치별검색식리스트["신규_B"].name;
-        //    }
-        //    else if (검색식.Contains("신규_C"))
-        //    {
-        //        CB_recatch = GenieConfig.CB_new_recatch_C;
-        //        CB_익절재매수 = GenieConfig.CB_익절재매수C;
-        //        New_condition = Form1.위치별검색식리스트["신규_C"].name;
-        //    }
-
-        //    string NewBuyItem = Form1.form1.NewBuyItem_List.Find(o => o.Equals(코드));
-
-        //    if (NewBuyItem == null)
-        //    {
-        //        Form1.form1.NewBuyItem_List.Add(코드);
-        //        result = true;
-        //    }
-        //    else
-        //    {
-        //        if (CB_recatch)
-        //        {
-        //            result = true;
-
-        //            if (CB_익절재매수)
-        //            {
-        //                재매수 종목 = Form1.Rebuystock_List.Find(o => o.itemcode.Equals(코드));
-        //                if (종목 != null)
-        //                {
-        //                    if (종목.결과.Equals("수익"))
-        //                        result = true;
-        //                    else
-        //                        result = false;
-        //                }
-        //            }
-        //        }
-        //    }
-
-        //    return result;
-        //}
 
         public static bool 신규주문중복확인(string 코드, string 검색식)
         {

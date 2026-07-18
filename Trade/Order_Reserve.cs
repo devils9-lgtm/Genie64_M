@@ -1479,6 +1479,12 @@ namespace 지니64
                                     예약주문.스크린번호 = Screennum;
 
                                     bool 신용주문 = 신용계산.신용주문_해야하나(예약주문.매수매도, 주문수량, Market_Item_List[잔고.종목코드], 잔고, out int 실제주문수량);
+
+                                    if (GenieConfig.CB_신용_주문사용 && GenieConfig.CB_신용_가능만매수)
+                                    {
+                                        if (!Form1.Market_Item_List[잔고.종목코드].신용가능) return;
+                                    }
+
                                     홀딩잔고.예수금업데이트(GET.매수매도str(예약주문.매수매도), 주문가격, 실제주문수량, "주문", Market.종목코드, 신용주문);
 
                                     int 현재가 = Method.호가맞추기(Market.현재가, Market.Market);

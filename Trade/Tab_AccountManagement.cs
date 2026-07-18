@@ -3205,6 +3205,11 @@ namespace 지니64
                         if (매수매도 == 1)
                         {
                             bool 신용주문 = 신용계산.신용주문_해야하나(매수매도, 분할수량, MarketItem, 잔고, out int 실제주문수량);
+                            if (GenieConfig.CB_신용_주문사용 && GenieConfig.CB_신용_가능만매수)
+                            {
+                                if (!Form1.Market_Item_List[잔고.종목코드].신용가능) return 분할주문_가능;
+                            }
+
                             홀딩잔고.예수금업데이트("매수", 분할가격, 분할수량, "주문", 종목코드, 신용주문);
                             await 주문(신용주문, "", 분할수량);
                         }

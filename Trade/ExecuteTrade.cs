@@ -155,6 +155,11 @@ namespace 지니64
 
                     if (매수매도 == 1)
                     {
+                        if (GenieConfig.CB_신용_주문사용 && GenieConfig.CB_신용_가능만매수)
+                        {
+                            if (!Form1.Market_Item_List[잔고.종목코드].신용가능) return false;
+                        }
+
                         홀딩잔고.예수금업데이트(GET.매수매도str(매수매도), 기록_주문가격, 실제주문수량, "주문", 잔고.종목코드, 신용주문);
                         주문(신용주문, "", 실제주문수량);
                     }
