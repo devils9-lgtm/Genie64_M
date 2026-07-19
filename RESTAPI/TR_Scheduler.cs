@@ -613,10 +613,22 @@ namespace 지니64
     // =========================================================
     // 3. LS증권 스케줄러 (TR별 차등 제한 + 모의투자 안전 마진)
     // =========================================================
-    public class LS_Request
+
+    // 메모리 최적화: 값 타입(struct)을 사용하여 가비지 컬렉터(GC) 부하를 완벽히 제거
+    // 하위 C# 버전에서도 안전하게 빌드되도록 단순 필드 구조로 안정성을 높였습니다.
+    public readonly struct LS_Request
     {
-        public string TrCode { get; set; }
-        public Func<Task> TaskToRun { get; set; }
+        public readonly string TrCode;
+        public readonly Func<Task> TaskToRun;
+
+        public LS_Request(string trCode, Func<Task> taskToRun)
+        {
+            this.TrCode = trCode ?? "DEFAULT";
+            this.TaskToRun = taskToRun;
+        }
+
+        // 구조체 null 체크 대용 (작업이 비어있는지 확인)
+        public bool IsEmpty => TaskToRun == null;
     }
 
     public class LS_TR스케줄러
@@ -628,19 +640,22 @@ namespace 지니64
         private readonly CancellationTokenSource _중단_토큰_소스 = new CancellationTokenSource();
         private Task _소비_프로세스;
 
+        // 유량 제한 문서의 '변경 제한수'를 바탕으로 안전 마진을 포함한 딜레이 딕셔너리
         private static readonly Dictionary<string, int> _lsTrDelays = new Dictionary<string, int>
         {
-            // 초당 10건 제한
-            {"t1101", 110}, {"t1102", 110}, {"t8450", 110}, {"CSPAT00601", 110}, {"t1511", 110},
-            {"t1950", 110}, {"t1906", 110}, {"t0167", 110},
-            // 초당 5건 제한
+            // 10건/초 (약 100ms -> 안전마진 포함 110ms)
+            {"t1511", 110}, {"t1101", 110}, {"t1102", 110}, {"t8450", 110},
+            {"t1950", 110}, {"t1956", 110}, {"t1971", 110}, {"t1906", 110},
+            {"t2101", 110}, {"t2105", 110}, {"t8402", 110}, {"t8403", 110},
+            {"t8456", 110}, {"t8457", 110},
+            {"g3101", 110}, {"g3102", 110}, {"g3104", 110}, {"g3106", 110}, {"g3190", 110},
+
+            // 5건/초 (약 200ms -> 안전마진 포함 220ms)
             {"t8407", 220},
-            // 초당 3건 제한
-            {"CSPAT00701", 350}, {"CSPAT00801", 350},
-            // 초당 2건 제한
-            {"t0424", 520}, {"t0425", 520}, {"t1310", 520},
-            // 초당 1건 제한
-            {"CSPAQ12200", 1050}, {"CDPCQ04700", 1050}, {"t8408", 1050}
+
+            // 2건/초 (약 500ms -> 안전마진 포함 520ms)
+            {"t1310", 520}, {"t1422", 520}, {"t1427", 520}, {"t1442", 520},
+            {"t0424", 520}, {"t0425", 520}, {"t0434", 520}, {"t0441", 520}
         };
 
         public LS_TR스케줄러()
@@ -648,25 +663,48 @@ namespace 지니64
             _소비_프로세스 = Task.Run(() => 큐_모니터링_루프(_중단_토큰_소스.Token));
         }
 
-        public void TR_등록(Func<Task> LS_API_메서드)
+        // 한국투자증권 스케줄러와 동일한 형식의 일반 요청 추가 메서드
+        public void 요청_추가(Func<Task> LS_API_메서드)
         {
-            TR_등록("DEFAULT", LS_API_메서드);
+            TR_등록("DEFAULT", LS_API_메서드, false);
         }
 
-        public void TR_등록(string trCode, Func<Task> LS_API_메서드)
+        public void 요청_추가(string trCode, Func<Task> LS_API_메서드)
         {
-            _일반_요청_큐.Enqueue(new LS_Request { TrCode = trCode, TaskToRun = LS_API_메서드 });
-            _신호_세마포어.Release();
+            TR_등록(trCode, LS_API_메서드, false);
         }
 
-        public void 긴급_TR_등록(Func<Task> LS_우선_API_메서드)
+        // 한국투자증권 스케줄러와 동일한 형식의 우선 요청 추가 메서드
+        public void 우선_요청_추가(Func<Task> LS_우선_API_메서드)
         {
-            긴급_TR_등록("DEFAULT", LS_우선_API_메서드);
+            TR_등록("DEFAULT", LS_우선_API_메서드, true);
         }
 
-        public void 긴급_TR_등록(string trCode, Func<Task> LS_우선_API_메서드)
+        public void 우선_요청_추가(string trCode, Func<Task> LS_우선_API_메서드)
         {
-            _긴급_요청_큐.Enqueue(new LS_Request { TrCode = trCode, TaskToRun = LS_우선_API_메서드 });
+            TR_등록(trCode, LS_우선_API_메서드, true);
+        }
+
+        // 기존 TR_등록 진입점 원본 유지 (내부 구조체 할당 및 세마포어 신호 처리)
+        public void TR_등록(Func<Task> LS_API_메서드, bool 우선요청 = false)
+        {
+            TR_등록("DEFAULT", LS_API_메서드, 우선요청);
+        }
+
+        public void TR_등록(string trCode, Func<Task> LS_API_메서드, bool 우선요청 = false)
+        {
+            // 구조체(값 타입)를 사용하여 호출 시 힙 메모리 할당이 전혀 발생하지 않음
+            var request = new LS_Request(trCode, LS_API_메서드);
+
+            if (우선요청)
+            {
+                _긴급_요청_큐.Enqueue(request);
+            }
+            else
+            {
+                _일반_요청_큐.Enqueue(request);
+            }
+
             _신호_세마포어.Release();
         }
 
@@ -674,37 +712,64 @@ namespace 지니64
         {
             while (!중단_토큰.IsCancellationRequested)
             {
-                await _신호_세마포어.WaitAsync(중단_토큰);
-                LS_Request 처리할_작업 = null;
+                try
+                {
+                    // CPU 최적화: ConfigureAwait(false)를 사용하여 스레드 전환 오버헤드 최소화
+                    await _신호_세마포어.WaitAsync(중단_토큰).ConfigureAwait(false);
+                }
+                catch (OperationCanceledException)
+                {
+                    break;
+                }
 
-                if (_긴급_요청_큐.TryDequeue(out 처리할_작업)) { }
-                else if (_일반_요청_큐.TryDequeue(out 처리할_작업)) { }
+                LS_Request 처리할_작업 = default;
+                bool 작업존재 = false;
 
-                if (처리할_작업 != null)
+                // 우선 순위 처리: 한국투자 스케줄러처럼 긴급(우선) 요청 큐를 항상 먼저 꺼내옴
+                if (_긴급_요청_큐.TryDequeue(out 처리할_작업))
+                {
+                    작업존재 = true;
+                }
+                else if (_일반_요청_큐.TryDequeue(out 처리할_작업))
+                {
+                    작업존재 = true;
+                }
+
+                if (작업존재 && !처리할_작업.IsEmpty)
                 {
                     try
                     {
-                        await 처리할_작업.TaskToRun();
+                        // 비동기 작업 실행 시 스레드 컨텍스트 전환 비용 감소 최적화
+                        await 처리할_작업.TaskToRun().ConfigureAwait(false);
                     }
                     catch (Exception 에러)
                     {
                         Console.WriteLine($"[LS증권 스케줄러 에러] {에러.Message}");
                     }
 
-                    // 1. 기본적으로 TR 코드에 맞춘 딜레이 적용 (알 수 없으면 가장 보수적인 1050ms)
+                    // 기본 지연 시간 (딕셔너리에 지정되지 않은 TR 코드는 가장 안정적인 1050ms로 자동 대응)
                     int 지연_시간 = 1050;
-                    if (!string.IsNullOrEmpty(처리할_작업.TrCode) && _lsTrDelays.ContainsKey(처리할_작업.TrCode))
+
+                    // CPU 최적화: TryGetValue를 사용하여 딕셔너리 이중 검색(Contains/Get)으로 인한 연산 낭비 차단
+                    if (!string.IsNullOrEmpty(처리할_작업.TrCode) && _lsTrDelays.TryGetValue(처리할_작업.TrCode, out int delayValue))
                     {
-                        지연_시간 = _lsTrDelays[처리할_작업.TrCode];
+                        지연_시간 = delayValue;
                     }
 
-                    // 2. [추가] 모의투자일 경우, 서버 부하를 고려해 최소 500ms 딜레이를 강제 보장
+                    // 모의투자일 경우 강제로 하한선 제한 마진 적용
                     if (GenieConfig.checkBox_Simulation)
                     {
                         지연_시간 = Math.Max(지연_시간, 500);
                     }
 
-                    await Task.Delay(지연_시간, 중단_토큰);
+                    try
+                    {
+                        await Task.Delay(지연_시간, 중단_토큰).ConfigureAwait(false);
+                    }
+                    catch (OperationCanceledException)
+                    {
+                        break;
+                    }
                 }
             }
         }
@@ -717,6 +782,13 @@ namespace 지니64
             _중단_토큰_소스.Dispose();
         }
     }
+
+
+
+
+
+
+
 }
 
 

@@ -59,6 +59,8 @@ namespace 지니64
 
         public static string LS_앱키 = "";
         public static string LS_시크릿키 = "";
+        public static string LS_AcntNo = "";
+        public static string LS_InptPwd = "";
 
         public static bool 중복접속 = false;
 
@@ -3255,16 +3257,29 @@ namespace 지니64
         {
             Form1.Console_print("\n====== [Button1_Click] ======");
 
-            // 비동기로 스케줄러 혹은 요청이 처리되도록 await 구조로 실행 유도
-            await Task.Run(() => 한투_TR요청.한투_주식잔고조회(null, null, "", true));
-        }
+            //// 토큰 캐시 파일 경로 지정
+            //string tokenFolder = Path.Combine(Application.StartupPath, "토큰발급");
+            //string tokenFilePath = Path.Combine(tokenFolder, "한투_token_cache.json");
 
+            //// 폴더와 파일이 모두 실재하는지 체크 (저사양 PC 디스크 오버헤드가 적은 가벼운 검사 방법)
+            //if (Directory.Exists(tokenFolder) && File.Exists(tokenFilePath))
+            //{
+            //    // 비동기로 스케줄러 혹은 요청이 처리되도록 await 구조로 실행 유도
+            //    await Task.Run(() => 한투_TR요청.한투_주식잔고조회(null, null, "", true));
+            //}
+
+            LS_TR요청.LS_현물계좌예수금_주문가능금액_총평가조회("Y", false);
+
+        }
 
         private async void Button2_Click(object sender, EventArgs e)
         {
             Form1.Console_print("\n====== [Button2_Click] ======");
 
-        
+          //  LS_TR요청.LS_주식잔고2("Y", false);
+         //   LS_TR요청.LS_현물계좌_잔고내역조회("Y", false);
+
+          await 한투_실시간요청.체결통보_등록(한투_WS_approval_key, "@3033750", GenieConfig.checkBox_Simulation);
 
             //RealData_Management.AVG_jisu_print("001", Form1.Acc.피_현재가);
             //RealData_Management.AVG_jisu_print("101", Form1.Acc.닥_현재가);

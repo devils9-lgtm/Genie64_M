@@ -203,8 +203,8 @@ namespace 지니64.VIP_mode.로그인
                     }
 
                     Form1.Console_print($">> [로그인 서버] 모의투자여부 {모의투자여부}.");
-                    Form1.Console_print($">> [한투_앱키] {Form1.한투_앱키}");
-                    Form1.Console_print($">> [한투_시크릿키] {Form1.한투_시크릿키}");
+                    //Form1.Console_print($">> [한투_앱키] {Form1.한투_앱키}");
+                    //Form1.Console_print($">> [한투_시크릿키] {Form1.한투_시크릿키}");
                     // =========================================================================
 
                     지니64.VIP_mode.모드변경.모드변경.VIP증권사컬럼추가(Form1.form1.JanGo_dataGridView);
@@ -212,6 +212,245 @@ namespace 지니64.VIP_mode.로그인
             }
         }
 
+
+        //// =========================================================================
+        //// [로그인] REST 토큰 + 웹소켓 접속키 연속 발급 (장 마감 시간 기반 지능형 재발급 적용)
+        //// =========================================================================
+        //public static async Task<bool> KIS_로그인요청(string host, string 앱키, string 시크릿키, bool isSimulation)
+        //{
+        //    string modeText = isSimulation ? "[모의투자]" : "[실투자]";
+        //    Form1.Console_print($">> [로그인 시작] {modeText} 한국투자증권 인증 요청을 시작합니다.");
+
+        //    if (string.IsNullOrEmpty(앱키) || string.IsNullOrEmpty(시크릿키))
+        //    {
+        //        Form1.Console_print($"[-] 한국투자증권 {modeText} 키가 비어있습니다.");
+        //        MessageBox.Show($"한국투자증권 {modeText} 앱키 또는 시크릿키가 비어있습니다.\n프로그램을 종료합니다.", "인증 실패", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        Environment.Exit(0);
+        //        return false;
+        //    }
+
+        //    앱키 = 앱키.Trim();
+        //    시크릿키 = 시크릿키.Trim();
+
+        //    // 저장 폴더 및 통합 파일 경로 설정
+        //    string tokenFolder = Path.Combine(Application.StartupPath, "토큰발급");
+        //    string tokenFilePath = Path.Combine(tokenFolder, "한투_token_cache.json");
+        //    KisTokenCombinedCache combinedCache = null;
+
+        //    // =========================================================================
+        //    // [1] 로컬 토큰 파일 비동기 읽기 및 지능형 유효기간(장 마감 시간) 검사
+        //    // =========================================================================
+        //    if (File.Exists(tokenFilePath))
+        //    {
+        //        try
+        //        {
+        //            Form1.Console_print($">> [로컬 탐색] 토큰 파일 로드를 시도합니다. 경로: {tokenFilePath}");
+
+        //            // 비동기 스트림을 통해 UI 멈춤 방지 및 메모리 사용량 최소화
+        //            using (var fs = new FileStream(tokenFilePath, FileMode.Open, FileAccess.Read, FileShare.Read, 4096, useAsync: true))
+        //            using (var reader = new StreamReader(fs, _utf8WithoutBom))
+        //            {
+        //                string jsonString = await reader.ReadToEndAsync();
+        //                combinedCache = JsonConvert.DeserializeObject<KisTokenCombinedCache>(jsonString);
+        //            }
+
+        //            if (combinedCache != null)
+        //            {
+        //                TokenInfo currentToken = isSimulation ? combinedCache.Simulation : combinedCache.Real;
+
+        //                if (currentToken != null && !string.IsNullOrEmpty(currentToken.AccessToken))
+        //                {
+        //                    // -------------------------------------------------------------
+        //                    // [핵심 로직] 장중(08:00 ~ 20:00) 토큰 만료를 방지하는 타겟 타임 설정
+        //                    // -------------------------------------------------------------
+        //                    // 목표 마감 시간: 애프터마켓 종료 시간(20:00) + 30분 여유 = 당일 20:30
+        //                    DateTime targetEndTime = DateTime.Today.AddHours(20).AddMinutes(30);
+
+        //                    // 만약 현재 시간이 당일 20시 30분을 지났다면 (즉, 밤에 프로그램을 켰다면)
+        //                    // 내일 장 마감(익일 20:30)까지 버틸 수 있어야 하므로 타겟 타임을 하루 증가시킴
+        //                    if (DateTime.Now > targetEndTime)
+        //                    {
+        //                        targetEndTime = targetEndTime.AddDays(1);
+        //                    }
+
+        //                    // 토큰 만료 시간이 목표 마감 시간(targetEndTime)보다 넉넉히 남아있는지 확인
+        //                    if (currentToken.ExpireTime > targetEndTime)
+        //                    {
+        //                        Form1.한투_API_token = currentToken.AccessToken;
+        //                        Form1.한투_WS_approval_key = currentToken.ApprovalKey;
+
+        //                        Form1.Console_print($"[+] 로컬 파일에서 유효한 {modeText} 토큰을 성공적으로 불러왔습니다. (만료예정: {currentToken.ExpireTime})");
+        //                        Form1.Console_print($">> [로그인 완료] 애프터마켓 마감 시점({targetEndTime:MM-dd HH:mm})까지 토큰이 안전하게 유지됩니다. 신규 발급을 생략합니다.");
+        //                        return true;
+        //                    }
+        //                    else
+        //                    {
+        //                        Form1.Console_print($"[*] 기존 토큰이 장 마감 시간({targetEndTime:MM-dd HH:mm}) 이전에 만료될 예정입니다. (현재 토큰 만료시간: {currentToken.ExpireTime})");
+        //                        Form1.Console_print($"[*] 장중 통신 끊김을 방지하기 위해 새로운 토큰을 발급합니다.");
+        //                    }
+        //                }
+        //            }
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            Form1.Console_print($"[-] 로컬 토큰 파일 읽기 실패 (새로 발급 진행): {ex.Message}");
+        //        }
+        //    }
+        //    else
+        //    {
+        //        Form1.Console_print($"[*] 로컬 토큰 캐시 파일이 존재하지 않습니다. 새로 발급을 진행합니다.");
+        //    }
+
+        //    if (combinedCache == null)
+        //    {
+        //        combinedCache = new KisTokenCombinedCache();
+        //    }
+
+        //    try
+        //    {
+        //        DateTime tokenExpireTime = DateTime.Now.AddHours(24);
+
+        //        // =========================================================================
+        //        // [2] REST API 토큰 발급 (/oauth2/tokenP)
+        //        // =========================================================================
+        //        Form1.Console_print($">> [단계 1] {modeText} REST API 토큰 발급 시도 중...");
+        //        string rest_url = host + "/oauth2/tokenP";
+
+        //        string rest_json = JsonConvert.SerializeObject(new
+        //        {
+        //            grant_type = "client_credentials",
+        //            appkey = 앱키,
+        //            appsecret = 시크릿키
+        //        });
+
+        //        Form1.Console_print($">> [한투 통신] REST 서버({rest_url})에 데이터 전송 중...");
+
+        //        using (var rest_content = new StringContent(rest_json, _utf8WithoutBom, "application/json"))
+        //        using (var rest_response = await 클라이언트.PostAsync(rest_url, rest_content))
+        //        {
+        //            Form1.Console_print($">> [한투 통신] rest_response 상태: {rest_response.StatusCode}");
+
+        //            if (rest_response.IsSuccessStatusCode)
+        //            {
+        //                // [최적화] 대용량 문자열 할당 방지 및 스트림 고속 파싱 (가비지 컬렉터 부하 최소화)
+        //                using (Stream restStream = await rest_response.Content.ReadAsStreamAsync())
+        //                using (JsonDocument doc = await JsonDocument.ParseAsync(restStream))
+        //                {
+        //                    var root = doc.RootElement;
+        //                    Form1.한투_API_token = root.TryGetProperty("access_token", out var tokenProp) ? tokenProp.GetString() : string.Empty;
+
+        //                    if (root.TryGetProperty("access_token_token_expired", out var expireProp))
+        //                    {
+        //                        string expireStr = expireProp.GetString();
+        //                        DateTime.TryParseExact(expireStr, "yyyy-MM-dd HH:mm:ss", null, System.Globalization.DateTimeStyles.None, out tokenExpireTime);
+        //                    }
+        //                }
+
+        //                Form1.Console_print($"[+] 한투_API_token 발급 완료");
+        //                Form1.Console_print($"[+] 한국투자증권 {modeText} REST API 토큰 발급 성공");
+        //            }
+        //            else
+        //            {
+        //                string errorBody = await rest_response.Content.ReadAsStringAsync();
+        //                Form1.Console_print($"[-] 한투 {modeText} REST 인증 실패: {(int)rest_response.StatusCode}");
+        //                Form1.Console_print($"[-] 에러 내용: {errorBody}");
+        //                MessageBox.Show($"한국투자증권 {modeText} REST API 인증에 실패했습니다.\n상태 코드: {(int)rest_response.StatusCode}\n\n프로그램을 종료합니다.", "인증 실패", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //                Environment.Exit(0);
+        //                return false;
+        //            }
+        //        }
+
+        //        Form1.Console_print(">> [대기] 웹소켓 키 발급 전 안정화를 위해 300ms 대기...");
+        //        await Task.Delay(300);
+
+        //        // =========================================================================
+        //        // [3] 웹소켓 접속키 발급 (/oauth2/Approval)
+        //        // =========================================================================
+        //        Form1.Console_print($">> [단계 2] {modeText} 웹소켓 접속키(Approval Key) 발급 시도 중...");
+        //        string ws_url = host + "/oauth2/Approval";
+
+        //        string ws_json = JsonConvert.SerializeObject(new
+        //        {
+        //            grant_type = "client_credentials",
+        //            appkey = 앱키,
+        //            secretkey = 시크릿키
+        //        });
+
+        //        Form1.Console_print($">> [통신] 웹소켓 서버({ws_url})에 데이터 전송 중...");
+
+        //        using (var ws_content = new StringContent(ws_json, _utf8WithoutBom, "application/json"))
+        //        using (var ws_response = await 클라이언트.PostAsync(ws_url, ws_content))
+        //        {
+        //            if (ws_response.IsSuccessStatusCode)
+        //            {
+        //                // [최적화] 대용량 문자열 할당 방지 및 스트림 고속 파싱
+        //                using (Stream wsStream = await ws_response.Content.ReadAsStreamAsync())
+        //                using (JsonDocument doc = await JsonDocument.ParseAsync(wsStream))
+        //                {
+        //                    var root = doc.RootElement;
+        //                    Form1.한투_WS_approval_key = root.TryGetProperty("approval_key", out var appKeyProp) ? appKeyProp.GetString() : string.Empty;
+        //                }
+
+        //                Form1.Console_print($"[+] 한국투자증권 {modeText} 웹소켓 접속키(Approval Key) 발급 성공");
+        //            }
+        //            else
+        //            {
+        //                string errorBody = await ws_response.Content.ReadAsStringAsync();
+        //                Form1.Console_print($"[-] 한투 {modeText} 웹소켓 접속키 발급 실패: {(int)ws_response.StatusCode}");
+        //                Form1.Console_print($"[-] 에러 내용: {errorBody}");
+        //                MessageBox.Show($"한국투자증권 {modeText} 웹소켓 접속키 발급에 실패했습니다.\n상태 코드: {(int)ws_response.StatusCode}\n\n프로그램을 종료합니다.", "인증 실패", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //                Environment.Exit(0);
+        //                return false;
+        //            }
+        //        }
+
+        //        // =========================================================================
+        //        // [4] 토큰 로컬 캐시 통합 파일 저장 (.NET Framework 호환 & 디스크 I/O 최적화)
+        //        // =========================================================================
+        //        try
+        //        {
+        //            if (!Directory.Exists(tokenFolder))
+        //            {
+        //                Directory.CreateDirectory(tokenFolder);
+        //            }
+
+        //            TokenInfo newInfo = new TokenInfo
+        //            {
+        //                AccessToken = Form1.한투_API_token,
+        //                ApprovalKey = Form1.한투_WS_approval_key,
+        //                ExpireTime = tokenExpireTime
+        //            };
+
+        //            if (isSimulation) combinedCache.Simulation = newInfo;
+        //            else combinedCache.Real = newInfo;
+
+        //            // [최적화] Formatting.None을 통해 공백 문자를 제거하고 디스크 I/O 크기 극소화
+        //            string outputJson = JsonConvert.SerializeObject(combinedCache, Formatting.None);
+
+        //            using (var fs = new FileStream(tokenFilePath, FileMode.Create, FileAccess.Write, FileShare.None, 4096, useAsync: true))
+        //            using (var writer = new StreamWriter(fs, _utf8WithoutBom))
+        //            {
+        //                await writer.WriteAsync(outputJson);
+        //            }
+
+        //            Form1.Console_print($"[+] {modeText} 새 토큰을 통합 파일에 기록 완료했습니다. (만료예정: {tokenExpireTime})");
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            Form1.Console_print($"[-] 토큰 파일 기록 중 오류 발생: {ex.Message}");
+        //        }
+
+        //        Form1.Console_print($">> [로그인 완료] 한국투자증권 {modeText} 인증 프로세스가 정상 종료되었습니다.");
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Form1.Console_print($"[-] 한국투자증권 {modeText} 통신 오류 발생: " + ex.Message);
+        //        MessageBox.Show($"한국투자증권 {modeText} 서버 통신 중 오류가 발생했습니다.\n{ex.Message}\n\n프로그램을 종료합니다.", "통신 오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //        Environment.Exit(0);
+        //        return false;
+        //    }
+        //}
 
         // =========================================================================
         // [로그인] REST 토큰 + 웹소켓 접속키 연속 발급 (장 마감 시간 기반 지능형 재발급 적용)
@@ -233,8 +472,8 @@ namespace 지니64.VIP_mode.로그인
             시크릿키 = 시크릿키.Trim();
 
             // 저장 폴더 및 통합 파일 경로 설정
-            string tokenFolder = Path.Combine(Application.StartupPath, "토큰발급_한국투자증권");
-            string tokenFilePath = Path.Combine(tokenFolder, "token_cache.json");
+            string tokenFolder = Path.Combine(Application.StartupPath, "토큰발급");
+            string tokenFilePath = Path.Combine(tokenFolder, "한투_token_cache.json");
             KisTokenCombinedCache combinedCache = null;
 
             // =========================================================================
@@ -258,7 +497,7 @@ namespace 지니64.VIP_mode.로그인
                     {
                         TokenInfo currentToken = isSimulation ? combinedCache.Simulation : combinedCache.Real;
 
-                        if (currentToken != null && !string.IsNullOrEmpty(currentToken.AccessToken))
+                        if (currentToken != null && !string.IsNullOrEmpty(currentToken.AccessToken) && !string.IsNullOrEmpty(currentToken.ApprovalKey)) // [수정됨] 접속키 유무 조건 추가
                         {
                             // -------------------------------------------------------------
                             // [핵심 로직] 장중(08:00 ~ 20:00) 토큰 만료를 방지하는 타겟 타임 설정
@@ -279,8 +518,11 @@ namespace 지니64.VIP_mode.로그인
                                 Form1.한투_API_token = currentToken.AccessToken;
                                 Form1.한투_WS_approval_key = currentToken.ApprovalKey;
 
-                                Form1.Console_print($"[+] 로컬 파일에서 유효한 {modeText} 토큰을 성공적으로 불러왔습니다. (만료예정: {currentToken.ExpireTime})");
-                                Form1.Console_print($">> [로그인 완료] 애프터마켓 마감 시점({targetEndTime:MM-dd HH:mm})까지 토큰이 안전하게 유지됩니다. 신규 발급을 생략합니다.");
+                                Form1.Console_print($">>한투 [+] 로컬 파일에서 유효한 {modeText} 토큰을 성공적으로 불러왔습니다. (만료예정: {currentToken.ExpireTime})");
+                                Form1.Console_print($">>한투  [로그인 완료] 애프터마켓 마감 시점({targetEndTime:MM-dd HH:mm})까지 토큰이 안전하게 유지됩니다. 신규 발급을 생략합니다.");
+                                Form1.Console_print($">>한투  [한투_API_token] {Form1.한투_API_token}");
+                                Form1.Console_print($">>한투  [한투_WS_approval_key] {Form1.한투_WS_approval_key}");
+
                                 return true;
                             }
                             else
@@ -364,7 +606,7 @@ namespace 지니64.VIP_mode.로그인
                 await Task.Delay(300);
 
                 // =========================================================================
-                // [3] 웹소켓 접속키 발급 (/oauth2/Approval)
+                // [3] 웹소켓 접속키 발급 (/oauth2/Approval)  [추가됨]
                 // =========================================================================
                 Form1.Console_print($">> [단계 2] {modeText} 웹소켓 접속키(Approval Key) 발급 시도 중...");
                 string ws_url = host + "/oauth2/Approval";
@@ -373,7 +615,7 @@ namespace 지니64.VIP_mode.로그인
                 {
                     grant_type = "client_credentials",
                     appkey = 앱키,
-                    secretkey = 시크릿키
+                    secretkey = 시크릿키 // [수정됨] 문서 기준 secretkey 사용
                 });
 
                 Form1.Console_print($">> [통신] 웹소켓 서버({ws_url})에 데이터 전송 중...");
@@ -417,7 +659,7 @@ namespace 지니64.VIP_mode.로그인
                     TokenInfo newInfo = new TokenInfo
                     {
                         AccessToken = Form1.한투_API_token,
-                        ApprovalKey = Form1.한투_WS_approval_key,
+                        ApprovalKey = Form1.한투_WS_approval_key, // [수정됨] 발급받은 키 할당
                         ExpireTime = tokenExpireTime
                     };
 
@@ -475,12 +717,12 @@ namespace 지니64.VIP_mode.로그인
             string url = host + endpoint;
 
             var form데이터_리스트 = new Dictionary<string, string>
-     {
-         { "grant_type", "client_credentials" },
-         { "appkey", 앱키 },
-         { "appsecretkey", 시크릿키 },
-         { "scope", "oob" }
-     };
+            {
+                { "grant_type", "client_credentials" },
+                { "appkey", 앱키 },
+                { "appsecretkey", 시크릿키 },
+                { "scope", "oob" }
+            };
 
             var content = new FormUrlEncodedContent(form데이터_리스트);
 

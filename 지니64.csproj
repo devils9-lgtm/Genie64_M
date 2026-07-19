@@ -438,6 +438,8 @@
     <Compile Include="VIP_mode\한투\TR한투_계좌.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="VIP_mode\한투\한투_실시간요청.cs" />
+    <Compile Include="VIP_mode\한투\한투_웹소켓연결.cs" />
     <Compile Include="VIP_mode\한투\한투_종목정보.cs">
       <SubType>Form</SubType>
     </Compile>
