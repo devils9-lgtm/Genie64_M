@@ -3268,7 +3268,9 @@ namespace 지니64
             //    await Task.Run(() => 한투_TR요청.한투_주식잔고조회(null, null, "", true));
             //}
 
-            LS_TR요청.LS_현물계좌예수금_주문가능금액_총평가조회("Y", false);
+         //   LS_TR요청.LS_현물계좌예수금_주문가능금액_총평가조회("Y", false);
+
+            await 한투_실시간요청.체결통보_등록(한투_WS_approval_key, "@3033750", GenieConfig.checkBox_Simulation);
 
         }
 
@@ -3279,7 +3281,10 @@ namespace 지니64
           //  LS_TR요청.LS_주식잔고2("Y", false);
          //   LS_TR요청.LS_현물계좌_잔고내역조회("Y", false);
 
-          await 한투_실시간요청.체결통보_등록(한투_WS_approval_key, "@3033750", GenieConfig.checkBox_Simulation);
+        //await 한투_실시간요청.체결통보_등록(한투_WS_approval_key, "@3033750", GenieConfig.checkBox_Simulation);
+
+            // 발급받은 접근 토큰과 빈 문자열, 모의투자 여부를 전달
+            await LS_실시간요청.체결통보_등록(LS_API_token, "", GenieConfig.checkBox_Simulation);
 
             //RealData_Management.AVG_jisu_print("001", Form1.Acc.피_현재가);
             //RealData_Management.AVG_jisu_print("101", Form1.Acc.닥_현재가);
